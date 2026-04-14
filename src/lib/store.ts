@@ -74,7 +74,7 @@ const defaultProfile: UserProfile = {
   includeColdDish: false,
   cookingLevel: 'intermediate',
   acceptedDifficulty: [],
-  recommendMode: 'ai',
+  recommendMode: 'basic',
   autoAddToShoppingList: true,
   planDays: 7,
   weeklyBudget: 150,
