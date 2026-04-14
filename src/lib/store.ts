@@ -379,6 +379,30 @@ export function getPreferenceScore(recipeId: string): number {
   return Math.abs(effective) < 0.5 ? 0 : Math.round(effective * 10) / 10;
 }
 
+// Supabase 自动同步: store 变更后自动推送到云端
+if (typeof window !== 'undefined') {
+  let syncTimeout: ReturnType<typeof setTimeout> | null = null;
+
+  useAppStore.subscribe((state) => {
+    // 防抖: 500ms 内的多次变更合并为一次推送
+    if (syncTimeout) clearTimeout(syncTimeout);
+    syncTimeout = setTimeout(async () => {
+      try {
+        const { saveUserData } = await import('./supabase/sync');
+        await saveUserData({
+          profile: state.profile,
+          weeklyPlan: state.weeklyPlan,
+          shoppingList: state.shoppingList,
+          ownedIngredients: state.ownedIngredients,
+          recipePreferences: state.recipePreferences,
+        });
+      } catch {
+        // 静默失败，localStorage 仍然工作
+      }
+    }, 500);
+  });
+}
+
 function getUnitGrams(unit: string): number {
   switch (unit) {
     case 'kg': return 1000;
