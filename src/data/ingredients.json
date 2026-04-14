@@ -1,0 +1,2971 @@
+[
+  {
+    "id": "chicken_breast",
+    "nameZh": "鸡胸肉",
+    "nameEn": "Chicken Breast",
+    "category": "meat",
+    "nutrition": {
+      "calories": 165,
+      "protein": 31,
+      "fat": 3.6,
+      "carbs": 0,
+      "fiber": 0,
+      "sodium": 74,
+      "sugar": 0
+    },
+    "priceNZD": 12.99,
+    "unit": "kg",
+    "healthTags": [],
+    "supermarkets": [
+      "countdown",
+      "paknsave",
+      "newworld",
+      "asian_grocery"
+    ],
+    "season": []
+  },
+  {
+    "id": "chicken_thigh",
+    "nameZh": "鸡腿肉",
+    "nameEn": "Chicken Thigh",
+    "category": "meat",
+    "nutrition": {
+      "calories": 209,
+      "protein": 26,
+      "fat": 10.9,
+      "carbs": 0,
+      "fiber": 0,
+      "sodium": 84,
+      "sugar": 0
+    },
+    "priceNZD": 9.99,
+    "unit": "kg",
+    "healthTags": [],
+    "supermarkets": [
+      "countdown",
+      "paknsave",
+      "newworld",
+      "asian_grocery"
+    ],
+    "season": []
+  },
+  {
+    "id": "pork_belly",
+    "nameZh": "五花肉",
+    "nameEn": "Pork Belly",
+    "category": "meat",
+    "nutrition": {
+      "calories": 518,
+      "protein": 9.3,
+      "fat": 53,
+      "carbs": 0,
+      "fiber": 0,
+      "sodium": 32,
+      "sugar": 0
+    },
+    "priceNZD": 16.99,
+    "unit": "kg",
+    "healthTags": [
+      "high_fat"
+    ],
+    "supermarkets": [
+      "countdown",
+      "paknsave",
+      "newworld",
+      "asian_grocery"
+    ],
+    "season": []
+  },
+  {
+    "id": "pork_mince",
+    "nameZh": "猪肉末",
+    "nameEn": "Pork Mince",
+    "category": "meat",
+    "nutrition": {
+      "calories": 263,
+      "protein": 17,
+      "fat": 21,
+      "carbs": 0,
+      "fiber": 0,
+      "sodium": 66,
+      "sugar": 0
+    },
+    "priceNZD": 13.99,
+    "unit": "kg",
+    "healthTags": [],
+    "supermarkets": [
+      "countdown",
+      "paknsave",
+      "newworld",
+      "asian_grocery"
+    ],
+    "season": []
+  },
+  {
+    "id": "beef_sirloin",
+    "nameZh": "牛里脊",
+    "nameEn": "Beef Sirloin",
+    "category": "meat",
+    "nutrition": {
+      "calories": 271,
+      "protein": 26,
+      "fat": 18,
+      "carbs": 0,
+      "fiber": 0,
+      "sodium": 54,
+      "sugar": 0
+    },
+    "priceNZD": 29.99,
+    "unit": "kg",
+    "healthTags": [
+      "high_purine"
+    ],
+    "supermarkets": [
+      "countdown",
+      "paknsave",
+      "newworld",
+      "asian_grocery"
+    ],
+    "season": []
+  },
+  {
+    "id": "beef_mince",
+    "nameZh": "牛肉末",
+    "nameEn": "Beef Mince",
+    "category": "meat",
+    "nutrition": {
+      "calories": 254,
+      "protein": 17,
+      "fat": 20,
+      "carbs": 0,
+      "fiber": 0,
+      "sodium": 66,
+      "sugar": 0
+    },
+    "priceNZD": 15.99,
+    "unit": "kg",
+    "healthTags": [
+      "high_purine"
+    ],
+    "supermarkets": [
+      "countdown",
+      "paknsave",
+      "newworld",
+      "asian_grocery"
+    ],
+    "season": []
+  },
+  {
+    "id": "lamb_leg",
+    "nameZh": "羊腿肉",
+    "nameEn": "Lamb Leg",
+    "category": "meat",
+    "nutrition": {
+      "calories": 258,
+      "protein": 25,
+      "fat": 17,
+      "carbs": 0,
+      "fiber": 0,
+      "sodium": 59,
+      "sugar": 0
+    },
+    "priceNZD": 22.99,
+    "unit": "kg",
+    "healthTags": [
+      "high_purine"
+    ],
+    "supermarkets": [
+      "countdown",
+      "paknsave",
+      "newworld",
+      "asian_grocery"
+    ],
+    "season": []
+  },
+  {
+    "id": "salmon_fillet",
+    "nameZh": "三文鱼",
+    "nameEn": "Salmon Fillet",
+    "category": "seafood",
+    "nutrition": {
+      "calories": 208,
+      "protein": 20,
+      "fat": 13,
+      "carbs": 0,
+      "fiber": 0,
+      "sodium": 59,
+      "sugar": 0
+    },
+    "priceNZD": 35.99,
+    "unit": "kg",
+    "healthTags": [
+      "allergen_seafood"
+    ],
+    "supermarkets": [
+      "countdown",
+      "paknsave",
+      "newworld",
+      "asian_grocery"
+    ],
+    "season": []
+  },
+  {
+    "id": "shrimp",
+    "nameZh": "虾",
+    "nameEn": "Shrimp/Prawns",
+    "category": "seafood",
+    "nutrition": {
+      "calories": 85,
+      "protein": 20,
+      "fat": 0.5,
+      "carbs": 0.2,
+      "fiber": 0,
+      "sodium": 119,
+      "sugar": 0
+    },
+    "priceNZD": 28.99,
+    "unit": "kg",
+    "healthTags": [
+      "allergen_seafood",
+      "high_purine"
+    ],
+    "supermarkets": [
+      "countdown",
+      "paknsave",
+      "newworld",
+      "asian_grocery"
+    ],
+    "season": []
+  },
+  {
+    "id": "egg",
+    "nameZh": "鸡蛋",
+    "nameEn": "Eggs",
+    "category": "egg_dairy",
+    "nutrition": {
+      "calories": 155,
+      "protein": 13,
+      "fat": 11,
+      "carbs": 1.1,
+      "fiber": 0,
+      "sodium": 124,
+      "sugar": 1.1
+    },
+    "priceNZD": 8.99,
+    "unit": "dozen",
+    "healthTags": [
+      "allergen_egg"
+    ],
+    "supermarkets": [
+      "countdown",
+      "paknsave",
+      "newworld",
+      "asian_grocery"
+    ],
+    "season": []
+  },
+  {
+    "id": "tofu",
+    "nameZh": "豆腐",
+    "nameEn": "Tofu",
+    "category": "bean",
+    "nutrition": {
+      "calories": 76,
+      "protein": 8,
+      "fat": 4.8,
+      "carbs": 1.9,
+      "fiber": 0.3,
+      "sodium": 7,
+      "sugar": 0.6
+    },
+    "priceNZD": 3.99,
+    "unit": "piece",
+    "healthTags": [
+      "allergen_soy"
+    ],
+    "supermarkets": [
+      "countdown",
+      "paknsave",
+      "newworld",
+      "asian_grocery"
+    ],
+    "season": []
+  },
+  {
+    "id": "rice",
+    "nameZh": "大米",
+    "nameEn": "Rice",
+    "category": "grain",
+    "nutrition": {
+      "calories": 130,
+      "protein": 2.7,
+      "fat": 0.3,
+      "carbs": 28,
+      "fiber": 0.4,
+      "sodium": 1,
+      "sugar": 0
+    },
+    "priceNZD": 3.99,
+    "unit": "kg",
+    "healthTags": [
+      "high_gi"
+    ],
+    "supermarkets": [
+      "countdown",
+      "paknsave",
+      "newworld",
+      "asian_grocery"
+    ],
+    "season": []
+  },
+  {
+    "id": "noodles_dried",
+    "nameZh": "挂面",
+    "nameEn": "Dried Noodles",
+    "category": "grain",
+    "nutrition": {
+      "calories": 350,
+      "protein": 12,
+      "fat": 1.5,
+      "carbs": 72,
+      "fiber": 3,
+      "sodium": 5,
+      "sugar": 2
+    },
+    "priceNZD": 2.99,
+    "unit": "pack",
+    "healthTags": [
+      "high_gi",
+      "allergen_gluten"
+    ],
+    "supermarkets": [
+      "countdown",
+      "paknsave",
+      "newworld",
+      "asian_grocery"
+    ],
+    "season": []
+  },
+  {
+    "id": "potato",
+    "nameZh": "土豆",
+    "nameEn": "Potato",
+    "category": "vegetable",
+    "nutrition": {
+      "calories": 77,
+      "protein": 2,
+      "fat": 0.1,
+      "carbs": 17,
+      "fiber": 2.2,
+      "sodium": 6,
+      "sugar": 0.8
+    },
+    "priceNZD": 3.99,
+    "unit": "kg",
+    "healthTags": [
+      "high_gi"
+    ],
+    "supermarkets": [
+      "countdown",
+      "paknsave",
+      "newworld",
+      "asian_grocery"
+    ],
+    "season": []
+  },
+  {
+    "id": "broccoli",
+    "nameZh": "西兰花",
+    "nameEn": "Broccoli",
+    "category": "vegetable",
+    "nutrition": {
+      "calories": 34,
+      "protein": 2.8,
+      "fat": 0.4,
+      "carbs": 7,
+      "fiber": 2.6,
+      "sodium": 33,
+      "sugar": 1.7
+    },
+    "priceNZD": 4.49,
+    "unit": "piece",
+    "healthTags": [],
+    "supermarkets": [
+      "countdown",
+      "paknsave",
+      "newworld",
+      "asian_grocery"
+    ],
+    "season": []
+  },
+  {
+    "id": "bok_choy",
+    "nameZh": "小白菜",
+    "nameEn": "Bok Choy",
+    "category": "vegetable",
+    "nutrition": {
+      "calories": 13,
+      "protein": 1.5,
+      "fat": 0.2,
+      "carbs": 2.2,
+      "fiber": 1,
+      "sodium": 65,
+      "sugar": 1.2
+    },
+    "priceNZD": 3.49,
+    "unit": "bunch",
+    "healthTags": [],
+    "supermarkets": [
+      "countdown",
+      "paknsave",
+      "newworld",
+      "asian_grocery"
+    ],
+    "season": []
+  },
+  {
+    "id": "chinese_cabbage",
+    "nameZh": "大白菜",
+    "nameEn": "Chinese Cabbage",
+    "category": "vegetable",
+    "nutrition": {
+      "calories": 16,
+      "protein": 1.2,
+      "fat": 0.2,
+      "carbs": 3.2,
+      "fiber": 1.2,
+      "sodium": 9,
+      "sugar": 1.4
+    },
+    "priceNZD": 4.99,
+    "unit": "piece",
+    "healthTags": [],
+    "supermarkets": [
+      "countdown",
+      "paknsave",
+      "newworld",
+      "asian_grocery"
+    ],
+    "season": []
+  },
+  {
+    "id": "tomato",
+    "nameZh": "番茄",
+    "nameEn": "Tomato",
+    "category": "vegetable",
+    "nutrition": {
+      "calories": 18,
+      "protein": 0.9,
+      "fat": 0.2,
+      "carbs": 3.9,
+      "fiber": 1.2,
+      "sodium": 5,
+      "sugar": 2.6
+    },
+    "priceNZD": 5.99,
+    "unit": "kg",
+    "healthTags": [],
+    "supermarkets": [
+      "countdown",
+      "paknsave",
+      "newworld",
+      "asian_grocery"
+    ],
+    "season": [
+      "1",
+      "2",
+      "3",
+      "12"
+    ]
+  },
+  {
+    "id": "capsicum",
+    "nameZh": "彩椒",
+    "nameEn": "Capsicum / Bell Pepper",
+    "category": "vegetable",
+    "nutrition": {
+      "calories": 31,
+      "protein": 1,
+      "fat": 0.3,
+      "carbs": 6,
+      "fiber": 2.1,
+      "sodium": 4,
+      "sugar": 4.2
+    },
+    "priceNZD": 3.99,
+    "unit": "piece",
+    "healthTags": [],
+    "supermarkets": [
+      "countdown",
+      "paknsave",
+      "newworld",
+      "asian_grocery"
+    ],
+    "season": []
+  },
+  {
+    "id": "carrot",
+    "nameZh": "胡萝卜",
+    "nameEn": "Carrot",
+    "category": "vegetable",
+    "nutrition": {
+      "calories": 41,
+      "protein": 0.9,
+      "fat": 0.2,
+      "carbs": 10,
+      "fiber": 2.8,
+      "sodium": 69,
+      "sugar": 4.7
+    },
+    "priceNZD": 2.99,
+    "unit": "kg",
+    "healthTags": [],
+    "supermarkets": [
+      "countdown",
+      "paknsave",
+      "newworld",
+      "asian_grocery"
+    ],
+    "season": []
+  },
+  {
+    "id": "onion",
+    "nameZh": "洋葱",
+    "nameEn": "Onion",
+    "category": "vegetable",
+    "nutrition": {
+      "calories": 40,
+      "protein": 1.1,
+      "fat": 0.1,
+      "carbs": 9.3,
+      "fiber": 1.7,
+      "sodium": 4,
+      "sugar": 4.2
+    },
+    "priceNZD": 2.99,
+    "unit": "kg",
+    "healthTags": [],
+    "supermarkets": [
+      "countdown",
+      "paknsave",
+      "newworld",
+      "asian_grocery"
+    ],
+    "season": []
+  },
+  {
+    "id": "garlic",
+    "nameZh": "大蒜",
+    "nameEn": "Garlic",
+    "category": "vegetable",
+    "nutrition": {
+      "calories": 149,
+      "protein": 6.4,
+      "fat": 0.5,
+      "carbs": 33,
+      "fiber": 2.1,
+      "sodium": 17,
+      "sugar": 1
+    },
+    "priceNZD": 1.99,
+    "unit": "piece",
+    "healthTags": [],
+    "supermarkets": [
+      "countdown",
+      "paknsave",
+      "newworld",
+      "asian_grocery"
+    ],
+    "season": []
+  },
+  {
+    "id": "ginger",
+    "nameZh": "生姜",
+    "nameEn": "Ginger",
+    "category": "vegetable",
+    "nutrition": {
+      "calories": 80,
+      "protein": 1.8,
+      "fat": 0.8,
+      "carbs": 18,
+      "fiber": 2,
+      "sodium": 13,
+      "sugar": 1.7
+    },
+    "priceNZD": 19.99,
+    "unit": "kg",
+    "healthTags": [],
+    "supermarkets": [
+      "countdown",
+      "paknsave",
+      "newworld",
+      "asian_grocery"
+    ],
+    "season": []
+  },
+  {
+    "id": "spring_onion",
+    "nameZh": "葱",
+    "nameEn": "Spring Onion",
+    "category": "vegetable",
+    "nutrition": {
+      "calories": 32,
+      "protein": 1.8,
+      "fat": 0.2,
+      "carbs": 7.3,
+      "fiber": 2.6,
+      "sodium": 16,
+      "sugar": 2.3
+    },
+    "priceNZD": 2.49,
+    "unit": "bunch",
+    "healthTags": [],
+    "supermarkets": [
+      "countdown",
+      "paknsave",
+      "newworld",
+      "asian_grocery"
+    ],
+    "season": []
+  },
+  {
+    "id": "mushroom",
+    "nameZh": "蘑菇",
+    "nameEn": "Button Mushroom",
+    "category": "vegetable",
+    "nutrition": {
+      "calories": 22,
+      "protein": 3.1,
+      "fat": 0.3,
+      "carbs": 3.3,
+      "fiber": 1,
+      "sodium": 5,
+      "sugar": 2
+    },
+    "priceNZD": 5.99,
+    "unit": "pack",
+    "healthTags": [
+      "high_purine"
+    ],
+    "supermarkets": [
+      "countdown",
+      "paknsave",
+      "newworld",
+      "asian_grocery"
+    ],
+    "season": []
+  },
+  {
+    "id": "spinach",
+    "nameZh": "菠菜",
+    "nameEn": "Spinach",
+    "category": "vegetable",
+    "nutrition": {
+      "calories": 23,
+      "protein": 2.9,
+      "fat": 0.4,
+      "carbs": 3.6,
+      "fiber": 2.2,
+      "sodium": 79,
+      "sugar": 0.4
+    },
+    "priceNZD": 4.99,
+    "unit": "bunch",
+    "healthTags": [
+      "high_purine"
+    ],
+    "supermarkets": [
+      "countdown",
+      "paknsave",
+      "newworld",
+      "asian_grocery"
+    ],
+    "season": []
+  },
+  {
+    "id": "eggplant",
+    "nameZh": "茄子",
+    "nameEn": "Eggplant",
+    "category": "vegetable",
+    "nutrition": {
+      "calories": 25,
+      "protein": 1,
+      "fat": 0.2,
+      "carbs": 6,
+      "fiber": 3,
+      "sodium": 2,
+      "sugar": 3.5
+    },
+    "priceNZD": 4.99,
+    "unit": "piece",
+    "healthTags": [],
+    "supermarkets": [
+      "countdown",
+      "paknsave",
+      "newworld",
+      "asian_grocery"
+    ],
+    "season": [
+      "1",
+      "2",
+      "3",
+      "12"
+    ]
+  },
+  {
+    "id": "cucumber",
+    "nameZh": "黄瓜",
+    "nameEn": "Cucumber",
+    "category": "vegetable",
+    "nutrition": {
+      "calories": 16,
+      "protein": 0.7,
+      "fat": 0.1,
+      "carbs": 3.6,
+      "fiber": 0.5,
+      "sodium": 2,
+      "sugar": 1.7
+    },
+    "priceNZD": 2.99,
+    "unit": "piece",
+    "healthTags": [],
+    "supermarkets": [
+      "countdown",
+      "paknsave",
+      "newworld",
+      "asian_grocery"
+    ],
+    "season": []
+  },
+  {
+    "id": "zucchini",
+    "nameZh": "西葫芦",
+    "nameEn": "Zucchini",
+    "category": "vegetable",
+    "nutrition": {
+      "calories": 17,
+      "protein": 1.2,
+      "fat": 0.3,
+      "carbs": 3.1,
+      "fiber": 1,
+      "sodium": 8,
+      "sugar": 2.5
+    },
+    "priceNZD": 3.49,
+    "unit": "piece",
+    "healthTags": [],
+    "supermarkets": [
+      "countdown",
+      "paknsave",
+      "newworld",
+      "asian_grocery"
+    ],
+    "season": []
+  },
+  {
+    "id": "soy_sauce",
+    "nameZh": "酱油",
+    "nameEn": "Soy Sauce",
+    "category": "seasoning",
+    "nutrition": {
+      "calories": 53,
+      "protein": 8,
+      "fat": 0.1,
+      "carbs": 4.9,
+      "fiber": 0.8,
+      "sodium": 5493,
+      "sugar": 0.4
+    },
+    "priceNZD": 3.99,
+    "unit": "bottle",
+    "healthTags": [
+      "high_sodium",
+      "allergen_soy",
+      "allergen_gluten"
+    ],
+    "supermarkets": [
+      "countdown",
+      "paknsave",
+      "newworld",
+      "asian_grocery"
+    ],
+    "season": []
+  },
+  {
+    "id": "cooking_oil",
+    "nameZh": "食用油",
+    "nameEn": "Cooking Oil",
+    "category": "oil",
+    "nutrition": {
+      "calories": 884,
+      "protein": 0,
+      "fat": 100,
+      "carbs": 0,
+      "fiber": 0,
+      "sodium": 0,
+      "sugar": 0
+    },
+    "priceNZD": 5.99,
+    "unit": "bottle",
+    "healthTags": [
+      "high_fat"
+    ],
+    "supermarkets": [
+      "countdown",
+      "paknsave",
+      "newworld",
+      "asian_grocery"
+    ],
+    "season": []
+  },
+  {
+    "id": "sesame_oil",
+    "nameZh": "麻油",
+    "nameEn": "Sesame Oil",
+    "category": "oil",
+    "nutrition": {
+      "calories": 884,
+      "protein": 0,
+      "fat": 100,
+      "carbs": 0,
+      "fiber": 0,
+      "sodium": 0,
+      "sugar": 0
+    },
+    "priceNZD": 5.99,
+    "unit": "bottle",
+    "healthTags": [
+      "high_fat"
+    ],
+    "supermarkets": [
+      "countdown",
+      "paknsave",
+      "newworld",
+      "asian_grocery"
+    ],
+    "season": []
+  },
+  {
+    "id": "oyster_sauce",
+    "nameZh": "蚝油",
+    "nameEn": "Oyster Sauce",
+    "category": "seasoning",
+    "nutrition": {
+      "calories": 51,
+      "protein": 1.4,
+      "fat": 0.3,
+      "carbs": 11,
+      "fiber": 0,
+      "sodium": 2733,
+      "sugar": 4
+    },
+    "priceNZD": 3.49,
+    "unit": "bottle",
+    "healthTags": [
+      "high_sodium",
+      "allergen_seafood"
+    ],
+    "supermarkets": [
+      "countdown",
+      "paknsave",
+      "newworld",
+      "asian_grocery"
+    ],
+    "season": []
+  },
+  {
+    "id": "sugar",
+    "nameZh": "白糖",
+    "nameEn": "Sugar",
+    "category": "seasoning",
+    "nutrition": {
+      "calories": 387,
+      "protein": 0,
+      "fat": 0,
+      "carbs": 100,
+      "fiber": 0,
+      "sodium": 1,
+      "sugar": 100
+    },
+    "priceNZD": 2.99,
+    "unit": "kg",
+    "healthTags": [
+      "high_sugar",
+      "high_gi"
+    ],
+    "supermarkets": [
+      "countdown",
+      "paknsave",
+      "newworld",
+      "asian_grocery"
+    ],
+    "season": []
+  },
+  {
+    "id": "milk",
+    "nameZh": "牛奶",
+    "nameEn": "Milk",
+    "category": "egg_dairy",
+    "nutrition": {
+      "calories": 42,
+      "protein": 3.4,
+      "fat": 1,
+      "carbs": 5,
+      "fiber": 0,
+      "sodium": 44,
+      "sugar": 5
+    },
+    "priceNZD": 3.69,
+    "unit": "litre",
+    "healthTags": [
+      "allergen_dairy"
+    ],
+    "supermarkets": [
+      "countdown",
+      "paknsave",
+      "newworld",
+      "asian_grocery"
+    ],
+    "season": []
+  },
+  {
+    "id": "cheese",
+    "nameZh": "奶酪",
+    "nameEn": "Cheese",
+    "category": "egg_dairy",
+    "nutrition": {
+      "calories": 402,
+      "protein": 25,
+      "fat": 33,
+      "carbs": 1.3,
+      "fiber": 0,
+      "sodium": 621,
+      "sugar": 0.5
+    },
+    "priceNZD": 9.99,
+    "unit": "pack",
+    "healthTags": [
+      "allergen_dairy",
+      "high_fat",
+      "high_sodium"
+    ],
+    "supermarkets": [
+      "countdown",
+      "paknsave",
+      "newworld",
+      "asian_grocery"
+    ],
+    "season": []
+  },
+  {
+    "id": "bread",
+    "nameZh": "面包",
+    "nameEn": "Bread",
+    "category": "grain",
+    "nutrition": {
+      "calories": 265,
+      "protein": 9,
+      "fat": 3.2,
+      "carbs": 49,
+      "fiber": 2.7,
+      "sodium": 491,
+      "sugar": 5
+    },
+    "priceNZD": 3.49,
+    "unit": "loaf",
+    "healthTags": [
+      "high_gi",
+      "allergen_gluten",
+      "high_sodium"
+    ],
+    "supermarkets": [
+      "countdown",
+      "paknsave",
+      "newworld",
+      "asian_grocery"
+    ],
+    "season": []
+  },
+  {
+    "id": "pasta",
+    "nameZh": "意面",
+    "nameEn": "Pasta",
+    "category": "grain",
+    "nutrition": {
+      "calories": 371,
+      "protein": 13,
+      "fat": 1.5,
+      "carbs": 75,
+      "fiber": 3.2,
+      "sodium": 6,
+      "sugar": 2.7
+    },
+    "priceNZD": 2.49,
+    "unit": "pack",
+    "healthTags": [
+      "high_gi",
+      "allergen_gluten"
+    ],
+    "supermarkets": [
+      "countdown",
+      "paknsave",
+      "newworld",
+      "asian_grocery"
+    ],
+    "season": []
+  },
+  {
+    "id": "sweet_potato",
+    "nameZh": "红薯",
+    "nameEn": "Sweet Potato / Kumara",
+    "category": "vegetable",
+    "nutrition": {
+      "calories": 86,
+      "protein": 1.6,
+      "fat": 0.1,
+      "carbs": 20,
+      "fiber": 3,
+      "sodium": 55,
+      "sugar": 4.2
+    },
+    "priceNZD": 4.99,
+    "unit": "kg",
+    "healthTags": [],
+    "supermarkets": [
+      "countdown",
+      "paknsave",
+      "newworld",
+      "asian_grocery"
+    ],
+    "season": []
+  },
+  {
+    "id": "corn",
+    "nameZh": "玉米",
+    "nameEn": "Corn",
+    "category": "vegetable",
+    "nutrition": {
+      "calories": 86,
+      "protein": 3.2,
+      "fat": 1.2,
+      "carbs": 19,
+      "fiber": 2.7,
+      "sodium": 15,
+      "sugar": 3.2
+    },
+    "priceNZD": 1.99,
+    "unit": "piece",
+    "healthTags": [],
+    "supermarkets": [
+      "countdown",
+      "paknsave",
+      "newworld",
+      "asian_grocery"
+    ],
+    "season": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ]
+  },
+  {
+    "id": "green_bean",
+    "nameZh": "四季豆",
+    "nameEn": "Green Bean",
+    "category": "vegetable",
+    "nutrition": {
+      "calories": 31,
+      "protein": 1.8,
+      "fat": 0.1,
+      "carbs": 7,
+      "fiber": 3.4,
+      "sodium": 6,
+      "sugar": 1.4
+    },
+    "priceNZD": 5.99,
+    "unit": "pack",
+    "healthTags": [],
+    "supermarkets": [
+      "countdown",
+      "paknsave",
+      "newworld",
+      "asian_grocery"
+    ],
+    "season": []
+  },
+  {
+    "id": "celery",
+    "nameZh": "芹菜",
+    "nameEn": "Celery",
+    "category": "vegetable",
+    "nutrition": {
+      "calories": 16,
+      "protein": 0.7,
+      "fat": 0.2,
+      "carbs": 3,
+      "fiber": 1.6,
+      "sodium": 80,
+      "sugar": 1.3
+    },
+    "priceNZD": 3.49,
+    "unit": "bunch",
+    "healthTags": [],
+    "supermarkets": [
+      "countdown",
+      "paknsave",
+      "newworld",
+      "asian_grocery"
+    ],
+    "season": []
+  },
+  {
+    "id": "dried_noodles_rice",
+    "nameZh": "米粉",
+    "nameEn": "Rice Noodles",
+    "category": "grain",
+    "nutrition": {
+      "calories": 360,
+      "protein": 3.4,
+      "fat": 0.6,
+      "carbs": 83,
+      "fiber": 1.6,
+      "sodium": 10,
+      "sugar": 0
+    },
+    "priceNZD": 3.49,
+    "unit": "pack",
+    "healthTags": [
+      "high_gi"
+    ],
+    "supermarkets": [
+      "countdown",
+      "paknsave",
+      "newworld",
+      "asian_grocery"
+    ],
+    "season": []
+  },
+  {
+    "id": "apple",
+    "nameZh": "苹果",
+    "nameEn": "Apple",
+    "category": "fruit",
+    "nutrition": {
+      "calories": 52,
+      "protein": 0.3,
+      "fat": 0.2,
+      "carbs": 14,
+      "fiber": 2.4,
+      "sodium": 1,
+      "sugar": 10
+    },
+    "priceNZD": 4.99,
+    "unit": "kg",
+    "healthTags": [],
+    "supermarkets": [
+      "countdown",
+      "paknsave",
+      "newworld",
+      "asian_grocery"
+    ],
+    "season": [
+      "3",
+      "4",
+      "5"
+    ]
+  },
+  {
+    "id": "banana",
+    "nameZh": "香蕉",
+    "nameEn": "Banana",
+    "category": "fruit",
+    "nutrition": {
+      "calories": 89,
+      "protein": 1.1,
+      "fat": 0.3,
+      "carbs": 23,
+      "fiber": 2.6,
+      "sodium": 1,
+      "sugar": 12
+    },
+    "priceNZD": 3.49,
+    "unit": "kg",
+    "healthTags": [
+      "high_gi"
+    ],
+    "supermarkets": [
+      "countdown",
+      "paknsave",
+      "newworld",
+      "asian_grocery"
+    ],
+    "season": []
+  },
+  {
+    "id": "vinegar",
+    "nameZh": "醋",
+    "nameEn": "Vinegar",
+    "category": "seasoning",
+    "nutrition": {
+      "calories": 18,
+      "protein": 0,
+      "fat": 0,
+      "carbs": 0.6,
+      "fiber": 0,
+      "sodium": 2,
+      "sugar": 0.4
+    },
+    "priceNZD": 2.99,
+    "unit": "bottle",
+    "healthTags": [],
+    "supermarkets": [
+      "countdown",
+      "paknsave",
+      "newworld",
+      "asian_grocery"
+    ],
+    "season": []
+  },
+  {
+    "id": "doubanjiang",
+    "nameZh": "豆瓣酱",
+    "nameEn": "Doubanjiang (Chili Bean Paste)",
+    "category": "seasoning",
+    "nutrition": {
+      "calories": 60,
+      "protein": 4,
+      "fat": 1.5,
+      "carbs": 8,
+      "fiber": 1,
+      "sodium": 4200,
+      "sugar": 2
+    },
+    "priceNZD": 4.99,
+    "unit": "bottle",
+    "healthTags": [
+      "high_sodium",
+      "allergen_soy"
+    ],
+    "supermarkets": [
+      "countdown",
+      "paknsave",
+      "newworld",
+      "asian_grocery"
+    ],
+    "season": []
+  },
+  {
+    "id": "starch",
+    "nameZh": "淀粉",
+    "nameEn": "Cornstarch",
+    "category": "seasoning",
+    "nutrition": {
+      "calories": 381,
+      "protein": 0.3,
+      "fat": 0.1,
+      "carbs": 91,
+      "fiber": 0.9,
+      "sodium": 9,
+      "sugar": 0
+    },
+    "priceNZD": 2.49,
+    "unit": "pack",
+    "healthTags": [
+      "high_gi"
+    ],
+    "supermarkets": [
+      "countdown",
+      "paknsave",
+      "newworld",
+      "asian_grocery"
+    ],
+    "season": []
+  },
+  {
+    "id": "cooking_wine",
+    "nameZh": "料酒",
+    "nameEn": "Shaoxing Cooking Wine",
+    "category": "seasoning",
+    "nutrition": {
+      "calories": 87,
+      "protein": 1.3,
+      "fat": 0,
+      "carbs": 4.9,
+      "fiber": 0,
+      "sodium": 40,
+      "sugar": 2
+    },
+    "priceNZD": 3.99,
+    "unit": "bottle",
+    "healthTags": [],
+    "supermarkets": [
+      "countdown",
+      "paknsave",
+      "newworld",
+      "asian_grocery"
+    ],
+    "season": []
+  },
+  {
+    "id": "bean_sprouts",
+    "nameZh": "豆芽",
+    "nameEn": "Bean Sprouts",
+    "category": "vegetable",
+    "nutrition": {
+      "calories": 31,
+      "protein": 3,
+      "fat": 0.2,
+      "carbs": 5.9,
+      "fiber": 1.8,
+      "sodium": 6,
+      "sugar": 2.1
+    },
+    "priceNZD": 2.49,
+    "unit": "pack",
+    "healthTags": [],
+    "supermarkets": [
+      "countdown",
+      "paknsave",
+      "newworld",
+      "asian_grocery"
+    ],
+    "season": []
+  },
+  {
+    "id": "pork_ribs",
+    "nameZh": "排骨",
+    "nameEn": "Pork Ribs",
+    "category": "meat",
+    "nutrition": {
+      "calories": 250,
+      "protein": 19,
+      "fat": 19,
+      "carbs": 0,
+      "fiber": 0,
+      "sodium": 65,
+      "sugar": 0
+    },
+    "priceNZD": 18.99,
+    "unit": "kg",
+    "healthTags": [],
+    "supermarkets": [
+      "countdown",
+      "paknsave",
+      "newworld",
+      "asian_grocery"
+    ],
+    "season": []
+  },
+  {
+    "id": "chicken_wing",
+    "nameZh": "鸡翅",
+    "nameEn": "Chicken Wings",
+    "category": "meat",
+    "nutrition": {
+      "calories": 203,
+      "protein": 18,
+      "fat": 14,
+      "carbs": 0,
+      "fiber": 0,
+      "sodium": 77,
+      "sugar": 0
+    },
+    "priceNZD": 10.99,
+    "unit": "kg",
+    "healthTags": [],
+    "supermarkets": [
+      "countdown",
+      "paknsave",
+      "newworld",
+      "asian_grocery"
+    ],
+    "season": []
+  },
+  {
+    "id": "pork_loin",
+    "nameZh": "猪里脊",
+    "nameEn": "Pork Loin",
+    "category": "meat",
+    "nutrition": {
+      "calories": 143,
+      "protein": 21,
+      "fat": 6,
+      "carbs": 0,
+      "fiber": 0,
+      "sodium": 53,
+      "sugar": 0
+    },
+    "priceNZD": 15.99,
+    "unit": "kg",
+    "healthTags": [],
+    "supermarkets": [
+      "countdown",
+      "paknsave",
+      "newworld",
+      "asian_grocery"
+    ],
+    "season": []
+  },
+  {
+    "id": "bacon",
+    "nameZh": "培根",
+    "nameEn": "Bacon",
+    "category": "meat",
+    "nutrition": {
+      "calories": 541,
+      "protein": 37,
+      "fat": 42,
+      "carbs": 1,
+      "fiber": 0,
+      "sodium": 1717,
+      "sugar": 0
+    },
+    "priceNZD": 8.99,
+    "unit": "pack",
+    "healthTags": [
+      "high_fat",
+      "high_sodium"
+    ],
+    "supermarkets": [
+      "countdown",
+      "paknsave",
+      "newworld",
+      "asian_grocery"
+    ],
+    "season": []
+  },
+  {
+    "id": "sausage",
+    "nameZh": "香肠/腊肠",
+    "nameEn": "Sausage",
+    "category": "meat",
+    "nutrition": {
+      "calories": 301,
+      "protein": 12,
+      "fat": 27,
+      "carbs": 2,
+      "fiber": 0,
+      "sodium": 900,
+      "sugar": 1
+    },
+    "priceNZD": 9.99,
+    "unit": "pack",
+    "healthTags": [
+      "high_fat",
+      "high_sodium"
+    ],
+    "supermarkets": [
+      "countdown",
+      "paknsave",
+      "newworld",
+      "asian_grocery"
+    ],
+    "season": []
+  },
+  {
+    "id": "squid",
+    "nameZh": "鱿鱼",
+    "nameEn": "Squid",
+    "category": "seafood",
+    "nutrition": {
+      "calories": 92,
+      "protein": 15,
+      "fat": 1.4,
+      "carbs": 3.1,
+      "fiber": 0,
+      "sodium": 44,
+      "sugar": 0
+    },
+    "priceNZD": 22.99,
+    "unit": "kg",
+    "healthTags": [
+      "allergen_seafood",
+      "high_purine"
+    ],
+    "supermarkets": [
+      "countdown",
+      "paknsave",
+      "newworld",
+      "asian_grocery"
+    ],
+    "season": []
+  },
+  {
+    "id": "fish_fillet",
+    "nameZh": "鱼片(白肉鱼)",
+    "nameEn": "White Fish Fillet",
+    "category": "seafood",
+    "nutrition": {
+      "calories": 82,
+      "protein": 18,
+      "fat": 0.7,
+      "carbs": 0,
+      "fiber": 0,
+      "sodium": 78,
+      "sugar": 0
+    },
+    "priceNZD": 25.99,
+    "unit": "kg",
+    "healthTags": [
+      "allergen_seafood"
+    ],
+    "supermarkets": [
+      "countdown",
+      "paknsave",
+      "newworld",
+      "asian_grocery"
+    ],
+    "season": []
+  },
+  {
+    "id": "mussel",
+    "nameZh": "青口贝",
+    "nameEn": "Green Mussel",
+    "category": "seafood",
+    "nutrition": {
+      "calories": 86,
+      "protein": 12,
+      "fat": 2.2,
+      "carbs": 3.7,
+      "fiber": 0,
+      "sodium": 286,
+      "sugar": 0
+    },
+    "priceNZD": 8.99,
+    "unit": "kg",
+    "healthTags": [
+      "allergen_seafood",
+      "high_purine"
+    ],
+    "supermarkets": [
+      "countdown",
+      "paknsave",
+      "newworld",
+      "asian_grocery"
+    ],
+    "season": []
+  },
+  {
+    "id": "white_radish",
+    "nameZh": "白萝卜",
+    "nameEn": "White Radish / Daikon",
+    "category": "vegetable",
+    "nutrition": {
+      "calories": 18,
+      "protein": 0.7,
+      "fat": 0.1,
+      "carbs": 4,
+      "fiber": 1.6,
+      "sodium": 21,
+      "sugar": 2
+    },
+    "priceNZD": 3.99,
+    "unit": "kg",
+    "healthTags": [],
+    "supermarkets": [
+      "countdown",
+      "paknsave",
+      "newworld",
+      "asian_grocery"
+    ],
+    "season": []
+  },
+  {
+    "id": "lettuce",
+    "nameZh": "生菜",
+    "nameEn": "Lettuce",
+    "category": "vegetable",
+    "nutrition": {
+      "calories": 15,
+      "protein": 1.4,
+      "fat": 0.2,
+      "carbs": 2.9,
+      "fiber": 1.3,
+      "sodium": 28,
+      "sugar": 0.8
+    },
+    "priceNZD": 3.49,
+    "unit": "piece",
+    "healthTags": [],
+    "supermarkets": [
+      "countdown",
+      "paknsave",
+      "newworld",
+      "asian_grocery"
+    ],
+    "season": []
+  },
+  {
+    "id": "chili_pepper",
+    "nameZh": "辣椒",
+    "nameEn": "Chili Pepper",
+    "category": "vegetable",
+    "nutrition": {
+      "calories": 40,
+      "protein": 2,
+      "fat": 0.4,
+      "carbs": 8.8,
+      "fiber": 1.5,
+      "sodium": 9,
+      "sugar": 5
+    },
+    "priceNZD": 14.99,
+    "unit": "kg",
+    "healthTags": [],
+    "supermarkets": [
+      "countdown",
+      "paknsave",
+      "newworld",
+      "asian_grocery"
+    ],
+    "season": []
+  },
+  {
+    "id": "pumpkin",
+    "nameZh": "南瓜",
+    "nameEn": "Pumpkin",
+    "category": "vegetable",
+    "nutrition": {
+      "calories": 26,
+      "protein": 1,
+      "fat": 0.1,
+      "carbs": 6.5,
+      "fiber": 0.5,
+      "sodium": 1,
+      "sugar": 2.8
+    },
+    "priceNZD": 3.49,
+    "unit": "kg",
+    "healthTags": [],
+    "supermarkets": [
+      "countdown",
+      "paknsave",
+      "newworld",
+      "asian_grocery"
+    ],
+    "season": []
+  },
+  {
+    "id": "cabbage",
+    "nameZh": "卷心菜/包菜",
+    "nameEn": "Cabbage",
+    "category": "vegetable",
+    "nutrition": {
+      "calories": 25,
+      "protein": 1.3,
+      "fat": 0.1,
+      "carbs": 5.8,
+      "fiber": 2.5,
+      "sodium": 18,
+      "sugar": 3.2
+    },
+    "priceNZD": 3.49,
+    "unit": "piece",
+    "healthTags": [],
+    "supermarkets": [
+      "countdown",
+      "paknsave",
+      "newworld",
+      "asian_grocery"
+    ],
+    "season": []
+  },
+  {
+    "id": "leek",
+    "nameZh": "韭菜",
+    "nameEn": "Chinese Leek / Garlic Chives",
+    "category": "vegetable",
+    "nutrition": {
+      "calories": 30,
+      "protein": 3,
+      "fat": 0.3,
+      "carbs": 4.4,
+      "fiber": 2.6,
+      "sodium": 35,
+      "sugar": 1.5
+    },
+    "priceNZD": 4.99,
+    "unit": "bunch",
+    "healthTags": [],
+    "supermarkets": [
+      "countdown",
+      "paknsave",
+      "newworld",
+      "asian_grocery"
+    ],
+    "season": []
+  },
+  {
+    "id": "snow_pea",
+    "nameZh": "荷兰豆",
+    "nameEn": "Snow Pea",
+    "category": "vegetable",
+    "nutrition": {
+      "calories": 42,
+      "protein": 3,
+      "fat": 0.2,
+      "carbs": 7.5,
+      "fiber": 2.6,
+      "sodium": 4,
+      "sugar": 4
+    },
+    "priceNZD": 5.99,
+    "unit": "pack",
+    "healthTags": [],
+    "supermarkets": [
+      "countdown",
+      "paknsave",
+      "newworld",
+      "asian_grocery"
+    ],
+    "season": []
+  },
+  {
+    "id": "asparagus",
+    "nameZh": "芦笋",
+    "nameEn": "Asparagus",
+    "category": "vegetable",
+    "nutrition": {
+      "calories": 20,
+      "protein": 2.2,
+      "fat": 0.1,
+      "carbs": 3.9,
+      "fiber": 2.1,
+      "sodium": 2,
+      "sugar": 1.9
+    },
+    "priceNZD": 5.99,
+    "unit": "bunch",
+    "healthTags": [],
+    "supermarkets": [
+      "countdown",
+      "paknsave",
+      "newworld",
+      "asian_grocery"
+    ],
+    "season": []
+  },
+  {
+    "id": "lotus_root",
+    "nameZh": "莲藕",
+    "nameEn": "Lotus Root",
+    "category": "vegetable",
+    "nutrition": {
+      "calories": 74,
+      "protein": 2.6,
+      "fat": 0.1,
+      "carbs": 17,
+      "fiber": 4.9,
+      "sodium": 40,
+      "sugar": 0
+    },
+    "priceNZD": 9.99,
+    "unit": "kg",
+    "healthTags": [],
+    "supermarkets": [
+      "countdown",
+      "paknsave",
+      "newworld",
+      "asian_grocery"
+    ],
+    "season": []
+  },
+  {
+    "id": "bitter_melon",
+    "nameZh": "苦瓜",
+    "nameEn": "Bitter Melon",
+    "category": "vegetable",
+    "nutrition": {
+      "calories": 17,
+      "protein": 1,
+      "fat": 0.2,
+      "carbs": 3.7,
+      "fiber": 2.8,
+      "sodium": 5,
+      "sugar": 1
+    },
+    "priceNZD": 6.99,
+    "unit": "kg",
+    "healthTags": [],
+    "supermarkets": [
+      "countdown",
+      "paknsave",
+      "newworld",
+      "asian_grocery"
+    ],
+    "season": []
+  },
+  {
+    "id": "cauliflower",
+    "nameZh": "花菜/菜花",
+    "nameEn": "Cauliflower",
+    "category": "vegetable",
+    "nutrition": {
+      "calories": 25,
+      "protein": 2,
+      "fat": 0.3,
+      "carbs": 5,
+      "fiber": 2,
+      "sodium": 30,
+      "sugar": 2
+    },
+    "priceNZD": 4.49,
+    "unit": "piece",
+    "healthTags": [],
+    "supermarkets": [
+      "countdown",
+      "paknsave",
+      "newworld",
+      "asian_grocery"
+    ],
+    "season": []
+  },
+  {
+    "id": "winter_melon",
+    "nameZh": "冬瓜",
+    "nameEn": "Winter Melon",
+    "category": "vegetable",
+    "nutrition": {
+      "calories": 12,
+      "protein": 0.4,
+      "fat": 0.2,
+      "carbs": 2.6,
+      "fiber": 0.7,
+      "sodium": 111,
+      "sugar": 0
+    },
+    "priceNZD": 3.99,
+    "unit": "kg",
+    "healthTags": [],
+    "supermarkets": [
+      "countdown",
+      "paknsave",
+      "newworld",
+      "asian_grocery"
+    ],
+    "season": []
+  },
+  {
+    "id": "wood_ear",
+    "nameZh": "木耳(干)",
+    "nameEn": "Dried Wood Ear Mushroom",
+    "category": "dried",
+    "nutrition": {
+      "calories": 284,
+      "protein": 10,
+      "fat": 0.5,
+      "carbs": 65,
+      "fiber": 30,
+      "sodium": 35,
+      "sugar": 0
+    },
+    "priceNZD": 6.99,
+    "unit": "pack",
+    "healthTags": [],
+    "supermarkets": [
+      "countdown",
+      "paknsave",
+      "newworld",
+      "asian_grocery"
+    ],
+    "season": []
+  },
+  {
+    "id": "dried_tofu_skin",
+    "nameZh": "腐竹(干)",
+    "nameEn": "Dried Tofu Skin",
+    "category": "dried",
+    "nutrition": {
+      "calories": 459,
+      "protein": 45,
+      "fat": 22,
+      "carbs": 22,
+      "fiber": 1,
+      "sodium": 14,
+      "sugar": 3
+    },
+    "priceNZD": 5.99,
+    "unit": "pack",
+    "healthTags": [
+      "allergen_soy"
+    ],
+    "supermarkets": [
+      "countdown",
+      "paknsave",
+      "newworld",
+      "asian_grocery"
+    ],
+    "season": []
+  },
+  {
+    "id": "dried_shrimp",
+    "nameZh": "虾皮/虾米",
+    "nameEn": "Dried Shrimp",
+    "category": "dried",
+    "nutrition": {
+      "calories": 292,
+      "protein": 56,
+      "fat": 3.7,
+      "carbs": 6.5,
+      "fiber": 0,
+      "sodium": 5057,
+      "sugar": 0
+    },
+    "priceNZD": 7.99,
+    "unit": "pack",
+    "healthTags": [
+      "high_sodium",
+      "allergen_seafood",
+      "high_purine"
+    ],
+    "supermarkets": [
+      "countdown",
+      "paknsave",
+      "newworld",
+      "asian_grocery"
+    ],
+    "season": []
+  },
+  {
+    "id": "dried_mushroom",
+    "nameZh": "香菇(干)",
+    "nameEn": "Dried Shiitake Mushroom",
+    "category": "dried",
+    "nutrition": {
+      "calories": 296,
+      "protein": 10,
+      "fat": 1.3,
+      "carbs": 64,
+      "fiber": 11,
+      "sodium": 13,
+      "sugar": 2
+    },
+    "priceNZD": 8.99,
+    "unit": "pack",
+    "healthTags": [
+      "high_purine"
+    ],
+    "supermarkets": [
+      "countdown",
+      "paknsave",
+      "newworld",
+      "asian_grocery"
+    ],
+    "season": []
+  },
+  {
+    "id": "vermicelli",
+    "nameZh": "粉丝/粉条",
+    "nameEn": "Glass Noodles / Vermicelli",
+    "category": "dried",
+    "nutrition": {
+      "calories": 351,
+      "protein": 0.1,
+      "fat": 0.1,
+      "carbs": 86,
+      "fiber": 0.5,
+      "sodium": 10,
+      "sugar": 0
+    },
+    "priceNZD": 2.99,
+    "unit": "pack",
+    "healthTags": [
+      "high_gi"
+    ],
+    "supermarkets": [
+      "countdown",
+      "paknsave",
+      "newworld",
+      "asian_grocery"
+    ],
+    "season": []
+  },
+  {
+    "id": "dried_tofu",
+    "nameZh": "豆腐干/豆干",
+    "nameEn": "Dried Tofu / Pressed Tofu",
+    "category": "bean",
+    "nutrition": {
+      "calories": 140,
+      "protein": 16,
+      "fat": 8,
+      "carbs": 3,
+      "fiber": 0.5,
+      "sodium": 14,
+      "sugar": 0.7
+    },
+    "priceNZD": 3.99,
+    "unit": "pack",
+    "healthTags": [
+      "allergen_soy"
+    ],
+    "supermarkets": [
+      "countdown",
+      "paknsave",
+      "newworld",
+      "asian_grocery"
+    ],
+    "season": []
+  },
+  {
+    "id": "tofu_puff",
+    "nameZh": "油豆腐",
+    "nameEn": "Fried Tofu Puff",
+    "category": "bean",
+    "nutrition": {
+      "calories": 271,
+      "protein": 17,
+      "fat": 20,
+      "carbs": 5,
+      "fiber": 1,
+      "sodium": 8,
+      "sugar": 1
+    },
+    "priceNZD": 3.49,
+    "unit": "pack",
+    "healthTags": [
+      "allergen_soy",
+      "high_fat"
+    ],
+    "supermarkets": [
+      "countdown",
+      "paknsave",
+      "newworld",
+      "asian_grocery"
+    ],
+    "season": []
+  },
+  {
+    "id": "edamame",
+    "nameZh": "毛豆",
+    "nameEn": "Edamame",
+    "category": "bean",
+    "nutrition": {
+      "calories": 122,
+      "protein": 11,
+      "fat": 5,
+      "carbs": 9,
+      "fiber": 5,
+      "sodium": 6,
+      "sugar": 2
+    },
+    "priceNZD": 4.99,
+    "unit": "pack",
+    "healthTags": [
+      "allergen_soy"
+    ],
+    "supermarkets": [
+      "countdown",
+      "paknsave",
+      "newworld",
+      "asian_grocery"
+    ],
+    "season": []
+  },
+  {
+    "id": "salt",
+    "nameZh": "盐",
+    "nameEn": "Salt",
+    "category": "seasoning",
+    "nutrition": {
+      "calories": 0,
+      "protein": 0,
+      "fat": 0,
+      "carbs": 0,
+      "fiber": 0,
+      "sodium": 38758,
+      "sugar": 0
+    },
+    "priceNZD": 1.49,
+    "unit": "pack",
+    "healthTags": [
+      "high_sodium"
+    ],
+    "supermarkets": [
+      "countdown",
+      "paknsave",
+      "newworld",
+      "asian_grocery"
+    ],
+    "season": []
+  },
+  {
+    "id": "white_pepper",
+    "nameZh": "白胡椒粉",
+    "nameEn": "White Pepper",
+    "category": "seasoning",
+    "nutrition": {
+      "calories": 296,
+      "protein": 10,
+      "fat": 2,
+      "carbs": 64,
+      "fiber": 26,
+      "sodium": 5,
+      "sugar": 0
+    },
+    "priceNZD": 3.99,
+    "unit": "pack",
+    "healthTags": [],
+    "supermarkets": [
+      "countdown",
+      "paknsave",
+      "newworld",
+      "asian_grocery"
+    ],
+    "season": []
+  },
+  {
+    "id": "five_spice",
+    "nameZh": "五香粉",
+    "nameEn": "Five Spice Powder",
+    "category": "seasoning",
+    "nutrition": {
+      "calories": 325,
+      "protein": 6,
+      "fat": 15,
+      "carbs": 47,
+      "fiber": 22,
+      "sodium": 20,
+      "sugar": 0
+    },
+    "priceNZD": 3.49,
+    "unit": "pack",
+    "healthTags": [],
+    "supermarkets": [
+      "countdown",
+      "paknsave",
+      "newworld",
+      "asian_grocery"
+    ],
+    "season": []
+  },
+  {
+    "id": "chili_flakes",
+    "nameZh": "辣椒粉/辣椒面",
+    "nameEn": "Chili Flakes",
+    "category": "seasoning",
+    "nutrition": {
+      "calories": 282,
+      "protein": 12,
+      "fat": 14,
+      "carbs": 30,
+      "fiber": 27,
+      "sodium": 30,
+      "sugar": 10
+    },
+    "priceNZD": 3.99,
+    "unit": "pack",
+    "healthTags": [],
+    "supermarkets": [
+      "countdown",
+      "paknsave",
+      "newworld",
+      "asian_grocery"
+    ],
+    "season": []
+  },
+  {
+    "id": "tomato_paste",
+    "nameZh": "番茄酱",
+    "nameEn": "Tomato Paste / Ketchup",
+    "category": "seasoning",
+    "nutrition": {
+      "calories": 112,
+      "protein": 1.3,
+      "fat": 0.1,
+      "carbs": 26,
+      "fiber": 0.3,
+      "sodium": 907,
+      "sugar": 22
+    },
+    "priceNZD": 3.49,
+    "unit": "bottle",
+    "healthTags": [
+      "high_sodium",
+      "high_sugar"
+    ],
+    "supermarkets": [
+      "countdown",
+      "paknsave",
+      "newworld",
+      "asian_grocery"
+    ],
+    "season": []
+  },
+  {
+    "id": "light_soy",
+    "nameZh": "生抽",
+    "nameEn": "Light Soy Sauce",
+    "category": "seasoning",
+    "nutrition": {
+      "calories": 53,
+      "protein": 8,
+      "fat": 0.1,
+      "carbs": 4.9,
+      "fiber": 0,
+      "sodium": 5637,
+      "sugar": 0
+    },
+    "priceNZD": 4.49,
+    "unit": "bottle",
+    "healthTags": [
+      "high_sodium",
+      "allergen_soy"
+    ],
+    "supermarkets": [
+      "countdown",
+      "paknsave",
+      "newworld",
+      "asian_grocery"
+    ],
+    "season": []
+  },
+  {
+    "id": "dark_soy",
+    "nameZh": "老抽",
+    "nameEn": "Dark Soy Sauce",
+    "category": "seasoning",
+    "nutrition": {
+      "calories": 60,
+      "protein": 5,
+      "fat": 0.1,
+      "carbs": 9,
+      "fiber": 0,
+      "sodium": 5220,
+      "sugar": 5
+    },
+    "priceNZD": 4.49,
+    "unit": "bottle",
+    "healthTags": [
+      "high_sodium",
+      "allergen_soy"
+    ],
+    "supermarkets": [
+      "countdown",
+      "paknsave",
+      "newworld",
+      "asian_grocery"
+    ],
+    "season": []
+  },
+  {
+    "id": "bean_paste",
+    "nameZh": "甜面酱",
+    "nameEn": "Sweet Bean Paste",
+    "category": "seasoning",
+    "nutrition": {
+      "calories": 175,
+      "protein": 5,
+      "fat": 1,
+      "carbs": 37,
+      "fiber": 2,
+      "sodium": 3300,
+      "sugar": 15
+    },
+    "priceNZD": 3.99,
+    "unit": "bottle",
+    "healthTags": [
+      "high_sodium",
+      "allergen_soy"
+    ],
+    "supermarkets": [
+      "countdown",
+      "paknsave",
+      "newworld",
+      "asian_grocery"
+    ],
+    "season": []
+  },
+  {
+    "id": "sichuan_pepper",
+    "nameZh": "花椒",
+    "nameEn": "Sichuan Pepper",
+    "category": "seasoning",
+    "nutrition": {
+      "calories": 264,
+      "protein": 10,
+      "fat": 3,
+      "carbs": 50,
+      "fiber": 18,
+      "sodium": 9,
+      "sugar": 0
+    },
+    "priceNZD": 4.99,
+    "unit": "pack",
+    "healthTags": [],
+    "supermarkets": [
+      "countdown",
+      "paknsave",
+      "newworld",
+      "asian_grocery"
+    ],
+    "season": []
+  },
+  {
+    "id": "star_anise",
+    "nameZh": "八角",
+    "nameEn": "Star Anise",
+    "category": "seasoning",
+    "nutrition": {
+      "calories": 337,
+      "protein": 18,
+      "fat": 16,
+      "carbs": 50,
+      "fiber": 15,
+      "sodium": 16,
+      "sugar": 0
+    },
+    "priceNZD": 3.99,
+    "unit": "pack",
+    "healthTags": [],
+    "supermarkets": [
+      "countdown",
+      "paknsave",
+      "newworld",
+      "asian_grocery"
+    ],
+    "season": []
+  },
+  {
+    "id": "cumin",
+    "nameZh": "孜然",
+    "nameEn": "Cumin",
+    "category": "seasoning",
+    "nutrition": {
+      "calories": 375,
+      "protein": 18,
+      "fat": 22,
+      "carbs": 44,
+      "fiber": 11,
+      "sodium": 168,
+      "sugar": 2
+    },
+    "priceNZD": 3.99,
+    "unit": "pack",
+    "healthTags": [],
+    "supermarkets": [
+      "countdown",
+      "paknsave",
+      "newworld",
+      "asian_grocery"
+    ],
+    "season": []
+  },
+  {
+    "id": "butter",
+    "nameZh": "黄油",
+    "nameEn": "Butter",
+    "category": "egg_dairy",
+    "nutrition": {
+      "calories": 717,
+      "protein": 0.9,
+      "fat": 81,
+      "carbs": 0.1,
+      "fiber": 0,
+      "sodium": 11,
+      "sugar": 0.1
+    },
+    "priceNZD": 5.99,
+    "unit": "pack",
+    "healthTags": [
+      "allergen_dairy",
+      "high_fat"
+    ],
+    "supermarkets": [
+      "countdown",
+      "paknsave",
+      "newworld",
+      "asian_grocery"
+    ],
+    "season": []
+  },
+  {
+    "id": "cream",
+    "nameZh": "淡奶油",
+    "nameEn": "Cream",
+    "category": "egg_dairy",
+    "nutrition": {
+      "calories": 340,
+      "protein": 2,
+      "fat": 36,
+      "carbs": 3,
+      "fiber": 0,
+      "sodium": 34,
+      "sugar": 3
+    },
+    "priceNZD": 5.49,
+    "unit": "pack",
+    "healthTags": [
+      "allergen_dairy",
+      "high_fat"
+    ],
+    "supermarkets": [
+      "countdown",
+      "paknsave",
+      "newworld",
+      "asian_grocery"
+    ],
+    "season": []
+  },
+  {
+    "id": "yogurt",
+    "nameZh": "酸奶",
+    "nameEn": "Yogurt",
+    "category": "egg_dairy",
+    "nutrition": {
+      "calories": 61,
+      "protein": 3.5,
+      "fat": 3.3,
+      "carbs": 4.7,
+      "fiber": 0,
+      "sodium": 46,
+      "sugar": 4.7
+    },
+    "priceNZD": 4.99,
+    "unit": "pack",
+    "healthTags": [
+      "allergen_dairy"
+    ],
+    "supermarkets": [
+      "countdown",
+      "paknsave",
+      "newworld",
+      "asian_grocery"
+    ],
+    "season": []
+  },
+  {
+    "id": "lemon",
+    "nameZh": "柠檬",
+    "nameEn": "Lemon",
+    "category": "fruit",
+    "nutrition": {
+      "calories": 29,
+      "protein": 1.1,
+      "fat": 0.3,
+      "carbs": 9,
+      "fiber": 2.8,
+      "sodium": 2,
+      "sugar": 2.5
+    },
+    "priceNZD": 1.49,
+    "unit": "piece",
+    "healthTags": [],
+    "supermarkets": [
+      "countdown",
+      "paknsave",
+      "newworld",
+      "asian_grocery"
+    ],
+    "season": []
+  },
+  {
+    "id": "orange",
+    "nameZh": "橙子",
+    "nameEn": "Orange",
+    "category": "fruit",
+    "nutrition": {
+      "calories": 47,
+      "protein": 0.9,
+      "fat": 0.1,
+      "carbs": 12,
+      "fiber": 2.4,
+      "sodium": 0,
+      "sugar": 9
+    },
+    "priceNZD": 4.99,
+    "unit": "kg",
+    "healthTags": [],
+    "supermarkets": [
+      "countdown",
+      "paknsave",
+      "newworld",
+      "asian_grocery"
+    ],
+    "season": []
+  },
+  {
+    "id": "kiwi",
+    "nameZh": "猕猴桃",
+    "nameEn": "Kiwifruit",
+    "category": "fruit",
+    "nutrition": {
+      "calories": 61,
+      "protein": 1.1,
+      "fat": 0.5,
+      "carbs": 15,
+      "fiber": 3,
+      "sodium": 3,
+      "sugar": 9
+    },
+    "priceNZD": 4.99,
+    "unit": "kg",
+    "healthTags": [],
+    "supermarkets": [
+      "countdown",
+      "paknsave",
+      "newworld",
+      "asian_grocery"
+    ],
+    "season": []
+  },
+  {
+    "id": "avocado",
+    "nameZh": "牛油果",
+    "nameEn": "Avocado",
+    "category": "fruit",
+    "nutrition": {
+      "calories": 160,
+      "protein": 2,
+      "fat": 15,
+      "carbs": 9,
+      "fiber": 7,
+      "sodium": 7,
+      "sugar": 0.7
+    },
+    "priceNZD": 3.49,
+    "unit": "piece",
+    "healthTags": [
+      "high_fat"
+    ],
+    "supermarkets": [
+      "countdown",
+      "paknsave",
+      "newworld",
+      "asian_grocery"
+    ],
+    "season": []
+  },
+  {
+    "id": "flour",
+    "nameZh": "面粉",
+    "nameEn": "Flour",
+    "category": "grain",
+    "nutrition": {
+      "calories": 364,
+      "protein": 10,
+      "fat": 1,
+      "carbs": 76,
+      "fiber": 2.7,
+      "sodium": 2,
+      "sugar": 0.3
+    },
+    "priceNZD": 2.49,
+    "unit": "kg",
+    "healthTags": [
+      "allergen_gluten",
+      "high_gi"
+    ],
+    "supermarkets": [
+      "countdown",
+      "paknsave",
+      "newworld",
+      "asian_grocery"
+    ],
+    "season": []
+  },
+  {
+    "id": "oats",
+    "nameZh": "燕麦",
+    "nameEn": "Oats",
+    "category": "grain",
+    "nutrition": {
+      "calories": 389,
+      "protein": 17,
+      "fat": 7,
+      "carbs": 66,
+      "fiber": 11,
+      "sodium": 2,
+      "sugar": 1
+    },
+    "priceNZD": 4.99,
+    "unit": "kg",
+    "healthTags": [
+      "allergen_gluten"
+    ],
+    "supermarkets": [
+      "countdown",
+      "paknsave",
+      "newworld",
+      "asian_grocery"
+    ],
+    "season": []
+  },
+  {
+    "id": "wonton_wrapper",
+    "nameZh": "馄饨皮/饺子皮",
+    "nameEn": "Wonton/Dumpling Wrapper",
+    "category": "grain",
+    "nutrition": {
+      "calories": 291,
+      "protein": 8,
+      "fat": 1,
+      "carbs": 60,
+      "fiber": 2,
+      "sodium": 430,
+      "sugar": 1
+    },
+    "priceNZD": 3.49,
+    "unit": "pack",
+    "healthTags": [
+      "allergen_gluten",
+      "high_gi"
+    ],
+    "supermarkets": [
+      "countdown",
+      "paknsave",
+      "newworld",
+      "asian_grocery"
+    ],
+    "season": []
+  },
+  {
+    "id": "pear",
+    "nameZh": "梨",
+    "nameEn": "Pear",
+    "category": "fruit",
+    "nutrition": {
+      "calories": 57,
+      "protein": 0.4,
+      "fat": 0.1,
+      "carbs": 15,
+      "fiber": 3.1,
+      "sodium": 1,
+      "sugar": 10
+    },
+    "priceNZD": 4.99,
+    "unit": "kg",
+    "healthTags": [],
+    "supermarkets": [
+      "countdown",
+      "paknsave",
+      "newworld",
+      "asian_grocery"
+    ],
+    "season": [
+      "3",
+      "4",
+      "5"
+    ]
+  },
+  {
+    "id": "grape",
+    "nameZh": "葡萄",
+    "nameEn": "Grape",
+    "category": "fruit",
+    "nutrition": {
+      "calories": 69,
+      "protein": 0.7,
+      "fat": 0.2,
+      "carbs": 18,
+      "fiber": 0.9,
+      "sodium": 2,
+      "sugar": 16
+    },
+    "priceNZD": 6.99,
+    "unit": "kg",
+    "healthTags": [],
+    "supermarkets": [
+      "countdown",
+      "paknsave",
+      "newworld",
+      "asian_grocery"
+    ],
+    "season": [
+      "2",
+      "3",
+      "4"
+    ]
+  },
+  {
+    "id": "watermelon",
+    "nameZh": "西瓜",
+    "nameEn": "Watermelon",
+    "category": "fruit",
+    "nutrition": {
+      "calories": 30,
+      "protein": 0.6,
+      "fat": 0.2,
+      "carbs": 8,
+      "fiber": 0.4,
+      "sodium": 1,
+      "sugar": 6
+    },
+    "priceNZD": 3.99,
+    "unit": "kg",
+    "healthTags": [],
+    "supermarkets": [
+      "countdown",
+      "paknsave",
+      "newworld",
+      "asian_grocery"
+    ],
+    "season": [
+      "12",
+      "1",
+      "2",
+      "3"
+    ]
+  },
+  {
+    "id": "strawberry",
+    "nameZh": "草莓",
+    "nameEn": "Strawberry",
+    "category": "fruit",
+    "nutrition": {
+      "calories": 32,
+      "protein": 0.7,
+      "fat": 0.3,
+      "carbs": 8,
+      "fiber": 2,
+      "sodium": 1,
+      "sugar": 5
+    },
+    "priceNZD": 5.99,
+    "unit": "pack",
+    "healthTags": [],
+    "supermarkets": [
+      "countdown",
+      "paknsave",
+      "newworld",
+      "asian_grocery"
+    ],
+    "season": [
+      "10",
+      "11",
+      "12",
+      "1"
+    ]
+  },
+  {
+    "id": "blueberry",
+    "nameZh": "蓝莓",
+    "nameEn": "Blueberry",
+    "category": "fruit",
+    "nutrition": {
+      "calories": 57,
+      "protein": 0.7,
+      "fat": 0.3,
+      "carbs": 14,
+      "fiber": 2.4,
+      "sodium": 1,
+      "sugar": 10
+    },
+    "priceNZD": 6.99,
+    "unit": "pack",
+    "healthTags": [],
+    "supermarkets": [
+      "countdown",
+      "paknsave",
+      "newworld",
+      "asian_grocery"
+    ],
+    "season": [
+      "12",
+      "1",
+      "2"
+    ]
+  },
+  {
+    "id": "mango",
+    "nameZh": "芒果",
+    "nameEn": "Mango",
+    "category": "fruit",
+    "nutrition": {
+      "calories": 60,
+      "protein": 0.8,
+      "fat": 0.4,
+      "carbs": 15,
+      "fiber": 1.6,
+      "sodium": 1,
+      "sugar": 14
+    },
+    "priceNZD": 3.49,
+    "unit": "piece",
+    "healthTags": [],
+    "supermarkets": [
+      "countdown",
+      "paknsave",
+      "newworld",
+      "asian_grocery"
+    ],
+    "season": [
+      "11",
+      "12",
+      "1",
+      "2"
+    ]
+  },
+  {
+    "id": "peach",
+    "nameZh": "桃子",
+    "nameEn": "Peach",
+    "category": "fruit",
+    "nutrition": {
+      "calories": 39,
+      "protein": 0.9,
+      "fat": 0.3,
+      "carbs": 10,
+      "fiber": 1.5,
+      "sodium": 0,
+      "sugar": 8
+    },
+    "priceNZD": 5.99,
+    "unit": "kg",
+    "healthTags": [],
+    "supermarkets": [
+      "countdown",
+      "paknsave",
+      "newworld",
+      "asian_grocery"
+    ],
+    "season": [
+      "1",
+      "2",
+      "3"
+    ]
+  },
+  {
+    "id": "plum",
+    "nameZh": "李子",
+    "nameEn": "Plum",
+    "category": "fruit",
+    "nutrition": {
+      "calories": 46,
+      "protein": 0.7,
+      "fat": 0.3,
+      "carbs": 11,
+      "fiber": 1.4,
+      "sodium": 0,
+      "sugar": 10
+    },
+    "priceNZD": 7.99,
+    "unit": "kg",
+    "healthTags": [],
+    "supermarkets": [
+      "countdown",
+      "paknsave",
+      "newworld",
+      "asian_grocery"
+    ],
+    "season": [
+      "1",
+      "2",
+      "3"
+    ]
+  },
+  {
+    "id": "cherry",
+    "nameZh": "樱桃",
+    "nameEn": "Cherry",
+    "category": "fruit",
+    "nutrition": {
+      "calories": 63,
+      "protein": 1.1,
+      "fat": 0.2,
+      "carbs": 16,
+      "fiber": 2.1,
+      "sodium": 0,
+      "sugar": 13
+    },
+    "priceNZD": 14.99,
+    "unit": "kg",
+    "healthTags": [],
+    "supermarkets": [
+      "countdown",
+      "paknsave",
+      "newworld",
+      "asian_grocery"
+    ],
+    "season": [
+      "12",
+      "1",
+      "2"
+    ]
+  },
+  {
+    "id": "mandarin",
+    "nameZh": "桔子/蜜柑",
+    "nameEn": "Mandarin",
+    "category": "fruit",
+    "nutrition": {
+      "calories": 53,
+      "protein": 0.8,
+      "fat": 0.3,
+      "carbs": 13,
+      "fiber": 1.8,
+      "sodium": 2,
+      "sugar": 11
+    },
+    "priceNZD": 4.99,
+    "unit": "kg",
+    "healthTags": [],
+    "supermarkets": [
+      "countdown",
+      "paknsave",
+      "newworld",
+      "asian_grocery"
+    ],
+    "season": [
+      "5",
+      "6",
+      "7",
+      "8"
+    ]
+  },
+  {
+    "id": "dragon_fruit",
+    "nameZh": "火龙果",
+    "nameEn": "Dragon Fruit",
+    "category": "fruit",
+    "nutrition": {
+      "calories": 50,
+      "protein": 1.1,
+      "fat": 0.4,
+      "carbs": 11,
+      "fiber": 3,
+      "sodium": 39,
+      "sugar": 8
+    },
+    "priceNZD": 4.99,
+    "unit": "piece",
+    "healthTags": [],
+    "supermarkets": [
+      "countdown",
+      "paknsave",
+      "newworld",
+      "asian_grocery"
+    ],
+    "season": []
+  },
+  {
+    "id": "cantaloupe",
+    "nameZh": "哈密瓜",
+    "nameEn": "Cantaloupe / Rockmelon",
+    "category": "fruit",
+    "nutrition": {
+      "calories": 34,
+      "protein": 0.8,
+      "fat": 0.2,
+      "carbs": 8,
+      "fiber": 0.9,
+      "sodium": 16,
+      "sugar": 8
+    },
+    "priceNZD": 4.99,
+    "unit": "piece",
+    "healthTags": [],
+    "supermarkets": [
+      "countdown",
+      "paknsave",
+      "newworld",
+      "asian_grocery"
+    ],
+    "season": [
+      "1",
+      "2",
+      "3"
+    ]
+  }
+]

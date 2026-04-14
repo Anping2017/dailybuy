@@ -1,0 +1,6414 @@
+[
+  {
+    "id": "tomato_egg_stirfry",
+    "nameZh": "番茄炒蛋",
+    "nameEn": "Tomato and Egg Stir-fry",
+    "cuisine": "chinese",
+    "regionalCuisine": "homestyle",
+    "flavors": [
+      "sour",
+      "umami"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "easy",
+    "minCookingLevel": "beginner",
+    "prepTime": 5,
+    "cookTime": 8,
+    "servings": 2,
+    "ingredients": [
+      {
+        "ingredientId": "tomato",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "egg",
+        "amount": 3,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 5,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "番茄切块，鸡蛋打散加少许盐搅匀",
+      "锅中热油，倒入蛋液炒至凝固盛出",
+      "锅中再加少许油，放入番茄翻炒出汁",
+      "加入糖和少许酱油调味",
+      "倒回鸡蛋翻炒均匀，撒葱花出锅"
+    ],
+    "tags": [
+      "快手菜",
+      "下饭菜",
+      "经典家常"
+    ]
+  },
+  {
+    "id": "kung_pao_chicken",
+    "nameZh": "宫保鸡丁",
+    "nameEn": "Kung Pao Chicken",
+    "cuisine": "chinese",
+    "regionalCuisine": "sichuan",
+    "flavors": [
+      "spicy",
+      "sweet",
+      "umami"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "medium",
+    "minCookingLevel": "intermediate",
+    "prepTime": 15,
+    "cookTime": 10,
+    "servings": 3,
+    "ingredients": [
+      {
+        "ingredientId": "chicken_breast",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "capsicum",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 30,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "vinegar",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 20,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 10,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "鸡胸肉切丁，加酱油、料酒、淀粉腌制15分钟",
+      "调碗汁：酱油、醋、糖、淀粉、水混合",
+      "锅中热油，放入花椒和干辣椒爆香",
+      "下鸡丁滑炒至变色",
+      "加入葱段、蒜末、姜末翻炒",
+      "倒入碗汁快速翻炒均匀出锅"
+    ],
+    "tags": [
+      "川菜经典",
+      "下饭菜",
+      "辣味"
+    ]
+  },
+  {
+    "id": "mapo_tofu",
+    "nameZh": "麻婆豆腐",
+    "nameEn": "Mapo Tofu",
+    "cuisine": "chinese",
+    "regionalCuisine": "sichuan",
+    "flavors": [
+      "spicy",
+      "umami"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "easy",
+    "minCookingLevel": "basic",
+    "prepTime": 10,
+    "cookTime": 12,
+    "servings": 2,
+    "ingredients": [
+      {
+        "ingredientId": "tofu",
+        "amount": 400,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "pork_mince",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "doubanjiang",
+        "amount": 20,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 15,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "豆腐切小块，焯水沥干备用",
+      "锅中热油，炒香肉末至变色",
+      "加入豆瓣酱炒出红油",
+      "加入蒜末、姜末翻炒",
+      "加适量水烧开，放入豆腐小火煮3分钟",
+      "水淀粉勾芡，撒葱花出锅"
+    ],
+    "tags": [
+      "川菜经典",
+      "下饭菜",
+      "豆腐"
+    ]
+  },
+  {
+    "id": "stir_fried_bok_choy",
+    "nameZh": "清炒小白菜",
+    "nameEn": "Stir-fried Bok Choy",
+    "cuisine": "chinese",
+    "regionalCuisine": "homestyle",
+    "flavors": [
+      "light",
+      "umami"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "easy",
+    "minCookingLevel": "beginner",
+    "prepTime": 5,
+    "cookTime": 3,
+    "servings": 2,
+    "ingredients": [
+      {
+        "ingredientId": "bok_choy",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 10,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "小白菜洗净切段，蒜切片",
+      "锅中热油，爆香蒜片",
+      "大火快炒小白菜至断生",
+      "加盐调味出锅"
+    ],
+    "tags": [
+      "快手菜",
+      "素菜",
+      "清淡"
+    ]
+  },
+  {
+    "id": "braised_pork_belly",
+    "nameZh": "红烧肉",
+    "nameEn": "Braised Pork Belly",
+    "cuisine": "chinese",
+    "regionalCuisine": "homestyle",
+    "flavors": [
+      "sweet",
+      "salty",
+      "umami"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "medium",
+    "minCookingLevel": "intermediate",
+    "prepTime": 10,
+    "cookTime": 60,
+    "servings": 4,
+    "ingredients": [
+      {
+        "ingredientId": "pork_belly",
+        "amount": 500,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 30,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 25,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 20,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 20,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 10,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "五花肉切块，冷水下锅焯水去血沫",
+      "锅中放少许油，加糖小火炒至焦糖色",
+      "放入肉块翻炒上色",
+      "加入料酒、酱油、姜片、葱段",
+      "加入没过肉的热水，大火烧开转小火炖45分钟",
+      "大火收汁至浓稠出锅"
+    ],
+    "tags": [
+      "经典家常",
+      "硬菜",
+      "炖菜"
+    ]
+  },
+  {
+    "id": "egg_fried_rice",
+    "nameZh": "蛋炒饭",
+    "nameEn": "Egg Fried Rice",
+    "cuisine": "chinese",
+    "regionalCuisine": "homestyle",
+    "flavors": [
+      "salty",
+      "umami"
+    ],
+    "mealTypes": [
+      "breakfast",
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "easy",
+    "minCookingLevel": "beginner",
+    "prepTime": 5,
+    "cookTime": 8,
+    "servings": 2,
+    "ingredients": [
+      {
+        "ingredientId": "rice",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "egg",
+        "amount": 2,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 5,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "隔夜米饭打散备用，鸡蛋打散",
+      "锅中热油，倒入蛋液炒散",
+      "加入米饭大火翻炒，使每粒米裹上蛋液",
+      "加入酱油和盐调味",
+      "撒葱花翻炒均匀出锅"
+    ],
+    "tags": [
+      "快手菜",
+      "主食",
+      "早餐"
+    ]
+  },
+  {
+    "id": "sweet_sour_pork",
+    "nameZh": "糖醋里脊",
+    "nameEn": "Sweet and Sour Pork",
+    "cuisine": "chinese",
+    "regionalCuisine": "shandong",
+    "flavors": [
+      "sweet",
+      "sour"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "medium",
+    "minCookingLevel": "intermediate",
+    "prepTime": 20,
+    "cookTime": 15,
+    "servings": 3,
+    "ingredients": [
+      {
+        "ingredientId": "pork_belly",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 40,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "vinegar",
+        "amount": 25,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 30,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "egg",
+        "amount": 1,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 300,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "猪里脊切条，加盐、料酒腌10分钟",
+      "加入蛋液和淀粉拌匀挂糊",
+      "油温六成热时下锅炸至金黄捞出",
+      "复炸一次至酥脆",
+      "锅留底油，加糖、醋、酱油、水烧开",
+      "淀粉勾芡，倒入炸好的里脊翻炒裹匀"
+    ],
+    "tags": [
+      "鲁菜",
+      "酸甜口",
+      "宴客菜"
+    ]
+  },
+  {
+    "id": "steamed_egg",
+    "nameZh": "蒸蛋羹",
+    "nameEn": "Steamed Egg Custard",
+    "cuisine": "chinese",
+    "regionalCuisine": "homestyle",
+    "flavors": [
+      "light",
+      "umami"
+    ],
+    "mealTypes": [
+      "breakfast",
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "easy",
+    "minCookingLevel": "beginner",
+    "prepTime": 5,
+    "cookTime": 12,
+    "servings": 2,
+    "ingredients": [
+      {
+        "ingredientId": "egg",
+        "amount": 3,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 5,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "sesame_oil",
+        "amount": 3,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 5,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "鸡蛋打散，加入1.5倍温水搅匀",
+      "过滤蛋液去泡沫，倒入碗中",
+      "盖保鲜膜，用牙签扎几个孔",
+      "水开后蒸10-12分钟",
+      "淋酱油和香油，撒葱花"
+    ],
+    "tags": [
+      "早餐",
+      "清淡",
+      "蒸菜"
+    ]
+  },
+  {
+    "id": "hot_sour_potato_shreds",
+    "nameZh": "酸辣土豆丝",
+    "nameEn": "Hot and Sour Shredded Potatoes",
+    "cuisine": "chinese",
+    "regionalCuisine": "homestyle",
+    "flavors": [
+      "sour",
+      "spicy"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "easy",
+    "minCookingLevel": "basic",
+    "prepTime": 15,
+    "cookTime": 5,
+    "servings": 2,
+    "ingredients": [
+      {
+        "ingredientId": "potato",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "vinegar",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 15,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "土豆去皮切细丝，泡水去淀粉",
+      "锅中热油，放入干辣椒和蒜片爆香",
+      "大火快炒土豆丝2分钟",
+      "沿锅边烹入醋，加盐调味",
+      "翻炒均匀，撒葱花出锅"
+    ],
+    "tags": [
+      "快手菜",
+      "下饭菜",
+      "酸辣"
+    ]
+  },
+  {
+    "id": "fish_fragrant_eggplant",
+    "nameZh": "鱼香茄子",
+    "nameEn": "Fish-fragrant Eggplant",
+    "cuisine": "chinese",
+    "regionalCuisine": "sichuan",
+    "flavors": [
+      "sweet",
+      "sour",
+      "spicy"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "medium",
+    "minCookingLevel": "intermediate",
+    "prepTime": 10,
+    "cookTime": 15,
+    "servings": 2,
+    "ingredients": [
+      {
+        "ingredientId": "eggplant",
+        "amount": 350,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "pork_mince",
+        "amount": 80,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "doubanjiang",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "vinegar",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 8,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 30,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "茄子切条，加少许盐腌10分钟挤水",
+      "调鱼香汁：酱油、醋、糖、淀粉、水混合",
+      "锅中多油，炸茄子至软捞出",
+      "锅留底油，炒香肉末和豆瓣酱",
+      "加入蒜末、姜末、葱白炒香",
+      "放入茄子，倒入鱼香汁翻炒均匀出锅"
+    ],
+    "tags": [
+      "川菜",
+      "鱼香味",
+      "下饭菜"
+    ]
+  },
+  {
+    "id": "cantonese_steamed_fish",
+    "nameZh": "清蒸鱼",
+    "nameEn": "Cantonese Steamed Fish",
+    "cuisine": "chinese",
+    "regionalCuisine": "cantonese",
+    "flavors": [
+      "light",
+      "umami"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "medium",
+    "minCookingLevel": "intermediate",
+    "prepTime": 10,
+    "cookTime": 12,
+    "servings": 3,
+    "ingredients": [
+      {
+        "ingredientId": "salmon_fillet",
+        "amount": 400,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 20,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 30,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 20,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 10,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "鱼身抹料酒和姜丝腌5分钟",
+      "盘中铺姜片，放上鱼",
+      "水开后大火蒸8-10分钟",
+      "倒掉蒸出的汤汁，铺上葱丝",
+      "淋上热酱油，泼上热油激香"
+    ],
+    "tags": [
+      "粤菜",
+      "蒸菜",
+      "清淡"
+    ]
+  },
+  {
+    "id": "twice_cooked_pork",
+    "nameZh": "回锅肉",
+    "nameEn": "Twice-cooked Pork",
+    "cuisine": "chinese",
+    "regionalCuisine": "sichuan",
+    "flavors": [
+      "spicy",
+      "salty",
+      "umami"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "medium",
+    "minCookingLevel": "intermediate",
+    "prepTime": 15,
+    "cookTime": 15,
+    "servings": 3,
+    "ingredients": [
+      {
+        "ingredientId": "pork_belly",
+        "amount": 400,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "capsicum",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "doubanjiang",
+        "amount": 20,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 20,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 10,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "五花肉整块冷水煮20分钟至熟，捞出放凉切薄片",
+      "青椒切菱形片",
+      "锅中少许油，放入肉片煸炒至卷曲出油",
+      "加入豆瓣酱炒出红油",
+      "下青椒、蒜片、葱段翻炒",
+      "加酱油调味，翻炒均匀出锅"
+    ],
+    "tags": [
+      "川菜经典",
+      "下饭菜",
+      "炒菜"
+    ]
+  },
+  {
+    "id": "scrambled_eggs_chives",
+    "nameZh": "韭菜炒蛋",
+    "nameEn": "Scrambled Eggs with Chives",
+    "cuisine": "chinese",
+    "regionalCuisine": "homestyle",
+    "flavors": [
+      "umami",
+      "light"
+    ],
+    "mealTypes": [
+      "breakfast",
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "easy",
+    "minCookingLevel": "beginner",
+    "prepTime": 5,
+    "cookTime": 5,
+    "servings": 2,
+    "ingredients": [
+      {
+        "ingredientId": "egg",
+        "amount": 4,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 15,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "韭菜洗净切段，鸡蛋打散",
+      "锅中热油，倒入蛋液炒至半凝固",
+      "加入韭菜大火快炒",
+      "加盐调味，翻炒均匀即可出锅"
+    ],
+    "tags": [
+      "快手菜",
+      "早餐",
+      "家常"
+    ]
+  },
+  {
+    "id": "braised_eggplant",
+    "nameZh": "烧茄子",
+    "nameEn": "Braised Eggplant",
+    "cuisine": "chinese",
+    "regionalCuisine": "shandong",
+    "flavors": [
+      "salty",
+      "umami"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "easy",
+    "minCookingLevel": "basic",
+    "prepTime": 10,
+    "cookTime": 15,
+    "servings": 2,
+    "ingredients": [
+      {
+        "ingredientId": "eggplant",
+        "amount": 400,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 30,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "茄子切滚刀块",
+      "锅中多油，将茄子炸至软捞出",
+      "锅留底油，放蒜末炒香",
+      "加酱油、糖和少许水烧开",
+      "放入茄子翻炒，淀粉勾芡出锅"
+    ],
+    "tags": [
+      "鲁菜",
+      "下饭菜",
+      "茄子"
+    ]
+  },
+  {
+    "id": "garlic_broccoli",
+    "nameZh": "蒜蓉西兰花",
+    "nameEn": "Garlic Broccoli",
+    "cuisine": "chinese",
+    "regionalCuisine": "cantonese",
+    "flavors": [
+      "light",
+      "umami"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "easy",
+    "minCookingLevel": "beginner",
+    "prepTime": 5,
+    "cookTime": 5,
+    "servings": 2,
+    "ingredients": [
+      {
+        "ingredientId": "broccoli",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "oyster_sauce",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 10,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "西兰花切小朵，焯水1分钟捞出",
+      "锅中热油，爆香蒜末",
+      "放入西兰花大火翻炒",
+      "加蚝油和少许盐调味出锅"
+    ],
+    "tags": [
+      "快手菜",
+      "素菜",
+      "清淡"
+    ]
+  },
+  {
+    "id": "congee_plain",
+    "nameZh": "白粥",
+    "nameEn": "Plain Congee",
+    "cuisine": "chinese",
+    "regionalCuisine": "cantonese",
+    "flavors": [
+      "light"
+    ],
+    "mealTypes": [
+      "breakfast"
+    ],
+    "difficulty": "easy",
+    "minCookingLevel": "beginner",
+    "prepTime": 5,
+    "cookTime": 40,
+    "servings": 3,
+    "ingredients": [
+      {
+        "ingredientId": "rice",
+        "amount": 150,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "大米淘洗干净，加入8倍水",
+      "大火烧开后转小火",
+      "搅拌几次防止粘底",
+      "小火熬煮35-40分钟至粥稠即可"
+    ],
+    "tags": [
+      "早餐",
+      "粥类",
+      "清淡"
+    ]
+  },
+  {
+    "id": "spinach_egg_soup",
+    "nameZh": "菠菜鸡蛋汤",
+    "nameEn": "Spinach Egg Drop Soup",
+    "cuisine": "chinese",
+    "regionalCuisine": "homestyle",
+    "flavors": [
+      "light",
+      "umami"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "easy",
+    "minCookingLevel": "beginner",
+    "prepTime": 5,
+    "cookTime": 8,
+    "servings": 2,
+    "ingredients": [
+      {
+        "ingredientId": "spinach",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "egg",
+        "amount": 2,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "sesame_oil",
+        "amount": 3,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "菠菜洗净切段，鸡蛋打散",
+      "锅中水烧开，放入菠菜煮1分钟",
+      "淋入蛋液，用筷子轻轻搅散",
+      "加盐调味，滴几滴香油出锅"
+    ],
+    "tags": [
+      "汤类",
+      "快手菜",
+      "清淡"
+    ]
+  },
+  {
+    "id": "stir_fried_shrimp",
+    "nameZh": "白灼虾",
+    "nameEn": "Poached Shrimp",
+    "cuisine": "chinese",
+    "regionalCuisine": "cantonese",
+    "flavors": [
+      "light",
+      "umami"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "easy",
+    "minCookingLevel": "beginner",
+    "prepTime": 5,
+    "cookTime": 5,
+    "servings": 2,
+    "ingredients": [
+      {
+        "ingredientId": "shrimp",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 10,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "虾去虾线洗净",
+      "锅中水烧开，放入姜片、葱段和料酒",
+      "下虾煮至变红弯曲，约2分钟",
+      "捞出装盘，蘸酱油食用"
+    ],
+    "tags": [
+      "粤菜",
+      "清淡",
+      "海鲜"
+    ]
+  },
+  {
+    "id": "dongbei_braised_beans",
+    "nameZh": "东北炖豆角",
+    "nameEn": "Dongbei Braised Green Beans",
+    "cuisine": "chinese",
+    "regionalCuisine": "dongbei",
+    "flavors": [
+      "salty",
+      "umami"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "easy",
+    "minCookingLevel": "basic",
+    "prepTime": 10,
+    "cookTime": 20,
+    "servings": 3,
+    "ingredients": [
+      {
+        "ingredientId": "green_bean",
+        "amount": 400,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "pork_belly",
+        "amount": 150,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 10,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "豆角掰段，五花肉切片",
+      "锅中热油，煸炒五花肉出油",
+      "加入蒜末炒香，放入豆角翻炒",
+      "加酱油、盐和适量水",
+      "盖盖炖15分钟至豆角软烂即可"
+    ],
+    "tags": [
+      "东北菜",
+      "炖菜",
+      "家常"
+    ]
+  },
+  {
+    "id": "cucumber_smashed_salad",
+    "nameZh": "拍黄瓜",
+    "nameEn": "Smashed Cucumber Salad",
+    "cuisine": "chinese",
+    "regionalCuisine": "homestyle",
+    "flavors": [
+      "sour",
+      "light"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "easy",
+    "minCookingLevel": "beginner",
+    "prepTime": 10,
+    "cookTime": 0,
+    "servings": 2,
+    "ingredients": [
+      {
+        "ingredientId": "cucumber",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "vinegar",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "sesame_oil",
+        "amount": 5,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 5,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "黄瓜拍碎切段",
+      "蒜切末",
+      "加入醋、酱油、香油、盐拌匀",
+      "冷藏10分钟后食用更佳"
+    ],
+    "tags": [
+      "凉菜",
+      "快手菜",
+      "夏季"
+    ]
+  },
+  {
+    "id": "pork_stir_fry_capsicum",
+    "nameZh": "青椒炒肉丝",
+    "nameEn": "Stir-fried Pork with Capsicum",
+    "cuisine": "chinese",
+    "regionalCuisine": "hunan",
+    "flavors": [
+      "spicy",
+      "salty"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "easy",
+    "minCookingLevel": "basic",
+    "prepTime": 10,
+    "cookTime": 8,
+    "servings": 2,
+    "ingredients": [
+      {
+        "ingredientId": "pork_belly",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "capsicum",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 5,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 15,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "猪肉切丝，加酱油、料酒、淀粉腌10分钟",
+      "青椒切丝，蒜切片",
+      "锅中热油，滑炒肉丝至变色盛出",
+      "锅中再加油，炒青椒至断生",
+      "倒回肉丝，加盐翻炒均匀出锅"
+    ],
+    "tags": [
+      "湘菜",
+      "下饭菜",
+      "炒菜"
+    ]
+  },
+  {
+    "id": "fried_tofu_soy",
+    "nameZh": "家常豆腐",
+    "nameEn": "Home-style Braised Tofu",
+    "cuisine": "chinese",
+    "regionalCuisine": "homestyle",
+    "flavors": [
+      "salty",
+      "umami"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "easy",
+    "minCookingLevel": "basic",
+    "prepTime": 10,
+    "cookTime": 12,
+    "servings": 2,
+    "ingredients": [
+      {
+        "ingredientId": "tofu",
+        "amount": 400,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "capsicum",
+        "amount": 50,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "carrot",
+        "amount": 50,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "oyster_sauce",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 20,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "豆腐切三角块，青椒和胡萝卜切片",
+      "锅中热油，将豆腐煎至两面金黄",
+      "放入蒜末、胡萝卜翻炒",
+      "加酱油、蚝油和少许水焖煮3分钟",
+      "加入青椒，淀粉勾芡出锅"
+    ],
+    "tags": [
+      "家常菜",
+      "豆腐",
+      "下饭菜"
+    ]
+  },
+  {
+    "id": "sichuan_boiled_fish",
+    "nameZh": "水煮鱼",
+    "nameEn": "Sichuan Boiled Fish",
+    "cuisine": "chinese",
+    "regionalCuisine": "sichuan",
+    "flavors": [
+      "spicy",
+      "umami"
+    ],
+    "mealTypes": [
+      "dinner"
+    ],
+    "difficulty": "hard",
+    "minCookingLevel": "advanced",
+    "prepTime": 20,
+    "cookTime": 20,
+    "servings": 4,
+    "ingredients": [
+      {
+        "ingredientId": "salmon_fillet",
+        "amount": 500,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "bok_choy",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "doubanjiang",
+        "amount": 30,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 20,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 20,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "egg",
+        "amount": 1,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 50,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "鱼肉切薄片，加蛋清、淀粉、料酒腌15分钟",
+      "青菜焯水铺在碗底",
+      "锅中热油，炒香豆瓣酱、蒜末、姜片",
+      "加水烧开，放入鱼片煮至变白",
+      "鱼片铺在青菜上，浇上汤汁",
+      "另起锅烧热油，泼在蒜末和花椒上",
+      "撒葱花出锅"
+    ],
+    "tags": [
+      "川菜",
+      "硬菜",
+      "辣味"
+    ]
+  },
+  {
+    "id": "stir_fried_cabbage",
+    "nameZh": "手撕包菜",
+    "nameEn": "Stir-fried Chinese Cabbage",
+    "cuisine": "chinese",
+    "regionalCuisine": "hunan",
+    "flavors": [
+      "spicy",
+      "salty"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "easy",
+    "minCookingLevel": "beginner",
+    "prepTime": 5,
+    "cookTime": 5,
+    "servings": 2,
+    "ingredients": [
+      {
+        "ingredientId": "chinese_cabbage",
+        "amount": 400,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "vinegar",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 5,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 15,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "包菜手撕成小块，蒜切片",
+      "锅中热油，放入干辣椒和蒜片爆香",
+      "大火快炒包菜至断生",
+      "加醋、酱油、盐翻炒均匀出锅"
+    ],
+    "tags": [
+      "湘菜",
+      "快手菜",
+      "下饭菜"
+    ]
+  },
+  {
+    "id": "egg_drop_soup",
+    "nameZh": "紫菜蛋花汤",
+    "nameEn": "Seaweed Egg Drop Soup",
+    "cuisine": "chinese",
+    "regionalCuisine": "homestyle",
+    "flavors": [
+      "light",
+      "umami"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "easy",
+    "minCookingLevel": "beginner",
+    "prepTime": 3,
+    "cookTime": 5,
+    "servings": 2,
+    "ingredients": [
+      {
+        "ingredientId": "egg",
+        "amount": 2,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sesame_oil",
+        "amount": 3,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "鸡蛋打散备用",
+      "锅中水烧开",
+      "淋入蛋液，用筷子搅出蛋花",
+      "加盐调味，滴香油撒葱花出锅"
+    ],
+    "tags": [
+      "汤类",
+      "快手菜",
+      "清淡"
+    ]
+  },
+  {
+    "id": "dongbei_disanxian",
+    "nameZh": "地三鲜",
+    "nameEn": "Dongbei Tri-fresh Stir-fry",
+    "cuisine": "chinese",
+    "regionalCuisine": "dongbei",
+    "flavors": [
+      "salty",
+      "umami"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "medium",
+    "minCookingLevel": "intermediate",
+    "prepTime": 15,
+    "cookTime": 15,
+    "servings": 3,
+    "ingredients": [
+      {
+        "ingredientId": "potato",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "eggplant",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "capsicum",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 40,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "土豆切滚刀块，茄子切块，青椒切块",
+      "分别将土豆和茄子过油炸至金黄捞出",
+      "锅留底油，爆香蒜末",
+      "加酱油和水烧开",
+      "放入炸好的土豆和茄子翻炒",
+      "加入青椒，淀粉勾芡出锅"
+    ],
+    "tags": [
+      "东北菜",
+      "经典",
+      "下饭菜"
+    ]
+  },
+  {
+    "id": "sweet_potato_congee",
+    "nameZh": "红薯粥",
+    "nameEn": "Sweet Potato Congee",
+    "cuisine": "chinese",
+    "regionalCuisine": "homestyle",
+    "flavors": [
+      "sweet",
+      "light"
+    ],
+    "mealTypes": [
+      "breakfast"
+    ],
+    "difficulty": "easy",
+    "minCookingLevel": "beginner",
+    "prepTime": 10,
+    "cookTime": 40,
+    "servings": 3,
+    "ingredients": [
+      {
+        "ingredientId": "rice",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sweet_potato",
+        "amount": 200,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "红薯去皮切小块，大米淘洗",
+      "锅中加水烧开，放入大米",
+      "煮10分钟后加入红薯块",
+      "小火熬煮30分钟至粥稠红薯软烂"
+    ],
+    "tags": [
+      "早餐",
+      "粥类",
+      "清淡"
+    ]
+  },
+  {
+    "id": "stir_fried_noodles",
+    "nameZh": "家常炒面",
+    "nameEn": "Stir-fried Noodles",
+    "cuisine": "chinese",
+    "regionalCuisine": "homestyle",
+    "flavors": [
+      "salty",
+      "umami"
+    ],
+    "mealTypes": [
+      "breakfast",
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "easy",
+    "minCookingLevel": "basic",
+    "prepTime": 10,
+    "cookTime": 10,
+    "servings": 2,
+    "ingredients": [
+      {
+        "ingredientId": "noodles_dried",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "egg",
+        "amount": 2,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "chinese_cabbage",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "carrot",
+        "amount": 50,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 15,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "面条煮至八成熟捞出过凉水",
+      "蔬菜切丝，鸡蛋打散炒熟盛出",
+      "锅中热油，放入蔬菜翻炒",
+      "加入面条和酱油大火翻炒",
+      "倒回鸡蛋翻炒均匀出锅"
+    ],
+    "tags": [
+      "主食",
+      "快手菜",
+      "面食"
+    ]
+  },
+  {
+    "id": "cola_chicken_wings",
+    "nameZh": "可乐鸡翅",
+    "nameEn": "Cola Chicken Wings",
+    "cuisine": "chinese",
+    "regionalCuisine": "homestyle",
+    "flavors": [
+      "sweet",
+      "salty"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "easy",
+    "minCookingLevel": "basic",
+    "prepTime": 10,
+    "cookTime": 25,
+    "servings": 3,
+    "ingredients": [
+      {
+        "ingredientId": "chicken_thigh",
+        "amount": 500,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 20,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 10,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "鸡翅两面划刀，冷水焯水去腥",
+      "锅中热油，放入鸡翅煎至两面金黄",
+      "加入姜片、料酒和酱油翻炒",
+      "倒入可乐没过鸡翅",
+      "大火烧开转小火炖20分钟",
+      "大火收汁至浓稠出锅"
+    ],
+    "tags": [
+      "家常菜",
+      "简单",
+      "甜味"
+    ]
+  },
+  {
+    "id": "shandong_scallion_pancake",
+    "nameZh": "葱油饼",
+    "nameEn": "Scallion Pancake",
+    "cuisine": "chinese",
+    "regionalCuisine": "shandong",
+    "flavors": [
+      "salty",
+      "umami"
+    ],
+    "mealTypes": [
+      "breakfast"
+    ],
+    "difficulty": "medium",
+    "minCookingLevel": "intermediate",
+    "prepTime": 30,
+    "cookTime": 10,
+    "servings": 3,
+    "ingredients": [
+      {
+        "ingredientId": "bread",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 50,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 30,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "面粉加温水和成软面团，醒20分钟",
+      "擀成薄片，刷油撒盐和葱花",
+      "卷成长条再盘成圆饼",
+      "擀成薄饼",
+      "平底锅少油，煎至两面金黄"
+    ],
+    "tags": [
+      "早餐",
+      "面食",
+      "鲁菜"
+    ]
+  },
+  {
+    "id": "tomato_beef_stew",
+    "nameZh": "番茄炖牛腩",
+    "nameEn": "Tomato Beef Stew",
+    "cuisine": "chinese",
+    "regionalCuisine": "homestyle",
+    "flavors": [
+      "sour",
+      "umami"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "hard",
+    "minCookingLevel": "advanced",
+    "prepTime": 15,
+    "cookTime": 90,
+    "servings": 4,
+    "ingredients": [
+      {
+        "ingredientId": "beef_sirloin",
+        "amount": 500,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "tomato",
+        "amount": 400,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "onion",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "carrot",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 15,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "牛腩切块，冷水焯水去血沫",
+      "番茄切块，洋葱和胡萝卜切块",
+      "锅中热油，炒香洋葱和姜片",
+      "放入番茄炒出汁",
+      "加入牛腩和料酒，加没过食材的水",
+      "大火烧开转小火炖1.5小时",
+      "加入胡萝卜继续炖20分钟，加盐调味"
+    ],
+    "tags": [
+      "炖菜",
+      "硬菜",
+      "番茄"
+    ]
+  },
+  {
+    "id": "mushroom_chicken",
+    "nameZh": "蘑菇炒鸡",
+    "nameEn": "Mushroom Chicken Stir-fry",
+    "cuisine": "chinese",
+    "regionalCuisine": "homestyle",
+    "flavors": [
+      "umami",
+      "salty"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "easy",
+    "minCookingLevel": "basic",
+    "prepTime": 10,
+    "cookTime": 15,
+    "servings": 2,
+    "ingredients": [
+      {
+        "ingredientId": "chicken_thigh",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "mushroom",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "oyster_sauce",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 15,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "鸡腿肉切块，蘑菇切片",
+      "锅中热油，放入鸡块煎至两面金黄",
+      "加入蒜末、姜片炒香",
+      "放入蘑菇翻炒出水",
+      "加酱油、蚝油和少许水焖煮5分钟",
+      "大火收汁出锅"
+    ],
+    "tags": [
+      "家常菜",
+      "下饭菜",
+      "蘑菇"
+    ]
+  },
+  {
+    "id": "oyster_sauce_lettuce",
+    "nameZh": "蚝油生菜",
+    "nameEn": "Lettuce with Oyster Sauce",
+    "cuisine": "chinese",
+    "regionalCuisine": "cantonese",
+    "flavors": [
+      "umami",
+      "light"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "easy",
+    "minCookingLevel": "beginner",
+    "prepTime": 5,
+    "cookTime": 3,
+    "servings": 2,
+    "ingredients": [
+      {
+        "ingredientId": "bok_choy",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "oyster_sauce",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 10,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "生菜洗净，焯水30秒捞出摆盘",
+      "锅中热油，爆香蒜末",
+      "加入蚝油和少许水烧开",
+      "将蚝油汁淋在生菜上即可"
+    ],
+    "tags": [
+      "粤菜",
+      "素菜",
+      "快手菜"
+    ]
+  },
+  {
+    "id": "hunan_steamed_fish_head",
+    "nameZh": "剁椒鱼头",
+    "nameEn": "Hunan Steamed Fish Head with Chili",
+    "cuisine": "chinese",
+    "regionalCuisine": "hunan",
+    "flavors": [
+      "spicy",
+      "umami"
+    ],
+    "mealTypes": [
+      "dinner"
+    ],
+    "difficulty": "hard",
+    "minCookingLevel": "advanced",
+    "prepTime": 15,
+    "cookTime": 15,
+    "servings": 4,
+    "ingredients": [
+      {
+        "ingredientId": "salmon_fillet",
+        "amount": 600,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "doubanjiang",
+        "amount": 40,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 20,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 10,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "鱼头洗净，抹盐和料酒腌10分钟",
+      "盘中铺姜片，放上鱼头",
+      "将剁椒均匀铺在鱼头上",
+      "撒上蒜末，大火蒸12分钟",
+      "出锅撒葱花，泼上热油激香"
+    ],
+    "tags": [
+      "湘菜",
+      "蒸菜",
+      "硬菜"
+    ]
+  },
+  {
+    "id": "carrot_corn_rib_soup",
+    "nameZh": "玉米胡萝卜排骨汤",
+    "nameEn": "Corn and Carrot Pork Rib Soup",
+    "cuisine": "chinese",
+    "regionalCuisine": "cantonese",
+    "flavors": [
+      "sweet",
+      "light"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "medium",
+    "minCookingLevel": "basic",
+    "prepTime": 10,
+    "cookTime": 60,
+    "servings": 4,
+    "ingredients": [
+      {
+        "ingredientId": "pork_belly",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "corn",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "carrot",
+        "amount": 150,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 10,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "排骨冷水焯水去血沫",
+      "玉米切段，胡萝卜切块",
+      "砂锅中加水，放入排骨和姜片",
+      "大火烧开转小火炖40分钟",
+      "加入玉米和胡萝卜继续炖20分钟",
+      "加盐调味出锅"
+    ],
+    "tags": [
+      "粤菜",
+      "汤类",
+      "营养"
+    ]
+  },
+  {
+    "id": "garlic_shrimp",
+    "nameZh": "蒜蓉大虾",
+    "nameEn": "Garlic Shrimp",
+    "cuisine": "chinese",
+    "regionalCuisine": "cantonese",
+    "flavors": [
+      "umami",
+      "salty"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "easy",
+    "minCookingLevel": "basic",
+    "prepTime": 10,
+    "cookTime": 8,
+    "servings": 2,
+    "ingredients": [
+      {
+        "ingredientId": "shrimp",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 20,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 5,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 15,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "虾去虾线开背洗净",
+      "锅中热油，放入蒜末炒香",
+      "下虾翻炒至变色",
+      "加料酒、酱油和盐调味",
+      "翻炒均匀出锅"
+    ],
+    "tags": [
+      "粤菜",
+      "海鲜",
+      "快手菜"
+    ]
+  },
+  {
+    "id": "scrambled_egg_tomato_noodle",
+    "nameZh": "番茄鸡蛋面",
+    "nameEn": "Tomato Egg Noodle Soup",
+    "cuisine": "chinese",
+    "regionalCuisine": "homestyle",
+    "flavors": [
+      "sour",
+      "umami"
+    ],
+    "mealTypes": [
+      "breakfast",
+      "lunch"
+    ],
+    "difficulty": "easy",
+    "minCookingLevel": "beginner",
+    "prepTime": 5,
+    "cookTime": 15,
+    "servings": 2,
+    "ingredients": [
+      {
+        "ingredientId": "noodles_dried",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "tomato",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "egg",
+        "amount": 2,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 10,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "番茄切块，鸡蛋炒散盛出",
+      "锅中热油，炒番茄至出汁",
+      "加水烧开，放入面条煮熟",
+      "倒回鸡蛋，加盐调味",
+      "撒葱花出锅"
+    ],
+    "tags": [
+      "早餐",
+      "面食",
+      "主食"
+    ]
+  },
+  {
+    "id": "jiangsu_lion_head",
+    "nameZh": "红烧狮子头",
+    "nameEn": "Braised Lion's Head Meatball",
+    "cuisine": "chinese",
+    "regionalCuisine": "jiangsu",
+    "flavors": [
+      "umami",
+      "salty"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "hard",
+    "minCookingLevel": "advanced",
+    "prepTime": 20,
+    "cookTime": 40,
+    "servings": 4,
+    "ingredients": [
+      {
+        "ingredientId": "pork_mince",
+        "amount": 400,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "egg",
+        "amount": 1,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 20,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "chinese_cabbage",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 20,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "肉末加蛋液、淀粉、姜末、葱末、盐搅拌上劲",
+      "搓成大肉丸子（约4个）",
+      "锅中热油，将肉丸煎至表面金黄",
+      "加酱油、料酒和水没过肉丸",
+      "大火烧开转小火炖30分钟",
+      "放入白菜铺在周围，继续炖10分钟",
+      "调味出锅"
+    ],
+    "tags": [
+      "苏菜",
+      "炖菜",
+      "宴客菜"
+    ]
+  },
+  {
+    "id": "celery_tofu_stir_fry",
+    "nameZh": "芹菜炒豆干",
+    "nameEn": "Celery Tofu Stir-fry",
+    "cuisine": "chinese",
+    "regionalCuisine": "homestyle",
+    "flavors": [
+      "light",
+      "salty"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "easy",
+    "minCookingLevel": "beginner",
+    "prepTime": 10,
+    "cookTime": 5,
+    "servings": 2,
+    "ingredients": [
+      {
+        "ingredientId": "celery",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "tofu",
+        "amount": 150,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 10,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "芹菜切段，豆干切条",
+      "锅中热油，放蒜片炒香",
+      "放入豆干翻炒1分钟",
+      "加入芹菜大火快炒",
+      "加酱油和盐调味出锅"
+    ],
+    "tags": [
+      "素菜",
+      "快手菜",
+      "清淡"
+    ]
+  },
+  {
+    "id": "sichuan_dry_fried_beans",
+    "nameZh": "干煸四季豆",
+    "nameEn": "Sichuan Dry-fried Green Beans",
+    "cuisine": "chinese",
+    "regionalCuisine": "sichuan",
+    "flavors": [
+      "spicy",
+      "salty",
+      "umami"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "medium",
+    "minCookingLevel": "intermediate",
+    "prepTime": 10,
+    "cookTime": 12,
+    "servings": 2,
+    "ingredients": [
+      {
+        "ingredientId": "green_bean",
+        "amount": 400,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "pork_mince",
+        "amount": 80,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 30,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "四季豆掰段，过油炸至表皮起皱捞出",
+      "锅留底油，炒香肉末",
+      "加入蒜末、姜末翻炒",
+      "放入四季豆翻炒",
+      "加酱油和盐调味出锅"
+    ],
+    "tags": [
+      "川菜",
+      "下饭菜",
+      "炒菜"
+    ]
+  },
+  {
+    "id": "steamed_pork_rice_flour",
+    "nameZh": "粉蒸肉",
+    "nameEn": "Steamed Pork with Rice Flour",
+    "cuisine": "chinese",
+    "regionalCuisine": "hunan",
+    "flavors": [
+      "umami",
+      "spicy"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "hard",
+    "minCookingLevel": "advanced",
+    "prepTime": 30,
+    "cookTime": 60,
+    "servings": 4,
+    "ingredients": [
+      {
+        "ingredientId": "pork_belly",
+        "amount": 400,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sweet_potato",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "rice",
+        "amount": 80,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 20,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "doubanjiang",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 10,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "大米小火炒至金黄，碾成粗粉",
+      "五花肉切薄片，加酱油、豆瓣酱、料酒腌20分钟",
+      "红薯去皮切块铺在碗底",
+      "肉片裹上米粉，摆在红薯上",
+      "大火蒸50-60分钟至肉酥烂",
+      "倒扣出盘，撒葱花"
+    ],
+    "tags": [
+      "湘菜",
+      "蒸菜",
+      "硬菜"
+    ]
+  },
+  {
+    "id": "shrimp_egg_stir_fry",
+    "nameZh": "虾仁炒蛋",
+    "nameEn": "Shrimp and Egg Stir-fry",
+    "cuisine": "chinese",
+    "regionalCuisine": "cantonese",
+    "flavors": [
+      "umami",
+      "light"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "easy",
+    "minCookingLevel": "basic",
+    "prepTime": 10,
+    "cookTime": 5,
+    "servings": 2,
+    "ingredients": [
+      {
+        "ingredientId": "shrimp",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "egg",
+        "amount": 3,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 5,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 15,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "虾仁去虾线，加少许料酒和盐腌5分钟",
+      "鸡蛋打散，加入虾仁混合",
+      "锅中热油，倒入蛋虾液",
+      "中火炒至蛋液凝固虾仁变色",
+      "撒葱花出锅"
+    ],
+    "tags": [
+      "粤菜",
+      "快手菜",
+      "海鲜"
+    ]
+  },
+  {
+    "id": "shandong_braised_chicken",
+    "nameZh": "黄焖鸡",
+    "nameEn": "Shandong Braised Chicken",
+    "cuisine": "chinese",
+    "regionalCuisine": "shandong",
+    "flavors": [
+      "salty",
+      "umami"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "medium",
+    "minCookingLevel": "intermediate",
+    "prepTime": 15,
+    "cookTime": 30,
+    "servings": 3,
+    "ingredients": [
+      {
+        "ingredientId": "chicken_thigh",
+        "amount": 500,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "mushroom",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "capsicum",
+        "amount": 50,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 25,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 15,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "鸡腿肉切块，冷水焯水",
+      "锅中热油，放入姜片蒜片炒香",
+      "加入鸡块翻炒上色",
+      "加酱油、料酒、糖和适量水",
+      "放入蘑菇，大火烧开转小火炖25分钟",
+      "加入青椒，大火收汁出锅"
+    ],
+    "tags": [
+      "鲁菜",
+      "炖菜",
+      "下饭菜"
+    ]
+  },
+  {
+    "id": "corn_egg_pancake",
+    "nameZh": "玉米鸡蛋饼",
+    "nameEn": "Corn Egg Pancake",
+    "cuisine": "chinese",
+    "regionalCuisine": "homestyle",
+    "flavors": [
+      "sweet",
+      "light"
+    ],
+    "mealTypes": [
+      "breakfast"
+    ],
+    "difficulty": "easy",
+    "minCookingLevel": "beginner",
+    "prepTime": 5,
+    "cookTime": 8,
+    "servings": 2,
+    "ingredients": [
+      {
+        "ingredientId": "corn",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "egg",
+        "amount": 2,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 20,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 10,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "玉米粒和鸡蛋、淀粉混合搅拌",
+      "加少许盐调味",
+      "平底锅刷油，倒入面糊摊平",
+      "小火煎至两面金黄即可"
+    ],
+    "tags": [
+      "早餐",
+      "简单",
+      "面食"
+    ]
+  },
+  {
+    "id": "dongbei_pork_stew_vermicelli",
+    "nameZh": "猪肉炖粉条",
+    "nameEn": "Dongbei Pork Stew with Vermicelli",
+    "cuisine": "chinese",
+    "regionalCuisine": "dongbei",
+    "flavors": [
+      "salty",
+      "umami"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "medium",
+    "minCookingLevel": "intermediate",
+    "prepTime": 15,
+    "cookTime": 40,
+    "servings": 4,
+    "ingredients": [
+      {
+        "ingredientId": "pork_belly",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "dried_noodles_rice",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "chinese_cabbage",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 20,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 10,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "五花肉切块，粉条提前泡软",
+      "锅中热油，煸炒肉块至出油",
+      "加姜片、葱段、酱油翻炒上色",
+      "加水烧开转小火炖30分钟",
+      "放入白菜和粉条",
+      "继续炖10分钟至粉条入味出锅"
+    ],
+    "tags": [
+      "东北菜",
+      "炖菜",
+      "冬季"
+    ]
+  },
+  {
+    "id": "egg_pancake",
+    "nameZh": "鸡蛋灌饼",
+    "nameEn": "Egg Stuffed Pancake",
+    "cuisine": "chinese",
+    "regionalCuisine": "homestyle",
+    "flavors": [
+      "salty",
+      "umami"
+    ],
+    "mealTypes": [
+      "breakfast"
+    ],
+    "difficulty": "medium",
+    "minCookingLevel": "intermediate",
+    "prepTime": 15,
+    "cookTime": 10,
+    "servings": 2,
+    "ingredients": [
+      {
+        "ingredientId": "bread",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "egg",
+        "amount": 2,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 15,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "面粉加温水和成软面团醒10分钟",
+      "擀成薄饼，平底锅刷油烙至起泡",
+      "用筷子挑开泡处，灌入打散的蛋液",
+      "翻面继续烙至两面金黄",
+      "切块装盘"
+    ],
+    "tags": [
+      "早餐",
+      "面食",
+      "经典"
+    ]
+  },
+  {
+    "id": "beef_broccoli",
+    "nameZh": "西兰花炒牛肉",
+    "nameEn": "Beef with Broccoli",
+    "cuisine": "chinese",
+    "regionalCuisine": "cantonese",
+    "flavors": [
+      "umami",
+      "salty"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "medium",
+    "minCookingLevel": "intermediate",
+    "prepTime": 15,
+    "cookTime": 10,
+    "servings": 2,
+    "ingredients": [
+      {
+        "ingredientId": "beef_sirloin",
+        "amount": 250,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "broccoli",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "oyster_sauce",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 8,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 10,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "牛肉逆纹切薄片，加酱油、淀粉、料酒腌15分钟",
+      "西兰花切小朵焯水",
+      "锅中热油，快速滑炒牛肉至变色盛出",
+      "锅中加蒜末炒香，放入西兰花翻炒",
+      "倒回牛肉，加蚝油翻炒均匀出锅"
+    ],
+    "tags": [
+      "粤菜",
+      "炒菜",
+      "下饭菜"
+    ]
+  },
+  {
+    "id": "vinegar_peanuts",
+    "nameZh": "老醋花生",
+    "nameEn": "Peanuts with Vinegar Sauce",
+    "cuisine": "chinese",
+    "regionalCuisine": "shandong",
+    "flavors": [
+      "sour",
+      "sweet"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "easy",
+    "minCookingLevel": "beginner",
+    "prepTime": 5,
+    "cookTime": 8,
+    "servings": 2,
+    "ingredients": [
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 30,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "vinegar",
+        "amount": 20,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 5,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "onion",
+        "amount": 30,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "capsicum",
+        "amount": 30,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "花生米冷油下锅，小火炸至酥脆捞出放凉",
+      "洋葱和青椒切小丁",
+      "调汁：醋、糖、酱油、盐混合",
+      "将蔬菜丁和调汁倒在花生上拌匀"
+    ],
+    "tags": [
+      "凉菜",
+      "鲁菜",
+      "下酒菜"
+    ]
+  },
+  {
+    "id": "hunan_spicy_chicken",
+    "nameZh": "辣子鸡",
+    "nameEn": "Hunan Spicy Chicken",
+    "cuisine": "chinese",
+    "regionalCuisine": "hunan",
+    "flavors": [
+      "spicy",
+      "salty"
+    ],
+    "mealTypes": [
+      "dinner"
+    ],
+    "difficulty": "hard",
+    "minCookingLevel": "advanced",
+    "prepTime": 20,
+    "cookTime": 15,
+    "servings": 3,
+    "ingredients": [
+      {
+        "ingredientId": "chicken_thigh",
+        "amount": 500,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 200,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "鸡腿肉切小块，加酱油、料酒、淀粉腌15分钟",
+      "油温七成热时炸鸡块至金黄捞出",
+      "复炸一次至酥脆",
+      "锅留底油，放入大量干辣椒和花椒炒香",
+      "加入蒜末、姜末翻炒",
+      "倒入鸡块，加糖、盐翻炒均匀",
+      "撒白芝麻和葱花出锅"
+    ],
+    "tags": [
+      "湘菜",
+      "辣味",
+      "硬菜"
+    ]
+  },
+  {
+    "id": "stir_fried_corn_pine_nuts",
+    "nameZh": "松仁玉米",
+    "nameEn": "Stir-fried Corn with Pine Nuts",
+    "cuisine": "chinese",
+    "regionalCuisine": "dongbei",
+    "flavors": [
+      "sweet",
+      "light"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "easy",
+    "minCookingLevel": "beginner",
+    "prepTime": 5,
+    "cookTime": 5,
+    "servings": 2,
+    "ingredients": [
+      {
+        "ingredientId": "corn",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "carrot",
+        "amount": 50,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cucumber",
+        "amount": 50,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 5,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "胡萝卜和黄瓜切小丁",
+      "锅中热油，放入玉米粒翻炒",
+      "加入胡萝卜丁炒匀",
+      "加入黄瓜丁、盐和少许糖翻炒均匀出锅"
+    ],
+    "tags": [
+      "东北菜",
+      "素菜",
+      "甜味"
+    ]
+  },
+  {
+    "id": "hot_dry_noodle",
+    "nameZh": "热干面",
+    "nameEn": "Hot Dry Noodles",
+    "cuisine": "chinese",
+    "regionalCuisine": "homestyle",
+    "flavors": [
+      "umami",
+      "salty"
+    ],
+    "mealTypes": [
+      "breakfast",
+      "lunch"
+    ],
+    "difficulty": "easy",
+    "minCookingLevel": "basic",
+    "prepTime": 5,
+    "cookTime": 8,
+    "servings": 2,
+    "ingredients": [
+      {
+        "ingredientId": "noodles_dried",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sesame_oil",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "vinegar",
+        "amount": 5,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 10,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "面条煮至八成熟，捞出拌少许香油防粘",
+      "调酱汁：芝麻酱、酱油、醋、盐混合",
+      "面条装碗，浇上酱汁",
+      "撒上葱花拌匀食用"
+    ],
+    "tags": [
+      "早餐",
+      "面食",
+      "主食"
+    ]
+  },
+  {
+    "id": "dry_pot_cauliflower",
+    "nameZh": "干锅花菜",
+    "nameEn": "Dry Pot Cauliflower",
+    "cuisine": "chinese",
+    "regionalCuisine": "hunan",
+    "flavors": [
+      "spicy",
+      "salty",
+      "umami"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "medium",
+    "minCookingLevel": "intermediate",
+    "prepTime": 10,
+    "cookTime": 10,
+    "servings": 2,
+    "ingredients": [
+      {
+        "ingredientId": "broccoli",
+        "amount": 400,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "pork_belly",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "doubanjiang",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 15,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "花菜掰小朵，五花肉切薄片",
+      "锅中热油，煸炒五花肉至出油",
+      "加入豆瓣酱炒出红油",
+      "放入花菜大火翻炒",
+      "加蒜末、姜末、酱油翻炒至花菜断生",
+      "撒葱花出锅"
+    ],
+    "tags": [
+      "湘菜",
+      "干锅",
+      "下饭菜"
+    ]
+  },
+  {
+    "id": "tofu_tomato_soup",
+    "nameZh": "番茄豆腐汤",
+    "nameEn": "Tomato Tofu Soup",
+    "cuisine": "chinese",
+    "regionalCuisine": "homestyle",
+    "flavors": [
+      "sour",
+      "light"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "easy",
+    "minCookingLevel": "beginner",
+    "prepTime": 5,
+    "cookTime": 10,
+    "servings": 2,
+    "ingredients": [
+      {
+        "ingredientId": "tomato",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "tofu",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "egg",
+        "amount": 1,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sesame_oil",
+        "amount": 3,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "番茄切块，豆腐切小方块",
+      "锅中加水烧开，放入番茄煮至出汁",
+      "加入豆腐煮3分钟",
+      "淋入蛋液搅散",
+      "加盐调味，滴香油撒葱花出锅"
+    ],
+    "tags": [
+      "汤类",
+      "清淡",
+      "素菜"
+    ]
+  },
+  {
+    "id": "sichuan_twice_cooked_tofu",
+    "nameZh": "麻辣豆腐煲",
+    "nameEn": "Spicy Tofu Clay Pot",
+    "cuisine": "chinese",
+    "regionalCuisine": "sichuan",
+    "flavors": [
+      "spicy",
+      "umami",
+      "salty"
+    ],
+    "mealTypes": [
+      "dinner"
+    ],
+    "difficulty": "medium",
+    "minCookingLevel": "intermediate",
+    "prepTime": 10,
+    "cookTime": 15,
+    "servings": 2,
+    "ingredients": [
+      {
+        "ingredientId": "tofu",
+        "amount": 400,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "pork_mince",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "doubanjiang",
+        "amount": 20,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 10,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "豆腐切块煎至两面金黄",
+      "锅中热油，炒香肉末",
+      "加豆瓣酱炒出红油",
+      "加蒜末、姜末翻炒",
+      "放入豆腐加水焖煮8分钟",
+      "淀粉勾芡，撒葱花出锅"
+    ],
+    "tags": [
+      "川菜",
+      "豆腐",
+      "下饭菜"
+    ]
+  },
+  {
+    "id": "chicken_mushroom_soup",
+    "nameZh": "鸡汤",
+    "nameEn": "Chicken and Mushroom Soup",
+    "cuisine": "chinese",
+    "regionalCuisine": "cantonese",
+    "flavors": [
+      "umami",
+      "light"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "medium",
+    "minCookingLevel": "basic",
+    "prepTime": 10,
+    "cookTime": 60,
+    "servings": 4,
+    "ingredients": [
+      {
+        "ingredientId": "chicken_thigh",
+        "amount": 400,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "mushroom",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 10,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "鸡肉切块，冷水焯水去血沫",
+      "砂锅中加水，放入鸡块和姜片",
+      "大火烧开，加料酒",
+      "转小火炖40分钟",
+      "加入蘑菇继续炖20分钟",
+      "加盐调味出锅"
+    ],
+    "tags": [
+      "粤菜",
+      "汤类",
+      "滋补"
+    ]
+  },
+  {
+    "id": "honey_glazed_sweet_potato",
+    "nameZh": "拔丝红薯",
+    "nameEn": "Honey Glazed Sweet Potato",
+    "cuisine": "chinese",
+    "regionalCuisine": "shandong",
+    "flavors": [
+      "sweet"
+    ],
+    "mealTypes": [
+      "dinner"
+    ],
+    "difficulty": "hard",
+    "minCookingLevel": "advanced",
+    "prepTime": 10,
+    "cookTime": 20,
+    "servings": 3,
+    "ingredients": [
+      {
+        "ingredientId": "sweet_potato",
+        "amount": 400,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 300,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "红薯去皮切滚刀块",
+      "油温六成热，炸红薯至金黄熟透捞出",
+      "锅中少许油，加糖小火熬至拉丝状",
+      "迅速倒入红薯翻裹均匀",
+      "装盘配一碗凉水蘸食"
+    ],
+    "tags": [
+      "鲁菜",
+      "甜品",
+      "宴客菜"
+    ]
+  },
+  {
+    "id": "scallion_oil_noodle",
+    "nameZh": "葱油拌面",
+    "nameEn": "Scallion Oil Noodles",
+    "cuisine": "chinese",
+    "regionalCuisine": "jiangsu",
+    "flavors": [
+      "umami",
+      "salty"
+    ],
+    "mealTypes": [
+      "breakfast",
+      "lunch"
+    ],
+    "difficulty": "easy",
+    "minCookingLevel": "basic",
+    "prepTime": 5,
+    "cookTime": 10,
+    "servings": 2,
+    "ingredients": [
+      {
+        "ingredientId": "noodles_dried",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 50,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 20,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 30,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "葱切段备用",
+      "锅中多油，小火慢炸葱段至金黄焦香",
+      "加入酱油和糖烧开做成葱油汁",
+      "面条煮熟捞出",
+      "浇上葱油汁拌匀食用"
+    ],
+    "tags": [
+      "苏菜",
+      "面食",
+      "主食"
+    ]
+  },
+  {
+    "id": "cumin_lamb",
+    "nameZh": "孜然羊肉",
+    "nameEn": "Cumin Lamb Stir-fry",
+    "cuisine": "chinese",
+    "regionalCuisine": "homestyle",
+    "flavors": [
+      "spicy",
+      "salty",
+      "umami"
+    ],
+    "mealTypes": [
+      "dinner"
+    ],
+    "difficulty": "medium",
+    "minCookingLevel": "intermediate",
+    "prepTime": 15,
+    "cookTime": 10,
+    "servings": 3,
+    "ingredients": [
+      {
+        "ingredientId": "lamb_leg",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "onion",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "capsicum",
+        "amount": 50,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 15,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "羊肉切薄片，加酱油、料酒腌10分钟",
+      "洋葱切丝，青椒切条",
+      "锅中大火热油，快速翻炒羊肉至变色",
+      "加入洋葱丝翻炒",
+      "撒孜然粉、辣椒粉翻炒均匀",
+      "加入青椒翻炒出锅"
+    ],
+    "tags": [
+      "家常菜",
+      "辣味",
+      "下饭菜"
+    ]
+  },
+  {
+    "id": "cantonese_fried_rice_noodle",
+    "nameZh": "干炒牛河",
+    "nameEn": "Cantonese Fried Rice Noodles with Beef",
+    "cuisine": "chinese",
+    "regionalCuisine": "cantonese",
+    "flavors": [
+      "umami",
+      "salty"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "hard",
+    "minCookingLevel": "advanced",
+    "prepTime": 15,
+    "cookTime": 8,
+    "servings": 2,
+    "ingredients": [
+      {
+        "ingredientId": "dried_noodles_rice",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "beef_sirloin",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "bok_choy",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "egg",
+        "amount": 1,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 20,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 25,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "牛肉切薄片，加酱油、淀粉腌10分钟",
+      "河粉煮软或提前泡软沥干",
+      "大火热锅，炒蛋盛出",
+      "大火快炒牛肉至变色盛出",
+      "锅中加油，放入河粉和酱油大火翻炒",
+      "倒回牛肉和蛋，加入韭黄翻炒均匀出锅"
+    ],
+    "tags": [
+      "粤菜",
+      "主食",
+      "经典"
+    ]
+  },
+  {
+    "id": "steamed_tofu_with_shrimp",
+    "nameZh": "虾仁蒸豆腐",
+    "nameEn": "Steamed Tofu with Shrimp",
+    "cuisine": "chinese",
+    "regionalCuisine": "cantonese",
+    "flavors": [
+      "light",
+      "umami"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "easy",
+    "minCookingLevel": "basic",
+    "prepTime": 10,
+    "cookTime": 10,
+    "servings": 2,
+    "ingredients": [
+      {
+        "ingredientId": "tofu",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "shrimp",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "sesame_oil",
+        "amount": 3,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 5,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "豆腐切厚片摆盘",
+      "虾仁去虾线放在豆腐上",
+      "大火蒸8分钟",
+      "淋上酱油和香油",
+      "撒葱花出锅"
+    ],
+    "tags": [
+      "粤菜",
+      "蒸菜",
+      "清淡"
+    ]
+  },
+  {
+    "id": "onion_pork_stir_fry",
+    "nameZh": "洋葱炒肉",
+    "nameEn": "Onion Pork Stir-fry",
+    "cuisine": "chinese",
+    "regionalCuisine": "homestyle",
+    "flavors": [
+      "salty",
+      "umami"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "easy",
+    "minCookingLevel": "basic",
+    "prepTime": 10,
+    "cookTime": 8,
+    "servings": 2,
+    "ingredients": [
+      {
+        "ingredientId": "pork_belly",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "onion",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 5,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 10,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "猪肉切片，加酱油、料酒腌5分钟",
+      "洋葱切丝",
+      "锅中热油，炒肉片至变色",
+      "放入洋葱大火翻炒",
+      "加盐调味翻炒均匀出锅"
+    ],
+    "tags": [
+      "家常菜",
+      "快手菜",
+      "炒菜"
+    ]
+  },
+  {
+    "id": "jiangsu_sweet_sour_ribs",
+    "nameZh": "无锡糖醋排骨",
+    "nameEn": "Jiangsu Sweet and Sour Ribs",
+    "cuisine": "chinese",
+    "regionalCuisine": "jiangsu",
+    "flavors": [
+      "sweet",
+      "sour"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "hard",
+    "minCookingLevel": "advanced",
+    "prepTime": 15,
+    "cookTime": 40,
+    "servings": 3,
+    "ingredients": [
+      {
+        "ingredientId": "pork_belly",
+        "amount": 500,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "vinegar",
+        "amount": 30,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 40,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 20,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 10,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "排骨剁小段，冷水焯水去血沫",
+      "锅中放油和糖，炒至焦糖色",
+      "放入排骨翻炒上色",
+      "加料酒、酱油、姜片、葱段",
+      "加水没过排骨，大火烧开转小火炖30分钟",
+      "加醋，大火收汁至浓稠出锅"
+    ],
+    "tags": [
+      "苏菜",
+      "硬菜",
+      "酸甜口"
+    ]
+  },
+  {
+    "id": "egg_with_rice_porridge",
+    "nameZh": "皮蛋瘦肉粥",
+    "nameEn": "Pork and Egg Congee",
+    "cuisine": "chinese",
+    "regionalCuisine": "cantonese",
+    "flavors": [
+      "umami",
+      "light"
+    ],
+    "mealTypes": [
+      "breakfast"
+    ],
+    "difficulty": "medium",
+    "minCookingLevel": "basic",
+    "prepTime": 10,
+    "cookTime": 50,
+    "servings": 3,
+    "ingredients": [
+      {
+        "ingredientId": "rice",
+        "amount": 120,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "pork_mince",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "egg",
+        "amount": 2,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sesame_oil",
+        "amount": 3,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "大米洗净加水大火烧开，转小火熬30分钟",
+      "肉末加姜末和料酒腌一下",
+      "粥煮稠后加入肉末搅散煮10分钟",
+      "加入皮蛋块煮5分钟",
+      "加盐调味，淋香油撒葱花出锅"
+    ],
+    "tags": [
+      "粤菜",
+      "早餐",
+      "粥类"
+    ]
+  },
+  {
+    "id": "stir_fried_zucchini_egg",
+    "nameZh": "西葫芦炒蛋",
+    "nameEn": "Zucchini Egg Stir-fry",
+    "cuisine": "chinese",
+    "regionalCuisine": "homestyle",
+    "flavors": [
+      "light",
+      "umami"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "easy",
+    "minCookingLevel": "beginner",
+    "prepTime": 5,
+    "cookTime": 5,
+    "servings": 2,
+    "ingredients": [
+      {
+        "ingredientId": "zucchini",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "egg",
+        "amount": 2,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 10,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "西葫芦切半圆片，鸡蛋打散",
+      "锅中热油，炒蛋盛出",
+      "加入蒜片炒香，放入西葫芦翻炒",
+      "倒回鸡蛋，加盐翻炒均匀出锅"
+    ],
+    "tags": [
+      "快手菜",
+      "素菜",
+      "家常"
+    ]
+  },
+  {
+    "id": "shandong_scallion_chicken",
+    "nameZh": "葱爆鸡丁",
+    "nameEn": "Shandong Scallion Chicken",
+    "cuisine": "chinese",
+    "regionalCuisine": "shandong",
+    "flavors": [
+      "salty",
+      "umami"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "easy",
+    "minCookingLevel": "basic",
+    "prepTime": 10,
+    "cookTime": 8,
+    "servings": 2,
+    "ingredients": [
+      {
+        "ingredientId": "chicken_breast",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 80,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 15,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "鸡胸肉切丁，加酱油、料酒、淀粉腌10分钟",
+      "大葱切段",
+      "锅中大火热油，快炒鸡丁至变色",
+      "放入葱段翻炒出香",
+      "加盐调味，快速翻炒出锅"
+    ],
+    "tags": [
+      "鲁菜",
+      "快手菜",
+      "炒菜"
+    ]
+  },
+  {
+    "id": "sichuan_shredded_pork",
+    "nameZh": "鱼香肉丝",
+    "nameEn": "Sichuan Fish-fragrant Shredded Pork",
+    "cuisine": "chinese",
+    "regionalCuisine": "sichuan",
+    "flavors": [
+      "sweet",
+      "sour",
+      "spicy"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "medium",
+    "minCookingLevel": "intermediate",
+    "prepTime": 15,
+    "cookTime": 10,
+    "servings": 3,
+    "ingredients": [
+      {
+        "ingredientId": "pork_belly",
+        "amount": 250,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "carrot",
+        "amount": 80,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "mushroom",
+        "amount": 50,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "capsicum",
+        "amount": 50,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "doubanjiang",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "vinegar",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 20,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "猪肉切丝，加酱油、淀粉腌10分钟",
+      "蔬菜全部切丝",
+      "调鱼香汁：醋、糖、酱油、淀粉、水混合",
+      "锅中热油，炒肉丝至变色",
+      "加豆瓣酱炒出红油",
+      "加入蔬菜丝翻炒，倒入鱼香汁翻炒均匀出锅"
+    ],
+    "tags": [
+      "川菜经典",
+      "下饭菜",
+      "鱼香味"
+    ]
+  },
+  {
+    "id": "simple_fried_egg",
+    "nameZh": "煎荷包蛋",
+    "nameEn": "Fried Egg",
+    "cuisine": "chinese",
+    "regionalCuisine": "homestyle",
+    "flavors": [
+      "light",
+      "umami"
+    ],
+    "mealTypes": [
+      "breakfast"
+    ],
+    "difficulty": "easy",
+    "minCookingLevel": "beginner",
+    "prepTime": 1,
+    "cookTime": 3,
+    "servings": 2,
+    "ingredients": [
+      {
+        "ingredientId": "egg",
+        "amount": 2,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 5,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "平底锅刷少许油，小火加热",
+      "打入鸡蛋，小火煎至底部凝固",
+      "翻面煎至喜欢的熟度",
+      "淋少许酱油即可"
+    ],
+    "tags": [
+      "早餐",
+      "快手菜",
+      "简单"
+    ]
+  },
+  {
+    "id": "braised_chicken_potato",
+    "nameZh": "土豆烧鸡",
+    "nameEn": "Braised Chicken with Potatoes",
+    "cuisine": "chinese",
+    "regionalCuisine": "homestyle",
+    "flavors": [
+      "salty",
+      "umami"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "medium",
+    "minCookingLevel": "basic",
+    "prepTime": 15,
+    "cookTime": 30,
+    "servings": 3,
+    "ingredients": [
+      {
+        "ingredientId": "chicken_thigh",
+        "amount": 400,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "potato",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 20,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 15,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "鸡腿肉切块焯水，土豆切块",
+      "锅中热油，炒糖色",
+      "放入鸡块翻炒上色",
+      "加姜片、蒜、料酒、酱油",
+      "加水没过食材，放入土豆",
+      "大火烧开转小火炖25分钟，收汁出锅"
+    ],
+    "tags": [
+      "家常菜",
+      "炖菜",
+      "下饭菜"
+    ]
+  },
+  {
+    "id": "dongbei_pickled_cabbage_pork",
+    "nameZh": "酸菜炒肉",
+    "nameEn": "Dongbei Pickled Cabbage with Pork",
+    "cuisine": "chinese",
+    "regionalCuisine": "dongbei",
+    "flavors": [
+      "sour",
+      "salty"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "easy",
+    "minCookingLevel": "basic",
+    "prepTime": 10,
+    "cookTime": 10,
+    "servings": 2,
+    "ingredients": [
+      {
+        "ingredientId": "chinese_cabbage",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "pork_belly",
+        "amount": 150,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "vinegar",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 10,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "白菜切丝加醋腌制备用，猪肉切片",
+      "锅中热油，煸炒猪肉至出油",
+      "加姜片、蒜片炒香",
+      "放入酸白菜大火翻炒",
+      "加盐调味出锅"
+    ],
+    "tags": [
+      "东北菜",
+      "酸味",
+      "炒菜"
+    ]
+  },
+  {
+    "id": "stir_fried_beef_noodle",
+    "nameZh": "牛肉炒面",
+    "nameEn": "Beef Stir-fried Noodles",
+    "cuisine": "chinese",
+    "regionalCuisine": "homestyle",
+    "flavors": [
+      "salty",
+      "umami"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "easy",
+    "minCookingLevel": "basic",
+    "prepTime": 10,
+    "cookTime": 10,
+    "servings": 2,
+    "ingredients": [
+      {
+        "ingredientId": "noodles_dried",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "beef_mince",
+        "amount": 150,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "bok_choy",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "oyster_sauce",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 15,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "面条煮至八成熟捞出",
+      "锅中热油，炒香牛肉末至变色",
+      "加蒜末翻炒",
+      "放入青菜快炒",
+      "加入面条、酱油、蚝油大火翻炒均匀出锅"
+    ],
+    "tags": [
+      "主食",
+      "面食",
+      "快手菜"
+    ]
+  },
+  {
+    "id": "sichuan_spicy_tofu_skin",
+    "nameZh": "凉拌豆皮",
+    "nameEn": "Spicy Cold Tofu Skin",
+    "cuisine": "chinese",
+    "regionalCuisine": "sichuan",
+    "flavors": [
+      "spicy",
+      "sour"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "easy",
+    "minCookingLevel": "beginner",
+    "prepTime": 10,
+    "cookTime": 3,
+    "servings": 2,
+    "ingredients": [
+      {
+        "ingredientId": "tofu",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cucumber",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "vinegar",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "sesame_oil",
+        "amount": 5,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "豆皮切丝，焯水捞出过凉",
+      "黄瓜切丝",
+      "蒜切末",
+      "所有食材混合，加醋、酱油、香油、辣椒油拌匀"
+    ],
+    "tags": [
+      "凉菜",
+      "川菜",
+      "开胃"
+    ]
+  },
+  {
+    "id": "tiger_skin_capsicum",
+    "nameZh": "虎皮青椒",
+    "nameEn": "Tiger Skin Green Peppers",
+    "cuisine": "chinese",
+    "regionalCuisine": "hunan",
+    "flavors": [
+      "spicy",
+      "salty"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "easy",
+    "minCookingLevel": "beginner",
+    "prepTime": 5,
+    "cookTime": 8,
+    "servings": 2,
+    "ingredients": [
+      {
+        "ingredientId": "capsicum",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "vinegar",
+        "amount": 5,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 15,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "青椒去籽整个备用",
+      "锅中少许油，放入青椒小火煸至表皮起皱",
+      "盛出青椒，锅中加蒜末炒香",
+      "加酱油、醋、糖调汁",
+      "倒回青椒翻炒裹汁出锅"
+    ],
+    "tags": [
+      "湘菜",
+      "素菜",
+      "下饭菜"
+    ]
+  },
+  {
+    "id": "milk_steamed_egg",
+    "nameZh": "牛奶炖蛋",
+    "nameEn": "Milk Steamed Egg Custard",
+    "cuisine": "chinese",
+    "regionalCuisine": "cantonese",
+    "flavors": [
+      "sweet",
+      "light"
+    ],
+    "mealTypes": [
+      "breakfast"
+    ],
+    "difficulty": "easy",
+    "minCookingLevel": "beginner",
+    "prepTime": 5,
+    "cookTime": 15,
+    "servings": 2,
+    "ingredients": [
+      {
+        "ingredientId": "egg",
+        "amount": 2,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "milk",
+        "amount": 200,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 15,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "鸡蛋打散，加入牛奶和糖搅匀",
+      "过滤蛋液去泡沫",
+      "倒入碗中盖保鲜膜",
+      "水开后中火蒸12分钟",
+      "放凉后食用口感更滑"
+    ],
+    "tags": [
+      "早餐",
+      "甜品",
+      "粤菜"
+    ]
+  },
+  {
+    "id": "hunan_steamed_pork",
+    "nameZh": "湘味小炒肉",
+    "nameEn": "Hunan Stir-fried Pork",
+    "cuisine": "chinese",
+    "regionalCuisine": "hunan",
+    "flavors": [
+      "spicy",
+      "salty",
+      "umami"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "easy",
+    "minCookingLevel": "basic",
+    "prepTime": 10,
+    "cookTime": 8,
+    "servings": 2,
+    "ingredients": [
+      {
+        "ingredientId": "pork_belly",
+        "amount": 250,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "capsicum",
+        "amount": 150,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "doubanjiang",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 10,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "五花肉切薄片，青椒切块",
+      "锅中不放油，先煸炒肉片至出油微焦",
+      "放入蒜末和豆瓣酱炒香",
+      "加入青椒大火翻炒",
+      "加酱油调味出锅"
+    ],
+    "tags": [
+      "湘菜",
+      "下饭菜",
+      "辣味"
+    ]
+  },
+  {
+    "id": "carrot_egg_stir_fry",
+    "nameZh": "胡萝卜炒蛋",
+    "nameEn": "Carrot Egg Stir-fry",
+    "cuisine": "chinese",
+    "regionalCuisine": "homestyle",
+    "flavors": [
+      "light",
+      "sweet"
+    ],
+    "mealTypes": [
+      "breakfast",
+      "lunch"
+    ],
+    "difficulty": "easy",
+    "minCookingLevel": "beginner",
+    "prepTime": 5,
+    "cookTime": 5,
+    "servings": 2,
+    "ingredients": [
+      {
+        "ingredientId": "carrot",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "egg",
+        "amount": 3,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 10,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "胡萝卜切丝或薄片，鸡蛋打散",
+      "锅中热油，先炒蛋盛出",
+      "再炒胡萝卜至略软",
+      "倒回鸡蛋翻炒，加盐调味出锅"
+    ],
+    "tags": [
+      "早餐",
+      "快手菜",
+      "素菜"
+    ]
+  },
+  {
+    "id": "mince_pork_eggplant",
+    "nameZh": "肉末茄子",
+    "nameEn": "Minced Pork with Eggplant",
+    "cuisine": "chinese",
+    "regionalCuisine": "homestyle",
+    "flavors": [
+      "salty",
+      "umami"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "easy",
+    "minCookingLevel": "basic",
+    "prepTime": 10,
+    "cookTime": 12,
+    "servings": 2,
+    "ingredients": [
+      {
+        "ingredientId": "eggplant",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "pork_mince",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "oyster_sauce",
+        "amount": 5,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 20,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "茄子切条，肉末备用",
+      "锅中多油，炒茄子至软盛出",
+      "锅留底油，炒香肉末",
+      "加蒜末和酱油翻炒",
+      "倒回茄子，加蚝油翻炒均匀出锅"
+    ],
+    "tags": [
+      "家常菜",
+      "下饭菜",
+      "茄子"
+    ]
+  },
+  {
+    "id": "shandong_braised_tofu",
+    "nameZh": "锅塌豆腐",
+    "nameEn": "Shandong Pan-fried Braised Tofu",
+    "cuisine": "chinese",
+    "regionalCuisine": "shandong",
+    "flavors": [
+      "umami",
+      "salty"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "medium",
+    "minCookingLevel": "intermediate",
+    "prepTime": 15,
+    "cookTime": 12,
+    "servings": 2,
+    "ingredients": [
+      {
+        "ingredientId": "tofu",
+        "amount": 400,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "egg",
+        "amount": 2,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 25,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "豆腐切厚片，裹上淀粉和蛋液",
+      "锅中热油，将豆腐煎至两面金黄",
+      "调汁：酱油、盐、水混合",
+      "倒入调汁焖煮3分钟",
+      "撒葱花出锅"
+    ],
+    "tags": [
+      "鲁菜",
+      "豆腐",
+      "煎菜"
+    ]
+  },
+  {
+    "id": "jiangsu_squirrel_fish",
+    "nameZh": "松鼠鱼",
+    "nameEn": "Squirrel-shaped Sweet and Sour Fish",
+    "cuisine": "chinese",
+    "regionalCuisine": "jiangsu",
+    "flavors": [
+      "sweet",
+      "sour"
+    ],
+    "mealTypes": [
+      "dinner"
+    ],
+    "difficulty": "hard",
+    "minCookingLevel": "expert",
+    "prepTime": 30,
+    "cookTime": 15,
+    "servings": 4,
+    "ingredients": [
+      {
+        "ingredientId": "salmon_fillet",
+        "amount": 500,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 50,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 40,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "vinegar",
+        "amount": 30,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "carrot",
+        "amount": 30,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "capsicum",
+        "amount": 30,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 300,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "鱼肉在鱼皮朝下切花刀，交叉切出菱形花纹",
+      "鱼身裹干淀粉，抖去多余",
+      "油温七成热，将鱼炸至定型金黄捞出",
+      "复炸至酥脆",
+      "锅中留底油，加糖、醋、酱油和水煮开",
+      "淀粉勾芡做成糖醋汁",
+      "浇在炸好的鱼上即可"
+    ],
+    "tags": [
+      "苏菜",
+      "宴客菜",
+      "硬菜"
+    ]
+  },
+  {
+    "id": "pork_celery_dumpling_filling",
+    "nameZh": "猪肉芹菜饺子",
+    "nameEn": "Pork and Celery Dumplings",
+    "cuisine": "chinese",
+    "regionalCuisine": "dongbei",
+    "flavors": [
+      "umami",
+      "salty"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "hard",
+    "minCookingLevel": "intermediate",
+    "prepTime": 60,
+    "cookTime": 10,
+    "servings": 4,
+    "ingredients": [
+      {
+        "ingredientId": "pork_mince",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "celery",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 20,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "sesame_oil",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "bread",
+        "amount": 300,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "面粉加水和成面团醒30分钟",
+      "芹菜焯水切碎挤水",
+      "肉末加酱油、香油、姜末、葱末搅拌上劲",
+      "加入芹菜拌匀成馅",
+      "擀皮包饺子",
+      "水开下饺子煮至浮起，点两次冷水再煮开即可"
+    ],
+    "tags": [
+      "东北菜",
+      "面食",
+      "饺子"
+    ]
+  },
+  {
+    "id": "steamed_egg_with_shrimp",
+    "nameZh": "虾仁蒸蛋",
+    "nameEn": "Steamed Egg with Shrimp",
+    "cuisine": "chinese",
+    "regionalCuisine": "cantonese",
+    "flavors": [
+      "light",
+      "umami"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "easy",
+    "minCookingLevel": "basic",
+    "prepTime": 5,
+    "cookTime": 12,
+    "servings": 2,
+    "ingredients": [
+      {
+        "ingredientId": "egg",
+        "amount": 3,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "shrimp",
+        "amount": 80,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 5,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "sesame_oil",
+        "amount": 3,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 5,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "鸡蛋打散加1.5倍温水搅匀过滤",
+      "虾仁去虾线备用",
+      "蛋液倒入碗中蒸5分钟",
+      "放入虾仁继续蒸5分钟",
+      "淋酱油香油，撒葱花"
+    ],
+    "tags": [
+      "粤菜",
+      "蒸菜",
+      "海鲜"
+    ]
+  },
+  {
+    "id": "sichuan_boiled_beef",
+    "nameZh": "水煮牛肉",
+    "nameEn": "Sichuan Boiled Beef",
+    "cuisine": "chinese",
+    "regionalCuisine": "sichuan",
+    "flavors": [
+      "spicy",
+      "umami"
+    ],
+    "mealTypes": [
+      "dinner"
+    ],
+    "difficulty": "hard",
+    "minCookingLevel": "advanced",
+    "prepTime": 20,
+    "cookTime": 15,
+    "servings": 3,
+    "ingredients": [
+      {
+        "ingredientId": "beef_sirloin",
+        "amount": 400,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "bok_choy",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "doubanjiang",
+        "amount": 30,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "egg",
+        "amount": 1,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 50,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 10,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "牛肉逆纹切薄片，加蛋清、淀粉、料酒腌15分钟",
+      "青菜焯水铺碗底",
+      "锅中热油，炒香豆瓣酱、姜片、蒜末",
+      "加水烧开，下牛肉片煮至变色",
+      "连汤倒在青菜上",
+      "另烧热油，泼在蒜末和干辣椒上激香"
+    ],
+    "tags": [
+      "川菜",
+      "硬菜",
+      "辣味"
+    ]
+  },
+  {
+    "id": "scrambled_egg_milk_toast",
+    "nameZh": "牛奶吐司炒蛋",
+    "nameEn": "Scrambled Eggs with Milk Toast",
+    "cuisine": "chinese",
+    "regionalCuisine": "homestyle",
+    "flavors": [
+      "light",
+      "sweet"
+    ],
+    "mealTypes": [
+      "breakfast"
+    ],
+    "difficulty": "easy",
+    "minCookingLevel": "beginner",
+    "prepTime": 3,
+    "cookTime": 5,
+    "servings": 2,
+    "ingredients": [
+      {
+        "ingredientId": "egg",
+        "amount": 3,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "milk",
+        "amount": 30,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "bread",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 10,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "鸡蛋打散加入牛奶搅匀",
+      "吐司切小块",
+      "锅中小火热油，倒入蛋液",
+      "加入吐司块一起翻炒至凝固",
+      "加少许盐调味出锅"
+    ],
+    "tags": [
+      "早餐",
+      "快手菜",
+      "简单"
+    ]
+  },
+  {
+    "id": "jiangsu_braised_meatball",
+    "nameZh": "四喜丸子",
+    "nameEn": "Four-joy Braised Meatballs",
+    "cuisine": "chinese",
+    "regionalCuisine": "jiangsu",
+    "flavors": [
+      "umami",
+      "salty"
+    ],
+    "mealTypes": [
+      "dinner"
+    ],
+    "difficulty": "hard",
+    "minCookingLevel": "advanced",
+    "prepTime": 25,
+    "cookTime": 40,
+    "servings": 4,
+    "ingredients": [
+      {
+        "ingredientId": "pork_mince",
+        "amount": 500,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "egg",
+        "amount": 1,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 20,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 25,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 30,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "bok_choy",
+        "amount": 100,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "肉末加蛋液、淀粉、姜末、葱末、酱油搅拌上劲",
+      "搓成4个大丸子",
+      "锅中热油，将丸子炸至表面金黄",
+      "另起锅加酱油、糖和水烧开",
+      "放入丸子，小火炖30分钟",
+      "青菜焯水摆盘，丸子放上浇汁"
+    ],
+    "tags": [
+      "苏菜",
+      "宴客菜",
+      "硬菜"
+    ]
+  },
+  {
+    "id": "banana_pancake",
+    "nameZh": "香蕉蛋饼",
+    "nameEn": "Banana Egg Pancake",
+    "cuisine": "chinese",
+    "regionalCuisine": "homestyle",
+    "flavors": [
+      "sweet"
+    ],
+    "mealTypes": [
+      "breakfast"
+    ],
+    "difficulty": "easy",
+    "minCookingLevel": "beginner",
+    "prepTime": 5,
+    "cookTime": 5,
+    "servings": 2,
+    "ingredients": [
+      {
+        "ingredientId": "banana",
+        "amount": 2,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "egg",
+        "amount": 2,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 10,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "香蕉压成泥，加入打散的鸡蛋混合",
+      "加少许面粉搅成糊状",
+      "平底锅刷油",
+      "倒入面糊小火煎至两面金黄"
+    ],
+    "tags": [
+      "早餐",
+      "甜品",
+      "简单"
+    ]
+  },
+  {
+    "id": "dongbei_stewed_cabbage_tofu",
+    "nameZh": "白菜炖豆腐",
+    "nameEn": "Dongbei Stewed Cabbage with Tofu",
+    "cuisine": "chinese",
+    "regionalCuisine": "dongbei",
+    "flavors": [
+      "light",
+      "umami"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "easy",
+    "minCookingLevel": "beginner",
+    "prepTime": 10,
+    "cookTime": 15,
+    "servings": 3,
+    "ingredients": [
+      {
+        "ingredientId": "chinese_cabbage",
+        "amount": 400,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "tofu",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 10,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "白菜切大块，豆腐切块",
+      "锅中热油，爆香蒜片",
+      "放入白菜翻炒至软",
+      "加入豆腐和酱油",
+      "加少许水焖煮10分钟",
+      "加盐调味出锅"
+    ],
+    "tags": [
+      "东北菜",
+      "炖菜",
+      "素菜"
+    ]
+  },
+  {
+    "id": "shandong_sweet_sour_carp",
+    "nameZh": "糖醋鲤鱼",
+    "nameEn": "Shandong Sweet and Sour Carp",
+    "cuisine": "chinese",
+    "regionalCuisine": "shandong",
+    "flavors": [
+      "sweet",
+      "sour"
+    ],
+    "mealTypes": [
+      "dinner"
+    ],
+    "difficulty": "hard",
+    "minCookingLevel": "expert",
+    "prepTime": 20,
+    "cookTime": 15,
+    "servings": 4,
+    "ingredients": [
+      {
+        "ingredientId": "salmon_fillet",
+        "amount": 500,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 40,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 50,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "vinegar",
+        "amount": 40,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 300,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "鱼身两面打花刀，抹盐腌10分钟",
+      "裹上干淀粉",
+      "油温七成热，提着鱼尾入锅炸定型",
+      "复炸至酥脆捞出",
+      "锅留底油，加糖、醋、酱油和水烧开",
+      "淀粉勾芡做成糖醋汁浇在鱼上"
+    ],
+    "tags": [
+      "鲁菜",
+      "宴客菜",
+      "硬菜"
+    ]
+  },
+  {
+    "id": "fujian_stir_fried_noodle",
+    "nameZh": "福建炒面线",
+    "nameEn": "Fujian Stir-fried Thin Noodles",
+    "cuisine": "chinese",
+    "regionalCuisine": "fujian",
+    "flavors": [
+      "umami",
+      "salty"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "medium",
+    "minCookingLevel": "intermediate",
+    "prepTime": 10,
+    "cookTime": 10,
+    "servings": 2,
+    "ingredients": [
+      {
+        "ingredientId": "dried_noodles_rice",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "shrimp",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "egg",
+        "amount": 1,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "carrot",
+        "amount": 50,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "bok_choy",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 15,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "面线煮软捞出沥干",
+      "虾仁去虾线，蔬菜切丝",
+      "锅中热油，炒蛋盛出",
+      "炒虾仁至变色，加入蔬菜翻炒",
+      "放入面线和酱油大火翻炒",
+      "倒回鸡蛋拌匀出锅"
+    ],
+    "tags": [
+      "闽菜",
+      "面食",
+      "主食"
+    ]
+  },
+  {
+    "id": "apple_sweet_soup",
+    "nameZh": "苹果银耳汤",
+    "nameEn": "Apple Sweet Soup",
+    "cuisine": "chinese",
+    "regionalCuisine": "cantonese",
+    "flavors": [
+      "sweet",
+      "light"
+    ],
+    "mealTypes": [
+      "dinner"
+    ],
+    "difficulty": "easy",
+    "minCookingLevel": "beginner",
+    "prepTime": 5,
+    "cookTime": 30,
+    "servings": 2,
+    "ingredients": [
+      {
+        "ingredientId": "apple",
+        "amount": 2,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 15,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "苹果去皮切块",
+      "锅中加水烧开",
+      "放入苹果块小火煮20分钟",
+      "加冰糖调味，再煮5分钟出锅"
+    ],
+    "tags": [
+      "粤菜",
+      "汤类",
+      "甜品"
+    ]
+  },
+  {
+    "id": "spicy_stir_fried_shrimp",
+    "nameZh": "香辣虾",
+    "nameEn": "Spicy Stir-fried Shrimp",
+    "cuisine": "chinese",
+    "regionalCuisine": "sichuan",
+    "flavors": [
+      "spicy",
+      "salty",
+      "umami"
+    ],
+    "mealTypes": [
+      "dinner"
+    ],
+    "difficulty": "medium",
+    "minCookingLevel": "intermediate",
+    "prepTime": 10,
+    "cookTime": 10,
+    "servings": 3,
+    "ingredients": [
+      {
+        "ingredientId": "shrimp",
+        "amount": 400,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "doubanjiang",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 20,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "虾去虾线洗净沥干",
+      "锅中热油，放入虾煎至两面红",
+      "加入蒜末、姜末、豆瓣酱炒香",
+      "加料酒、酱油、糖翻炒",
+      "大火收汁出锅"
+    ],
+    "tags": [
+      "川菜",
+      "海鲜",
+      "辣味"
+    ]
+  },
+  {
+    "id": "hunan_smoked_pork_beans",
+    "nameZh": "腊肉炒豆角",
+    "nameEn": "Hunan Smoked Pork with Green Beans",
+    "cuisine": "chinese",
+    "regionalCuisine": "hunan",
+    "flavors": [
+      "salty",
+      "umami",
+      "spicy"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "medium",
+    "minCookingLevel": "intermediate",
+    "prepTime": 10,
+    "cookTime": 12,
+    "servings": 2,
+    "ingredients": [
+      {
+        "ingredientId": "pork_belly",
+        "amount": 150,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "green_bean",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "doubanjiang",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 5,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 10,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "腊肉切薄片，豆角掰段",
+      "锅中热油，煸炒腊肉出油",
+      "加豆瓣酱和蒜末炒香",
+      "放入豆角大火翻炒",
+      "加少许水焖煮5分钟至豆角熟透",
+      "加酱油调味出锅"
+    ],
+    "tags": [
+      "湘菜",
+      "下饭菜",
+      "炒菜"
+    ]
+  },
+  {
+    "id": "simple_egg_drop_noodle",
+    "nameZh": "鸡蛋挂面",
+    "nameEn": "Simple Egg Noodle Soup",
+    "cuisine": "chinese",
+    "regionalCuisine": "homestyle",
+    "flavors": [
+      "light",
+      "umami"
+    ],
+    "mealTypes": [
+      "breakfast"
+    ],
+    "difficulty": "easy",
+    "minCookingLevel": "beginner",
+    "prepTime": 2,
+    "cookTime": 8,
+    "servings": 2,
+    "ingredients": [
+      {
+        "ingredientId": "noodles_dried",
+        "amount": 150,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "egg",
+        "amount": 1,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sesame_oil",
+        "amount": 3,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "锅中水烧开，下挂面煮至断生",
+      "打入一个鸡蛋煮至凝固",
+      "加盐调味",
+      "滴几滴香油，撒葱花出锅"
+    ],
+    "tags": [
+      "早餐",
+      "面食",
+      "简单"
+    ]
+  },
+  {
+    "id": "shandong_scallion_beef",
+    "nameZh": "葱爆牛肉",
+    "nameEn": "Shandong Scallion Beef",
+    "cuisine": "chinese",
+    "regionalCuisine": "shandong",
+    "flavors": [
+      "salty",
+      "umami"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "medium",
+    "minCookingLevel": "intermediate",
+    "prepTime": 15,
+    "cookTime": 5,
+    "servings": 2,
+    "ingredients": [
+      {
+        "ingredientId": "beef_sirloin",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 8,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 20,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "牛肉逆纹切薄片，加酱油、料酒、淀粉腌15分钟",
+      "大葱切段",
+      "锅中大火热油，快速滑炒牛肉至变色盛出",
+      "锅中再加少许油，放入葱段爆炒出香",
+      "倒回牛肉快速翻炒均匀出锅"
+    ],
+    "tags": [
+      "鲁菜",
+      "经典",
+      "下饭菜"
+    ]
+  },
+  {
+    "id": "fujian_seafood_soup",
+    "nameZh": "海鲜豆腐羹",
+    "nameEn": "Fujian Seafood Tofu Soup",
+    "cuisine": "chinese",
+    "regionalCuisine": "fujian",
+    "flavors": [
+      "umami",
+      "light"
+    ],
+    "mealTypes": [
+      "dinner"
+    ],
+    "difficulty": "medium",
+    "minCookingLevel": "intermediate",
+    "prepTime": 10,
+    "cookTime": 10,
+    "servings": 3,
+    "ingredients": [
+      {
+        "ingredientId": "shrimp",
+        "amount": 150,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "tofu",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "egg",
+        "amount": 1,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "mushroom",
+        "amount": 50,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sesame_oil",
+        "amount": 3,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 5,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "豆腐切小丁，虾仁去虾线，蘑菇切丁",
+      "锅中加水烧开，放入豆腐和蘑菇",
+      "加入虾仁煮至变色",
+      "水淀粉勾薄芡",
+      "淋入蛋液搅散",
+      "加盐调味，滴香油撒葱花出锅"
+    ],
+    "tags": [
+      "闽菜",
+      "汤类",
+      "海鲜"
+    ]
+  },
+  {
+    "id": "stir_fried_beef_mince_tofu",
+    "nameZh": "牛肉末炒豆腐",
+    "nameEn": "Beef Mince with Tofu Stir-fry",
+    "cuisine": "chinese",
+    "regionalCuisine": "homestyle",
+    "flavors": [
+      "salty",
+      "umami"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "easy",
+    "minCookingLevel": "basic",
+    "prepTime": 10,
+    "cookTime": 10,
+    "servings": 2,
+    "ingredients": [
+      {
+        "ingredientId": "beef_mince",
+        "amount": 150,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "tofu",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "oyster_sauce",
+        "amount": 5,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 10,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "豆腐切块，焯水沥干",
+      "锅中热油，炒牛肉末至变色",
+      "加蒜末和酱油翻炒",
+      "放入豆腐轻轻翻炒",
+      "加蚝油和少许水焖煮3分钟",
+      "撒葱花出锅"
+    ],
+    "tags": [
+      "家常菜",
+      "豆腐",
+      "下饭菜"
+    ]
+  },
+  {
+    "id": "sichuan_mapo_eggplant",
+    "nameZh": "麻辣烧茄子",
+    "nameEn": "Sichuan Spicy Braised Eggplant",
+    "cuisine": "chinese",
+    "regionalCuisine": "sichuan",
+    "flavors": [
+      "spicy",
+      "umami",
+      "salty"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "medium",
+    "minCookingLevel": "intermediate",
+    "prepTime": 10,
+    "cookTime": 12,
+    "servings": 2,
+    "ingredients": [
+      {
+        "ingredientId": "eggplant",
+        "amount": 400,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "doubanjiang",
+        "amount": 20,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 30,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 5,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "茄子切滚刀块",
+      "锅中多油，炸茄子至软捞出",
+      "锅留底油，炒香豆瓣酱",
+      "加蒜末、姜末翻炒",
+      "放入茄子，加酱油、糖和水焖煮3分钟",
+      "淀粉勾芡，撒葱花出锅"
+    ],
+    "tags": [
+      "川菜",
+      "下饭菜",
+      "辣味"
+    ]
+  },
+  {
+    "id": "cantonese_chicken_corn_soup",
+    "nameZh": "鸡蓉玉米羹",
+    "nameEn": "Cantonese Chicken Corn Soup",
+    "cuisine": "chinese",
+    "regionalCuisine": "cantonese",
+    "flavors": [
+      "sweet",
+      "umami"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "easy",
+    "minCookingLevel": "basic",
+    "prepTime": 10,
+    "cookTime": 15,
+    "servings": 3,
+    "ingredients": [
+      {
+        "ingredientId": "chicken_breast",
+        "amount": 150,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "corn",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "egg",
+        "amount": 1,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 5,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "鸡胸肉煮熟撕成丝或剁碎",
+      "锅中加水烧开，放入玉米粒煮5分钟",
+      "加入鸡肉搅匀",
+      "水淀粉勾薄芡",
+      "淋入蛋液搅散，加盐调味撒葱花出锅"
+    ],
+    "tags": [
+      "粤菜",
+      "汤类",
+      "清淡"
+    ]
+  },
+  {
+    "id": "cold_noodle_sesame",
+    "nameZh": "芝麻凉面",
+    "nameEn": "Cold Sesame Noodles",
+    "cuisine": "chinese",
+    "regionalCuisine": "sichuan",
+    "flavors": [
+      "umami",
+      "salty"
+    ],
+    "mealTypes": [
+      "lunch"
+    ],
+    "difficulty": "easy",
+    "minCookingLevel": "beginner",
+    "prepTime": 10,
+    "cookTime": 8,
+    "servings": 2,
+    "ingredients": [
+      {
+        "ingredientId": "noodles_dried",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cucumber",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sesame_oil",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "vinegar",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 5,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "面条煮熟捞出过凉水沥干",
+      "黄瓜切丝",
+      "调酱汁：酱油、醋、香油、蒜末混合",
+      "面条装碗，铺上黄瓜丝",
+      "浇上酱汁拌匀食用"
+    ],
+    "tags": [
+      "凉面",
+      "夏季",
+      "主食"
+    ]
+  },
+  {
+    "id": "braised_lamb_potato",
+    "nameZh": "土豆炖羊肉",
+    "nameEn": "Braised Lamb with Potatoes",
+    "cuisine": "chinese",
+    "regionalCuisine": "homestyle",
+    "flavors": [
+      "salty",
+      "umami"
+    ],
+    "mealTypes": [
+      "dinner"
+    ],
+    "difficulty": "hard",
+    "minCookingLevel": "advanced",
+    "prepTime": 15,
+    "cookTime": 90,
+    "servings": 4,
+    "ingredients": [
+      {
+        "ingredientId": "lamb_leg",
+        "amount": 500,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "potato",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "carrot",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "onion",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 20,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 15,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "羊肉切块，冷水焯水去膻",
+      "锅中热油，炒香洋葱和姜片",
+      "放入羊肉翻炒上色",
+      "加料酒、酱油和足量水",
+      "大火烧开转小火炖1小时",
+      "加入土豆和胡萝卜继续炖20分钟",
+      "加盐调味出锅"
+    ],
+    "tags": [
+      "炖菜",
+      "硬菜",
+      "冬季"
+    ]
+  },
+  {
+    "id": "egg_toast_roll",
+    "nameZh": "吐司蛋卷",
+    "nameEn": "Egg Toast Roll",
+    "cuisine": "chinese",
+    "regionalCuisine": "homestyle",
+    "flavors": [
+      "light",
+      "umami"
+    ],
+    "mealTypes": [
+      "breakfast"
+    ],
+    "difficulty": "easy",
+    "minCookingLevel": "beginner",
+    "prepTime": 5,
+    "cookTime": 5,
+    "servings": 2,
+    "ingredients": [
+      {
+        "ingredientId": "bread",
+        "amount": 4,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "egg",
+        "amount": 2,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "milk",
+        "amount": 30,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 10,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "吐司去边压扁",
+      "鸡蛋打散加牛奶搅匀",
+      "吐司卷起，裹上蛋液",
+      "平底锅小火煎至金黄即可"
+    ],
+    "tags": [
+      "早餐",
+      "简单",
+      "快手菜"
+    ]
+  },
+  {
+    "id": "jiangsu_braised_pork_ball_soup",
+    "nameZh": "清汤狮子头",
+    "nameEn": "Jiangsu Clear Soup Meatball",
+    "cuisine": "chinese",
+    "regionalCuisine": "jiangsu",
+    "flavors": [
+      "light",
+      "umami"
+    ],
+    "mealTypes": [
+      "dinner"
+    ],
+    "difficulty": "hard",
+    "minCookingLevel": "advanced",
+    "prepTime": 20,
+    "cookTime": 45,
+    "servings": 4,
+    "ingredients": [
+      {
+        "ingredientId": "pork_mince",
+        "amount": 400,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "egg",
+        "amount": 1,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "chinese_cabbage",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 10,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "肉末加蛋液、淀粉、料酒、姜末搅拌上劲",
+      "搓成4个大肉丸",
+      "砂锅中加水烧开，放入肉丸",
+      "小火炖35分钟",
+      "加入白菜继续炖10分钟",
+      "加盐调味出锅"
+    ],
+    "tags": [
+      "苏菜",
+      "汤类",
+      "宴客菜"
+    ]
+  }
+]

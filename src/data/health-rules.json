@@ -1,0 +1,129 @@
+{
+  "conditions": {
+    "diabetes": {
+      "nameZh": "糖尿病",
+      "nameEn": "Diabetes",
+      "blockedTags": ["high_gi", "high_sugar"],
+      "maxDailyCarbsPercent": 45,
+      "maxDailySugarG": 25,
+      "description": "控制碳水化合物和糖分摄入，避免高升糖指数食材"
+    },
+    "hypertension": {
+      "nameZh": "高血压",
+      "nameEn": "Hypertension",
+      "blockedTags": ["high_sodium"],
+      "maxDailySodiumMg": 2000,
+      "description": "限制钠盐摄入，避免高钠食材和调味料"
+    },
+    "gout": {
+      "nameZh": "痛风",
+      "nameEn": "Gout",
+      "blockedTags": ["high_purine"],
+      "description": "避免高嘌呤食物，如内脏、海鲜、浓汤"
+    },
+    "hyperlipidemia": {
+      "nameZh": "高血脂",
+      "nameEn": "Hyperlipidemia",
+      "blockedTags": ["high_fat"],
+      "maxDailyFatPercent": 25,
+      "description": "限制脂肪摄入，避免高脂食材"
+    },
+    "kidney_disease": {
+      "nameZh": "肾病",
+      "nameEn": "Kidney Disease",
+      "blockedTags": ["high_sodium"],
+      "maxDailyProteinG": 50,
+      "maxDailySodiumMg": 1500,
+      "description": "限制蛋白质和钠的摄入"
+    }
+  },
+  "restrictions": {
+    "vegetarian": {
+      "nameZh": "素食",
+      "nameEn": "Vegetarian",
+      "blockedCategories": ["meat", "seafood"],
+      "description": "不食用肉类和海鲜"
+    },
+    "vegan": {
+      "nameZh": "纯素",
+      "nameEn": "Vegan",
+      "blockedCategories": ["meat", "seafood", "egg_dairy"],
+      "description": "不食用任何动物性食品"
+    },
+    "halal": {
+      "nameZh": "清真",
+      "nameEn": "Halal",
+      "blockedIngredients": ["pork_belly", "pork_mince", "cooking_wine"],
+      "description": "不食用猪肉和含酒精食材"
+    },
+    "no_pork": {
+      "nameZh": "不吃猪肉",
+      "nameEn": "No Pork",
+      "blockedIngredients": ["pork_belly", "pork_mince"],
+      "description": "不食用猪肉"
+    },
+    "no_beef": {
+      "nameZh": "不吃牛肉",
+      "nameEn": "No Beef",
+      "blockedIngredients": ["beef_sirloin", "beef_mince"],
+      "description": "不食用牛肉"
+    },
+    "no_seafood": {
+      "nameZh": "不吃海鲜",
+      "nameEn": "No Seafood",
+      "blockedCategories": ["seafood"],
+      "description": "不食用任何海鲜"
+    },
+    "no_spicy": {
+      "nameZh": "不吃辣",
+      "nameEn": "No Spicy",
+      "blockedIngredients": ["doubanjiang"],
+      "description": "不食用辛辣食材"
+    },
+    "lactose_free": {
+      "nameZh": "无乳糖",
+      "nameEn": "Lactose Free",
+      "blockedTags": ["allergen_dairy"],
+      "description": "不食用含乳糖的食品"
+    },
+    "gluten_free": {
+      "nameZh": "无麸质",
+      "nameEn": "Gluten Free",
+      "blockedTags": ["allergen_gluten"],
+      "description": "不食用含麸质的食品"
+    },
+    "nut_free": {
+      "nameZh": "无坚果",
+      "nameEn": "Nut Free",
+      "blockedTags": ["allergen_nut"],
+      "description": "不食用含坚果的食品"
+    }
+  },
+  "dailyCalorieDefaults": {
+    "male": {
+      "toddler": 1000,
+      "child": 1400,
+      "preteen": 1800,
+      "teen": 2400,
+      "young_adult": 2600,
+      "adult": 2400,
+      "middle_age": 2200,
+      "senior": 2000
+    },
+    "female": {
+      "toddler": 900,
+      "child": 1200,
+      "preteen": 1600,
+      "teen": 2000,
+      "young_adult": 2200,
+      "adult": 2000,
+      "middle_age": 1800,
+      "senior": 1600
+    }
+  },
+  "macroRatios": {
+    "balanced": { "carbsPercent": 50, "proteinPercent": 25, "fatPercent": 25 },
+    "low_carb": { "carbsPercent": 30, "proteinPercent": 35, "fatPercent": 35 },
+    "high_protein": { "carbsPercent": 40, "proteinPercent": 35, "fatPercent": 25 }
+  }
+}
