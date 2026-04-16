@@ -21,10 +21,18 @@ const CAT_LABELS: Record<IngredientCategory, string> = {
   oil: '油脂', dried: '干货', other: '其他',
 };
 
-const TAG_LABELS: Record<string, string> = {
+const WARN_LABELS: Record<string, string> = {
   high_gi: '高升糖', high_purine: '高嘌呤', high_sodium: '高钠', high_fat: '高脂',
-  high_sugar: '高糖', allergen_gluten: '麸质', allergen_dairy: '乳制品',
-  allergen_nut: '坚果', allergen_seafood: '海鲜', allergen_egg: '蛋', allergen_soy: '大豆',
+  high_sugar: '高糖', high_cholesterol: '高胆固醇', processed: '加工肉', contains_alcohol: '含酒精',
+};
+const ALLERGEN_LABELS: Record<string, string> = {
+  allergen_gluten: '麸质', allergen_dairy: '乳制品', allergen_nut: '坚果',
+  allergen_sesame: '芝麻', allergen_seafood: '海鲜', allergen_egg: '蛋', allergen_soy: '大豆',
+};
+const HIGHLIGHT_LABELS: Record<string, string> = {
+  high_fiber: '高纤', high_protein: '高蛋白', high_iron: '高铁', high_iodine: '高碘',
+  high_zinc: '高锌', high_vitamin_a: '高维A', high_vitamin: '富维生素',
+  whole_grain: '全谷物', low_fat: '低脂', low_calorie: '低卡',
 };
 
 export default function IngredientsAdminPage() {
@@ -98,8 +106,14 @@ export default function IngredientsAdminPage() {
                 <td className="p-3 text-right text-xs">${ing.priceNZD}/{ing.unit}</td>
                 <td className="p-3">
                   <div className="flex flex-wrap gap-1">
-                    {ing.healthTags.map(t => (
-                      <span key={t} className="text-[10px] bg-red-50 text-red-600 px-1 rounded">{TAG_LABELS[t] || t}</span>
+                    {ing.warnings.map(t => (
+                      <span key={t} className="text-[10px] bg-red-50 text-red-600 px-1 rounded">{WARN_LABELS[t] || t}</span>
+                    ))}
+                    {ing.allergens.map(t => (
+                      <span key={t} className="text-[10px] bg-orange-50 text-orange-600 px-1 rounded">{ALLERGEN_LABELS[t] || t}</span>
+                    ))}
+                    {ing.highlights.map(t => (
+                      <span key={t} className="text-[10px] bg-emerald-50 text-emerald-600 px-1 rounded">{HIGHLIGHT_LABELS[t] || t}</span>
                     ))}
                   </div>
                 </td>

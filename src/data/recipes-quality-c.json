@@ -1,0 +1,1666 @@
+[
+  {
+    "id": "jiang-bao-ji-ding",
+    "nameZh": "酱爆鸡丁",
+    "nameEn": "Stir-Fried Diced Chicken in Bean Paste",
+    "cuisine": "chinese",
+    "regionalCuisine": "shandong",
+    "cookingMethod": "stir_fry",
+    "flavors": [
+      "salty",
+      "umami"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "medium",
+    "minCookingLevel": "intermediate",
+    "prepTime": 15,
+    "cookTime": 8,
+    "servings": 3,
+    "ingredients": [
+      {
+        "ingredientId": "chicken_breast",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "capsicum",
+        "amount": 1,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "carrot",
+        "amount": 50,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "bean_paste",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 3,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "sesame_oil",
+        "amount": 1,
+        "unit": "tbsp"
+      }
+    ],
+    "steps": [
+      "鸡胸肉切1.5cm见方小丁，加料酒、淀粉抓匀腌制10分钟",
+      "彩椒切同样大小方丁，胡萝卜切小丁备用",
+      "锅中宽油烧至六成热，下鸡丁滑散至变白捞出沥油",
+      "锅留底油，小火煸香蒜末，下甜面酱炒出酱香",
+      "倒入胡萝卜丁翻炒1分钟至稍软",
+      "下鸡丁和彩椒丁大火翻炒均匀，加糖调味",
+      "翻炒至酱汁均匀裹住每粒鸡丁，淋芝麻油出锅"
+    ],
+    "tags": [
+      "下饭菜",
+      "快手菜",
+      "高蛋白"
+    ],
+    "status": "reviewed",
+    "source": "quality-c",
+    "description": "鲁菜家常好味。以鸡胸肉配彩椒为主料，旺火翻炒而成，镬气十足，口感咸香、鲜美，适合午餐/晚餐享用。"
+  },
+  {
+    "id": "suan-ni-bai-rou",
+    "nameZh": "蒜泥白肉",
+    "nameEn": "Garlic Pork Belly Slices",
+    "cuisine": "chinese",
+    "regionalCuisine": "sichuan",
+    "cookingMethod": "boil",
+    "flavors": [
+      "spicy",
+      "salty",
+      "sour"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "medium",
+    "minCookingLevel": "intermediate",
+    "prepTime": 10,
+    "cookTime": 30,
+    "servings": 4,
+    "ingredients": [
+      {
+        "ingredientId": "pork_belly",
+        "amount": 400,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 8,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "light_soy",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "chili_flakes",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "vinegar",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "sesame_oil",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 2,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 3,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "cucumber",
+        "amount": 1,
+        "unit": "piece"
+      }
+    ],
+    "steps": [
+      "五花肉整块冷水下锅，加葱段、姜片、料酒大火煮沸后转小火煮25分钟至筷子能插透",
+      "捞出肉块立即放入冰水中浸泡15分钟，使肉质紧实",
+      "蒜瓣捣成蒜泥，加生抽、醋、糖、辣椒面、芝麻油调成蒜泥酱汁",
+      "黄瓜拍碎切段铺在盘底",
+      "五花肉切2mm薄片，每片要带皮带肥带瘦",
+      "肉片整齐码放在黄瓜上，将蒜泥酱汁均匀浇在肉片上即可"
+    ],
+    "tags": [
+      "宴客菜",
+      "凉菜",
+      "下酒菜"
+    ],
+    "status": "reviewed",
+    "source": "quality-c",
+    "description": "川菜家常好味。以五花肉配大蒜为主料，清水煮制而成，清爽利落，口感香辣、咸香、酸爽，适合午餐/晚餐享用。"
+  },
+  {
+    "id": "kou-shui-ji",
+    "nameZh": "口水鸡",
+    "nameEn": "Saliva Chicken",
+    "cuisine": "chinese",
+    "regionalCuisine": "sichuan",
+    "cookingMethod": "boil",
+    "flavors": [
+      "spicy",
+      "umami",
+      "salty"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "medium",
+    "minCookingLevel": "intermediate",
+    "prepTime": 15,
+    "cookTime": 25,
+    "servings": 4,
+    "ingredients": [
+      {
+        "ingredientId": "chicken_thigh",
+        "amount": 500,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 4,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 3,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "sichuan_pepper",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "chili_flakes",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "light_soy",
+        "amount": 3,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "vinegar",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "sesame_oil",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 1,
+        "unit": "tbsp"
+      }
+    ],
+    "steps": [
+      "鸡腿冷水下锅加葱段姜片料酒，大火煮沸后转小火煮18分钟",
+      "煮好的鸡腿立刻捞入冰水中浸泡15分钟，使皮脆肉嫩",
+      "小锅烧热油，将花椒炸出香味后捞出花椒不要，趁热油浇在辣椒面上制成红油",
+      "红油中加入生抽、醋、糖、芝麻油拌匀成酱汁",
+      "鸡腿沥干水分斩成小块摆盘",
+      "将调好的红油酱汁浇在鸡块上，撒葱花即可"
+    ],
+    "tags": [
+      "宴客菜",
+      "凉菜",
+      "下酒菜",
+      "下饭菜"
+    ],
+    "status": "reviewed",
+    "source": "quality-c",
+    "description": "川菜家常好味。以鸡腿肉配生姜为主料，清水煮制而成，清爽利落，口感香辣、鲜美、咸香，适合午餐/晚餐享用。"
+  },
+  {
+    "id": "dong-po-rou",
+    "nameZh": "东坡红烧肉",
+    "nameEn": "Dongpo Braised Pork Belly",
+    "cuisine": "chinese",
+    "regionalCuisine": "zhejiang",
+    "cookingMethod": "braise",
+    "flavors": [
+      "sweet",
+      "salty",
+      "umami"
+    ],
+    "mealTypes": [
+      "dinner"
+    ],
+    "difficulty": "hard",
+    "minCookingLevel": "advanced",
+    "prepTime": 20,
+    "cookTime": 90,
+    "servings": 4,
+    "ingredients": [
+      {
+        "ingredientId": "pork_belly",
+        "amount": 600,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "dark_soy",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "light_soy",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 100,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 3,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 5,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 4,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "star_anise",
+        "amount": 2,
+        "unit": "piece"
+      }
+    ],
+    "steps": [
+      "五花肉切5cm见方大块，冷水下锅焯水5分钟去血沫捞出",
+      "锅底铺上葱段和姜片形成隔层防止粘锅",
+      "肉块皮朝下整齐码放在葱姜上",
+      "加入料酒、生抽、老抽、冰糖和八角，水量刚好没过肉",
+      "大火烧开后转最小火加盖慢炖1.5小时",
+      "将肉块翻面皮朝上，继续炖30分钟至肉酥烂",
+      "大火收汁至汤汁浓稠油亮，轻轻取出摆盘浇汁"
+    ],
+    "tags": [
+      "宴客菜",
+      "经典名菜",
+      "下饭菜"
+    ],
+    "status": "reviewed",
+    "source": "quality-c",
+    "description": "浙菜宴客名菜。以五花肉配老抽为主料，慢火收汁而成，色泽红亮、咸香浓郁，口感甘甜、咸香、鲜美，工序讲究，宴请体面。"
+  },
+  {
+    "id": "sha-guo-dou-fu-bao",
+    "nameZh": "砂锅豆腐煲",
+    "nameEn": "Clay Pot Tofu Stew",
+    "cuisine": "chinese",
+    "regionalCuisine": "cantonese",
+    "cookingMethod": "stew",
+    "flavors": [
+      "umami",
+      "salty"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "easy",
+    "minCookingLevel": "basic",
+    "prepTime": 10,
+    "cookTime": 20,
+    "servings": 3,
+    "ingredients": [
+      {
+        "ingredientId": "tofu",
+        "amount": 400,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "pork_mince",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "mushroom",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "carrot",
+        "amount": 50,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "oyster_sauce",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "light_soy",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 3,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 2,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 1,
+        "unit": "tbsp"
+      }
+    ],
+    "steps": [
+      "豆腐切2cm厚片，入淡盐水浸泡5分钟去豆腥味",
+      "香菇切片，胡萝卜切薄片备用",
+      "砂锅烧热加油，放姜末蒜末爆香，下肉末炒散至变色",
+      "加入香菇片和胡萝卜片翻炒1分钟",
+      "加入适量清水烧开，放入豆腐片轻轻推匀",
+      "加蚝油、生抽调味，小火炖煮10分钟让豆腐入味",
+      "水淀粉勾薄芡，撒葱花上桌连砂锅一起上"
+    ],
+    "tags": [
+      "养生菜",
+      "家常菜",
+      "便当菜"
+    ],
+    "status": "reviewed",
+    "source": "quality-c",
+    "description": "粤式家常好味。以豆腐配猪肉末为主料，小火慢炖而成，软烂入味，口感鲜美、咸香，新手友好，快手完成。"
+  },
+  {
+    "id": "tie-ban-niu-liu",
+    "nameZh": "铁板牛柳",
+    "nameEn": "Sizzling Beef on Hot Plate",
+    "cuisine": "chinese",
+    "regionalCuisine": "cantonese",
+    "cookingMethod": "stir_fry",
+    "flavors": [
+      "salty",
+      "umami"
+    ],
+    "mealTypes": [
+      "dinner"
+    ],
+    "difficulty": "hard",
+    "minCookingLevel": "advanced",
+    "prepTime": 20,
+    "cookTime": 10,
+    "servings": 3,
+    "ingredients": [
+      {
+        "ingredientId": "beef_sirloin",
+        "amount": 350,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "onion",
+        "amount": 1,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "capsicum",
+        "amount": 1,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "oyster_sauce",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "light_soy",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "white_pepper",
+        "amount": 0.5,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 3,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 3,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "butter",
+        "amount": 10,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "牛柳逆纹切0.5cm厚片，加蚝油、生抽、淀粉、白胡椒粉腌制20分钟",
+      "洋葱切粗丝，彩椒切宽条备用",
+      "铁板提前加热至极烫，刷一层黄油",
+      "另起炒锅猛火热油，牛肉片大火快炒至表面变色约30秒立即盛出",
+      "锅中余油爆香蒜末，下洋葱丝彩椒条翻炒断生",
+      "将炒好的牛肉和蔬菜迅速倒在滋滋作响的铁板上",
+      "铁板上的食材会继续加热，趁热上桌享用"
+    ],
+    "tags": [
+      "宴客菜",
+      "高蛋白",
+      "西餐风味"
+    ],
+    "status": "reviewed",
+    "source": "quality-c",
+    "description": "粤式宴客名菜。以牛里脊配洋葱为主料，旺火翻炒而成，镬气十足，口感咸香、鲜美，工序讲究，宴请体面。"
+  },
+  {
+    "id": "xi-zhi-kao-lu-yu",
+    "nameZh": "锡纸烤鲈鱼",
+    "nameEn": "Foil-Baked Sea Bass",
+    "cuisine": "chinese",
+    "regionalCuisine": "cantonese",
+    "cookingMethod": "roast",
+    "flavors": [
+      "umami",
+      "spicy",
+      "salty"
+    ],
+    "mealTypes": [
+      "dinner"
+    ],
+    "difficulty": "medium",
+    "minCookingLevel": "intermediate",
+    "prepTime": 15,
+    "cookTime": 25,
+    "servings": 3,
+    "ingredients": [
+      {
+        "ingredientId": "fish_fillet",
+        "amount": 400,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "onion",
+        "amount": 0.5,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "capsicum",
+        "amount": 1,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 5,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 3,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "doubanjiang",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "light_soy",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 2,
+        "unit": "piece"
+      }
+    ],
+    "steps": [
+      "鱼片两面划花刀，用料酒和姜片腌制15分钟去腥",
+      "洋葱切丝铺在锡纸底部作为垫层",
+      "炒锅烧油，小火炒香蒜末和豆瓣酱至出红油",
+      "加入生抽调成酱汁备用",
+      "鱼片放在洋葱丝上，彩椒丝铺在鱼肉上",
+      "将酱汁均匀淋在鱼片上，锡纸包紧封口",
+      "烤箱预热200度，放入烤20-25分钟至鱼肉熟透",
+      "打开锡纸撒上葱花，趁热上桌"
+    ],
+    "tags": [
+      "宴客菜",
+      "低脂",
+      "烤箱菜"
+    ],
+    "status": "reviewed",
+    "source": "quality-c",
+    "description": "粤式家常好味。以鱼片(白肉鱼)配洋葱为主料，烤箱烘烤而成，外焦里嫩，口感鲜美、香辣、咸香，适合晚餐享用。"
+  },
+  {
+    "id": "yu-xiang-qie-zi",
+    "nameZh": "鱼香茄子煲",
+    "nameEn": "Yu Xiang Eggplant Casserole",
+    "cuisine": "chinese",
+    "regionalCuisine": "sichuan",
+    "cookingMethod": "braise",
+    "flavors": [
+      "sweet",
+      "sour",
+      "spicy"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "medium",
+    "minCookingLevel": "intermediate",
+    "prepTime": 15,
+    "cookTime": 15,
+    "servings": 3,
+    "ingredients": [
+      {
+        "ingredientId": "eggplant",
+        "amount": 400,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "pork_mince",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "doubanjiang",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 4,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 2,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 2,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "vinegar",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "light_soy",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 1,
+        "unit": "tbsp"
+      }
+    ],
+    "steps": [
+      "茄子切滚刀块，撒盐腌10分钟杀出水分后挤干",
+      "调鱼香汁：醋、糖、生抽、淀粉、少量水混合备用",
+      "锅中多放油烧至七成热，下茄子块炸至表面金黄捞出",
+      "锅留底油，小火煸炒豆瓣酱出红油",
+      "下肉末炒散至变色，加姜蒜末炒香",
+      "倒回茄子翻炒均匀，浇入鱼香汁大火翻炒收汁",
+      "汤汁浓稠裹住茄子后撒葱花出锅"
+    ],
+    "tags": [
+      "下饭菜",
+      "经典川菜",
+      "家常菜"
+    ],
+    "status": "reviewed",
+    "source": "quality-c",
+    "description": "川菜家常好味。以茄子配猪肉末为主料，慢火收汁而成，色泽红亮、咸香浓郁，口感甘甜、酸爽、香辣，适合午餐/晚餐享用。"
+  },
+  {
+    "id": "xiang-gan-chao-rou-si",
+    "nameZh": "香干炒肉丝",
+    "nameEn": "Dried Tofu with Shredded Pork",
+    "cuisine": "chinese",
+    "regionalCuisine": "hunan",
+    "cookingMethod": "stir_fry",
+    "flavors": [
+      "salty",
+      "umami"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "easy",
+    "minCookingLevel": "basic",
+    "prepTime": 10,
+    "cookTime": 6,
+    "servings": 2,
+    "ingredients": [
+      {
+        "ingredientId": "pork_loin",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "dried_tofu",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "chili_pepper",
+        "amount": 2,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 3,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "light_soy",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 0.5,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 2,
+        "unit": "tbsp"
+      }
+    ],
+    "steps": [
+      "猪里脊逆纹切细丝，加料酒、淀粉抓匀腌5分钟",
+      "香干切成火柴棍粗细的条，辣椒斜切丝",
+      "热锅凉油下肉丝大火快速滑散至变色盛出",
+      "锅中加少量油爆香蒜末，下辣椒丝煸炒出香",
+      "倒入香干丝翻炒2分钟至边缘微焦",
+      "回锅肉丝加生抽大火翻炒均匀即可出锅"
+    ],
+    "tags": [
+      "快手菜",
+      "下饭菜",
+      "便当菜",
+      "家常菜"
+    ],
+    "status": "reviewed",
+    "source": "quality-c",
+    "description": "湘菜家常好味。以猪里脊配豆腐干/豆干为主料，旺火翻炒而成，镬气十足，口感咸香、鲜美，新手友好，快手完成。"
+  },
+  {
+    "id": "qing-zheng-hua-dan-geng",
+    "nameZh": "滑蛋虾仁",
+    "nameEn": "Silky Egg with Shrimp",
+    "cuisine": "chinese",
+    "regionalCuisine": "cantonese",
+    "cookingMethod": "stir_fry",
+    "flavors": [
+      "light",
+      "umami"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "medium",
+    "minCookingLevel": "intermediate",
+    "prepTime": 10,
+    "cookTime": 5,
+    "servings": 2,
+    "ingredients": [
+      {
+        "ingredientId": "shrimp",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "egg",
+        "amount": 4,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 2,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 0.5,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 0.5,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "white_pepper",
+        "amount": 0.25,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 3,
+        "unit": "tbsp"
+      }
+    ],
+    "steps": [
+      "鲜虾去壳挑虾线，加料酒、淀粉和少许盐腌制10分钟",
+      "鸡蛋打散加少许盐和白胡椒粉，不要打过发",
+      "锅中油烧至五成热，下虾仁滑至变红卷曲捞出",
+      "虾仁倒入蛋液中拌匀",
+      "锅中留油烧至四成热，倒入虾仁蛋液",
+      "用铲子从四周向中心轻轻推动，蛋液七分熟尚有流动感时立即关火",
+      "利用余温让蛋液凝固至刚好嫩滑，撒葱花出锅"
+    ],
+    "tags": [
+      "快手菜",
+      "宴客菜",
+      "高蛋白",
+      "粤菜经典"
+    ],
+    "status": "reviewed",
+    "source": "quality-c",
+    "description": "粤式家常好味。以虾配鸡蛋为主料，旺火翻炒而成，镬气十足，口感清淡、鲜美，适合午餐/晚餐享用。"
+  },
+  {
+    "id": "mei-cai-kou-rou",
+    "nameZh": "梅菜扣肉",
+    "nameEn": "Steamed Pork Belly with Preserved Vegetables",
+    "cuisine": "chinese",
+    "regionalCuisine": "cantonese",
+    "cookingMethod": "steam",
+    "flavors": [
+      "salty",
+      "umami",
+      "sweet"
+    ],
+    "mealTypes": [
+      "dinner"
+    ],
+    "difficulty": "hard",
+    "minCookingLevel": "advanced",
+    "prepTime": 30,
+    "cookTime": 90,
+    "servings": 4,
+    "ingredients": [
+      {
+        "ingredientId": "pork_belly",
+        "amount": 500,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "dark_soy",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "light_soy",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 3,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 3,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "five_spice",
+        "amount": 0.5,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 3,
+        "unit": "tbsp"
+      }
+    ],
+    "steps": [
+      "五花肉整块煮至八成熟约20分钟，取出趁热在肉皮上扎密孔",
+      "肉皮上抹老抽上色，放入热油锅中皮朝下炸至虎皮色起泡",
+      "肉切0.8cm厚大片，加生抽老抽料酒五香粉糖拌匀腌30分钟",
+      "干梅菜泡软洗净切碎，炒锅加油炒香姜蒜末后下梅菜炒至干香",
+      "碗底码放肉片皮朝下整齐排列，上面铺炒好的梅菜压实",
+      "上蒸锅大火蒸1.5小时至肉烂入味",
+      "取出倒扣在盘中，肉皮朝上汤汁淋面即成"
+    ],
+    "tags": [
+      "宴客菜",
+      "经典名菜",
+      "年菜"
+    ],
+    "status": "reviewed",
+    "source": "quality-c",
+    "description": "粤式宴客名菜。以五花肉配老抽为主料，隔水蒸制而成，原汁原味，口感咸香、鲜美、甘甜，工序讲究，宴请体面。"
+  },
+  {
+    "id": "gong-bao-ji-ding-classic",
+    "nameZh": "宫保鸡丁",
+    "nameEn": "Kung Pao Chicken",
+    "cuisine": "chinese",
+    "regionalCuisine": "sichuan",
+    "cookingMethod": "stir_fry",
+    "flavors": [
+      "spicy",
+      "sweet",
+      "salty"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "medium",
+    "minCookingLevel": "intermediate",
+    "prepTime": 15,
+    "cookTime": 8,
+    "servings": 3,
+    "ingredients": [
+      {
+        "ingredientId": "chicken_breast",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "chili_pepper",
+        "amount": 8,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "sichuan_pepper",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 3,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 3,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 2,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "vinegar",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "light_soy",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 1,
+        "unit": "tbsp"
+      }
+    ],
+    "steps": [
+      "鸡胸肉切1.5cm丁，加料酒淀粉盐抓匀腌10分钟",
+      "干辣椒剪段去籽，葱白切丁与葱绿分开",
+      "碗中调宫保汁：醋、糖、生抽、淀粉、水拌匀",
+      "锅中油烧至五成热，放花椒小火炸至变色出香捞出",
+      "同一锅油放干辣椒段煸至变色发香",
+      "大火下鸡丁快速翻炒至变白",
+      "加姜蒜末葱白丁炒香，倒入宫保汁翻炒至汁浓裹匀",
+      "撒花生碎和葱绿段翻两下出锅"
+    ],
+    "tags": [
+      "经典川菜",
+      "下饭菜",
+      "高蛋白"
+    ],
+    "status": "reviewed",
+    "source": "quality-c",
+    "description": "川菜家常好味。以鸡胸肉配辣椒为主料，旺火翻炒而成，镬气十足，口感香辣、甘甜、咸香，适合午餐/晚餐享用。"
+  },
+  {
+    "id": "qing-zheng-lu-yu",
+    "nameZh": "清蒸鲈鱼",
+    "nameEn": "Steamed Sea Bass",
+    "cuisine": "chinese",
+    "regionalCuisine": "cantonese",
+    "cookingMethod": "steam",
+    "flavors": [
+      "light",
+      "umami"
+    ],
+    "mealTypes": [
+      "dinner"
+    ],
+    "difficulty": "medium",
+    "minCookingLevel": "intermediate",
+    "prepTime": 10,
+    "cookTime": 12,
+    "servings": 3,
+    "ingredients": [
+      {
+        "ingredientId": "fish_fillet",
+        "amount": 500,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 5,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 3,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "light_soy",
+        "amount": 3,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 0.5,
+        "unit": "tbsp"
+      }
+    ],
+    "steps": [
+      "鱼身两面各划三刀花刀便于入味和熟透",
+      "鱼身内外抹料酒，肚内塞姜片去腥，腌制10分钟",
+      "盘底铺葱段和姜片架起鱼身，使蒸汽对流",
+      "蒸锅水大火烧开后放入鱼盘，大火蒸8-10分钟",
+      "蒸好后倒掉盘中蒸出的腥水，去掉旧葱姜",
+      "鱼身上铺新鲜姜丝和葱丝",
+      "淋上蒸鱼豉油和少许糖，浇上一勺滚烫热油激出葱姜香气"
+    ],
+    "tags": [
+      "宴客菜",
+      "低脂",
+      "粤菜经典",
+      "养生菜"
+    ],
+    "status": "reviewed",
+    "source": "quality-c",
+    "description": "粤式家常好味。以鱼片(白肉鱼)配生姜为主料，隔水蒸制而成，原汁原味，口感清淡、鲜美，适合晚餐享用。"
+  },
+  {
+    "id": "la-zi-ji",
+    "nameZh": "辣子鸡丁",
+    "nameEn": "Chongqing Spicy Diced Chicken",
+    "cuisine": "chinese",
+    "regionalCuisine": "sichuan",
+    "cookingMethod": "deep_fry",
+    "flavors": [
+      "spicy",
+      "salty",
+      "umami"
+    ],
+    "mealTypes": [
+      "dinner"
+    ],
+    "difficulty": "medium",
+    "minCookingLevel": "intermediate",
+    "prepTime": 15,
+    "cookTime": 12,
+    "servings": 3,
+    "ingredients": [
+      {
+        "ingredientId": "chicken_thigh",
+        "amount": 400,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "chili_pepper",
+        "amount": 15,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "sichuan_pepper",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 4,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 3,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "light_soy",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 0.5,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 200,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "鸡腿去骨切2cm小丁，加料酒生抽盐腌15分钟后拌入干淀粉",
+      "干辣椒剪成2cm段去籽备用",
+      "锅中油烧至六成热，分批下鸡丁炸至表面金黄酥脆捞出",
+      "复炸一次使鸡丁更加酥脆，沥油备用",
+      "锅中留少量底油，小火下花椒和干辣椒段慢慢煸炒出香味",
+      "辣椒颜色变深后倒入炸好的鸡丁大火翻炒",
+      "加蒜末姜末快速翻炒均匀，撒少许盐和白芝麻出锅"
+    ],
+    "tags": [
+      "下酒菜",
+      "下饭菜",
+      "川菜经典"
+    ],
+    "status": "reviewed",
+    "source": "quality-c",
+    "description": "川菜家常好味。以鸡腿肉配辣椒为主料，高温油炸而成，金黄酥脆，口感香辣、咸香、鲜美，适合晚餐享用。"
+  },
+  {
+    "id": "tang-cu-pai-gu",
+    "nameZh": "糖醋排骨",
+    "nameEn": "Sweet and Sour Spare Ribs",
+    "cuisine": "chinese",
+    "regionalCuisine": "jiangsu",
+    "cookingMethod": "braise",
+    "flavors": [
+      "sweet",
+      "sour",
+      "salty"
+    ],
+    "mealTypes": [
+      "dinner"
+    ],
+    "difficulty": "medium",
+    "minCookingLevel": "intermediate",
+    "prepTime": 15,
+    "cookTime": 30,
+    "servings": 3,
+    "ingredients": [
+      {
+        "ingredientId": "pork_ribs",
+        "amount": 500,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "vinegar",
+        "amount": 3,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 3,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "light_soy",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "tomato_paste",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 3,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 3,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 2,
+        "unit": "tbsp"
+      }
+    ],
+    "steps": [
+      "排骨剁3cm段冷水下锅，加料酒姜片焯水5分钟去血沫",
+      "捞出排骨冲洗干净沥水备用",
+      "锅中放油和糖小火炒糖色至枣红色起大泡",
+      "迅速下排骨翻炒上色，加姜片蒜瓣煸香",
+      "加入生抽番茄酱和开水没过排骨，大火烧开转小火炖25分钟",
+      "排骨熟烂后加醋大火收汁翻炒",
+      "汤汁浓稠挂满排骨时撒白芝麻出锅"
+    ],
+    "tags": [
+      "宴客菜",
+      "经典名菜",
+      "下饭菜"
+    ],
+    "status": "reviewed",
+    "source": "quality-c",
+    "description": "苏菜家常好味。以排骨配醋为主料，慢火收汁而成，色泽红亮、咸香浓郁，口感甘甜、酸爽、咸香，适合晚餐享用。"
+  },
+  {
+    "id": "ma-po-dou-fu",
+    "nameZh": "麻婆豆腐",
+    "nameEn": "Mapo Tofu",
+    "cuisine": "chinese",
+    "regionalCuisine": "sichuan",
+    "cookingMethod": "braise",
+    "flavors": [
+      "spicy",
+      "umami",
+      "salty"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "easy",
+    "minCookingLevel": "basic",
+    "prepTime": 10,
+    "cookTime": 10,
+    "servings": 3,
+    "ingredients": [
+      {
+        "ingredientId": "tofu",
+        "amount": 400,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "pork_mince",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "doubanjiang",
+        "amount": 1.5,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "sichuan_pepper",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 3,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 2,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "chili_flakes",
+        "amount": 1,
+        "unit": "tbsp"
+      }
+    ],
+    "steps": [
+      "嫩豆腐切2cm方块，放入加盐的开水中浸泡5分钟去豆腥并定型",
+      "花椒干锅小火焙香后擀成花椒粉备用",
+      "锅中油热下肉末炒散至出油变酥",
+      "推到一边加豆瓣酱小火炒出红油",
+      "加蒜末辣椒面翻炒出香，加适量水烧开",
+      "轻轻放入豆腐块，小火煮3分钟入味，中途不要翻动以免碎裂",
+      "水淀粉分两次勾芡，轻轻推匀使汤汁裹住豆腐",
+      "出锅撒花椒粉和葱花"
+    ],
+    "tags": [
+      "下饭菜",
+      "经典川菜",
+      "快手菜"
+    ],
+    "status": "reviewed",
+    "source": "quality-c",
+    "description": "川菜家常好味。以豆腐配猪肉末为主料，慢火收汁而成，色泽红亮、咸香浓郁，口感香辣、鲜美、咸香，新手友好，快手完成。"
+  },
+  {
+    "id": "xiao-chao-niu-rou",
+    "nameZh": "小炒黄牛肉",
+    "nameEn": "Hunan Stir-Fried Beef",
+    "cuisine": "chinese",
+    "regionalCuisine": "hunan",
+    "cookingMethod": "stir_fry",
+    "flavors": [
+      "spicy",
+      "salty",
+      "umami"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "medium",
+    "minCookingLevel": "intermediate",
+    "prepTime": 15,
+    "cookTime": 6,
+    "servings": 2,
+    "ingredients": [
+      {
+        "ingredientId": "beef_sirloin",
+        "amount": 250,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "chili_pepper",
+        "amount": 5,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "celery",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 3,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 2,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "cumin",
+        "amount": 0.5,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "light_soy",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 3,
+        "unit": "tbsp"
+      }
+    ],
+    "steps": [
+      "牛肉逆纹切薄片，加生抽料酒淀粉腌制15分钟",
+      "小米辣斜切圈，芹菜切斜段备用",
+      "热锅宽油至冒烟，下牛肉片大火爆炒10秒迅速盛出",
+      "锅留底油爆香姜蒜末，下辣椒圈煸出香味",
+      "加入芹菜段大火翻炒至断生",
+      "回锅牛肉撒少许孜然粉翻炒均匀即可出锅"
+    ],
+    "tags": [
+      "下饭菜",
+      "高蛋白",
+      "湘菜经典"
+    ],
+    "status": "reviewed",
+    "source": "quality-c",
+    "description": "湘菜家常好味。以牛里脊配辣椒为主料，旺火翻炒而成，镬气十足，口感香辣、咸香、鲜美，适合午餐/晚餐享用。"
+  },
+  {
+    "id": "suan-cai-yu-pian",
+    "nameZh": "酸菜鱼片",
+    "nameEn": "Fish Fillets in Sour Cabbage Broth",
+    "cuisine": "chinese",
+    "regionalCuisine": "sichuan",
+    "cookingMethod": "boil",
+    "flavors": [
+      "sour",
+      "spicy",
+      "umami"
+    ],
+    "mealTypes": [
+      "dinner"
+    ],
+    "difficulty": "medium",
+    "minCookingLevel": "intermediate",
+    "prepTime": 20,
+    "cookTime": 15,
+    "servings": 3,
+    "ingredients": [
+      {
+        "ingredientId": "fish_fillet",
+        "amount": 400,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "chinese_cabbage",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "chili_pepper",
+        "amount": 5,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "sichuan_pepper",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 5,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 4,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "egg",
+        "amount": 1,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "white_pepper",
+        "amount": 0.5,
+        "unit": "tbsp"
+      }
+    ],
+    "steps": [
+      "鱼片斜刀切薄片，加蛋清淀粉料酒白胡椒轻轻抓匀腌15分钟",
+      "酸菜（用白菜代替）切丝挤干水分备用",
+      "锅中油热爆香姜蒜末和花椒，下酸菜丝炒出酸香",
+      "加足量清水大火烧开煮5分钟出酸味",
+      "捞出酸菜铺在大碗底部，汤继续保持沸腾",
+      "鱼片逐片下入沸汤中，变白后约30秒关火",
+      "将鱼片和汤倒入酸菜碗中",
+      "另起锅烧热油浇在鱼片上激出香味，撒辣椒和蒜末"
+    ],
+    "tags": [
+      "宴客菜",
+      "下饭菜",
+      "川菜经典"
+    ],
+    "status": "reviewed",
+    "source": "quality-c",
+    "description": "川菜家常好味。以鱼片(白肉鱼)配大白菜为主料，清水煮制而成，清爽利落，口感酸爽、香辣、鲜美，适合晚餐享用。"
+  },
+  {
+    "id": "hui-guo-rou",
+    "nameZh": "回锅肉",
+    "nameEn": "Twice-Cooked Pork",
+    "cuisine": "chinese",
+    "regionalCuisine": "sichuan",
+    "cookingMethod": "stir_fry",
+    "flavors": [
+      "spicy",
+      "salty",
+      "umami"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "medium",
+    "minCookingLevel": "intermediate",
+    "prepTime": 10,
+    "cookTime": 15,
+    "servings": 3,
+    "ingredients": [
+      {
+        "ingredientId": "pork_belly",
+        "amount": 400,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "leek",
+        "amount": 150,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "capsicum",
+        "amount": 1,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "doubanjiang",
+        "amount": 1.5,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "bean_paste",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 3,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 3,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "dark_soy",
+        "amount": 0.5,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 1,
+        "unit": "tbsp"
+      }
+    ],
+    "steps": [
+      "五花肉整块冷水下锅加姜片煮至八成熟约15分钟，捞出放凉",
+      "肉切成大而薄的片约3mm厚，蒜苗斜切段，彩椒切片",
+      "锅中不用放油，直接下肉片中火煸炒至出油卷曲呈灯盏窝状",
+      "将肉推到锅边，用煸出的猪油炒豆瓣酱出红油",
+      "加甜面酱和老抽翻炒上色",
+      "下蒜苗段和彩椒片大火翻炒至蒜苗断生",
+      "蒜苗变软即可出锅，不能炒过老"
+    ],
+    "tags": [
+      "下饭菜",
+      "经典川菜",
+      "家常菜"
+    ],
+    "status": "reviewed",
+    "source": "quality-c",
+    "description": "川菜家常好味。以五花肉配韭菜为主料，旺火翻炒而成，镬气十足，口感香辣、咸香、鲜美，适合午餐/晚餐享用。"
+  }
+]

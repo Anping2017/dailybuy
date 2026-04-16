@@ -4,7 +4,6 @@ const DATA_DIR = path.join(__dirname, '..', 'src', 'data');
 
 const ings = JSON.parse(fs.readFileSync(path.join(DATA_DIR, 'ingredients.json'), 'utf8'));
 const existingIds = new Set(ings.map(i => i.id));
-const allMarkets = ['countdown','paknsave','newworld','asian_grocery'];
 
 const newIngredients = [
   // === 肉类 ===
@@ -78,7 +77,6 @@ const newIngredients = [
 let added = 0;
 for (const ni of newIngredients) {
   if (!existingIds.has(ni.id)) {
-    ni.supermarkets = allMarkets;
     if (!ni.season) ni.season = [];
     ings.push(ni);
     existingIds.add(ni.id);

@@ -16,20 +16,42 @@ export type IngredientCategory =
   | 'dried'       // 干货
   | 'other';
 
-export type HealthTag =
-  | 'high_gi'       // 高升糖指数
-  | 'high_purine'   // 高嘌呤
-  | 'high_sodium'   // 高钠
-  | 'high_fat'      // 高脂
-  | 'high_sugar'    // 高糖
+// 健康警告 — 推荐算法会用来屏蔽/降权(糖尿病、高血压、痛风等)
+export type HealthWarning =
+  | 'high_gi'           // 高升糖指数
+  | 'high_purine'       // 高嘌呤
+  | 'high_sodium'       // 高钠
+  | 'high_fat'          // 高脂
+  | 'high_sugar'        // 高糖
+  | 'high_cholesterol'  // 高胆固醇
+  | 'processed'         // 加工/腌制肉类(WHO I 类致癌物)
+  | 'contains_alcohol'; // 含酒精(孕妇/儿童/肝病/清真规避)
+
+// 过敏原 — 用于饮食禁忌硬过滤
+export type Allergen =
   | 'allergen_gluten'   // 含麸质
   | 'allergen_dairy'    // 含乳制品
   | 'allergen_nut'      // 含坚果
-  | 'allergen_seafood'  // 含海鲜
+  | 'allergen_sesame'   // 含芝麻(FAO 十大致敏原之一)
+  | 'allergen_seafood'  // 含海鲜/贝类
   | 'allergen_egg'      // 含蛋
   | 'allergen_soy';     // 含大豆
 
-export type Supermarket = 'countdown' | 'paknsave' | 'newworld' | 'asian_grocery' | 'any';
+// 营养亮点 — 正向标签,推荐算法可用来加权(例如给糖尿病家庭优先推荐低 GI 食材)
+export type NutritionHighlight =
+  | 'high_fiber'        // 高纤维
+  | 'high_protein'      // 高蛋白
+  | 'high_iron'         // 高铁
+  | 'high_iodine'       // 高碘
+  | 'high_zinc'         // 高锌
+  | 'high_vitamin_a'    // 高维生素 A
+  | 'high_vitamin'      // 高维生素(笼统,用于深色蔬菜等)
+  | 'whole_grain'       // 全谷物
+  | 'low_fat'           // 低脂
+  | 'low_calorie';      // 低卡
+
+// 向后兼容的联合类型 — 引擎的 blockedTags 需要同时包含 warnings 和 allergens
+export type HealthTag = HealthWarning | Allergen;
 
 export interface NutritionPer100g {
   calories: number;      // kcal
@@ -49,9 +71,10 @@ export interface Ingredient {
   nutrition: NutritionPer100g;
   priceNZD: number;          // 参考价格 per unit
   unit: string;              // kg, piece, bunch, bottle, etc.
-  healthTags: HealthTag[];
-  supermarkets: Supermarket[];
-  season?: string[];         // 当季月份 ['1','2','12'] etc.
+  allergens: Allergen[];               // 过敏原(饮食禁忌硬过滤)
+  warnings: HealthWarning[];            // 健康警告(慢性病屏蔽/降权)
+  highlights: NutritionHighlight[];     // 营养亮点(正向加权)
+  season?: string[];         // 当季月份 ['1','2','12'] (南半球/NZ)
 }
 
 // --- 菜谱相关 ---
@@ -174,6 +197,7 @@ export type HealthCondition =
   | 'gout'           // 痛风
   | 'hyperlipidemia' // 高血脂
   | 'kidney_disease' // 肾病
+  | 'pregnancy'      // 孕期/哺乳期
   | 'none';
 
 export type DietaryRestriction =
@@ -186,7 +210,8 @@ export type DietaryRestriction =
   | 'no_spicy'       // 不吃辣
   | 'lactose_free'   // 无乳糖
   | 'gluten_free'    // 无麸质
-  | 'nut_free';      // 无坚果
+  | 'nut_free'       // 无坚果
+  | 'avoid_processed'; // 规避加工食品(培根/火腿/香肠等 WHO I 类致癌物)
 
 export type AgeGroup =
   | 'toddler'    // 幼儿 1-3岁
@@ -228,7 +253,6 @@ export interface UserProfile {
   planDays: number;                        // 规划几天 (1-7)
   mealsPerDay: MealType[];                // 每天规划哪几餐
   weeklyBudget: number;                   // NZD
-  preferredSupermarkets: Supermarket[];
 }
 
 // --- 每周计划 ---
@@ -300,7 +324,6 @@ export interface ShoppingItem {
   unit: string;
   estimatedPrice: number;
   category: IngredientCategory;
-  supermarket: Supermarket;
   isOwned: boolean;              // 家里已有
   isPurchased: boolean;          // 已购买
   fromRecipes: string[];         // 来自哪些菜谱

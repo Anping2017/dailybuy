@@ -5,7 +5,7 @@ import { useRouter } from 'next/navigation';
 import { useState } from 'react';
 import { ChevronRight, ChevronLeft, Users, Heart, UtensilsCrossed, DollarSign } from 'lucide-react';
 import type {
-  AgeGroup, HealthCondition, DietaryRestriction, CuisineType, MealType, Supermarket,
+  AgeGroup, HealthCondition, DietaryRestriction, CuisineType, MealType,
 } from '@/types';
 
 const STEPS = ['家庭', '健康', '口味', '预算'];
@@ -17,11 +17,13 @@ const AGE_LABELS: Record<AgeGroup, string> = {
 const HEALTH_LABELS: Record<HealthCondition, string> = {
   none: '无特殊情况', diabetes: '糖尿病', hypertension: '高血压',
   gout: '痛风', hyperlipidemia: '高血脂', kidney_disease: '肾病',
+  pregnancy: '孕期/哺乳期',
 };
 const DIET_LABELS: Record<DietaryRestriction, string> = {
   vegetarian: '素食', vegan: '纯素', halal: '清真',
   no_pork: '不吃猪肉', no_beef: '不吃牛肉', no_seafood: '不吃海鲜',
   no_spicy: '不吃辣', lactose_free: '乳糖不耐', gluten_free: '麸质过敏', nut_free: '坚果过敏',
+  avoid_processed: '规避加工食品',
 };
 const CUISINE_LABELS: Record<CuisineType, string> = {
   chinese: '中餐', western: '西餐', asian_other: '日韩东南亚', fusion: '混合',
@@ -225,9 +227,9 @@ export default function OnboardingPage() {
             <div>
               <div className="flex items-center gap-2 mb-2">
                 <DollarSign className="w-6 h-6 text-primary" />
-                <h1 className="text-xl font-bold">预算和超市</h1>
+                <h1 className="text-xl font-bold">预算</h1>
               </div>
-              <p className="text-sm text-muted">设置每周预算和常去的超市</p>
+              <p className="text-sm text-muted">设置每周买菜预算</p>
             </div>
 
             <div>
@@ -241,30 +243,6 @@ export default function OnboardingPage() {
               <p className="text-xs text-muted mt-1">
                 参考: 2人约$100-150/周, 4人约$200-300/周
               </p>
-            </div>
-
-            <div>
-              <label className="text-sm font-medium block mb-2">常去的超市</label>
-              <div className="flex flex-wrap gap-2">
-                {([
-                  ['countdown', 'Countdown'],
-                  ['paknsave', "Pak'nSave"],
-                  ['newworld', 'New World'],
-                  ['asian_grocery', '华人超市'],
-                ] as [Supermarket, string][]).map(([k, v]) => (
-                  <Chip
-                    key={k}
-                    label={v}
-                    active={profile.preferredSupermarkets.includes(k)}
-                    onClick={() => {
-                      const next = profile.preferredSupermarkets.includes(k)
-                        ? profile.preferredSupermarkets.filter(x => x !== k)
-                        : [...profile.preferredSupermarkets, k];
-                      setProfile({ preferredSupermarkets: next.length > 0 ? next : ['countdown'] });
-                    }}
-                  />
-                ))}
-              </div>
             </div>
           </div>
         )}

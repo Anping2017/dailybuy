@@ -6,7 +6,7 @@ import { create } from 'zustand';
 import { persist } from 'zustand/middleware';
 import type {
   UserProfile, WeeklyPlan, ShoppingList, ShoppingItem,
-  FamilyMember, MealSlot, CuisineType, MealType, Supermarket,
+  FamilyMember, MealSlot, CuisineType, MealType,
   Recipe, Ingredient, RecipeAction, RecipePreference, RecentAction,
 } from '@/types';
 
@@ -78,7 +78,6 @@ const defaultProfile: UserProfile = {
   autoAddToShoppingList: true,
   planDays: 7,
   weeklyBudget: 150,
-  preferredSupermarkets: ['countdown', 'paknsave'],
   mealsPerDay: ['lunch', 'dinner'],
 };
 
@@ -203,7 +202,6 @@ export const useAppStore = create<AppState>()(
                 unit: ri.unit,
                 estimatedPrice: Math.round((amount / unitG) * ingredient.priceNZD * 100) / 100,
                 category: ingredient.category,
-                supermarket: ingredient.supermarkets[0] || 'any',
                 isOwned: false,
                 isPurchased: false,
                 fromRecipes: [recipe.nameZh],

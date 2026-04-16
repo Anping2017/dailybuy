@@ -4,6 +4,7 @@
       "nameZh": "糖尿病",
       "nameEn": "Diabetes",
       "blockedTags": ["high_gi", "high_sugar"],
+      "preferredHighlights": ["high_fiber", "low_calorie", "whole_grain"],
       "maxDailyCarbsPercent": 45,
       "maxDailySugarG": 25,
       "description": "控制碳水化合物和糖分摄入，避免高升糖指数食材"
@@ -11,30 +12,41 @@
     "hypertension": {
       "nameZh": "高血压",
       "nameEn": "Hypertension",
-      "blockedTags": ["high_sodium"],
+      "blockedTags": ["high_sodium", "processed"],
+      "preferredHighlights": ["low_fat", "high_fiber"],
       "maxDailySodiumMg": 2000,
-      "description": "限制钠盐摄入，避免高钠食材和调味料"
+      "description": "限制钠盐摄入，避免高钠食材和加工肉类"
     },
     "gout": {
       "nameZh": "痛风",
       "nameEn": "Gout",
       "blockedTags": ["high_purine"],
+      "preferredHighlights": ["high_fiber", "low_calorie"],
       "description": "避免高嘌呤食物，如内脏、海鲜、浓汤"
     },
     "hyperlipidemia": {
       "nameZh": "高血脂",
       "nameEn": "Hyperlipidemia",
-      "blockedTags": ["high_fat"],
+      "blockedTags": ["high_fat", "high_cholesterol", "processed"],
+      "preferredHighlights": ["low_fat", "high_fiber", "whole_grain"],
       "maxDailyFatPercent": 25,
-      "description": "限制脂肪摄入，避免高脂食材"
+      "description": "限制脂肪和胆固醇摄入，避免高脂食材和加工肉类"
     },
     "kidney_disease": {
       "nameZh": "肾病",
       "nameEn": "Kidney Disease",
-      "blockedTags": ["high_sodium"],
+      "blockedTags": ["high_sodium", "processed"],
+      "preferredHighlights": ["low_fat"],
       "maxDailyProteinG": 50,
       "maxDailySodiumMg": 1500,
-      "description": "限制蛋白质和钠的摄入"
+      "description": "限制蛋白质和钠的摄入，避免加工食品"
+    },
+    "pregnancy": {
+      "nameZh": "孕期/哺乳期",
+      "nameEn": "Pregnancy / Lactation",
+      "blockedTags": ["contains_alcohol", "processed"],
+      "preferredHighlights": ["high_iron", "high_protein", "high_fiber"],
+      "description": "规避酒精和加工肉(李斯特菌/亚硝酸盐风险)，优选高铁高蛋白"
     }
   },
   "restrictions": {
@@ -97,6 +109,12 @@
       "nameEn": "Nut Free",
       "blockedTags": ["allergen_nut"],
       "description": "不食用含坚果的食品"
+    },
+    "avoid_processed": {
+      "nameZh": "规避加工食品",
+      "nameEn": "Avoid Processed Foods",
+      "blockedTags": ["processed"],
+      "description": "规避培根/火腿/香肠/烟熏等 WHO I 类致癌物加工肉类"
     }
   },
   "dailyCalorieDefaults": {

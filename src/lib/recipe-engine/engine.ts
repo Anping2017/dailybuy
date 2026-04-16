@@ -7,6 +7,7 @@ import type {
   MealType, DayOfWeek, MealSlot, MealRecipe, DishRole,
   WeeklyPlan, ShoppingItem, ShoppingList,
   HealthCondition, DietaryRestriction, IngredientCategory, HealthTag,
+  NutritionHighlight,
   CookingLevel, DifficultyLevel,
 } from '@/types';
 import { calcRecipeNutrition, calcRecipeCost } from '@/lib/nutrition/calculator';
@@ -19,8 +20,11 @@ const DAYS: DayOfWeek[] = ['monday', 'tuesday', 'wednesday', 'thursday', 'friday
 // 健康过滤 (保留原有逻辑)
 // ============================================================
 
-interface ConditionRule { blockedTags: HealthTag[]; }
+interface ConditionRule { blockedTags: HealthTag[]; preferredHighlights?: NutritionHighlight[]; }
 interface RestrictionRule { blockedCategories?: IngredientCategory[]; blockedIngredients?: string[]; blockedTags?: HealthTag[]; }
+
+// 幼儿/儿童自动屏蔽酒精(无需显式配置)
+const CHILD_AGE_GROUPS = new Set(['toddler', 'child']);
 
 function getBlockedTags(members: FamilyMember[]): Set<HealthTag> {
   const tags = new Set<HealthTag>();
@@ -34,8 +38,39 @@ function getBlockedTags(members: FamilyMember[]): Set<HealthTag> {
       const rule = (healthRulesData.restrictions as Record<string, RestrictionRule>)[r];
       if (rule?.blockedTags) rule.blockedTags.forEach(t => tags.add(t as HealthTag));
     }
+    // 幼儿/儿童 → 自动规避酒精
+    if (CHILD_AGE_GROUPS.has(m.ageGroup)) {
+      tags.add('contains_alcohol' as HealthTag);
+    }
   }
   return tags;
+}
+
+/** 按用户健康状况收集"偏好的营养亮点",用于正向加权评分 */
+function getPreferredHighlights(members: FamilyMember[]): Set<NutritionHighlight> {
+  const hs = new Set<NutritionHighlight>();
+  for (const m of members) {
+    for (const c of m.healthConditions) {
+      if (c === 'none') continue;
+      const rule = (healthRulesData.conditions as Record<string, ConditionRule>)[c];
+      if (rule?.preferredHighlights) rule.preferredHighlights.forEach(h => hs.add(h));
+    }
+  }
+  return hs;
+}
+
+/** 菜谱亮点加权: 每个匹配的亮点 +1(去重,按食材计算) */
+function scoreRecipeHighlights(recipe: Recipe, preferred: Set<NutritionHighlight>): number {
+  if (preferred.size === 0) return 0;
+  const hit = new Set<NutritionHighlight>();
+  for (const ri of recipe.ingredients) {
+    const ing = getIngredientById(ri.ingredientId);
+    if (!ing) continue;
+    for (const h of ing.highlights) {
+      if (preferred.has(h)) hit.add(h);
+    }
+  }
+  return hit.size * 2; // 每命中 1 个偏好亮点 +2 分
 }
 
 function getBlockedCategories(members: FamilyMember[]): Set<IngredientCategory> {
@@ -70,7 +105,11 @@ export function isRecipeSafe(recipe: Recipe, profile: UserProfile): boolean {
     const ingredient = getIngredientById(ri.ingredientId);
     if (!ingredient) continue;
     if (blockedCats.has(ingredient.category)) return false;
-    for (const tag of ingredient.healthTags) {
+    // 过敏原+警告标签都可能被 blockedTags 命中(例如糖尿病屏蔽 high_gi, 无乳糖屏蔽 allergen_dairy)
+    for (const tag of ingredient.allergens) {
+      if (blockedTags.has(tag)) return false;
+    }
+    for (const tag of ingredient.warnings) {
       if (blockedTags.has(tag)) return false;
     }
   }
@@ -148,7 +187,7 @@ export function getFilteredRecipes(profile: UserProfile, mealType?: MealType): R
   });
 }
 
-/** 排序: 口味匹配 + 已有食材匹配 + 用户偏好 */
+/** 排序: 口味匹配 + 已有食材匹配 + 用户偏好 + 健康亮点 */
 function scoreRecipe(recipe: Recipe, profile: UserProfile, ownedIngredients: string[], getPreference?: (id: string) => number): number {
   let score = 0;
 
@@ -167,6 +206,10 @@ function scoreRecipe(recipe: Recipe, profile: UserProfile, ownedIngredients: str
   if (getPreference) {
     score += getPreference(recipe.id) * 0.5;
   }
+
+  // 营养亮点加权(根据家庭健康状况偏好)
+  const preferred = getPreferredHighlights(profile.members);
+  score += scoreRecipeHighlights(recipe, preferred);
 
   // 加随机扰动 (0-1) 保证多样性
   score += Math.random();
@@ -394,7 +437,9 @@ function smartPick(
   const available = pool.filter(r => !usedIds.has(r.id));
   if (available.length === 0) return pool.length > 0 ? pool[Math.floor(Math.random() * pool.length)] : null;
 
-  // 评分: 避免最近重复 + 口味匹配 + 已有食材
+  const preferredHighlights = getPreferredHighlights(profile.members);
+
+  // 评分: 避免最近重复 + 口味匹配 + 已有食材 + 健康亮点
   const scored = available.map(r => {
     let score = 10; // 基础分
 
@@ -427,6 +472,9 @@ function smartPick(
     if (getPreference) {
       score += getPreference(r.id) * 0.5;
     }
+
+    // 营养亮点加权(根据家庭健康状况偏好)
+    score += scoreRecipeHighlights(r, preferredHighlights);
 
     // 随机扰动
     score += Math.random() * 2;
@@ -857,7 +905,6 @@ export function generateShoppingList(plan: WeeklyPlan, ownedIngredients: string[
             unit: ri.unit,
             estimatedPrice: (amount / getUnitGrams(ingredient)) * ingredient.priceNZD,
             category: ingredient.category,
-            supermarket: ingredient.supermarkets[0] || 'any',
             isOwned: ownedSet.has(ri.ingredientId),
             isPurchased: false,
             fromRecipes: [recipe.nameZh],

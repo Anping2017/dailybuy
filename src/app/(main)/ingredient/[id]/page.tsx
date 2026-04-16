@@ -4,7 +4,7 @@ import { useParams, useRouter } from 'next/navigation';
 import Link from 'next/link';
 import { ArrowLeft } from 'lucide-react';
 import { getIngredient, getAllRecipes } from '@/lib/data/recipe-repository';
-import type { IngredientCategory, HealthTag, Supermarket } from '@/types';
+import type { IngredientCategory, HealthWarning, Allergen, NutritionHighlight } from '@/types';
 
 const CAT_LABELS: Record<IngredientCategory, string> = {
   vegetable: '蔬菜', fruit: '水果', meat: '肉类', seafood: '海鲜',
@@ -12,15 +12,19 @@ const CAT_LABELS: Record<IngredientCategory, string> = {
   oil: '油脂', dried: '干货', other: '其他',
 };
 
-const TAG_LABELS: Record<HealthTag, string> = {
-  high_gi: '高升糖', high_purine: '高嘌呤', high_sodium: '高钠', high_fat: '高脂',
-  high_sugar: '高糖', allergen_gluten: '含麸质', allergen_dairy: '含乳制品',
-  allergen_nut: '含坚果', allergen_seafood: '含海鲜', allergen_egg: '含蛋', allergen_soy: '含大豆',
+const WARN_LABELS: Record<HealthWarning, string> = {
+  high_gi: '高升糖', high_purine: '高嘌呤', high_sodium: '高钠',
+  high_fat: '高脂', high_sugar: '高糖', high_cholesterol: '高胆固醇',
+  processed: '加工肉', contains_alcohol: '含酒精',
 };
-
-const MARKET_LABELS: Record<Supermarket, string> = {
-  countdown: 'Countdown', paknsave: "Pak'nSave", newworld: 'New World',
-  asian_grocery: '华人超市', any: '不限',
+const ALLERGEN_LABELS: Record<Allergen, string> = {
+  allergen_gluten: '含麸质', allergen_dairy: '含乳制品', allergen_nut: '含坚果',
+  allergen_sesame: '含芝麻', allergen_seafood: '含海鲜', allergen_egg: '含蛋', allergen_soy: '含大豆',
+};
+const HIGHLIGHT_LABELS: Record<NutritionHighlight, string> = {
+  high_fiber: '高纤维', high_protein: '高蛋白', high_iron: '高铁',
+  high_iodine: '高碘', high_zinc: '高锌', high_vitamin_a: '高维A',
+  high_vitamin: '富维生素', whole_grain: '全谷物', low_fat: '低脂', low_calorie: '低卡',
 };
 
 export default function IngredientDetailPage() {
@@ -52,8 +56,14 @@ export default function IngredientDetailPage() {
       <div className="flex flex-wrap gap-2">
         <span className="text-xs bg-primary-light text-primary px-2 py-1 rounded-full">{CAT_LABELS[ingredient.category]}</span>
         <span className="text-xs bg-background px-2 py-1 rounded-full">${ingredient.priceNZD}/{ingredient.unit}</span>
-        {ingredient.healthTags.map(t => (
-          <span key={t} className="text-xs bg-red-50 text-red-600 px-2 py-1 rounded-full">{TAG_LABELS[t]}</span>
+        {ingredient.warnings.map(t => (
+          <span key={t} className="text-xs bg-red-50 text-red-600 px-2 py-1 rounded-full">{WARN_LABELS[t]}</span>
+        ))}
+        {ingredient.allergens.map(t => (
+          <span key={t} className="text-xs bg-orange-50 text-orange-600 px-2 py-1 rounded-full">{ALLERGEN_LABELS[t]}</span>
+        ))}
+        {ingredient.highlights.map(t => (
+          <span key={t} className="text-xs bg-emerald-50 text-emerald-600 px-2 py-1 rounded-full">{HIGHLIGHT_LABELS[t]}</span>
         ))}
       </div>
 
@@ -68,16 +78,6 @@ export default function IngredientDetailPage() {
           <NutrRow label="膳食纤维" value={`${n.fiber} g`} />
           <NutrRow label="钠" value={`${n.sodium} mg`} />
           <NutrRow label="糖" value={`${n.sugar} g`} />
-        </div>
-      </div>
-
-      {/* 可购买超市 */}
-      <div className="bg-card border border-border rounded-lg p-4">
-        <h3 className="font-semibold text-sm mb-2">可购买超市</h3>
-        <div className="flex flex-wrap gap-2">
-          {ingredient.supermarkets.map(s => (
-            <span key={s} className="text-xs bg-background px-2 py-1 rounded">{MARKET_LABELS[s]}</span>
-          ))}
         </div>
       </div>
 

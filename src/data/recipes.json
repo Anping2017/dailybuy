@@ -58,7 +58,8 @@
       "家常菜",
       "下饭菜"
     ],
-    "cookingMethod": "stir_fry"
+    "cookingMethod": "stir_fry",
+    "description": "家常家常好味。以番茄配鸡蛋为主料，旺火翻炒而成，镬气十足，口感甘甜、酸爽、鲜美，新手友好，快手完成。"
   },
   {
     "id": "kung_pao_chicken",
@@ -150,7 +151,8 @@
       "经典菜",
       "下饭菜"
     ],
-    "cookingMethod": "stir_fry"
+    "cookingMethod": "stir_fry",
+    "description": "川菜家常好味。以鸡胸肉配彩椒为主料，旺火翻炒而成，镬气十足，口感香辣、甘甜、酸爽，适合午餐/晚餐享用。"
   },
   {
     "id": "mapo_tofu",
@@ -232,7 +234,8 @@
       "经典菜",
       "下饭菜"
     ],
-    "cookingMethod": "braise"
+    "cookingMethod": "braise",
+    "description": "川菜家常好味。以豆腐配猪肉末为主料，慢火收汁而成，色泽红亮、咸香浓郁，口感香辣、咸香、鲜美，适合午餐/晚餐享用。"
   },
   {
     "id": "stir_fry_broccoli_chicken",
@@ -302,7 +305,8 @@
       "健康餐",
       "低脂"
     ],
-    "cookingMethod": "stir_fry"
+    "cookingMethod": "stir_fry",
+    "description": "家常家常好味。以鸡胸肉配西兰花为主料，旺火翻炒而成，镬气十足，口感咸香、鲜美，新手友好，快手完成。"
   },
   {
     "id": "braised_pork_belly",
@@ -373,7 +377,8 @@
       "经典菜",
       "硬菜"
     ],
-    "cookingMethod": "braise"
+    "cookingMethod": "braise",
+    "description": "家常家常好味。以五花肉配酱油为主料，慢火收汁而成，色泽红亮、咸香浓郁，口感甘甜、咸香、鲜美，适合午餐/晚餐享用。"
   },
   {
     "id": "egg_fried_rice",
@@ -437,7 +442,8 @@
       "快手菜",
       "主食"
     ],
-    "cookingMethod": "staple"
+    "cookingMethod": "staple",
+    "description": "家常特色主食。以大米配鸡蛋为主料，精心烹制而成，饱腹满足，口感咸香、鲜美，新手友好，快手完成。"
   },
   {
     "id": "stir_fry_bok_choy",
@@ -486,7 +492,8 @@
       "素菜",
       "健康餐"
     ],
-    "cookingMethod": "stir_fry"
+    "cookingMethod": "stir_fry",
+    "description": "粤式家常好味。以小白菜配大蒜为主料，旺火翻炒而成，镬气十足，口感清淡、鲜美，新手友好，快手完成。"
   },
   {
     "id": "salmon_teriyaki",
@@ -546,7 +553,8 @@
       "健康餐",
       "高蛋白"
     ],
-    "cookingMethod": "deep_fry"
+    "cookingMethod": "deep_fry",
+    "description": "日式家常好味。以三文鱼配酱油为主料，高温油炸而成，金黄酥脆，口感甘甜、咸香、鲜美，新手友好，快手完成。"
   },
   {
     "id": "bolognese_pasta",
@@ -617,7 +625,8 @@
       "西餐",
       "主食"
     ],
-    "cookingMethod": "staple"
+    "cookingMethod": "staple",
+    "description": "意式特色主食。以意面配牛肉末为主料，精心烹制而成，饱腹满足，口感酸爽、咸香、鲜美，适合午餐/晚餐享用。"
   },
   {
     "id": "scrambled_egg_toast",
@@ -671,7 +680,8 @@
       "快手菜",
       "西餐"
     ],
-    "cookingMethod": "staple"
+    "cookingMethod": "staple",
+    "description": "美式风味的经典早餐。以鸡蛋配面包为主料，精心烹制而成，饱腹满足，口感清淡、咸香，新手友好，快手完成。"
   },
   {
     "id": "congee_egg",
@@ -724,7 +734,8 @@
       "养胃",
       "简单"
     ],
-    "cookingMethod": "staple"
+    "cookingMethod": "staple",
+    "description": "粤式风味的经典早餐。以大米配鸡蛋为主料，精心烹制而成，饱腹满足，口感清淡、鲜美，操作简便，零失败。"
   },
   {
     "id": "stir_fry_potato_silk",
@@ -784,7 +795,8 @@
       "素菜",
       "下饭菜"
     ],
-    "cookingMethod": "stir_fry"
+    "cookingMethod": "stir_fry",
+    "description": "家常家常好味。以土豆配彩椒为主料，旺火翻炒而成，镬气十足，口感酸爽、香辣，新手友好，快手完成。"
   },
   {
     "id": "steamed_fish",
@@ -848,7 +860,8 @@
       "高蛋白",
       "清淡"
     ],
-    "cookingMethod": "steam"
+    "cookingMethod": "steam",
+    "description": "粤式家常好味。以三文鱼配生姜为主料，隔水蒸制而成，原汁原味，口感清淡、鲜美，新手友好，快手完成。"
   },
   {
     "id": "lamb_stew",
@@ -914,7 +927,8 @@
       "硬菜",
       "秋冬"
     ],
-    "cookingMethod": "stew"
+    "cookingMethod": "stew",
+    "description": "东北风味家常好味。以羊腿肉配胡萝卜为主料，小火慢炖而成，软烂入味，口感咸香、鲜美，适合晚餐享用。"
   },
   {
     "id": "shrimp_stir_fry",
@@ -984,7 +998,8 @@
       "健康餐",
       "低脂"
     ],
-    "cookingMethod": "stir_fry"
+    "cookingMethod": "stir_fry",
+    "description": "粤式家常好味。以虾配芹菜为主料，旺火翻炒而成，镬气十足，口感清淡、鲜美，新手友好，快手完成。"
   },
   {
     "id": "sweet_potato_congee",
@@ -1028,7 +1043,8 @@
       "简单",
       "素食"
     ],
-    "cookingMethod": "staple"
+    "cookingMethod": "staple",
+    "description": "家常风味的经典早餐。以大米配红薯为主料，精心烹制而成，饱腹满足，口感甘甜、清淡，操作简便，零失败。"
   },
   {
     "id": "stir_fry_eggplant",
@@ -1121,7 +1137,8 @@
       "经典菜",
       "下饭菜"
     ],
-    "cookingMethod": "stir_fry"
+    "cookingMethod": "stir_fry",
+    "description": "川菜家常好味。以茄子配猪肉末为主料，旺火翻炒而成，镬气十足，口感甘甜、酸爽、香辣，适合午餐/晚餐享用。"
   },
   {
     "id": "mushroom_chicken_soup",
@@ -1180,7 +1197,8 @@
       "养生",
       "清淡"
     ],
-    "cookingMethod": "soup"
+    "cookingMethod": "soup",
+    "description": "粤式经典汤品。以鸡腿肉配蘑菇为主料，文火慢煨而成，鲜美滋润，口感清淡、鲜美，操作简便，零失败。"
   },
   {
     "id": "green_bean_pork",
@@ -1239,7 +1257,8 @@
       "快手菜",
       "家常菜"
     ],
-    "cookingMethod": "stir_fry"
+    "cookingMethod": "stir_fry",
+    "description": "家常家常好味。以四季豆配猪肉末为主料，旺火翻炒而成，镬气十足，口感咸香、鲜美，新手友好，快手完成。"
   },
   {
     "id": "cucumber_salad",
@@ -1305,6 +1324,7 @@
       "素菜",
       "夏季"
     ],
-    "cookingMethod": "cold_dish"
+    "cookingMethod": "cold_dish",
+    "description": "家常风味凉菜。以黄瓜配大蒜为主料，调味凉拌而成，清爽开胃，口感酸爽、香辣、清淡，操作简便，零失败。"
   }
 ]

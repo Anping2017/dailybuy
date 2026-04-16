@@ -6,7 +6,7 @@ import Link from 'next/link';
 import { Plus, Trash2, Save } from 'lucide-react';
 import type {
   FamilyMember, HealthCondition, DietaryRestriction, CuisineType,
-  AgeGroup, Gender, Supermarket, MealType, RegionalCuisine, FlavorPreference,
+  AgeGroup, Gender, MealType, RegionalCuisine, FlavorPreference,
   CookingLevel, DifficultyLevel, CookingMethod, StaplePreference,
 } from '@/types';
 import { getRecommendedCalories } from '@/lib/nutrition/calorie-defaults';
@@ -23,12 +23,14 @@ const AGE_LABELS: Record<AgeGroup, string> = {
 const HEALTH_LABELS: Record<HealthCondition, string> = {
   none: '无', diabetes: '糖尿病', hypertension: '高血压',
   gout: '痛风', hyperlipidemia: '高血脂', kidney_disease: '肾病',
+  pregnancy: '孕期/哺乳期',
 };
 
 const DIET_LABELS: Record<DietaryRestriction, string> = {
   vegetarian: '素食', vegan: '纯素', halal: '清真',
   no_pork: '不吃猪肉', no_beef: '不吃牛肉', no_seafood: '不吃海鲜',
   no_spicy: '不吃辣', lactose_free: '无乳糖', gluten_free: '无麸质', nut_free: '无坚果',
+  avoid_processed: '规避加工食品',
 };
 
 const CUISINE_LABELS: Record<CuisineType, string> = {
@@ -77,11 +79,6 @@ const REGIONAL_BY_CUISINE: Record<string, RegionalCuisine[]> = {
   chinese: ['homestyle', 'sichuan', 'cantonese', 'shandong', 'jiangsu', 'hunan', 'fujian', 'dongbei', 'zhejiang', 'anhui', 'yunnan', 'xinjiang', 'taiwanese'],
   western: ['italian', 'american', 'french'],
   asian_other: ['japanese', 'korean', 'southeast_asian'],
-};
-
-const SUPERMARKET_LABELS: Record<Supermarket, string> = {
-  countdown: 'Countdown', paknsave: "Pak'nSave", newworld: 'New World',
-  asian_grocery: '华人超市', any: '不限',
 };
 
 const MEAL_LABELS: Record<MealType, string> = {
@@ -331,25 +328,6 @@ export default function ProfilePage() {
         <p className="text-xs text-muted mb-3">
           将生成 {profile.planDays} 天 × {profile.mealsPerDay.length} 餐 = {profile.planDays * profile.mealsPerDay.length} 个菜谱
         </p>
-
-        <label className="text-sm text-muted block mb-1">常去超市</label>
-        <div className="flex flex-wrap gap-2 mb-3">
-          {(Object.entries(SUPERMARKET_LABELS) as [Supermarket, string][])
-            .filter(([k]) => k !== 'any')
-            .map(([k, v]) => (
-            <ToggleChip
-              key={k}
-              label={v}
-              active={profile.preferredSupermarkets.includes(k)}
-              onClick={() => {
-                const next = profile.preferredSupermarkets.includes(k)
-                  ? profile.preferredSupermarkets.filter(x => x !== k)
-                  : [...profile.preferredSupermarkets, k];
-                setProfile({ preferredSupermarkets: next.length > 0 ? next : ['countdown'] });
-              }}
-            />
-          ))}
-        </div>
 
         <label className="text-sm text-muted block mb-1">每周预算 (NZD)</label>
         <input

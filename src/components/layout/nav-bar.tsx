@@ -2,13 +2,14 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { Home, UtensilsCrossed, ShoppingCart, User } from 'lucide-react';
+import { Home, UtensilsCrossed, Search, ShoppingCart, User } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 const NAV_ITEMS = [
   { href: '/dashboard', label: '首页', icon: Home },
-  { href: '/plan', label: '菜谱规划', icon: UtensilsCrossed },
-  { href: '/shopping', label: '采购清单', icon: ShoppingCart },
+  { href: '/plan', label: '菜谱', icon: UtensilsCrossed },
+  { href: '/search', label: '智能搜', icon: Search },
+  { href: '/shopping', label: '清单', icon: ShoppingCart },
   { href: '/profile', label: '设置', icon: User },
 ];
 

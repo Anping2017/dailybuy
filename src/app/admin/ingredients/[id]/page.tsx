@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 import { useParams } from 'next/navigation';
 import Link from 'next/link';
 import { ArrowLeft } from 'lucide-react';
-import type { Ingredient, IngredientCategory, HealthTag, Supermarket } from '@/types';
+import type { Ingredient, IngredientCategory, HealthWarning, Allergen, NutritionHighlight } from '@/types';
 
 interface Data {
   ingredient: Ingredient;
@@ -16,14 +16,19 @@ const CAT_ZH: Record<IngredientCategory, string> = {
   egg_dairy: '蛋奶', grain: '谷物/主食', bean: '豆类', seasoning: '调料',
   oil: '油脂', dried: '干货', other: '其他',
 };
-const TAG_ZH: Record<HealthTag, string> = {
-  high_gi: '高升糖', high_purine: '高嘌呤', high_sodium: '高钠', high_fat: '高脂',
-  high_sugar: '高糖', allergen_gluten: '含麸质', allergen_dairy: '含乳制品',
-  allergen_nut: '含坚果', allergen_seafood: '含海鲜', allergen_egg: '含蛋', allergen_soy: '含大豆',
+const WARN_ZH: Record<HealthWarning, string> = {
+  high_gi: '高升糖', high_purine: '高嘌呤', high_sodium: '高钠',
+  high_fat: '高脂', high_sugar: '高糖', high_cholesterol: '高胆固醇',
+  processed: '加工肉', contains_alcohol: '含酒精',
 };
-const MARKET_ZH: Record<Supermarket, string> = {
-  countdown: 'Countdown', paknsave: "Pak'nSave", newworld: 'New World',
-  asian_grocery: '华人超市', any: '不限',
+const ALLERGEN_ZH: Record<Allergen, string> = {
+  allergen_gluten: '含麸质', allergen_dairy: '含乳制品', allergen_nut: '含坚果',
+  allergen_sesame: '含芝麻', allergen_seafood: '含海鲜', allergen_egg: '含蛋', allergen_soy: '含大豆',
+};
+const HIGHLIGHT_ZH: Record<NutritionHighlight, string> = {
+  high_fiber: '高纤维', high_protein: '高蛋白', high_iron: '高铁',
+  high_iodine: '高碘', high_zinc: '高锌', high_vitamin_a: '高维A',
+  high_vitamin: '富维生素', whole_grain: '全谷物', low_fat: '低脂', low_calorie: '低卡',
 };
 const DIFF_ZH: Record<string, string> = { easy: '简单', medium: '中等', hard: '困难' };
 const CUISINE_ZH: Record<string, string> = { chinese: '中餐', western: '西餐', asian_other: '亚洲', fusion: '混合' };
@@ -57,8 +62,14 @@ export default function IngredientDetailAdminPage() {
       <div className="flex flex-wrap gap-2">
         <span className="text-xs bg-primary/10 text-primary px-2 py-1 rounded-full">{CAT_ZH[ing.category]}</span>
         <span className="text-xs bg-background px-2 py-1 rounded-full">预估 ${ing.priceNZD}/{ing.unit}</span>
-        {ing.healthTags.map(t => (
-          <span key={t} className="text-xs bg-red-50 text-red-600 px-2 py-1 rounded-full">{TAG_ZH[t]}</span>
+        {ing.warnings.map(t => (
+          <span key={t} className="text-xs bg-red-50 text-red-600 px-2 py-1 rounded-full">{WARN_ZH[t]}</span>
+        ))}
+        {ing.allergens.map(t => (
+          <span key={t} className="text-xs bg-orange-50 text-orange-600 px-2 py-1 rounded-full">{ALLERGEN_ZH[t]}</span>
+        ))}
+        {ing.highlights.map(t => (
+          <span key={t} className="text-xs bg-emerald-50 text-emerald-600 px-2 py-1 rounded-full">{HIGHLIGHT_ZH[t]}</span>
         ))}
       </div>
 
@@ -90,13 +101,7 @@ export default function IngredientDetailAdminPage() {
                 <span className="text-muted">计量单位</span>
                 <span>{ing.unit}</span>
               </div>
-              <p className="text-[10px] text-muted mt-2">* 价格为参考预估值，实际价格以超市为准</p>
-            </div>
-            <h4 className="text-xs text-muted mt-4 mb-2">可购买超市</h4>
-            <div className="flex flex-wrap gap-2">
-              {ing.supermarkets.map(s => (
-                <span key={s} className="text-xs bg-background px-2 py-1 rounded">{MARKET_ZH[s]}</span>
-              ))}
+              <p className="text-[10px] text-muted mt-2">* 价格为参考预估值，实际价格以 Countdown 为准</p>
             </div>
           </div>
 
