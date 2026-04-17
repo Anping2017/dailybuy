@@ -1,0 +1,7279 @@
+[
+  {
+    "id": "stir_fry_bok_choy",
+    "nameZh": "蒜炒小白菜",
+    "nameEn": "Garlic Bok Choy",
+    "regionalCuisine": "cantonese",
+    "cookingMethod": "stir_fry",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "bok_choy",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 10,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "小白菜洗净，切段",
+      "热锅下油，爆香蒜末",
+      "放入白菜大火翻炒至断生",
+      "加盐调味出锅"
+    ]
+  },
+  {
+    "id": "congee_egg",
+    "nameZh": "鸡蛋粥",
+    "nameEn": "Egg Congee",
+    "regionalCuisine": "cantonese",
+    "cookingMethod": "staple",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "rice",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "egg",
+        "amount": 2,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sesame_oil",
+        "amount": 5,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "大米洗净，加水大火烧开",
+      "转小火煮25分钟至粘稠",
+      "鸡蛋打散，倒入粥中搅匀",
+      "加盐调味，滴麻油，撒葱花"
+    ]
+  },
+  {
+    "id": "steamed_fish",
+    "nameZh": "清蒸三文鱼",
+    "nameEn": "Steamed Salmon",
+    "regionalCuisine": "cantonese",
+    "cookingMethod": "steam",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "salmon_fillet",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "sesame_oil",
+        "amount": 5,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 10,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "三文鱼放盘中，铺上姜丝",
+      "水烧开后蒸8分钟",
+      "取出倒掉蒸出的水",
+      "铺上葱丝，浇热油",
+      "淋上酱油和麻油"
+    ]
+  },
+  {
+    "id": "shrimp_stir_fry",
+    "nameZh": "西芹炒虾仁",
+    "nameEn": "Celery & Shrimp Stir-fry",
+    "regionalCuisine": "cantonese",
+    "cookingMethod": "stir_fry",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "shrimp",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "celery",
+        "amount": 150,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 15,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "虾仁去虾线，加料酒、淀粉腌制",
+      "芹菜切段",
+      "热锅下油，爆香蒜末姜末",
+      "放入虾仁炒至变色",
+      "加入芹菜大火翻炒",
+      "加少许盐调味出锅"
+    ]
+  },
+  {
+    "id": "mushroom_chicken_soup",
+    "nameZh": "蘑菇鸡汤",
+    "nameEn": "Mushroom Chicken Soup",
+    "regionalCuisine": "cantonese",
+    "cookingMethod": "soup",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "chicken_thigh",
+        "amount": 400,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "mushroom",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 15,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "鸡腿肉切块，冷水焯水",
+      "锅中加水，放入鸡块、姜片、料酒",
+      "大火烧开转小火炖25分钟",
+      "加入蘑菇再炖15分钟",
+      "加盐调味，撒葱花"
+    ]
+  },
+  {
+    "id": "cantonese_cheong_fun",
+    "nameZh": "粤式鲜虾肠粉",
+    "nameEn": "Cantonese Rice Noodle Roll with Shrimp",
+    "regionalCuisine": "cantonese",
+    "cookingMethod": "steam",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "rice_flour",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "wheat_starch",
+        "amount": 50,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "glutinous_rice_flour",
+        "amount": 30,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "shrimp",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "light_soy",
+        "amount": 3,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "rock_sugar",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "dark_soy",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 2,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 0.5,
+        "unit": "tsp"
+      },
+      {
+        "ingredientId": "sesame_oil",
+        "amount": 1,
+        "unit": "tsp"
+      }
+    ],
+    "steps": [
+      "粘米粉、澄粉、糯米粉加 400ml 水和少许盐、1 勺油调成稀米浆",
+      "虾仁开背去线，加少许盐和麻油腌 5 分钟",
+      "蒸盘刷一层薄油，倒入一大勺米浆晃匀成薄层",
+      "铺几粒虾仁，沸水大火蒸 3 分钟至起泡",
+      "取出刮刀从一端卷起成肠粉",
+      "小锅煮豉油：生抽、老抽、冰糖、100ml 水煮至糖化",
+      "肠粉切段装盘，淋豉油撒葱花"
+    ]
+  },
+  {
+    "id": "cantonese_congee_pork_century_egg",
+    "nameZh": "皮蛋瘦肉粥",
+    "nameEn": "Century Egg Lean Pork Congee",
+    "regionalCuisine": "cantonese",
+    "cookingMethod": "stew",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "rice",
+        "amount": 150,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "pork_loin",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "preserved_egg",
+        "amount": 2,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 20,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 2,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "cilantro",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "light_soy",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "ingredientId": "white_pepper",
+        "amount": 0.5,
+        "unit": "tsp"
+      },
+      {
+        "ingredientId": "sesame_oil",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 1,
+        "unit": "tsp"
+      }
+    ],
+    "steps": [
+      "瘦肉切薄片加盐、生抽、料酒、淀粉腌 15 分钟",
+      "皮蛋剥壳切丁（一半粗一半细）",
+      "大米洗净加几滴油冷冻 30 分钟",
+      "锅中加 2L 水大火烧开",
+      "下米粒和姜丝",
+      "粗切皮蛋先入锅煮 30 分钟（增加浓稠）",
+      "粥体变稠后下肉片搅散煮 5 分钟",
+      "加细切皮蛋丁煮 2 分钟",
+      "调盐和白胡椒",
+      "关火淋麻油，撒葱花香菜"
+    ]
+  },
+  {
+    "id": "cantonese_xo_stir_noodle",
+    "nameZh": "XO酱干炒河粉",
+    "nameEn": "XO Sauce Stir-Fried Rice Noodle",
+    "regionalCuisine": "cantonese",
+    "cookingMethod": "stir_fry",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "rice_noodles",
+        "amount": 400,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "beef_sirloin",
+        "amount": 150,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "xo_sauce",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "bean_sprouts",
+        "amount": 150,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 3,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "light_soy",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "dark_soy",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "ingredientId": "oyster_sauce",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 3,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 0.5,
+        "unit": "tsp"
+      }
+    ],
+    "steps": [
+      "牛肉切薄片加淀粉、1 勺生抽抓匀腌 10 分钟",
+      "河粉用温水泡软（若是鲜粉则打散）",
+      "热锅烧到冒烟下油，牛肉滑炒 30 秒至变色盛出",
+      "原锅下 XO 酱小火炒 30 秒出香",
+      "改大火下河粉翻炒 1 分钟，淋老抽、蚝油、糖",
+      "加入豆芽、葱段和牛肉翻炒 30 秒",
+      "起锅前沿锅边淋少许油出镬气"
+    ]
+  },
+  {
+    "id": "cantonese_sausage_claypot_rice",
+    "nameZh": "腊味煲仔饭",
+    "nameEn": "Cantonese Sausage Claypot Rice",
+    "regionalCuisine": "cantonese",
+    "cookingMethod": "staple",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "rice",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "chinese_sausage",
+        "amount": 150,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "bacon",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "bok_choy",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "egg",
+        "amount": 1,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "light_soy",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "dark_soy",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "sesame_oil",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 2,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 10,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "大米洗净浸泡 30 分钟后沥干",
+      "砂锅内壁抹油，放米加 1:1.2 的水",
+      "大火烧开后转小火加盖焖 8 分钟",
+      "揭盖铺腊肠和腊肉切片，打一颗鸡蛋",
+      "盖盖再焖 8 分钟，关火焖 5 分钟",
+      "另煮菜心焯水调味",
+      "生抽、老抽、糖、麻油、热水拌成豉油",
+      "砂锅开盖淋豉油，撒葱姜丝，拌匀连饭带锅巴享用"
+    ]
+  },
+  {
+    "id": "cantonese_pea_shoot_shrimp",
+    "nameZh": "豆苗炒虾仁",
+    "nameEn": "Pea Shoots with Shrimp",
+    "regionalCuisine": "cantonese",
+    "cookingMethod": "stir_fry",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "pea_shoots",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "shrimp",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 5,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 0.5,
+        "unit": "tsp"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 0.25,
+        "unit": "tsp"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "ingredientId": "egg",
+        "amount": 1,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 2,
+        "unit": "tbsp"
+      }
+    ],
+    "steps": [
+      "虾仁挑去虾线，加蛋清、盐、淀粉、料酒抓匀腌 10 分钟",
+      "豆苗掐去老根洗净甩干",
+      "热锅热油下虾仁滑炒至卷曲变色盛出",
+      "原锅加油煸香蒜片",
+      "大火下豆苗翻炒 30 秒",
+      "虾仁回锅，加盐和糖快速翻匀即起锅"
+    ]
+  },
+  {
+    "id": "cantonese_lotus_lily_congee",
+    "nameZh": "莲子百合粥",
+    "nameEn": "Lotus Seed Lily Congee",
+    "regionalCuisine": "cantonese",
+    "cookingMethod": "stew",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "rice",
+        "amount": 150,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "lotus_seed",
+        "amount": 50,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "dried_lily_bud",
+        "amount": 30,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "red_date",
+        "amount": 30,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "goji_berry",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "rock_sugar",
+        "amount": 50,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 30,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "莲子去芯温水泡 2 小时",
+      "百合用清水浸泡 30 分钟",
+      "大米洗净加 2L 水大火烧开",
+      "放入莲子和红枣，转小火煮 45 分钟",
+      "加入百合再煮 30 分钟至粥体浓稠",
+      "关火前 5 分钟加枸杞和糖"
+    ]
+  },
+  {
+    "id": "cantonese_braised_abalone",
+    "nameZh": "红烧鲍鱼",
+    "nameEn": "Braised Abalone",
+    "regionalCuisine": "cantonese",
+    "cookingMethod": "braise",
+    "difficulty": "hard",
+    "ingredients": [
+      {
+        "ingredientId": "abalone",
+        "amount": 8,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "chicken_stock",
+        "amount": 500,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "oyster_sauce",
+        "amount": 3,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "dark_soy",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "rock_sugar",
+        "amount": 20,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 20,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 3,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "dried_scallop",
+        "amount": 20,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "broccoli",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 0.5,
+        "unit": "tsp"
+      }
+    ],
+    "steps": [
+      "活鲍鱼用刷子清洁外壳，刀沿壳内壁起出鲍鱼肉",
+      "鲍鱼表面划十字花刀，冷水下锅焯 30 秒立即过冰水",
+      "干贝泡水 30 分钟撕丝",
+      "热锅下油煸香姜片、葱段、干贝丝",
+      "倒入高汤、蚝油、老抽、冰糖、料酒煮开",
+      "放入鲍鱼小火慢煨 40 分钟",
+      "西兰花切小朵焯水围盘",
+      "鲍鱼捞出摆中央，汤汁淋水淀粉勾芡浇上",
+      "鲍鱼壳刷净垫底装盘"
+    ]
+  },
+  {
+    "id": "cantonese_cold_octopus",
+    "nameZh": "凉拌章鱼",
+    "nameEn": "Cold Octopus Salad",
+    "regionalCuisine": "cantonese",
+    "cookingMethod": "cold_dish",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "octopus",
+        "amount": 400,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cucumber",
+        "amount": 1,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "onion",
+        "amount": 0.5,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "light_soy",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "rice_vinegar",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "wasabi",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "ingredientId": "sesame_oil",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 0.5,
+        "unit": "tsp"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 2,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "sesame_seed",
+        "amount": 1,
+        "unit": "tsp"
+      }
+    ],
+    "steps": [
+      "章鱼用盐揉搓去除黏液洗净",
+      "水加姜片、葱段、料酒煮开",
+      "章鱼提起放入重复三次后整个烫煮 3 分钟卷曲成型",
+      "捞出立即过冰水急速降温",
+      "章鱼切薄片，黄瓜切丝，洋葱切丝浸冰水去辣",
+      "生抽、米醋、芥末、糖、麻油调成蘸酱",
+      "食材拌匀装盘，撒葱丝和白芝麻"
+    ]
+  },
+  {
+    "id": "cantonese_steamed_sea_bass",
+    "nameZh": "清蒸鲈鱼",
+    "nameEn": "Cantonese Steamed Sea Bass",
+    "regionalCuisine": "cantonese",
+    "cookingMethod": "steam",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "sea_bass",
+        "amount": 600,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 30,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 3,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "cilantro",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "light_soy",
+        "amount": 3,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "chili_pepper",
+        "amount": 1,
+        "unit": "piece"
+      }
+    ],
+    "steps": [
+      "鲈鱼处理干净，两面划斜刀以便入味",
+      "鱼腹塞姜片葱段，淋料酒腌 5 分钟去腥",
+      "蒸锅水沸后鱼入锅大火蒸 8 分钟（每 500g 蒸 8 分钟）",
+      "蒸好后倒掉盘中腥水",
+      "姜切细丝，葱切丝、红辣椒切丝泡冰水卷曲",
+      "铺在鱼身上，淋蒸鱼豉油",
+      "另锅烧热食用油至冒烟，浇在葱丝上激出香"
+    ]
+  },
+  {
+    "id": "cantonese_douchi_chicken_feet",
+    "nameZh": "豉汁蒸凤爪",
+    "nameEn": "Steamed Chicken Feet with Black Bean Sauce",
+    "regionalCuisine": "cantonese",
+    "cookingMethod": "steam",
+    "difficulty": "hard",
+    "ingredients": [
+      {
+        "ingredientId": "chicken_feet",
+        "amount": 500,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "fermented_black_bean",
+        "amount": 30,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 6,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "chili_pepper",
+        "amount": 2,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "oyster_sauce",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "light_soy",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "dark_soy",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "vinegar",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 500,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 2,
+        "unit": "piece"
+      }
+    ],
+    "steps": [
+      "凤爪剪去指甲冲洗干净，加醋和水煮 10 分钟",
+      "捞出沥干刷一层老抽上色，晾干表面水分",
+      "油烧至 180℃ 下凤爪炸 5 分钟至金黄鼓起（注意飞溅）",
+      "炸好的凤爪入冰水浸泡 2 小时至起虎皮",
+      "豆豉冲洗切碎，蒜末和辣椒末备好",
+      "锅内少油炒香蒜末豆豉辣椒，加蚝油、生抽、糖、料酒、水淀粉煮成酱",
+      "凤爪倒入拌匀，装盘大火蒸 40 分钟至骨肉分离",
+      "出锅前撒葱花"
+    ]
+  },
+  {
+    "id": "cantonese_ginger_fish_head",
+    "nameZh": "姜葱煲鱼头",
+    "nameEn": "Ginger Spring Onion Fish Head",
+    "regionalCuisine": "cantonese",
+    "cookingMethod": "braise",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "fish_head",
+        "amount": 700,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 50,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 4,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 5,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "oyster_sauce",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "light_soy",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "dark_soy",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 3,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "ingredientId": "sesame_oil",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 3,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "chicken_stock",
+        "amount": 300,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "鱼头对半劈开洗净，擦干后薄薄拍一层淀粉",
+      "锅中多油烧热，鱼头切面朝下煎至金黄翻面再煎",
+      "砂锅底铺大半的姜片和葱段",
+      "煎好的鱼头摆在葱姜上",
+      "原锅煸香蒜片和剩余姜葱",
+      "加蚝油、生抽、老抽、糖和高汤煮开",
+      "酱汁浇入砂锅，淋料酒",
+      "加盖中小火焖 15 分钟",
+      "出锅前淋麻油撒葱花"
+    ]
+  },
+  {
+    "id": "cantonese_longan_red_date_tea",
+    "nameZh": "桂圆红枣茶",
+    "nameEn": "Longan Red Date Tea",
+    "regionalCuisine": "cantonese",
+    "cookingMethod": "stew",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "dried_longan",
+        "amount": 30,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "red_date",
+        "amount": 50,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "goji_berry",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "rock_sugar",
+        "amount": 30,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "红枣去核撕开更易出味",
+      "桂圆肉温水冲洗",
+      "锅中加 1.2L 水",
+      "放红枣、桂圆、姜片大火煮开",
+      "转小火慢炖 25 分钟",
+      "加冰糖和枸杞再煮 5 分钟"
+    ]
+  },
+  {
+    "id": "cantonese_dried_scallop_congee",
+    "nameZh": "干贝瑶柱粥",
+    "nameEn": "Dried Scallop Congee",
+    "regionalCuisine": "cantonese",
+    "cookingMethod": "stew",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "rice",
+        "amount": 150,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "dried_scallop",
+        "amount": 30,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "chicken_breast",
+        "amount": 150,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 20,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 2,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "ingredientId": "white_pepper",
+        "amount": 0.5,
+        "unit": "tsp"
+      },
+      {
+        "ingredientId": "sesame_oil",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "ingredientId": "cilantro",
+        "amount": 10,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "干贝温水泡 30 分钟撕丝，泡贝水留用",
+      "大米加水和几滴油冷冻 30 分钟让米开花更快",
+      "锅中加 2L 水 + 泡贝水大火烧开",
+      "下米粒和干贝丝煮开后小火熬 40 分钟",
+      "鸡胸撕成细丝，姜切丝",
+      "粥呈乳白浓稠时加鸡丝和姜丝煮 5 分钟",
+      "调盐和白胡椒，淋麻油",
+      "出锅撒葱花香菜"
+    ]
+  },
+  {
+    "id": "sha-guo-dou-fu-bao",
+    "nameZh": "砂锅豆腐煲",
+    "nameEn": "Clay Pot Tofu Stew",
+    "regionalCuisine": "cantonese",
+    "cookingMethod": "stew",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "tofu",
+        "amount": 400,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "pork_mince",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "mushroom",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "carrot",
+        "amount": 50,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "oyster_sauce",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "light_soy",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 3,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 2,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 1,
+        "unit": "tbsp"
+      }
+    ],
+    "steps": [
+      "豆腐切2cm厚片，入淡盐水浸泡5分钟去豆腥味",
+      "香菇切片，胡萝卜切薄片备用",
+      "砂锅烧热加油，放姜末蒜末爆香，下肉末炒散至变色",
+      "加入香菇片和胡萝卜片翻炒1分钟",
+      "加入适量清水烧开，放入豆腐片轻轻推匀",
+      "加蚝油、生抽调味，小火炖煮10分钟让豆腐入味",
+      "水淀粉勾薄芡，撒葱花上桌连砂锅一起上"
+    ]
+  },
+  {
+    "id": "tie-ban-niu-liu",
+    "nameZh": "铁板牛柳",
+    "nameEn": "Sizzling Beef on Hot Plate",
+    "regionalCuisine": "cantonese",
+    "cookingMethod": "stir_fry",
+    "difficulty": "hard",
+    "ingredients": [
+      {
+        "ingredientId": "beef_sirloin",
+        "amount": 350,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "onion",
+        "amount": 1,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "capsicum",
+        "amount": 1,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "oyster_sauce",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "light_soy",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "white_pepper",
+        "amount": 0.5,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 3,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 3,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "butter",
+        "amount": 10,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "牛柳逆纹切0.5cm厚片，加蚝油、生抽、淀粉、白胡椒粉腌制20分钟",
+      "洋葱切粗丝，彩椒切宽条备用",
+      "铁板提前加热至极烫，刷一层黄油",
+      "另起炒锅猛火热油，牛肉片大火快炒至表面变色约30秒立即盛出",
+      "锅中余油爆香蒜末，下洋葱丝彩椒条翻炒断生",
+      "将炒好的牛肉和蔬菜迅速倒在滋滋作响的铁板上",
+      "铁板上的食材会继续加热，趁热上桌享用"
+    ]
+  },
+  {
+    "id": "xi-zhi-kao-lu-yu",
+    "nameZh": "锡纸烤鲈鱼",
+    "nameEn": "Foil-Baked Sea Bass",
+    "regionalCuisine": "cantonese",
+    "cookingMethod": "roast",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "fish_fillet",
+        "amount": 400,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "onion",
+        "amount": 0.5,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "capsicum",
+        "amount": 1,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 5,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 3,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "doubanjiang",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "light_soy",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 2,
+        "unit": "piece"
+      }
+    ],
+    "steps": [
+      "鱼片两面划花刀，用料酒和姜片腌制15分钟去腥",
+      "洋葱切丝铺在锡纸底部作为垫层",
+      "炒锅烧油，小火炒香蒜末和豆瓣酱至出红油",
+      "加入生抽调成酱汁备用",
+      "鱼片放在洋葱丝上，彩椒丝铺在鱼肉上",
+      "将酱汁均匀淋在鱼片上，锡纸包紧封口",
+      "烤箱预热200度，放入烤20-25分钟至鱼肉熟透",
+      "打开锡纸撒上葱花，趁热上桌"
+    ]
+  },
+  {
+    "id": "qing-zheng-hua-dan-geng",
+    "nameZh": "滑蛋虾仁",
+    "nameEn": "Silky Egg with Shrimp",
+    "regionalCuisine": "cantonese",
+    "cookingMethod": "stir_fry",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "shrimp",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "egg",
+        "amount": 4,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 2,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 0.5,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 0.5,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "white_pepper",
+        "amount": 0.25,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 3,
+        "unit": "tbsp"
+      }
+    ],
+    "steps": [
+      "鲜虾去壳挑虾线，加料酒、淀粉和少许盐腌制10分钟",
+      "鸡蛋打散加少许盐和白胡椒粉，不要打过发",
+      "锅中油烧至五成热，下虾仁滑至变红卷曲捞出",
+      "虾仁倒入蛋液中拌匀",
+      "锅中留油烧至四成热，倒入虾仁蛋液",
+      "用铲子从四周向中心轻轻推动，蛋液七分熟尚有流动感时立即关火",
+      "利用余温让蛋液凝固至刚好嫩滑，撒葱花出锅"
+    ]
+  },
+  {
+    "id": "mei-cai-kou-rou",
+    "nameZh": "梅菜扣肉",
+    "nameEn": "Steamed Pork Belly with Preserved Vegetables",
+    "regionalCuisine": "cantonese",
+    "cookingMethod": "steam",
+    "difficulty": "hard",
+    "ingredients": [
+      {
+        "ingredientId": "pork_belly",
+        "amount": 500,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "dark_soy",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "light_soy",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 3,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 3,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "five_spice",
+        "amount": 0.5,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 3,
+        "unit": "tbsp"
+      }
+    ],
+    "steps": [
+      "五花肉整块煮至八成熟约20分钟，取出趁热在肉皮上扎密孔",
+      "肉皮上抹老抽上色，放入热油锅中皮朝下炸至虎皮色起泡",
+      "肉切0.8cm厚大片，加生抽老抽料酒五香粉糖拌匀腌30分钟",
+      "干梅菜泡软洗净切碎，炒锅加油炒香姜蒜末后下梅菜炒至干香",
+      "碗底码放肉片皮朝下整齐排列，上面铺炒好的梅菜压实",
+      "上蒸锅大火蒸1.5小时至肉烂入味",
+      "取出倒扣在盘中，肉皮朝上汤汁淋面即成"
+    ]
+  },
+  {
+    "id": "salt_pepper_squid",
+    "nameZh": "椒盐鱿鱼",
+    "nameEn": "Salt and Pepper Squid",
+    "regionalCuisine": "cantonese",
+    "cookingMethod": "deep_fry",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "squid",
+        "amount": 400,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "chili_pepper",
+        "amount": 30,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 20,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "flour",
+        "amount": 50,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 30,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 3,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "white_pepper",
+        "amount": 2,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 500,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "鱿鱼去内脏和软骨，撕去外膜，在内侧切交叉花刀，再切成4cm见方的块",
+      "面粉和淀粉按2:1混合，加少许盐和白胡椒粉拌匀成干粉",
+      "鱿鱼块用厨房纸吸干水分，均匀裹上混合干粉，抖掉多余粉",
+      "油温烧至180度，分批放入鱿鱼炸至金黄卷曲约2分钟，捞出控油",
+      "锅留底油，爆香蒜末和小米椒圈至出香",
+      "倒入炸好的鱿鱼快速翻炒，撒入椒盐粉和葱花，颠锅均匀即可"
+    ]
+  },
+  {
+    "id": "steamed_fish_ginger_scallion",
+    "nameZh": "姜葱蒸鱼片",
+    "nameEn": "Steamed Fish with Ginger and Scallion",
+    "regionalCuisine": "cantonese",
+    "cookingMethod": "steam",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "fish_fillet",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 20,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 30,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "light_soy",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "sesame_oil",
+        "amount": 5,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 2,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "鱼片用料酒和少许盐腌制5分钟去腥",
+      "姜一半切丝一半切片，葱白切段葱绿切细丝泡冰水卷曲备用",
+      "盘底铺姜片和葱白段，鱼片平铺其上，再撒姜丝",
+      "蒸锅水开后放入，大火蒸6-7分钟至鱼肉刚好变白",
+      "倒掉蒸出的腥水，淋上蒸鱼豉油，铺上葱丝",
+      "热油烧至冒烟浇在葱姜丝上，滋啦出香即可"
+    ]
+  },
+  {
+    "id": "bitter_melon_egg_stirfry",
+    "nameZh": "苦瓜炒蛋",
+    "nameEn": "Bitter Melon with Scrambled Egg",
+    "regionalCuisine": "cantonese",
+    "cookingMethod": "stir_fry",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "bitter_melon",
+        "amount": 250,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "egg",
+        "amount": 3,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 3,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 3,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 20,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "light_soy",
+        "amount": 5,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "苦瓜对半切开去瓤和白膜，斜切3mm薄片",
+      "苦瓜片加盐和糖腌制10分钟出水，挤干水分减少苦味",
+      "鸡蛋打散加少许盐搅匀",
+      "热锅多油，倒入蛋液炒成大块蛋花盛出",
+      "锅中留油爆香蒜末，放入苦瓜片大火翻炒2分钟",
+      "倒回蛋花，加生抽翻炒均匀即可出锅"
+    ]
+  },
+  {
+    "id": "bitter_melon_pork_ribs",
+    "nameZh": "苦瓜排骨煲",
+    "nameEn": "Bitter Melon and Pork Rib Pot",
+    "regionalCuisine": "cantonese",
+    "cookingMethod": "stew",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "pork_ribs",
+        "amount": 400,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "bitter_melon",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "bean_paste",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "light_soy",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 15,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "排骨剁段焯水洗净，苦瓜去瓤切滚刀块",
+      "热锅下油，排骨煎至两面微黄",
+      "放入姜片、蒜末和豆瓣酱炒出红油",
+      "加料酒、生抽和适量热水，大火烧开",
+      "转小火炖30分钟至排骨软烂",
+      "加入苦瓜块炖10分钟至苦瓜变翠绿微软，加糖提鲜调味"
+    ]
+  },
+  {
+    "id": "winter_melon_shrimp_soup",
+    "nameZh": "冬瓜虾仁汤",
+    "nameEn": "Winter Melon and Shrimp Soup",
+    "regionalCuisine": "cantonese",
+    "cookingMethod": "boil",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "winter_melon",
+        "amount": 400,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "shrimp",
+        "amount": 150,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 3,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "white_pepper",
+        "amount": 1,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sesame_oil",
+        "amount": 3,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 5,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "冬瓜去皮去瓤切薄片，虾去壳去虾线洗净",
+      "虾仁用少许料酒和盐腌制5分钟",
+      "锅中加水放入姜片烧开，下入冬瓜片",
+      "中火煮8分钟至冬瓜变半透明",
+      "放入虾仁煮2分钟至变红卷曲",
+      "加盐和白胡椒粉调味，淋香油撒葱花出锅"
+    ]
+  },
+  {
+    "id": "stuffed_tofu_puff",
+    "nameZh": "酿油豆腐",
+    "nameEn": "Stuffed Tofu Puffs",
+    "regionalCuisine": "cantonese",
+    "cookingMethod": "braise",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "tofu_puff",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "pork_mince",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "light_soy",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "oyster_sauce",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sesame_oil",
+        "amount": 5,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 10,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "肉末加姜末、葱花、少许生抽、淀粉和香油搅拌上劲",
+      "油豆腐切开一个口，用筷子掏空中间",
+      "将肉馅塞入每个油豆腐中，按紧实",
+      "平底锅下少许油，酿好的豆腐肉馅朝下煎至微黄",
+      "加生抽、蚝油和半碗水，大火烧开转小火焖煮10分钟",
+      "开盖收汁至浓稠，汤汁裹满豆腐即可出锅"
+    ]
+  },
+  {
+    "id": "snow_pea_shrimp",
+    "nameZh": "荷兰豆炒虾仁",
+    "nameEn": "Stir-fried Snow Peas with Shrimp",
+    "regionalCuisine": "cantonese",
+    "cookingMethod": "stir_fry",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "snow_pea",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "shrimp",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 2,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 15,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "虾去壳去虾线，加料酒和淀粉腌制",
+      "荷兰豆撕去两侧老筋，焯水30秒保持脆绿捞出",
+      "热锅下油滑入虾仁，炒至变色盛出",
+      "锅中爆香蒜末和姜末",
+      "放入荷兰豆大火翻炒1分钟",
+      "倒回虾仁，加盐调味快速翻匀出锅"
+    ]
+  },
+  {
+    "id": "asparagus_beef_stirfry",
+    "nameZh": "芦笋炒牛肉",
+    "nameEn": "Stir-fried Beef with Asparagus",
+    "regionalCuisine": "cantonese",
+    "cookingMethod": "stir_fry",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "beef_sirloin",
+        "amount": 250,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "asparagus",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "oyster_sauce",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "light_soy",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 20,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "牛肉逆纹切薄片，加生抽、料酒、淀粉和少许油抓匀腌15分钟",
+      "芦笋削去根部老皮，斜切4cm段，焯水1分钟捞出",
+      "热锅大火宽油，滑入牛肉片快速翻炒至七成熟盛出",
+      "锅中留油爆香蒜末",
+      "放入芦笋翻炒1分钟，加蚝油调味",
+      "倒回牛肉大火翻炒30秒，避免牛肉过老，快速出锅"
+    ]
+  },
+  {
+    "id": "pumpkin_steamed_pork_ribs",
+    "nameZh": "南瓜蒸排骨",
+    "nameEn": "Steamed Pork Ribs on Pumpkin",
+    "regionalCuisine": "cantonese",
+    "cookingMethod": "steam",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "pumpkin",
+        "amount": 400,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "pork_ribs",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "light_soy",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "oyster_sauce",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 3,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 10,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "排骨剁小段洗净，用生抽、蚝油、料酒、淀粉和蒜末腌制20分钟",
+      "南瓜去皮去瓤切1cm厚块",
+      "南瓜块铺在蒸盘底部排列均匀",
+      "将腌好的排骨逐块码在南瓜上",
+      "蒸锅水开后放入，大火蒸25分钟至排骨熟透",
+      "出锅后南瓜吸收肉汁变得软糯甜香即可"
+    ]
+  },
+  {
+    "id": "cantonese_steamed_shrimp",
+    "nameZh": "蒜蓉粉丝蒸虾",
+    "nameEn": "Steamed Shrimp with Garlic Vermicelli",
+    "regionalCuisine": "cantonese",
+    "cookingMethod": "steam",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "shrimp",
+        "amount": 400,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "vermicelli",
+        "amount": 80,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 30,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "light_soy",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 20,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "chili_pepper",
+        "amount": 5,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "粉丝温水泡软铺在蒸盘底部",
+      "大虾剪开背部挑去虾线，展开铺在粉丝上",
+      "蒜切碎末，锅中油烧热炒至蒜末微黄出香制成蒜蓉油",
+      "蒜蓉油均匀淋在每只虾上",
+      "蒸锅水开后放入大火蒸6-8分钟至虾变红",
+      "出锅淋生抽，撒葱花和小米椒圈点缀"
+    ]
+  },
+  {
+    "id": "cantonese_steamed_egg_shrimp",
+    "nameZh": "虾仁蒸水蛋",
+    "nameEn": "Cantonese Steamed Egg with Shrimp",
+    "regionalCuisine": "cantonese",
+    "cookingMethod": "steam",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "egg",
+        "amount": 3,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "shrimp",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "light_soy",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "sesame_oil",
+        "amount": 3,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 2,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "鸡蛋打散加1.5倍温水和少许盐搅匀",
+      "蛋液过筛去除气泡倒入蒸碗",
+      "虾仁洗净去虾线备用",
+      "蒸锅水开后放入蛋液，中火蒸8分钟至半凝固",
+      "揭盖将虾仁摆放在蛋面上，继续蒸5分钟至虾变红蛋凝固",
+      "出锅淋生抽和香油，撒葱花"
+    ]
+  },
+  {
+    "id": "cantonese_clay_pot_rice",
+    "nameZh": "广式煲仔饭",
+    "nameEn": "Cantonese Clay Pot Rice",
+    "regionalCuisine": "cantonese",
+    "cookingMethod": "stew",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "rice",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sausage",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "chicken_thigh",
+        "amount": 150,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "egg",
+        "amount": 1,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "light_soy",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "dark_soy",
+        "amount": 5,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "sesame_oil",
+        "amount": 5,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 3,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 10,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "大米洗净浸泡30分钟沥干，鸡腿肉切片用生抽和糖腌15分钟",
+      "腊肠斜切薄片备用",
+      "砂锅内壁刷一层油防粘，放入大米加适量水",
+      "大火烧开转最小火焖煮10分钟至水将干",
+      "铺上鸡肉片和腊肠片，打入鸡蛋，盖盖继续焖10分钟",
+      "调酱油汁（生抽、老抽、糖、香油拌匀）淋在饭上，拌匀享用锅巴"
+    ]
+  },
+  {
+    "id": "cantonese_sweet_sour_pork",
+    "nameZh": "菠萝咕噜肉",
+    "nameEn": "Cantonese Sweet and Sour Pork with Pineapple",
+    "regionalCuisine": "cantonese",
+    "cookingMethod": "deep_fry",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "pork_loin",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "capsicum",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "onion",
+        "amount": 80,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "tomato_paste",
+        "amount": 30,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 25,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "vinegar",
+        "amount": 20,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 40,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "egg",
+        "amount": 1,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 400,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "猪里脊切2cm方块，加少许盐和料酒腌10分钟",
+      "肉块裹蛋液沾淀粉，油温170度炸至金黄捞出，复炸至酥脆",
+      "彩椒和洋葱切块备用",
+      "调糖醋汁：番茄酱、糖、醋和少许水淀粉拌匀",
+      "锅留底油翻炒彩椒和洋葱至断生",
+      "倒入糖醋汁熬至起泡，放入炸肉块快速翻裹出锅"
+    ]
+  },
+  {
+    "id": "cantonese_wonton_soup",
+    "nameZh": "鲜虾云吞汤",
+    "nameEn": "Cantonese Shrimp Wonton Soup",
+    "regionalCuisine": "cantonese",
+    "cookingMethod": "boil",
+    "difficulty": "hard",
+    "ingredients": [
+      {
+        "ingredientId": "shrimp",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "pork_mince",
+        "amount": 150,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "flour",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "egg",
+        "amount": 1,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sesame_oil",
+        "amount": 5,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 3,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "white_pepper",
+        "amount": 2,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "面粉加蛋和少许水揉成面团，擀薄切成方皮（或用现成云吞皮）",
+      "虾仁切碎粒与肉末混合，加姜末、盐、胡椒和香油搅拌上劲",
+      "每张云吞皮包入一勺馅料，对折捏紧底部两角交叠粘合",
+      "锅中水烧开下入云吞，煮至浮起约3分钟即熟",
+      "另备清汤碗底：盐、白胡椒、少许香油和葱花",
+      "捞出云吞放入汤碗，浇入煮云吞的清汤即可"
+    ]
+  },
+  {
+    "id": "cold_bitter_melon_salad",
+    "nameZh": "凉拌苦瓜",
+    "nameEn": "Cold Bitter Melon Salad",
+    "regionalCuisine": "cantonese",
+    "cookingMethod": "boil",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "bitter_melon",
+        "amount": 250,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "vinegar",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "light_soy",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 8,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sesame_oil",
+        "amount": 5,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "chili_pepper",
+        "amount": 5,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "苦瓜对半切去瓤和白膜，切2mm薄片",
+      "加盐和糖腌10分钟挤出苦水",
+      "焯水30秒迅速捞出过冰水至完全冷却",
+      "蒜切末，小米椒切圈",
+      "调汁：醋、生抽、糖、蒜末和香油",
+      "苦瓜沥干浇上调料汁拌匀即可"
+    ]
+  },
+  {
+    "id": "homestyle_garlic_lettuce",
+    "nameZh": "蒜蓉炒生菜",
+    "nameEn": "Stir-fried Lettuce with Garlic",
+    "regionalCuisine": "cantonese",
+    "cookingMethod": "stir_fry",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "lettuce",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "oyster_sauce",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 1,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 10,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "生菜洗净掰成大片沥干水分",
+      "蒜切碎末",
+      "热锅大火下油爆香蒜末",
+      "放入生菜快速翻炒至微软",
+      "加蚝油和少许盐翻炒均匀",
+      "生菜刚断生即出锅，保持脆嫩口感"
+    ]
+  },
+  {
+    "id": "homestyle_shrimp_fried_rice",
+    "nameZh": "虾仁蛋炒饭",
+    "nameEn": "Shrimp Egg Fried Rice",
+    "regionalCuisine": "cantonese",
+    "cookingMethod": "stir_fry",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "rice",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "shrimp",
+        "amount": 150,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "egg",
+        "amount": 2,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "corn",
+        "amount": 50,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 3,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "light_soy",
+        "amount": 5,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 20,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "隔夜冷饭打散备用，虾仁用少许盐腌5分钟",
+      "热锅下油先炒虾仁至变色盛出",
+      "锅中加油打入鸡蛋快速划散",
+      "蛋液半凝固时倒入冷饭大火翻炒",
+      "炒至米饭粒粒分明，加入虾仁和玉米粒",
+      "加盐和少许生抽调味，撒葱花翻匀出锅"
+    ]
+  },
+  {
+    "id": "homestyle_steamed_pork_with_radish",
+    "nameZh": "萝卜蒸肉饼",
+    "nameEn": "Steamed Pork Patty with Radish",
+    "regionalCuisine": "cantonese",
+    "cookingMethod": "steam",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "pork_mince",
+        "amount": 250,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "white_radish",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "light_soy",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sesame_oil",
+        "amount": 3,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 2,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "白萝卜擦成细丝挤干水分",
+      "肉末加萝卜丝、姜末、葱花、生抽、淀粉和香油搅拌上劲",
+      "混合物在蒸盘中压成1.5cm厚肉饼",
+      "蒸锅水开后放入大火蒸15分钟至熟",
+      "倒掉多余汁水淋少许生抽",
+      "撒葱花即可切块食用"
+    ]
+  },
+  {
+    "id": "homestyle_cheese_baked_shrimp",
+    "nameZh": "芝士焗虾",
+    "nameEn": "Cheese Baked Shrimp",
+    "regionalCuisine": "cantonese",
+    "cookingMethod": "roast",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "shrimp",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cheese",
+        "amount": 80,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "butter",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "onion",
+        "amount": 50,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 2,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "white_pepper",
+        "amount": 1,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 10,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "大虾去壳留尾开背去虾线，用料酒和盐腌10分钟",
+      "洋葱切碎末，蒜切末",
+      "黄油融化爆香蒜末和洋葱末铺在烤盘底部",
+      "虾排列在洋葱上，撒白胡椒",
+      "均匀铺上芝士碎覆盖虾身",
+      "烤箱200度烤12分钟至芝士融化金黄起泡即可"
+    ]
+  },
+  {
+    "id": "homestyle_steamed_chicken_breast",
+    "nameZh": "蒜香蒸鸡胸",
+    "nameEn": "Garlic Steamed Chicken Breast",
+    "regionalCuisine": "cantonese",
+    "cookingMethod": "steam",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "chicken_breast",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 20,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "light_soy",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "sesame_oil",
+        "amount": 5,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "鸡胸肉横刀片成两片，用叉子戳孔便于入味",
+      "用生抽、料酒、蒜末和姜末腌15分钟",
+      "鸡肉铺在蒸盘中倒上所有腌料",
+      "蒸锅水开后大火蒸12-14分钟至鸡肉熟透",
+      "取出晾凉后用手撕成鸡丝",
+      "淋上蒸出的汤汁和香油，撒葱花"
+    ]
+  },
+  {
+    "id": "homestyle_braised_sausage_veg",
+    "nameZh": "腊肠炒荷兰豆",
+    "nameEn": "Stir-fried Sausage with Snow Peas",
+    "regionalCuisine": "cantonese",
+    "cookingMethod": "stir_fry",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "sausage",
+        "amount": 150,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "snow_pea",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "light_soy",
+        "amount": 5,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 5,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 10,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "腊肠斜切薄片，荷兰豆撕去两侧老筋",
+      "荷兰豆焯水30秒保持翠绿捞出",
+      "锅中少许油中火煎腊肠至出油微焦",
+      "加蒜末爆香",
+      "放入荷兰豆大火翻炒1分钟",
+      "加少许生抽调味翻匀出锅"
+    ]
+  },
+  {
+    "id": "homestyle_stir_fry_lettuce_oyster",
+    "nameZh": "蚝油生菜包",
+    "nameEn": "Oyster Sauce Lettuce Wraps",
+    "regionalCuisine": "cantonese",
+    "cookingMethod": "stir_fry",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "lettuce",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "pork_mince",
+        "amount": 150,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "mushroom",
+        "amount": 80,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "carrot",
+        "amount": 50,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "oyster_sauce",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "light_soy",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 10,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "生菜叶洗净整片铺在盘中做包碗",
+      "蘑菇和胡萝卜切小丁",
+      "热锅下油炒散肉末至变色",
+      "加入蒜末、蘑菇丁和胡萝卜丁翻炒2分钟",
+      "加蚝油和生抽调味翻匀",
+      "炒好的肉末舀入生菜叶中包裹食用"
+    ]
+  },
+  {
+    "id": "homestyle_stir_fry_broccoli_shrimp",
+    "nameZh": "西兰花炒虾仁",
+    "nameEn": "Stir-fried Broccoli with Shrimp",
+    "regionalCuisine": "cantonese",
+    "cookingMethod": "stir_fry",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "broccoli",
+        "amount": 250,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "shrimp",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 5,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 2,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "oyster_sauce",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 15,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "虾仁去虾线用料酒和淀粉上浆",
+      "西兰花掰小朵焯水2分钟至翠绿捞出",
+      "热锅下油滑炒虾仁至变色盛出",
+      "锅中爆香蒜末",
+      "放入西兰花翻炒加蚝油",
+      "倒回虾仁加盐翻匀出锅"
+    ]
+  },
+  {
+    "id": "homestyle_stir_fry_bitter_melon_pork",
+    "nameZh": "苦瓜炒肉片",
+    "nameEn": "Stir-fried Bitter Melon with Pork",
+    "regionalCuisine": "cantonese",
+    "cookingMethod": "stir_fry",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "bitter_melon",
+        "amount": 250,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "pork_loin",
+        "amount": 150,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "bean_paste",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "light_soy",
+        "amount": 5,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 15,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "苦瓜去瓤切薄片加盐和糖腌10分钟挤干水分",
+      "猪肉切片用料酒和淀粉腌制",
+      "热锅下油滑炒肉片至变色盛出",
+      "锅中爆香蒜末和豆豉酱",
+      "放入苦瓜片大火翻炒2分钟",
+      "倒回肉片加少许生抽翻匀出锅"
+    ]
+  },
+  {
+    "id": "cantonese-steamed-egg-with-shrimp",
+    "nameZh": "虾仁蒸蛋",
+    "nameEn": "Cantonese Steamed Egg with Shrimp",
+    "regionalCuisine": "cantonese",
+    "cookingMethod": "steam",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "egg",
+        "amount": 3,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "shrimp",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sesame_oil",
+        "amount": 5,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 5,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "鸡蛋打散，加入1.5倍温水搅拌均匀，过滤去泡",
+      "虾仁去虾线备用",
+      "蛋液倒入碗中，盖保鲜膜中火蒸8分钟",
+      "放入虾仁再蒸4分钟至虾仁变色",
+      "淋上酱油和香油，撒葱花即可"
+    ]
+  },
+  {
+    "id": "cantonese-braised-chicken-wings",
+    "nameZh": "豉油鸡翅",
+    "nameEn": "Cantonese Soy Sauce Chicken Wings",
+    "regionalCuisine": "cantonese",
+    "cookingMethod": "braise",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "chicken_thigh",
+        "amount": 400,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 30,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "sesame_oil",
+        "amount": 5,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "鸡翅洗净两面划几刀方便入味",
+      "锅中放少许油，鸡翅煎至两面金黄",
+      "加入酱油、糖、料酒、姜片和适量水",
+      "大火烧开转小火焖15分钟",
+      "大火收汁至浓稠，淋香油装盘"
+    ]
+  },
+  {
+    "id": "cantonese-steamed-tofu",
+    "nameZh": "豉汁蒸豆腐",
+    "nameEn": "Cantonese Steamed Tofu with Black Bean Sauce",
+    "regionalCuisine": "cantonese",
+    "cookingMethod": "steam",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "tofu",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sesame_oil",
+        "amount": 5,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 10,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "豆腐切厚片码在盘中",
+      "蒜末和豆豉酱混合铺在豆腐上",
+      "大火蒸8分钟",
+      "淋上热油和酱油，撒葱花即可"
+    ]
+  },
+  {
+    "id": "cantonese-broccoli-beef",
+    "nameZh": "蚝油牛肉",
+    "nameEn": "Cantonese Oyster Sauce Beef",
+    "regionalCuisine": "cantonese",
+    "cookingMethod": "stir_fry",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "beef_sirloin",
+        "amount": 250,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "broccoli",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "oyster_sauce",
+        "amount": 20,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 8,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 20,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "牛肉逆纹切片，加酱油、淀粉和少许油腌制10分钟",
+      "西兰花焯水断生捞出",
+      "锅中热油，牛肉片快速滑炒至变色盛出",
+      "锅留底油爆香蒜末，放入西兰花翻炒",
+      "放回牛肉加蚝油翻炒均匀出锅"
+    ]
+  },
+  {
+    "id": "cantonese-sweet-sour-pork",
+    "nameZh": "咕噜肉",
+    "nameEn": "Cantonese Sweet and Sour Pork",
+    "regionalCuisine": "cantonese",
+    "cookingMethod": "deep_fry",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "pork_belly",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "capsicum",
+        "amount": 80,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "onion",
+        "amount": 60,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 30,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "vinegar",
+        "amount": 20,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 25,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 200,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "猪肉切大块，加酱油腌制后裹淀粉",
+      "油烧至七成热，肉块炸至金黄捞出",
+      "复炸一次至酥脆",
+      "锅留少许油，炒洋葱和青椒",
+      "调入糖醋汁（糖、醋、少许酱油），放入炸肉翻炒挂汁出锅"
+    ]
+  },
+  {
+    "id": "cantonese-braised-pork-ribs",
+    "nameZh": "排骨焖饭底排骨",
+    "nameEn": "Cantonese Braised Pork Ribs",
+    "regionalCuisine": "cantonese",
+    "cookingMethod": "braise",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "pork_belly",
+        "amount": 400,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 20,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "oyster_sauce",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 15,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "排骨斩小段焯水，加酱油、蚝油、糖腌15分钟",
+      "锅中热油，蒜末爆香",
+      "放入排骨煎至两面微黄",
+      "加适量水大火烧开转中火焖25分钟",
+      "大火收浓汁水出锅"
+    ]
+  },
+  {
+    "id": "cantonese-stir-fried-corn-with-egg",
+    "nameZh": "蛋黄焗玉米",
+    "nameEn": "Cantonese Egg Yolk Corn",
+    "regionalCuisine": "cantonese",
+    "cookingMethod": "deep_fry",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "corn",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "egg",
+        "amount": 3,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 20,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 100,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "玉米粒煮熟沥干，裹上薄层淀粉",
+      "油烧热，玉米粒炸至金黄捞出",
+      "蛋黄碾碎，小火炒至起泡",
+      "倒入玉米粒快速翻炒挂满蛋黄碎",
+      "出锅装盘即可"
+    ]
+  },
+  {
+    "id": "cantonese-roast-pork-belly",
+    "nameZh": "脆皮烧肉",
+    "nameEn": "Cantonese Crispy Roast Pork",
+    "regionalCuisine": "cantonese",
+    "cookingMethod": "roast",
+    "difficulty": "hard",
+    "ingredients": [
+      {
+        "ingredientId": "pork_belly",
+        "amount": 600,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "vinegar",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 5,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "五花肉焯水后取出，皮面扎密孔",
+      "肉面抹酱油、料酒、盐腌制，皮面抹醋和盐",
+      "放冰箱风干4小时以上",
+      "皮面朝上入烤箱200度烤40分钟",
+      "转250度烤15分钟至皮脆",
+      "取出切块装盘"
+    ]
+  },
+  {
+    "id": "shrimp_tofu_clay_pot",
+    "nameZh": "虾仁豆腐煲",
+    "nameEn": "Shrimp and Tofu Clay Pot",
+    "regionalCuisine": "cantonese",
+    "cookingMethod": "stew",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "shrimp",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "tofu",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "egg",
+        "amount": 1,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "oyster_sauce",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "sesame_oil",
+        "amount": 5,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 10,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "豆腐切块，虾仁去虾线用蛋清抓匀",
+      "锅中加油爆香姜片，放入豆腐煎至两面金黄",
+      "加入适量清水，大火烧开转小火炖10分钟",
+      "放入虾仁煮至变红，加蚝油调味",
+      "淋上麻油撒葱花出锅"
+    ]
+  },
+  {
+    "id": "cantonese_oyster_sauce_mushroom",
+    "nameZh": "蚝油香菇",
+    "nameEn": "Cantonese Oyster Sauce Mushrooms",
+    "regionalCuisine": "cantonese",
+    "cookingMethod": "braise",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "mushroom",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "oyster_sauce",
+        "amount": 20,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "sesame_oil",
+        "amount": 5,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "蘑菇洗净对半切，蒜切末",
+      "锅中加水烧开焯蘑菇1分钟捞出",
+      "锅中加油爆香蒜末，放入蘑菇翻炒",
+      "加蚝油和少许水烧3分钟，水淀粉勾芡",
+      "淋麻油出锅"
+    ]
+  },
+  {
+    "id": "cantonese_steamed_pork_with_egg",
+    "nameZh": "肉饼蒸蛋",
+    "nameEn": "Cantonese Steamed Pork Patty with Egg",
+    "regionalCuisine": "cantonese",
+    "cookingMethod": "steam",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "pork_mince",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "egg",
+        "amount": 2,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sesame_oil",
+        "amount": 5,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "肉末加酱油、淀粉、麻油搅拌上劲",
+      "肉末铺平在盘中，中间打入鸡蛋",
+      "入蒸锅大火蒸15分钟至熟",
+      "出锅淋少许酱油撒葱花"
+    ]
+  },
+  {
+    "id": "steamed_salmon_ginger_scallion",
+    "nameZh": "姜葱蒸三文鱼",
+    "nameEn": "Steamed Salmon with Ginger and Scallion",
+    "regionalCuisine": "cantonese",
+    "cookingMethod": "steam",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "salmon_fillet",
+        "amount": 250,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 20,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "sesame_oil",
+        "amount": 5,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 10,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "三文鱼抹少许料酒去腥，姜切丝，葱切丝",
+      "鱼上铺姜丝，入蒸锅大火蒸8分钟",
+      "取出倒掉蒸出的水，铺上葱丝淋酱油",
+      "热油浇在葱丝上激出香味即可"
+    ]
+  },
+  {
+    "id": "deep_fried_shrimp_balls",
+    "nameZh": "炸虾丸",
+    "nameEn": "Deep-fried Shrimp Balls",
+    "regionalCuisine": "cantonese",
+    "cookingMethod": "deep_fry",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "shrimp",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "egg",
+        "amount": 1,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sesame_oil",
+        "amount": 5,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 50,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "虾仁剁成泥，加蛋清、淀粉、姜末、麻油搅打上劲",
+      "手挤成丸子形状",
+      "油温五成热下锅炸至金黄浮起",
+      "捞出沥油，趁热撒葱花"
+    ]
+  },
+  {
+    "id": "steamed_chicken_mushroom",
+    "nameZh": "香菇蒸鸡",
+    "nameEn": "Steamed Chicken with Mushrooms",
+    "regionalCuisine": "cantonese",
+    "cookingMethod": "steam",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "chicken_thigh",
+        "amount": 350,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "mushroom",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "oyster_sauce",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 10,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "鸡腿剁小块，加酱油、蚝油、淀粉、姜片腌制20分钟",
+      "香菇切片铺在盘底",
+      "鸡块铺在香菇上，淋少许油",
+      "入蒸锅大火蒸18分钟至熟透"
+    ]
+  },
+  {
+    "id": "cantonese_steamed_salmon_tofu",
+    "nameZh": "粤式豆腐蒸鱼",
+    "nameEn": "Cantonese Steamed Salmon on Tofu",
+    "regionalCuisine": "cantonese",
+    "cookingMethod": "steam",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "salmon_fillet",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "tofu",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 10,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "豆腐切片铺盘底，三文鱼切片铺上",
+      "撒姜丝入蒸锅大火蒸10分钟",
+      "出锅倒掉汤汁铺葱丝淋酱油",
+      "热油浇在葱丝上激香"
+    ]
+  },
+  {
+    "id": "steamed_shrimp_with_garlic",
+    "nameZh": "蒜蓉蒸虾",
+    "nameEn": "Steamed Shrimp with Garlic",
+    "regionalCuisine": "cantonese",
+    "cookingMethod": "steam",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "shrimp",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 20,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 15,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "虾开背去虾线排盘",
+      "蒜末用油炒至微黄铺在虾上",
+      "入蒸锅大火蒸6分钟",
+      "出锅淋酱油撒葱花"
+    ]
+  },
+  {
+    "id": "steamed_spare_ribs_douchi",
+    "nameZh": "豉汁蒸排骨",
+    "nameEn": "Steamed Spare Ribs with Black Bean Sauce",
+    "regionalCuisine": "cantonese",
+    "cookingMethod": "steam",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "pork_belly",
+        "amount": 400,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 5,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "排骨斩小块洗净沥干，加酱油、淀粉、糖腌制15分钟",
+      "蒜末、姜末拌入排骨中",
+      "排骨铺在盘中，冷水上锅",
+      "大火蒸25分钟至熟透出锅"
+    ]
+  },
+  {
+    "id": "steamed_salmon_ginger",
+    "nameZh": "姜丝蒸三文鱼",
+    "nameEn": "Steamed Salmon with Ginger",
+    "regionalCuisine": "cantonese",
+    "cookingMethod": "steam",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "salmon_fillet",
+        "amount": 250,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "sesame_oil",
+        "amount": 5,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 10,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "三文鱼抹料酒去腥，姜切丝铺鱼身上",
+      "冷水上锅大火蒸10-12分钟",
+      "倒掉蒸出的汤汁，铺上葱丝",
+      "淋热酱油和香油即可"
+    ]
+  },
+  {
+    "id": "steamed_pork_with_potato",
+    "nameZh": "土豆蒸肉饼",
+    "nameEn": "Steamed Pork Patty with Potato",
+    "regionalCuisine": "cantonese",
+    "cookingMethod": "steam",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "pork_mince",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "potato",
+        "amount": 150,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 10,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "土豆切薄片铺盘底",
+      "肉末加酱油、淀粉、姜末拌匀，铺在土豆上压平",
+      "冷水上锅大火蒸20分钟",
+      "出锅撒葱花即可"
+    ]
+  },
+  {
+    "id": "cantonese_corn_chicken_soup",
+    "nameZh": "粤式玉米鸡汤",
+    "nameEn": "Cantonese Corn Chicken Soup",
+    "regionalCuisine": "cantonese",
+    "cookingMethod": "boil",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "chicken_thigh",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "corn",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "carrot",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 10,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "鸡腿肉切块焯水，玉米切段，胡萝卜切块",
+      "所有食材放入锅中，加适量水",
+      "大火烧开转小火煲35分钟",
+      "加盐调味出锅"
+    ]
+  },
+  {
+    "id": "cantonese_steamed_minced_pork",
+    "nameZh": "咸蛋蒸肉饼",
+    "nameEn": "Cantonese Steamed Pork with Salted Egg",
+    "regionalCuisine": "cantonese",
+    "cookingMethod": "steam",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "pork_mince",
+        "amount": 250,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "egg",
+        "amount": 1,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 10,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "肉末加酱油、淀粉、姜末拌匀铺盘",
+      "鸡蛋打在肉饼上",
+      "冷水上锅大火蒸15分钟",
+      "撒葱花出锅"
+    ]
+  },
+  {
+    "id": "boiled_shrimp_dipping",
+    "nameZh": "白灼虾蘸料",
+    "nameEn": "Boiled Shrimp with Dipping Sauce",
+    "regionalCuisine": "cantonese",
+    "cookingMethod": "boil",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "shrimp",
+        "amount": 400,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "sesame_oil",
+        "amount": 5,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "锅中烧水加姜片和葱段",
+      "水开后放入虾煮2-3分钟至变红",
+      "捞出过冷水",
+      "蘸酱油香油混合蘸料食用"
+    ]
+  },
+  {
+    "id": "boiled_bok_choy_oyster",
+    "nameZh": "白灼菜心",
+    "nameEn": "Boiled Bok Choy with Oyster Sauce",
+    "regionalCuisine": "cantonese",
+    "cookingMethod": "boil",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "bok_choy",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "oyster_sauce",
+        "amount": 20,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 10,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "菜心洗净对半切",
+      "锅中烧水加少许油和盐",
+      "菜心焯水1-2分钟至翠绿捞出摆盘",
+      "淋蚝油，热油爆香蒜末浇上"
+    ]
+  },
+  {
+    "id": "cantonese_steamed_fish",
+    "nameZh": "清蒸鱼",
+    "nameEn": "Cantonese Steamed Fish",
+    "regionalCuisine": "cantonese",
+    "cookingMethod": "soup",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "salmon_fillet",
+        "amount": 400,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 20,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 30,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 20,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 10,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "鱼身抹料酒和姜丝腌5分钟",
+      "盘中铺姜片，放上鱼",
+      "水开后大火蒸8-10分钟",
+      "倒掉蒸出的汤汁，铺上葱丝",
+      "淋上热酱油，泼上热油激香"
+    ]
+  },
+  {
+    "id": "garlic_broccoli",
+    "nameZh": "蒜蓉西兰花",
+    "nameEn": "Garlic Broccoli",
+    "regionalCuisine": "cantonese",
+    "cookingMethod": "stir_fry",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "broccoli",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "oyster_sauce",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 10,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "西兰花切小朵，焯水1分钟捞出",
+      "锅中热油，爆香蒜末",
+      "放入西兰花大火翻炒",
+      "加蚝油和少许盐调味出锅"
+    ]
+  },
+  {
+    "id": "congee_plain",
+    "nameZh": "白粥",
+    "nameEn": "Plain Congee",
+    "regionalCuisine": "cantonese",
+    "cookingMethod": "cold_dish",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "rice",
+        "amount": 150,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "大米淘洗干净，加入8倍水",
+      "大火烧开后转小火",
+      "搅拌几次防止粘底",
+      "小火熬煮35-40分钟至粥稠即可"
+    ]
+  },
+  {
+    "id": "stir_fried_shrimp",
+    "nameZh": "白灼虾",
+    "nameEn": "Poached Shrimp",
+    "regionalCuisine": "cantonese",
+    "cookingMethod": "braise",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "shrimp",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 10,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "虾去虾线洗净",
+      "锅中水烧开，放入姜片、葱段和料酒",
+      "下虾煮至变红弯曲，约2分钟",
+      "捞出装盘，蘸酱油食用"
+    ]
+  },
+  {
+    "id": "oyster_sauce_lettuce",
+    "nameZh": "蚝油生菜",
+    "nameEn": "Lettuce with Oyster Sauce",
+    "regionalCuisine": "cantonese",
+    "cookingMethod": "braise",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "bok_choy",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "oyster_sauce",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 10,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "生菜洗净，焯水30秒捞出摆盘",
+      "锅中热油，爆香蒜末",
+      "加入蚝油和少许水烧开",
+      "将蚝油汁淋在生菜上即可"
+    ]
+  },
+  {
+    "id": "carrot_corn_rib_soup",
+    "nameZh": "玉米胡萝卜排骨汤",
+    "nameEn": "Corn and Carrot Pork Rib Soup",
+    "regionalCuisine": "cantonese",
+    "cookingMethod": "soup",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "pork_belly",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "corn",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "carrot",
+        "amount": 150,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 10,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "排骨冷水焯水去血沫",
+      "玉米切段，胡萝卜切块",
+      "砂锅中加水，放入排骨和姜片",
+      "大火烧开转小火炖40分钟",
+      "加入玉米和胡萝卜继续炖20分钟",
+      "加盐调味出锅"
+    ]
+  },
+  {
+    "id": "garlic_shrimp",
+    "nameZh": "蒜蓉大虾",
+    "nameEn": "Garlic Shrimp",
+    "regionalCuisine": "cantonese",
+    "cookingMethod": "stir_fry",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "shrimp",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 20,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 5,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 15,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "虾去虾线开背洗净",
+      "锅中热油，放入蒜末炒香",
+      "下虾翻炒至变色",
+      "加料酒、酱油和盐调味",
+      "翻炒均匀出锅"
+    ]
+  },
+  {
+    "id": "shrimp_egg_stir_fry",
+    "nameZh": "虾仁炒蛋",
+    "nameEn": "Shrimp and Egg Stir-fry",
+    "regionalCuisine": "cantonese",
+    "cookingMethod": "stir_fry",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "shrimp",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "egg",
+        "amount": 3,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 5,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 15,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "虾仁去虾线，加少许料酒和盐腌5分钟",
+      "鸡蛋打散，加入虾仁混合",
+      "锅中热油，倒入蛋虾液",
+      "中火炒至蛋液凝固虾仁变色",
+      "撒葱花出锅"
+    ]
+  },
+  {
+    "id": "beef_broccoli",
+    "nameZh": "西兰花炒牛肉",
+    "nameEn": "Beef with Broccoli",
+    "regionalCuisine": "cantonese",
+    "cookingMethod": "staple",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "beef_sirloin",
+        "amount": 250,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "broccoli",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "oyster_sauce",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 8,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 10,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "牛肉逆纹切薄片，加酱油、淀粉、料酒腌15分钟",
+      "西兰花切小朵焯水",
+      "锅中热油，快速滑炒牛肉至变色盛出",
+      "锅中加蒜末炒香，放入西兰花翻炒",
+      "倒回牛肉，加蚝油翻炒均匀出锅"
+    ]
+  },
+  {
+    "id": "chicken_mushroom_soup",
+    "nameZh": "鸡汤",
+    "nameEn": "Chicken and Mushroom Soup",
+    "regionalCuisine": "cantonese",
+    "cookingMethod": "soup",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "chicken_thigh",
+        "amount": 400,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "mushroom",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 10,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "鸡肉切块，冷水焯水去血沫",
+      "砂锅中加水，放入鸡块和姜片",
+      "大火烧开，加料酒",
+      "转小火炖40分钟",
+      "加入蘑菇继续炖20分钟",
+      "加盐调味出锅"
+    ]
+  },
+  {
+    "id": "cantonese_fried_rice_noodle",
+    "nameZh": "干炒牛河",
+    "nameEn": "Cantonese Fried Rice Noodles with Beef",
+    "regionalCuisine": "cantonese",
+    "cookingMethod": "boil",
+    "difficulty": "hard",
+    "ingredients": [
+      {
+        "ingredientId": "dried_noodles_rice",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "beef_sirloin",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "bok_choy",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "egg",
+        "amount": 1,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 20,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 25,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "牛肉切薄片，加酱油、淀粉腌10分钟",
+      "河粉煮软或提前泡软沥干",
+      "大火热锅，炒蛋盛出",
+      "大火快炒牛肉至变色盛出",
+      "锅中加油，放入河粉和酱油大火翻炒",
+      "倒回牛肉和蛋，加入韭黄翻炒均匀出锅"
+    ]
+  },
+  {
+    "id": "steamed_tofu_with_shrimp",
+    "nameZh": "虾仁蒸豆腐",
+    "nameEn": "Steamed Tofu with Shrimp",
+    "regionalCuisine": "cantonese",
+    "cookingMethod": "steam",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "tofu",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "shrimp",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "sesame_oil",
+        "amount": 3,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 5,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "豆腐切厚片摆盘",
+      "虾仁去虾线放在豆腐上",
+      "大火蒸8分钟",
+      "淋上酱油和香油",
+      "撒葱花出锅"
+    ]
+  },
+  {
+    "id": "milk_steamed_egg",
+    "nameZh": "牛奶炖蛋",
+    "nameEn": "Milk Steamed Egg Custard",
+    "regionalCuisine": "cantonese",
+    "cookingMethod": "steam",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "egg",
+        "amount": 2,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "milk",
+        "amount": 200,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 15,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "鸡蛋打散，加入牛奶和糖搅匀",
+      "过滤蛋液去泡沫",
+      "倒入碗中盖保鲜膜",
+      "水开后中火蒸12分钟",
+      "放凉后食用口感更滑"
+    ]
+  },
+  {
+    "id": "apple_sweet_soup",
+    "nameZh": "苹果银耳汤",
+    "nameEn": "Apple Sweet Soup",
+    "regionalCuisine": "cantonese",
+    "cookingMethod": "soup",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "apple",
+        "amount": 2,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 15,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "苹果去皮切块",
+      "锅中加水烧开",
+      "放入苹果块小火煮20分钟",
+      "加冰糖调味，再煮5分钟出锅"
+    ]
+  },
+  {
+    "id": "cantonese_chicken_corn_soup",
+    "nameZh": "鸡蓉玉米羹",
+    "nameEn": "Cantonese Chicken Corn Soup",
+    "regionalCuisine": "cantonese",
+    "cookingMethod": "soup",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "chicken_breast",
+        "amount": 150,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "corn",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "egg",
+        "amount": 1,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 5,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "鸡胸肉煮熟撕成丝或剁碎",
+      "锅中加水烧开，放入玉米粒煮5分钟",
+      "加入鸡肉搅匀",
+      "水淀粉勾薄芡",
+      "淋入蛋液搅散，加盐调味撒葱花出锅"
+    ]
+  },
+  {
+    "id": "cantonese_zhengdan",
+    "nameZh": "蒸水蛋",
+    "nameEn": "Cantonese Steamed Egg",
+    "regionalCuisine": "cantonese",
+    "cookingMethod": "steam",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "egg",
+        "amount": 3,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 5,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "sesame_oil",
+        "amount": 3,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 5,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "鸡蛋打散加1.5倍温水搅匀，加少许盐",
+      "过滤蛋液倒入碗中，盖保鲜膜扎几个孔",
+      "水开后上锅中火蒸10-12分钟",
+      "取出淋酱油和麻油，撒葱花"
+    ]
+  },
+  {
+    "id": "cantonese_baiqie_ji",
+    "nameZh": "白切鸡",
+    "nameEn": "Cantonese Poached Chicken",
+    "regionalCuisine": "cantonese",
+    "cookingMethod": "stew",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "chicken_thigh",
+        "amount": 500,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 30,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 20,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "sesame_oil",
+        "amount": 5,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 15,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "锅中烧开水加姜片、葱段、料酒",
+      "放入鸡腿大火煮开转小火煮20分钟",
+      "关火焖10分钟，捞出放入冰水浸泡",
+      "切块摆盘，姜葱切末加盐和热油制成蘸料",
+      "淋酱油和麻油即可"
+    ]
+  },
+  {
+    "id": "homestyle_chaohefen",
+    "nameZh": "炒河粉",
+    "nameEn": "Stir-fried Rice Noodles",
+    "regionalCuisine": "cantonese",
+    "cookingMethod": "staple",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "dried_noodles_rice",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "beef_sirloin",
+        "amount": 150,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "bean_sprouts",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 20,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 20,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 20,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "米粉提前泡软沥干，牛肉切片加酱油腌制",
+      "大火热锅放油，快炒牛肉至变色盛出",
+      "锅中加油放入米粉，加酱油翻炒上色",
+      "加入豆芽和牛肉翻炒均匀",
+      "撒葱花出锅"
+    ]
+  },
+  {
+    "id": "cantonese_chashao_rou",
+    "nameZh": "叉烧肉",
+    "nameEn": "Cantonese Char Siu Pork",
+    "regionalCuisine": "cantonese",
+    "cookingMethod": "braise",
+    "difficulty": "hard",
+    "ingredients": [
+      {
+        "ingredientId": "pork_belly",
+        "amount": 500,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 30,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "oyster_sauce",
+        "amount": 20,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 30,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 10,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "猪肉切长条，用酱油、蚝油、糖、料酒、蒜末腌制4小时以上",
+      "烤箱预热200度，铺锡纸放入肉条",
+      "每面烤15分钟，中途刷腌料汁",
+      "最后几分钟刷蜂蜜水（用糖水代替）上色",
+      "取出切片摆盘"
+    ]
+  },
+  {
+    "id": "breakfast_dan_chao_mifan",
+    "nameZh": "鸡蛋炒米粉",
+    "nameEn": "Egg Fried Rice Noodles",
+    "regionalCuisine": "cantonese",
+    "cookingMethod": "staple",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "dried_noodles_rice",
+        "amount": 150,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "egg",
+        "amount": 2,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "bok_choy",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 15,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "米粉提前泡软沥干",
+      "锅中热油炒散鸡蛋盛出",
+      "锅中放油炒小白菜",
+      "加入米粉和酱油大火翻炒",
+      "倒回鸡蛋翻炒均匀，撒葱花出锅"
+    ]
+  },
+  {
+    "id": "breakfast_zhou_rou_song",
+    "nameZh": "肉末粥",
+    "nameEn": "Minced Pork Congee",
+    "regionalCuisine": "cantonese",
+    "cookingMethod": "cold_dish",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "rice",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "pork_mince",
+        "amount": 80,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 5,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "sesame_oil",
+        "amount": 3,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "大米洗净加6倍水煮开转小火",
+      "肉末加姜末和酱油拌匀",
+      "粥煮30分钟至浓稠后放入肉末搅散",
+      "再煮5分钟至肉末熟透",
+      "加盐调味，淋麻油撒葱花"
+    ]
+  },
+  {
+    "id": "homestyle_xia_ren_hua_dan",
+    "nameZh": "虾仁滑蛋",
+    "nameEn": "Shrimp with Scrambled Eggs",
+    "regionalCuisine": "cantonese",
+    "cookingMethod": "staple",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "shrimp",
+        "amount": 150,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "egg",
+        "amount": 3,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 5,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 15,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "虾仁去虾线加料酒淀粉腌制",
+      "鸡蛋打散加少许盐和水",
+      "热锅下油先炒虾仁至变色",
+      "倒入蛋液翻炒至嫩滑凝固",
+      "撒葱花出锅"
+    ]
+  },
+  {
+    "id": "homestyle_yumi_paigu_tang",
+    "nameZh": "排骨玉米汤",
+    "nameEn": "Spare Rib and Corn Soup",
+    "regionalCuisine": "cantonese",
+    "cookingMethod": "soup",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "pork_belly",
+        "amount": 350,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "corn",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "carrot",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 5,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "肉切块焯水",
+      "玉米切段，胡萝卜切块",
+      "所有材料放入汤锅加足量水",
+      "大火煮开转小火慢炖1小时",
+      "加盐调味出锅"
+    ]
+  },
+  {
+    "id": "shandong_jiaoyanbai",
+    "nameZh": "椒盐虾",
+    "nameEn": "Salt and Pepper Shrimp",
+    "regionalCuisine": "cantonese",
+    "cookingMethod": "cold_dish",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "shrimp",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 20,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "capsicum",
+        "amount": 30,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 30,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "虾剪须去虾线洗净沥干",
+      "加少许盐和淀粉拌匀",
+      "锅中多放油炸虾至酥脆捞出",
+      "锅留底油爆香蒜末和辣椒碎",
+      "倒回虾翻炒，撒盐和葱花出锅"
+    ]
+  },
+  {
+    "id": "homestyle_hua_dan_niurou_fan",
+    "nameZh": "滑蛋牛肉饭",
+    "nameEn": "Silky Egg Beef Rice Bowl",
+    "regionalCuisine": "cantonese",
+    "cookingMethod": "staple",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "rice",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "beef_sirloin",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "egg",
+        "amount": 3,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "onion",
+        "amount": 50,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "oyster_sauce",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 15,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "牛肉切片加酱油淀粉腌制",
+      "鸡蛋打散备用",
+      "锅中热油炒洋葱至透明",
+      "放入牛肉快速滑炒至变色",
+      "倒入蛋液翻炒至嫩滑半凝固",
+      "加蚝油调味铺在米饭上"
+    ]
+  },
+  {
+    "id": "homestyle_luji_tui",
+    "nameZh": "酱油鸡腿",
+    "nameEn": "Soy Sauce Chicken Legs",
+    "regionalCuisine": "cantonese",
+    "cookingMethod": "stew",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "chicken_thigh",
+        "amount": 500,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 40,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 10,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "鸡腿洗净划几刀方便入味",
+      "锅中放酱油、糖、料酒、姜片、水煮开",
+      "放入鸡腿大火煮开转小火",
+      "焖煮25分钟，中途翻面",
+      "大火收汁至浓稠",
+      "切块淋汁出锅"
+    ]
+  },
+  {
+    "id": "homestyle_heiye_chao_rou",
+    "nameZh": "黑椒牛柳",
+    "nameEn": "Black Pepper Beef Strips",
+    "regionalCuisine": "cantonese",
+    "cookingMethod": "staple",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "beef_sirloin",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "capsicum",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "onion",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "oyster_sauce",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 20,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "牛肉逆纹切条加酱油、淀粉腌制15分钟",
+      "青椒洋葱切条",
+      "大火热锅放油滑炒牛肉至变色盛出",
+      "锅中炒洋葱和青椒",
+      "倒回牛肉加蚝油翻炒出锅"
+    ]
+  },
+  {
+    "id": "homestyle_dofu_niang",
+    "nameZh": "酿豆腐",
+    "nameEn": "Stuffed Tofu",
+    "regionalCuisine": "cantonese",
+    "cookingMethod": "cold_dish",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "tofu",
+        "amount": 400,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "pork_mince",
+        "amount": 150,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "oyster_sauce",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 15,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "豆腐切方块中间挖小洞",
+      "肉末加葱末、酱油、淀粉拌匀",
+      "将肉馅塞入豆腐中",
+      "平底锅放油将豆腐肉面朝下煎至金黄",
+      "加蚝油和少许水焖煮5分钟",
+      "水淀粉勾芡出锅"
+    ]
+  },
+  {
+    "id": "homestyle_yumi_luobo_tang",
+    "nameZh": "玉米胡萝卜汤",
+    "nameEn": "Corn and Carrot Soup",
+    "regionalCuisine": "cantonese",
+    "cookingMethod": "soup",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "corn",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "carrot",
+        "amount": 150,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 5,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "玉米切段，胡萝卜切块",
+      "锅中加足量水放入所有材料",
+      "大火煮开转小火煮20分钟",
+      "加盐调味即可"
+    ]
+  },
+  {
+    "id": "homestyle_fanshu_tang",
+    "nameZh": "红薯糖水",
+    "nameEn": "Sweet Potato Dessert Soup",
+    "regionalCuisine": "cantonese",
+    "cookingMethod": "boil",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "sweet_potato",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 30,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 10,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "红薯去皮切小块",
+      "锅中加水放入红薯和姜片",
+      "大火煮开转小火煮15分钟至软烂",
+      "加糖搅匀即可"
+    ]
+  },
+  {
+    "id": "homestyle_suanni_zhengji",
+    "nameZh": "蒜蓉蒸鸡翅",
+    "nameEn": "Garlic Steamed Chicken",
+    "regionalCuisine": "cantonese",
+    "cookingMethod": "steam",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "chicken_thigh",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 20,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "oyster_sauce",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 5,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "鸡腿肉切块加酱油、蚝油、淀粉、蒜末腌制15分钟",
+      "摆入蒸盘",
+      "水开后上锅大火蒸12-15分钟",
+      "取出即可"
+    ]
+  },
+  {
+    "id": "cn_congee_plain",
+    "nameZh": "白粥配咸菜",
+    "nameEn": "Plain Congee with Pickles",
+    "regionalCuisine": "cantonese",
+    "cookingMethod": "boil",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "rice",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 2,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sesame_oil",
+        "amount": 3,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "white_radish",
+        "amount": 50,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 5,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "米洗净加8倍水大火煮开",
+      "转小火慢熬30分钟不断搅拌",
+      "煮至米粒开花粥底浓稠",
+      "萝卜切丁加盐腌制做咸菜",
+      "盛粥配咸菜淋芝麻油"
+    ]
+  },
+  {
+    "id": "cn_turnip_cake",
+    "nameZh": "萝卜糕",
+    "nameEn": "Turnip Cake",
+    "regionalCuisine": "cantonese",
+    "cookingMethod": "deep_fry",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "white_radish",
+        "amount": 400,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "rice",
+        "amount": 150,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "dried_shrimp",
+        "amount": 20,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 3,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "white_pepper",
+        "amount": 2,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 15,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "萝卜刨丝加盐腌出水",
+      "米磨成粉加水调成米浆",
+      "萝卜丝虾米葱拌入米浆",
+      "倒入蒸盘蒸30分钟",
+      "放凉切片煎至两面金黄"
+    ]
+  },
+  {
+    "id": "cn_rice_roll",
+    "nameZh": "肠粉",
+    "nameEn": "Steamed Rice Roll",
+    "regionalCuisine": "cantonese",
+    "cookingMethod": "steam",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "rice_flour",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "wheat_starch",
+        "amount": 50,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "rice",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 30,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "egg",
+        "amount": 2,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "shrimp",
+        "amount": 80,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "light_soy",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 10,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "米粉加淀粉水调成稀浆",
+      "蒸盘刷油倒薄浆",
+      "加蛋液虾仁",
+      "大火蒸3分钟至凝固",
+      "卷起淋酱油"
+    ]
+  },
+  {
+    "id": "cn_congee_mushroom",
+    "nameZh": "香菇鸡肉粥",
+    "nameEn": "Mushroom Chicken Congee",
+    "regionalCuisine": "cantonese",
+    "cookingMethod": "boil",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "rice",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "chicken_breast",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "dried_mushroom",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 3,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sesame_oil",
+        "amount": 5,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "light_soy",
+        "amount": 5,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "干香菇泡发切丁鸡肉切丁",
+      "米加水大火煮开",
+      "加香菇丁转小火熬25分钟",
+      "加鸡肉丁搅散煮5分钟",
+      "加盐淋酱油芝麻油撒葱花"
+    ]
+  },
+  {
+    "id": "cn_congee_fish",
+    "nameZh": "鱼片粥",
+    "nameEn": "Fish Congee",
+    "regionalCuisine": "cantonese",
+    "cookingMethod": "boil",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "rice",
+        "amount": 80,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "fish_fillet",
+        "amount": 150,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "light_soy",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "sesame_oil",
+        "amount": 5,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 3,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "white_pepper",
+        "amount": 2,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "米加水熬粥30分钟至浓稠",
+      "鱼片切薄撒少许盐",
+      "粥滚开时放入鱼片和姜丝",
+      "煮2分钟至鱼片变白",
+      "加盐淋酱油芝麻油撒葱花"
+    ]
+  },
+  {
+    "id": "cn_shrimp_congee",
+    "nameZh": "虾仁粥",
+    "nameEn": "Shrimp Congee",
+    "regionalCuisine": "cantonese",
+    "cookingMethod": "boil",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "rice",
+        "amount": 80,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "shrimp",
+        "amount": 150,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sesame_oil",
+        "amount": 5,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 3,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "white_pepper",
+        "amount": 2,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "米加水大火煮开转小火熬25分钟",
+      "虾仁挑虾线洗净",
+      "粥浓稠时加虾仁和姜丝",
+      "煮3分钟至虾变红",
+      "加盐胡椒撒葱花淋芝麻油"
+    ]
+  },
+  {
+    "id": "cn_shrimp_wonton_soup",
+    "nameZh": "虾仁馄饨汤",
+    "nameEn": "Shrimp Wonton Soup",
+    "regionalCuisine": "cantonese",
+    "cookingMethod": "soup",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "wonton_wrapper",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "shrimp",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "pork_mince",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sesame_oil",
+        "amount": 5,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 3,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "light_soy",
+        "amount": 10,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "虾仁剁碎混合肉末调味做馅",
+      "馄饨皮包入馅料",
+      "锅中水煮开下馄饨",
+      "煮至浮起再煮1分钟",
+      "碗中放酱油葱花浇汤"
+    ]
+  },
+  {
+    "id": "cn_watercress_pork_soup",
+    "nameZh": "西洋菜猪骨汤",
+    "nameEn": "Watercress Pork Bone Soup",
+    "regionalCuisine": "cantonese",
+    "cookingMethod": "soup",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "pork_ribs",
+        "amount": 400,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spinach",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "carrot",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 10,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "排骨焯水，菠菜代替西洋菜洗净",
+      "锅中放排骨加水姜煮开",
+      "加胡萝卜转小火炖40分钟",
+      "加菠菜再煮10分钟",
+      "加盐调味"
+    ]
+  },
+  {
+    "id": "cn_bitter_melon_rib_soup",
+    "nameZh": "苦瓜排骨汤",
+    "nameEn": "Bitter Melon Pork Rib Soup",
+    "regionalCuisine": "cantonese",
+    "cookingMethod": "soup",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "pork_ribs",
+        "amount": 400,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "bitter_melon",
+        "amount": 250,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 15,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "排骨焯水苦瓜切块去瓤",
+      "锅中排骨加水姜煮开",
+      "转小火炖25分钟",
+      "加苦瓜煮15分钟",
+      "加盐调味"
+    ]
+  },
+  {
+    "id": "cn_pork_lotus_seed_soup",
+    "nameZh": "猪肚莲子汤",
+    "nameEn": "Pork Belly Lotus Seed Soup",
+    "regionalCuisine": "cantonese",
+    "cookingMethod": "soup",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "pork_belly",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "lotus_root",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "white_pepper",
+        "amount": 3,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "猪肚洗净焯水切条",
+      "莲藕切片代替莲子",
+      "锅中加水放猪肚姜葱",
+      "大火煮开转小火炖50分钟",
+      "加莲藕片煮10分钟加盐胡椒"
+    ]
+  },
+  {
+    "id": "cn_congee_chicken",
+    "nameZh": "鸡肉粥",
+    "nameEn": "Chicken Congee",
+    "regionalCuisine": "cantonese",
+    "cookingMethod": "boil",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "rice",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "chicken_thigh",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 3,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sesame_oil",
+        "amount": 5,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "white_pepper",
+        "amount": 2,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "鸡腿焯水洗净",
+      "米加水放鸡腿姜大火煮开",
+      "转小火熬30分钟",
+      "取出鸡腿撕成丝",
+      "粥中加鸡丝盐撒葱花淋芝麻油"
+    ]
+  },
+  {
+    "id": "cn_congee_beef",
+    "nameZh": "牛肉粥",
+    "nameEn": "Beef Congee",
+    "regionalCuisine": "cantonese",
+    "cookingMethod": "boil",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "rice",
+        "amount": 80,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "beef_mince",
+        "amount": 150,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sesame_oil",
+        "amount": 5,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 3,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 5,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "white_pepper",
+        "amount": 2,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "牛肉加酱油腌5分钟",
+      "米加水大火煮开转小火熬25分钟",
+      "粥浓时加牛肉末搅散",
+      "煮3分钟至牛肉变色",
+      "加盐胡椒撒葱花淋芝麻油"
+    ]
+  },
+  {
+    "id": "cn_congee_mushroom_lean",
+    "nameZh": "香菇瘦肉粥",
+    "nameEn": "Mushroom Lean Pork Congee",
+    "regionalCuisine": "cantonese",
+    "cookingMethod": "boil",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "rice",
+        "amount": 80,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "pork_loin",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "dried_mushroom",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 3,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sesame_oil",
+        "amount": 3,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "干香菇泡发切丁猪肉切丁",
+      "米加水大火煮开",
+      "加香菇丁转小火熬25分钟",
+      "加肉丁搅散煮3分钟",
+      "加盐淋芝麻油撒葱花"
+    ]
+  },
+  {
+    "id": "staple_seafood_fried_rice",
+    "nameZh": "海鲜炒饭",
+    "nameEn": "Seafood Fried Rice",
+    "regionalCuisine": "cantonese",
+    "cookingMethod": "staple",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "rice",
+        "amount": 400,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "shrimp",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "squid",
+        "amount": 80,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "egg",
+        "amount": 2,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 3,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "虾仁鱿鱼切小块炒熟盛出",
+      "炒蛋碎盛出",
+      "加米饭大火翻炒",
+      "加酱油盐",
+      "拌入海鲜蛋碎撒葱花"
+    ]
+  },
+  {
+    "id": "staple_soy_sauce_rice",
+    "nameZh": "酱油炒饭",
+    "nameEn": "Soy Sauce Fried Rice",
+    "regionalCuisine": "cantonese",
+    "cookingMethod": "staple",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "rice",
+        "amount": 400,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "egg",
+        "amount": 2,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 20,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "dark_soy",
+        "amount": 5,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 10,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "大火热油炒蛋碎",
+      "加冷饭快速翻炒散开",
+      "淋生抽老抽翻炒均匀",
+      "炒至饭粒分明",
+      "撒葱花"
+    ]
+  },
+  {
+    "id": "staple_chicken_chow_mein",
+    "nameZh": "鸡丝炒面",
+    "nameEn": "Chicken Chow Mein",
+    "regionalCuisine": "cantonese",
+    "cookingMethod": "staple",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "noodles_dried",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "chicken_breast",
+        "amount": 150,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cabbage",
+        "amount": 80,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "carrot",
+        "amount": 40,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "oyster_sauce",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 2,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "面条煮熟沥干鸡肉切丝腌制",
+      "炒鸡丝盛出炒蔬菜",
+      "加面条翻炒",
+      "加酱油蚝油",
+      "拌入鸡丝"
+    ]
+  },
+  {
+    "id": "staple_shrimp_chow_mein",
+    "nameZh": "虾仁炒面",
+    "nameEn": "Shrimp Chow Mein",
+    "regionalCuisine": "cantonese",
+    "cookingMethod": "staple",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "noodles_dried",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "shrimp",
+        "amount": 150,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "bean_sprouts",
+        "amount": 80,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 2,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sesame_oil",
+        "amount": 5,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "面条煮熟虾仁炒熟盛出",
+      "面条入锅煎至底面微焦",
+      "加豆芽翻炒",
+      "加酱油调味",
+      "拌入虾仁淋芝麻油"
+    ]
+  },
+  {
+    "id": "staple_shrimp_dumpling",
+    "nameZh": "虾仁饺子",
+    "nameEn": "Shrimp Dumplings",
+    "regionalCuisine": "cantonese",
+    "cookingMethod": "staple",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "flour",
+        "amount": 250,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "shrimp",
+        "amount": 250,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "pork_mince",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sesame_oil",
+        "amount": 5,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 3,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "white_pepper",
+        "amount": 2,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "虾仁切碎留部分整只",
+      "虾碎加肉末姜葱调味搅匀",
+      "擀皮包馅放整只虾",
+      "煮沸水下饺子",
+      "浮起煮2分钟捞出"
+    ]
+  },
+  {
+    "id": "staple_shrimp_wonton",
+    "nameZh": "虾肉馄饨",
+    "nameEn": "Shrimp Wontons",
+    "regionalCuisine": "cantonese",
+    "cookingMethod": "staple",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "wonton_wrapper",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "shrimp",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "pork_mince",
+        "amount": 80,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sesame_oil",
+        "amount": 5,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 3,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "white_pepper",
+        "amount": 2,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "虾仁部分切碎部分留整",
+      "混合肉末调味",
+      "馄饨皮包入馅料",
+      "煮至浮起",
+      "配清汤撒葱花"
+    ]
+  },
+  {
+    "id": "staple_fried_wonton",
+    "nameZh": "炸馄饨",
+    "nameEn": "Fried Wontons",
+    "regionalCuisine": "cantonese",
+    "cookingMethod": "staple",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "wonton_wrapper",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "pork_mince",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 500,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 2,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 5,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "肉末加葱姜酱油调馅",
+      "馄饨皮包入少量馅捏紧",
+      "170度油温炸至金黄",
+      "沥油装盘",
+      "配甜辣蘸汁"
+    ]
+  },
+  {
+    "id": "cn_congee_corn_lean",
+    "nameZh": "玉米瘦肉粥",
+    "nameEn": "Corn Lean Pork Congee",
+    "regionalCuisine": "cantonese",
+    "cookingMethod": "boil",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "rice",
+        "amount": 80,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "pork_loin",
+        "amount": 80,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "corn",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 3,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sesame_oil",
+        "amount": 3,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "米加水大火煮开",
+      "加玉米粒转小火熬20分钟",
+      "猪肉切丁加入搅散",
+      "煮5分钟至肉熟",
+      "加盐淋芝麻油撒葱花"
+    ]
+  },
+  {
+    "id": "staple_fried_rice_xo",
+    "nameZh": "XO酱炒饭",
+    "nameEn": "XO Sauce Fried Rice",
+    "regionalCuisine": "cantonese",
+    "cookingMethod": "staple",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "rice",
+        "amount": 400,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "shrimp",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "egg",
+        "amount": 2,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "bean_paste",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "dried_shrimp",
+        "amount": 10,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "虾仁炒熟蛋炒碎",
+      "豆酱代替XO酱炒出香味",
+      "加米饭大火翻炒",
+      "加酱油虾皮",
+      "拌入蛋碎虾仁撒葱花"
+    ]
+  },
+  {
+    "id": "staple_pork_rice_claypot",
+    "nameZh": "煲仔饭",
+    "nameEn": "Claypot Rice",
+    "regionalCuisine": "cantonese",
+    "cookingMethod": "staple",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "rice",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "pork_belly",
+        "amount": 150,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sausage",
+        "amount": 60,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "bok_choy",
+        "amount": 80,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 20,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "dark_soy",
+        "amount": 5,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 10,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "米加水正常煮饭",
+      "五花肉切片香肠切片",
+      "饭快熟时铺上肉和香肠",
+      "盖盖继续焖至锅巴",
+      "加烫好的青菜浇酱油汁"
+    ]
+  },
+  {
+    "id": "staple_sausage_rice",
+    "nameZh": "香肠焖饭",
+    "nameEn": "Sausage Rice",
+    "regionalCuisine": "cantonese",
+    "cookingMethod": "staple",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "rice",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sausage",
+        "amount": 120,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "broccoli",
+        "amount": 80,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 5,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 5,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "香肠切片",
+      "米加水正常煮",
+      "饭快熟时铺香肠",
+      "盖盖焖至熟",
+      "配烫好的西兰花浇酱油"
+    ]
+  },
+  {
+    "id": "staple_congee_seafood",
+    "nameZh": "海鲜粥",
+    "nameEn": "Seafood Congee",
+    "regionalCuisine": "cantonese",
+    "cookingMethod": "boil",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "rice",
+        "amount": 80,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "shrimp",
+        "amount": 80,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "squid",
+        "amount": 60,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sesame_oil",
+        "amount": 5,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 3,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "white_pepper",
+        "amount": 2,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "米加水大火煮开转小火熬25分钟",
+      "虾仁鱿鱼切小块",
+      "粥浓时加海鲜和姜丝",
+      "煮3分钟至海鲜熟",
+      "加盐胡椒撒葱花淋芝麻油"
+    ]
+  },
+  {
+    "id": "staple_seafood_noodle",
+    "nameZh": "海鲜汤面",
+    "nameEn": "Seafood Noodle Soup",
+    "regionalCuisine": "cantonese",
+    "cookingMethod": "staple",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "noodles_dried",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "shrimp",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "squid",
+        "amount": 80,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "bok_choy",
+        "amount": 60,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 3,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sesame_oil",
+        "amount": 5,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "锅中水加姜煮开",
+      "放虾仁鱿鱼煮至熟",
+      "下面条煮熟",
+      "加青菜",
+      "加盐淋芝麻油撒葱花"
+    ]
+  },
+  {
+    "id": "cn_congee_taro",
+    "nameZh": "芋头粥",
+    "nameEn": "Taro Congee",
+    "regionalCuisine": "cantonese",
+    "cookingMethod": "boil",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "rice",
+        "amount": 80,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sweet_potato",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 1,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "milk",
+        "amount": 50,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 3,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "红薯切小丁代替芋头",
+      "米加水煮开",
+      "加红薯小火熬25分钟",
+      "煮至软烂",
+      "加糖牛奶调味"
+    ]
+  },
+  {
+    "id": "staple_shrimp_fried_vermicelli",
+    "nameZh": "虾仁炒米粉",
+    "nameEn": "Shrimp Fried Rice Noodles",
+    "regionalCuisine": "cantonese",
+    "cookingMethod": "staple",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "vermicelli",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "shrimp",
+        "amount": 150,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "bean_sprouts",
+        "amount": 80,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "egg",
+        "amount": 1,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 2,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "米粉泡软虾仁炒熟",
+      "蛋炒碎",
+      "炒豆芽加米粉",
+      "加酱油翻炒",
+      "拌入虾仁蛋碎撒葱花"
+    ]
+  },
+  {
+    "id": "staple_oyster_sauce_noodle",
+    "nameZh": "蚝油捞面",
+    "nameEn": "Oyster Sauce Noodles",
+    "regionalCuisine": "cantonese",
+    "cookingMethod": "staple",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "noodles_dried",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "oyster_sauce",
+        "amount": 20,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "sesame_oil",
+        "amount": 5,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 10,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "面条煮熟沥干",
+      "碗中放蚝油酱油芝麻油",
+      "加面条拌匀",
+      "葱花用热油泼出香味",
+      "淋在面上"
+    ]
+  },
+  {
+    "id": "staple_fish_rice_bowl",
+    "nameZh": "鱼片盖饭",
+    "nameEn": "Fish Rice Bowl",
+    "regionalCuisine": "cantonese",
+    "cookingMethod": "staple",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "rice",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "fish_fillet",
+        "amount": 250,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "bok_choy",
+        "amount": 60,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "鱼片加料酒淀粉腌5分钟",
+      "油滑鱼片至变白盛出",
+      "炒姜葱加酱油水",
+      "放回鱼片勾薄芡",
+      "浇在米饭上配烫青菜"
+    ]
+  },
+  {
+    "id": "staple_wonton_noodle",
+    "nameZh": "云吞面",
+    "nameEn": "Wonton Noodle Soup",
+    "regionalCuisine": "cantonese",
+    "cookingMethod": "staple",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "noodles_dried",
+        "amount": 150,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "wonton_wrapper",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "shrimp",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "pork_mince",
+        "amount": 80,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "light_soy",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "sesame_oil",
+        "amount": 5,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 3,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "虾肉混合馅包馄饨",
+      "面条煮熟盛碗",
+      "馄饨煮至浮起",
+      "碗中放酱油芝麻油",
+      "浇汤放馄饨撒葱花"
+    ]
+  },
+  {
+    "id": "cn_corn_pork_rib_soup",
+    "nameZh": "甜玉米排骨汤",
+    "nameEn": "Sweet Corn Pork Rib Soup",
+    "regionalCuisine": "cantonese",
+    "cookingMethod": "soup",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "pork_ribs",
+        "amount": 400,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "corn",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "carrot",
+        "amount": 80,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 15,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "排骨焯水",
+      "玉米切段胡萝卜切块",
+      "排骨加水姜煮开",
+      "加玉米胡萝卜小火炖40分钟",
+      "加盐调味"
+    ]
+  },
+  {
+    "id": "staple_shrimp_rice_bowl",
+    "nameZh": "虾仁盖饭",
+    "nameEn": "Shrimp Rice Bowl",
+    "regionalCuisine": "cantonese",
+    "cookingMethod": "staple",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "rice",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "shrimp",
+        "amount": 250,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "broccoli",
+        "amount": 80,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "oyster_sauce",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 5,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "虾仁加料酒淀粉腌5分钟",
+      "油滑虾仁至变红",
+      "加蒜末蚝油酱油翻炒",
+      "西兰花焯水",
+      "米饭盛碗铺虾仁西兰花"
+    ]
+  },
+  {
+    "id": "staple_pork_lettuce_wrap",
+    "nameZh": "生菜肉末包",
+    "nameEn": "Pork Lettuce Wraps",
+    "regionalCuisine": "cantonese",
+    "cookingMethod": "staple",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "lettuce",
+        "amount": 150,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "pork_mince",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "onion",
+        "amount": 50,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "carrot",
+        "amount": 40,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "oyster_sauce",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 10,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "肉末加蒜洋葱碎炒散",
+      "加胡萝卜丁翻炒",
+      "加酱油蚝油调味",
+      "生菜叶洗净",
+      "包裹肉末食用"
+    ]
+  },
+  {
+    "id": "cn_tofu_mushroom_soup_2",
+    "nameZh": "三菇豆腐汤",
+    "nameEn": "Three Mushroom Tofu Soup",
+    "regionalCuisine": "cantonese",
+    "cookingMethod": "soup",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "mushroom",
+        "amount": 80,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "dried_mushroom",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "wood_ear",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "tofu",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 3,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 3,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sesame_oil",
+        "amount": 3,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 5,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "干香菇木耳泡发切片",
+      "锅中香菇水加水煮开",
+      "放所有蘑菇煮5分钟",
+      "加豆腐块煮3分钟",
+      "加盐淋芝麻油"
+    ]
+  },
+  {
+    "id": "cn_lettuce_pork_soup",
+    "nameZh": "生菜肉片汤",
+    "nameEn": "Lettuce Pork Soup",
+    "regionalCuisine": "cantonese",
+    "cookingMethod": "soup",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "lettuce",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "pork_loin",
+        "amount": 80,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 3,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 3,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 5,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "sesame_oil",
+        "amount": 3,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "生菜撕大片肉切薄片",
+      "水加姜煮开",
+      "放肉片加料酒",
+      "加生菜煮至刚断生",
+      "加盐淋芝麻油"
+    ]
+  },
+  {
+    "id": "staple_congee_pork_veggie",
+    "nameZh": "猪肉蔬菜粥",
+    "nameEn": "Pork Vegetable Congee",
+    "regionalCuisine": "cantonese",
+    "cookingMethod": "boil",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "rice",
+        "amount": 80,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "pork_mince",
+        "amount": 80,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "carrot",
+        "amount": 50,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spinach",
+        "amount": 50,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 3,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sesame_oil",
+        "amount": 3,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 5,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "米加水煮开加姜",
+      "转小火熬20分钟",
+      "加胡萝卜丁肉末搅散",
+      "煮5分钟加菠菜",
+      "加盐淋芝麻油撒葱花"
+    ]
+  }
+]

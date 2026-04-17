@@ -1,0 +1,8493 @@
+[
+  {
+    "id": "kung_pao_chicken",
+    "nameZh": "宫保鸡丁",
+    "nameEn": "Kung Pao Chicken",
+    "regionalCuisine": "sichuan",
+    "cookingMethod": "stir_fry",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "chicken_breast",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "capsicum",
+        "amount": 80,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cucumber",
+        "amount": 80,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 30,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "chili_flakes",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sichuan_pepper",
+        "amount": 3,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "light_soy",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "dark_soy",
+        "amount": 5,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "vinegar",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 12,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 30,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "鸡胸肉切1.5cm见方丁，加生抽5ml、料酒5ml、淀粉5g、少许盐抓匀腌15分钟",
+      "调宫保汁：生抽10ml、老抽5ml、醋15ml、糖12g、料酒5ml、淀粉5g与30ml清水搅匀备用",
+      "青椒、黄瓜切丁，葱白切1cm马耳段，姜蒜切末，干辣椒剪段去籽",
+      "热锅倒油，下鸡丁滑炒至外表变白即盛出",
+      "锅留底油，小火下花椒和干辣椒段慢慢煸炒至辣椒呈棕红色出香",
+      "转大火加姜蒜末爆香，倒入鸡丁与葱白段快速翻炒",
+      "加入青椒和黄瓜丁颠炒两下，沿锅边淋入宫保汁",
+      "大火翻炒至汁水浓稠裹住鸡丁，亮油即可出锅"
+    ]
+  },
+  {
+    "id": "mapo_tofu",
+    "nameZh": "麻婆豆腐",
+    "nameEn": "Mapo Tofu",
+    "regionalCuisine": "sichuan",
+    "cookingMethod": "braise",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "tofu",
+        "amount": 400,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "beef_mince",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "doubanjiang",
+        "amount": 25,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "bean_paste",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sichuan_pepper",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "chili_flakes",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 8,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 20,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "light_soy",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 12,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 30,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 3,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "嫩豆腐切2cm方块，放入加少许盐的温水中浸泡10分钟去豆腥并使豆腐紧实",
+      "花椒小火干锅炒香后碾成花椒粉备用，姜蒜切末，葱切葱花",
+      "热锅倒油，下牛肉末中火炒至变色酥香，烹入料酒炒出油",
+      "推牛肉至一边，加豆瓣酱和豆豉小火炒出红油，加姜蒜末和辣椒面炒香",
+      "倒入250ml热水煮开，加生抽调味，轻轻滑入豆腐块",
+      "中火烧3分钟让豆腐入味，期间用勺背轻推豆腐避免散碎",
+      "分两次淋入水淀粉勾芡，使汤汁浓稠裹住豆腐",
+      "出锅装盘，撒上花椒粉和葱花即成麻辣鲜烫的麻婆豆腐"
+    ]
+  },
+  {
+    "id": "stir_fry_eggplant",
+    "nameZh": "鱼香茄子",
+    "nameEn": "Yu Xiang Eggplant",
+    "regionalCuisine": "sichuan",
+    "cookingMethod": "stir_fry",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "eggplant",
+        "amount": 400,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "pork_mince",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "doubanjiang",
+        "amount": 20,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 8,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "light_soy",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "vinegar",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 40,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 2,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "茄子切手指粗的长条，撒1g盐拌匀腌10分钟，挤干水分（茄子吸油少口感更好）",
+      "调鱼香汁：生抽15ml、醋15ml、糖15g、料酒10ml、淀粉8g与50ml水搅匀备用",
+      "姜蒜切末，葱切葱花，葱白与葱绿分开",
+      "锅烧热下30ml油，茄条入锅煎至表面金黄塌软盛出",
+      "锅留底油下肉末炒散变色，加豆瓣酱小火炒出红油",
+      "下姜末蒜末和葱白末爆香",
+      "回入茄条快速翻匀，沿锅边烹入鱼香汁",
+      "大火颠炒至汁水浓稠裹匀茄子，撒葱花出锅"
+    ]
+  },
+  {
+    "id": "sichuan_shuizhu_seabass",
+    "nameZh": "水煮鲈鱼",
+    "nameEn": "Sichuan Poached Sea Bass",
+    "regionalCuisine": "sichuan",
+    "cookingMethod": "boil",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "snapper",
+        "amount": 700,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "bean_sprouts",
+        "amount": 250,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "doubanjiang",
+        "amount": 30,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "chili_pepper",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "chili_flakes",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sichuan_pepper",
+        "amount": 8,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 30,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 20,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 30,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 20,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "egg",
+        "amount": 1,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 150,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "chicken_stock",
+        "amount": 500,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 3,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cilantro",
+        "amount": 10,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "鲈鱼去鳞去鳃洗净，沿脊骨片出净鱼片约0.5cm厚，鱼骨鱼头另切大块",
+      "鱼片加料酒10ml、盐2g、蛋清和淀粉抓匀上浆腌15分钟使鱼片鲜嫩",
+      "豆芽用沸水焯30秒捞出沥干铺在大碗底部",
+      "热锅下30ml油，爆香一半姜蒜末，下豆瓣酱小火炒出红油",
+      "倒入高汤煮开，下鱼骨鱼头和10ml料酒煮5分钟出鲜味",
+      "调中小火，将鱼片一片一片滑入汤中，煮约2分钟至鱼片变白卷起",
+      "将鱼片连汤倒入豆芽碗中，表面撒满剩余蒜末、干辣椒段和花椒",
+      "另起锅烧150ml油至冒青烟，趁热浇在辣椒花椒上激出麻辣香气",
+      "撒香菜段即可上桌，鱼片滑嫩麻辣鲜香"
+    ]
+  },
+  {
+    "id": "suan-ni-bai-rou",
+    "nameZh": "蒜泥白肉",
+    "nameEn": "Garlic Pork Belly Slices",
+    "regionalCuisine": "sichuan",
+    "cookingMethod": "boil",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "pork_belly",
+        "amount": 400,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 8,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "light_soy",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "chili_flakes",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "vinegar",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "sesame_oil",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 2,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 3,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "cucumber",
+        "amount": 1,
+        "unit": "piece"
+      }
+    ],
+    "steps": [
+      "五花肉整块冷水下锅，加葱段、姜片、料酒大火煮沸后转小火煮25分钟至筷子能插透",
+      "捞出肉块立即放入冰水中浸泡15分钟，使肉质紧实",
+      "蒜瓣捣成蒜泥，加生抽、醋、糖、辣椒面、芝麻油调成蒜泥酱汁",
+      "黄瓜拍碎切段铺在盘底",
+      "五花肉切2mm薄片，每片要带皮带肥带瘦",
+      "肉片整齐码放在黄瓜上，将蒜泥酱汁均匀浇在肉片上即可"
+    ]
+  },
+  {
+    "id": "kou-shui-ji",
+    "nameZh": "口水鸡",
+    "nameEn": "Saliva Chicken",
+    "regionalCuisine": "sichuan",
+    "cookingMethod": "boil",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "chicken_thigh",
+        "amount": 500,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 4,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 3,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "sichuan_pepper",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "chili_flakes",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "light_soy",
+        "amount": 3,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "vinegar",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "sesame_oil",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 1,
+        "unit": "tbsp"
+      }
+    ],
+    "steps": [
+      "鸡腿冷水下锅加葱段姜片料酒，大火煮沸后转小火煮18分钟",
+      "煮好的鸡腿立刻捞入冰水中浸泡15分钟，使皮脆肉嫩",
+      "小锅烧热油，将花椒炸出香味后捞出花椒不要，趁热油浇在辣椒面上制成红油",
+      "红油中加入生抽、醋、糖、芝麻油拌匀成酱汁",
+      "鸡腿沥干水分斩成小块摆盘",
+      "将调好的红油酱汁浇在鸡块上，撒葱花即可"
+    ]
+  },
+  {
+    "id": "yu-xiang-qie-zi",
+    "nameZh": "鱼香茄子煲",
+    "nameEn": "Yu Xiang Eggplant Casserole",
+    "regionalCuisine": "sichuan",
+    "cookingMethod": "braise",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "eggplant",
+        "amount": 400,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "pork_mince",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "doubanjiang",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 4,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 2,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 2,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "vinegar",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "light_soy",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 1,
+        "unit": "tbsp"
+      }
+    ],
+    "steps": [
+      "茄子切滚刀块，撒盐腌10分钟杀出水分后挤干",
+      "调鱼香汁：醋、糖、生抽、淀粉、少量水混合备用",
+      "锅中多放油烧至七成热，下茄子块炸至表面金黄捞出",
+      "锅留底油，小火煸炒豆瓣酱出红油",
+      "下肉末炒散至变色，加姜蒜末炒香",
+      "倒回茄子翻炒均匀，浇入鱼香汁大火翻炒收汁",
+      "汤汁浓稠裹住茄子后撒葱花出锅"
+    ]
+  },
+  {
+    "id": "xiang-gan-chao-rou-si",
+    "nameZh": "香干炒肉丝",
+    "nameEn": "Dried Tofu with Shredded Pork",
+    "regionalCuisine": "hunan",
+    "cookingMethod": "stir_fry",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "pork_loin",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "dried_tofu",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "chili_pepper",
+        "amount": 2,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 3,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "light_soy",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 0.5,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 2,
+        "unit": "tbsp"
+      }
+    ],
+    "steps": [
+      "猪里脊逆纹切细丝，加料酒、淀粉抓匀腌5分钟",
+      "香干切成火柴棍粗细的条，辣椒斜切丝",
+      "热锅凉油下肉丝大火快速滑散至变色盛出",
+      "锅中加少量油爆香蒜末，下辣椒丝煸炒出香",
+      "倒入香干丝翻炒2分钟至边缘微焦",
+      "回锅肉丝加生抽大火翻炒均匀即可出锅"
+    ]
+  },
+  {
+    "id": "la-zi-ji",
+    "nameZh": "辣子鸡丁",
+    "nameEn": "Chongqing Spicy Diced Chicken",
+    "regionalCuisine": "sichuan",
+    "cookingMethod": "deep_fry",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "chicken_thigh",
+        "amount": 400,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "chili_pepper",
+        "amount": 15,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "sichuan_pepper",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 4,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 3,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "light_soy",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 0.5,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 200,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "鸡腿去骨切2cm小丁，加料酒生抽盐腌15分钟后拌入干淀粉",
+      "干辣椒剪成2cm段去籽备用",
+      "锅中油烧至六成热，分批下鸡丁炸至表面金黄酥脆捞出",
+      "复炸一次使鸡丁更加酥脆，沥油备用",
+      "锅中留少量底油，小火下花椒和干辣椒段慢慢煸炒出香味",
+      "辣椒颜色变深后倒入炸好的鸡丁大火翻炒",
+      "加蒜末姜末快速翻炒均匀，撒少许盐和白芝麻出锅"
+    ]
+  },
+  {
+    "id": "xiao-chao-niu-rou",
+    "nameZh": "小炒黄牛肉",
+    "nameEn": "Hunan Stir-Fried Beef",
+    "regionalCuisine": "hunan",
+    "cookingMethod": "stir_fry",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "beef_sirloin",
+        "amount": 250,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "chili_pepper",
+        "amount": 5,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "celery",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 3,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 2,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "cumin",
+        "amount": 0.5,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "light_soy",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 3,
+        "unit": "tbsp"
+      }
+    ],
+    "steps": [
+      "牛肉逆纹切薄片，加生抽料酒淀粉腌制15分钟",
+      "小米辣斜切圈，芹菜切斜段备用",
+      "热锅宽油至冒烟，下牛肉片大火爆炒10秒迅速盛出",
+      "锅留底油爆香姜蒜末，下辣椒圈煸出香味",
+      "加入芹菜段大火翻炒至断生",
+      "回锅牛肉撒少许孜然粉翻炒均匀即可出锅"
+    ]
+  },
+  {
+    "id": "suan-cai-yu-pian",
+    "nameZh": "酸菜鱼片",
+    "nameEn": "Fish Fillets in Sour Cabbage Broth",
+    "regionalCuisine": "sichuan",
+    "cookingMethod": "boil",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "fish_fillet",
+        "amount": 400,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "chinese_cabbage",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "chili_pepper",
+        "amount": 5,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "sichuan_pepper",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 5,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 4,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "egg",
+        "amount": 1,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "white_pepper",
+        "amount": 0.5,
+        "unit": "tbsp"
+      }
+    ],
+    "steps": [
+      "鱼片斜刀切薄片，加蛋清淀粉料酒白胡椒轻轻抓匀腌15分钟",
+      "酸菜（用白菜代替）切丝挤干水分备用",
+      "锅中油热爆香姜蒜末和花椒，下酸菜丝炒出酸香",
+      "加足量清水大火烧开煮5分钟出酸味",
+      "捞出酸菜铺在大碗底部，汤继续保持沸腾",
+      "鱼片逐片下入沸汤中，变白后约30秒关火",
+      "将鱼片和汤倒入酸菜碗中",
+      "另起锅烧热油浇在鱼片上激出香味，撒辣椒和蒜末"
+    ]
+  },
+  {
+    "id": "hui-guo-rou",
+    "nameZh": "回锅肉",
+    "nameEn": "Twice-Cooked Pork",
+    "regionalCuisine": "sichuan",
+    "cookingMethod": "stir_fry",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "pork_belly",
+        "amount": 400,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "leek",
+        "amount": 150,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "capsicum",
+        "amount": 1,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "doubanjiang",
+        "amount": 1.5,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "bean_paste",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 3,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 3,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "dark_soy",
+        "amount": 0.5,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 1,
+        "unit": "tbsp"
+      }
+    ],
+    "steps": [
+      "五花肉整块冷水下锅加姜片煮至八成熟约15分钟，捞出放凉",
+      "肉切成大而薄的片约3mm厚，蒜苗斜切段，彩椒切片",
+      "锅中不用放油，直接下肉片中火煸炒至出油卷曲呈灯盏窝状",
+      "将肉推到锅边，用煸出的猪油炒豆瓣酱出红油",
+      "加甜面酱和老抽翻炒上色",
+      "下蒜苗段和彩椒片大火翻炒至蒜苗断生",
+      "蒜苗变软即可出锅，不能炒过老"
+    ]
+  },
+  {
+    "id": "spicy_fish_fillet_stew",
+    "nameZh": "麻辣水煮鱼片",
+    "nameEn": "Spicy Poached Fish Fillets",
+    "regionalCuisine": "sichuan",
+    "cookingMethod": "boil",
+    "difficulty": "hard",
+    "ingredients": [
+      {
+        "ingredientId": "fish_fillet",
+        "amount": 400,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "bean_sprouts",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "doubanjiang",
+        "amount": 30,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sichuan_pepper",
+        "amount": 6,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "chili_flakes",
+        "amount": 12,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "chili_pepper",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 25,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 12,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "egg",
+        "amount": 1,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 80,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 3,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "鱼片洗净沥干，斜刀片成0.5cm厚薄片，加蛋清、淀粉、料酒和少许盐抓匀腌15分钟",
+      "豆芽焯水1分钟铺在大碗底部",
+      "锅烧热下20ml油，爆香一半姜蒜末，下豆瓣酱小火炒出红油",
+      "加500ml热水煮开，调味后将鱼片一片片滑入锅中，中火煮约2分钟至鱼片变白",
+      "连汤将鱼片倒入豆芽碗中，表面撒上剩余蒜末、干辣椒段和花椒粒",
+      "另起锅烧热60ml油至冒青烟，趁热泼在辣椒花椒上激出麻辣香气",
+      "撒葱花即可，趁热享用"
+    ]
+  },
+  {
+    "id": "stir_fry_lotus_root_slices",
+    "nameZh": "酸辣藕片",
+    "nameEn": "Hot and Sour Lotus Root Slices",
+    "regionalCuisine": "hunan",
+    "cookingMethod": "stir_fry",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "lotus_root",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "chili_pepper",
+        "amount": 20,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "vinegar",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "light_soy",
+        "amount": 5,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 2,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 10,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "莲藕去皮切2mm薄片，泡入加了白醋的清水中防变色",
+      "藕片焯水1分钟保持脆度，捞出过凉水沥干",
+      "小米椒切圈，蒜切末",
+      "热锅下油，爆香蒜末和小米椒圈",
+      "倒入藕片大火翻炒1分钟，沿锅边烹入醋",
+      "加生抽和盐调味，撒葱花翻匀出锅，保持藕片脆嫩"
+    ]
+  },
+  {
+    "id": "cauliflower_pork_stirfry",
+    "nameZh": "花菜炒肉片",
+    "nameEn": "Stir-fried Cauliflower with Pork",
+    "regionalCuisine": "hunan",
+    "cookingMethod": "stir_fry",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "cauliflower",
+        "amount": 350,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "pork_belly",
+        "amount": 150,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "chili_pepper",
+        "amount": 20,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "light_soy",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "oyster_sauce",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 2,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 15,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "花菜掰小朵洗净，焯水2分钟至半熟捞出沥干",
+      "五花肉切薄片",
+      "热锅不放油，直接下五花肉煸出油至微卷",
+      "放入蒜末和小米椒爆香",
+      "倒入花菜大火翻炒2分钟，烹入料酒",
+      "加生抽和蚝油炒匀，花菜边缘微焦即出锅"
+    ]
+  },
+  {
+    "id": "dry_pot_cauliflower",
+    "nameZh": "干锅花菜五花肉",
+    "nameEn": "Dry Pot Cauliflower with Pork Belly",
+    "regionalCuisine": "hunan",
+    "cookingMethod": "dry_pot",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "cauliflower",
+        "amount": 400,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "pork_belly",
+        "amount": 150,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "chili_pepper",
+        "amount": 30,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "doubanjiang",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "light_soy",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cumin",
+        "amount": 3,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 20,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "花菜掰小朵，入油锅炸至表面金黄微焦捞出控油",
+      "五花肉切薄片，锅中煸至出油微卷",
+      "放入豆瓣酱炒出红油，加姜蒜和干辣椒段爆香",
+      "倒入花菜翻炒，淋料酒和生抽",
+      "撒入孜然粉翻炒均匀至花菜入味",
+      "转小火边烧边翻3分钟，使花菜带焦香锅气出锅"
+    ]
+  },
+  {
+    "id": "dried_tofu_stirfry",
+    "nameZh": "香干回锅肉",
+    "nameEn": "Twice-cooked Pork with Dried Tofu",
+    "regionalCuisine": "sichuan",
+    "cookingMethod": "stir_fry",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "pork_belly",
+        "amount": 250,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "dried_tofu",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "leek",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "doubanjiang",
+        "amount": 20,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "light_soy",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 3,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 10,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "五花肉整块冷水下锅煮15分钟至刚熟，捞出晾凉切大薄片",
+      "香干切菱形片，蒜苗斜切段",
+      "锅中少许油，放入五花肉片煸至出油卷曲吐油",
+      "将肉推至一边，放入豆瓣酱炒出红油",
+      "加入香干片翻炒2分钟让香干吸收酱香",
+      "放入蒜苗段，加生抽和少许糖翻炒30秒出锅"
+    ]
+  },
+  {
+    "id": "sichuan_mapo_eggplant",
+    "nameZh": "麻婆茄子",
+    "nameEn": "Mapo Eggplant",
+    "regionalCuisine": "sichuan",
+    "cookingMethod": "braise",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "eggplant",
+        "amount": 400,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "pork_mince",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "doubanjiang",
+        "amount": 20,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sichuan_pepper",
+        "amount": 3,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "light_soy",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 40,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "茄子切滚刀块，加少许盐腌5分钟挤去水分",
+      "油锅烧热，茄子过油炸至软塌捞出控油",
+      "锅留底油，放入肉末炒散变色",
+      "加入豆瓣酱、姜末和蒜末炒出红油",
+      "放入茄子，加生抽和少许水焖煮3分钟",
+      "水淀粉勾芡，撒花椒粉和葱花翻匀出锅"
+    ]
+  },
+  {
+    "id": "sichuan_boiled_shrimp",
+    "nameZh": "川味水煮虾",
+    "nameEn": "Sichuan Boiled Shrimp",
+    "regionalCuisine": "sichuan",
+    "cookingMethod": "boil",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "shrimp",
+        "amount": 400,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "bean_sprouts",
+        "amount": 150,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "doubanjiang",
+        "amount": 25,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sichuan_pepper",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "chili_flakes",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 20,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 50,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "大虾剪去虾须挑去虾线，用料酒腌10分钟",
+      "豆芽焯水铺在碗底",
+      "锅中热油爆香豆瓣酱、姜末和花椒粒，炒出红油",
+      "加适量水烧开，放入虾煮3分钟至变红",
+      "将虾和汤汁倒在豆芽上，撒蒜末和辣椒面",
+      "另起锅烧热油至冒烟，浇在蒜末辣椒面上激出麻辣香气"
+    ]
+  },
+  {
+    "id": "sichuan_dry_fried_green_beans",
+    "nameZh": "川味干煸豆角",
+    "nameEn": "Sichuan Dry-Fried Green Beans",
+    "regionalCuisine": "sichuan",
+    "cookingMethod": "stir_fry",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "green_bean",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "pork_mince",
+        "amount": 80,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "chili_pepper",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sichuan_pepper",
+        "amount": 3,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "light_soy",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 40,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "豆角摘去两头老筋，掰成5cm段",
+      "锅中多油烧热，放入豆角炸至表皮起皱微焦捞出",
+      "锅留底油，放入肉末炒散至出油",
+      "加入花椒粒、干辣椒段、蒜末和姜末爆香",
+      "倒回豆角大火翻炒，淋入生抽",
+      "持续翻炒至豆角干香无水分，入味出锅"
+    ]
+  },
+  {
+    "id": "sichuan_spicy_tofu_skin",
+    "nameZh": "麻辣豆皮",
+    "nameEn": "Spicy Tofu Skin",
+    "regionalCuisine": "sichuan",
+    "cookingMethod": "stir_fry",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "dried_tofu_skin",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "celery",
+        "amount": 80,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "doubanjiang",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sichuan_pepper",
+        "amount": 3,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "light_soy",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "vinegar",
+        "amount": 5,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 15,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "干豆皮温水泡软切宽条，焯水1分钟沥干",
+      "芹菜切斜段备用",
+      "热锅下油，放入花椒粒小火炸香捞出",
+      "放入豆瓣酱炒出红油，加蒜末爆香",
+      "倒入豆皮条和芹菜大火翻炒2分钟",
+      "加生抽和少许醋调味，翻匀出锅"
+    ]
+  },
+  {
+    "id": "sichuan_fish_fragrant_shrimp",
+    "nameZh": "鱼香虾仁",
+    "nameEn": "Fish-fragrant Shrimp",
+    "regionalCuisine": "sichuan",
+    "cookingMethod": "stir_fry",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "shrimp",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "wood_ear",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "carrot",
+        "amount": 50,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "doubanjiang",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "vinegar",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "light_soy",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 20,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "虾仁去虾线，用料酒和淀粉上浆腌制10分钟",
+      "木耳泡发撕小片，胡萝卜切小丁",
+      "调鱼香汁：糖、醋、生抽、淀粉加水拌匀",
+      "热锅宽油滑入虾仁炒至变色盛出",
+      "锅中爆香豆瓣酱和蒜末，放入木耳和胡萝卜丁翻炒",
+      "倒回虾仁，淋入鱼香汁大火翻炒收汁裹匀出锅"
+    ]
+  },
+  {
+    "id": "sichuan_spicy_cold_noodles",
+    "nameZh": "四川凉面",
+    "nameEn": "Sichuan Cold Noodles",
+    "regionalCuisine": "sichuan",
+    "cookingMethod": "boil",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "noodles_dried",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cucumber",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "light_soy",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "vinegar",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "chili_flakes",
+        "amount": 8,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sesame_oil",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 10,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "面条煮熟捞出过冷水，沥干后淋少许香油拌匀防粘连",
+      "黄瓜切细丝铺在面条上",
+      "蒜切末，用热油淋在辣椒面上制成辣椒油",
+      "调酱汁：生抽、醋、糖、蒜末和辣椒油拌匀",
+      "将酱汁浇在面条上",
+      "撒葱花拌匀即可食用，面条爽滑酱香开胃"
+    ]
+  },
+  {
+    "id": "sichuan_pepper_chicken",
+    "nameZh": "花椒鸡",
+    "nameEn": "Sichuan Pepper Chicken",
+    "regionalCuisine": "sichuan",
+    "cookingMethod": "stir_fry",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "chicken_thigh",
+        "amount": 400,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sichuan_pepper",
+        "amount": 8,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "chili_pepper",
+        "amount": 30,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "light_soy",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 3,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 30,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "鸡腿去骨切块，加料酒和少许盐腌10分钟",
+      "热锅多油，放入鸡块煎至两面金黄盛出",
+      "锅中放花椒粒小火炒至出麻香但不焦",
+      "加入干辣椒段、姜片和蒜片爆香",
+      "倒回鸡块，加生抽和糖大火翻炒",
+      "炒至鸡块表皮微焦入味，花椒麻香渗入鸡肉即出锅"
+    ]
+  },
+  {
+    "id": "sichuan_spicy_squid",
+    "nameZh": "川味爆炒鱿鱼",
+    "nameEn": "Sichuan Spicy Stir-fried Squid",
+    "regionalCuisine": "sichuan",
+    "cookingMethod": "stir_fry",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "squid",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "capsicum",
+        "amount": 80,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "onion",
+        "amount": 80,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "doubanjiang",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "light_soy",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 20,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "鱿鱼处理干净切花刀再切块，焯水10秒捞出",
+      "彩椒切块，洋葱切条",
+      "热锅下油爆香豆瓣酱、蒜末和姜末",
+      "放入洋葱条炒软出香",
+      "大火倒入鱿鱼和彩椒翻炒，烹料酒和生抽",
+      "快速翻炒1分钟至鱿鱼卷曲入味即出锅，避免久炒变老"
+    ]
+  },
+  {
+    "id": "sichuan_braised_tofu",
+    "nameZh": "川味烧豆腐",
+    "nameEn": "Sichuan Braised Tofu",
+    "regionalCuisine": "sichuan",
+    "cookingMethod": "braise",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "tofu",
+        "amount": 400,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "pork_mince",
+        "amount": 80,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "doubanjiang",
+        "amount": 20,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "light_soy",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "sichuan_pepper",
+        "amount": 2,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "嫩豆腐切2cm方块，放入淡盐水浸泡5分钟",
+      "热锅下油炒散肉末至变色",
+      "加入豆瓣酱炒出红油，放蒜末爆香",
+      "加入半碗水烧开，轻轻放入豆腐块",
+      "中火焖煮5分钟让豆腐入味，加生抽调味",
+      "水淀粉勾芡，撒花椒粉和葱花轻轻晃锅出锅"
+    ]
+  },
+  {
+    "id": "hunan_steamed_fish_head",
+    "nameZh": "湘味剁椒蒸鱼",
+    "nameEn": "Hunan Steamed Fish with Chopped Peppers",
+    "regionalCuisine": "hunan",
+    "cookingMethod": "steam",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "fish_fillet",
+        "amount": 350,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "chili_pepper",
+        "amount": 50,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "light_soy",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 2,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "鱼片用料酒和盐腌制10分钟",
+      "小米椒和红辣椒剁碎，加蒜末和少许盐拌匀成剁椒",
+      "鱼片铺在盘中，底部垫姜片和葱段",
+      "将剁椒均匀铺在鱼片表面",
+      "蒸锅大火上汽后放入，蒸8-10分钟至鱼肉刚熟",
+      "出锅倒掉蒸汁，烧热油浇在剁椒上激出辣香"
+    ]
+  },
+  {
+    "id": "hunan_smoked_pork_stirfry",
+    "nameZh": "湘西腊肉炒蒜薹",
+    "nameEn": "Hunan Smoked Pork with Garlic Shoots",
+    "regionalCuisine": "hunan",
+    "cookingMethod": "stir_fry",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "bacon",
+        "amount": 150,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "leek",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "chili_pepper",
+        "amount": 20,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "light_soy",
+        "amount": 5,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 10,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "腊肉先蒸15分钟至软，切薄片",
+      "蒜苗斜切段，红辣椒切斜圈",
+      "锅中不加油直接放入腊肉片，小火煸出油至两面微焦",
+      "放入蒜末和辣椒炒香",
+      "加入蒜苗段大火翻炒至断生微软",
+      "淋少许料酒和生抽翻匀，蒜苗保持翠绿即出锅"
+    ]
+  },
+  {
+    "id": "hunan_steamed_pork_with_chili",
+    "nameZh": "湘味辣椒蒸肉",
+    "nameEn": "Hunan Steamed Pork with Chilies",
+    "regionalCuisine": "hunan",
+    "cookingMethod": "steam",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "pork_belly",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "chili_pepper",
+        "amount": 80,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "rice",
+        "amount": 50,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "light_soy",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "five_spice",
+        "amount": 2,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 2,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "大米干锅小火炒至微黄出香，放凉后碾碎成粗米粉",
+      "五花肉切薄大片，加生抽、料酒、姜末和五香粉腌15分钟",
+      "辣椒切段铺在蒸碗底部",
+      "腌好的肉片裹上炒米粉，逐片码在辣椒上",
+      "蒸锅大火上汽后放入，蒸30分钟至肉片酥软",
+      "出锅将碗倒扣盘中，辣椒在上层肉片在下"
+    ]
+  },
+  {
+    "id": "hunan_spicy_chicken_gizzard",
+    "nameZh": "湖南辣炒鸡胗",
+    "nameEn": "Hunan Spicy Stir-fried Chicken Gizzard",
+    "regionalCuisine": "hunan",
+    "cookingMethod": "stir_fry",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "chicken_thigh",
+        "amount": 250,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "chili_pepper",
+        "amount": 40,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "capsicum",
+        "amount": 80,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "light_soy",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "oyster_sauce",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 20,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "鸡腿肉切小丁（模拟鸡胗口感），用料酒和少许盐腌10分钟",
+      "青红椒切块，小米椒切圈",
+      "热锅大火下油，放入鸡肉丁爆炒至表面微焦",
+      "加入姜片、蒜末和小米椒爆香",
+      "放入青红椒块翻炒1分钟",
+      "加生抽和蚝油调味，大火翻炒均匀出锅"
+    ]
+  },
+  {
+    "id": "homestyle_dry_pot_shrimp",
+    "nameZh": "干锅大虾",
+    "nameEn": "Dry Pot Shrimp",
+    "regionalCuisine": "hunan",
+    "cookingMethod": "dry_pot",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "shrimp",
+        "amount": 400,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "potato",
+        "amount": 150,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "onion",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "capsicum",
+        "amount": 80,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "chili_pepper",
+        "amount": 20,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "doubanjiang",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "light_soy",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 30,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "大虾剪须去虾线，土豆切薄片过油炸至微黄",
+      "洋葱切条，彩椒切块",
+      "热锅下油，大虾煎至两面变红盛出",
+      "锅中爆香豆瓣酱、蒜末和干辣椒",
+      "加入洋葱炒软，放入土豆片和彩椒翻炒",
+      "倒回大虾，加料酒和生抽，小火煸炒3分钟至干香入味"
+    ]
+  },
+  {
+    "id": "homestyle_dry_pot_tofu",
+    "nameZh": "干锅千叶豆腐",
+    "nameEn": "Dry Pot Tofu",
+    "regionalCuisine": "hunan",
+    "cookingMethod": "dry_pot",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "tofu",
+        "amount": 400,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "pork_belly",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "capsicum",
+        "amount": 80,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "onion",
+        "amount": 80,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "doubanjiang",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "light_soy",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "oyster_sauce",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 20,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "豆腐切厚片煎至两面金黄，彩椒切块洋葱切条",
+      "五花肉切片煸出油",
+      "加入豆瓣酱和蒜末炒出红油",
+      "放入洋葱条炒软出香",
+      "加入煎好的豆腐片和彩椒块翻炒",
+      "淋生抽和蚝油，小火煸炒3分钟至干香入味"
+    ]
+  },
+  {
+    "id": "homestyle_dry_pot_squid",
+    "nameZh": "干锅鱿鱼须",
+    "nameEn": "Dry Pot Squid Tentacles",
+    "regionalCuisine": "hunan",
+    "cookingMethod": "dry_pot",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "squid",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "onion",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "capsicum",
+        "amount": 80,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "celery",
+        "amount": 60,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "doubanjiang",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cumin",
+        "amount": 3,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 20,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "鱿鱼切段焯水10秒捞出，洋葱切条彩椒切块芹菜切段",
+      "热锅下油，鱿鱼大火快速煸炒至微焦盛出",
+      "锅中爆香豆瓣酱和蒜末",
+      "放入洋葱条炒软出香",
+      "加入芹菜段和彩椒翻炒1分钟",
+      "倒回鱿鱼，撒孜然粉，烹料酒大火翻炒1分钟出干锅香气"
+    ]
+  },
+  {
+    "id": "homestyle_dry_pot_lotus_root",
+    "nameZh": "干锅藕片",
+    "nameEn": "Dry Pot Lotus Root Slices",
+    "regionalCuisine": "hunan",
+    "cookingMethod": "dry_pot",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "lotus_root",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "pork_belly",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "chili_pepper",
+        "amount": 20,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "doubanjiang",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "light_soy",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cumin",
+        "amount": 2,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 20,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "莲藕去皮切3mm薄片，泡入醋水中防变色",
+      "五花肉切薄片，藕片沥干备用",
+      "锅中放入五花肉煸至出油微焦",
+      "加入豆瓣酱、蒜末和干辣椒段爆香",
+      "倒入藕片大火翻炒2分钟至微焦",
+      "加生抽和孜然粉，持续煸炒至藕片干香酥脆"
+    ]
+  },
+  {
+    "id": "homestyle_beef_mince_tofu",
+    "nameZh": "牛肉末烧豆腐",
+    "nameEn": "Braised Tofu with Beef Mince",
+    "regionalCuisine": "sichuan",
+    "cookingMethod": "braise",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "tofu",
+        "amount": 400,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "beef_mince",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "doubanjiang",
+        "amount": 20,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sichuan_pepper",
+        "amount": 3,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 15,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "嫩豆腐切2cm方块放淡盐水浸泡5分钟",
+      "热锅下油炒散牛肉末至变色",
+      "加入豆瓣酱炒出红油，放姜末和蒜末",
+      "加半碗水烧开，轻放入豆腐块",
+      "中火焖煮5分钟让豆腐吸收牛肉香",
+      "水淀粉勾芡，撒花椒粉和葱花轻晃锅出锅"
+    ]
+  },
+  {
+    "id": "homestyle_dry_pot_chicken_wing",
+    "nameZh": "干锅鸡翅",
+    "nameEn": "Dry Pot Chicken Wings",
+    "regionalCuisine": "sichuan",
+    "cookingMethod": "dry_pot",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "chicken_wing",
+        "amount": 500,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "potato",
+        "amount": 150,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "capsicum",
+        "amount": 80,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "onion",
+        "amount": 80,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "doubanjiang",
+        "amount": 20,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "light_soy",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 30,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "鸡翅剁成两段用料酒腌10分钟，土豆切片炸至金黄",
+      "热锅多油将鸡翅煎至两面金黄盛出",
+      "锅中爆香豆瓣酱、蒜末、姜片",
+      "放入洋葱条炒软出香",
+      "倒回鸡翅和炸土豆片，加彩椒块",
+      "淋生抽小火煸炒5分钟至干香入味"
+    ]
+  },
+  {
+    "id": "homestyle_spicy_fish_fillet_noodle",
+    "nameZh": "酸菜鱼片面",
+    "nameEn": "Sour Cabbage Fish Fillet Noodles",
+    "regionalCuisine": "sichuan",
+    "cookingMethod": "boil",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "fish_fillet",
+        "amount": 250,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "noodles_dried",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "chinese_cabbage",
+        "amount": 150,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "chili_pepper",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "vinegar",
+        "amount": 20,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 15,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "鱼片斜切薄片用料酒和淀粉上浆，白菜切丝加醋腌10分钟做酸菜",
+      "热锅下油爆香姜蒜和辣椒，放入腌白菜丝炒出酸香",
+      "加适量水烧开成汤底",
+      "另起锅煮面条至熟捞入碗中",
+      "汤底中逐片放入鱼片煮2分钟至变白",
+      "将鱼片和酸汤浇在面条上即可"
+    ]
+  },
+  {
+    "id": "homestyle_dry_pot_eggplant",
+    "nameZh": "干锅茄子",
+    "nameEn": "Dry Pot Eggplant",
+    "regionalCuisine": "hunan",
+    "cookingMethod": "dry_pot",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "eggplant",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "pork_belly",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "capsicum",
+        "amount": 60,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "doubanjiang",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "light_soy",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cumin",
+        "amount": 2,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 40,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "茄子切滚刀块过油炸至软塌控油",
+      "五花肉切片煸至出油微焦",
+      "加入豆瓣酱和蒜末炒出红油",
+      "倒入茄子和彩椒块翻炒",
+      "加生抽和孜然粉调味",
+      "小火持续煸炒3分钟至茄子吸味干香出锅"
+    ]
+  },
+  {
+    "id": "homestyle_spicy_edamame_stir_fry",
+    "nameZh": "辣炒毛豆",
+    "nameEn": "Spicy Stir-fried Edamame",
+    "regionalCuisine": "hunan",
+    "cookingMethod": "stir_fry",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "edamame",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "chili_pepper",
+        "amount": 20,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sichuan_pepper",
+        "amount": 3,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "light_soy",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 3,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 15,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "毛豆剪去两端便于入味，洗净沥干",
+      "热锅下油放入花椒粒和干辣椒段爆香",
+      "放入蒜末炒香",
+      "倒入毛豆大火翻炒2分钟",
+      "加生抽、糖和小半碗水盖锅焖煮5分钟",
+      "开盖大火收干水分至毛豆表皮微皱入味"
+    ]
+  },
+  {
+    "id": "kung-pao-shrimp",
+    "nameZh": "宫保虾仁",
+    "nameEn": "Kung Pao Shrimp",
+    "regionalCuisine": "sichuan",
+    "cookingMethod": "stir_fry",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "shrimp",
+        "amount": 250,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "capsicum",
+        "amount": 80,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "vinegar",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 8,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 20,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "虾仁去虾线，加少许盐和淀粉腌制10分钟",
+      "调碗汁：酱油、醋、糖、淀粉水混合备用",
+      "锅中热油，爆香蒜末姜末和干辣椒",
+      "放入虾仁翻炒至变色，加入青椒丁翻炒",
+      "倒入碗汁快速翻炒均匀，出锅装盘"
+    ]
+  },
+  {
+    "id": "double-cooked-pork-belly",
+    "nameZh": "蒜苗回锅肉",
+    "nameEn": "Double Cooked Pork Belly with Garlic Sprouts",
+    "regionalCuisine": "sichuan",
+    "cookingMethod": "stir_fry",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "pork_belly",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "leek",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "capsicum",
+        "amount": 80,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 8,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "doubanjiang",
+        "amount": 20,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "bean_paste",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "light_soy",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "dark_soy",
+        "amount": 5,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 10,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "五花肉整块冷水下锅加姜片和料酒，水开后中火煮15分钟至八成熟筷子能插透",
+      "捞出晾凉至不烫手，切成2-3mm厚的大薄片",
+      "蒜苗斜切马耳段，蒜白与蒜绿分开，青椒切菱形片",
+      "锅烧热不放油，下肉片中火煸炒至边缘微卷呈灯盏窝状并出油",
+      "将肉推至锅边，下豆瓣酱和甜面酱小火炒出红油",
+      "加蒜白和姜末爆香，淋少许老抽上色，调入糖增鲜",
+      "加入青椒大火翻炒30秒，再下蒜绿翻匀",
+      "蒜苗刚断生即出锅，避免炒老"
+    ]
+  },
+  {
+    "id": "sichuan-spicy-chicken-cubes",
+    "nameZh": "椒麻鸡块",
+    "nameEn": "Sichuan Pepper Chicken Cubes",
+    "regionalCuisine": "sichuan",
+    "cookingMethod": "stir_fry",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "chicken_thigh",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "capsicum",
+        "amount": 80,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sichuan_pepper",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "chili_pepper",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 8,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 8,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 25,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 2,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "鸡腿肉去骨切2cm方块，加酱油、料酒、淀粉和少许盐抓匀腌15分钟",
+      "青椒切块，干辣椒剪段去籽，姜蒜切末，葱切马耳段",
+      "锅烧热下油，鸡块下锅中火煎至两面金黄表皮酥香盛出",
+      "锅留底油，小火下花椒和干辣椒段炒至棕红色出麻香",
+      "加姜蒜末爆香，倒回鸡块大火翻炒",
+      "加青椒和葱段大火快炒1分钟",
+      "调入少许盐翻匀出锅，麻香味浓郁"
+    ]
+  },
+  {
+    "id": "sichuan-dry-fried-shrimp",
+    "nameZh": "干煸大虾",
+    "nameEn": "Sichuan Dry Fried Shrimp",
+    "regionalCuisine": "sichuan",
+    "cookingMethod": "deep_fry",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "shrimp",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "doubanjiang",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 40,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "虾去虾线，开背处理，加料酒腌5分钟",
+      "锅中多油烧热，虾下锅煎至两面金红",
+      "捞出多余油，加蒜末姜末豆瓣酱炒香",
+      "放回虾翻炒，加少许糖提鲜",
+      "收干汁水出锅装盘"
+    ]
+  },
+  {
+    "id": "sichuan-boiled-beef-slices",
+    "nameZh": "毛血旺牛肉",
+    "nameEn": "Sichuan Spicy Boiled Beef",
+    "regionalCuisine": "sichuan",
+    "cookingMethod": "stir_fry",
+    "difficulty": "hard",
+    "ingredients": [
+      {
+        "ingredientId": "beef_sirloin",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "bean_sprouts",
+        "amount": 150,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "celery",
+        "amount": 80,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "doubanjiang",
+        "amount": 25,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "chili_flakes",
+        "amount": 8,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sichuan_pepper",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "egg",
+        "amount": 1,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 60,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 3,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "牛肉逆纹切薄片，加蛋清、淀粉、料酒和少许盐抓匀腌15分钟",
+      "豆芽和芹菜段焯水1分钟铺在大碗底部",
+      "锅烧热下20ml油，爆香一半姜蒜末，下豆瓣酱小火炒出红油",
+      "加500ml热水煮开成红汤底，调入生抽和盐",
+      "调中小火，将牛肉片一片片滑入汤中，煮约90秒至变色",
+      "连汤将牛肉倒在豆芽芹菜上，表面撒剩余蒜末、辣椒面和花椒",
+      "另起锅烧热40ml油至冒青烟，趁热浇在辣椒花椒上激出麻辣香",
+      "撒葱花即成毛血旺式麻辣牛肉"
+    ]
+  },
+  {
+    "id": "sichuan-stewed-beef-brisket",
+    "nameZh": "红烧牛腩",
+    "nameEn": "Braised Beef Brisket Sichuan Style",
+    "regionalCuisine": "sichuan",
+    "cookingMethod": "braise",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "beef_sirloin",
+        "amount": 500,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "potato",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "carrot",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "doubanjiang",
+        "amount": 20,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 20,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 15,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "牛腩切块焯水去血沫，捞出沥干",
+      "锅中热油，炒香姜片和豆瓣酱",
+      "放入牛腩翻炒上色，加酱油和料酒",
+      "加入没过食材的热水，大火烧开转小火炖40分钟",
+      "加入土豆块和胡萝卜块，继续炖20分钟至软烂",
+      "大火收汁调味出锅"
+    ]
+  },
+  {
+    "id": "sichuan-dry-pot-potato",
+    "nameZh": "干锅土豆片",
+    "nameEn": "Dry Pot Potato Slices",
+    "regionalCuisine": "sichuan",
+    "cookingMethod": "dry_pot",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "potato",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "pork_belly",
+        "amount": 80,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "capsicum",
+        "amount": 60,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "doubanjiang",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 20,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "土豆去皮切薄片，用水冲去淀粉沥干",
+      "锅中热油，放入土豆片煎至两面金黄捞出",
+      "五花肉切片煸出油脂，加豆瓣酱炒香",
+      "放回土豆片和青椒，翻炒均匀",
+      "加酱油调味，大火翻炒出锅"
+    ]
+  },
+  {
+    "id": "sichuan-braised-tofu-with-mince",
+    "nameZh": "肉末烧豆腐",
+    "nameEn": "Braised Tofu with Minced Pork",
+    "regionalCuisine": "sichuan",
+    "cookingMethod": "braise",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "tofu",
+        "amount": 350,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "pork_mince",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "doubanjiang",
+        "amount": 20,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sichuan_pepper",
+        "amount": 3,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 12,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 20,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 2,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "嫩豆腐切2cm方块，淡盐水浸泡5分钟",
+      "姜蒜切末，葱切葱花",
+      "锅烧热下油，肉末炒散变色出油",
+      "加豆瓣酱小火炒出红油，加姜蒜末爆香",
+      "加200ml热水煮开，调入生抽，轻放豆腐块",
+      "中火烧5分钟入味，水淀粉勾芡",
+      "撒花椒粉和葱花轻晃锅出锅"
+    ]
+  },
+  {
+    "id": "sichuan-stir-fried-bean-sprouts",
+    "nameZh": "麻辣豆芽",
+    "nameEn": "Spicy Stir Fried Bean Sprouts",
+    "regionalCuisine": "sichuan",
+    "cookingMethod": "stir_fry",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "bean_sprouts",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "chili_pepper",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sichuan_pepper",
+        "amount": 3,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "vinegar",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 2,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 20,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "豆芽掐去根须洗净，沥干水分",
+      "干辣椒剪段去籽，蒜切末，葱切葱花",
+      "锅烧热下油，小火下花椒粒和干辣椒段炒至辣椒微焦出麻辣香",
+      "转大火加入蒜末爆香",
+      "倒入豆芽大火快炒约1分钟，沿锅边烹入醋",
+      "加生抽和盐快速翻匀，撒葱花出锅，保持豆芽脆嫩"
+    ]
+  },
+  {
+    "id": "sichuan-dry-pot-chicken",
+    "nameZh": "干锅鸡",
+    "nameEn": "Dry Pot Chicken",
+    "regionalCuisine": "sichuan",
+    "cookingMethod": "dry_pot",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "chicken_thigh",
+        "amount": 400,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "potato",
+        "amount": 150,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "capsicum",
+        "amount": 80,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "onion",
+        "amount": 80,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "doubanjiang",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 25,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "鸡腿肉切块，加酱油和料酒腌10分钟",
+      "土豆切片煎至金黄备用",
+      "锅中热油，鸡块煎至表面金黄",
+      "加豆瓣酱、蒜姜炒出红油",
+      "放入土豆、洋葱、青椒翻炒均匀",
+      "小火焖3分钟收汁出锅"
+    ]
+  },
+  {
+    "id": "sichuan-steamed-pork-with-rice",
+    "nameZh": "川味蒸排骨",
+    "nameEn": "Sichuan Steamed Pork Ribs",
+    "regionalCuisine": "sichuan",
+    "cookingMethod": "steam",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "pork_ribs",
+        "amount": 400,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sweet_potato",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "rice_flour",
+        "amount": 60,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "doubanjiang",
+        "amount": 20,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "sichuan_pepper",
+        "amount": 3,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 3,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "排骨剁3cm段，冷水浸泡30分钟去血水洗净沥干",
+      "加豆瓣酱、生抽、料酒、姜蒜末、糖、盐和花椒粉抓匀腌30分钟",
+      "腌好的排骨与蒸肉米粉拌匀让每块裹满米粉",
+      "红薯去皮切块铺在碗底",
+      "裹粉排骨整齐码放在红薯上",
+      "蒸锅大火上汽后入锅，转中火蒸60分钟至排骨酥软",
+      "出锅倒扣盘中，撒葱花即可"
+    ]
+  },
+  {
+    "id": "sichuan-stir-fried-celery-pork",
+    "nameZh": "芹菜炒肉片",
+    "nameEn": "Stir Fried Celery with Pork",
+    "regionalCuisine": "sichuan",
+    "cookingMethod": "stir_fry",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "celery",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "pork_belly",
+        "amount": 150,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 8,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 5,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 15,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "猪肉切片加酱油和淀粉腌制",
+      "芹菜斜刀切段，蒜切末",
+      "热锅凉油滑炒肉片至变色盛出",
+      "锅中重新加油，爆香蒜末炒芹菜至断生",
+      "放回肉片翻炒均匀出锅"
+    ]
+  },
+  {
+    "id": "sichuan-stew-pork-belly-potato",
+    "nameZh": "五花肉炖土豆",
+    "nameEn": "Stewed Pork Belly with Potatoes",
+    "regionalCuisine": "sichuan",
+    "cookingMethod": "stew",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "pork_belly",
+        "amount": 350,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "potato",
+        "amount": 250,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 20,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 10,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "五花肉切块焯水去腥",
+      "锅中少油炒糖色，放入肉块翻炒上色",
+      "加姜片、酱油、料酒和热水没过食材",
+      "大火烧开转小火炖30分钟",
+      "加入土豆块继续炖15分钟至酥烂收汁"
+    ]
+  },
+  {
+    "id": "hunan-stir-fried-smoked-pork",
+    "nameZh": "辣椒炒肉",
+    "nameEn": "Hunan Stir Fried Pork with Chili Peppers",
+    "regionalCuisine": "hunan",
+    "cookingMethod": "stir_fry",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "pork_belly",
+        "amount": 250,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "capsicum",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "chili_pepper",
+        "amount": 30,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 12,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "doubanjiang",
+        "amount": 8,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "light_soy",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 3,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 2,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "五花肉切2mm薄片，肥瘦分开，肥肉部分单独切出",
+      "螺丝椒和小米椒斜切成段，蒜拍碎",
+      "锅烧热不放油直接下肥肉片煸至出油呈金黄色",
+      "加瘦肉片继续煸至边缘卷曲",
+      "加豆瓣酱和姜蒜爆香",
+      "倒入辣椒段大火翻炒至虎皮起皱",
+      "烹料酒加生抽和少许糖，颠匀出锅"
+    ]
+  },
+  {
+    "id": "hunan-steamed-fish-head",
+    "nameZh": "湘味蒸鸡",
+    "nameEn": "Hunan Steamed Chicken with Chili",
+    "regionalCuisine": "hunan",
+    "cookingMethod": "steam",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "chicken_thigh",
+        "amount": 400,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "doubanjiang",
+        "amount": 20,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "sesame_oil",
+        "amount": 5,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "鸡腿肉切块加料酒和姜片腌15分钟",
+      "剁椒酱铺在鸡肉上",
+      "大火蒸18分钟至鸡肉熟透",
+      "撒葱花和蒜末",
+      "淋热油和香油出锅"
+    ]
+  },
+  {
+    "id": "hunan-dry-pot-beef",
+    "nameZh": "干锅牛肉",
+    "nameEn": "Hunan Dry Pot Beef",
+    "regionalCuisine": "hunan",
+    "cookingMethod": "dry_pot",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "beef_sirloin",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "onion",
+        "amount": 80,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "capsicum",
+        "amount": 80,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "celery",
+        "amount": 60,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "doubanjiang",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 25,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "牛肉切片加酱油和淀粉腌10分钟",
+      "锅中热油，牛肉滑炒至变色盛出",
+      "锅中加油炒豆瓣酱出红油",
+      "放入洋葱和芹菜翻炒",
+      "放回牛肉和青椒，大火翻炒收汁出锅"
+    ]
+  },
+  {
+    "id": "hunan-stir-fried-pork-with-garlic",
+    "nameZh": "蒜薹炒肉",
+    "nameEn": "Stir Fried Pork with Garlic Scapes",
+    "regionalCuisine": "hunan",
+    "cookingMethod": "stir_fry",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "pork_belly",
+        "amount": 180,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "green_bean",
+        "amount": 150,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 5,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 15,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "五花肉切片，蒜薹切段",
+      "锅中热油，五花肉煸出油",
+      "加入蒜末炒香",
+      "放入蒜薹大火翻炒至断生",
+      "加酱油和盐调味出锅"
+    ]
+  },
+  {
+    "id": "hunan-braised-pork-trotter",
+    "nameZh": "红烧鸡块",
+    "nameEn": "Hunan Braised Chicken",
+    "regionalCuisine": "hunan",
+    "cookingMethod": "braise",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "chicken_thigh",
+        "amount": 450,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "capsicum",
+        "amount": 80,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "doubanjiang",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 15,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "鸡腿肉切块焯水",
+      "锅中热油炒糖色，放入鸡块翻炒上色",
+      "加豆瓣酱、姜片、料酒炒香",
+      "加适量水和酱油，大火烧开转小火焖20分钟",
+      "加入青椒大火收汁出锅"
+    ]
+  },
+  {
+    "id": "hunan-stir-fried-beef-capsicum",
+    "nameZh": "青椒牛肉丝",
+    "nameEn": "Hunan Stir Fried Beef with Green Peppers",
+    "regionalCuisine": "hunan",
+    "cookingMethod": "stir_fry",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "beef_sirloin",
+        "amount": 250,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "capsicum",
+        "amount": 120,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 8,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 5,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 20,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "牛肉逆纹切丝，加酱油、淀粉和料酒腌10分钟",
+      "青椒切丝",
+      "锅中热油，牛肉丝快速滑炒至变色盛出",
+      "锅中加油炒青椒至断生",
+      "放回牛肉丝翻炒均匀出锅"
+    ]
+  },
+  {
+    "id": "hunan-spicy-tofu",
+    "nameZh": "湘味辣豆腐",
+    "nameEn": "Hunan Spicy Tofu",
+    "regionalCuisine": "hunan",
+    "cookingMethod": "braise",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "tofu",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "pork_mince",
+        "amount": 80,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "doubanjiang",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 15,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "豆腐切块焯水沥干",
+      "锅中热油炒散肉末",
+      "加豆瓣酱和蒜末炒出红油",
+      "放入豆腐加水小火烧5分钟",
+      "加酱油调味，撒葱花出锅"
+    ]
+  },
+  {
+    "id": "hunan-stir-fried-mushroom-chicken",
+    "nameZh": "香菇鸡丁",
+    "nameEn": "Stir Fried Chicken with Shiitake Mushrooms",
+    "regionalCuisine": "hunan",
+    "cookingMethod": "stir_fry",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "chicken_breast",
+        "amount": 250,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "mushroom",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "capsicum",
+        "amount": 60,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 8,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "oyster_sauce",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 15,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "鸡胸肉切丁加酱油和淀粉腌10分钟",
+      "香菇切片，青椒切丁",
+      "锅中热油，滑炒鸡丁至变色盛出",
+      "锅中加油，炒香菇至出香",
+      "放回鸡丁和青椒，加蚝油翻炒出锅"
+    ]
+  },
+  {
+    "id": "hunan-braised-eggplant-mince",
+    "nameZh": "湘味烧茄子",
+    "nameEn": "Hunan Braised Eggplant with Mince",
+    "regionalCuisine": "hunan",
+    "cookingMethod": "braise",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "eggplant",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "pork_mince",
+        "amount": 80,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "doubanjiang",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 30,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "茄子切条，过油至软捞出",
+      "锅留底油炒散肉末",
+      "加豆瓣酱和蒜末炒出红油",
+      "放入茄子，加酱油、糖和少许水焖3分钟",
+      "大火收汁出锅"
+    ]
+  },
+  {
+    "id": "hunan-stir-fried-egg-spinach",
+    "nameZh": "湘味炒菠菜",
+    "nameEn": "Hunan Spicy Stir Fried Spinach",
+    "regionalCuisine": "hunan",
+    "cookingMethod": "stir_fry",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "spinach",
+        "amount": 350,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "chili_pepper",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 12,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "doubanjiang",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 5,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 2,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 15,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "菠菜洗净切8cm长段，沸水中加少许盐和油焯10秒迅速过冷水保持翠绿",
+      "小米椒切圈，蒜切末",
+      "锅烧热下油，下蒜末和小米椒爆香",
+      "加少许豆瓣酱炒出红油提味",
+      "大火倒入菠菜段快速翻炒30秒",
+      "加生抽和盐调味，翻匀立即出锅保持脆嫩"
+    ]
+  },
+  {
+    "id": "spicy_dry_pot_shrimp",
+    "nameZh": "干锅香辣虾",
+    "nameEn": "Dry Pot Spicy Shrimp",
+    "regionalCuisine": "hunan",
+    "cookingMethod": "dry_pot",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "shrimp",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "potato",
+        "amount": 150,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "onion",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "capsicum",
+        "amount": 80,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "doubanjiang",
+        "amount": 20,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 30,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "虾去虾线，土豆切片炸至金黄",
+      "锅中加油爆香蒜、姜和豆瓣酱",
+      "放入虾翻炒至变红",
+      "加入土豆片、洋葱和青椒翻炒",
+      "大火翻炒至香气四溢，出锅装盘"
+    ]
+  },
+  {
+    "id": "sichuan_spicy_eggplant_mince",
+    "nameZh": "肉末烧茄条",
+    "nameEn": "Sichuan Braised Eggplant with Minced Pork",
+    "regionalCuisine": "sichuan",
+    "cookingMethod": "braise",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "eggplant",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "pork_mince",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "doubanjiang",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 20,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "茄子切条，肉末用酱油腌5分钟",
+      "茄条过油至软捞出",
+      "锅留底油炒肉末至变色，加豆瓣酱炒出红油",
+      "放入茄条加少许水烧5分钟",
+      "加糖调味，水淀粉勾芡出锅"
+    ]
+  },
+  {
+    "id": "hunan_stir_fry_pork_beans",
+    "nameZh": "湘味豆角炒肉",
+    "nameEn": "Hunan Stir-fried Pork with Green Beans",
+    "regionalCuisine": "hunan",
+    "cookingMethod": "stir_fry",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "pork_belly",
+        "amount": 150,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "green_bean",
+        "amount": 250,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "doubanjiang",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 15,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "豆角掰段，五花肉切薄片",
+      "锅中加油煸五花肉至出油微焦",
+      "下蒜末和豆瓣酱炒出红油",
+      "放入豆角大火翻炒，加少许水焖3分钟至熟",
+      "加酱油调味翻炒出锅"
+    ]
+  },
+  {
+    "id": "sichuan_boiled_shrimp_tofu",
+    "nameZh": "水煮虾滑豆腐",
+    "nameEn": "Sichuan Boiled Shrimp Paste with Tofu",
+    "regionalCuisine": "sichuan",
+    "cookingMethod": "boil",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "shrimp",
+        "amount": 250,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "tofu",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "bean_sprouts",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "doubanjiang",
+        "amount": 25,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "egg",
+        "amount": 1,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 30,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "虾仁剁成泥加蛋清和淀粉搅打上劲，豆腐切片",
+      "豆芽焯水铺碗底，豆腐焯水铺上",
+      "锅中加油炒豆瓣酱出红油，加水烧开",
+      "虾滑挤丸子入锅煮熟，连汤倒入碗中",
+      "蒜末撒在表面，热油浇淋激香"
+    ]
+  },
+  {
+    "id": "hunan_spicy_stir_fry_potato",
+    "nameZh": "湘味辣炒土豆片",
+    "nameEn": "Hunan Spicy Stir-fried Potato Slices",
+    "regionalCuisine": "hunan",
+    "cookingMethod": "stir_fry",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "potato",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "capsicum",
+        "amount": 80,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "chili_pepper",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "doubanjiang",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "vinegar",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "light_soy",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 2,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 20,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "土豆去皮切2mm薄片，用清水反复冲洗去淀粉，沥干",
+      "青椒和小米椒斜切圈，蒜切末，葱切葱花",
+      "锅烧热下油，下蒜末和小米椒爆香",
+      "加豆瓣酱小火炒出红油",
+      "倒入土豆片大火翻炒2-3分钟至边缘半透明",
+      "加青椒翻炒，沿锅边淋入醋激发香味",
+      "加生抽和盐调味，撒葱花翻匀出锅，保持土豆脆嫩"
+    ]
+  },
+  {
+    "id": "sichuan_dry_pot_potato_chicken",
+    "nameZh": "干锅鸡肉土豆",
+    "nameEn": "Sichuan Dry Pot Chicken with Potato",
+    "regionalCuisine": "sichuan",
+    "cookingMethod": "dry_pot",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "chicken_thigh",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "potato",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "capsicum",
+        "amount": 80,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "onion",
+        "amount": 80,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "doubanjiang",
+        "amount": 20,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 25,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "鸡腿去骨切块腌制，土豆切片炸至金黄",
+      "锅中加油爆香蒜末和豆瓣酱",
+      "放入鸡块翻炒至熟",
+      "加入土豆片、洋葱和青椒大火翻炒",
+      "加料酒调味，翻炒至干香出锅"
+    ]
+  },
+  {
+    "id": "hunan_stir_fry_lamb_cumin",
+    "nameZh": "湘式孜然羊肉",
+    "nameEn": "Hunan Cumin Lamb Stir-fry",
+    "regionalCuisine": "hunan",
+    "cookingMethod": "stir_fry",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "lamb_leg",
+        "amount": 250,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "onion",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "capsicum",
+        "amount": 80,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 20,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "羊肉切薄片，加酱油、料酒、淀粉腌制",
+      "洋葱切丝，青椒切条",
+      "热锅大火快炒羊肉至变色盛出",
+      "锅中爆香蒜末和洋葱",
+      "倒回羊肉加青椒大火翻炒出锅"
+    ]
+  },
+  {
+    "id": "sichuan_garlic_pork_slices",
+    "nameZh": "蒜泥白肉新做",
+    "nameEn": "Sichuan Garlic Pork Belly Slices",
+    "regionalCuisine": "sichuan",
+    "cookingMethod": "boil",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "pork_belly",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cucumber",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 20,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 20,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "vinegar",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "sesame_oil",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 10,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "五花肉整块冷水下锅加姜煮20分钟至熟",
+      "捞出放凉切薄片",
+      "黄瓜切薄片铺盘底",
+      "蒜捣成泥加酱油、醋、糖、麻油调汁",
+      "肉片铺在黄瓜上浇蒜泥汁"
+    ]
+  },
+  {
+    "id": "hunan_smoked_pork_capsicum",
+    "nameZh": "湘味青椒炒肉",
+    "nameEn": "Hunan Stir-fried Pork with Capsicum",
+    "regionalCuisine": "hunan",
+    "cookingMethod": "stir_fry",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "pork_belly",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "capsicum",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "doubanjiang",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 10,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "五花肉切薄片，青椒切滚刀块",
+      "锅中加油煸五花肉至微焦出油",
+      "加蒜末和豆瓣酱炒香",
+      "下青椒大火翻炒，加酱油调味",
+      "青椒断生虎皮微焦即出锅"
+    ]
+  },
+  {
+    "id": "sichuan_spicy_broccoli_pork",
+    "nameZh": "川味西兰花炒肉",
+    "nameEn": "Sichuan Spicy Broccoli with Pork",
+    "regionalCuisine": "sichuan",
+    "cookingMethod": "stir_fry",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "broccoli",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "pork_belly",
+        "amount": 120,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "doubanjiang",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 12,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "chili_pepper",
+        "amount": 8,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 2,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 15,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "西兰花掰小朵洗净，沸水加盐焯1分钟捞出过冷水沥干",
+      "五花肉切薄片，姜蒜切末，小米椒切圈",
+      "锅烧热不放油直接下五花肉煸炒至出油卷曲微焦",
+      "加豆瓣酱、姜蒜末和辣椒小火炒出红油",
+      "烹入料酒倒入西兰花大火翻炒2分钟",
+      "加生抽和少许盐调味，大火颠匀出锅"
+    ]
+  },
+  {
+    "id": "hunan_dry_pot_chicken_gizzard",
+    "nameZh": "干锅鸡胸肉",
+    "nameEn": "Hunan Dry Pot Chicken Breast",
+    "regionalCuisine": "hunan",
+    "cookingMethod": "dry_pot",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "chicken_breast",
+        "amount": 250,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "capsicum",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "celery",
+        "amount": 80,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "onion",
+        "amount": 80,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "doubanjiang",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 20,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "鸡胸肉切片加酱油腌10分钟",
+      "蔬菜全部切段备用",
+      "锅中加油炒鸡肉至变色",
+      "加豆瓣酱和蒜末炒出红油",
+      "下所有蔬菜大火翻炒至干香出锅"
+    ]
+  },
+  {
+    "id": "hunan_spicy_stir_fry_shrimp",
+    "nameZh": "湘味爆炒虾",
+    "nameEn": "Hunan Spicy Stir-fried Shrimp",
+    "regionalCuisine": "hunan",
+    "cookingMethod": "stir_fry",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "shrimp",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "doubanjiang",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 20,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "虾剪去虾须，背部开刀去虾线",
+      "热锅加油爆炒虾至变红盛出",
+      "锅中爆香蒜、姜和豆瓣酱",
+      "倒回虾加料酒、酱油、糖翻炒",
+      "大火收汁至干香出锅"
+    ]
+  },
+  {
+    "id": "sichuan_mapo_spinach",
+    "nameZh": "麻婆菠菜",
+    "nameEn": "Mapo Style Spinach",
+    "regionalCuisine": "sichuan",
+    "cookingMethod": "stir_fry",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "spinach",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "pork_mince",
+        "amount": 80,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "doubanjiang",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sichuan_pepper",
+        "amount": 4,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "chili_flakes",
+        "amount": 4,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 12,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "light_soy",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 8,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 2,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "菠菜去根洗净切段，沸水加少许油焯10秒过冷水沥干铺盘底",
+      "花椒小火干锅炒香碾成花椒粉，姜蒜切末",
+      "锅烧热下油，下肉末炒散变色出油",
+      "加豆瓣酱和辣椒面小火炒出红油",
+      "加姜蒜末爆香，倒入100ml清水煮开",
+      "加生抽调味，淋入水淀粉勾薄芡",
+      "将麻辣肉末汁浇在菠菜上，撒花椒粉和葱花即成"
+    ]
+  },
+  {
+    "id": "sichuan_spicy_tofu_soup",
+    "nameZh": "麻辣豆腐汤",
+    "nameEn": "Sichuan Spicy Tofu Soup",
+    "regionalCuisine": "sichuan",
+    "cookingMethod": "boil",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "tofu",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "pork_mince",
+        "amount": 80,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "doubanjiang",
+        "amount": 20,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sichuan_pepper",
+        "amount": 3,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "chili_flakes",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "egg",
+        "amount": 1,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cilantro",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sesame_oil",
+        "amount": 5,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 2,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "嫩豆腐切1cm小丁，淡盐水浸泡5分钟去豆腥",
+      "姜蒜切末，葱切葱花，香菜切段",
+      "锅烧热下油，下肉末炒散变色",
+      "加豆瓣酱和辣椒面小火炒出红油，下姜蒜末爆香",
+      "倒入600ml热水煮开，下豆腐丁煮5分钟入味",
+      "加盐调味，淋少许水淀粉使汤微稠，淋蛋液成蛋花",
+      "出锅淋麻油，撒花椒粉、葱花和香菜即成麻辣鲜香"
+    ]
+  },
+  {
+    "id": "hunan_stir_fry_beef_capsicum",
+    "nameZh": "湘味牛肉炒椒",
+    "nameEn": "Hunan Stir-fried Beef with Capsicum",
+    "regionalCuisine": "hunan",
+    "cookingMethod": "stir_fry",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "beef_sirloin",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "capsicum",
+        "amount": 150,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "doubanjiang",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 15,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "牛肉切片加酱油和淀粉腌制",
+      "青椒切块，蒜切片",
+      "热锅大火快炒牛肉至变色盛出",
+      "锅中炒蒜片和豆瓣酱，下青椒翻炒",
+      "倒回牛肉翻炒均匀出锅"
+    ]
+  },
+  {
+    "id": "steamed_pork_with_sweet_potato",
+    "nameZh": "红薯蒸肉",
+    "nameEn": "Steamed Pork with Sweet Potato",
+    "regionalCuisine": "hunan",
+    "cookingMethod": "steam",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "pork_belly",
+        "amount": 250,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sweet_potato",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 20,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 10,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "五花肉切薄片加酱油、料酒和糖腌15分钟",
+      "裹上干淀粉（代替米粉）",
+      "红薯切块铺碗底",
+      "肉片铺在红薯上，入蒸锅大火蒸25分钟",
+      "出锅翻扣盘中"
+    ]
+  },
+  {
+    "id": "sichuan_stir_fry_lamb_scallion",
+    "nameZh": "葱爆羊肉川味",
+    "nameEn": "Sichuan Stir-fried Lamb with Scallion",
+    "regionalCuisine": "sichuan",
+    "cookingMethod": "stir_fry",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "lamb_leg",
+        "amount": 250,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 80,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "doubanjiang",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "vinegar",
+        "amount": 5,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 15,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "羊肉切薄片加料酒腌5分钟，大葱切段",
+      "热锅大火快炒羊肉至变色盛出",
+      "锅中加油炒豆瓣酱出红油",
+      "下葱段翻炒，倒回羊肉",
+      "加酱油和少许醋大火翻炒出锅"
+    ]
+  },
+  {
+    "id": "sichuan_stir_fry_potato_pork",
+    "nameZh": "川味土豆炒肉",
+    "nameEn": "Sichuan Stir-fried Potato with Pork",
+    "regionalCuisine": "sichuan",
+    "cookingMethod": "stir_fry",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "potato",
+        "amount": 250,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "pork_belly",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "doubanjiang",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 8,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 15,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "土豆切片泡水沥干，肉切片",
+      "热锅加油煸肉片出油",
+      "下豆瓣酱和蒜末炒香",
+      "放入土豆片大火翻炒加酱油",
+      "加少许水焖3分钟至土豆熟透出锅"
+    ]
+  },
+  {
+    "id": "hunan_stir_fry_eggplant",
+    "nameZh": "湘味炒茄子",
+    "nameEn": "Hunan Stir-fried Eggplant",
+    "regionalCuisine": "hunan",
+    "cookingMethod": "stir_fry",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "eggplant",
+        "amount": 350,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "pork_mince",
+        "amount": 80,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "chili_pepper",
+        "amount": 20,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "doubanjiang",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "light_soy",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 3,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 30,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 2,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "茄子切粗条加少许盐拌匀腌5分钟挤干水分",
+      "小米椒切圈，姜蒜切末，葱切葱花",
+      "锅烧热多放油，茄条入锅煎至塌软盛出控油",
+      "锅留底油下肉末炒散变色",
+      "加豆瓣酱、姜蒜末和小米椒小火炒出红油",
+      "回入茄条大火翻炒，烹料酒和生抽",
+      "加少许糖和盐调味，撒葱花翻匀出锅"
+    ]
+  },
+  {
+    "id": "boiled_beef_bean_sprouts",
+    "nameZh": "水煮牛肉片",
+    "nameEn": "Sichuan Boiled Beef Slices with Bean Sprouts",
+    "regionalCuisine": "sichuan",
+    "cookingMethod": "boil",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "beef_sirloin",
+        "amount": 250,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "bean_sprouts",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spinach",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "doubanjiang",
+        "amount": 25,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "egg",
+        "amount": 1,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 30,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "牛肉切薄片加蛋清和淀粉腌制",
+      "豆芽和菠菜焯水铺碗底",
+      "锅中加油炒豆瓣酱出红油，加水烧开",
+      "逐片下牛肉煮至变色，连汤倒入碗中",
+      "蒜末撒表面，热油浇淋激香"
+    ]
+  },
+  {
+    "id": "sichuan_bean_sprout_beef",
+    "nameZh": "川味豆芽牛肉",
+    "nameEn": "Sichuan Bean Sprouts with Beef",
+    "regionalCuisine": "sichuan",
+    "cookingMethod": "stir_fry",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "bean_sprouts",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "beef_sirloin",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "doubanjiang",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 20,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "牛肉切丝加酱油、淀粉腌制10分钟",
+      "热油快炒牛肉丝至变色盛出",
+      "锅中加豆瓣酱炒出红油，加蒜末",
+      "倒入豆芽大火翻炒，倒回牛肉丝",
+      "翻炒均匀出锅"
+    ]
+  },
+  {
+    "id": "dry_pot_bean_sprout",
+    "nameZh": "干锅豆芽",
+    "nameEn": "Dry Pot Bean Sprouts",
+    "regionalCuisine": "hunan",
+    "cookingMethod": "dry_pot",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "bean_sprouts",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "pork_belly",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "capsicum",
+        "amount": 60,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "doubanjiang",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 15,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "五花肉切薄片，青椒切段",
+      "锅中煸炒肉片至出油微焦",
+      "加豆瓣酱和蒜末炒出红油",
+      "下豆芽和青椒大火翻炒至豆芽断生",
+      "不加水，持续翻炒收干出锅"
+    ]
+  },
+  {
+    "id": "dry_pot_shrimp",
+    "nameZh": "干锅虾仁",
+    "nameEn": "Dry Pot Shrimp",
+    "regionalCuisine": "hunan",
+    "cookingMethod": "dry_pot",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "shrimp",
+        "amount": 250,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "potato",
+        "amount": 150,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "capsicum",
+        "amount": 80,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "onion",
+        "amount": 80,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "doubanjiang",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 25,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "土豆切片油炸至金黄，虾仁去虾线",
+      "洋葱、青椒切块",
+      "锅中热油炒虾仁至变色盛出",
+      "锅中加豆瓣酱和蒜末爆香",
+      "下所有食材翻炒均匀，不加水干炒出锅"
+    ]
+  },
+  {
+    "id": "sichuan_garlic_sprout_pork",
+    "nameZh": "川味蒜苗回锅肉",
+    "nameEn": "Sichuan Twice-Cooked Pork with Garlic Sprouts",
+    "regionalCuisine": "sichuan",
+    "cookingMethod": "stir_fry",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "pork_belly",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "capsicum",
+        "amount": 80,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 30,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "doubanjiang",
+        "amount": 20,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 10,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "五花肉整块冷水煮至八成熟，捞出切薄片",
+      "青椒切段，葱切段",
+      "锅不放油，煸炒肉片至出油微卷",
+      "加豆瓣酱炒出红油，加姜末",
+      "放青椒和葱段翻炒，加酱油调味出锅"
+    ]
+  },
+  {
+    "id": "sichuan_mapo_mushroom",
+    "nameZh": "麻婆蘑菇",
+    "nameEn": "Mapo-Style Mushrooms",
+    "regionalCuisine": "sichuan",
+    "cookingMethod": "stir_fry",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "mushroom",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "pork_mince",
+        "amount": 80,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "doubanjiang",
+        "amount": 20,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sichuan_pepper",
+        "amount": 4,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "chili_flakes",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 12,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "light_soy",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 20,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 2,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "蘑菇洗净切大块，沸水焯30秒去土腥味捞出沥干",
+      "花椒小火干锅炒香碾粉，姜蒜切末，葱切葱花",
+      "锅烧热下油，下肉末炒散变色出油",
+      "加豆瓣酱和辣椒面小火炒出红油",
+      "加姜蒜末爆香，倒入蘑菇大火翻炒1分钟",
+      "加200ml热水煮开，加生抽调味焖煮3分钟",
+      "淋水淀粉勾芡，撒花椒粉和葱花轻晃锅出锅"
+    ]
+  },
+  {
+    "id": "sichuan_spicy_shrimp",
+    "nameZh": "川味麻辣虾",
+    "nameEn": "Sichuan Spicy Shrimp",
+    "regionalCuisine": "sichuan",
+    "cookingMethod": "stir_fry",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "shrimp",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "doubanjiang",
+        "amount": 20,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 25,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "虾去虾线，加料酒腌5分钟",
+      "热油炒虾至变色盛出",
+      "锅中加豆瓣酱、姜蒜炒出红油",
+      "倒回虾翻炒，加糖调味",
+      "大火收汁撒葱花出锅"
+    ]
+  },
+  {
+    "id": "sichuan_pepper_chicken_stirfry",
+    "nameZh": "青椒鸡块",
+    "nameEn": "Sichuan Chicken with Green Peppers",
+    "regionalCuisine": "sichuan",
+    "cookingMethod": "stir_fry",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "chicken_thigh",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "capsicum",
+        "amount": 150,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "doubanjiang",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 20,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "鸡腿肉切块加酱油、淀粉腌10分钟",
+      "青椒切块",
+      "热油炒鸡块至金黄盛出",
+      "锅中加豆瓣酱和蒜末爆香",
+      "倒回鸡块，加青椒翻炒出锅"
+    ]
+  },
+  {
+    "id": "sichuan_spicy_eggplant_strips",
+    "nameZh": "鱼香茄条",
+    "nameEn": "Sichuan Fish-Fragrant Eggplant Strips",
+    "regionalCuisine": "sichuan",
+    "cookingMethod": "stir_fry",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "eggplant",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "pork_mince",
+        "amount": 50,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "doubanjiang",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "vinegar",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 30,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "茄子切条过油炸软捞出",
+      "锅留底油炒肉末，加豆瓣酱炒红油",
+      "加姜蒜末爆香",
+      "调鱼香汁（醋、糖、酱油、淀粉、水拌匀）",
+      "倒入茄条和鱼香汁大火翻炒均匀出锅"
+    ]
+  },
+  {
+    "id": "hunan_spicy_pork_celery",
+    "nameZh": "湘味芹菜炒肉",
+    "nameEn": "Hunan-Style Stir-fried Pork with Celery",
+    "regionalCuisine": "hunan",
+    "cookingMethod": "stir_fry",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "pork_belly",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "celery",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "capsicum",
+        "amount": 60,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "doubanjiang",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 15,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "猪肉切片，芹菜斜切段，辣椒切段",
+      "热油炒肉片至变色",
+      "加豆瓣酱和蒜末爆香",
+      "放芹菜和辣椒大火翻炒",
+      "加酱油调味炒至断生出锅"
+    ]
+  },
+  {
+    "id": "hunan_spicy_egg_pepper",
+    "nameZh": "湘味辣椒炒蛋",
+    "nameEn": "Hunan Spicy Egg with Peppers",
+    "regionalCuisine": "hunan",
+    "cookingMethod": "stir_fry",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "egg",
+        "amount": 4,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "capsicum",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "chili_pepper",
+        "amount": 20,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 8,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "doubanjiang",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "light_soy",
+        "amount": 5,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 2,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 25,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "鸡蛋打散加少许盐搅匀，青椒切圈、小米椒切圈，蒜切末",
+      "锅烧热多放油，倒入蛋液大火滑炒至凝固成大块盛出",
+      "锅留底油下蒜末爆香",
+      "加青椒和小米椒大火翻炒至虎皮状",
+      "加少许豆瓣酱炒出红油提味",
+      "回入鸡蛋块翻炒均匀，淋生抽撒葱花出锅"
+    ]
+  },
+  {
+    "id": "hunan_smoked_beef_capsicum",
+    "nameZh": "湘味青椒牛肉",
+    "nameEn": "Hunan Beef with Green Peppers",
+    "regionalCuisine": "hunan",
+    "cookingMethod": "stir_fry",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "beef_sirloin",
+        "amount": 250,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "capsicum",
+        "amount": 150,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "doubanjiang",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 20,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "牛肉切片加酱油淀粉腌10分钟",
+      "青椒切块",
+      "大火热油快炒牛肉至变色盛出",
+      "锅中加豆瓣酱蒜末爆香，放青椒翻炒",
+      "倒回牛肉翻炒均匀出锅"
+    ]
+  },
+  {
+    "id": "hunan_spicy_tofu_mince",
+    "nameZh": "湘味肉末豆腐",
+    "nameEn": "Hunan Spicy Tofu with Minced Pork",
+    "regionalCuisine": "hunan",
+    "cookingMethod": "stir_fry",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "tofu",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "pork_mince",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "doubanjiang",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 15,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "豆腐切块焯水，肉末备用",
+      "热油炒肉末至变色",
+      "加豆瓣酱和蒜末爆香",
+      "放入豆腐轻轻翻炒，加酱油和少许水",
+      "焖3分钟撒葱花出锅"
+    ]
+  },
+  {
+    "id": "hunan_dry_pot_chicken",
+    "nameZh": "湘味干锅鸡",
+    "nameEn": "Hunan Dry Pot Chicken",
+    "regionalCuisine": "hunan",
+    "cookingMethod": "stir_fry",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "chicken_thigh",
+        "amount": 350,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "potato",
+        "amount": 150,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "capsicum",
+        "amount": 80,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "onion",
+        "amount": 60,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "doubanjiang",
+        "amount": 20,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 25,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "鸡腿肉切块，土豆切片炸至微黄",
+      "热油炒鸡块至金黄",
+      "加豆瓣酱和蒜末爆出红油",
+      "放入土豆、洋葱、青椒翻炒",
+      "加酱油调味，大火收干出锅"
+    ]
+  },
+  {
+    "id": "pork_stir_fry_capsicum",
+    "nameZh": "青椒炒肉丝",
+    "nameEn": "Stir-fried Pork with Capsicum",
+    "regionalCuisine": "hunan",
+    "cookingMethod": "staple",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "pork_belly",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "capsicum",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 5,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 15,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "猪肉切丝，加酱油、料酒、淀粉腌10分钟",
+      "青椒切丝，蒜切片",
+      "锅中热油，滑炒肉丝至变色盛出",
+      "锅中再加油，炒青椒至断生",
+      "倒回肉丝，加盐翻炒均匀出锅"
+    ]
+  },
+  {
+    "id": "sichuan_boiled_fish",
+    "nameZh": "水煮鱼",
+    "nameEn": "Sichuan Boiled Fish",
+    "regionalCuisine": "sichuan",
+    "cookingMethod": "soup",
+    "difficulty": "hard",
+    "ingredients": [
+      {
+        "ingredientId": "salmon_fillet",
+        "amount": 500,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "bok_choy",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "doubanjiang",
+        "amount": 30,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 20,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 20,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "egg",
+        "amount": 1,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 50,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "鱼肉切薄片，加蛋清、淀粉、料酒腌15分钟",
+      "青菜焯水铺在碗底",
+      "锅中热油，炒香豆瓣酱、蒜末、姜片",
+      "加水烧开，放入鱼片煮至变白",
+      "鱼片铺在青菜上，浇上汤汁",
+      "另起锅烧热油，泼在蒜末和花椒上",
+      "撒葱花出锅"
+    ]
+  },
+  {
+    "id": "stir_fried_cabbage",
+    "nameZh": "手撕包菜",
+    "nameEn": "Stir-fried Chinese Cabbage",
+    "regionalCuisine": "hunan",
+    "cookingMethod": "staple",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "cabbage",
+        "amount": 400,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "bacon",
+        "amount": 60,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "chili_pepper",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 12,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sichuan_pepper",
+        "amount": 2,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "vinegar",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "light_soy",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 3,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 2,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 15,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "包菜手撕成大片不要切，洗净沥干水分（手撕断面更易入味）",
+      "腊肉切薄片，干辣椒剪段，蒜切片",
+      "锅烧热下少许油，腊肉片煸至出油微焦",
+      "小火下花椒和干辣椒段炒香",
+      "转大火加蒜片爆香",
+      "倒入包菜大火快炒1分钟，沿锅边烹入醋激出香气",
+      "加生抽、糖和盐快速翻匀，包菜断生即出锅"
+    ]
+  },
+  {
+    "id": "sichuan_dry_fried_beans",
+    "nameZh": "干煸四季豆",
+    "nameEn": "Sichuan Dry-fried Green Beans",
+    "regionalCuisine": "sichuan",
+    "cookingMethod": "deep_fry",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "green_bean",
+        "amount": 400,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "pork_mince",
+        "amount": 80,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 30,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "四季豆掰段，过油炸至表皮起皱捞出",
+      "锅留底油，炒香肉末",
+      "加入蒜末、姜末翻炒",
+      "放入四季豆翻炒",
+      "加酱油和盐调味出锅"
+    ]
+  },
+  {
+    "id": "steamed_pork_rice_flour",
+    "nameZh": "粉蒸肉",
+    "nameEn": "Steamed Pork with Rice Flour",
+    "regionalCuisine": "hunan",
+    "cookingMethod": "steam",
+    "difficulty": "hard",
+    "ingredients": [
+      {
+        "ingredientId": "pork_belly",
+        "amount": 400,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sweet_potato",
+        "amount": 250,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "rice_flour",
+        "amount": 80,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "doubanjiang",
+        "amount": 20,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 20,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 12,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 8,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "five_spice",
+        "amount": 3,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 3,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "五花肉切3mm厚大片，加豆瓣酱、生抽、料酒、姜末、五香粉和少许糖盐抓匀腌30分钟",
+      "红薯去皮切大块铺在蒸碗底部",
+      "腌好的肉片撒入蒸肉米粉拌匀，让每片肉裹满米粉（米粉吸收肉汁后蒸出来软糯香）",
+      "将裹粉肉片皮朝下整齐码在红薯上",
+      "蒸锅大火上汽后入锅，中火蒸60-90分钟至肉酥烂米粉软糯",
+      "出锅倒扣盘中（肉皮朝上红薯在底），撒葱花即成"
+    ]
+  },
+  {
+    "id": "hunan_spicy_chicken",
+    "nameZh": "辣子鸡",
+    "nameEn": "Hunan Spicy Chicken",
+    "regionalCuisine": "hunan",
+    "cookingMethod": "deep_fry",
+    "difficulty": "hard",
+    "ingredients": [
+      {
+        "ingredientId": "chicken_thigh",
+        "amount": 500,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 200,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "鸡腿肉切小块，加酱油、料酒、淀粉腌15分钟",
+      "油温七成热时炸鸡块至金黄捞出",
+      "复炸一次至酥脆",
+      "锅留底油，放入大量干辣椒和花椒炒香",
+      "加入蒜末、姜末翻炒",
+      "倒入鸡块，加糖、盐翻炒均匀",
+      "撒白芝麻和葱花出锅"
+    ]
+  },
+  {
+    "id": "sichuan_twice_cooked_tofu",
+    "nameZh": "麻辣豆腐煲",
+    "nameEn": "Spicy Tofu Clay Pot",
+    "regionalCuisine": "sichuan",
+    "cookingMethod": "stew",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "tofu",
+        "amount": 400,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "pork_mince",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "doubanjiang",
+        "amount": 20,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 10,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "豆腐切块煎至两面金黄",
+      "锅中热油，炒香肉末",
+      "加豆瓣酱炒出红油",
+      "加蒜末、姜末翻炒",
+      "放入豆腐加水焖煮8分钟",
+      "淀粉勾芡，撒葱花出锅"
+    ]
+  },
+  {
+    "id": "sichuan_shredded_pork",
+    "nameZh": "鱼香肉丝",
+    "nameEn": "Sichuan Fish-fragrant Shredded Pork",
+    "regionalCuisine": "sichuan",
+    "cookingMethod": "staple",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "pork_loin",
+        "amount": 250,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "wood_ear",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "carrot",
+        "amount": 80,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "capsicum",
+        "amount": 60,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "doubanjiang",
+        "amount": 20,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "vinegar",
+        "amount": 18,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "light_soy",
+        "amount": 12,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 12,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 12,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 8,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 30,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 2,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "猪里脊逆纹切0.3cm细丝，加料酒、生抽5ml、淀粉5g和蛋清抓匀腌15分钟",
+      "木耳冷水泡发后切丝，胡萝卜和青椒切与肉丝同等粗细",
+      "调鱼香汁：醋18ml、糖15g、生抽7ml、淀粉7g与50ml清水搅匀备用",
+      "姜蒜切末，葱白切马耳段",
+      "锅烧热下20ml油，肉丝大火快速滑散至变白盛出",
+      "锅留底油下豆瓣酱小火炒出红油，加姜蒜末和葱白爆香",
+      "倒入木耳、胡萝卜和青椒丝大火翻炒30秒",
+      "回入肉丝，沿锅边烹入鱼香汁",
+      "大火颠炒至汁水浓稠包裹肉丝，亮油出锅"
+    ]
+  },
+  {
+    "id": "tiger_skin_capsicum",
+    "nameZh": "虎皮青椒",
+    "nameEn": "Tiger Skin Green Peppers",
+    "regionalCuisine": "hunan",
+    "cookingMethod": "stir_fry",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "capsicum",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "vinegar",
+        "amount": 5,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 15,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "青椒去籽整个备用",
+      "锅中少许油，放入青椒小火煸至表皮起皱",
+      "盛出青椒，锅中加蒜末炒香",
+      "加酱油、醋、糖调汁",
+      "倒回青椒翻炒裹汁出锅"
+    ]
+  },
+  {
+    "id": "hunan_steamed_pork",
+    "nameZh": "湘味小炒肉",
+    "nameEn": "Hunan Stir-fried Pork",
+    "regionalCuisine": "hunan",
+    "cookingMethod": "stir_fry",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "pork_belly",
+        "amount": 250,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "capsicum",
+        "amount": 150,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "doubanjiang",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 10,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "五花肉切薄片，青椒切块",
+      "锅中不放油，先煸炒肉片至出油微焦",
+      "放入蒜末和豆瓣酱炒香",
+      "加入青椒大火翻炒",
+      "加酱油调味出锅"
+    ]
+  },
+  {
+    "id": "sichuan_boiled_beef",
+    "nameZh": "水煮牛肉",
+    "nameEn": "Sichuan Boiled Beef",
+    "regionalCuisine": "sichuan",
+    "cookingMethod": "soup",
+    "difficulty": "hard",
+    "ingredients": [
+      {
+        "ingredientId": "beef_sirloin",
+        "amount": 400,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "bok_choy",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "doubanjiang",
+        "amount": 30,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "egg",
+        "amount": 1,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 50,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 10,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "牛肉逆纹切薄片，加蛋清、淀粉、料酒腌15分钟",
+      "青菜焯水铺碗底",
+      "锅中热油，炒香豆瓣酱、姜片、蒜末",
+      "加水烧开，下牛肉片煮至变色",
+      "连汤倒在青菜上",
+      "另烧热油，泼在蒜末和干辣椒上激香"
+    ]
+  },
+  {
+    "id": "spicy_stir_fried_shrimp",
+    "nameZh": "香辣虾",
+    "nameEn": "Spicy Stir-fried Shrimp",
+    "regionalCuisine": "sichuan",
+    "cookingMethod": "deep_fry",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "shrimp",
+        "amount": 400,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "doubanjiang",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 20,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "虾去虾线洗净沥干",
+      "锅中热油，放入虾煎至两面红",
+      "加入蒜末、姜末、豆瓣酱炒香",
+      "加料酒、酱油、糖翻炒",
+      "大火收汁出锅"
+    ]
+  },
+  {
+    "id": "hunan_smoked_pork_beans",
+    "nameZh": "腊肉炒豆角",
+    "nameEn": "Hunan Smoked Pork with Green Beans",
+    "regionalCuisine": "hunan",
+    "cookingMethod": "stew",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "pork_belly",
+        "amount": 150,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "green_bean",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "doubanjiang",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 5,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 10,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "腊肉切薄片，豆角掰段",
+      "锅中热油，煸炒腊肉出油",
+      "加豆瓣酱和蒜末炒香",
+      "放入豆角大火翻炒",
+      "加少许水焖煮5分钟至豆角熟透",
+      "加酱油调味出锅"
+    ]
+  },
+  {
+    "id": "cold_noodle_sesame",
+    "nameZh": "芝麻凉面",
+    "nameEn": "Cold Sesame Noodles",
+    "regionalCuisine": "sichuan",
+    "cookingMethod": "cold_dish",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "noodles_dried",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cucumber",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sesame_oil",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "vinegar",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 5,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "面条煮熟捞出过凉水沥干",
+      "黄瓜切丝",
+      "调酱汁：酱油、醋、香油、蒜末混合",
+      "面条装碗，铺上黄瓜丝",
+      "浇上酱汁拌匀食用"
+    ]
+  },
+  {
+    "id": "hunan_xiaochao_huanggua",
+    "nameZh": "擂辣椒拍黄瓜",
+    "nameEn": "Hunan Smashed Cucumber with Chili",
+    "regionalCuisine": "hunan",
+    "cookingMethod": "cold_dish",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "cucumber",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "chili_pepper",
+        "amount": 50,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "light_soy",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "vinegar",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "sesame_oil",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 2,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 10,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "青辣椒洗净擦干，平底锅不放油小火慢慢煸至两面虎皮起泡，盛出",
+      "将擂辣椒和蒜瓣放入捣钵中捣碎成粗辣椒泥（即\"擂\"的精髓）",
+      "黄瓜洗净用刀面拍裂切3cm段，加少许盐腌5分钟挤干水分",
+      "将拍好的黄瓜与擂好的辣椒蒜泥混合",
+      "加生抽、醋、糖、盐和麻油拌匀",
+      "冷藏10分钟入味后食用，焦香辣爽开胃"
+    ]
+  },
+  {
+    "id": "hunan_larou_chao_suncai",
+    "nameZh": "腊肉炒蒜薹",
+    "nameEn": "Stir-fried Cured Pork with Garlic Shoots",
+    "regionalCuisine": "hunan",
+    "cookingMethod": "stir_fry",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "pork_belly",
+        "amount": 150,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "celery",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "capsicum",
+        "amount": 50,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 5,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 10,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "五花肉切薄片（代替腊肉），加酱油料酒腌制",
+      "芹菜切段代替蒜薹，青椒切片",
+      "锅中不放油先煸肉片至出油",
+      "加蒜末和芹菜大火翻炒",
+      "加盐调味炒匀出锅"
+    ]
+  },
+  {
+    "id": "homestyle_xianggan_chao_rou",
+    "nameZh": "香干炒肉",
+    "nameEn": "Stir-fried Pork with Dried Tofu",
+    "regionalCuisine": "hunan",
+    "cookingMethod": "stir_fry",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "pork_loin",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "dried_tofu",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "chili_pepper",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "capsicum",
+        "amount": 50,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "doubanjiang",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "light_soy",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 20,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 2,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "猪里脊逆纹切薄片，加料酒、生抽和淀粉抓匀腌10分钟",
+      "香干切菱形片，青椒和小米椒切丝，姜蒜切末",
+      "锅烧热下油，肉片大火快速滑炒至变色盛出",
+      "锅留底油下蒜末和小米椒爆香",
+      "加豆瓣酱小火炒出红油",
+      "倒入香干片煸炒2分钟至边缘微焦吸味",
+      "回入肉片和青椒大火翻炒30秒",
+      "加生抽和盐调味翻匀出锅"
+    ]
+  },
+  {
+    "id": "sichuan_maocai",
+    "nameZh": "冒菜",
+    "nameEn": "Sichuan Spicy Hotpot Vegetables",
+    "regionalCuisine": "sichuan",
+    "cookingMethod": "soup",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "pork_belly",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "tofu",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "potato",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "bok_choy",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "mushroom",
+        "amount": 80,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "noodles_dried",
+        "amount": 50,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "doubanjiang",
+        "amount": 25,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sichuan_pepper",
+        "amount": 4,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "chili_flakes",
+        "amount": 8,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "star_anise",
+        "amount": 1,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 12,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "sesame_oil",
+        "amount": 5,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 25,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 3,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "所有蔬菜洗净切好，土豆切片，豆腐切块，蘑菇撕开",
+      "五花肉切薄片，姜蒜切末",
+      "锅烧热下油，五花肉煸出油",
+      "加豆瓣酱、辣椒面、花椒和八角小火炒出麻辣红油",
+      "加姜蒜末爆香，倒入1L热水煮开成麻辣汤底",
+      "调入生抽和盐，先放耐煮的土豆和粉条煮5分钟",
+      "依次下豆腐和蘑菇煮3分钟",
+      "最后下青菜烫熟即捞出装碗，浇麻辣汤撒葱花淋麻油"
+    ]
+  },
+  {
+    "id": "homestyle_suantang_fei_niu",
+    "nameZh": "酸汤肥牛",
+    "nameEn": "Sour Soup with Beef Slices",
+    "regionalCuisine": "sichuan",
+    "cookingMethod": "soup",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "beef_sirloin",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "tomato",
+        "amount": 250,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "enoki_mushroom",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "chili_pepper",
+        "amount": 30,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 8,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cilantro",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "vinegar",
+        "amount": 25,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "white_pepper",
+        "amount": 2,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 8,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "egg",
+        "amount": 1,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 25,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 3,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "肥牛切薄片，加蛋清、淀粉、料酒和白胡椒抓匀腌10分钟",
+      "番茄去皮切块，黄灯笼椒切末（无则用小米椒），姜蒜切末",
+      "锅烧热下油，下姜蒜末和番茄炒至出红汁起沙",
+      "加黄灯笼椒末炒香（这是酸汤的灵魂）",
+      "加600ml热水煮开成黄红色酸汤",
+      "加白醋、盐和白胡椒调味",
+      "先下金针菇煮1分钟铺碗底",
+      "将肥牛片一片片滑入沸汤中烫10秒",
+      "连汤倒入碗中，撒香菜、葱花和小米椒圈即成"
+    ]
+  },
+  {
+    "id": "sichuan_suan_la_fen",
+    "nameZh": "酸辣粉",
+    "nameEn": "Sichuan Hot and Sour Noodles",
+    "regionalCuisine": "sichuan",
+    "cookingMethod": "soup",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "vermicelli",
+        "amount": 150,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "pork_mince",
+        "amount": 60,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "dried_shrimp",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "doubanjiang",
+        "amount": 12,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "chili_flakes",
+        "amount": 8,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sichuan_pepper",
+        "amount": 3,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "vinegar",
+        "amount": 25,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 18,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 12,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cilantro",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sesame_oil",
+        "amount": 5,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 25,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 2,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "红薯粉条用温水浸泡30分钟至软，沥干备用",
+      "锅烧热下少许油，肉末炒散变色加少许生抽炒成肉臊盛出",
+      "碗中放蒜末、辣椒面、花椒粉、虾米",
+      "热25ml油至冒烟浇在辣椒上激出红油",
+      "加陈醋25ml（酸辣粉的灵魂）、生抽、糖、盐和麻油调匀",
+      "锅中烧开水，下粉条煮3分钟至透明软糯",
+      "捞起粉条入调料碗，加2勺面汤拌开",
+      "上铺肉臊，撒葱花和香菜即成酸辣开胃"
+    ]
+  },
+  {
+    "id": "homestyle_mala_xiangguo",
+    "nameZh": "麻辣香锅",
+    "nameEn": "Spicy Numbing Stir-fry Pot",
+    "regionalCuisine": "sichuan",
+    "cookingMethod": "boil",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "shrimp",
+        "amount": 120,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "chicken_wing",
+        "amount": 150,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "potato",
+        "amount": 120,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "mushroom",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "lotus_root",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "broccoli",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "doubanjiang",
+        "amount": 25,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sichuan_pepper",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "chili_flakes",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "chili_pepper",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "star_anise",
+        "amount": 2,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "cumin",
+        "amount": 3,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 20,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 12,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sesame_oil",
+        "amount": 5,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 50,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 3,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 5,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "所有食材洗净切好；土豆和藕切片，鸡翅剁段，蘑菇撕开",
+      "土豆、藕、西兰花分别焯水至半熟捞出沥干",
+      "锅烧热下宽油，鸡翅段煎至两面金黄盛出",
+      "虾下锅煎至变红盛出",
+      "锅留底油，下花椒、八角、辣椒段和姜蒜末爆香",
+      "加豆瓣酱和辣椒面小火炒出麻辣红油",
+      "依次倒入鸡翅、土豆、藕、蘑菇大火翻炒2分钟",
+      "加入西兰花和虾翻炒，撒孜然粉和糖盐调味",
+      "淋少许麻油撒葱花出锅，麻辣干香有锅气"
+    ]
+  },
+  {
+    "id": "homestyle_jisi_liang_mian",
+    "nameZh": "鸡丝凉面",
+    "nameEn": "Cold Noodles with Shredded Chicken",
+    "regionalCuisine": "sichuan",
+    "cookingMethod": "cold_dish",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "noodles_dried",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "chicken_breast",
+        "amount": 150,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cucumber",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "vinegar",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "sesame_oil",
+        "amount": 5,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 5,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "鸡胸肉煮熟撕成丝，黄瓜切丝",
+      "面条煮熟过凉水沥干",
+      "调汁：酱油、醋、糖、蒜末、麻油拌匀",
+      "面条装碗铺上鸡丝和黄瓜丝",
+      "浇上调料汁拌匀即可"
+    ]
+  },
+  {
+    "id": "hunan_xiao_chao_rou",
+    "nameZh": "湘菜小炒肉",
+    "nameEn": "Hunan Stir-fried Pork with Peppers",
+    "regionalCuisine": "hunan",
+    "cookingMethod": "stir_fry",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "pork_belly",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "capsicum",
+        "amount": 150,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "doubanjiang",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 10,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "五花肉切薄片，青椒切片",
+      "锅中不放油先煸肉片至出油微焦",
+      "加蒜末和豆瓣酱炒香",
+      "放入青椒大火翻炒",
+      "加酱油调味出锅"
+    ]
+  },
+  {
+    "id": "hunan_duojiao_zhengyu",
+    "nameZh": "剁椒蒸鱼",
+    "nameEn": "Steamed Fish with Chopped Chili",
+    "regionalCuisine": "hunan",
+    "cookingMethod": "steam",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "snapper",
+        "amount": 500,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "chili_pepper",
+        "amount": 80,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 20,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 20,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cilantro",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "light_soy",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 30,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 3,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 3,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "鱼宰杀洗净，背部从两面斜切3-4刀利于入味，加料酒和盐抹匀腌10分钟",
+      "小米椒和红辣椒剁碎成小粒，加蒜末、姜末、少许盐和糖拌匀做剁椒",
+      "蒸盘铺姜片葱段，将鱼摆在上面，鱼身两侧塞姜片去腥",
+      "将剁椒均匀厚厚铺满鱼身（这是剁椒鱼的灵魂）",
+      "蒸锅大火上汽后放入鱼盘，大火蒸10-12分钟（每500g蒸10分钟）",
+      "出锅倒掉盘中蒸出的水，重新淋少许蒸鱼豉油（生抽加少水）",
+      "撒葱花和香菜，烧热30ml油至冒烟趁热浇在剁椒上激出辣香"
+    ]
+  },
+  {
+    "id": "sichuan_dandan_mian",
+    "nameZh": "担担面",
+    "nameEn": "Dan Dan Noodles",
+    "regionalCuisine": "sichuan",
+    "cookingMethod": "boil",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "noodles_dried",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "pork_mince",
+        "amount": 120,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "bok_choy",
+        "amount": 80,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "doubanjiang",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "chili_flakes",
+        "amount": 8,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sichuan_pepper",
+        "amount": 3,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "light_soy",
+        "amount": 20,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "dark_soy",
+        "amount": 5,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "vinegar",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "sesame_oil",
+        "amount": 8,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 12,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 25,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 2,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "锅烧热下15ml油，下肉末中火炒至酥香干爽，加少许生抽和料酒上色（即\"脆臊\"）盛出",
+      "花椒粒小火干锅炒香碾粉，蒜切末，葱切葱花",
+      "碗中调料：生抽20ml、老抽5ml、醋10ml、糖5g、麻油、蒜末、辣椒面、花椒粉混合",
+      "锅烧热10ml油至冒烟，浇在辣椒面碗中激出红油",
+      "另起锅煮面，至面心熟透捞出沥干",
+      "青菜焯水沥干",
+      "面条放入调料碗中，加2勺面汤稀释酱料",
+      "上面铺脆肉臊和青菜，撒葱花，吃前拌匀"
+    ]
+  },
+  {
+    "id": "hunan_chao_lamian",
+    "nameZh": "辣椒炒肉丝面",
+    "nameEn": "Spicy Pork Noodles",
+    "regionalCuisine": "hunan",
+    "cookingMethod": "boil",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "noodles_dried",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "pork_belly",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "capsicum",
+        "amount": 80,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 10,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "面条煮熟捞出沥干",
+      "肉切丝加酱油腌制，青椒切丝",
+      "热锅下油炒肉丝至变色",
+      "加青椒丝和蒜末翻炒",
+      "放入面条加酱油大火翻炒均匀出锅"
+    ]
+  },
+  {
+    "id": "staple_spicy_fried_rice",
+    "nameZh": "辣椒炒饭",
+    "nameEn": "Spicy Fried Rice",
+    "regionalCuisine": "hunan",
+    "cookingMethod": "staple",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "rice",
+        "amount": 400,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "egg",
+        "amount": 2,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "chili_pepper",
+        "amount": 30,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "pork_mince",
+        "amount": 80,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 2,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 5,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "肉末炒散加蒜辣椒",
+      "炒蛋碎盛出",
+      "加米饭大火翻炒",
+      "加酱油调味",
+      "拌入蛋碎撒葱花"
+    ]
+  },
+  {
+    "id": "staple_sesame_noodle",
+    "nameZh": "芝麻拌面",
+    "nameEn": "Sesame Cold Noodles",
+    "regionalCuisine": "sichuan",
+    "cookingMethod": "staple",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "noodles_dried",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sesame_oil",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 20,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "vinegar",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "chili_flakes",
+        "amount": 3,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "面条煮熟过凉水沥干",
+      "芝麻油酱油醋糖蒜泥调成酱",
+      "面条拌入酱汁",
+      "撒辣椒碎和葱花",
+      "拌匀食用"
+    ]
+  },
+  {
+    "id": "staple_spicy_noodle",
+    "nameZh": "麻辣拌面",
+    "nameEn": "Spicy Numbing Noodles",
+    "regionalCuisine": "sichuan",
+    "cookingMethod": "staple",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "noodles_dried",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "chili_flakes",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sichuan_pepper",
+        "amount": 3,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 18,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "vinegar",
+        "amount": 12,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 12,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sesame_oil",
+        "amount": 8,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 30,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 2,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "花椒粒小火干锅炒香碾成花椒粉",
+      "碗中放辣椒面、花椒粉、蒜末",
+      "锅烧30ml油至冒烟，趁热浇在辣椒面上激出红油，搅拌均匀",
+      "加生抽、醋、糖、盐和麻油调匀成麻辣酱汁",
+      "锅中烧水煮面至筋道，捞入碗中",
+      "将面与麻辣酱汁拌匀，撒葱花即可食用"
+    ]
+  },
+  {
+    "id": "staple_mapo_tofu_rice",
+    "nameZh": "麻婆豆腐盖饭",
+    "nameEn": "Mapo Tofu Rice Bowl",
+    "regionalCuisine": "sichuan",
+    "cookingMethod": "staple",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "rice",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "tofu",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "pork_mince",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "doubanjiang",
+        "amount": 20,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sichuan_pepper",
+        "amount": 4,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "chili_flakes",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 12,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "light_soy",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 20,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 3,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "米饭蒸熟备用，豆腐切2cm丁淡盐水浸泡5分钟去豆腥",
+      "花椒小火炒香碾粉，姜蒜切末，葱切葱花",
+      "锅烧热下油，肉末炒散变色出油",
+      "加豆瓣酱和辣椒面小火炒出红油，下姜蒜末爆香",
+      "倒入200ml热水煮开，加生抽，轻轻滑入豆腐丁",
+      "中火烧3分钟入味，淋水淀粉分两次勾芡",
+      "撒花椒粉和葱花，浇在米饭上即成"
+    ]
+  },
+  {
+    "id": "staple_eggplant_rice",
+    "nameZh": "鱼香茄子盖饭",
+    "nameEn": "Yu Xiang Eggplant Rice Bowl",
+    "regionalCuisine": "sichuan",
+    "cookingMethod": "staple",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "rice",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "eggplant",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "pork_mince",
+        "amount": 80,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "doubanjiang",
+        "amount": 18,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 12,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "vinegar",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 12,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 30,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 2,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "米饭蒸熟备用，茄子切粗条加少许盐腌5分钟挤干水分",
+      "调鱼香汁：醋15ml、糖15g、生抽12ml、料酒10ml、淀粉8g与50ml水搅匀",
+      "姜蒜切末，葱切葱花",
+      "锅烧热多放油，茄条煎至塌软盛出控油",
+      "锅留底油下肉末炒散变色，加豆瓣酱炒出红油",
+      "加姜蒜末爆香，回入茄条翻炒",
+      "沿锅边烹入鱼香汁，大火翻炒收汁",
+      "撒葱花，浇在米饭上即成"
+    ]
+  },
+  {
+    "id": "staple_pork_wonton_dry",
+    "nameZh": "干拌馄饨",
+    "nameEn": "Dry Wontons",
+    "regionalCuisine": "sichuan",
+    "cookingMethod": "staple",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "wonton_wrapper",
+        "amount": 150,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "pork_mince",
+        "amount": 150,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "chili_flakes",
+        "amount": 6,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sichuan_pepper",
+        "amount": 2,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 18,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "vinegar",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "sesame_oil",
+        "amount": 8,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 12,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 5,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 25,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 2,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "肉末加葱姜末、料酒、生抽5ml、盐和少许水朝一个方向搅打上劲",
+      "取馄饨皮包入肉馅捏紧成元宝形",
+      "碗中放蒜末、辣椒面、花椒粉",
+      "热油烧至冒烟浇在辣椒上激出红油，加生抽、醋、糖、麻油调匀",
+      "锅中烧水至沸，下馄饨煮5分钟至浮起且皮透",
+      "捞出馄饨入调料碗，撒葱花拌匀食用"
+    ]
+  },
+  {
+    "id": "cn_beef_noodle_soup_spicy",
+    "nameZh": "麻辣牛肉面",
+    "nameEn": "Spicy Beef Noodle Soup",
+    "regionalCuisine": "sichuan",
+    "cookingMethod": "soup",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "noodles_dried",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "beef_shank",
+        "amount": 250,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "bok_choy",
+        "amount": 80,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "doubanjiang",
+        "amount": 25,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sichuan_pepper",
+        "amount": 4,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "chili_flakes",
+        "amount": 6,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 20,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "star_anise",
+        "amount": 2,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "bay_leaf",
+        "amount": 2,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cilantro",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "rock_sugar",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 25,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 3,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "牛腱子肉切3cm块，冷水下锅焯水去血沫捞出洗净",
+      "锅烧热下油，下姜片、八角和香叶炒香",
+      "加豆瓣酱和辣椒面小火炒出红油",
+      "加冰糖炒至融化，倒入牛肉块翻炒上色",
+      "烹入料酒和生抽，加1.5L热水没过牛肉",
+      "加花椒和蒜瓣，大火烧开转小火慢炖90分钟至牛肉酥烂",
+      "另起锅煮面至筋道，焯青菜铺碗底",
+      "面入碗，铺牛肉块，浇红汤，撒葱花和香菜即成"
+    ]
+  },
+  {
+    "id": "staple_spicy_pork_noodle",
+    "nameZh": "辣肉丝面",
+    "nameEn": "Spicy Pork Noodles",
+    "regionalCuisine": "sichuan",
+    "cookingMethod": "staple",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "noodles_dried",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "pork_loin",
+        "amount": 150,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "bok_choy",
+        "amount": 80,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "doubanjiang",
+        "amount": 18,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "chili_flakes",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 8,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 12,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sesame_oil",
+        "amount": 5,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 25,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 2,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "猪里脊逆纹切丝，加料酒、生抽5ml和淀粉抓匀腌10分钟",
+      "蒜切末，姜切末，葱白与葱绿分开切",
+      "锅烧热下油，肉丝大火快速滑散至变色盛出",
+      "锅留底油加豆瓣酱、辣椒面和姜蒜末小火炒出红油",
+      "回入肉丝翻炒，加生抽和少许糖调味",
+      "另起锅煮面至筋道，青菜焯水沥干铺碗底",
+      "面条入碗，浇上辣肉丝臊子，淋麻油撒葱花"
+    ]
+  },
+  {
+    "id": "staple_spicy_beef_noodle",
+    "nameZh": "红油牛肉面",
+    "nameEn": "Red Oil Beef Noodles",
+    "regionalCuisine": "sichuan",
+    "cookingMethod": "staple",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "noodles_dried",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "beef_shank",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "bok_choy",
+        "amount": 80,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "chili_flakes",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sichuan_pepper",
+        "amount": 4,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 18,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "vinegar",
+        "amount": 8,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 12,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 12,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "star_anise",
+        "amount": 1,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cilantro",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sesame_oil",
+        "amount": 5,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 30,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 3,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "牛腱子焯水后冷水下锅，加姜片、八角和料酒大火烧开转小火炖60分钟至软",
+      "捞出牛肉晾凉切薄片，原汤过滤备用",
+      "花椒小火干锅炒香碾粉",
+      "碗中放辣椒面、花椒粉、蒜末",
+      "热30ml油至冒烟浇在辣椒上激出红油",
+      "加生抽、醋、麻油和2勺牛肉汤调匀成红油底",
+      "另锅煮面至筋道，青菜焯水",
+      "面条入碗，铺牛肉片和青菜，浇牛肉汤，撒葱花和香菜"
+    ]
+  }
+]

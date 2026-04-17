@@ -1,0 +1,7064 @@
+[
+  {
+    "id": "shanghai_xiaolongbao",
+    "nameZh": "上海小笼包",
+    "nameEn": "Shanghai Soup Dumplings",
+    "regionalCuisine": "shanghai",
+    "cookingMethod": "steam",
+    "difficulty": "hard",
+    "ingredients": [
+      {
+        "ingredientId": "pork_mince",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "flour",
+        "amount": 250,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "pork_skin",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 20,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 3,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "light_soy",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "ingredientId": "sesame_oil",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "ingredientId": "white_pepper",
+        "amount": 0.25,
+        "unit": "tsp"
+      },
+      {
+        "ingredientId": "black_vinegar",
+        "amount": 3,
+        "unit": "tbsp"
+      }
+    ],
+    "steps": [
+      "猪皮焯水后剔净油脂，加水慢炖 2 小时至浓稠，过滤冷藏成皮冻",
+      "面粉加 130ml 温水和少许盐揉成光滑面团，静置 30 分钟",
+      "皮冻切细丁拌入猪肉馅",
+      "姜葱水分次打入肉馅同向搅拌至上劲，加生抽、料酒、糖、盐、白胡椒、麻油调味",
+      "面团搓长条切剂子，擀成中间厚边缘薄的圆皮",
+      "包入约 15g 馅，捏出 18 褶合拢",
+      "蒸笼铺油纸或白菜叶，包子上笼水沸蒸 8 分钟",
+      "配姜丝香醋蘸食"
+    ]
+  },
+  {
+    "id": "jiangsu_songshu_mandarin_fish",
+    "nameZh": "松鼠鳜鱼",
+    "nameEn": "Sweet and Sour Mandarin Fish",
+    "regionalCuisine": "jiangsu",
+    "cookingMethod": "deep_fry",
+    "difficulty": "hard",
+    "ingredients": [
+      {
+        "ingredientId": "mandarin_fish",
+        "amount": 800,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 150,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "egg",
+        "amount": 1,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "tomato_paste",
+        "amount": 4,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 4,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "rice_vinegar",
+        "amount": 4,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "light_soy",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "pea",
+        "amount": 50,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "carrot",
+        "amount": 30,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "pine_nut",
+        "amount": 20,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 1000,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 3,
+        "unit": "piece"
+      }
+    ],
+    "steps": [
+      "鳜鱼去鳞去内脏，沿脊骨片出两边肉保留鱼头和尾巴相连",
+      "鱼肉内侧打菱形花刀不切断皮",
+      "鱼身用盐、料酒、蛋液腌 15 分钟",
+      "鱼身均匀拍裹淀粉抖掉多余",
+      "油温 180℃ 提着鱼尾下锅炸至花刀张开",
+      "再复炸 1 分钟至金黄酥脆捞出摆盘（尾部翘起似松鼠）",
+      "锅留底油炒香蒜末",
+      "下番茄酱炒出红油",
+      "加糖、醋、生抽、水淀粉煮开成糖醋汁",
+      "下青豆胡萝卜丁拌匀",
+      "酱汁浇鱼身撒松子仁"
+    ]
+  },
+  {
+    "id": "jiangsu_yanshui_duck",
+    "nameZh": "南京盐水鸭",
+    "nameEn": "Nanjing Salted Duck",
+    "regionalCuisine": "jiangsu",
+    "cookingMethod": "boil",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "duck",
+        "amount": 1500,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sichuan_pepper",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "star_anise",
+        "amount": 3,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "cinnamon",
+        "amount": 1,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "bay_leaf",
+        "amount": 3,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 50,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 4,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 3,
+        "unit": "tbsp"
+      }
+    ],
+    "steps": [
+      "盐与花椒干锅小火焙 3 分钟炒香",
+      "炒好的椒盐趁热均匀抹遍鸭身内外按摩 5 分钟",
+      "鸭子密封冷藏腌 12 小时",
+      "腌好的鸭子用清水冲洗浮盐",
+      "另起锅加足量水，放姜、葱结、八角、桂皮、香叶、料酒煮开成卤汤",
+      "鸭子腹朝上入锅，水温保持 85-90℃ 不沸腾浸 40 分钟",
+      "浸熟的鸭子提出沥干，卤汤重新煮开",
+      "鸭子再入锅浸 20 分钟至完全入味",
+      "取出晾凉斩件装盘"
+    ]
+  },
+  {
+    "id": "jiangsu_crab_lion_head",
+    "nameZh": "清炖蟹粉狮子头",
+    "nameEn": "Crab Roe Lion Head Meatball",
+    "regionalCuisine": "jiangsu",
+    "cookingMethod": "stew",
+    "difficulty": "hard",
+    "ingredients": [
+      {
+        "ingredientId": "pork_belly",
+        "amount": 500,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "crab",
+        "amount": 2,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "chinese_cabbage",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "egg",
+        "amount": 1,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 30,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 3,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "light_soy",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "ingredientId": "white_pepper",
+        "amount": 0.5,
+        "unit": "tsp"
+      },
+      {
+        "ingredientId": "chicken_stock",
+        "amount": 1000,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 0.5,
+        "unit": "tsp"
+      }
+    ],
+    "steps": [
+      "螃蟹蒸熟拆出蟹黄蟹肉",
+      "猪肉肥三瘦七手工切石榴米粒大小",
+      "肉粒加姜葱水、盐、料酒、生抽、白胡椒、糖同向搅拌上劲",
+      "加蛋清和少许淀粉续搅",
+      "肉馅中轻拌入一半蟹粉蟹肉",
+      "手沾水团成大肉丸（直径约 8cm），中间略凹包入剩余蟹粉再封口",
+      "砂锅底铺白菜叶，肉丸轻放其上",
+      "加热鸡汤没过肉丸 2/3，加姜片葱结",
+      "大火煮开撇浮沫，小火加盖炖 1.5 小时至汤清肉嫩",
+      "调盐装盘淋汤"
+    ]
+  },
+  {
+    "id": "jiangsu_wensi_tofu_soup",
+    "nameZh": "文思豆腐羹",
+    "nameEn": "Wensi Tofu Soup",
+    "regionalCuisine": "jiangsu",
+    "cookingMethod": "soup",
+    "difficulty": "hard",
+    "ingredients": [
+      {
+        "ingredientId": "silken_tofu",
+        "amount": 400,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "chicken_breast",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ham",
+        "amount": 50,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "dried_mushroom",
+        "amount": 5,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "chicken_stock",
+        "amount": 800,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "ingredientId": "white_pepper",
+        "amount": 0.25,
+        "unit": "tsp"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "egg",
+        "amount": 1,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 1,
+        "unit": "piece"
+      }
+    ],
+    "steps": [
+      "嫩豆腐泡淡盐水 5 分钟定型",
+      "豆腐先切薄片再切极细丝（尽量细如发）浸入清水中散开",
+      "鸡胸肉、火腿、泡发的香菇分别切细丝",
+      "鸡汤烧开撇去浮沫",
+      "下鸡肉丝、香菇丝、火腿丝煮 3 分钟",
+      "豆腐丝轻轻倒入（漂浮于汤面）",
+      "蛋清打散淋入形成絮状",
+      "水淀粉勾薄芡",
+      "调盐白胡椒，撒葱花"
+    ]
+  },
+  {
+    "id": "zhejiang_west_lake_fish",
+    "nameZh": "西湖醋鱼",
+    "nameEn": "West Lake Vinegar Fish",
+    "regionalCuisine": "zhejiang",
+    "cookingMethod": "boil",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "snapper",
+        "amount": 750,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 30,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "black_vinegar",
+        "amount": 4,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 3,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "light_soy",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 0.5,
+        "unit": "tsp"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 2,
+        "unit": "piece"
+      }
+    ],
+    "steps": [
+      "鱼从背部剖开洗净但不切断腹皮",
+      "大锅烧开足量水加姜片葱结",
+      "鱼皮朝上入锅烫 30 秒翻面再烫 30 秒",
+      "保持水面将沸不沸浸 5-6 分钟熟透",
+      "小心捞出鱼沥水摆盘（鱼头呈扬起状）",
+      "取适量煮鱼水 200ml，加醋、糖、生抽、姜末煮开",
+      "水淀粉勾薄芡至酱汁红亮",
+      "酱汁浇鱼身，撒姜丝即可"
+    ]
+  },
+  {
+    "id": "zhejiang_longjing_shrimp",
+    "nameZh": "龙井虾仁",
+    "nameEn": "Longjing Shrimp",
+    "regionalCuisine": "zhejiang",
+    "cookingMethod": "stir_fry",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "shrimp",
+        "amount": 400,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "egg",
+        "amount": 1,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 0.5,
+        "unit": "tsp"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 3,
+        "unit": "tbsp"
+      }
+    ],
+    "steps": [
+      "虾仁开背去线洗净，用厨房纸按压吸干",
+      "虾仁加盐抓匀静置 2 分钟，加蛋清和淀粉抓至略带白色",
+      "冷藏 30 分钟让虾仁更脆嫩",
+      "龙井茶 3g 用 80℃ 水冲泡 3 分钟，保留茶叶和 2 勺茶汤",
+      "热锅冷油烧至四成热下虾仁滑炒至变白卷曲盛出",
+      "原锅留油下茶叶翻 5 秒",
+      "虾仁回锅，加茶汤和料酒翻匀即起锅"
+    ]
+  },
+  {
+    "id": "zhejiang_dongpo_pork",
+    "nameZh": "东坡肉",
+    "nameEn": "Dongpo Pork",
+    "regionalCuisine": "zhejiang",
+    "cookingMethod": "braise",
+    "difficulty": "hard",
+    "ingredients": [
+      {
+        "ingredientId": "pork_belly",
+        "amount": 800,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 5,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 50,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 200,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "light_soy",
+        "amount": 3,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "dark_soy",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "rock_sugar",
+        "amount": 60,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "star_anise",
+        "amount": 2,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "bay_leaf",
+        "amount": 2,
+        "unit": "piece"
+      }
+    ],
+    "steps": [
+      "五花肉切 5cm 见方大块",
+      "冷水下锅加姜片料酒焯水煮 10 分钟",
+      "捞出冲洗干净",
+      "砂锅底铺满葱段和姜片（肉才不粘底）",
+      "五花肉皮朝下整齐码放",
+      "加料酒、生抽、老抽、冰糖、八角、月桂和热水刚没过肉",
+      "大火烧开转最小火加盖焖 1.5 小时",
+      "将肉翻面皮朝上继续焖 1 小时",
+      "揭盖大火收浓汤汁，浇在肉上",
+      "整块肉上笼蒸 30 分钟让油脂进一步融化"
+    ]
+  },
+  {
+    "id": "zhejiang_beggar_chicken",
+    "nameZh": "杭帮叫花鸡",
+    "nameEn": "Beggars Chicken",
+    "regionalCuisine": "zhejiang",
+    "cookingMethod": "roast",
+    "difficulty": "hard",
+    "ingredients": [
+      {
+        "ingredientId": "chicken_whole",
+        "amount": 1500,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "lotus_leaf",
+        "amount": 3,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "flour",
+        "amount": 500,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "pork_belly",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "dried_mushroom",
+        "amount": 8,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "bamboo_shoot",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 3,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 30,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "light_soy",
+        "amount": 3,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "dark_soy",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 3,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "five_spice",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "ingredientId": "sesame_oil",
+        "amount": 2,
+        "unit": "tbsp"
+      }
+    ],
+    "steps": [
+      "整鸡去内脏洗净擦干",
+      "用酱油、料酒、盐、糖、五香粉抹匀鸡内外腌 2 小时",
+      "五花肉、泡发香菇、笋切丁炒香作馅塞入鸡腹",
+      "荷叶泡软将鸡层层包裹",
+      "面粉加盐和水揉成粗糙面团擀成大面片",
+      "面片包裹荷叶鸡完全密封",
+      "烤箱 200℃ 烤 1 小时后降到 180℃ 再烤 3 小时",
+      "上桌时敲开面壳和荷叶，满屋飘香"
+    ]
+  },
+  {
+    "id": "anhui_stinky_mandarin_fish",
+    "nameZh": "徽州臭鳜鱼",
+    "nameEn": "Anhui Stinky Mandarin Fish",
+    "regionalCuisine": "anhui",
+    "cookingMethod": "braise",
+    "difficulty": "hard",
+    "ingredients": [
+      {
+        "ingredientId": "mandarin_fish",
+        "amount": 800,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "pork_belly",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 30,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 10,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 3,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "dried_chili",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "doubanjiang",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "dark_soy",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "light_soy",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 3,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "chicken_stock",
+        "amount": 500,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "市售腌好的徽州臭鳜鱼（或自腌 7 天）洗净擦干",
+      "鱼身两面划斜刀便于入味",
+      "五花肉切小丁，锅中煸出油脂",
+      "下姜片、蒜瓣、干辣椒段炒香",
+      "加豆瓣酱炒出红油",
+      "鱼入锅两面煎至焦黄",
+      "淋料酒、生抽、老抽、糖",
+      "加高汤没过鱼身",
+      "大火烧开转小火烧 15 分钟",
+      "大火收汁至浓稠，撒葱花"
+    ]
+  },
+  {
+    "id": "anhui_wenzheng_bamboo",
+    "nameZh": "问政山笋",
+    "nameEn": "Wenzheng Mountain Bamboo Shoots",
+    "regionalCuisine": "anhui",
+    "cookingMethod": "stew",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "bamboo_shoot",
+        "amount": 500,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ham",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "chicken_stock",
+        "amount": 800,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 2,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 0.5,
+        "unit": "tsp"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "sesame_oil",
+        "amount": 1,
+        "unit": "tsp"
+      }
+    ],
+    "steps": [
+      "春笋剥壳切滚刀块",
+      "冷水下锅加盐焯 5 分钟去涩",
+      "火腿切薄片",
+      "砂锅加鸡汤、笋块、火腿片、姜葱",
+      "大火烧开转小火炖 30 分钟至笋软",
+      "调盐淋麻油"
+    ]
+  },
+  {
+    "id": "anhui_li_hongzhang_hotpot",
+    "nameZh": "李鸿章杂烩",
+    "nameEn": "Li Hongzhang Hodgepodge",
+    "regionalCuisine": "anhui",
+    "cookingMethod": "stew",
+    "difficulty": "hard",
+    "ingredients": [
+      {
+        "ingredientId": "chicken_thigh",
+        "amount": 400,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sea_cucumber",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ham",
+        "amount": 80,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "dried_mushroom",
+        "amount": 8,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "bamboo_shoot",
+        "amount": 150,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "egg",
+        "amount": 4,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "pork_mince",
+        "amount": 150,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "quail_egg",
+        "amount": 10,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "chinese_cabbage",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "chicken_stock",
+        "amount": 1000,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "light_soy",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "ingredientId": "white_pepper",
+        "amount": 0.5,
+        "unit": "tsp"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 20,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 3,
+        "unit": "piece"
+      }
+    ],
+    "steps": [
+      "鸡肉切块焯水",
+      "海参泡发切段，香菇泡发切片",
+      "火腿切片，笋切片",
+      "鹌鹑蛋煮熟剥壳",
+      "鸡蛋打散摊蛋皮，包入猪肉馅折成蛋饺",
+      "砂锅铺白菜叶，按鸡块、火腿、香菇、笋、海参、蛋饺、鹌鹑蛋顺序分层摆放",
+      "加热高汤、料酒、生抽没过食材",
+      "大火烧开小火炖 45 分钟",
+      "水淀粉勾薄芡调盐和白胡椒",
+      "撒葱花出锅"
+    ]
+  },
+  {
+    "id": "fujian_buddha_jumps_wall",
+    "nameZh": "佛跳墙",
+    "nameEn": "Buddha Jumps Over the Wall",
+    "regionalCuisine": "fujian",
+    "cookingMethod": "stew",
+    "difficulty": "hard",
+    "ingredients": [
+      {
+        "ingredientId": "abalone",
+        "amount": 6,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "sea_cucumber",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "chicken_whole",
+        "amount": 500,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "pork_trotter",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "dried_scallop",
+        "amount": 30,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "dried_mushroom",
+        "amount": 10,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "bamboo_shoot",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "quail_egg",
+        "amount": 10,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "ham",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "shaoxing_wine",
+        "amount": 100,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "chicken_stock",
+        "amount": 1500,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 50,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 4,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "ingredientId": "rock_sugar",
+        "amount": 20,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "lotus_leaf",
+        "amount": 1,
+        "unit": "piece"
+      }
+    ],
+    "steps": [
+      "干贝、海参、香菇分别提前一天泡发",
+      "鲍鱼处理干净划十字花",
+      "整鸡斩块、猪蹄切块，分别焯水",
+      "鹌鹑蛋煮熟剥壳",
+      "火腿和笋切片",
+      "砂煲底放鸡块、猪蹄打底",
+      "按火腿、香菇、笋、海参、鹌鹑蛋、干贝分层码放",
+      "鲍鱼摆顶层",
+      "淋花雕酒，加鸡汤没过食材",
+      "姜葱铺顶用荷叶封口，再盖盖",
+      "大火烧开转最小火煨 4 小时",
+      "食用前调盐和冰糖"
+    ]
+  },
+  {
+    "id": "fujian_red_rice_pork",
+    "nameZh": "福州红糟肉",
+    "nameEn": "Fuzhou Red Rice Wine Pork",
+    "regionalCuisine": "fujian",
+    "cookingMethod": "deep_fry",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "pork_belly",
+        "amount": 500,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "shaoxing_wine",
+        "amount": 100,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "light_soy",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 20,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 5,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "five_spice",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 3,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 800,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "五花肉切 2cm 厚片",
+      "红糟（市售）与料酒、糖、生抽、姜蒜末、五香粉、盐调成腌料",
+      "肉片埋入腌料冷藏 3 小时以上",
+      "腌好的肉片拍一层薄淀粉",
+      "油温 170℃ 下锅炸 5 分钟至表面定型捞出",
+      "油温升至 190℃ 复炸 1 分钟至酒红色酥脆",
+      "滤油装盘切小块食用"
+    ]
+  },
+  {
+    "id": "taiwanese_oyster_omelet",
+    "nameZh": "台式蚵仔煎",
+    "nameEn": "Taiwanese Oyster Omelet",
+    "regionalCuisine": "taiwanese",
+    "cookingMethod": "deep_fry",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "oyster",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "egg",
+        "amount": 3,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 80,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "bok_choy",
+        "amount": 150,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sweet_chili_sauce",
+        "amount": 3,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "tomato_paste",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "miso_paste",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 3,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 0.5,
+        "unit": "tsp"
+      },
+      {
+        "ingredientId": "white_pepper",
+        "amount": 0.25,
+        "unit": "tsp"
+      }
+    ],
+    "steps": [
+      "红薯粉（用淀粉替代亦可）加 150ml 水调成稀糊",
+      "小油菜切段，蚵仔洗净沥水",
+      "甜辣酱、番茄酱、味噌、糖加少许水熬煮成酱汁",
+      "平底锅热油，铺一层蚵仔煎 30 秒",
+      "倒入粉浆铺匀形成圆薄片",
+      "蛋液打散倒在粉浆上",
+      "铺青菜段，边缘煎脆翻面",
+      "再煎 1 分钟至两面金黄",
+      "装盘淋酱汁"
+    ]
+  },
+  {
+    "id": "shanghai_oil_explode_shrimp",
+    "nameZh": "上海油爆虾",
+    "nameEn": "Shanghai Oil-Exploded Shrimp",
+    "regionalCuisine": "shanghai",
+    "cookingMethod": "stir_fry",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "shrimp",
+        "amount": 500,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "dark_soy",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "light_soy",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "rock_sugar",
+        "amount": 30,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "black_vinegar",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 20,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 4,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 2,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 300,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "活虾剪须开背保留壳擦干水分",
+      "油温烧至 200℃ 虾入油锅炸 30 秒至壳红脆捞出",
+      "锅留 2 勺油爆香姜蒜葱",
+      "淋料酒、生抽、老抽",
+      "加冰糖化开",
+      "虾回锅大火翻炒均匀",
+      "沿锅边淋少许醋激香",
+      "汤汁浓稠裹满虾壳即起锅"
+    ]
+  },
+  {
+    "id": "shanghai_scallion_baked_tilapia",
+    "nameZh": "葱烤鲫鱼",
+    "nameEn": "Shanghai Scallion Baked Fish",
+    "regionalCuisine": "shanghai",
+    "cookingMethod": "braise",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "tilapia",
+        "amount": 800,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 30,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 100,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "light_soy",
+        "amount": 4,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "dark_soy",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "rock_sugar",
+        "amount": 50,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "black_vinegar",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "star_anise",
+        "amount": 2,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 500,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "sesame_oil",
+        "amount": 1,
+        "unit": "tbsp"
+      }
+    ],
+    "steps": [
+      "小鲫鱼去鳃去内脏洗净擦干",
+      "油温 180℃ 鱼下锅炸至两面金黄酥脆",
+      "砂锅底铺厚厚一层葱段和姜片",
+      "炸好的鱼铺在葱上",
+      "再盖一层葱段",
+      "加料酒、生抽、老抽、冰糖、八角和热水至与鱼齐平",
+      "大火烧开小火焖 30 分钟",
+      "沿锅边淋醋和麻油",
+      "关火焖 10 分钟入味",
+      "冷却后取出连葱带鱼摆盘"
+    ]
+  },
+  {
+    "id": "shanghai_four_joy_wheat_gluten",
+    "nameZh": "四喜烤麸",
+    "nameEn": "Four Joy Wheat Gluten",
+    "regionalCuisine": "shanghai",
+    "cookingMethod": "braise",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "wheat_gluten",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "wood_ear",
+        "amount": 20,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "dried_mushroom",
+        "amount": 8,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "dried_lily_bud",
+        "amount": 20,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "peanut",
+        "amount": 80,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "dark_soy",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "light_soy",
+        "amount": 3,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "rock_sugar",
+        "amount": 60,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "star_anise",
+        "amount": 2,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 500,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "sesame_oil",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 10,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "烤麸撕成小块挤干水分",
+      "木耳、香菇、金针菜泡发",
+      "油温 180℃ 烤麸下锅炸至金黄膨松捞出",
+      "花生单独焯水去皮",
+      "锅留底油爆香姜片八角",
+      "下烤麸、香菇、木耳、金针菜、花生",
+      "加生抽、老抽、冰糖和水没过食材",
+      "大火烧开小火烧 20 分钟",
+      "大火收汁至浓稠",
+      "淋麻油放凉食用"
+    ]
+  },
+  {
+    "id": "shanghai_xiangyou_eel",
+    "nameZh": "响油鳝糊",
+    "nameEn": "Sizzling Oil Eel",
+    "regionalCuisine": "shanghai",
+    "cookingMethod": "stir_fry",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "eel",
+        "amount": 400,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 10,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 3,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "cilantro",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "dark_soy",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "light_soy",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "black_vinegar",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "white_pepper",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "ingredientId": "sesame_oil",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 4,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 1,
+        "unit": "tbsp"
+      }
+    ],
+    "steps": [
+      "活鳝划背取净肉切长段",
+      "姜切丝，蒜分两份一份切末一份压泥",
+      "热锅冷油下葱段炸成焦黑后捞出成葱油",
+      "葱油留 1 勺炒香姜丝",
+      "下鳝丝大火爆炒变色",
+      "淋料酒、老抽、生抽、糖和少许水焖 2 分钟",
+      "水淀粉勾芡出盘堆成小山状",
+      "顶部撒蒜泥和白胡椒",
+      "另锅烧热 3 勺油至冒烟",
+      "热油浇在蒜泥上激出'呲'声",
+      "撒葱花香菜，淋几滴醋和麻油"
+    ]
+  },
+  {
+    "id": "shanghai_yan_du_xian",
+    "nameZh": "腌笃鲜",
+    "nameEn": "Shanghai Pork Bamboo Soup",
+    "regionalCuisine": "shanghai",
+    "cookingMethod": "stew",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "pork_belly",
+        "amount": 400,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ham",
+        "amount": 150,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "bamboo_shoot",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "dried_tofu_skin",
+        "amount": 50,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 20,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 2,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 0.5,
+        "unit": "tsp"
+      },
+      {
+        "ingredientId": "white_pepper",
+        "amount": 0.25,
+        "unit": "tsp"
+      }
+    ],
+    "steps": [
+      "鲜五花肉和咸肉分别切 3cm 方块",
+      "两者冷水下锅焯水去腥",
+      "春笋切滚刀块，沸水加盐焯 5 分钟去涩",
+      "砂锅加 2L 水",
+      "放鲜肉、咸肉、姜片、葱结",
+      "大火烧开撇浮沫",
+      "加料酒转小火煨 1 小时",
+      "下春笋和豆腐结（打结的豆腐皮）继续煨 1 小时",
+      "调盐和白胡椒即可（咸肉自带咸味少放）"
+    ]
+  },
+  {
+    "id": "yunnan_crossing_bridge_noodle",
+    "nameZh": "云南过桥米线",
+    "nameEn": "Yunnan Crossing-Bridge Noodle",
+    "regionalCuisine": "yunnan",
+    "cookingMethod": "soup",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "chicken_whole",
+        "amount": 600,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "pork_loin",
+        "amount": 150,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "chicken_breast",
+        "amount": 150,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "rice_noodles",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "quail_egg",
+        "amount": 4,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "bean_sprouts",
+        "amount": 80,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "chinese_cabbage",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "dried_tofu_skin",
+        "amount": 30,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 3,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "cilantro",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 20,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "ingredientId": "white_pepper",
+        "amount": 0.5,
+        "unit": "tsp"
+      },
+      {
+        "ingredientId": "chili_oil",
+        "amount": 1,
+        "unit": "tbsp"
+      }
+    ],
+    "steps": [
+      "整鸡加姜片冷水下锅小火炖 2 小时至汤色金黄",
+      "汤锅保持微沸状态不撇浮油（油层锁温）",
+      "里脊和鸡胸分别切极薄片摆盘",
+      "豆芽、白菜、豆皮等蔬菜分别装小盘",
+      "米线焯熟过冷水沥干",
+      "上桌时大碗烫一下，再倒入滚烫鸡汤",
+      "立即放生肉片和鹌鹑蛋靠汤温烫熟",
+      "下蔬菜和米线",
+      "调盐白胡椒，淋辣油撒葱花香菜"
+    ]
+  },
+  {
+    "id": "yunnan_steam_pot_chicken",
+    "nameZh": "云南汽锅鸡",
+    "nameEn": "Yunnan Steam Pot Chicken",
+    "regionalCuisine": "yunnan",
+    "cookingMethod": "steam",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "chicken_whole",
+        "amount": 1200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 30,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 3,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "goji_berry",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "red_date",
+        "amount": 30,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "dried_mushroom",
+        "amount": 6,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "white_pepper",
+        "amount": 0.25,
+        "unit": "tsp"
+      }
+    ],
+    "steps": [
+      "土鸡斩块焯水洗净",
+      "汽锅（无则用深盘+蒸架）装入鸡块",
+      "加姜片、葱结、枣、菇、料酒",
+      "表面撒薄盐不加水",
+      "蒸锅大火蒸 3 小时",
+      "食用前加枸杞焖 5 分钟",
+      "撒白胡椒"
+    ]
+  },
+  {
+    "id": "taiwanese_beef_noodle",
+    "nameZh": "台湾牛肉面",
+    "nameEn": "Taiwanese Beef Noodle Soup",
+    "regionalCuisine": "taiwanese",
+    "cookingMethod": "soup",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "beef_brisket",
+        "amount": 700,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "beef_tendon",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "egg_noodles",
+        "amount": 400,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "tomato",
+        "amount": 3,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "onion",
+        "amount": 1,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "doubanjiang",
+        "amount": 3,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "dark_soy",
+        "amount": 3,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "light_soy",
+        "amount": 3,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "rock_sugar",
+        "amount": 30,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 3,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "star_anise",
+        "amount": 3,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "cinnamon",
+        "amount": 1,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "bay_leaf",
+        "amount": 3,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "sichuan_pepper",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "ingredientId": "pickled_mustard",
+        "amount": 60,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "bok_choy",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 30,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 6,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 3,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 3,
+        "unit": "tbsp"
+      }
+    ],
+    "steps": [
+      "牛腩和牛筋切大块冷水下锅焯水",
+      "番茄切块，洋葱切块",
+      "锅中热油炒香姜蒜葱",
+      "下豆瓣酱炒出红油",
+      "加番茄炒至出汁",
+      "下牛肉块翻炒上色",
+      "淋料酒、生抽、老抽、冰糖",
+      "加八角、桂皮、月桂、花椒",
+      "加热水没过肉烧开转小火炖 2.5 小时至筷子能插透",
+      "面条另锅煮熟过冷水",
+      "青菜焯水",
+      "面条装碗浇牛肉汤",
+      "铺牛肉块、牛筋、青菜、酸菜末"
+    ]
+  },
+  {
+    "id": "hubei_re_gan_noodle",
+    "nameZh": "武汉热干面",
+    "nameEn": "Wuhan Hot Dry Noodles",
+    "regionalCuisine": "hubei",
+    "cookingMethod": "staple",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "noodles_dried",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sesame_paste",
+        "amount": 3,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "light_soy",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "black_vinegar",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "chili_oil",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "pickled_mustard",
+        "amount": 50,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "peanut",
+        "amount": 30,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 2,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "cilantro",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sesame_oil",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 0.5,
+        "unit": "tsp"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 3,
+        "unit": "piece"
+      }
+    ],
+    "steps": [
+      "碱面水沸后煮 3 分钟至八成熟",
+      "捞出过冷水再拌少许食用油防粘",
+      "面条摊开让其回凉 15 分钟（传统做法）",
+      "芝麻酱加温水调稀至流动状",
+      "加入生抽、醋、糖、蒜末、麻油调匀",
+      "面条入沸水再烫 15 秒捞出",
+      "浇芝麻酱汁",
+      "撒萝卜丁、酸豆角碎、花生碎、葱花香菜",
+      "淋辣油拌匀食用"
+    ]
+  },
+  {
+    "id": "fujian_shacha_beef",
+    "nameZh": "沙茶牛肉",
+    "nameEn": "Shacha Beef",
+    "regionalCuisine": "fujian",
+    "cookingMethod": "stir_fry",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "beef_sirloin",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "shacha_sauce",
+        "amount": 3,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "onion",
+        "amount": 1,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "capsicum",
+        "amount": 1,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 2,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 4,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "light_soy",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 2,
+        "unit": "tbsp"
+      }
+    ],
+    "steps": [
+      "牛肉逆纹切薄片，加沙茶 1 勺、料酒、淀粉抓匀腌 15 分钟",
+      "洋葱和彩椒切片，蒜切末",
+      "热锅热油爆香蒜末",
+      "下腌好的牛肉大火滑炒至八成熟盛出",
+      "原锅炒洋葱和彩椒至断生",
+      "牛肉回锅，加剩余沙茶酱、生抽、糖翻炒均匀",
+      "撒葱段出锅"
+    ]
+  },
+  {
+    "id": "asian_papaya_milk",
+    "nameZh": "木瓜牛奶",
+    "nameEn": "Papaya Milk",
+    "regionalCuisine": "taiwanese",
+    "cookingMethod": "cold_dish",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "papaya",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "milk",
+        "amount": 400,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "honey",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "lemon",
+        "amount": 0.25,
+        "unit": "piece"
+      }
+    ],
+    "steps": [
+      "木瓜对半切开挖籽切块",
+      "与冷牛奶、蜂蜜一起放入料理机",
+      "高速打 30 秒至顺滑",
+      "挤几滴柠檬汁防止牛奶与木瓜反应变苦"
+    ]
+  },
+  {
+    "id": "dong-po-rou",
+    "nameZh": "东坡红烧肉",
+    "nameEn": "Dongpo Braised Pork Belly",
+    "regionalCuisine": "zhejiang",
+    "cookingMethod": "braise",
+    "difficulty": "hard",
+    "ingredients": [
+      {
+        "ingredientId": "pork_belly",
+        "amount": 600,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "dark_soy",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "light_soy",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 100,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 3,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 5,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 4,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "star_anise",
+        "amount": 2,
+        "unit": "piece"
+      }
+    ],
+    "steps": [
+      "五花肉切5cm见方大块，冷水下锅焯水5分钟去血沫捞出",
+      "锅底铺上葱段和姜片形成隔层防止粘锅",
+      "肉块皮朝下整齐码放在葱姜上",
+      "加入料酒、生抽、老抽、冰糖和八角，水量刚好没过肉",
+      "大火烧开后转最小火加盖慢炖1.5小时",
+      "将肉块翻面皮朝上，继续炖30分钟至肉酥烂",
+      "大火收汁至汤汁浓稠油亮，轻轻取出摆盘浇汁"
+    ]
+  },
+  {
+    "id": "tang-cu-pai-gu",
+    "nameZh": "糖醋排骨",
+    "nameEn": "Sweet and Sour Spare Ribs",
+    "regionalCuisine": "jiangsu",
+    "cookingMethod": "braise",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "pork_ribs",
+        "amount": 500,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "vinegar",
+        "amount": 3,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 3,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "light_soy",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "tomato_paste",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 3,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 3,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 2,
+        "unit": "tbsp"
+      }
+    ],
+    "steps": [
+      "排骨剁3cm段冷水下锅，加料酒姜片焯水5分钟去血沫",
+      "捞出排骨冲洗干净沥水备用",
+      "锅中放油和糖小火炒糖色至枣红色起大泡",
+      "迅速下排骨翻炒上色，加姜片蒜瓣煸香",
+      "加入生抽番茄酱和开水没过排骨，大火烧开转小火炖25分钟",
+      "排骨熟烂后加醋大火收汁翻炒",
+      "汤汁浓稠挂满排骨时撒白芝麻出锅"
+    ]
+  },
+  {
+    "id": "edamame_stir_fry",
+    "nameZh": "雪菜毛豆",
+    "nameEn": "Edamame with Pickled Mustard Greens",
+    "regionalCuisine": "zhejiang",
+    "cookingMethod": "stir_fry",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "edamame",
+        "amount": 250,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "pork_mince",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "chili_pepper",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "light_soy",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 3,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 15,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "毛豆剥出豆粒，焯水3分钟至翠绿熟透捞出",
+      "热锅下油炒散肉末至变色",
+      "放入蒜末和小米椒翻炒出香",
+      "加入毛豆粒大火翻炒2分钟",
+      "淋入生抽，加少许糖提鲜",
+      "翻炒均匀至毛豆裹上调味即可出锅"
+    ]
+  },
+  {
+    "id": "edamame_shrimp_stir_fry",
+    "nameZh": "毛豆炒虾仁",
+    "nameEn": "Stir-fried Shrimp with Edamame",
+    "regionalCuisine": "jiangsu",
+    "cookingMethod": "stir_fry",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "edamame",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "shrimp",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 3,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 15,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "虾去壳去虾线，用料酒和少许淀粉腌制10分钟",
+      "毛豆剥粒焯水3分钟至熟捞出",
+      "热锅下油，放入虾仁快速滑炒至变红卷曲盛出",
+      "锅中放少许油爆香姜末",
+      "加入毛豆翻炒1分钟，倒回虾仁",
+      "加盐调味翻炒均匀，撒葱花出锅"
+    ]
+  },
+  {
+    "id": "dried_tofu_skin_roll",
+    "nameZh": "腐皮肉卷",
+    "nameEn": "Tofu Skin Meat Rolls",
+    "regionalCuisine": "jiangsu",
+    "cookingMethod": "deep_fry",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "dried_tofu_skin",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "pork_mince",
+        "amount": 250,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "light_soy",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "five_spice",
+        "amount": 2,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sesame_oil",
+        "amount": 5,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 300,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "腐皮用温水泡软铺平，切成大方片",
+      "肉末加葱花、姜末、五香粉、生抽和香油搅拌上劲",
+      "淀粉加水调成面糊备用封口用",
+      "在腐皮上均匀铺一层肉馅，卷成紧实长筒状",
+      "边缘刷面糊封口，切成4cm段",
+      "油温160度下入腐皮卷，炸至金黄酥脆约5分钟捞出沥油"
+    ]
+  },
+  {
+    "id": "yunnan_crossing_bridge_noodles",
+    "nameZh": "过桥米线",
+    "nameEn": "Yunnan Crossing Bridge Rice Noodles",
+    "regionalCuisine": "yunnan",
+    "cookingMethod": "boil",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "vermicelli",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "chicken_breast",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "shrimp",
+        "amount": 80,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "egg",
+        "amount": 1,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "bean_sprouts",
+        "amount": 80,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spinach",
+        "amount": 50,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 3,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "white_pepper",
+        "amount": 2,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "鸡胸肉和虾仁切极薄片，摆盘备用",
+      "豆芽和菠菜洗净，鸡蛋打入小碗",
+      "用鸡骨或鸡胸肉边角熬高汤，加姜片煮20分钟过滤",
+      "高汤烧至滚沸倒入大碗，表面淋少许油锁住温度",
+      "依次放入生肉片、虾片、鸡蛋液，利用高汤温度烫熟",
+      "最后放入焯好的米线、豆芽和菠菜，加盐和白胡椒调味"
+    ]
+  },
+  {
+    "id": "yunnan_mushroom_pot",
+    "nameZh": "云南菌菇火锅",
+    "nameEn": "Yunnan Wild Mushroom Hot Pot",
+    "regionalCuisine": "yunnan",
+    "cookingMethod": "stew",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "dried_mushroom",
+        "amount": 40,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "mushroom",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "tofu",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "chicken_thigh",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 20,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "white_pepper",
+        "amount": 2,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "干香菇温水泡发30分钟，泡发水留用做汤底",
+      "鸡腿剁块焯水去血沫洗净",
+      "砂锅放入鸡块、姜片和葱结，加香菇泡发水和清水",
+      "大火烧开转小火炖20分钟至鸡肉熟",
+      "加入泡发的干香菇和鲜蘑菇继续炖10分钟",
+      "放入豆腐块煮5分钟，加盐和白胡椒调味出锅"
+    ]
+  },
+  {
+    "id": "taiwanese_three_cup_chicken",
+    "nameZh": "台式三杯鸡",
+    "nameEn": "Taiwanese Three Cup Chicken",
+    "regionalCuisine": "taiwanese",
+    "cookingMethod": "braise",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "chicken_thigh",
+        "amount": 500,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 30,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 20,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sesame_oil",
+        "amount": 30,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 30,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 30,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "chili_pepper",
+        "amount": 10,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "鸡腿剁小块洗净沥干水分",
+      "砂锅中倒入香油，小火爆香姜片至边缘卷曲",
+      "放入蒜粒和小米椒炒至蒜微黄",
+      "转大火放入鸡块，翻炒至表面变色",
+      "倒入米酒和酱油，加糖搅匀",
+      "大火烧开转小火加盖焖15分钟至汤汁浓稠收干裹在鸡肉上"
+    ]
+  },
+  {
+    "id": "taiwanese_lurou_fan",
+    "nameZh": "台式卤肉饭",
+    "nameEn": "Taiwanese Braised Pork Rice",
+    "regionalCuisine": "taiwanese",
+    "cookingMethod": "braise",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "pork_belly",
+        "amount": 500,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "onion",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "dark_soy",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "light_soy",
+        "amount": 20,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "five_spice",
+        "amount": 3,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 20,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "rice",
+        "amount": 300,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "五花肉切小丁约0.5cm，洋葱切碎末",
+      "锅中不放油，小火煸炒五花肉丁至出油微焦",
+      "加入洋葱末和蒜末炒至洋葱透明",
+      "加五香粉、老抽、生抽、糖和料酒翻炒上色",
+      "加水没过肉丁，大火烧开转小火慢炖50分钟至肉丁软烂汤汁浓稠",
+      "米饭盛入碗中，浇上卤肉和汤汁即可"
+    ]
+  },
+  {
+    "id": "fujian_braised_noodles",
+    "nameZh": "闽南卤面",
+    "nameEn": "Fujian Braised Noodles",
+    "regionalCuisine": "fujian",
+    "cookingMethod": "braise",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "noodles_dried",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "shrimp",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "pork_loin",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "mushroom",
+        "amount": 80,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "carrot",
+        "amount": 50,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cabbage",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "light_soy",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 15,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "猪肉切丝，虾去壳留尾，香菇切片，胡萝卜切丝，包菜切丝",
+      "面条煮至八分熟捞出备用",
+      "热锅下油炒肉丝至变色，加虾仁炒红",
+      "加入香菇和胡萝卜翻炒，放入包菜丝",
+      "加生抽和适量水烧开，放入面条拌匀焖煮3分钟让面条吸汁",
+      "水淀粉勾芡使汤汁浓稠裹在面上，翻匀出锅"
+    ]
+  },
+  {
+    "id": "fujian_red_wine_chicken",
+    "nameZh": "福建红糟鸡",
+    "nameEn": "Fujian Red Yeast Chicken",
+    "regionalCuisine": "fujian",
+    "cookingMethod": "braise",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "chicken_thigh",
+        "amount": 500,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 20,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 30,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "light_soy",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "sesame_oil",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 3,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 15,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "鸡腿剁块洗净沥干水分",
+      "锅中倒入香油，小火爆香厚姜片至焦香",
+      "放入鸡块大火翻炒至表面金黄",
+      "倒入大量料酒（模拟红糟酒香），加糖翻炒上色",
+      "加生抽和少许水，大火烧开转小火焖煮20分钟",
+      "大火收汁至浓稠，鸡肉酒香四溢即可出锅"
+    ]
+  },
+  {
+    "id": "fujian_braised_pork_trotter",
+    "nameZh": "闽式姜醋猪蹄",
+    "nameEn": "Fujian Ginger Vinegar Pork",
+    "regionalCuisine": "fujian",
+    "cookingMethod": "stew",
+    "difficulty": "hard",
+    "ingredients": [
+      {
+        "ingredientId": "pork_ribs",
+        "amount": 500,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 80,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "vinegar",
+        "amount": 100,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "dark_soy",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 30,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "egg",
+        "amount": 4,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "sesame_oil",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 15,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "排骨剁段焯水洗净，鸡蛋煮熟剥壳备用",
+      "老姜拍碎切大块，锅中用香油小火煸炒至焦香干缩",
+      "放入排骨翻炒上色，加料酒去腥",
+      "倒入黑醋和老抽，加糖和适量水大火烧开",
+      "转小火炖45分钟至排骨软烂",
+      "放入剥壳鸡蛋继续煮15分钟入味，汤汁浓稠酸甜即成"
+    ]
+  },
+  {
+    "id": "anhui_stewed_tofu",
+    "nameZh": "徽州毛豆腐",
+    "nameEn": "Anhui Style Pan-fried Tofu",
+    "regionalCuisine": "anhui",
+    "cookingMethod": "deep_fry",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "tofu",
+        "amount": 400,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "chili_pepper",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "light_soy",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "doubanjiang",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 30,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "老豆腐切1cm厚片，用厨房纸吸干表面水分",
+      "平底锅多油中火，放入豆腐片煎至两面金黄酥脆",
+      "锅中留底油，炒香蒜末、小米椒和豆瓣酱",
+      "放入煎好的豆腐片轻轻翻裹酱汁",
+      "淋入生抽和少许水焖煮2分钟入味",
+      "撒葱花出锅，外焦里嫩酱香浓郁"
+    ]
+  },
+  {
+    "id": "anhui_bamboo_chicken",
+    "nameZh": "徽式笋干鸡煲",
+    "nameEn": "Anhui Dried Bamboo Chicken Stew",
+    "regionalCuisine": "anhui",
+    "cookingMethod": "stew",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "chicken_thigh",
+        "amount": 500,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "dried_mushroom",
+        "amount": 20,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "light_soy",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "dark_soy",
+        "amount": 5,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "star_anise",
+        "amount": 1,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 15,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "干香菇提前泡发切片（模拟笋干口感），泡发水留用",
+      "鸡腿剁块焯水洗净",
+      "热锅下油爆香姜片和葱段，放入鸡块煸炒至微黄",
+      "加料酒、生抽、老抽翻炒上色",
+      "放入香菇片和泡发水，加八角和糖",
+      "大火烧开转小火炖40分钟至鸡肉酥烂入味，收浓汤汁"
+    ]
+  },
+  {
+    "id": "anhui_braised_pork_belly",
+    "nameZh": "徽州红烧肉",
+    "nameEn": "Anhui Braised Pork Belly",
+    "regionalCuisine": "anhui",
+    "cookingMethod": "braise",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "pork_belly",
+        "amount": 600,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 30,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "dark_soy",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "light_soy",
+        "amount": 20,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 30,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "star_anise",
+        "amount": 2,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 15,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "五花肉切3cm方块，冷水下锅焯水去血沫",
+      "锅中放少许油，加糖小火炒至焦糖色起大泡",
+      "迅速放入五花肉块翻炒裹上糖色",
+      "加姜片、葱结、八角、料酒、生抽和老抽",
+      "加开水没过肉块，大火烧开转小火慢炖50分钟",
+      "开盖大火收汁至浓稠，肉块油亮红润即可"
+    ]
+  },
+  {
+    "id": "jiangsu_squirrel_shrimp",
+    "nameZh": "苏式茄汁虾仁",
+    "nameEn": "Jiangsu Ketchup Shrimp",
+    "regionalCuisine": "jiangsu",
+    "cookingMethod": "stir_fry",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "shrimp",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "tomato_paste",
+        "amount": 30,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "vinegar",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "egg",
+        "amount": 1,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 2,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 30,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "虾去壳去虾线，用料酒和盐腌5分钟",
+      "虾仁拍干，裹蛋液再沾淀粉",
+      "油温170度，虾仁炸至金黄酥脆捞出",
+      "调汁：番茄酱、糖、醋和少许水淀粉拌匀",
+      "锅中少许油，倒入酱汁小火熬至起泡浓稠",
+      "放入炸虾仁快速翻裹均匀，酸甜酱汁包裹虾仁即出锅"
+    ]
+  },
+  {
+    "id": "jiangsu_braised_tofu",
+    "nameZh": "苏式大煮干丝",
+    "nameEn": "Jiangsu Braised Dried Tofu Shreds",
+    "regionalCuisine": "jiangsu",
+    "cookingMethod": "boil",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "dried_tofu",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "shrimp",
+        "amount": 80,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "bamboo_shoot",
+        "amount": 50,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 3,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "sesame_oil",
+        "amount": 5,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "豆腐干横切成极薄片再切成细丝",
+      "干丝焯水2分钟去豆腥，捞出沥干",
+      "虾仁洗净沥干，用料酒腌制",
+      "锅中加高汤或水烧开，放入姜丝和虾仁",
+      "放入干丝中火煮10分钟使其吸收鲜味",
+      "加盐调味，淋香油和撒葱花出锅"
+    ]
+  },
+  {
+    "id": "jiangsu_sweet_vinegar_ribs",
+    "nameZh": "苏式糖醋小排",
+    "nameEn": "Jiangsu Sweet and Sour Ribs",
+    "regionalCuisine": "jiangsu",
+    "cookingMethod": "braise",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "pork_ribs",
+        "amount": 500,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 40,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "vinegar",
+        "amount": 30,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "light_soy",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 15,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "排骨剁段焯水洗净沥干",
+      "锅中下油放糖，小火炒至红棕色糖色",
+      "迅速放入排骨翻炒裹上糖色",
+      "加料酒、生抽、姜片和适量水大火烧开",
+      "转中小火焖煮25分钟至排骨酥软",
+      "加醋，大火收汁至浓稠油亮裹在排骨上"
+    ]
+  },
+  {
+    "id": "zhejiang_steamed_pork_lotus",
+    "nameZh": "浙式荷叶蒸肉",
+    "nameEn": "Zhejiang Lotus Leaf Steamed Pork",
+    "regionalCuisine": "zhejiang",
+    "cookingMethod": "steam",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "pork_belly",
+        "amount": 350,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "rice",
+        "amount": 60,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "light_soy",
+        "amount": 20,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "five_spice",
+        "amount": 3,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 10,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "大米干锅小火炒至微黄出香味，碾碎成粗米粉",
+      "五花肉切大薄片，加生抽、料酒、糖、五香粉和姜末腌20分钟",
+      "腌好的肉片均匀裹上炒米粉",
+      "取锡纸（代替荷叶）铺在蒸碗中",
+      "肉片逐片码入碗中，皮朝下",
+      "大火蒸40分钟至米粉松软肉片酥烂，倒扣出盘"
+    ]
+  },
+  {
+    "id": "taiwanese_salt_chicken",
+    "nameZh": "台式盐酥鸡",
+    "nameEn": "Taiwanese Salt and Pepper Chicken",
+    "regionalCuisine": "taiwanese",
+    "cookingMethod": "deep_fry",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "chicken_thigh",
+        "amount": 400,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "five_spice",
+        "amount": 3,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 50,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "white_pepper",
+        "amount": 3,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 3,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 500,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "鸡腿肉去骨切小块，加蒜末、姜末、料酒、五香粉和盐腌20分钟",
+      "腌好的鸡块均匀裹上地瓜粉（淀粉）静置5分钟回潮",
+      "油温170度下入鸡块炸3分钟至定型捞出",
+      "油温升至190度复炸1分钟至表面酥脆金黄",
+      "捞出控油撒上椒盐粉（盐和白胡椒混合）",
+      "可搭配炸九层塔叶装饰食用"
+    ]
+  },
+  {
+    "id": "taiwanese_braised_pork_rice_bowl",
+    "nameZh": "台式肉燥面",
+    "nameEn": "Taiwanese Meat Sauce Noodles",
+    "regionalCuisine": "taiwanese",
+    "cookingMethod": "braise",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "pork_mince",
+        "amount": 250,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "noodles_dried",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "onion",
+        "amount": 80,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "light_soy",
+        "amount": 20,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "dark_soy",
+        "amount": 5,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "five_spice",
+        "amount": 2,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 8,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 10,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "洋葱切碎末",
+      "锅中下油炒散肉末至变色出油",
+      "加入洋葱末和蒜末炒至透明",
+      "加五香粉、生抽、老抽、糖和适量水",
+      "大火烧开转小火慢炖25分钟至汤汁浓稠",
+      "面条煮熟捞出浇上肉燥酱拌匀即可"
+    ]
+  },
+  {
+    "id": "taiwanese_sesame_chicken",
+    "nameZh": "台式麻油鸡",
+    "nameEn": "Taiwanese Sesame Oil Chicken",
+    "regionalCuisine": "taiwanese",
+    "cookingMethod": "stew",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "chicken_thigh",
+        "amount": 500,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 50,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sesame_oil",
+        "amount": 40,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 100,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 3,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "鸡腿剁小块洗净沥干",
+      "老姜切厚片不去皮",
+      "砂锅中倒入大量麻油，小火爆香姜片至卷曲干缩",
+      "转大火放入鸡块翻炒至表面变色",
+      "倒入全部米酒，大火烧开",
+      "转小火加盖炖20分钟至鸡肉酥嫩，麻油鸡汤浓郁芬芳"
+    ]
+  },
+  {
+    "id": "yunnan_stir_fry_mushroom",
+    "nameZh": "云南干椒炒菌菇",
+    "nameEn": "Yunnan Stir-fried Mushrooms with Chili",
+    "regionalCuisine": "yunnan",
+    "cookingMethod": "stir_fry",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "mushroom",
+        "amount": 250,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "dried_mushroom",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "chili_pepper",
+        "amount": 20,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "light_soy",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 2,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "干香菇泡发切片，鲜蘑菇切厚片",
+      "热锅下油爆香蒜片、姜片和干辣椒段",
+      "先放干香菇片翻炒出香",
+      "再加入鲜蘑菇大火翻炒至出水收干",
+      "加生抽和盐调味",
+      "持续大火翻炒至菌菇边缘微焦出锅"
+    ]
+  },
+  {
+    "id": "yunnan_pineapple_rice",
+    "nameZh": "云南菠萝饭",
+    "nameEn": "Yunnan Pineapple Fried Rice",
+    "regionalCuisine": "yunnan",
+    "cookingMethod": "stir_fry",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "rice",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "shrimp",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "egg",
+        "amount": 1,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "corn",
+        "amount": 50,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "carrot",
+        "amount": 50,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "light_soy",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 2,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 15,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "隔夜饭打散，虾仁切丁，胡萝卜切小丁",
+      "热锅下油炒虾仁至变色盛出",
+      "锅中打入鸡蛋划散半凝固时倒入冷饭翻炒",
+      "加入胡萝卜丁和玉米粒翻炒2分钟",
+      "倒回虾仁加生抽和盐调味",
+      "炒至米饭粒粒分明微甜清香出锅"
+    ]
+  },
+  {
+    "id": "fujian_stir_fry_vermicelli",
+    "nameZh": "闽式炒米粉",
+    "nameEn": "Fujian Stir-fried Rice Vermicelli",
+    "regionalCuisine": "fujian",
+    "cookingMethod": "stir_fry",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "vermicelli",
+        "amount": 150,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "pork_loin",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cabbage",
+        "amount": 150,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "carrot",
+        "amount": 50,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "bean_sprouts",
+        "amount": 80,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "light_soy",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 15,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "米粉温水泡软沥干，猪肉切丝",
+      "热锅下油炒肉丝至变色",
+      "加入包菜丝和胡萝卜丝翻炒至软",
+      "放入豆芽炒30秒",
+      "加入米粉和生抽大火翻炒2分钟",
+      "不断翻拌至米粉吸味均匀，撒葱花出锅"
+    ]
+  },
+  {
+    "id": "fujian_steamed_squid",
+    "nameZh": "闽式酱蒸鱿鱼",
+    "nameEn": "Fujian Steamed Squid with Sauce",
+    "regionalCuisine": "fujian",
+    "cookingMethod": "steam",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "squid",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "light_soy",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 15,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "鱿鱼处理干净切花刀再切块",
+      "鱿鱼用料酒和少许盐腌5分钟",
+      "蒸盘底部铺姜片和葱白段",
+      "鱿鱼摆放在上面淋少许生抽",
+      "蒸锅大火蒸6分钟至鱿鱼卷曲变白",
+      "出锅撒蒜末和葱花，浇热油激出香味"
+    ]
+  },
+  {
+    "id": "homestyle_braised_fish_tofu",
+    "nameZh": "鱼豆腐煲",
+    "nameEn": "Fish and Tofu Claypot",
+    "regionalCuisine": "fujian",
+    "cookingMethod": "stew",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "fish_fillet",
+        "amount": 250,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "tofu",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "light_soy",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 2,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 20,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "鱼片用料酒和淀粉上浆，豆腐切块煎至两面金黄",
+      "砂锅底部放姜片和葱白段",
+      "铺入煎好的豆腐加生抽和适量水",
+      "中火焖煮10分钟让豆腐入味",
+      "轻放入鱼片在豆腐上面继续焖5分钟",
+      "加盐调味撒葱花出锅"
+    ]
+  },
+  {
+    "id": "jiangsu-steamed-lion-head",
+    "nameZh": "清蒸狮子头",
+    "nameEn": "Jiangsu Steamed Lion Head Meatballs",
+    "regionalCuisine": "jiangsu",
+    "cookingMethod": "steam",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "pork_mince",
+        "amount": 400,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "egg",
+        "amount": 1,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "bok_choy",
+        "amount": 150,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "猪肉馅加蛋液、葱姜末、淀粉和盐搅拌上劲",
+      "做成大丸子放入盘中",
+      "大火蒸20分钟至熟",
+      "小白菜焯水围在丸子周围",
+      "淋上蒸出的汤汁和酱油即可"
+    ]
+  },
+  {
+    "id": "jiangsu-stir-fried-shrimp-with-tea",
+    "nameZh": "清炒虾仁",
+    "nameEn": "Jiangsu Stir Fried Crystal Shrimp",
+    "regionalCuisine": "jiangsu",
+    "cookingMethod": "stir_fry",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "shrimp",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "egg",
+        "amount": 1,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 5,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 30,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "虾仁去虾线，加蛋清、淀粉和盐腌10分钟",
+      "锅中温油，虾仁滑油至变色捞出",
+      "锅留底油，葱姜爆香",
+      "放入虾仁加料酒快速翻炒",
+      "加少许盐调味出锅"
+    ]
+  },
+  {
+    "id": "jiangsu-braised-pork-meatball",
+    "nameZh": "红烧丸子",
+    "nameEn": "Jiangsu Braised Meatballs",
+    "regionalCuisine": "jiangsu",
+    "cookingMethod": "braise",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "pork_mince",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "egg",
+        "amount": 1,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 20,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 100,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "猪肉馅加鸡蛋、淀粉、葱姜末和盐拌匀",
+      "搓成丸子入油锅炸至金黄捞出",
+      "锅留底油，加酱油、糖和水烧开",
+      "放入丸子小火焖15分钟",
+      "大火收汁，撒葱花出锅"
+    ]
+  },
+  {
+    "id": "jiangsu-sweet-sour-shrimp",
+    "nameZh": "糖醋大虾",
+    "nameEn": "Sweet and Sour Shrimp Jiangsu Style",
+    "regionalCuisine": "jiangsu",
+    "cookingMethod": "deep_fry",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "shrimp",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "vinegar",
+        "amount": 20,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 20,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 40,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "虾去虾线开背，拍少许淀粉",
+      "锅中热油，虾煎至两面金红",
+      "加姜末炒香",
+      "调入糖醋汁（糖、醋、酱油、少许水），烧至起泡",
+      "翻炒挂汁出锅"
+    ]
+  },
+  {
+    "id": "jiangsu-stir-fried-bamboo-pork",
+    "nameZh": "荷塘小炒",
+    "nameEn": "Jiangsu Mixed Vegetable Stir Fry",
+    "regionalCuisine": "jiangsu",
+    "cookingMethod": "stir_fry",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "carrot",
+        "amount": 80,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "mushroom",
+        "amount": 80,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "celery",
+        "amount": 80,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "corn",
+        "amount": 60,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 8,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 15,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "所有蔬菜切薄片或小段",
+      "锅中热油爆香蒜末",
+      "先下胡萝卜和蘑菇翻炒1分钟",
+      "加入芹菜和玉米粒翻炒",
+      "加盐调味，大火翻炒出锅"
+    ]
+  },
+  {
+    "id": "jiangsu-stew-tofu-mushroom",
+    "nameZh": "蘑菇豆腐煲",
+    "nameEn": "Jiangsu Mushroom Tofu Casserole",
+    "regionalCuisine": "jiangsu",
+    "cookingMethod": "stew",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "tofu",
+        "amount": 250,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "mushroom",
+        "amount": 120,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "bok_choy",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "sesame_oil",
+        "amount": 5,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 10,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "豆腐切块，蘑菇切片",
+      "锅中热油，姜片爆香",
+      "加入蘑菇翻炒出水",
+      "放入豆腐加水和酱油，小火煮8分钟",
+      "加入小白菜煮至断生，淋香油出锅"
+    ]
+  },
+  {
+    "id": "zhejiang-braised-bamboo-pork",
+    "nameZh": "油焖笋丝",
+    "nameEn": "Zhejiang Braised Bamboo Shoots Style",
+    "regionalCuisine": "zhejiang",
+    "cookingMethod": "braise",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "celery",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "carrot",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sesame_oil",
+        "amount": 5,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 15,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "芹菜和胡萝卜切丝",
+      "锅中热油，芹菜丝翻炒1分钟",
+      "加入胡萝卜丝继续炒",
+      "加酱油、糖和少许水焖5分钟",
+      "收汁后淋香油出锅"
+    ]
+  },
+  {
+    "id": "zhejiang-roast-salmon",
+    "nameZh": "烤三文鱼",
+    "nameEn": "Zhejiang Style Roasted Salmon",
+    "regionalCuisine": "zhejiang",
+    "cookingMethod": "roast",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "salmon_fillet",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sesame_oil",
+        "amount": 5,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 5,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "三文鱼抹上酱油、姜末和少许盐腌10分钟",
+      "烤盘刷油，放入三文鱼",
+      "烤箱200度烤12-15分钟",
+      "取出淋香油，撒葱花即可"
+    ]
+  },
+  {
+    "id": "fujian-braised-pork-ribs-taro",
+    "nameZh": "芋头烧肉",
+    "nameEn": "Fujian Braised Pork with Taro",
+    "regionalCuisine": "fujian",
+    "cookingMethod": "braise",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "pork_belly",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sweet_potato",
+        "amount": 250,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 20,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 15,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "五花肉切厚片，红薯去皮切块代替芋头",
+      "锅中热油，肉片煎至两面金黄",
+      "加姜片、酱油、料酒和糖翻炒",
+      "加适量水烧开，放入红薯块",
+      "小火焖20分钟至软烂收汁"
+    ]
+  },
+  {
+    "id": "fujian-stir-fried-noodles",
+    "nameZh": "闽式炒面",
+    "nameEn": "Fujian Stir Fried Noodles",
+    "regionalCuisine": "fujian",
+    "cookingMethod": "stir_fry",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "noodles_dried",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "shrimp",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "bean_sprouts",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "egg",
+        "amount": 2,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "oyster_sauce",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 20,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "面条煮至八分熟捞出沥干",
+      "锅中热油炒散鸡蛋盛出",
+      "虾仁翻炒至变色，加豆芽炒软",
+      "放入面条，加酱油和蚝油翻炒均匀",
+      "放回鸡蛋翻匀出锅"
+    ]
+  },
+  {
+    "id": "fujian-braised-egg",
+    "nameZh": "卤蛋",
+    "nameEn": "Fujian Braised Eggs",
+    "regionalCuisine": "fujian",
+    "cookingMethod": "braise",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "egg",
+        "amount": 6,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 30,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 5,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "鸡蛋煮熟剥壳，表面划几道口",
+      "锅中加水、酱油、糖和姜片烧开",
+      "放入鸡蛋小火卤20分钟",
+      "关火浸泡至入味即可"
+    ]
+  },
+  {
+    "id": "anhui-braised-pork-bamboo",
+    "nameZh": "毛豆烧肉",
+    "nameEn": "Anhui Braised Pork with Edamame",
+    "regionalCuisine": "anhui",
+    "cookingMethod": "braise",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "pork_belly",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "green_bean",
+        "amount": 150,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 20,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 8,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 10,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "五花肉切块焯水",
+      "锅中热油炒糖色，放入肉块翻炒",
+      "加酱油、料酒和姜片",
+      "加水没过食材烧开转小火炖15分钟",
+      "加入毛豆继续炖10分钟收汁"
+    ]
+  },
+  {
+    "id": "anhui-stir-fried-egg-chive",
+    "nameZh": "臭鳜鱼式煎三文鱼",
+    "nameEn": "Anhui Pan Fried Salmon",
+    "regionalCuisine": "anhui",
+    "cookingMethod": "deep_fry",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "salmon_fillet",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "doubanjiang",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 25,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "三文鱼加盐、料酒腌10分钟",
+      "锅中热油，三文鱼煎至两面金黄",
+      "加蒜末、姜末和豆瓣酱炒香",
+      "加少许水焖3分钟",
+      "收汁装盘即可"
+    ]
+  },
+  {
+    "id": "yunnan-stir-fried-mushroom-mix",
+    "nameZh": "云南炒杂菌",
+    "nameEn": "Yunnan Stir Fried Mixed Mushrooms",
+    "regionalCuisine": "yunnan",
+    "cookingMethod": "stir_fry",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "mushroom",
+        "amount": 250,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "capsicum",
+        "amount": 60,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 20,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "各种蘑菇切片，青椒切丝",
+      "锅中热油爆香大量蒜片",
+      "放入蘑菇大火翻炒至出水收干",
+      "加入青椒翻炒",
+      "加酱油和盐调味，撒葱花出锅"
+    ]
+  },
+  {
+    "id": "jiangsu_braised_chicken_chestnut",
+    "nameZh": "板栗烧鸡",
+    "nameEn": "Jiangsu Braised Chicken with Sweet Potato",
+    "regionalCuisine": "jiangsu",
+    "cookingMethod": "braise",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "chicken_thigh",
+        "amount": 400,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sweet_potato",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 20,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 15,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "鸡腿剁块焯水，红薯去皮切滚刀块",
+      "锅中加油炒糖色，放入鸡块翻炒上色",
+      "加姜片、葱段、料酒、酱油翻炒",
+      "加水没过食材，大火烧开转小火炖15分钟",
+      "放入红薯再炖10分钟至软糯，大火收汁"
+    ]
+  },
+  {
+    "id": "zhejiang_braised_pork_bamboo",
+    "nameZh": "腌笃鲜风味肉",
+    "nameEn": "Zhejiang Style Braised Pork",
+    "regionalCuisine": "zhejiang",
+    "cookingMethod": "stew",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "pork_belly",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "tofu",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "sesame_oil",
+        "amount": 5,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "五花肉切块焯水，豆腐切块",
+      "锅中加油爆香葱姜，放入肉块翻炒",
+      "加料酒和足量清水大火烧开",
+      "转小火炖30分钟，放入豆腐继续炖10分钟",
+      "调味后淋麻油出锅"
+    ]
+  },
+  {
+    "id": "jiangsu_sweet_sour_salmon",
+    "nameZh": "糖醋三文鱼",
+    "nameEn": "Jiangsu Sweet and Sour Salmon",
+    "regionalCuisine": "jiangsu",
+    "cookingMethod": "deep_fry",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "salmon_fillet",
+        "amount": 250,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 20,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "vinegar",
+        "amount": 20,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 25,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 30,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 10,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "三文鱼切块裹淀粉",
+      "油温六成热炸至金黄捞出",
+      "锅中留底油加醋、糖、酱油和少许水烧开",
+      "倒入鱼块翻炒裹汁，撒葱花出锅"
+    ]
+  },
+  {
+    "id": "fujian_braised_pork_egg",
+    "nameZh": "闽式卤肉蛋",
+    "nameEn": "Fujian Braised Pork with Eggs",
+    "regionalCuisine": "fujian",
+    "cookingMethod": "braise",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "pork_belly",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "egg",
+        "amount": 4,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 30,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 15,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "鸡蛋煮熟剥壳，五花肉切块焯水",
+      "锅中炒糖色至焦黄，放入肉块翻炒上色",
+      "加酱油、料酒、姜、葱和水",
+      "放入鸡蛋大火烧开转小火卤30分钟",
+      "大火收汁至浓稠"
+    ]
+  },
+  {
+    "id": "zhejiang_braised_tofu_shrimp",
+    "nameZh": "浙式虾仁烧豆腐",
+    "nameEn": "Zhejiang Braised Tofu with Shrimp",
+    "regionalCuisine": "zhejiang",
+    "cookingMethod": "braise",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "tofu",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "shrimp",
+        "amount": 150,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 10,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "豆腐切块煎至金黄，虾仁处理干净",
+      "锅中爆香葱姜，下虾仁炒至变红",
+      "放入豆腐加酱油和半碗水",
+      "中火烧8分钟入味，水淀粉勾薄芡",
+      "撒葱花出锅"
+    ]
+  },
+  {
+    "id": "jiangsu_braised_tofu_pork",
+    "nameZh": "苏式红烧肉豆腐",
+    "nameEn": "Jiangsu Red-braised Pork with Tofu",
+    "regionalCuisine": "jiangsu",
+    "cookingMethod": "braise",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "pork_belly",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "tofu",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 25,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 10,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "五花肉切方块焯水，豆腐切块煎至金黄",
+      "锅中炒糖色至琥珀色，放入肉块翻炒",
+      "加酱油、料酒、姜、葱和水",
+      "大火烧开转小火炖25分钟",
+      "放入豆腐继续炖10分钟，大火收汁"
+    ]
+  },
+  {
+    "id": "jiangsu_steamed_egg_with_tofu",
+    "nameZh": "苏式豆腐蒸蛋",
+    "nameEn": "Jiangsu Steamed Egg with Tofu",
+    "regionalCuisine": "jiangsu",
+    "cookingMethod": "steam",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "egg",
+        "amount": 3,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "tofu",
+        "amount": 150,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "sesame_oil",
+        "amount": 5,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 5,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "豆腐切小丁铺盘底",
+      "鸡蛋打散加1.5倍温水搅匀过滤",
+      "蛋液倒入豆腐盘中盖保鲜膜",
+      "大火蒸12分钟，淋酱油和麻油撒葱花"
+    ]
+  },
+  {
+    "id": "zhejiang_braised_egg_soy",
+    "nameZh": "浙式酱油蛋",
+    "nameEn": "Zhejiang Soy Sauce Braised Eggs",
+    "regionalCuisine": "zhejiang",
+    "cookingMethod": "braise",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "egg",
+        "amount": 4,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 30,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 5,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "鸡蛋煮熟剥壳，表面划几刀",
+      "锅中加酱油、糖、姜和一碗水煮开",
+      "放入鸡蛋小火卤15分钟",
+      "关火浸泡入味后捞出"
+    ]
+  },
+  {
+    "id": "taiwanese_braised_pork_rice_style",
+    "nameZh": "台式卤肉",
+    "nameEn": "Taiwanese Braised Pork",
+    "regionalCuisine": "taiwanese",
+    "cookingMethod": "braise",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "pork_belly",
+        "amount": 400,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "egg",
+        "amount": 4,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 40,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "onion",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 15,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "五花肉切小丁，鸡蛋煮熟剥壳",
+      "锅中不加油煸五花肉出油",
+      "加洋葱末和蒜末炒香",
+      "加酱油、糖、料酒和水",
+      "放入鸡蛋小火卤40分钟至汁浓",
+      "搭配米饭食用"
+    ]
+  },
+  {
+    "id": "fujian_stewed_egg_mushroom",
+    "nameZh": "闽式蘑菇蛋汤",
+    "nameEn": "Fujian Mushroom Egg Soup",
+    "regionalCuisine": "fujian",
+    "cookingMethod": "boil",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "mushroom",
+        "amount": 150,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "egg",
+        "amount": 2,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sesame_oil",
+        "amount": 5,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 5,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "蘑菇切片，鸡蛋打散",
+      "锅中加油炒蘑菇出香",
+      "加两碗水烧开煮3分钟",
+      "淋入蛋液搅成蛋花，加盐和麻油撒葱花"
+    ]
+  },
+  {
+    "id": "jiangsu_vinegar_fish",
+    "nameZh": "苏式糖醋鱼块",
+    "nameEn": "Jiangsu Sweet and Sour Fish",
+    "regionalCuisine": "jiangsu",
+    "cookingMethod": "deep_fry",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "salmon_fillet",
+        "amount": 250,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 20,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "vinegar",
+        "amount": 25,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 20,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 30,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "鱼肉切块加姜片料酒腌10分钟，裹淀粉",
+      "油温六成热炸至金黄捞出",
+      "锅中加醋、糖、酱油烧成糖醋汁",
+      "倒入鱼块裹匀撒葱花出锅"
+    ]
+  },
+  {
+    "id": "zhejiang_steamed_shrimp",
+    "nameZh": "浙式清蒸虾",
+    "nameEn": "Zhejiang Steamed Shrimp",
+    "regionalCuisine": "zhejiang",
+    "cookingMethod": "steam",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "shrimp",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "vinegar",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 10,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "虾洗净排盘，撒姜丝和料酒",
+      "入蒸锅大火蒸6分钟",
+      "姜切末加醋和酱油调蘸料",
+      "蒸虾蘸食"
+    ]
+  },
+  {
+    "id": "fujian_braised_tofu_mushroom",
+    "nameZh": "闽式香菇烧豆腐",
+    "nameEn": "Fujian Braised Tofu with Mushrooms",
+    "regionalCuisine": "fujian",
+    "cookingMethod": "braise",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "tofu",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "mushroom",
+        "amount": 150,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "carrot",
+        "amount": 50,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "oyster_sauce",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 10,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "豆腐切块煎至金黄，香菇切片，胡萝卜切片",
+      "锅中加油炒香菇和胡萝卜",
+      "放入豆腐加蚝油、酱油和半碗水",
+      "中火烧8分钟，水淀粉勾芡出锅"
+    ]
+  },
+  {
+    "id": "jiangsu_braised_egg_tofu",
+    "nameZh": "苏式蛋烧豆腐",
+    "nameEn": "Jiangsu Braised Egg with Tofu",
+    "regionalCuisine": "jiangsu",
+    "cookingMethod": "braise",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "egg",
+        "amount": 3,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "tofu",
+        "amount": 250,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 8,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 15,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "鸡蛋煮熟剥壳对半切，豆腐切块煎至金黄",
+      "锅中加酱油、糖和半碗水烧开",
+      "放入豆腐和鸡蛋中火烧10分钟",
+      "大火收汁撒葱花出锅"
+    ]
+  },
+  {
+    "id": "yunnan_mushroom_chicken_stew",
+    "nameZh": "云南菌菇炖鸡",
+    "nameEn": "Yunnan Mushroom Chicken Stew",
+    "regionalCuisine": "yunnan",
+    "cookingMethod": "stew",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "chicken_thigh",
+        "amount": 400,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "mushroom",
+        "amount": 150,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 10,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "鸡肉切块焯水，蘑菇切片",
+      "锅中加少许油煸炒鸡块",
+      "加姜片、料酒和适量清水",
+      "大火烧开转小火炖30分钟，加蘑菇再炖15分钟",
+      "加盐调味，撒葱花出锅"
+    ]
+  },
+  {
+    "id": "deep_fried_spring_rolls",
+    "nameZh": "炸春卷",
+    "nameEn": "Deep-Fried Spring Rolls",
+    "regionalCuisine": "jiangsu",
+    "cookingMethod": "deep_fry",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "pork_mince",
+        "amount": 150,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "bean_sprouts",
+        "amount": 150,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "carrot",
+        "amount": 80,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "mushroom",
+        "amount": 50,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 250,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "炒肉末至变色，加豆芽、胡萝卜丝、蘑菇丝翻炒",
+      "加酱油调味，炒干水分放凉",
+      "馅料包入春卷皮，淀粉水封口",
+      "油温六成热炸至金黄酥脆捞出"
+    ]
+  },
+  {
+    "id": "jiangsu_braised_pork_egg",
+    "nameZh": "红烧肉卤蛋",
+    "nameEn": "Jiangsu Braised Pork with Eggs",
+    "regionalCuisine": "jiangsu",
+    "cookingMethod": "braise",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "pork_belly",
+        "amount": 400,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "egg",
+        "amount": 4,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 30,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 20,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 10,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "五花肉切块焯水，鸡蛋煮熟去壳",
+      "锅中热油炒糖色，放肉块翻炒上色",
+      "加姜片、料酒、酱油",
+      "加水没过食材，放入鸡蛋",
+      "大火烧开转小火炖40分钟，大火收汁"
+    ]
+  },
+  {
+    "id": "jiangsu_sweet_vinegar_shrimp",
+    "nameZh": "糖醋虾球",
+    "nameEn": "Jiangsu Sweet and Sour Shrimp",
+    "regionalCuisine": "jiangsu",
+    "cookingMethod": "deep_fry",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "shrimp",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 20,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 20,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "vinegar",
+        "amount": 20,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 5,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 200,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "虾仁去虾线裹淀粉",
+      "油温六成热炸至金黄捞出",
+      "锅留底油，加糖、醋、酱油调糖醋汁",
+      "倒入虾球翻炒裹汁出锅"
+    ]
+  },
+  {
+    "id": "zhejiang_steamed_shrimp_egg",
+    "nameZh": "浙味虾仁蒸蛋",
+    "nameEn": "Zhejiang Steamed Egg with Shrimp",
+    "regionalCuisine": "zhejiang",
+    "cookingMethod": "steam",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "egg",
+        "amount": 3,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "shrimp",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "sesame_oil",
+        "amount": 5,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 5,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "鸡蛋打散加温水1:1.5搅匀过筛",
+      "虾仁去虾线摆在蛋液上",
+      "盖保鲜膜中火蒸12-15分钟",
+      "淋酱油和香油撒葱花"
+    ]
+  },
+  {
+    "id": "zhejiang_vinegar_fish",
+    "nameZh": "浙醋焖鱼",
+    "nameEn": "Zhejiang Vinegar Braised Fish",
+    "regionalCuisine": "zhejiang",
+    "cookingMethod": "braise",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "salmon_fillet",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "vinegar",
+        "amount": 25,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 15,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "鱼切块，热油煎至两面金黄",
+      "加姜丝、料酒去腥",
+      "加酱油、醋、糖和少许水",
+      "中火焖10分钟至入味",
+      "大火收汁撒葱花出锅"
+    ]
+  },
+  {
+    "id": "zhejiang_shrimp_stir_fry",
+    "nameZh": "龙井虾仁风味",
+    "nameEn": "Zhejiang-Style Stir-fried Shrimp",
+    "regionalCuisine": "zhejiang",
+    "cookingMethod": "stir_fry",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "shrimp",
+        "amount": 250,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "egg",
+        "amount": 1,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 20,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 5,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "虾仁去虾线加蛋清、淀粉、料酒腌10分钟",
+      "锅中宽油滑虾仁至变色捞出",
+      "锅留少许油快速翻炒虾仁",
+      "加盐调味出锅装盘"
+    ]
+  },
+  {
+    "id": "fujian_egg_oyster_sauce",
+    "nameZh": "闽式蚝油蒸蛋",
+    "nameEn": "Fujian Steamed Eggs with Oyster Sauce",
+    "regionalCuisine": "fujian",
+    "cookingMethod": "steam",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "egg",
+        "amount": 4,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "oyster_sauce",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 15,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "鸡蛋打散加温水搅匀，过筛倒入碗中",
+      "淋少许蚝油",
+      "盖保鲜膜冷水上锅中火蒸12分钟",
+      "撒葱花出锅"
+    ]
+  },
+  {
+    "id": "anhui_braised_pork_tofu",
+    "nameZh": "徽州毛豆腐烧肉",
+    "nameEn": "Anhui-Style Braised Pork with Tofu",
+    "regionalCuisine": "anhui",
+    "cookingMethod": "braise",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "pork_belly",
+        "amount": 250,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "tofu",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "doubanjiang",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 20,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "豆腐切块煎至两面金黄，猪肉切片",
+      "锅中煸炒肉片至出油",
+      "加豆瓣酱、姜蒜爆香",
+      "放入豆腐，加酱油、料酒和水",
+      "中火烧15分钟收汁出锅"
+    ]
+  },
+  {
+    "id": "anhui_stewed_chicken_mushroom",
+    "nameZh": "徽式蘑菇炖鸡",
+    "nameEn": "Anhui-Style Stewed Chicken with Mushrooms",
+    "regionalCuisine": "anhui",
+    "cookingMethod": "stew",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "chicken_thigh",
+        "amount": 400,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "mushroom",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 10,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "鸡腿肉切块焯水，蘑菇切片",
+      "热油煸炒鸡块至微黄",
+      "加姜片、酱油、料酒翻炒",
+      "加水没过食材，大火烧开转小火炖30分钟",
+      "加蘑菇炖15分钟，撒葱花出锅"
+    ]
+  },
+  {
+    "id": "jiangsu_lion_head",
+    "nameZh": "红烧狮子头",
+    "nameEn": "Braised Lion's Head Meatball",
+    "regionalCuisine": "jiangsu",
+    "cookingMethod": "cold_dish",
+    "difficulty": "hard",
+    "ingredients": [
+      {
+        "ingredientId": "pork_mince",
+        "amount": 400,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "egg",
+        "amount": 1,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 20,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "chinese_cabbage",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 20,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "肉末加蛋液、淀粉、姜末、葱末、盐搅拌上劲",
+      "搓成大肉丸子（约4个）",
+      "锅中热油，将肉丸煎至表面金黄",
+      "加酱油、料酒和水没过肉丸",
+      "大火烧开转小火炖30分钟",
+      "放入白菜铺在周围，继续炖10分钟",
+      "调味出锅"
+    ]
+  },
+  {
+    "id": "scallion_oil_noodle",
+    "nameZh": "葱油拌面",
+    "nameEn": "Scallion Oil Noodles",
+    "regionalCuisine": "jiangsu",
+    "cookingMethod": "cold_dish",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "noodles_dried",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 50,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 20,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 30,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "葱切段备用",
+      "锅中多油，小火慢炸葱段至金黄焦香",
+      "加入酱油和糖烧开做成葱油汁",
+      "面条煮熟捞出",
+      "浇上葱油汁拌匀食用"
+    ]
+  },
+  {
+    "id": "jiangsu_sweet_sour_ribs",
+    "nameZh": "无锡糖醋排骨",
+    "nameEn": "Jiangsu Sweet and Sour Ribs",
+    "regionalCuisine": "jiangsu",
+    "cookingMethod": "stew",
+    "difficulty": "hard",
+    "ingredients": [
+      {
+        "ingredientId": "pork_belly",
+        "amount": 500,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "vinegar",
+        "amount": 30,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 40,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 20,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 10,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "排骨剁小段，冷水焯水去血沫",
+      "锅中放油和糖，炒至焦糖色",
+      "放入排骨翻炒上色",
+      "加料酒、酱油、姜片、葱段",
+      "加水没过排骨，大火烧开转小火炖30分钟",
+      "加醋，大火收汁至浓稠出锅"
+    ]
+  },
+  {
+    "id": "jiangsu_squirrel_fish",
+    "nameZh": "松鼠鱼",
+    "nameEn": "Squirrel-shaped Sweet and Sour Fish",
+    "regionalCuisine": "jiangsu",
+    "cookingMethod": "deep_fry",
+    "difficulty": "hard",
+    "ingredients": [
+      {
+        "ingredientId": "salmon_fillet",
+        "amount": 500,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 50,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 40,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "vinegar",
+        "amount": 30,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "carrot",
+        "amount": 30,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "capsicum",
+        "amount": 30,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 300,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "鱼肉在鱼皮朝下切花刀，交叉切出菱形花纹",
+      "鱼身裹干淀粉，抖去多余",
+      "油温七成热，将鱼炸至定型金黄捞出",
+      "复炸至酥脆",
+      "锅中留底油，加糖、醋、酱油和水煮开",
+      "淀粉勾芡做成糖醋汁",
+      "浇在炸好的鱼上即可"
+    ]
+  },
+  {
+    "id": "jiangsu_braised_meatball",
+    "nameZh": "四喜丸子",
+    "nameEn": "Four-joy Braised Meatballs",
+    "regionalCuisine": "jiangsu",
+    "cookingMethod": "cold_dish",
+    "difficulty": "hard",
+    "ingredients": [
+      {
+        "ingredientId": "pork_mince",
+        "amount": 500,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "egg",
+        "amount": 1,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 20,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 25,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 30,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "bok_choy",
+        "amount": 100,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "肉末加蛋液、淀粉、姜末、葱末、酱油搅拌上劲",
+      "搓成4个大丸子",
+      "锅中热油，将丸子炸至表面金黄",
+      "另起锅加酱油、糖和水烧开",
+      "放入丸子，小火炖30分钟",
+      "青菜焯水摆盘，丸子放上浇汁"
+    ]
+  },
+  {
+    "id": "fujian_stir_fried_noodle",
+    "nameZh": "福建炒面线",
+    "nameEn": "Fujian Stir-fried Thin Noodles",
+    "regionalCuisine": "fujian",
+    "cookingMethod": "cold_dish",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "dried_noodles_rice",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "shrimp",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "egg",
+        "amount": 1,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "carrot",
+        "amount": 50,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "bok_choy",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 15,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "面线煮软捞出沥干",
+      "虾仁去虾线，蔬菜切丝",
+      "锅中热油，炒蛋盛出",
+      "炒虾仁至变色，加入蔬菜翻炒",
+      "放入面线和酱油大火翻炒",
+      "倒回鸡蛋拌匀出锅"
+    ]
+  },
+  {
+    "id": "fujian_seafood_soup",
+    "nameZh": "海鲜豆腐羹",
+    "nameEn": "Fujian Seafood Tofu Soup",
+    "regionalCuisine": "fujian",
+    "cookingMethod": "soup",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "shrimp",
+        "amount": 150,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "tofu",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "egg",
+        "amount": 1,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "mushroom",
+        "amount": 50,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sesame_oil",
+        "amount": 3,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 5,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "豆腐切小丁，虾仁去虾线，蘑菇切丁",
+      "锅中加水烧开，放入豆腐和蘑菇",
+      "加入虾仁煮至变色",
+      "水淀粉勾薄芡",
+      "淋入蛋液搅散",
+      "加盐调味，滴香油撒葱花出锅"
+    ]
+  },
+  {
+    "id": "jiangsu_braised_pork_ball_soup",
+    "nameZh": "清汤狮子头",
+    "nameEn": "Jiangsu Clear Soup Meatball",
+    "regionalCuisine": "jiangsu",
+    "cookingMethod": "cold_dish",
+    "difficulty": "hard",
+    "ingredients": [
+      {
+        "ingredientId": "pork_mince",
+        "amount": 400,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "egg",
+        "amount": 1,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "chinese_cabbage",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 10,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "肉末加蛋液、淀粉、料酒、姜末搅拌上劲",
+      "搓成4个大肉丸",
+      "砂锅中加水烧开，放入肉丸",
+      "小火炖35分钟",
+      "加入白菜继续炖10分钟",
+      "加盐调味出锅"
+    ]
+  },
+  {
+    "id": "homestyle_xihu_niurou_geng",
+    "nameZh": "西湖牛肉羹",
+    "nameEn": "West Lake Beef Soup",
+    "regionalCuisine": "jiangsu",
+    "cookingMethod": "cold_dish",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "beef_mince",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "egg",
+        "amount": 2,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 5,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "sesame_oil",
+        "amount": 3,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "牛肉末加料酒、姜末拌匀",
+      "锅中烧开水，放入牛肉末搅散煮熟",
+      "撇去浮沫，加盐调味",
+      "水淀粉勾芡至浓稠",
+      "打入蛋液缓缓倒入搅成蛋花",
+      "淋麻油出锅"
+    ]
+  },
+  {
+    "id": "homestyle_rou_chao_xiancai",
+    "nameZh": "雪菜肉丝",
+    "nameEn": "Shredded Pork with Preserved Vegetables",
+    "regionalCuisine": "jiangsu",
+    "cookingMethod": "staple",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "pork_belly",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "chinese_cabbage",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "capsicum",
+        "amount": 50,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 5,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 10,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "猪肉切丝加酱油淀粉腌制",
+      "白菜切碎加盐腌渍（代替雪菜），挤干水分",
+      "热锅下油炒肉丝至变色盛出",
+      "锅中炒白菜碎和辣椒丝",
+      "倒回肉丝翻炒均匀出锅"
+    ]
+  },
+  {
+    "id": "homestyle_lurou_fan",
+    "nameZh": "卤肉饭",
+    "nameEn": "Braised Pork Rice",
+    "regionalCuisine": "fujian",
+    "cookingMethod": "soup",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "pork_belly",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "rice",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "egg",
+        "amount": 3,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "onion",
+        "amount": 80,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 30,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 10,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "五花肉切小丁，鸡蛋煮熟剥壳",
+      "锅中放油炒洋葱碎至透明",
+      "放入肉丁炒至变色",
+      "加酱油、糖、料酒、姜片和适量水",
+      "放入鸡蛋大火煮开转小火卤30分钟",
+      "米饭盛碗，浇上卤肉和汤汁"
+    ]
+  },
+  {
+    "id": "homestyle_luobo_si_bing",
+    "nameZh": "萝卜丝饼",
+    "nameEn": "Shredded Radish Pancake",
+    "regionalCuisine": "jiangsu",
+    "cookingMethod": "cold_dish",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "carrot",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 150,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sesame_oil",
+        "amount": 5,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 15,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "胡萝卜擦丝加盐杀水挤干（代替白萝卜）",
+      "加葱花、麻油拌匀成馅",
+      "淀粉加水揉成面团",
+      "擀皮包入馅料压成扁饼",
+      "平底锅放油小火煎至两面金黄"
+    ]
+  },
+  {
+    "id": "cn_wonton_soup_breakfast",
+    "nameZh": "鲜肉馄饨",
+    "nameEn": "Pork Wonton Soup",
+    "regionalCuisine": "jiangzhe",
+    "cookingMethod": "boil",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "wonton_wrapper",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "pork_mince",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sesame_oil",
+        "amount": 5,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "light_soy",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 3,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "dried_shrimp",
+        "amount": 10,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "肉末加葱姜末酱油芝麻油搅打上劲",
+      "取馄饨皮包入馅料捏紧",
+      "锅中水煮开下馄饨",
+      "煮至浮起再煮1分钟",
+      "碗中放虾皮酱油葱花浇汤"
+    ]
+  },
+  {
+    "id": "cn_dan_bing",
+    "nameZh": "蛋抓饼",
+    "nameEn": "Egg Grab Cake",
+    "regionalCuisine": "taiwanese",
+    "cookingMethod": "deep_fry",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "flour",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "egg",
+        "amount": 2,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 2,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "lettuce",
+        "amount": 30,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "面粉加水揉面团擀成薄饼",
+      "锅中少油烙饼至半熟",
+      "打蛋在饼上铺开",
+      "翻面煎至蛋熟",
+      "加生菜卷起切段"
+    ]
+  },
+  {
+    "id": "cn_tofu_pudding",
+    "nameZh": "甜豆花",
+    "nameEn": "Sweet Tofu Pudding",
+    "regionalCuisine": "southern",
+    "cookingMethod": "boil",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "tofu",
+        "amount": 400,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 20,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "milk",
+        "amount": 50,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "sesame_oil",
+        "amount": 2,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "嫩豆腐用勺子舀成大块",
+      "糖加水姜片煮成糖水",
+      "将豆腐轻轻放入糖水中",
+      "小火煮2分钟",
+      "盛碗浇糖水"
+    ]
+  },
+  {
+    "id": "cn_glutinous_rice_ball",
+    "nameZh": "汤圆",
+    "nameEn": "Sweet Rice Balls",
+    "regionalCuisine": "southern",
+    "cookingMethod": "boil",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "rice",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 30,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sesame_oil",
+        "amount": 5,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "egg",
+        "amount": 1,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 20,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "糯米粉加温水揉成团",
+      "分成小剂子搓圆",
+      "锅中水加姜糖煮开",
+      "放入汤圆煮至浮起",
+      "再煮2分钟至熟透"
+    ]
+  },
+  {
+    "id": "cn_savory_soy_milk",
+    "nameZh": "咸豆浆",
+    "nameEn": "Savory Soy Milk",
+    "regionalCuisine": "shanghai",
+    "cookingMethod": "boil",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "milk",
+        "amount": 400,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "vinegar",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "light_soy",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "sesame_oil",
+        "amount": 5,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "dried_shrimp",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "chili_flakes",
+        "amount": 2,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "碗中放醋酱油芝麻油虾皮",
+      "牛奶加热至滚烫（替代豆浆）",
+      "快速冲入碗中",
+      "牛奶遇醋凝成花状",
+      "撒葱花辣椒"
+    ]
+  },
+  {
+    "id": "cn_pork_rib_soup",
+    "nameZh": "排骨莲藕汤",
+    "nameEn": "Pork Rib and Lotus Root Soup",
+    "regionalCuisine": "hubei",
+    "cookingMethod": "soup",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "pork_ribs",
+        "amount": 500,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "lotus_root",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "white_pepper",
+        "amount": 2,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "排骨焯水洗净",
+      "莲藕去皮切块",
+      "锅中放排骨加水姜葱大火煮开",
+      "加莲藕转小火炖50分钟",
+      "加盐和胡椒调味"
+    ]
+  },
+  {
+    "id": "cn_bok_choy_meatball_soup",
+    "nameZh": "青菜肉圆汤",
+    "nameEn": "Bok Choy Meatball Soup",
+    "regionalCuisine": "jiangzhe",
+    "cookingMethod": "soup",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "pork_mince",
+        "amount": 150,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "bok_choy",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "egg",
+        "amount": 1,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 3,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sesame_oil",
+        "amount": 3,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 5,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "肉末加蛋淀粉盐姜搅打上劲",
+      "锅中水煮开搓肉丸下锅",
+      "煮至肉丸浮起",
+      "加小白菜煮至断生",
+      "加盐淋芝麻油"
+    ]
+  },
+  {
+    "id": "staple_yangzhou_fried_rice",
+    "nameZh": "扬州炒饭",
+    "nameEn": "Yangzhou Fried Rice",
+    "regionalCuisine": "jiangsu",
+    "cookingMethod": "staple",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "rice",
+        "amount": 400,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "egg",
+        "amount": 3,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "shrimp",
+        "amount": 80,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "carrot",
+        "amount": 50,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "corn",
+        "amount": 50,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 20,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 2,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "虾仁炒熟盛出蛋炒碎盛出",
+      "胡萝卜丁玉米粒炒熟",
+      "加冷饭大火翻炒",
+      "加酱油盐调味",
+      "拌入虾仁蛋碎撒葱花"
+    ]
+  },
+  {
+    "id": "staple_wonton_soup_staple",
+    "nameZh": "鲜肉大馄饨",
+    "nameEn": "Large Pork Wontons",
+    "regionalCuisine": "jiangzhe",
+    "cookingMethod": "staple",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "wonton_wrapper",
+        "amount": 250,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "pork_mince",
+        "amount": 250,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "sesame_oil",
+        "amount": 5,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 3,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "dried_shrimp",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "egg",
+        "amount": 1,
+        "unit": "piece"
+      }
+    ],
+    "steps": [
+      "肉末加蛋葱姜酱油搅打上劲",
+      "馄饨皮包入大份馅料",
+      "锅中水煮开下馄饨",
+      "煮至浮起皮透明",
+      "碗中放虾皮酱油浇汤"
+    ]
+  },
+  {
+    "id": "staple_scallion_pancake_staple",
+    "nameZh": "手抓饼",
+    "nameEn": "Layered Scallion Pancake",
+    "regionalCuisine": "taiwanese",
+    "cookingMethod": "staple",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "flour",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 30,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 30,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 3,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "egg",
+        "amount": 2,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "lettuce",
+        "amount": 30,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sausage",
+        "amount": 60,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "面团和好擀薄涂油撒盐葱花",
+      "卷起再盘成饼",
+      "锅中油煎至两面金黄起层",
+      "可加煎蛋火腿肠",
+      "包生菜卷起食用"
+    ]
+  },
+  {
+    "id": "cn_wonton_soup_2",
+    "nameZh": "小馄饨汤",
+    "nameEn": "Small Wonton Soup",
+    "regionalCuisine": "jiangzhe",
+    "cookingMethod": "soup",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "wonton_wrapper",
+        "amount": 150,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "pork_mince",
+        "amount": 120,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 3,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sesame_oil",
+        "amount": 5,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 3,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "dried_shrimp",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "light_soy",
+        "amount": 5,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "肉末加葱姜酱油盐搅匀",
+      "馄饨皮包少量馅捏紧",
+      "锅中水煮开下馄饨",
+      "煮至浮起透明",
+      "碗中放虾皮酱油撒葱花浇汤"
+    ]
+  },
+  {
+    "id": "cn_bamboo_chicken_soup",
+    "nameZh": "竹笋鸡汤",
+    "nameEn": "Bamboo Shoot Chicken Soup",
+    "regionalCuisine": "jiangzhe",
+    "cookingMethod": "soup",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "chicken_thigh",
+        "amount": 400,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "asparagus",
+        "amount": 150,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "white_pepper",
+        "amount": 2,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "鸡腿焯水芦笋切段代替笋",
+      "锅中放鸡腿加水姜葱煮开",
+      "转小火炖30分钟",
+      "加芦笋煮5分钟",
+      "加盐胡椒调味"
+    ]
+  },
+  {
+    "id": "cn_sticky_rice_roll",
+    "nameZh": "糯米卷",
+    "nameEn": "Sticky Rice Roll",
+    "regionalCuisine": "shanghai",
+    "cookingMethod": "steam",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "rice",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sausage",
+        "amount": 60,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "sesame_oil",
+        "amount": 5,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 5,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "糯米蒸熟",
+      "摊在保鲜膜上",
+      "铺香肠碎和葱花",
+      "卷紧成卷",
+      "切段蘸酱油食用"
+    ]
+  },
+  {
+    "id": "cn_fish_soup_white",
+    "nameZh": "鲫鱼豆腐汤",
+    "nameEn": "Crucian Carp Tofu Soup",
+    "regionalCuisine": "jiangzhe",
+    "cookingMethod": "soup",
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "ingredientId": "fish_fillet",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "tofu",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 3,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "white_pepper",
+        "amount": 2,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "鱼片两面煎至金黄",
+      "加开水大火煮至汤色奶白",
+      "加豆腐块中火煮10分钟",
+      "加姜葱料酒",
+      "加盐胡椒调味"
+    ]
+  },
+  {
+    "id": "staple_soy_sauce_noodle",
+    "nameZh": "酱油拌面",
+    "nameEn": "Soy Sauce Mixed Noodles",
+    "regionalCuisine": "shanghai",
+    "cookingMethod": "staple",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "noodles_dried",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 20,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "dark_soy",
+        "amount": 5,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "sesame_oil",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 3,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "面条煮熟沥干",
+      "碗中放生抽老抽糖芝麻油",
+      "面条拌入酱汁",
+      "葱花用热油泼出香味",
+      "淋在面上拌匀"
+    ]
+  },
+  {
+    "id": "cn_pork_noodle_dry",
+    "nameZh": "干拌面",
+    "nameEn": "Dry Mixed Noodles",
+    "regionalCuisine": "hubei",
+    "cookingMethod": "staple",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "noodles_dried",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "pork_mince",
+        "amount": 80,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "sesame_oil",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "vinegar",
+        "amount": 5,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "chili_flakes",
+        "amount": 3,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 10,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "肉末炒散至焦脆",
+      "碗中放酱油芝麻油醋蒜",
+      "面条煮熟沥干放碗中",
+      "加肉末辣椒",
+      "充分拌匀撒葱花"
+    ]
+  },
+  {
+    "id": "cn_chicken_ginger_soup",
+    "nameZh": "姜母鸡汤",
+    "nameEn": "Ginger Chicken Soup",
+    "regionalCuisine": "fujian",
+    "cookingMethod": "soup",
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "ingredientId": "chicken_thigh",
+        "amount": 400,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 50,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sesame_oil",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 30,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 10,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "鸡腿切块焯水",
+      "锅中芝麻油爆姜片至卷曲",
+      "加鸡块翻炒上色",
+      "加料酒和水煮开",
+      "小火炖30分钟加盐"
+    ]
+  }
+]
