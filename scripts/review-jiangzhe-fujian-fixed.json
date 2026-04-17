@@ -1718,12 +1718,7 @@
       },
       {
         "ingredientId": "star_anise",
-        "amount": 3,
-        "unit": "piece"
-      },
-      {
-        "ingredientId": "cinnamon",
-        "amount": 1,
+        "amount": 4,
         "unit": "piece"
       },
       {
@@ -2564,7 +2559,7 @@
         "unit": "piece"
       },
       {
-        "ingredientId": "basil",
+        "ingredientId": "spring_onion",
         "amount": 20,
         "unit": "g"
       }
@@ -2608,7 +2603,7 @@
         "unit": "g"
       },
       {
-        "ingredientId": "shallot",
+        "ingredientId": "spring_onion",
         "amount": 6,
         "unit": "piece"
       },
@@ -3572,7 +3567,7 @@
         "unit": "ml"
       },
       {
-        "ingredientId": "basil",
+        "ingredientId": "spring_onion",
         "amount": 20,
         "unit": "g"
       }
@@ -3611,7 +3606,7 @@
         "unit": "g"
       },
       {
-        "ingredientId": "shallot",
+        "ingredientId": "spring_onion",
         "amount": 6,
         "unit": "piece"
       },
@@ -5905,7 +5900,7 @@
         "unit": "g"
       },
       {
-        "ingredientId": "shallot",
+        "ingredientId": "spring_onion",
         "amount": 6,
         "unit": "piece"
       },
@@ -7934,7 +7929,7 @@
         "unit": "g"
       },
       {
-        "ingredientId": "shallot",
+        "ingredientId": "spring_onion",
         "amount": 6,
         "unit": "piece"
       },
