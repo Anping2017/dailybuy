@@ -66,7 +66,7 @@ function scoreRecipeHighlights(recipe: Recipe, preferred: Set<NutritionHighlight
   for (const ri of recipe.ingredients) {
     const ing = getIngredientById(ri.ingredientId);
     if (!ing) continue;
-    for (const h of ing.highlights) {
+    for (const h of (ing.highlights || [])) {
       if (preferred.has(h)) hit.add(h);
     }
   }
@@ -106,10 +106,10 @@ export function isRecipeSafe(recipe: Recipe, profile: UserProfile): boolean {
     if (!ingredient) continue;
     if (blockedCats.has(ingredient.category)) return false;
     // 过敏原+警告标签都可能被 blockedTags 命中(例如糖尿病屏蔽 high_gi, 无乳糖屏蔽 allergen_dairy)
-    for (const tag of ingredient.allergens) {
+    for (const tag of (ingredient.allergens || [])) {
       if (blockedTags.has(tag)) return false;
     }
-    for (const tag of ingredient.warnings) {
+    for (const tag of (ingredient.warnings || [])) {
       if (blockedTags.has(tag)) return false;
     }
   }

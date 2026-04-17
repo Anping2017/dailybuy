@@ -106,13 +106,13 @@ export default function IngredientsAdminPage() {
                 <td className="p-3 text-right text-xs">${ing.priceNZD}/{ing.unit}</td>
                 <td className="p-3">
                   <div className="flex flex-wrap gap-1">
-                    {ing.warnings.map(t => (
+                    {(ing.warnings || []).map(t => (
                       <span key={t} className="text-[10px] bg-red-50 text-red-600 px-1 rounded">{WARN_LABELS[t] || t}</span>
                     ))}
-                    {ing.allergens.map(t => (
+                    {(ing.allergens || []).map(t => (
                       <span key={t} className="text-[10px] bg-orange-50 text-orange-600 px-1 rounded">{ALLERGEN_LABELS[t] || t}</span>
                     ))}
-                    {ing.highlights.map(t => (
+                    {(ing.highlights || []).map(t => (
                       <span key={t} className="text-[10px] bg-emerald-50 text-emerald-600 px-1 rounded">{HIGHLIGHT_LABELS[t] || t}</span>
                     ))}
                   </div>

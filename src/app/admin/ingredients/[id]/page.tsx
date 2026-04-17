@@ -62,13 +62,13 @@ export default function IngredientDetailAdminPage() {
       <div className="flex flex-wrap gap-2">
         <span className="text-xs bg-primary/10 text-primary px-2 py-1 rounded-full">{CAT_ZH[ing.category]}</span>
         <span className="text-xs bg-background px-2 py-1 rounded-full">预估 ${ing.priceNZD}/{ing.unit}</span>
-        {ing.warnings.map(t => (
+        {(ing.warnings || []).map(t => (
           <span key={t} className="text-xs bg-red-50 text-red-600 px-2 py-1 rounded-full">{WARN_ZH[t]}</span>
         ))}
-        {ing.allergens.map(t => (
+        {(ing.allergens || []).map(t => (
           <span key={t} className="text-xs bg-orange-50 text-orange-600 px-2 py-1 rounded-full">{ALLERGEN_ZH[t]}</span>
         ))}
-        {ing.highlights.map(t => (
+        {(ing.highlights || []).map(t => (
           <span key={t} className="text-xs bg-emerald-50 text-emerald-600 px-2 py-1 rounded-full">{HIGHLIGHT_ZH[t]}</span>
         ))}
       </div>

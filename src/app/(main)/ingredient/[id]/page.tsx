@@ -56,13 +56,13 @@ export default function IngredientDetailPage() {
       <div className="flex flex-wrap gap-2">
         <span className="text-xs bg-primary-light text-primary px-2 py-1 rounded-full">{CAT_LABELS[ingredient.category]}</span>
         <span className="text-xs bg-background px-2 py-1 rounded-full">${ingredient.priceNZD}/{ingredient.unit}</span>
-        {ingredient.warnings.map(t => (
+        {(ingredient.warnings || []).map(t => (
           <span key={t} className="text-xs bg-red-50 text-red-600 px-2 py-1 rounded-full">{WARN_LABELS[t]}</span>
         ))}
-        {ingredient.allergens.map(t => (
+        {(ingredient.allergens || []).map(t => (
           <span key={t} className="text-xs bg-orange-50 text-orange-600 px-2 py-1 rounded-full">{ALLERGEN_LABELS[t]}</span>
         ))}
-        {ingredient.highlights.map(t => (
+        {(ingredient.highlights || []).map(t => (
           <span key={t} className="text-xs bg-emerald-50 text-emerald-600 px-2 py-1 rounded-full">{HIGHLIGHT_LABELS[t]}</span>
         ))}
       </div>
