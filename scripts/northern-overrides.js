@@ -1,0 +1,2407 @@
+// Authentic Northern Chinese recipe overrides
+// Covers Shandong (鲁), Dongbei (东北), Xinjiang (新疆), Lanzhou (兰州), Northern (北方/京津)
+const ing = (ingredientId, amount, unit) => ({ ingredientId, amount, unit });
+
+const OVERRIDES = {
+  lamb_stew: {
+    ingredients: [
+      ing('lamb_leg', 600, 'g'), ing('white_radish', 400, 'g'), ing('carrot', 150, 'g'),
+      ing('ginger', 20, 'g'), ing('spring_onion', 20, 'g'), ing('star_anise', 2, 'piece'),
+      ing('bay_leaf', 2, 'piece'), ing('cooking_wine', 30, 'ml'), ing('light_soy', 15, 'ml'),
+      ing('white_pepper', 2, 'g'), ing('salt', 5, 'g'), ing('cooking_oil', 15, 'ml'),
+      ing('goji_berry', 10, 'g')
+    ],
+    steps: [
+      '羊腿肉切3cm见方块，冷水下锅加姜片葱段料酒焯水5分钟去膻，捞出温水冲净',
+      '萝卜和胡萝卜去皮切滚刀块，姜拍裂，葱切段',
+      '砂锅加油烧热，下姜葱八角月桂炒香',
+      '放入羊肉翻炒2分钟至表面微焦，烹入料酒和生抽炒匀',
+      '加入热水没过羊肉两指，大火烧开撇净浮沫',
+      '转小火加盖焖炖60分钟至羊肉筷子能戳透',
+      '加入白萝卜和胡萝卜，撒白胡椒和盐',
+      '继续炖20分钟至萝卜软糯入味，撒枸杞焖2分钟出锅'
+    ]
+  },
+
+  northern_jianbing_guozi: {
+    ingredients: [
+      ing('flour', 100, 'g'), ing('cornmeal', 50, 'g'), ing('edamame', 50, 'g'),
+      ing('egg', 4, 'piece'), ing('spring_onion', 30, 'g'), ing('wonton_wrapper', 4, 'piece'),
+      ing('bean_paste', 30, 'g'), ing('doubanjiang', 10, 'g'), ing('chili_flakes', 5, 'g'),
+      ing('cooking_oil', 30, 'ml'), ing('sesame_oil', 10, 'ml'), ing('salt', 2, 'g')
+    ],
+    steps: [
+      '面粉和玉米面加350ml水、少许盐和打散的毛豆泥调成稀面糊静置20分钟',
+      '馄饨皮刷油下180℃油锅炸至金黄酥脆成薄脆备用',
+      '葱切碎花备用，调甜面酱配腐乳辣油',
+      '平底锅小火烧热，舀一大勺面糊用刮板从中心向外摊成圆薄饼',
+      '面糊半凝时打一个鸡蛋用刮板均匀摊开覆盖整个饼面',
+      '撒大量葱花和芝麻油，待蛋液凝固翻面',
+      '刷一层甜面酱、辣酱和腐乳酱',
+      '放入炸好的薄脆，对折再对折成长方形装袋趁热吃'
+    ]
+  },
+
+  shandong_nine_turn_intestine: {
+    ingredients: [
+      ing('pork_belly', 600, 'g'), ing('dark_soy', 30, 'ml'), ing('light_soy', 45, 'ml'),
+      ing('sugar', 45, 'g'), ing('black_vinegar', 30, 'ml'), ing('cooking_wine', 30, 'ml'),
+      ing('star_anise', 2, 'piece'), ing('bay_leaf', 2, 'piece'), ing('sichuan_pepper', 5, 'g'),
+      ing('ginger', 20, 'g'), ing('garlic', 20, 'g'), ing('spring_onion', 30, 'g'),
+      ing('cooking_oil', 500, 'ml'), ing('salt', 5, 'g'), ing('flour', 30, 'g')
+    ],
+    steps: [
+      '猪大肠（用五花肉条代替）用面粉、醋、盐反复揉搓5分钟去除黏液和异味，清水冲净',
+      '冷水下锅加姜葱料酒焯水10分钟，捞出再换清水煮40分钟至筷子能穿透',
+      '将煮好的肉条切3cm段，外皮朝内翻出沥干水分',
+      '油温180℃下锅炸至表面起泡呈深褐色，捞出沥油',
+      '锅留底油爆香姜末蒜末葱白和花椒',
+      '加白糖小火炒至融化呈琥珀色糖色',
+      '下肉段翻炒上色，淋料酒、生抽、老抽和黑醋',
+      '加八角、月桂叶和热水没过食材，大火烧开转小火焖30分钟',
+      '大火收汁至浓稠包裹食材，撒葱花出锅'
+    ]
+  },
+
+  shandong_scallion_sea_cucumber: {
+    ingredients: [
+      ing('mushroom', 400, 'g'), ing('spring_onion', 200, 'g'), ing('ginger', 30, 'g'),
+      ing('oyster_sauce', 30, 'ml'), ing('dark_soy', 15, 'ml'), ing('light_soy', 30, 'ml'),
+      ing('sugar', 15, 'g'), ing('cooking_wine', 30, 'ml'), ing('cooking_wine', 400, 'ml'),
+      ing('starch', 15, 'g'), ing('cooking_oil', 200, 'ml'), ing('sesame_oil', 5, 'ml'),
+      ing('salt', 3, 'g')
+    ],
+    steps: [
+      '鲜香菇（代替海参）洗净对半切，焯水捞出沥干',
+      '大葱白切5cm长段，葱绿留少许装饰',
+      '锅中倒200ml油烧至160℃，下大葱段炸至金黄出葱香即捞出成葱油，葱段备用',
+      '锅中留1勺葱油，下姜片煸出香味',
+      '加入香菇翻炒1分钟，烹入料酒',
+      '倒入高汤、蚝油、生抽、老抽和糖大火烧开',
+      '放入炸好的葱段同烧，转小火煨煮15分钟入味',
+      '水淀粉勾厚芡，淋麻油颠匀出锅装盘'
+    ]
+  },
+
+  shandong_sweet_sour_yellow_river_fish: {
+    ingredients: [
+      ing('snapper', 700, 'g'), ing('starch', 150, 'g'), ing('egg', 1, 'piece'),
+      ing('sugar', 90, 'g'), ing('vinegar', 75, 'ml'), ing('tomato_paste', 45, 'g'),
+      ing('light_soy', 30, 'ml'), ing('ginger', 20, 'g'), ing('garlic', 20, 'g'),
+      ing('spring_onion', 30, 'g'), ing('cooking_oil', 1000, 'ml'),
+      ing('cooking_wine', 15, 'ml'), ing('salt', 5, 'g')
+    ],
+    steps: [
+      '整鱼处理干净，两面打菊花刀（深至骨但不切断）',
+      '鱼身内外抹盐和料酒腌15分钟去腥',
+      '鸡蛋液与淀粉调成酸奶状的糊均匀涂满鱼身和刀口',
+      '油温180℃，提着鱼尾让鱼头先入锅，让刀口张开成菊花状定型',
+      '炸至定型捞出，油温升至200℃复炸至金黄酥脆，摆盘',
+      '锅留底油爆香姜末蒜末葱花',
+      '加番茄酱小火炒出红油',
+      '下糖、醋、生抽和半碗水煮开调成糖醋汁',
+      '水淀粉勾芡至红亮浓稠，热油淋在汁上激出香味',
+      '将滚烫糖醋汁均匀浇在鱼身上发出"呲啦"声立即上桌'
+    ]
+  },
+
+  shandong_guota_tofu: {
+    ingredients: [
+      ing('tofu', 400, 'g'), ing('egg', 3, 'piece'), ing('flour', 30, 'g'),
+      ing('cooking_wine', 300, 'ml'), ing('light_soy', 15, 'ml'),
+      ing('cooking_wine', 15, 'ml'), ing('salt', 3, 'g'), ing('white_pepper', 1, 'g'),
+      ing('spring_onion', 30, 'g'), ing('ginger', 10, 'g'),
+      ing('cooking_oil', 45, 'ml'), ing('sesame_oil', 5, 'ml')
+    ],
+    steps: [
+      '老豆腐切1.5cm厚长方片，两面撒少许盐腌5分钟吸出水分',
+      '豆腐两面均匀拍一层薄面粉',
+      '鸡蛋打散，豆腐片浸入蛋液均匀挂糊',
+      '平底锅烧热加油，下豆腐小火慢煎至两面金黄',
+      '锅边煸香姜末葱白，烹料酒和生抽',
+      '加高汤没过豆腐2/3，转小火煨5分钟让豆腐充分吸饱汤汁',
+      '调入盐和白胡椒粉提味',
+      '大火收汁至浓稠挂糊，淋麻油撒葱花出锅'
+    ]
+  },
+
+  xinjiang_big_plate_chicken: {
+    ingredients: [
+      ing('chicken_whole', 1200, 'g'), ing('potato', 500, 'g'), ing('onion', 200, 'g'),
+      ing('capsicum', 200, 'g'), ing('chili_pepper', 30, 'g'), ing('doubanjiang', 30, 'g'),
+      ing('dark_soy', 30, 'ml'), ing('light_soy', 45, 'ml'), ing('rock_sugar', 40, 'g'),
+      ing('star_anise', 3, 'piece'), ing('bay_leaf', 3, 'piece'), ing('sichuan_pepper', 5, 'g'),
+      ing('ginger', 30, 'g'), ing('garlic', 30, 'g'), ing('spring_onion', 30, 'g'),
+      ing('cooking_oil', 60, 'ml'), ing('cooking_wine', 30, 'ml'), ing('flour', 300, 'g'),
+      ing('salt', 8, 'g'), ing('cumin', 5, 'g')
+    ],
+    steps: [
+      '面粉加3g盐和170ml水揉成软面团，盖湿布醒发1小时（用作皮带面）',
+      '土鸡斩3cm大块冷水下锅焯水5分钟，捞出冲净沥干',
+      '土豆切滚刀大块，洋葱切大片，青椒和长辣椒切菱形块，姜蒜切片',
+      '热锅冷油下冰糖小火炒至枣红色糖色',
+      '下鸡块大火翻炒上色至表面金黄',
+      '加豆瓣酱、姜片、蒜瓣、八角、月桂、花椒和干辣椒段炒香',
+      '烹料酒，淋生抽和老抽继续翻炒2分钟',
+      '加啤酒或热水没过鸡块，大火烧开转中火焖25分钟',
+      '加入土豆块和孜然粉继续焖15分钟至土豆面糯',
+      '醒好的面团抻成2cm宽的皮带面下锅煮3分钟捞出垫盘底',
+      '大盘鸡锅中下洋葱和青椒大火翻炒1分钟，撒葱段',
+      '将鸡块连汤汁淋在皮带面上即成'
+    ]
+  },
+
+  xinjiang_hand_grab_rice: {
+    ingredients: [
+      ing('lamb_leg', 500, 'g'), ing('rice', 400, 'g'), ing('carrot', 400, 'g'),
+      ing('onion', 200, 'g'), ing('goji_berry', 30, 'g'), ing('cumin', 10, 'g'),
+      ing('salt', 8, 'g'), ing('cooking_oil', 60, 'ml'), ing('garlic', 40, 'g'),
+      ing('white_pepper', 3, 'g')
+    ],
+    steps: [
+      '大米淘洗干净用清水浸泡30分钟沥干',
+      '羊腿肉带骨切3cm大块，洋葱切大块，胡萝卜切1cm粗条',
+      '砂锅或厚底铸铁锅烧热加油，下羊肉块煎至四面金黄',
+      '加入洋葱块翻炒至透明出香',
+      '下胡萝卜条翻炒2分钟让其裹上羊油',
+      '撒孜然、盐和白胡椒拌匀',
+      '加热水刚好没过食材1cm，大火烧开转小火焖15分钟',
+      '将沥干的米粒均匀铺在食材上抹平不要搅拌',
+      '沿锅边补加热水至刚没过米面1cm',
+      '盖盖大火烧开转最小火焖25分钟至水干',
+      '撒上葡萄干（用枸杞代替）和拍裂的蒜瓣',
+      '盖盖再焖10分钟，开盖从下往上拌匀盛出'
+    ]
+  },
+
+  xinjiang_lamb_skewer: {
+    ingredients: [
+      ing('lamb_leg', 800, 'g'), ing('cumin', 30, 'g'), ing('chili_flakes', 30, 'g'),
+      ing('onion', 200, 'g'), ing('egg', 1, 'piece'), ing('starch', 30, 'g'),
+      ing('salt', 10, 'g'), ing('cooking_oil', 45, 'ml'), ing('white_pepper', 5, 'g'),
+      ing('garlic', 20, 'g')
+    ],
+    steps: [
+      '羊腿肉切2cm见方小块，肥瘦相间最香（保留约20%肥肉）',
+      '洋葱和蒜瓣打成泥，加蛋清、淀粉、盐、白胡椒和10ml油拌成腌料',
+      '羊肉块埋入腌料抓匀，冷藏腌制1小时入味',
+      '用竹签或铁签将肥瘦肉交替穿串，每串约6块肉',
+      '炭火炉或烤箱预热至230℃',
+      '肉串平铺在烤架上，烤3分钟翻面再烤3分钟',
+      '撒一层孜然粉和辣椒粉，再翻面继续烤2分钟',
+      '边烤边撒辣椒粉孜然，烤至肉汁滴落表面焦黄',
+      '出炉前再撒一层孜然粒和盐花趁热食用'
+    ]
+  },
+
+  northern_jiucai_box: {
+    ingredients: [
+      ing('flour', 300, 'g'), ing('leek', 200, 'g'), ing('egg', 3, 'piece'),
+      ing('dried_shrimp', 15, 'g'), ing('vermicelli', 30, 'g'), ing('salt', 3, 'g'),
+      ing('sesame_oil', 15, 'ml'), ing('light_soy', 15, 'ml'), ing('five_spice', 2, 'g'),
+      ing('cooking_oil', 45, 'ml')
+    ],
+    steps: [
+      '面粉加160ml温水和少许盐揉成偏软的面团，盖湿布醒30分钟',
+      '韭菜（用蒜苗代替）洗净甩干水分切1cm小段',
+      '鸡蛋打散倒入热油锅快速划散炒成小金黄碎块晾凉',
+      '粉丝温水泡软切短，虾皮干锅焙香',
+      '韭菜先拌1勺油锁住水分，再加入炒蛋、粉丝、虾皮、盐、生抽、麻油和五香粉拌匀成馅',
+      '醒好的面团搓条切成6份，每份擀成12cm圆薄片',
+      '中央放入两大勺馅料，对折成半圆，沿边按紧再捏出花边',
+      '平底锅刷一层薄油中小火预热，排入韭菜盒煎5分钟至底面金黄',
+      '翻面再煎5分钟至两面金黄起酥皮即成'
+    ]
+  },
+
+  'jiang-bao-ji-ding': {
+    ingredients: [
+      ing('chicken_breast', 300, 'g'), ing('capsicum', 100, 'g'), ing('carrot', 50, 'g'),
+      ing('bean_paste', 30, 'g'), ing('cooking_wine', 15, 'ml'), ing('starch', 15, 'g'),
+      ing('garlic', 15, 'g'), ing('spring_onion', 20, 'g'), ing('ginger', 10, 'g'),
+      ing('cooking_oil', 30, 'ml'), ing('sugar', 15, 'g'), ing('sesame_oil', 10, 'ml'),
+      ing('light_soy', 5, 'ml')
+    ],
+    steps: [
+      '鸡胸肉切1.5cm见方小丁，加料酒、盐、淀粉抓匀腌制15分钟',
+      '彩椒切同样大小方丁，胡萝卜切小丁，葱切马蹄段，蒜切末',
+      '锅中宽油烧至五成热（150℃），下鸡丁滑散至发白即捞出沥油',
+      '锅留1勺底油，小火煸香姜末蒜末和葱白',
+      '下甜面酱小火炒30秒出酱香味，加少许糖中和咸味',
+      '倒入胡萝卜丁翻炒1分钟至稍软',
+      '下鸡丁和彩椒丁转大火快速翻炒10秒',
+      '淋少许生抽和料酒颠锅翻匀，让酱汁均匀裹住每粒鸡丁',
+      '撒葱绿淋麻油出锅装盘'
+    ]
+  },
+
+  sweet_sour_fish_fillet: {
+    ingredients: [
+      ing('fish_fillet', 350, 'g'), ing('egg', 1, 'piece'), ing('starch', 60, 'g'),
+      ing('sugar', 60, 'g'), ing('vinegar', 50, 'ml'), ing('tomato_paste', 30, 'g'),
+      ing('light_soy', 10, 'ml'), ing('cooking_wine', 15, 'ml'), ing('cooking_oil', 500, 'ml'),
+      ing('ginger', 10, 'g'), ing('garlic', 10, 'g'), ing('spring_onion', 15, 'g'), ing('salt', 3, 'g')
+    ],
+    steps: [
+      '鱼片切4cm长条，加盐料酒和姜片腌制10分钟去腥',
+      '鸡蛋打散加淀粉调成酸奶状脆糊',
+      '鱼条逐片裹匀脆糊',
+      '油温170℃逐片下入鱼片炸至定型捞出',
+      '油温升至200℃复炸30秒至金黄酥脆，捞出沥油摆盘',
+      '调糖醋汁：番茄酱、糖、白醋、生抽和100ml水搅匀',
+      '锅留底油爆香姜蒜末，倒入糖醋汁小火熬至起泡变浓稠',
+      '水淀粉勾薄芡，放入炸好的鱼片快速翻裹挂汁',
+      '撒葱花颠匀出锅'
+    ]
+  },
+
+  vermicelli_cabbage_stirfry: {
+    ingredients: [
+      ing('vermicelli', 100, 'g'), ing('chinese_cabbage', 400, 'g'), ing('carrot', 60, 'g'),
+      ing('pork_belly', 80, 'g'), ing('light_soy', 20, 'ml'), ing('dark_soy', 5, 'ml'),
+      ing('vinegar', 10, 'ml'), ing('garlic', 15, 'g'), ing('spring_onion', 15, 'g'),
+      ing('star_anise', 1, 'piece'), ing('salt', 3, 'g'), ing('cooking_oil', 20, 'ml')
+    ],
+    steps: [
+      '粉丝温水泡20分钟至变软剪短，白菜切4cm长丝（白菜帮和叶分开），胡萝卜切丝',
+      '五花肉切薄片，蒜切片葱切段',
+      '热锅冷油下五花肉煸炒至出油微焦',
+      '下蒜片葱白和八角爆香',
+      '先放入白菜帮和胡萝卜大火翻炒至白菜帮变软',
+      '放入白菜叶继续翻炒至塌秧出水',
+      '加入泡软的粉丝、生抽、老抽和小半碗水',
+      '中火翻炒3分钟至粉丝吸饱汤汁变透明',
+      '临出锅烹入米醋，加盐调味撒葱花翻匀'
+    ]
+  },
+
+  leek_pork_dumplings_pan_fry: {
+    ingredients: [
+      ing('flour', 300, 'g'), ing('pork_mince', 250, 'g'), ing('leek', 200, 'g'),
+      ing('ginger', 15, 'g'), ing('spring_onion', 15, 'g'), ing('light_soy', 20, 'ml'),
+      ing('sesame_oil', 15, 'ml'), ing('salt', 5, 'g'), ing('white_pepper', 2, 'g'),
+      ing('cooking_oil', 45, 'ml'), ing('egg', 1, 'piece'), ing('cooking_wine', 10, 'ml')
+    ],
+    steps: [
+      '面粉加160ml温水和1g盐揉成光滑面团，盖湿布醒30分钟',
+      '猪肉末加姜末、葱末、生抽、料酒、白胡椒、蛋清和50ml葱姜水朝一个方向搅打上劲',
+      '韭菜（用韭葱代替）洗净沥干切碎末',
+      '韭菜末先与1勺香油拌匀锁水，再与肉馅混合调入盐拌匀',
+      '面团搓成长条切成20g剂子，擀成中间厚边缘薄的饺子皮',
+      '每张皮包入15g馅料捏紧成饺子形',
+      '平底锅刷一层薄油中火烧热，排入饺子煎1分钟至底部微黄',
+      '沿锅边淋入面粉水（30g淀粉+150ml水）至饺子1/3处，盖盖中火焖8分钟',
+      '水分蒸发后转小火煎2分钟形成金黄脆冰花底，倒扣出锅'
+    ]
+  },
+
+  xinjiang_cumin_lamb: {
+    ingredients: [
+      ing('lamb_leg', 500, 'g'), ing('onion', 150, 'g'), ing('cumin', 15, 'g'),
+      ing('chili_flakes', 10, 'g'), ing('salt', 5, 'g'), ing('cooking_oil', 30, 'ml'),
+      ing('white_pepper', 3, 'g'), ing('starch', 10, 'g'), ing('egg', 1, 'piece'),
+      ing('garlic', 15, 'g')
+    ],
+    steps: [
+      '羊腿肉切2cm方块，保留少许肥肉边增加口感',
+      '洋葱半个切碎末挤汁，蒜捣成泥',
+      '羊肉加洋葱汁、蒜泥、蛋清、淀粉、盐、白胡椒抓匀腌30分钟',
+      '剩余洋葱切大块备用',
+      '用竹签将肥瘦羊肉交替串成串，每串6块',
+      '炭火炉或烤箱230℃预热',
+      '肉串刷一层油放上烤架，每面烤3-4分钟',
+      '烤至表面微焦时撒大量孜然粉、辣椒面和盐',
+      '翻面继续烤至油脂滴落，再撒一层孜然趁热配生洋葱食用'
+    ]
+  },
+
+  xinjiang_big_plate_noodles: {
+    ingredients: [
+      ing('flour', 300, 'g'), ing('lamb_leg', 250, 'g'), ing('tomato', 200, 'g'),
+      ing('capsicum', 100, 'g'), ing('onion', 100, 'g'), ing('garlic', 15, 'g'),
+      ing('cumin', 5, 'g'), ing('light_soy', 20, 'ml'), ing('tomato_paste', 20, 'g'),
+      ing('cooking_oil', 30, 'ml'), ing('chili_flakes', 5, 'g'), ing('salt', 5, 'g'),
+      ing('cooking_wine', 10, 'ml')
+    ],
+    steps: [
+      '面粉加3g盐和160ml温水揉成软面团醒1小时（拉条子用）',
+      '醒好的面团搓成手指粗的长条抹油盘起再醒30分钟',
+      '羊肉切薄片，番茄去皮切大块，洋葱切丝，彩椒切条，蒜切片',
+      '热锅下油爆香蒜片洋葱丝',
+      '下羊肉片大火翻炒至变色',
+      '加番茄块和番茄酱炒出红油汁水',
+      '加生抽、料酒、孜然和辣椒粉炒匀',
+      '加少许水焖煮5分钟至浓稠出汁',
+      '另起一锅水烧开，将拉条子两手抻成筷子粗细下锅煮3分钟',
+      '面条捞入碗中浇上炒好的拌面菜，撒辣椒粉拌匀食用'
+    ]
+  },
+
+  dongbei_braised_pork_vermicelli: {
+    ingredients: [
+      ing('pork_belly', 250, 'g'), ing('vermicelli', 100, 'g'), ing('chinese_cabbage', 400, 'g'),
+      ing('tofu_puff', 150, 'g'), ing('potato', 150, 'g'), ing('ginger', 15, 'g'),
+      ing('light_soy', 20, 'ml'), ing('dark_soy', 8, 'ml'), ing('star_anise', 1, 'piece'),
+      ing('bay_leaf', 1, 'piece'), ing('salt', 5, 'g'), ing('cooking_oil', 20, 'ml'),
+      ing('garlic', 15, 'g'), ing('spring_onion', 20, 'g'), ing('cooking_wine', 15, 'ml')
+    ],
+    steps: [
+      '五花肉切薄片，粉条温水泡30分钟剪短，白菜切大段（叶帮分开）',
+      '油豆腐对半切，土豆去皮切滚刀块，姜葱切段蒜拍裂',
+      '热锅下油煸炒五花肉至出油卷边',
+      '加姜片葱白蒜瓣八角月桂炒香',
+      '下白菜帮翻炒至软，烹入料酒生抽老抽炒匀上色',
+      '加足量热水没过食材，大火烧开',
+      '放入土豆块和油豆腐，转中小火炖15分钟',
+      '加入白菜叶继续炖10分钟',
+      '最后下泡软的粉条煮5分钟至透明入味，加盐调味撒葱花出锅'
+    ]
+  },
+
+  dongbei_sweet_sour_cabbage: {
+    ingredients: [
+      ing('pork_ribs', 600, 'g'), ing('chinese_cabbage', 500, 'g'), ing('vermicelli', 100, 'g'),
+      ing('ginger', 20, 'g'), ing('spring_onion', 20, 'g'), ing('star_anise', 2, 'piece'),
+      ing('bay_leaf', 2, 'piece'), ing('white_vinegar', 30, 'ml'), ing('salt', 5, 'g'),
+      ing('cooking_wine', 20, 'ml'), ing('white_pepper', 2, 'g'), ing('garlic', 15, 'g')
+    ],
+    steps: [
+      '排骨剁段冷水下锅加姜片料酒焯水10分钟，撇净浮沫捞出冲洗干净',
+      '白菜竖切粗丝放入盆中，撒盐拌匀腌30分钟挤水，淋白醋拌匀模拟酸菜风味',
+      '粉条温水浸泡20分钟至变软',
+      '砂锅放入排骨、姜片、葱结、八角、月桂叶、料酒，加足量热水大火烧开',
+      '撇净浮沫转小火加盖炖40分钟至排骨脱骨',
+      '放入腌好的酸味白菜丝，继续炖15分钟出酸鲜味',
+      '下泡软的粉条和拍蒜，煮5分钟至粉条透明入味',
+      '加盐和白胡椒调味，撒葱花出锅'
+    ]
+  },
+
+  dongbei_pork_stew_corn: {
+    ingredients: [
+      ing('chicken_thigh', 600, 'g'), ing('corn', 300, 'g'), ing('potato', 250, 'g'),
+      ing('green_bean', 150, 'g'), ing('vermicelli', 80, 'g'), ing('ginger', 20, 'g'),
+      ing('spring_onion', 20, 'g'), ing('garlic', 20, 'g'), ing('light_soy', 30, 'ml'),
+      ing('dark_soy', 10, 'ml'), ing('star_anise', 2, 'piece'), ing('bay_leaf', 2, 'piece'),
+      ing('cooking_wine', 20, 'ml'), ing('cooking_oil', 30, 'ml'),
+      ing('rock_sugar', 15, 'g'), ing('salt', 5, 'g')
+    ],
+    steps: [
+      '鸡腿剁3cm块冷水焯水捞出，玉米切3cm段，土豆切大块，豆角掰段',
+      '粉条温水泡软备用',
+      '铁锅加油烧热下冰糖炒至焦糖色',
+      '下鸡块大火翻炒上色至表面金黄',
+      '加姜片葱段蒜瓣八角月桂炒香',
+      '烹入料酒、生抽、老抽翻炒均匀',
+      '加足量热水没过鸡块大火烧开',
+      '放入玉米段和土豆块，转小火加盖炖25分钟',
+      '加入豆角段继续炖10分钟',
+      '最后下粉条煮5分钟至透明，调盐撒葱花出锅，铁锅周围可贴一圈玉米饼'
+    ]
+  },
+
+  shandong_braised_fish: {
+    ingredients: [
+      ing('fish_fillet', 500, 'g'), ing('ginger', 20, 'g'), ing('spring_onion', 30, 'g'),
+      ing('garlic', 20, 'g'), ing('light_soy', 25, 'ml'), ing('dark_soy', 8, 'ml'),
+      ing('cooking_wine', 20, 'ml'), ing('sugar', 15, 'g'), ing('vinegar', 10, 'ml'),
+      ing('starch', 20, 'g'), ing('cooking_oil', 50, 'ml'), ing('star_anise', 1, 'piece'),
+      ing('white_pepper', 2, 'g'), ing('salt', 3, 'g')
+    ],
+    steps: [
+      '鱼片洗净擦干切大块，两面拍一层薄淀粉',
+      '锅烧热下油润锅倒出再加冷油防粘',
+      '鱼块下锅小火煎至两面金黄盛出',
+      '锅留底油爆香姜片葱白蒜瓣和八角',
+      '烹入料酒，加生抽、老抽、糖、米醋和半碗热水',
+      '放入煎好的鱼块大火烧开转中火焖10分钟',
+      '中途轻轻翻面让鱼均匀入味',
+      '大火收汁至浓稠包裹鱼块，撒葱花和白胡椒出锅'
+    ]
+  },
+
+  shandong_scallion_pancake: {
+    ingredients: [
+      ing('flour', 300, 'g'), ing('spring_onion', 80, 'g'), ing('salt', 5, 'g'),
+      ing('cooking_oil', 60, 'ml'), ing('sesame_oil', 15, 'ml'), ing('five_spice', 2, 'g'),
+      ing('white_pepper', 1, 'g')
+    ],
+    steps: [
+      '面粉用200ml温水（半烫面：90℃热水加冷水）和成柔软面团',
+      '面团揉光滑后抹一层油盖湿布醒30分钟',
+      '葱切碎末，加少许盐杀出水后挤干',
+      '将葱花、五香粉、香油和10g面粉拌成葱酥馅',
+      '面团擀成大薄长方片，均匀抹一层薄油撒盐和葱酥馅',
+      '从长边卷起成长条，再盘成圆饼用手按扁',
+      '盘饼擀成1cm厚的圆饼',
+      '平底锅刷油中小火，放入饼胚煎3分钟至底面金黄翻面',
+      '盖盖再煎3分钟，开盖用铲子将饼拍松抖出层次，两面再煎酥脆出锅'
+    ]
+  },
+
+  shandong_braised_pork_belly_vermicelli: {
+    ingredients: [
+      ing('pork_belly', 500, 'g'), ing('vermicelli', 120, 'g'), ing('chinese_cabbage', 300, 'g'),
+      ing('ginger', 15, 'g'), ing('star_anise', 2, 'piece'), ing('bay_leaf', 1, 'piece'),
+      ing('light_soy', 25, 'ml'), ing('dark_soy', 8, 'ml'), ing('cooking_wine', 20, 'ml'),
+      ing('rock_sugar', 15, 'g'), ing('spring_onion', 20, 'g'), ing('garlic', 15, 'g'),
+      ing('cooking_oil', 15, 'ml'), ing('salt', 5, 'g')
+    ],
+    steps: [
+      '五花肉切3cm见方块冷水焯水5分钟去血沫，捞出冲净',
+      '粉条温水泡30分钟至变软，白菜切大段，姜葱切段蒜拍裂',
+      '热锅下油加冰糖小火炒至枣红色糖色',
+      '下五花肉翻炒上色至表面金黄出油',
+      '加姜片葱段蒜瓣八角月桂炒香',
+      '烹料酒、生抽、老抽翻炒均匀',
+      '加热水没过肉块大火烧开转小火炖30分钟',
+      '加入白菜段继续炖10分钟',
+      '最后放入粉条煮5分钟至透明吸饱汤汁，调盐出锅'
+    ]
+  },
+
+  shandong_fried_tofu_balls: {
+    ingredients: [
+      ing('tofu', 400, 'g'), ing('carrot', 80, 'g'), ing('spring_onion', 20, 'g'),
+      ing('egg', 1, 'piece'), ing('starch', 40, 'g'), ing('flour', 20, 'g'),
+      ing('salt', 5, 'g'), ing('five_spice', 3, 'g'), ing('white_pepper', 2, 'g'),
+      ing('cooking_oil', 500, 'ml'), ing('ginger', 5, 'g'), ing('sesame_oil', 5, 'ml')
+    ],
+    steps: [
+      '老豆腐用纱布包裹挤干水分，用手捏碎成细泥状',
+      '胡萝卜擦丝再切碎末，葱切碎花，姜切末',
+      '豆腐泥加胡萝卜末、葱花、姜末、鸡蛋、淀粉、面粉、盐、五香粉、白胡椒和麻油搅拌上劲',
+      '手心抹油，将豆腐糊团成核桃大小的丸子',
+      '油温160℃下入丸子，中小火炸3分钟至表面定型',
+      '捞出沥油，油温升至180℃复炸30秒至金黄酥脆',
+      '捞出控油装盘，可直接食用或配甜辣酱蘸食'
+    ]
+  },
+
+  homestyle_braised_chicken_mushroom: {
+    ingredients: [
+      ing('chicken_wing', 600, 'g'), ing('dried_mushroom', 30, 'g'), ing('potato', 250, 'g'),
+      ing('ginger', 15, 'g'), ing('garlic', 15, 'g'), ing('spring_onion', 20, 'g'),
+      ing('light_soy', 25, 'ml'), ing('dark_soy', 8, 'ml'), ing('rock_sugar', 15, 'g'),
+      ing('cooking_wine', 20, 'ml'), ing('cooking_oil', 25, 'ml'), ing('star_anise', 2, 'piece'),
+      ing('bay_leaf', 1, 'piece'), ing('salt', 3, 'g')
+    ],
+    steps: [
+      '干香菇温水泡发30分钟切块，香菇水留用，土豆去皮切滚刀块',
+      '鸡翅两面划两刀冷水焯水捞出沥干',
+      '热锅下油加冰糖炒糖色',
+      '鸡翅入锅煎至两面金黄上色',
+      '加姜片蒜末葱白八角月桂爆香，烹料酒',
+      '加生抽老抽和香菇水大火烧开',
+      '放入香菇块和土豆块，加热水补足汤汁',
+      '转小火加盖焖煮20分钟至鸡翅软烂土豆粉糯',
+      '大火收汁至浓稠裹住食材，撒葱花出锅'
+    ]
+  },
+
+  homestyle_spicy_dry_tofu: {
+    ingredients: [
+      ing('dried_tofu', 300, 'g'), ing('capsicum', 100, 'g'), ing('chili_pepper', 20, 'g'),
+      ing('garlic', 15, 'g'), ing('spring_onion', 15, 'g'), ing('ginger', 5, 'g'),
+      ing('light_soy', 15, 'ml'), ing('vinegar', 8, 'ml'), ing('chili_flakes', 5, 'g'),
+      ing('sichuan_pepper', 3, 'g'), ing('cooking_oil', 25, 'ml'), ing('salt', 3, 'g'),
+      ing('sesame_oil', 5, 'ml'), ing('sugar', 3, 'g')
+    ],
+    steps: [
+      '干豆腐皮切细丝，沸水焯30秒去豆腥味捞出沥干',
+      '彩椒切丝，小米椒切圈，蒜切末葱切段',
+      '热锅下油爆香花椒粒后捞出，下蒜末小米椒和辣椒面炒出红油',
+      '放入干豆腐丝大火翻炒1分钟',
+      '加生抽、糖、盐调味继续翻炒',
+      '加入彩椒丝和葱段大火翻炒30秒',
+      '淋米醋和麻油颠匀出锅，保持干豆腐丝韧劲'
+    ]
+  },
+
+  homestyle_roast_tofu_skewers: {
+    ingredients: [
+      ing('tofu', 500, 'g'), ing('cumin', 10, 'g'), ing('chili_flakes', 8, 'g'),
+      ing('salt', 5, 'g'), ing('cooking_oil', 30, 'ml'), ing('light_soy', 15, 'ml'),
+      ing('garlic', 10, 'g'), ing('white_pepper', 2, 'g'), ing('sesame_oil', 5, 'ml')
+    ],
+    steps: [
+      '老豆腐切2cm方块，用厨房纸吸干表面水分',
+      '蒜捣泥加生抽、麻油、白胡椒调成腌料',
+      '豆腐块拌入腌料腌15分钟',
+      '腌好的豆腐块用竹签穿成串，每串3-4块',
+      '烤盘铺锡纸刷油，豆腐串平铺刷一层油',
+      '烤箱200℃烤8分钟至表面微焦',
+      '取出翻面再刷一层油，撒孜然粉、辣椒面和盐',
+      '继续烤5分钟至两面金黄起脆皮',
+      '出炉再撒一层孜然粒和辣椒面趁热食用'
+    ]
+  },
+
+  homestyle_pork_belly_green_bean: {
+    ingredients: [
+      ing('pork_belly', 250, 'g'), ing('green_bean', 400, 'g'), ing('garlic', 15, 'g'),
+      ing('ginger', 10, 'g'), ing('spring_onion', 15, 'g'), ing('light_soy', 20, 'ml'),
+      ing('dark_soy', 5, 'ml'), ing('cooking_wine', 15, 'ml'), ing('star_anise', 1, 'piece'),
+      ing('salt', 3, 'g'), ing('cooking_oil', 15, 'ml'), ing('sugar', 5, 'g')
+    ],
+    steps: [
+      '五花肉切1cm厚片，豆角掐头去筋掰5cm段冷水焯1分钟',
+      '蒜拍裂，姜切片，葱切段',
+      '热锅下油煸炒五花肉至出油微焦',
+      '下蒜瓣姜片葱白八角炒香',
+      '淋料酒、生抽、老抽和糖翻炒均匀上色',
+      '放入豆角段大火翻炒2分钟裹满酱油',
+      '加热水没过豆角一半，大火烧开转中火盖盖焖15分钟',
+      '豆角软烂入味后大火收汁，撒葱花调盐出锅'
+    ]
+  },
+
+  xinjiang_lamb_pilaf: {
+    ingredients: [
+      ing('lamb_leg', 400, 'g'), ing('rice', 350, 'g'), ing('carrot', 300, 'g'),
+      ing('onion', 150, 'g'), ing('cumin', 8, 'g'), ing('salt', 6, 'g'),
+      ing('cooking_oil', 50, 'ml'), ing('garlic', 30, 'g'), ing('goji_berry', 20, 'g'),
+      ing('white_pepper', 2, 'g')
+    ],
+    steps: [
+      '大米淘洗后清水浸泡30分钟沥干',
+      '羊腿肉带骨切3cm大块，胡萝卜切1cm粗条，洋葱切大块',
+      '砂锅或铸铁锅烧热加羊油（或植物油），下羊肉煎至四面金黄出油',
+      '加入洋葱块炒至透明出香味',
+      '放胡萝卜条翻炒2分钟挂上羊油',
+      '撒孜然、盐和白胡椒拌匀',
+      '加热水刚没过食材，大火烧开转小火焖15分钟',
+      '将沥干的米平铺在食材上抹平不要搅拌',
+      '沿锅边补加热水至刚没过米面1cm',
+      '盖盖大火烧开转最小火焖25分钟',
+      '撒葡萄干（用枸杞代替）和拍蒜，盖盖焖10分钟让米粒松软',
+      '从下往上拌匀盛出'
+    ]
+  },
+
+  shandong_braised_chicken_wing_potato: {
+    ingredients: [
+      ing('pork_ribs', 600, 'g'), ing('potato', 250, 'g'), ing('dried_mushroom', 20, 'g'),
+      ing('ginger', 15, 'g'), ing('garlic', 15, 'g'), ing('spring_onion', 20, 'g'),
+      ing('light_soy', 25, 'ml'), ing('dark_soy', 8, 'ml'), ing('rock_sugar', 20, 'g'),
+      ing('cooking_wine', 20, 'ml'), ing('cooking_oil', 25, 'ml'),
+      ing('star_anise', 2, 'piece'), ing('bay_leaf', 1, 'piece'), ing('salt', 3, 'g')
+    ],
+    steps: [
+      '排骨剁段冷水下锅加姜葱料酒焯水5分钟，捞出冲净沥干',
+      '干香菇泡发切块（香菇水留用），土豆去皮切滚刀块',
+      '热锅下油加冰糖小火炒至枣红色糖色',
+      '排骨入锅大火翻炒上色至表面金黄',
+      '加姜片蒜瓣葱白八角月桂炒香',
+      '烹料酒、生抽、老抽翻炒均匀',
+      '加香菇和泡香菇水大火烧开转小火焖25分钟',
+      '加入土豆块继续焖15分钟至软烂',
+      '大火收汁至浓稠包裹排骨，撒葱花出锅'
+    ]
+  },
+
+  'shandong-braised-pork-meatballs': {
+    ingredients: [
+      ing('pork_mince', 400, 'g'), ing('egg', 1, 'piece'), ing('spring_onion', 20, 'g'),
+      ing('ginger', 15, 'g'), ing('starch', 30, 'g'), ing('flour', 20, 'g'),
+      ing('light_soy', 15, 'ml'), ing('cooking_wine', 10, 'ml'), ing('white_pepper', 2, 'g'),
+      ing('salt', 4, 'g'), ing('five_spice', 2, 'g'), ing('cooking_oil', 500, 'ml'),
+      ing('sesame_oil', 5, 'ml')
+    ],
+    steps: [
+      '猪肉末加葱姜末、生抽、料酒、盐、五香粉、白胡椒和蛋清朝一个方向搅打上劲',
+      '加入淀粉和面粉继续搅拌至馅料黏稠有弹性',
+      '淋一勺香油锁香，再次搅匀',
+      '手心抹油挤出乒乓球大小的丸子',
+      '油温160℃下入丸子，中小火炸至表面定型呈浅黄色',
+      '油温升至180℃复炸30秒至金黄酥脆',
+      '捞出沥油装盘，可配甜辣酱或入红烧菜中使用'
+    ]
+  },
+
+  'shandong-scallion-oil-shrimp': {
+    ingredients: [
+      ing('shrimp', 400, 'g'), ing('spring_onion', 60, 'g'), ing('ginger', 15, 'g'),
+      ing('light_soy', 20, 'ml'), ing('cooking_wine', 15, 'ml'), ing('sugar', 10, 'g'),
+      ing('cooking_oil', 30, 'ml'), ing('salt', 2, 'g'), ing('white_pepper', 1, 'g'),
+      ing('sesame_oil', 5, 'ml')
+    ],
+    steps: [
+      '大虾剪须去虾枪和虾线，背部开刀方便入味',
+      '大葱白切3cm段，葱绿切碎花，姜切片',
+      '热锅下油烧至七成热，放入虾煎至两面变红虾油渗出',
+      '加姜片煸香，烹料酒去腥',
+      '加生抽、糖、盐和小半碗水中火焖2分钟',
+      '放入大葱白段翻炒1分钟出葱香',
+      '大火收汁至浓稠裹满虾身',
+      '撒葱绿淋麻油和白胡椒粉颠匀出锅'
+    ]
+  },
+
+  'shandong-braised-eggplant': {
+    ingredients: [
+      ing('eggplant', 400, 'g'), ing('pork_mince', 100, 'g'), ing('light_soy', 25, 'ml'),
+      ing('dark_soy', 5, 'ml'), ing('sugar', 10, 'g'), ing('garlic', 15, 'g'),
+      ing('ginger', 5, 'g'), ing('spring_onion', 15, 'g'), ing('starch', 8, 'g'),
+      ing('cooking_oil', 50, 'ml'), ing('cooking_wine', 10, 'ml'), ing('salt', 2, 'g')
+    ],
+    steps: [
+      '茄子切滚刀块，撒少许盐拌匀杀水10分钟挤干',
+      '蒜切末葱切段姜切末',
+      '锅中多油烧至七成热，茄子分批过油炸至软透捞出',
+      '锅留底油下肉末煸炒至变色',
+      '加姜末蒜末葱白爆香',
+      '烹料酒、生抽、老抽、糖和小半碗水烧开',
+      '放入炸好的茄子翻炒2分钟入味',
+      '水淀粉勾薄芡，撒葱花颠匀出锅'
+    ]
+  },
+
+  'shandong-braised-chicken-mushroom': {
+    ingredients: [
+      ing('chicken_thigh', 500, 'g'), ing('mushroom', 200, 'g'), ing('light_soy', 25, 'ml'),
+      ing('dark_soy', 8, 'ml'), ing('cooking_wine', 15, 'ml'), ing('ginger', 15, 'g'),
+      ing('spring_onion', 20, 'g'), ing('garlic', 15, 'g'), ing('rock_sugar', 15, 'g'),
+      ing('cooking_oil', 25, 'ml'), ing('star_anise', 1, 'piece'), ing('bay_leaf', 1, 'piece'),
+      ing('salt', 3, 'g'), ing('white_pepper', 1, 'g')
+    ],
+    steps: [
+      '鸡腿肉斩2cm块冷水下锅加姜葱料酒焯水5分钟去血沫',
+      '蘑菇撕成小朵焯水30秒沥干',
+      '热锅下油加冰糖小火炒至枣红色',
+      '鸡块入锅大火翻炒上色至金黄',
+      '加姜片蒜瓣葱白八角月桂爆香',
+      '烹料酒、生抽、老抽翻炒均匀',
+      '加热水没过鸡块大火烧开',
+      '放入蘑菇转小火加盖焖20分钟至鸡块酥烂',
+      '大火收汁至浓稠包裹食材，撒葱花和白胡椒出锅'
+    ]
+  },
+
+  'shandong-stir-fried-pork-liver': {
+    ingredients: [
+      ing('pork_loin', 400, 'g'), ing('carrot', 80, 'g'), ing('capsicum', 80, 'g'),
+      ing('starch', 60, 'g'), ing('egg', 1, 'piece'), ing('vinegar', 20, 'ml'),
+      ing('sugar', 20, 'g'), ing('light_soy', 15, 'ml'), ing('cooking_wine', 10, 'ml'),
+      ing('cooking_oil', 500, 'ml'), ing('garlic', 10, 'g'), ing('spring_onion', 15, 'g'),
+      ing('ginger', 5, 'g'), ing('salt', 3, 'g')
+    ],
+    steps: [
+      '猪里脊切3cm长条，加盐料酒和姜葱水抓匀腌10分钟',
+      '加入蛋清和淀粉抓匀挂糊，最后淋少许油防粘',
+      '锅中宽油烧至五成热（150℃），肉条逐根下锅炸至定型',
+      '油温升至七成热（200℃）复炸30秒至金黄酥脆捞出',
+      '调溜汁：糖、米醋、生抽、料酒、少许水和水淀粉拌匀',
+      '锅留底油下蒜末姜末爆香',
+      '加胡萝卜片青椒丝快速翻炒断生',
+      '倒入溜汁烧至浓稠冒泡',
+      '放入炸好的肉条快速翻炒挂汁，撒葱花出锅'
+    ]
+  },
+
+  'shandong-scallion-braised-tofu': {
+    ingredients: [
+      ing('tofu', 400, 'g'), ing('spring_onion', 80, 'g'), ing('light_soy', 20, 'ml'),
+      ing('oyster_sauce', 15, 'ml'), ing('dark_soy', 5, 'ml'), ing('sugar', 8, 'g'),
+      ing('starch', 8, 'g'), ing('cooking_oil', 30, 'ml'), ing('ginger', 10, 'g'),
+      ing('cooking_wine', 10, 'ml'), ing('salt', 2, 'g'), ing('sesame_oil', 5, 'ml')
+    ],
+    steps: [
+      '老豆腐切2cm厚块用厨房纸吸干水分',
+      '大葱白切3cm段，葱绿切碎花，姜切片',
+      '平底锅烧热加油，下豆腐小火慢煎至两面金黄盛出',
+      '锅留底油下大葱白段中小火煸至焦黄出葱油香',
+      '加姜片爆香，烹料酒生抽老抽蚝油糖和半碗水烧开',
+      '放入煎好的豆腐小火烧3分钟入味',
+      '水淀粉勾薄芡颠匀',
+      '撒葱绿淋麻油出锅'
+    ]
+  },
+
+  'shandong-steamed-egg-custard': {
+    ingredients: [
+      ing('egg', 4, 'piece'), ing('pork_mince', 100, 'g'), ing('spring_onion', 15, 'g'),
+      ing('ginger', 5, 'g'), ing('light_soy', 15, 'ml'), ing('sesame_oil', 8, 'ml'),
+      ing('cooking_wine', 5, 'ml'), ing('salt', 3, 'g'), ing('white_pepper', 1, 'g'),
+      ing('starch', 5, 'g')
+    ],
+    steps: [
+      '肉末加姜末、料酒、生抽、淀粉和少许水朝一个方向搅匀',
+      '热锅少油下肉末小火炒散至变色，盛出晾凉',
+      '鸡蛋打散加1.5倍温水（约300ml）和少许盐搅匀',
+      '蛋液过筛去除泡沫倒入深碗中',
+      '炒好的肉末均匀铺在蛋液表面',
+      '蒸锅水开后放入碗，盖一层保鲜膜或盘子防滴水',
+      '中小火蒸12分钟至蛋液凝固有弹性',
+      '出锅淋生抽和麻油，撒葱花和白胡椒粉趁热食用'
+    ]
+  },
+
+  'shandong-roast-chicken-thigh': {
+    ingredients: [
+      ing('chicken_thigh', 600, 'g'), ing('light_soy', 30, 'ml'), ing('dark_soy', 10, 'ml'),
+      ing('cooking_wine', 15, 'ml'), ing('garlic', 20, 'g'), ing('ginger', 15, 'g'),
+      ing('rock_sugar', 15, 'g'), ing('honey', 15, 'ml'), ing('cooking_oil', 15, 'ml'),
+      ing('five_spice', 2, 'g'), ing('white_pepper', 2, 'g'), ing('salt', 3, 'g'),
+      ing('spring_onion', 15, 'g')
+    ],
+    steps: [
+      '鸡腿肉两面深划几刀方便入味',
+      '蒜捣泥加姜末、生抽、老抽、料酒、五香粉、白胡椒、糖和盐调成腌料',
+      '鸡腿放入腌料按摩均匀，密封冷藏2小时以上（最好过夜）',
+      '烤箱预热200℃，烤盘铺锡纸放烤架',
+      '鸡腿带皮一面朝上放在烤架上烤20分钟',
+      '取出刷一层腌料汁和蜂蜜油',
+      '翻面再烤10分钟，刷一次蜜汁',
+      '最后调高至220℃烤5分钟至表面焦黄出油即成'
+    ]
+  },
+
+  'dongbei-braised-pork-vermicelli': {
+    ingredients: [
+      ing('chicken_thigh', 600, 'g'), ing('dried_mushroom', 30, 'g'), ing('vermicelli', 100, 'g'),
+      ing('light_soy', 30, 'ml'), ing('dark_soy', 10, 'ml'), ing('cooking_wine', 20, 'ml'),
+      ing('ginger', 20, 'g'), ing('spring_onion', 20, 'g'), ing('garlic', 20, 'g'),
+      ing('cooking_oil', 25, 'ml'), ing('star_anise', 2, 'piece'), ing('bay_leaf', 1, 'piece'),
+      ing('rock_sugar', 15, 'g'), ing('salt', 5, 'g')
+    ],
+    steps: [
+      '小笨鸡（用鸡腿代替）斩3cm块冷水焯水捞出沥干',
+      '干蘑菇（榛蘑或香菇）温水泡发30分钟切大块，水留用',
+      '粉条温水泡20分钟至变软',
+      '铁锅加油烧热下冰糖小火炒至枣红色',
+      '鸡块大火翻炒上色至金黄',
+      '加姜片蒜瓣葱段八角月桂炒香',
+      '烹料酒、生抽、老抽翻炒均匀',
+      '加蘑菇和泡蘑菇水加热水大火烧开',
+      '转小火加盖炖30分钟至鸡块酥烂',
+      '加入粉条继续煮5分钟至透明吸饱汤汁',
+      '调盐撒葱花出锅，可贴饼子同食'
+    ]
+  },
+
+  'dongbei-stir-fried-pork-sauerkraut': {
+    ingredients: [
+      ing('chinese_cabbage', 300, 'g'), ing('vermicelli', 120, 'g'), ing('pork_belly', 150, 'g'),
+      ing('light_soy', 15, 'ml'), ing('vinegar', 15, 'ml'), ing('cooking_oil', 25, 'ml'),
+      ing('garlic', 15, 'g'), ing('ginger', 8, 'g'), ing('spring_onion', 15, 'g'),
+      ing('star_anise', 1, 'piece'), ing('chili_pepper', 5, 'g'), ing('salt', 3, 'g'),
+      ing('white_pepper', 1, 'g')
+    ],
+    steps: [
+      '白菜竖切粗丝撒盐腌30分钟挤干水分淋米醋拌匀模拟酸菜',
+      '粉条温水泡20分钟至软',
+      '五花肉切薄片，蒜切片葱切段姜切丝',
+      '热锅下油煸炒五花肉至出油卷边',
+      '加姜丝蒜片葱白八角和干辣椒爆香',
+      '放入酸味白菜丝大火翻炒2分钟出酸香',
+      '淋生抽继续翻炒，加少量水煮开',
+      '放入粉条焖煮5分钟至透明吸味',
+      '调盐和白胡椒，撒葱花出锅'
+    ]
+  },
+
+  'dongbei-braised-pork-belly-cabbage': {
+    ingredients: [
+      ing('pork_belly', 500, 'g'), ing('chinese_cabbage', 400, 'g'), ing('vermicelli', 100, 'g'),
+      ing('ginger', 15, 'g'), ing('spring_onion', 20, 'g'), ing('garlic', 20, 'g'),
+      ing('light_soy', 15, 'ml'), ing('white_vinegar', 20, 'ml'), ing('cooking_wine', 15, 'ml'),
+      ing('star_anise', 2, 'piece'), ing('bay_leaf', 1, 'piece'), ing('sichuan_pepper', 3, 'g'),
+      ing('salt', 5, 'g'), ing('white_pepper', 2, 'g')
+    ],
+    steps: [
+      '五花肉整块冷水下锅加姜葱花椒料酒煮40分钟至筷子能扎透',
+      '捞出晾凉切3mm薄片（白肉）',
+      '白菜切粗丝撒盐杀水15分钟挤干，淋白醋拌匀模拟酸菜',
+      '粉条温水泡20分钟',
+      '砂锅底铺一层酸味白菜丝',
+      '码上白肉片，加姜片葱段八角月桂',
+      '倒入煮肉的清汤至没过食材',
+      '大火烧开转小火炖30分钟',
+      '加入泡软的粉条继续炖10分钟至透明',
+      '调盐和白胡椒撒葱花出锅，可配蒜泥韭菜花酱料蘸食'
+    ]
+  },
+
+  'dongbei-stir-fried-potato-eggplant-pepper': {
+    ingredients: [
+      ing('dried_tofu', 300, 'g'), ing('chili_pepper', 100, 'g'), ing('pork_belly', 80, 'g'),
+      ing('light_soy', 20, 'ml'), ing('dark_soy', 5, 'ml'), ing('garlic', 15, 'g'),
+      ing('ginger', 5, 'g'), ing('spring_onion', 10, 'g'), ing('cooking_oil', 25, 'ml'),
+      ing('salt', 3, 'g'), ing('sugar', 3, 'g'), ing('cooking_wine', 5, 'ml')
+    ],
+    steps: [
+      '干豆腐皮切菱形片，用沸水焯30秒去豆腥味捞出沥干',
+      '青尖椒去籽切大菱形片，五花肉切薄片',
+      '蒜切片，葱切段，姜切末',
+      '热锅下油煸炒五花肉至出油卷边',
+      '加姜末蒜片葱白炒香',
+      '放入干豆腐片大火翻炒1分钟',
+      '烹料酒、生抽、老抽和少许糖翻炒均匀',
+      '放入青尖椒大火翻炒1分钟至断生',
+      '加盐调味颠匀出锅'
+    ]
+  },
+
+  'dongbei-braised-beef-potato': {
+    ingredients: [
+      ing('pork_belly', 250, 'g'), ing('potato', 250, 'g'), ing('corn', 150, 'g'),
+      ing('green_bean', 150, 'g'), ing('eggplant', 150, 'g'), ing('tomato', 100, 'g'),
+      ing('chinese_cabbage', 200, 'g'), ing('vermicelli', 80, 'g'), ing('light_soy', 25, 'ml'),
+      ing('dark_soy', 8, 'ml'), ing('cooking_wine', 15, 'ml'), ing('cooking_oil', 25, 'ml'),
+      ing('garlic', 15, 'g'), ing('ginger', 10, 'g'), ing('spring_onion', 15, 'g'),
+      ing('star_anise', 1, 'piece'), ing('salt', 5, 'g')
+    ],
+    steps: [
+      '所有蔬菜（土豆、豆角、茄子、玉米、白菜）切大块滚刀块',
+      '五花肉切薄片，粉条温水泡软',
+      '铁锅烧热下五花肉煸出油脂',
+      '下姜片蒜瓣葱白八角炒香',
+      '烹料酒、生抽、老抽翻炒上色',
+      '依次下入土豆、豆角和玉米翻炒2分钟',
+      '加足量热水烧开',
+      '加入茄子和白菜继续炖15分钟',
+      '最后下番茄和粉条煮5分钟至透明',
+      '调盐撒葱花出锅，传统铁锅可贴一圈玉米饼'
+    ]
+  },
+
+  'dongbei-fried-egg-sauce-noodle': {
+    ingredients: [
+      ing('pork_loin', 400, 'g'), ing('starch', 80, 'g'), ing('flour', 20, 'g'),
+      ing('egg', 1, 'piece'), ing('carrot', 50, 'g'), ing('spring_onion', 30, 'g'),
+      ing('ginger', 10, 'g'), ing('vinegar', 50, 'ml'), ing('sugar', 60, 'g'),
+      ing('light_soy', 10, 'ml'), ing('cooking_wine', 10, 'ml'), ing('salt', 3, 'g'),
+      ing('cooking_oil', 600, 'ml')
+    ],
+    steps: [
+      '猪里脊切大薄片（约0.5cm厚），加盐料酒抓匀腌10分钟',
+      '淀粉用清水提前浸泡30分钟，倒掉上层清水留湿淀粉',
+      '湿淀粉加蛋清和少许油搅成酸奶状脆糊',
+      '调糖醋汁：白醋50ml、白糖60g、生抽10ml、半碗水搅匀',
+      '胡萝卜切丝，葱白切丝，姜切丝',
+      '肉片均匀挂上脆糊',
+      '油温180℃逐片下锅炸至定型，捞出',
+      '油温升至210℃复炸20秒至金黄酥脆，再次捞出',
+      '锅留底油下姜葱胡萝卜丝爆香',
+      '倒入糖醋汁大火烧开冒大泡',
+      '迅速倒入炸好的肉片快速翻匀挂汁立即出锅',
+      '装盘后撒葱丝姜丝点缀，趁脆食用'
+    ]
+  },
+
+  'dongbei-stir-fried-shredded-potato': {
+    ingredients: [
+      ing('sweet_potato', 500, 'g'), ing('sugar', 120, 'g'), ing('cooking_oil', 500, 'ml'),
+      ing('sesame_oil', 5, 'ml'), ing('starch', 20, 'g')
+    ],
+    steps: [
+      '红薯去皮切3cm滚刀块，用清水浸泡10分钟去淀粉',
+      '红薯块沥干水分拍一层薄淀粉',
+      '油烧至160℃，红薯块下锅中小火炸4分钟至外壳变硬内部熟透',
+      '油温升至190℃复炸30秒至金黄酥脆，捞出沥油',
+      '另起一锅倒入15ml油加白糖小火慢熬',
+      '糖溶化后改最小火耐心炒至大泡变小泡呈金黄色（拉丝状）',
+      '迅速倒入炸好的红薯翻裹均匀',
+      '装入抹油的盘中，旁边配一碗凉开水',
+      '夹起拔丝在凉水中蘸一下立即食用'
+    ]
+  },
+
+  'dongbei-stew-pork-potato': {
+    ingredients: [
+      ing('pork_ribs', 600, 'g'), ing('potato', 400, 'g'), ing('carrot', 100, 'g'),
+      ing('light_soy', 25, 'ml'), ing('dark_soy', 8, 'ml'), ing('cooking_wine', 20, 'ml'),
+      ing('ginger', 15, 'g'), ing('spring_onion', 20, 'g'), ing('garlic', 15, 'g'),
+      ing('cooking_oil', 20, 'ml'), ing('star_anise', 2, 'piece'), ing('bay_leaf', 1, 'piece'),
+      ing('rock_sugar', 15, 'g'), ing('salt', 5, 'g')
+    ],
+    steps: [
+      '排骨剁段冷水下锅加姜葱料酒焯水5分钟撇浮沫，捞出冲净',
+      '土豆去皮切大块，胡萝卜切滚刀块',
+      '热锅下油加冰糖小火炒至枣红色糖色',
+      '排骨入锅大火翻炒上色至金黄',
+      '加姜片蒜瓣葱白八角月桂炒香',
+      '烹料酒、生抽、老抽翻炒均匀',
+      '加热水没过排骨大火烧开转小火炖30分钟',
+      '加入土豆和胡萝卜继续炖15分钟至软烂',
+      '大火收汁至浓稠裹住排骨，撒葱花调盐出锅'
+    ]
+  },
+
+  'xinjiang-cumin-lamb-stir-fry': {
+    ingredients: [
+      ing('lamb_leg', 400, 'g'), ing('onion', 150, 'g'), ing('chili_pepper', 80, 'g'),
+      ing('light_soy', 15, 'ml'), ing('cooking_wine', 15, 'ml'), ing('cumin', 8, 'g'),
+      ing('chili_flakes', 5, 'g'), ing('garlic', 15, 'g'), ing('ginger', 10, 'g'),
+      ing('cooking_oil', 30, 'ml'), ing('starch', 10, 'g'), ing('salt', 3, 'g'),
+      ing('white_pepper', 2, 'g'), ing('sesame_oil', 5, 'ml')
+    ],
+    steps: [
+      '羊腿肉逆纹切薄片，加生抽、料酒、淀粉、白胡椒抓匀腌15分钟',
+      '洋葱切丝，青尖椒切片，蒜切片姜切丝',
+      '锅烧至冒烟下油，迅速放入羊肉片大火爆炒至变色',
+      '加姜丝蒜片爆香',
+      '放入洋葱丝大火翻炒1分钟至断生',
+      '撒大量孜然粒和辣椒粉炒匀出香',
+      '加入青椒片快速翻炒30秒',
+      '调盐淋麻油颠锅出锅趁热食用'
+    ]
+  },
+
+  chicken_thigh_mushroom_stew: {
+    ingredients: [
+      ing('chicken_thigh', 500, 'g'), ing('mushroom', 250, 'g'), ing('dried_mushroom', 15, 'g'),
+      ing('ginger', 20, 'g'), ing('spring_onion', 20, 'g'), ing('garlic', 15, 'g'),
+      ing('light_soy', 25, 'ml'), ing('dark_soy', 8, 'ml'), ing('cooking_wine', 20, 'ml'),
+      ing('rock_sugar', 15, 'g'), ing('cooking_oil', 25, 'ml'), ing('star_anise', 2, 'piece'),
+      ing('bay_leaf', 1, 'piece'), ing('salt', 4, 'g')
+    ],
+    steps: [
+      '鸡腿剁2cm块冷水焯水撇浮沫，捞出沥干',
+      '鲜蘑菇撕成小朵，干香菇泡发切块香菇水留用',
+      '热锅下油加冰糖炒糖色',
+      '鸡块入锅大火翻炒上色至金黄',
+      '加姜片蒜瓣葱白八角月桂爆香',
+      '烹料酒生抽老抽翻炒均匀',
+      '加蘑菇泡蘑菇水和热水没过鸡块大火烧开',
+      '转小火加盖炖25分钟至鸡块软烂',
+      '大火收汁至浓稠，撒葱花调盐出锅'
+    ]
+  },
+
+  dongbei_braised_pork_corn: {
+    ingredients: [
+      ing('pork_ribs', 500, 'g'), ing('corn', 300, 'g'), ing('carrot', 150, 'g'),
+      ing('ginger', 15, 'g'), ing('spring_onion', 20, 'g'), ing('garlic', 15, 'g'),
+      ing('light_soy', 20, 'ml'), ing('dark_soy', 8, 'ml'), ing('cooking_wine', 20, 'ml'),
+      ing('cooking_oil', 20, 'ml'), ing('rock_sugar', 15, 'g'), ing('star_anise', 2, 'piece'),
+      ing('salt', 5, 'g')
+    ],
+    steps: [
+      '排骨剁段冷水下锅加姜葱料酒焯水5分钟撇浮沫',
+      '玉米切3cm段，胡萝卜切滚刀块',
+      '热锅下油加冰糖小火炒糖色',
+      '排骨入锅翻炒上色至金黄',
+      '加姜片蒜瓣葱白八角爆香',
+      '烹料酒、生抽、老抽翻炒均匀',
+      '加热水没过排骨大火烧开',
+      '转小火炖30分钟，加入玉米和胡萝卜',
+      '继续炖15分钟至排骨软烂玉米入味，大火收汁出锅'
+    ]
+  },
+
+  dongbei_pork_stew_potato: {
+    ingredients: [
+      ing('pork_belly', 400, 'g'), ing('potato', 400, 'g'), ing('light_soy', 25, 'ml'),
+      ing('dark_soy', 8, 'ml'), ing('ginger', 15, 'g'), ing('spring_onion', 20, 'g'),
+      ing('garlic', 15, 'g'), ing('cooking_wine', 15, 'ml'), ing('cooking_oil', 15, 'ml'),
+      ing('rock_sugar', 15, 'g'), ing('star_anise', 2, 'piece'), ing('bay_leaf', 1, 'piece'),
+      ing('salt', 5, 'g')
+    ],
+    steps: [
+      '五花肉切3cm见方块冷水焯水捞出冲净',
+      '土豆去皮切大滚刀块',
+      '热锅下油加冰糖小火炒糖色',
+      '五花肉入锅煸炒上色至四面金黄出油',
+      '加姜片蒜瓣葱白八角月桂爆香',
+      '烹料酒、生抽、老抽翻炒均匀',
+      '加热水没过肉块大火烧开转小火炖25分钟',
+      '加入土豆块继续炖20分钟至软烂',
+      '大火收汁至浓稠裹住食材，撒葱花调盐出锅'
+    ]
+  },
+
+  shandong_braised_cabbage_pork: {
+    ingredients: [
+      ing('chinese_cabbage', 500, 'g'), ing('pork_belly', 200, 'g'), ing('vermicelli', 50, 'g'),
+      ing('ginger', 10, 'g'), ing('garlic', 15, 'g'), ing('spring_onion', 15, 'g'),
+      ing('light_soy', 20, 'ml'), ing('dark_soy', 5, 'ml'), ing('vinegar', 8, 'ml'),
+      ing('cooking_wine', 10, 'ml'), ing('cooking_oil', 20, 'ml'),
+      ing('star_anise', 1, 'piece'), ing('salt', 3, 'g')
+    ],
+    steps: [
+      '白菜帮叶分开切大块，五花肉切薄片',
+      '粉条温水泡软备用',
+      '热锅下油煸炒五花肉至出油卷边',
+      '加姜片蒜瓣葱白八角爆香',
+      '先放白菜帮翻炒至变软',
+      '烹料酒、生抽、老抽和米醋',
+      '加半碗水烧开，放入白菜叶和粉条',
+      '中火焖煮10分钟至白菜软烂粉条入味',
+      '调盐撒葱花出锅'
+    ]
+  },
+
+  dongbei_braised_bean_sprouts_pork: {
+    ingredients: [
+      ing('bean_sprouts', 400, 'g'), ing('pork_belly', 200, 'g'), ing('vermicelli', 100, 'g'),
+      ing('light_soy', 20, 'ml'), ing('dark_soy', 5, 'ml'), ing('ginger', 10, 'g'),
+      ing('garlic', 15, 'g'), ing('spring_onion', 15, 'g'), ing('cooking_oil', 15, 'ml'),
+      ing('star_anise', 1, 'piece'), ing('vinegar', 5, 'ml'), ing('salt', 3, 'g')
+    ],
+    steps: [
+      '粉条温水泡20分钟剪短，豆芽掐根洗净',
+      '五花肉切薄片，蒜拍裂葱切段',
+      '热锅下油煸炒五花肉至出油',
+      '加姜片蒜瓣葱白八角爆香',
+      '烹料酒、生抽、老抽翻炒均匀',
+      '下豆芽大火翻炒1分钟',
+      '加水没过食材烧开放入粉条',
+      '转中火炖10分钟至粉条透明，淋米醋撒葱花调盐出锅'
+    ]
+  },
+
+  dongbei_stir_fry_cabbage_egg: {
+    ingredients: [
+      ing('chinese_cabbage', 400, 'g'), ing('egg', 4, 'piece'), ing('spring_onion', 15, 'g'),
+      ing('garlic', 10, 'g'), ing('ginger', 5, 'g'), ing('light_soy', 15, 'ml'),
+      ing('vinegar', 5, 'ml'), ing('cooking_oil', 25, 'ml'), ing('salt', 3, 'g'),
+      ing('white_pepper', 1, 'g')
+    ],
+    steps: [
+      '白菜帮和叶分开切丝，鸡蛋打散加少许盐',
+      '热锅下油倒入蛋液大火快炒至刚凝固盛出',
+      '锅中再加油，下姜末蒜末葱白爆香',
+      '放入白菜帮大火翻炒至变软',
+      '加白菜叶继续翻炒至塌秧',
+      '烹生抽米醋调味',
+      '倒回炒蛋翻炒均匀',
+      '撒葱花和白胡椒颠锅出锅'
+    ]
+  },
+
+  dongbei_braised_chicken_mushroom: {
+    ingredients: [
+      ing('chicken_thigh', 600, 'g'), ing('mushroom', 250, 'g'), ing('potato', 200, 'g'),
+      ing('vermicelli', 80, 'g'), ing('ginger', 20, 'g'), ing('spring_onion', 20, 'g'),
+      ing('garlic', 20, 'g'), ing('light_soy', 30, 'ml'), ing('dark_soy', 10, 'ml'),
+      ing('cooking_wine', 20, 'ml'), ing('cooking_oil', 25, 'ml'), ing('star_anise', 2, 'piece'),
+      ing('bay_leaf', 1, 'piece'), ing('rock_sugar', 15, 'g'), ing('salt', 5, 'g')
+    ],
+    steps: [
+      '鸡腿剁2cm块冷水焯水捞出沥干',
+      '鲜蘑菇撕条，土豆切大块，粉条泡软',
+      '热锅下油加冰糖炒糖色',
+      '鸡块入锅大火翻炒上色至金黄',
+      '加姜片蒜瓣葱白八角月桂爆香',
+      '烹料酒生抽老抽翻炒均匀',
+      '加热水没过鸡块，放入蘑菇和土豆',
+      '大火烧开转小火加盖炖30分钟',
+      '加入粉条继续炖5分钟至透明吸饱汤汁',
+      '大火收汁调盐撒葱花出锅'
+    ]
+  },
+
+  dongbei_stir_fry_potato_capsicum: {
+    ingredients: [
+      ing('potato', 400, 'g'), ing('chili_pepper', 100, 'g'), ing('capsicum', 80, 'g'),
+      ing('garlic', 15, 'g'), ing('spring_onion', 10, 'g'), ing('light_soy', 15, 'ml'),
+      ing('dark_soy', 3, 'ml'), ing('vinegar', 10, 'ml'), ing('cooking_oil', 25, 'ml'),
+      ing('salt', 3, 'g'), ing('sugar', 3, 'g'), ing('sichuan_pepper', 3, 'g')
+    ],
+    steps: [
+      '土豆去皮切3mm薄片，清水浸泡10分钟洗去淀粉沥干',
+      '青尖椒和彩椒去籽切片，蒜切片葱切段',
+      '热锅下油爆香花椒粒后捞出',
+      '下蒜片葱白爆香',
+      '放入土豆片大火翻炒3分钟至边缘透明',
+      '加生抽、老抽、糖、盐和少许水',
+      '转中火翻炒2分钟让土豆吸味',
+      '放入尖椒片大火翻炒1分钟至断生',
+      '淋米醋颠锅撒葱花出锅'
+    ]
+  },
+
+  shandong_egg_shrimp_stir_fry: {
+    ingredients: [
+      ing('shrimp', 250, 'g'), ing('egg', 5, 'piece'), ing('spring_onion', 15, 'g'),
+      ing('ginger', 5, 'g'), ing('cooking_wine', 10, 'ml'), ing('cooking_oil', 30, 'ml'),
+      ing('salt', 3, 'g'), ing('white_pepper', 1, 'g'), ing('starch', 5, 'g'),
+      ing('sesame_oil', 5, 'ml')
+    ],
+    steps: [
+      '虾仁去虾线，加盐料酒姜末和淀粉抓匀腌10分钟',
+      '鸡蛋打散加少许盐和白胡椒搅匀',
+      '热锅宽油烧至五成热，下虾仁快速划散至变红盛出',
+      '虾仁倒入蛋液中拌匀',
+      '锅中再加油烧热，倒入虾仁蛋液',
+      '中火边推边炒至蛋液刚凝固成软滑大块',
+      '撒葱花淋麻油颠锅出锅，保持嫩滑'
+    ]
+  },
+
+  dongbei_stir_fry_pork_celery: {
+    ingredients: [
+      ing('pork_loin', 200, 'g'), ing('celery', 300, 'g'), ing('garlic', 15, 'g'),
+      ing('ginger', 5, 'g'), ing('spring_onion', 10, 'g'), ing('light_soy', 15, 'ml'),
+      ing('cooking_wine', 10, 'ml'), ing('starch', 10, 'g'), ing('cooking_oil', 20, 'ml'),
+      ing('salt', 3, 'g'), ing('sesame_oil', 5, 'ml')
+    ],
+    steps: [
+      '猪里脊逆纹切丝，加生抽、料酒、淀粉抓匀腌10分钟',
+      '芹菜去筋斜切3cm段，焯水30秒过凉水沥干',
+      '蒜切片姜切丝葱切段',
+      '热锅下油大火滑炒肉丝至变色盛出',
+      '锅留底油下姜丝蒜片葱白爆香',
+      '放入芹菜段大火翻炒1分钟',
+      '倒回肉丝快速翻炒均匀',
+      '调生抽和盐淋麻油出锅'
+    ]
+  },
+
+  dongbei_braised_tofu_pork: {
+    ingredients: [
+      ing('tofu', 400, 'g'), ing('pork_mince', 100, 'g'), ing('chinese_cabbage', 200, 'g'),
+      ing('vermicelli', 50, 'g'), ing('light_soy', 20, 'ml'), ing('dark_soy', 5, 'ml'),
+      ing('ginger', 10, 'g'), ing('garlic', 15, 'g'), ing('spring_onion', 15, 'g'),
+      ing('cooking_oil', 20, 'ml'), ing('cooking_wine', 10, 'ml'), ing('salt', 3, 'g'),
+      ing('star_anise', 1, 'piece')
+    ],
+    steps: [
+      '老豆腐切3cm见方块用淡盐水浸泡5分钟',
+      '白菜切大段，粉条泡软',
+      '热锅下油炒散肉末至变色',
+      '加姜末蒜末葱白八角爆香',
+      '烹料酒、生抽、老抽翻炒上色',
+      '下白菜翻炒至变软',
+      '加水没过食材烧开，放入豆腐块和粉条',
+      '中火焖12分钟至豆腐入味粉条透明',
+      '调盐撒葱花出锅'
+    ]
+  },
+
+  shandong_braised_chicken_potato: {
+    ingredients: [
+      ing('chicken_thigh', 500, 'g'), ing('potato', 250, 'g'), ing('mushroom', 150, 'g'),
+      ing('capsicum', 60, 'g'), ing('light_soy', 25, 'ml'), ing('dark_soy', 8, 'ml'),
+      ing('ginger', 15, 'g'), ing('garlic', 15, 'g'), ing('spring_onion', 15, 'g'),
+      ing('rock_sugar', 15, 'g'), ing('cooking_wine', 15, 'ml'), ing('cooking_oil', 25, 'ml'),
+      ing('star_anise', 1, 'piece'), ing('salt', 4, 'g')
+    ],
+    steps: [
+      '鸡腿斩2cm块冷水焯水捞出沥干',
+      '土豆切滚刀块，香菇撕半，青椒切块',
+      '热锅下油加冰糖炒糖色',
+      '鸡块入锅大火翻炒上色',
+      '加姜片蒜瓣葱白八角爆香',
+      '烹料酒生抽老抽翻炒均匀',
+      '加热水没过鸡块，放入土豆和香菇',
+      '大火烧开转中小火焖25分钟',
+      '加入青椒大火收汁至浓稠出锅'
+    ]
+  },
+
+  shandong_scallion_egg: {
+    ingredients: [
+      ing('egg', 5, 'piece'), ing('spring_onion', 100, 'g'), ing('light_soy', 10, 'ml'),
+      ing('cooking_oil', 30, 'ml'), ing('salt', 3, 'g'), ing('white_pepper', 1, 'g'),
+      ing('sesame_oil', 5, 'ml')
+    ],
+    steps: [
+      '大葱白切马蹄段，葱绿切碎',
+      '鸡蛋打散加盐、白胡椒和少许生抽',
+      '将葱白段拌入蛋液中',
+      '热锅宽油烧至七成热',
+      '倒入葱蛋液大火快炒30秒',
+      '蛋液半凝时加葱绿继续翻炒',
+      '炒至蛋液刚凝固成大块即停火',
+      '淋麻油颠锅出锅保持嫩滑葱香'
+    ]
+  },
+
+  dongbei_stew_lamb_potato: {
+    ingredients: [
+      ing('lamb_leg', 500, 'g'), ing('potato', 350, 'g'), ing('carrot', 150, 'g'),
+      ing('ginger', 20, 'g'), ing('spring_onion', 20, 'g'), ing('garlic', 15, 'g'),
+      ing('light_soy', 25, 'ml'), ing('dark_soy', 8, 'ml'), ing('cooking_wine', 30, 'ml'),
+      ing('star_anise', 2, 'piece'), ing('bay_leaf', 2, 'piece'), ing('white_pepper', 3, 'g'),
+      ing('cooking_oil', 20, 'ml'), ing('salt', 5, 'g')
+    ],
+    steps: [
+      '羊腿肉切3cm块冷水加姜葱料酒焯水8分钟去膻味捞出冲净',
+      '土豆切大块，胡萝卜切滚刀块',
+      '热锅下油爆香姜片蒜瓣葱段八角月桂',
+      '下羊肉大火翻炒2分钟至表面微焦',
+      '烹料酒、生抽、老抽翻炒上色',
+      '加热水没过羊肉大火烧开撇浮沫',
+      '转小火加盖炖40分钟至羊肉酥烂',
+      '加入土豆和胡萝卜继续炖20分钟至软烂',
+      '撒白胡椒调盐撒葱花出锅'
+    ]
+  },
+
+  deep_fried_eggplant_box: {
+    ingredients: [
+      ing('eggplant', 400, 'g'), ing('pork_mince', 200, 'g'), ing('egg', 2, 'piece'),
+      ing('starch', 50, 'g'), ing('flour', 30, 'g'), ing('spring_onion', 15, 'g'),
+      ing('ginger', 5, 'g'), ing('light_soy', 15, 'ml'), ing('cooking_wine', 5, 'ml'),
+      ing('white_pepper', 1, 'g'), ing('salt', 3, 'g'), ing('sesame_oil', 5, 'ml'),
+      ing('cooking_oil', 500, 'ml')
+    ],
+    steps: [
+      '茄子切0.8cm厚连刀片（两片不切断中间夹馅）',
+      '肉末加葱姜末、生抽、料酒、白胡椒、盐和麻油搅打上劲',
+      '将肉馅均匀夹入茄夹中按压平整',
+      '蛋液加淀粉和面粉调成酸奶状面糊',
+      '茄盒均匀裹上面糊',
+      '油温160℃下入茄盒中小火炸5分钟至浮起定型',
+      '油温升至180℃复炸30秒至金黄酥脆',
+      '捞出沥油装盘趁热食用，可配椒盐或糖醋汁蘸食'
+    ]
+  },
+
+  dongbei_bean_sprout_pork_stew: {
+    ingredients: [
+      ing('bean_sprouts', 400, 'g'), ing('pork_belly', 250, 'g'), ing('vermicelli', 80, 'g'),
+      ing('light_soy', 20, 'ml'), ing('dark_soy', 5, 'ml'), ing('ginger', 10, 'g'),
+      ing('garlic', 15, 'g'), ing('spring_onion', 15, 'g'), ing('cooking_wine', 15, 'ml'),
+      ing('cooking_oil', 15, 'ml'), ing('star_anise', 1, 'piece'), ing('salt', 4, 'g'),
+      ing('vinegar', 5, 'ml')
+    ],
+    steps: [
+      '五花肉切薄片，豆芽掐根洗净，粉条泡软',
+      '热锅下油煸炒五花肉至出油卷边',
+      '加姜片蒜瓣葱白八角爆香',
+      '烹料酒、生抽、老抽翻炒均匀上色',
+      '下豆芽大火翻炒2分钟至变软',
+      '加水没过食材烧开放入粉条',
+      '转中火炖15分钟至粉条透明吸味',
+      '淋米醋调盐撒葱花出锅'
+    ]
+  },
+
+  braised_eggplant_mince: {
+    ingredients: [
+      ing('eggplant', 400, 'g'), ing('pork_mince', 150, 'g'), ing('light_soy', 20, 'ml'),
+      ing('dark_soy', 5, 'ml'), ing('garlic', 20, 'g'), ing('ginger', 5, 'g'),
+      ing('spring_onion', 15, 'g'), ing('sugar', 8, 'g'), ing('starch', 8, 'g'),
+      ing('cooking_oil', 50, 'ml'), ing('cooking_wine', 10, 'ml'), ing('salt', 2, 'g'),
+      ing('doubanjiang', 15, 'g')
+    ],
+    steps: [
+      '茄子切滚刀块，撒少许盐杀水10分钟挤干',
+      '蒜切末葱切段姜切末',
+      '锅中多油烧至七成热，茄子下锅炸软捞出沥油',
+      '锅留底油下肉末小火煸至变色',
+      '加蒜末姜末和黄豆酱炒出酱香',
+      '烹料酒生抽老抽糖和半碗水烧开',
+      '放入炸好的茄子翻炒3分钟入味',
+      '水淀粉勾薄芡，撒葱花颠匀出锅'
+    ]
+  },
+
+  shandong_braised_pork_green_bean: {
+    ingredients: [
+      ing('pork_ribs', 500, 'g'), ing('green_bean', 300, 'g'), ing('potato', 150, 'g'),
+      ing('light_soy', 25, 'ml'), ing('dark_soy', 8, 'ml'), ing('ginger', 15, 'g'),
+      ing('garlic', 20, 'g'), ing('spring_onion', 15, 'g'), ing('cooking_wine', 15, 'ml'),
+      ing('cooking_oil', 25, 'ml'), ing('rock_sugar', 15, 'g'), ing('star_anise', 2, 'piece'),
+      ing('salt', 4, 'g')
+    ],
+    steps: [
+      '排骨剁段冷水焯水撇浮沫，捞出沥干',
+      '豆角去筋掰段，土豆切滚刀块',
+      '热锅下油加冰糖炒糖色',
+      '排骨入锅大火翻炒上色至金黄',
+      '加姜片蒜瓣葱白八角爆香',
+      '烹料酒、生抽、老抽翻炒均匀',
+      '加热水没过排骨大火烧开转小火炖20分钟',
+      '加入豆角和土豆继续炖15分钟',
+      '大火收汁至浓稠裹住食材，撒葱花调盐出锅'
+    ]
+  },
+
+  dongbei_braised_pork_cabbage: {
+    ingredients: [
+      ing('pork_belly', 350, 'g'), ing('chinese_cabbage', 500, 'g'), ing('vermicelli', 80, 'g'),
+      ing('ginger', 10, 'g'), ing('garlic', 15, 'g'), ing('spring_onion', 15, 'g'),
+      ing('light_soy', 20, 'ml'), ing('dark_soy', 5, 'ml'), ing('cooking_wine', 15, 'ml'),
+      ing('cooking_oil', 15, 'ml'), ing('star_anise', 1, 'piece'), ing('salt', 4, 'g')
+    ],
+    steps: [
+      '五花肉切薄片，白菜帮叶分开切大块，粉条泡软',
+      '热锅下油煸炒五花肉至出油',
+      '加姜片蒜瓣葱白八角爆香',
+      '烹料酒生抽老抽翻炒均匀上色',
+      '先放白菜帮翻炒至变软',
+      '加水没过食材烧开',
+      '加入白菜叶和粉条',
+      '转小火炖20分钟至白菜软烂粉条吸饱汤汁',
+      '调盐撒葱花出锅'
+    ]
+  },
+
+  dongbei_beef_potato_stew: {
+    ingredients: [
+      ing('beef_shank', 500, 'g'), ing('potato', 300, 'g'), ing('carrot', 150, 'g'),
+      ing('onion', 100, 'g'), ing('tomato', 150, 'g'), ing('light_soy', 25, 'ml'),
+      ing('dark_soy', 8, 'ml'), ing('ginger', 20, 'g'), ing('garlic', 15, 'g'),
+      ing('spring_onion', 15, 'g'), ing('cooking_wine', 20, 'ml'), ing('star_anise', 2, 'piece'),
+      ing('bay_leaf', 2, 'piece'), ing('cooking_oil', 25, 'ml'),
+      ing('rock_sugar', 15, 'g'), ing('salt', 5, 'g')
+    ],
+    steps: [
+      '牛腱肉切3cm块冷水加姜葱料酒焯水10分钟撇浮沫',
+      '土豆和胡萝卜切大块，洋葱切块，番茄去皮切块',
+      '热锅下油加冰糖炒糖色',
+      '下洋葱块和番茄块炒出红油汁',
+      '加牛肉翻炒至表面焦黄',
+      '加姜片蒜瓣葱白八角月桂炒香',
+      '烹料酒、生抽、老抽翻炒均匀',
+      '加足量热水大火烧开转小火炖60分钟',
+      '加入土豆和胡萝卜继续炖20分钟至软烂',
+      '大火收汁调盐撒葱花出锅'
+    ]
+  },
+
+  dongbei_chicken_corn_stew: {
+    ingredients: [
+      ing('chicken_thigh', 500, 'g'), ing('corn', 250, 'g'), ing('potato', 200, 'g'),
+      ing('carrot', 100, 'g'), ing('ginger', 15, 'g'), ing('garlic', 15, 'g'),
+      ing('spring_onion', 15, 'g'), ing('light_soy', 20, 'ml'), ing('dark_soy', 5, 'ml'),
+      ing('cooking_wine', 15, 'ml'), ing('star_anise', 1, 'piece'), ing('bay_leaf', 1, 'piece'),
+      ing('rock_sugar', 10, 'g'), ing('cooking_oil', 20, 'ml'), ing('salt', 4, 'g')
+    ],
+    steps: [
+      '鸡腿剁块冷水焯水捞出沥干',
+      '玉米切3cm段，土豆和胡萝卜切大块',
+      '热锅下油加冰糖炒糖色',
+      '鸡块入锅大火翻炒上色',
+      '加姜片蒜瓣葱白八角月桂爆香',
+      '烹料酒生抽老抽翻炒均匀',
+      '加热水没过鸡块大火烧开',
+      '转小火炖20分钟，加入玉米土豆胡萝卜',
+      '继续炖15分钟至所有食材软烂入味，调盐出锅'
+    ]
+  },
+
+  dongbei_lamb_carrot_stew: {
+    ingredients: [
+      ing('lamb_leg', 500, 'g'), ing('carrot', 300, 'g'), ing('white_radish', 200, 'g'),
+      ing('ginger', 20, 'g'), ing('spring_onion', 20, 'g'), ing('garlic', 15, 'g'),
+      ing('cooking_wine', 30, 'ml'), ing('light_soy', 20, 'ml'), ing('star_anise', 2, 'piece'),
+      ing('bay_leaf', 2, 'piece'), ing('white_pepper', 3, 'g'), ing('cooking_oil', 15, 'ml'),
+      ing('salt', 5, 'g'), ing('goji_berry', 10, 'g')
+    ],
+    steps: [
+      '羊腿肉切3cm块冷水加姜葱料酒焯水8分钟去膻',
+      '胡萝卜和白萝卜切滚刀块，姜拍裂葱切段',
+      '砂锅加油爆香姜葱八角月桂',
+      '下羊肉翻炒2分钟至表面微焦',
+      '烹料酒和生抽炒匀上色',
+      '加热水没过羊肉大火烧开撇浮沫',
+      '转小火加盖炖50分钟至羊肉软烂',
+      '加入胡萝卜和白萝卜继续炖20分钟',
+      '撒枸杞白胡椒调盐焖2分钟出锅'
+    ]
+  },
+
+  dongbei_tofu_cabbage_stew: {
+    ingredients: [
+      ing('tofu', 400, 'g'), ing('chinese_cabbage', 400, 'g'), ing('pork_belly', 100, 'g'),
+      ing('vermicelli', 50, 'g'), ing('ginger', 10, 'g'), ing('garlic', 10, 'g'),
+      ing('spring_onion', 15, 'g'), ing('light_soy', 15, 'ml'), ing('cooking_oil', 15, 'ml'),
+      ing('cooking_wine', 10, 'ml'), ing('star_anise', 1, 'piece'), ing('salt', 4, 'g'),
+      ing('white_pepper', 1, 'g')
+    ],
+    steps: [
+      '老豆腐切大块（可冷冻一夜成冻豆腐更佳）',
+      '白菜切大段，五花肉切薄片，粉条泡软',
+      '热锅下油煸炒五花肉至出油',
+      '加姜片蒜瓣葱白八角爆香',
+      '烹料酒生抽翻炒均匀',
+      '下白菜翻炒至变软',
+      '加水没过食材烧开，放入豆腐块和粉条',
+      '转小火炖20分钟至豆腐入味',
+      '调盐和白胡椒撒葱花出锅'
+    ]
+  },
+
+  shandong_scallion_pork: {
+    ingredients: [
+      ing('pork_belly', 300, 'g'), ing('spring_onion', 150, 'g'), ing('light_soy', 20, 'ml'),
+      ing('dark_soy', 5, 'ml'), ing('sugar', 10, 'g'), ing('cooking_wine', 15, 'ml'),
+      ing('cooking_oil', 20, 'ml'), ing('ginger', 10, 'g'), ing('garlic', 10, 'g'),
+      ing('starch', 5, 'g'), ing('white_pepper', 1, 'g'), ing('sesame_oil', 5, 'ml')
+    ],
+    steps: [
+      '五花肉切3mm薄片，加少许料酒和淀粉抓匀',
+      '大葱白切3cm长段斜刀，葱绿切碎',
+      '热锅下油烧至七成热下肉片大火爆炒至卷边出油',
+      '加姜片蒜瓣爆香',
+      '烹料酒、生抽、老抽和糖翻炒上色',
+      '放入大葱白段大火翻炒至软出葱香',
+      '撒葱绿淋麻油大火收汁颠匀出锅'
+    ]
+  },
+
+  shandong_vinegar_potato: {
+    ingredients: [
+      ing('potato', 400, 'g'), ing('chili_pepper', 30, 'g'), ing('vinegar', 25, 'ml'),
+      ing('sichuan_pepper', 3, 'g'), ing('garlic', 10, 'g'), ing('spring_onion', 10, 'g'),
+      ing('cooking_oil', 25, 'ml'), ing('salt', 3, 'g'), ing('sugar', 3, 'g'),
+      ing('light_soy', 5, 'ml'), ing('chili_flakes', 3, 'g')
+    ],
+    steps: [
+      '土豆去皮切0.2cm细丝，清水浸泡10分钟洗去淀粉沥干',
+      '干辣椒切段，蒜切片葱切段',
+      '热锅下油烧至七成热爆香花椒后捞出',
+      '下干辣椒和蒜片爆香',
+      '放入土豆丝大火快速翻炒2分钟',
+      '沿锅边淋米醋激发香气',
+      '加生抽、糖、盐继续大火翻炒30秒',
+      '撒葱花颠锅出锅，保持土豆丝爽脆'
+    ]
+  },
+
+  dongbei_pork_green_bean_stew: {
+    ingredients: [
+      ing('green_bean', 400, 'g'), ing('pork_belly', 250, 'g'), ing('potato', 150, 'g'),
+      ing('light_soy', 20, 'ml'), ing('dark_soy', 5, 'ml'), ing('ginger', 10, 'g'),
+      ing('garlic', 15, 'g'), ing('spring_onion', 15, 'g'), ing('star_anise', 1, 'piece'),
+      ing('cooking_wine', 15, 'ml'), ing('cooking_oil', 15, 'ml'), ing('salt', 4, 'g')
+    ],
+    steps: [
+      '五花肉切薄片，豆角去筋掰段，土豆切大块',
+      '热锅下油煸炒五花肉至出油卷边',
+      '加姜片蒜瓣葱白八角爆香',
+      '烹料酒生抽老抽翻炒均匀',
+      '下豆角段大火翻炒2分钟挂上酱油',
+      '加土豆块翻匀',
+      '加热水没过食材大火烧开',
+      '转中火盖盖焖25分钟至豆角和土豆软烂入味',
+      '大火收汁调盐撒葱花出锅'
+    ]
+  },
+
+  sweet_sour_pork: {
+    ingredients: [
+      ing('pork_loin', 400, 'g'), ing('starch', 80, 'g'), ing('flour', 20, 'g'),
+      ing('vinegar', 50, 'ml'), ing('sugar', 60, 'g'), ing('tomato_paste', 30, 'g'),
+      ing('light_soy', 10, 'ml'), ing('egg', 1, 'piece'), ing('cooking_oil', 600, 'ml'),
+      ing('garlic', 15, 'g'), ing('ginger', 5, 'g'), ing('spring_onion', 15, 'g'),
+      ing('salt', 3, 'g'), ing('cooking_wine', 10, 'ml')
+    ],
+    steps: [
+      '猪里脊切1cm见方手指长条，加盐料酒和姜葱水抓匀腌15分钟',
+      '蛋液加淀粉和面粉调成酸奶状脆糊',
+      '里脊条均匀挂糊',
+      '油温170℃逐根下入炸至浮起定型捞出',
+      '油温升至190℃复炸30秒至金黄酥脆，捞出沥油',
+      '调糖醋汁：白糖、白醋、番茄酱、生抽和半碗水搅匀',
+      '锅留底油爆香蒜末姜末',
+      '倒入糖醋汁烧开冒泡',
+      '水淀粉勾薄芡至浓稠透亮',
+      '迅速倒入炸好的里脊条快速翻匀挂汁，撒葱花出锅趁脆食用'
+    ]
+  },
+
+  braised_eggplant: {
+    ingredients: [
+      ing('eggplant', 500, 'g'), ing('garlic', 25, 'g'), ing('ginger', 5, 'g'),
+      ing('spring_onion', 15, 'g'), ing('light_soy', 25, 'ml'), ing('dark_soy', 5, 'ml'),
+      ing('sugar', 8, 'g'), ing('starch', 8, 'g'), ing('cooking_oil', 50, 'ml'),
+      ing('cooking_wine', 5, 'ml'), ing('salt', 3, 'g'), ing('doubanjiang', 10, 'g'),
+      ing('vinegar', 5, 'ml')
+    ],
+    steps: [
+      '茄子切滚刀块撒少许盐拌匀杀水10分钟挤干',
+      '蒜切末（多放）葱切段姜切末',
+      '锅中多油烧至七成热茄子下锅炸至软透捞出沥油',
+      '锅留底油下肉末蒜末姜末葱白爆香',
+      '加豆瓣酱炒出红油',
+      '烹料酒生抽老抽糖和半碗水烧开',
+      '放入炸好的茄子翻炒3分钟入味',
+      '水淀粉勾薄芡，淋米醋撒葱花颠匀出锅'
+    ]
+  },
+
+  dongbei_braised_beans: {
+    ingredients: [
+      ing('green_bean', 500, 'g'), ing('pork_belly', 200, 'g'), ing('garlic', 20, 'g'),
+      ing('ginger', 10, 'g'), ing('spring_onion', 15, 'g'), ing('light_soy', 20, 'ml'),
+      ing('dark_soy', 5, 'ml'), ing('star_anise', 1, 'piece'), ing('cooking_wine', 10, 'ml'),
+      ing('cooking_oil', 15, 'ml'), ing('salt', 4, 'g'), ing('sugar', 5, 'g')
+    ],
+    steps: [
+      '豆角去筋掰5cm段冷水焯1分钟去除豆腥',
+      '五花肉切薄片，蒜拍裂葱切段姜切片',
+      '热锅下油煸炒五花肉至出油',
+      '加蒜瓣姜片葱白八角爆香',
+      '烹料酒、生抽、老抽和糖翻炒均匀',
+      '放入豆角段翻炒2分钟挂满酱油',
+      '加水没过豆角一半，盖盖中火焖15分钟至豆角软烂入味',
+      '大火收汁调盐撒葱花出锅'
+    ]
+  },
+
+  dongbei_disanxian: {
+    ingredients: [
+      ing('potato', 300, 'g'), ing('eggplant', 250, 'g'), ing('capsicum', 150, 'g'),
+      ing('garlic', 20, 'g'), ing('ginger', 5, 'g'), ing('spring_onion', 15, 'g'),
+      ing('light_soy', 20, 'ml'), ing('dark_soy', 5, 'ml'), ing('sugar', 8, 'g'),
+      ing('starch', 10, 'g'), ing('cooking_oil', 500, 'ml'), ing('cooking_wine', 5, 'ml'),
+      ing('salt', 3, 'g'), ing('oyster_sauce', 10, 'ml')
+    ],
+    steps: [
+      '土豆去皮切滚刀块，茄子切滚刀块撒盐杀水挤干，青椒切大块',
+      '蒜切末（多放）姜切末葱切段',
+      '油烧至七成热分别下入土豆和茄子炸至金黄软透捞出沥油',
+      '青椒过油10秒断生捞出',
+      '锅留底油下蒜末姜末葱白爆香',
+      '调汁：生抽、老抽、糖、蚝油和半碗水',
+      '汁烧开倒入炸好的土豆茄子青椒大火翻炒1分钟',
+      '水淀粉勾芡使汤汁包裹住食材',
+      '撒蒜末和葱花颠匀出锅'
+    ]
+  },
+
+  shandong_braised_chicken: {
+    ingredients: [
+      ing('chicken_thigh', 600, 'g'), ing('mushroom', 150, 'g'), ing('chili_pepper', 60, 'g'),
+      ing('capsicum', 60, 'g'), ing('ginger', 15, 'g'), ing('garlic', 20, 'g'),
+      ing('spring_onion', 15, 'g'), ing('light_soy', 30, 'ml'), ing('dark_soy', 8, 'ml'),
+      ing('rock_sugar', 15, 'g'), ing('cooking_wine', 20, 'ml'), ing('cooking_oil', 25, 'ml'),
+      ing('star_anise', 2, 'piece'), ing('bay_leaf', 1, 'piece'),
+      ing('doubanjiang', 15, 'g'), ing('salt', 4, 'g')
+    ],
+    steps: [
+      '鸡腿剁2cm块冷水焯水捞出沥干',
+      '蘑菇撕条，青尖椒切段',
+      '热锅下油加冰糖炒至枣红色',
+      '鸡块入锅大火翻炒上色',
+      '加姜片蒜瓣葱白八角月桂和黄豆酱炒香',
+      '烹料酒、生抽、老抽翻炒均匀',
+      '加热水没过鸡块，放入蘑菇',
+      '砂锅小火加盖焖煮25分钟至鸡块酥烂',
+      '加入青尖椒和彩椒大火翻炒1分钟',
+      '收汁至浓稠出锅，可配米饭做盖饭'
+    ]
+  },
+
+  dongbei_pork_stew_vermicelli: {
+    ingredients: [
+      ing('pork_belly', 400, 'g'), ing('vermicelli', 150, 'g'), ing('chinese_cabbage', 300, 'g'),
+      ing('light_soy', 25, 'ml'), ing('dark_soy', 8, 'ml'), ing('ginger', 15, 'g'),
+      ing('garlic', 15, 'g'), ing('spring_onion', 20, 'g'), ing('cooking_wine', 20, 'ml'),
+      ing('cooking_oil', 20, 'ml'), ing('rock_sugar', 15, 'g'), ing('star_anise', 2, 'piece'),
+      ing('bay_leaf', 1, 'piece'), ing('salt', 5, 'g')
+    ],
+    steps: [
+      '五花肉切3cm见方块冷水焯水撇浮沫，捞出冲净',
+      '宽粉条温水浸泡30分钟至变软',
+      '白菜切大段，姜葱切段蒜拍裂',
+      '热锅下油加冰糖小火炒至枣红色糖色',
+      '五花肉入锅煸炒上色至四面金黄出油',
+      '加姜片蒜瓣葱白八角月桂炒香',
+      '烹料酒、生抽、老抽翻炒均匀',
+      '加热水没过肉块大火烧开转小火加盖炖30分钟',
+      '加入白菜段和泡软的粉条',
+      '继续炖15分钟至粉条透明吸饱汤汁，调盐撒葱花出锅'
+    ]
+  },
+
+  vinegar_peanuts: {
+    ingredients: [
+      ing('cooking_oil', 50, 'ml'), ing('vinegar', 30, 'ml'), ing('black_vinegar', 15, 'ml'),
+      ing('sugar', 15, 'g'), ing('light_soy', 10, 'ml'), ing('onion', 50, 'g'),
+      ing('chili_pepper', 30, 'g'), ing('spring_onion', 10, 'g'), ing('garlic', 10, 'g'),
+      ing('salt', 3, 'g'), ing('sesame_oil', 5, 'ml')
+    ],
+    steps: [
+      '花生米（用毛豆代替）冷油下锅，小火慢慢炸至酥脆有噼啪声捞出晾凉',
+      '紫洋葱切小丁，青椒切丁，蒜剁末葱切碎',
+      '调老醋汁：陈醋、米醋、白糖、生抽、盐和10ml凉开水搅匀至糖溶',
+      '将晾凉的花生与洋葱丁青椒丁混合放入大碗',
+      '加蒜末葱花',
+      '淋上调好的老醋汁拌匀',
+      '滴几滴麻油增香即可装盘'
+    ]
+  },
+
+  stir_fried_corn_pine_nuts: {
+    ingredients: [
+      ing('corn', 300, 'g'), ing('carrot', 80, 'g'), ing('cucumber', 80, 'g'),
+      ing('capsicum', 50, 'g'), ing('cooking_oil', 15, 'ml'), ing('butter', 10, 'g'),
+      ing('sugar', 8, 'g'), ing('salt', 2, 'g'), ing('garlic', 5, 'g'),
+      ing('spring_onion', 5, 'g'), ing('starch', 5, 'g')
+    ],
+    steps: [
+      '玉米粒（鲜或冷冻）洗净沥干',
+      '胡萝卜切小丁焯水30秒，黄瓜切小丁，彩椒切丁',
+      '热锅下油和黄油烧化',
+      '下蒜末爆香',
+      '放入玉米粒和胡萝卜丁翻炒2分钟',
+      '加糖和盐调味',
+      '加入黄瓜丁和彩椒丁继续翻炒1分钟',
+      '水淀粉勾薄芡使配料抱团，撒葱花出锅'
+    ]
+  },
+
+  honey_glazed_sweet_potato: {
+    ingredients: [
+      ing('sweet_potato', 500, 'g'), ing('sugar', 120, 'g'), ing('cooking_oil', 500, 'ml'),
+      ing('starch', 20, 'g'), ing('sesame_oil', 5, 'ml')
+    ],
+    steps: [
+      '红薯去皮切3cm滚刀块，清水浸泡10分钟洗去表面淀粉',
+      '红薯沥干水分拍一层薄淀粉防止粘连',
+      '油烧至160℃，红薯块下锅中小火炸4分钟至外壳变硬熟透',
+      '油温升至190℃复炸30秒至金黄酥脆，捞出沥油',
+      '另起一锅倒入15ml油加白糖小火慢熬',
+      '糖溶化后改最小火耐心炒至大泡变小泡呈金黄色拉丝状',
+      '迅速倒入炸好的红薯翻裹均匀',
+      '装入抹油的盘中，旁边配一碗凉开水',
+      '夹起拔丝在凉水中蘸一下立即食用'
+    ]
+  },
+
+  shandong_scallion_chicken: {
+    ingredients: [
+      ing('chicken_breast', 350, 'g'), ing('spring_onion', 100, 'g'), ing('light_soy', 15, 'ml'),
+      ing('dark_soy', 5, 'ml'), ing('cooking_wine', 10, 'ml'), ing('starch', 8, 'g'),
+      ing('sugar', 5, 'g'), ing('cooking_oil', 25, 'ml'), ing('garlic', 10, 'g'),
+      ing('ginger', 5, 'g'), ing('white_pepper', 1, 'g'), ing('sesame_oil', 5, 'ml'),
+      ing('salt', 2, 'g')
+    ],
+    steps: [
+      '鸡胸肉切1.5cm见方丁，加生抽、料酒、淀粉、白胡椒抓匀腌15分钟',
+      '大葱白切3cm斜段，葱绿切碎，蒜切片姜切丝',
+      '锅烧至冒烟下油烧热',
+      '下鸡丁大火快速滑炒至变色断生',
+      '加姜丝蒜片爆香',
+      '放入大葱白段大火爆炒30秒至香气四溢',
+      '烹生抽老抽糖颠锅翻匀',
+      '撒葱绿淋麻油颠锅出锅趁热食用'
+    ]
+  },
+
+  dongbei_pickled_cabbage_pork: {
+    ingredients: [
+      ing('chinese_cabbage', 400, 'g'), ing('pork_belly', 200, 'g'), ing('vermicelli', 60, 'g'),
+      ing('garlic', 15, 'g'), ing('ginger', 8, 'g'), ing('spring_onion', 15, 'g'),
+      ing('vinegar', 20, 'ml'), ing('light_soy', 15, 'ml'), ing('cooking_oil', 20, 'ml'),
+      ing('star_anise', 1, 'piece'), ing('chili_pepper', 5, 'g'), ing('salt', 3, 'g'),
+      ing('cooking_wine', 10, 'ml')
+    ],
+    steps: [
+      '白菜竖切粗丝撒盐腌30分钟挤干水分淋米醋拌匀模拟酸菜',
+      '五花肉切薄片，粉条温水泡软',
+      '蒜切片姜切丝葱切段干辣椒切段',
+      '热锅下油煸炒五花肉至出油卷边',
+      '加姜丝蒜片葱白八角和干辣椒爆香',
+      '放入酸味白菜丝大火翻炒3分钟出酸香',
+      '烹料酒生抽继续翻炒',
+      '加入泡软的粉条和小半碗水',
+      '中火焖煮5分钟至粉条入味，撒葱花调盐出锅'
+    ]
+  },
+
+  pork_celery_dumpling_filling: {
+    ingredients: [
+      ing('flour', 400, 'g'), ing('pork_mince', 350, 'g'), ing('celery', 250, 'g'),
+      ing('ginger', 15, 'g'), ing('spring_onion', 25, 'g'), ing('light_soy', 25, 'ml'),
+      ing('sesame_oil', 15, 'ml'), ing('cooking_oil', 15, 'ml'), ing('salt', 5, 'g'),
+      ing('white_pepper', 2, 'g'), ing('cooking_wine', 10, 'ml'), ing('egg', 1, 'piece')
+    ],
+    steps: [
+      '面粉加200ml凉水和2g盐揉成光滑面团，盖湿布醒40分钟',
+      '芹菜去筋切碎末，撒盐腌5分钟挤干水分',
+      '猪肉末加姜末、葱末、生抽、料酒、白胡椒、蛋清和60ml葱姜水朝一个方向搅打上劲',
+      '加入挤干的芹菜末和热油激香，再加香油和盐拌匀成饺子馅',
+      '面团搓成长条切成15g剂子，擀成中间厚边缘薄的圆皮',
+      '每张皮包入20g馅料捏成元宝形或月牙形',
+      '锅中宽水大火烧开下饺子，用勺背沿锅边推一圈防粘底',
+      '水再开点凉水让饺子皮回缩，连续点三次凉水',
+      '饺子鼓胀浮起即捞出，蘸醋蒜泥食用'
+    ]
+  },
+
+  dongbei_stewed_cabbage_tofu: {
+    ingredients: [
+      ing('chinese_cabbage', 500, 'g'), ing('tofu', 400, 'g'), ing('vermicelli', 60, 'g'),
+      ing('pork_belly', 80, 'g'), ing('garlic', 10, 'g'), ing('ginger', 8, 'g'),
+      ing('spring_onion', 15, 'g'), ing('light_soy', 15, 'ml'), ing('cooking_oil', 15, 'ml'),
+      ing('star_anise', 1, 'piece'), ing('cooking_wine', 10, 'ml'), ing('salt', 4, 'g'),
+      ing('white_pepper', 1, 'g')
+    ],
+    steps: [
+      '白菜切大块，豆腐切3cm见方块，粉条泡软',
+      '五花肉切薄片',
+      '热锅下油煸炒五花肉至出油',
+      '加姜片蒜瓣葱白八角爆香',
+      '烹料酒生抽翻炒',
+      '下白菜帮翻炒至变软',
+      '加水没过食材烧开，放入豆腐和白菜叶',
+      '中火焖15分钟，加入粉条继续煮5分钟至透明',
+      '调盐和白胡椒撒葱花出锅'
+    ]
+  },
+
+  shandong_sweet_sour_carp: {
+    ingredients: [
+      ing('snapper', 700, 'g'), ing('starch', 100, 'g'), ing('flour', 30, 'g'),
+      ing('egg', 1, 'piece'), ing('sugar', 80, 'g'), ing('vinegar', 60, 'ml'),
+      ing('tomato_paste', 30, 'g'), ing('light_soy', 15, 'ml'), ing('ginger', 15, 'g'),
+      ing('garlic', 15, 'g'), ing('spring_onion', 20, 'g'), ing('cooking_oil', 1000, 'ml'),
+      ing('cooking_wine', 15, 'ml'), ing('salt', 5, 'g')
+    ],
+    steps: [
+      '整鱼处理干净两面打深菊花刀',
+      '鱼身内外抹盐和料酒腌15分钟去腥',
+      '蛋液加淀粉和面粉调成稀糊',
+      '鱼身均匀挂糊让刀口张开',
+      '油温180℃，提鱼尾让鱼头先入锅，固定鱼身让花刀绽开成菊花状',
+      '炸至定型捞出，油温升至210℃复炸至金黄酥脆装盘',
+      '锅留底油爆香姜蒜末',
+      '加番茄酱炒出红油',
+      '加白糖、米醋、生抽和半碗水烧开',
+      '水淀粉勾芡至红亮浓稠，淋一勺热油激出香味',
+      '将滚烫糖醋汁淋在鱼身发出"呲啦"声，撒葱花上桌'
+    ]
+  },
+
+  shandong_scallion_beef: {
+    ingredients: [
+      ing('beef_sirloin', 350, 'g'), ing('spring_onion', 150, 'g'), ing('light_soy', 20, 'ml'),
+      ing('dark_soy', 5, 'ml'), ing('cooking_wine', 15, 'ml'), ing('starch', 10, 'g'),
+      ing('cooking_oil', 30, 'ml'), ing('ginger', 10, 'g'), ing('garlic', 10, 'g'),
+      ing('sugar', 5, 'g'), ing('white_pepper', 2, 'g'), ing('sesame_oil', 5, 'ml'),
+      ing('salt', 2, 'g')
+    ],
+    steps: [
+      '牛里脊逆纹切3mm薄片，加生抽、料酒、淀粉、白胡椒、少许油抓匀腌15分钟',
+      '大葱白切3cm斜段，葱绿切碎，蒜切片姜切丝',
+      '锅烧至冒烟下油烧热（油要宽且热）',
+      '快速放入牛肉片大火爆炒8秒至变色断生立即盛出',
+      '锅留底油下姜丝蒜片爆香',
+      '放入大葱白段大火爆炒30秒至软出葱香',
+      '倒回牛肉烹生抽老抽糖快速翻炒5秒',
+      '撒葱绿淋麻油颠锅出锅，整个过程不超过2分钟保持牛肉嫩滑'
+    ]
+  },
+
+  homestyle_suancai_fen: {
+    ingredients: [
+      ing('chinese_cabbage', 400, 'g'), ing('vermicelli', 150, 'g'), ing('pork_belly', 200, 'g'),
+      ing('vinegar', 25, 'ml'), ing('light_soy', 15, 'ml'), ing('dark_soy', 5, 'ml'),
+      ing('ginger', 10, 'g'), ing('garlic', 15, 'g'), ing('spring_onion', 15, 'g'),
+      ing('cooking_oil', 20, 'ml'), ing('star_anise', 1, 'piece'), ing('chili_pepper', 5, 'g'),
+      ing('cooking_wine', 10, 'ml'), ing('salt', 4, 'g'), ing('white_pepper', 1, 'g')
+    ],
+    steps: [
+      '白菜竖切粗丝撒盐腌30分钟挤干水分淋米醋拌匀模拟酸菜',
+      '宽粉条温水泡30分钟至变软',
+      '五花肉切薄片，姜切丝蒜拍裂葱切段',
+      '热锅下油煸炒五花肉至出油',
+      '加姜丝蒜瓣葱白八角和干辣椒爆香',
+      '放入酸白菜丝大火翻炒3分钟出酸香',
+      '烹料酒生抽老抽，加水没过食材',
+      '大火烧开放入粉条转小火炖15分钟',
+      '调盐和白胡椒撒葱花出锅'
+    ]
+  },
+
+  homestyle_cong_bao_yang_rou: {
+    ingredients: [
+      ing('lamb_leg', 350, 'g'), ing('spring_onion', 150, 'g'), ing('light_soy', 20, 'ml'),
+      ing('dark_soy', 5, 'ml'), ing('cooking_wine', 15, 'ml'), ing('vinegar', 8, 'ml'),
+      ing('starch', 8, 'g'), ing('cooking_oil', 30, 'ml'), ing('ginger', 10, 'g'),
+      ing('garlic', 10, 'g'), ing('sugar', 5, 'g'), ing('cumin', 3, 'g'),
+      ing('white_pepper', 2, 'g'), ing('sesame_oil', 5, 'ml')
+    ],
+    steps: [
+      '羊腿肉逆纹切3mm薄片，加生抽、料酒、淀粉、白胡椒、少许油抓匀腌15分钟',
+      '大葱白切3cm斜段，葱绿切碎，蒜切片姜切丝',
+      '锅烧至冒烟下油烧热',
+      '快速放入羊肉片大火爆炒10秒至变色断生立即盛出',
+      '锅留底油下姜丝蒜片爆香',
+      '放入大葱白段大火爆炒30秒至软出葱香',
+      '倒回羊肉烹生抽老抽糖和米醋',
+      '撒孜然粉葱绿淋麻油颠锅出锅，整个过程不超过2分钟'
+    ]
+  },
+
+  dongbei_zhu_gu_tang: {
+    ingredients: [
+      ing('pork_ribs', 600, 'g'), ing('corn', 300, 'g'), ing('carrot', 150, 'g'),
+      ing('white_radish', 200, 'g'), ing('ginger', 20, 'g'), ing('spring_onion', 15, 'g'),
+      ing('cooking_wine', 20, 'ml'), ing('salt', 5, 'g'), ing('white_pepper', 2, 'g'),
+      ing('star_anise', 1, 'piece'), ing('goji_berry', 10, 'g'), ing('red_date', 20, 'g')
+    ],
+    steps: [
+      '猪骨（用排骨代替）剁段冷水加姜葱料酒下锅煮5分钟撇浮沫',
+      '捞出冲净沥干',
+      '玉米切3cm段，胡萝卜切滚刀块，白萝卜切块',
+      '砂锅放入猪骨、姜片、葱结、八角、红枣加足量水大火煮开',
+      '撇净浮沫转小火加盖炖60分钟',
+      '加入玉米、胡萝卜、白萝卜继续炖30分钟',
+      '撒枸杞和白胡椒，调盐焖2分钟',
+      '撒葱花出锅趁热饮汤食料'
+    ]
+  },
+
+  homestyle_jiaozi_xian: {
+    ingredients: [
+      ing('flour', 400, 'g'), ing('pork_mince', 350, 'g'), ing('chinese_cabbage', 400, 'g'),
+      ing('ginger', 15, 'g'), ing('spring_onion', 30, 'g'), ing('light_soy', 25, 'ml'),
+      ing('sesame_oil', 15, 'ml'), ing('cooking_oil', 15, 'ml'), ing('salt', 6, 'g'),
+      ing('white_pepper', 2, 'g'), ing('cooking_wine', 10, 'ml'), ing('egg', 1, 'piece')
+    ],
+    steps: [
+      '面粉加200ml凉水和2g盐揉成光滑面团，盖湿布醒40分钟',
+      '白菜剁碎末撒盐腌10分钟挤干水分',
+      '猪肉末加姜末葱末生抽料酒白胡椒蛋清和60ml葱姜水朝一个方向搅打上劲',
+      '加入挤干的白菜碎再淋入热油激香拌匀',
+      '加香油和盐最后拌匀成饺子馅',
+      '面团搓成长条切15g剂子擀成中间厚边缘薄的圆皮',
+      '每张皮包入20g馅料捏成元宝或月牙形',
+      '锅中宽水大火烧开下饺子，连续点三次凉水',
+      '饺子鼓胀浮起即捞出，蘸醋蒜泥食用'
+    ]
+  },
+
+  homestyle_jiucai_jiaozi: {
+    ingredients: [
+      ing('flour', 400, 'g'), ing('leek', 300, 'g'), ing('egg', 5, 'piece'),
+      ing('dried_shrimp', 20, 'g'), ing('vermicelli', 30, 'g'), ing('sesame_oil', 15, 'ml'),
+      ing('cooking_oil', 30, 'ml'), ing('salt', 5, 'g'), ing('light_soy', 10, 'ml'),
+      ing('white_pepper', 1, 'g'), ing('five_spice', 2, 'g')
+    ],
+    steps: [
+      '面粉加200ml凉水和2g盐揉成光滑面团醒40分钟',
+      '韭菜（用韭葱代替）洗净沥干切碎末',
+      '鸡蛋打散热油锅快速划散炒成小金黄碎块晾凉',
+      '虾皮干锅焙香，粉丝泡软切短',
+      '韭菜末先与1勺香油拌匀锁水',
+      '加入炒蛋碎、虾皮、粉丝、生抽、五香粉、白胡椒和盐拌匀成馅',
+      '面团搓条切15g剂子擀成圆皮',
+      '每张皮包入馅料捏成饺子',
+      '宽水煮开下饺子，浮起后点两次凉水再煮开1分钟即捞出蘸醋食用'
+    ]
+  },
+
+  homestyle_qingzha_xia: {
+    ingredients: [
+      ing('shrimp', 500, 'g'), ing('ginger', 15, 'g'), ing('spring_onion', 30, 'g'),
+      ing('garlic', 10, 'g'), ing('light_soy', 20, 'ml'), ing('dark_soy', 5, 'ml'),
+      ing('sugar', 15, 'g'), ing('cooking_wine', 15, 'ml'), ing('cooking_oil', 30, 'ml'),
+      ing('vinegar', 5, 'ml'), ing('salt', 2, 'g'), ing('white_pepper', 1, 'g'),
+      ing('sesame_oil', 5, 'ml')
+    ],
+    steps: [
+      '大对虾剪须去虾枪开背挑虾线',
+      '大葱白切3cm段葱绿切碎，姜切片蒜切片',
+      '热锅下油烧至七成热，下虾煎至两面变红虾油渗出（虾头出红油是关键）',
+      '加姜片蒜片葱白爆香',
+      '烹料酒、生抽、老抽、糖和半碗水',
+      '中火焖煮5分钟让虾肉吸饱汤汁',
+      '大火收汁至浓稠包裹虾身',
+      '淋米醋撒葱绿和白胡椒，淋麻油颠锅出锅'
+    ]
+  },
+
+  dongbei_dabancai: {
+    ingredients: [
+      ing('cucumber', 200, 'g'), ing('tomato', 150, 'g'), ing('chinese_cabbage', 150, 'g'),
+      ing('capsicum', 80, 'g'), ing('onion', 80, 'g'), ing('carrot', 60, 'g'),
+      ing('garlic', 15, 'g'), ing('vinegar', 25, 'ml'), ing('sesame_oil', 10, 'ml'),
+      ing('light_soy', 10, 'ml'), ing('sugar', 8, 'g'), ing('chili_flakes', 3, 'g'),
+      ing('salt', 3, 'g'), ing('spring_onion', 10, 'g')
+    ],
+    steps: [
+      '黄瓜拍碎切段，番茄切瓣，紫甘蓝（用白菜代替）切丝',
+      '青椒切丝，紫洋葱切丝，胡萝卜擦丝焯水30秒过凉',
+      '所有蔬菜放入大盆中',
+      '调汁：蒜末、米醋、生抽、糖、盐、辣椒粉、麻油搅匀至糖溶',
+      '将调好的汁淋在蔬菜上',
+      '撒葱花用筷子从下往上拌匀让蔬菜均匀挂汁',
+      '腌制5分钟入味装盘食用'
+    ]
+  },
+
+  cn_scallion_pancake: {
+    ingredients: [
+      ing('flour', 250, 'g'), ing('spring_onion', 50, 'g'), ing('cooking_oil', 40, 'ml'),
+      ing('salt', 4, 'g'), ing('sesame_oil', 15, 'ml'), ing('white_pepper', 1, 'g'),
+      ing('five_spice', 2, 'g')
+    ],
+    steps: [
+      '面粉用150ml温水（半烫面：60℃）和成柔软面团',
+      '揉光滑后抹油盖湿布醒30分钟',
+      '葱切碎花，加油盐五香粉和10g面粉拌成葱酥馅',
+      '面团擀成大薄长方片，均匀抹葱酥馅和香油',
+      '从长边卷起成长条，再盘成圆饼',
+      '盘饼擀成1cm厚的圆饼',
+      '平底锅刷油中小火放入饼胚煎3分钟至底面金黄',
+      '翻面盖盖再煎3分钟',
+      '用铲子拍松抖出层次，两面再煎酥脆切块出锅'
+    ]
+  },
+
+  cn_soy_milk_fried_dough: {
+    ingredients: [
+      ing('flour', 300, 'g'), ing('egg', 1, 'piece'), ing('milk', 500, 'ml'),
+      ing('sugar', 30, 'g'), ing('cooking_oil', 1000, 'ml'), ing('salt', 4, 'g'),
+      ing('butter', 10, 'g')
+    ],
+    steps: [
+      '面粉加蛋、3g盐、5g糖、5g泡打粉、150ml水、10g融化黄油揉成光滑面团',
+      '面团抹油盖保鲜膜冷藏发酵4小时（最好过夜）',
+      '取出面团擀成1cm厚长条',
+      '用刀切成3cm宽的长条，两条叠加用筷子在中间压一下',
+      '油温200℃，将面条两端拉长扭转下入热油',
+      '不停翻动让油条受热均匀膨胀至金黄酥脆',
+      '捞出沥油趁热食用',
+      '牛奶加糖加热做豆浆替代品配油条食用'
+    ]
+  },
+
+  cn_sesame_pancake: {
+    ingredients: [
+      ing('flour', 300, 'g'), ing('sesame_oil', 20, 'ml'), ing('cooking_oil', 20, 'ml'),
+      ing('salt', 4, 'g'), ing('spring_onion', 15, 'g'), ing('five_spice', 3, 'g'),
+      ing('sugar', 5, 'g'), ing('white_pepper', 1, 'g')
+    ],
+    steps: [
+      '面粉加3g糖、3g酵母、170ml温水和2g盐揉成光滑面团',
+      '盖湿布醒发60分钟至2倍大',
+      '面粉加五香粉、盐、白胡椒和热油烫成酥油馅',
+      '发好的面团排气擀成大薄长方片',
+      '均匀抹一层酥油馅撒葱花',
+      '从长边卷起切段，每段竖立按扁',
+      '表面刷糖水粘满白芝麻',
+      '烤箱预热220℃烤12分钟至两面金黄起酥皮',
+      '出炉趁热食用，外酥里软'
+    ]
+  },
+
+  cn_millet_congee: {
+    ingredients: [
+      ing('millet', 100, 'g'), ing('rice', 30, 'g'), ing('sweet_potato', 100, 'g'),
+      ing('red_date', 20, 'g'), ing('goji_berry', 10, 'g'), ing('sugar', 10, 'g')
+    ],
+    steps: [
+      '小米和大米分别淘洗干净，小米浸泡20分钟',
+      '红薯去皮切1cm见方小丁',
+      '红枣去核切片',
+      '砂锅加1.2L水大火烧开',
+      '下大米和红枣中火煮10分钟',
+      '加入小米和红薯丁，不停搅拌防粘底',
+      '转小火慢熬25分钟至小米开花米油浮起',
+      '撒枸杞焖2分钟，加冰糖搅匀至溶化即可'
+    ]
+  },
+
+  cn_breakfast_noodle_beef: {
+    ingredients: [
+      ing('flour', 300, 'g'), ing('beef_shank', 300, 'g'), ing('white_radish', 200, 'g'),
+      ing('light_soy', 25, 'ml'), ing('star_anise', 3, 'piece'), ing('bay_leaf', 3, 'piece'),
+      ing('sichuan_pepper', 3, 'g'), ing('cumin', 2, 'g'), ing('ginger', 20, 'g'),
+      ing('spring_onion', 30, 'g'), ing('garlic', 15, 'g'), ing('chili_flakes', 5, 'g'),
+      ing('salt', 8, 'g'), ing('white_pepper', 2, 'g'), ing('cooking_oil', 30, 'ml'),
+      ing('cooking_wine', 20, 'ml'), ing('chili_pepper', 10, 'g')
+    ],
+    steps: [
+      '面粉加3g盐和160ml水揉成光滑硬面团醒2小时（兰州拉面）',
+      '牛腱肉冷水下锅加姜葱料酒煮5分钟撇浮沫，捞出冲净',
+      '砂锅放牛肉、姜片、八角、月桂、花椒、孜然装入纱布袋，加足量水大火烧开',
+      '转小火炖90分钟至牛肉酥烂，捞出晾凉切薄片，原汤过滤为牛骨汤',
+      '白萝卜去皮切0.3cm片，焯水后入牛肉汤煮10分钟至软糯',
+      '另起一锅熬辣椒油：菜籽油烧至180℃浇在辣椒面上加少许花椒粉',
+      '醒好的面团搓条抻成韭叶宽细面，下沸水煮90秒至面条浮起',
+      '碗中放生抽和盐，捞入面条浇牛肉汤至七分满',
+      '铺牛肉片和萝卜片，撒葱花蒜苗香菜，淋一勺辣椒油即成"一清二白三红四绿五黄"的兰州牛肉面'
+    ]
+  },
+
+  cn_steamed_bun_pork: {
+    ingredients: [
+      ing('flour', 400, 'g'), ing('pork_mince', 300, 'g'), ing('spring_onion', 40, 'g'),
+      ing('ginger', 15, 'g'), ing('light_soy', 25, 'ml'), ing('dark_soy', 5, 'ml'),
+      ing('sesame_oil', 15, 'ml'), ing('salt', 5, 'g'), ing('sugar', 10, 'g'),
+      ing('cooking_wine', 10, 'ml'), ing('white_pepper', 2, 'g'), ing('cooking_oil', 15, 'ml'),
+      ing('oyster_sauce', 10, 'ml')
+    ],
+    steps: [
+      '面粉加4g酵母、5g糖、200ml温水揉成光滑面团',
+      '盖保鲜膜温暖处发酵90分钟至2倍大',
+      '猪肉末加姜末、葱末、生抽、老抽、料酒、蚝油、白胡椒和60ml葱姜水朝一个方向搅打上劲',
+      '加香油和盐拌匀成包子馅',
+      '发好的面团排气搓条切成40g剂子',
+      '剂子按扁擀成中间厚边缘薄的圆皮',
+      '左手托皮放入25g馅料，右手提捏18-22个褶包成包子',
+      '包好的包子放入垫油纸的蒸笼，盖盖二次醒发15分钟',
+      '冷水上锅大火蒸15分钟，关火焖3分钟再揭盖防回缩'
+    ]
+  },
+
+  cn_steamed_bun_veggie: {
+    ingredients: [
+      ing('flour', 400, 'g'), ing('chinese_cabbage', 300, 'g'), ing('vermicelli', 60, 'g'),
+      ing('egg', 3, 'piece'), ing('dried_shrimp', 15, 'g'), ing('spring_onion', 20, 'g'),
+      ing('ginger', 10, 'g'), ing('sesame_oil', 15, 'ml'), ing('cooking_oil', 30, 'ml'),
+      ing('salt', 5, 'g'), ing('sugar', 5, 'g'), ing('light_soy', 15, 'ml'),
+      ing('white_pepper', 2, 'g'), ing('five_spice', 2, 'g')
+    ],
+    steps: [
+      '面粉加4g酵母、5g糖、200ml温水揉成光滑面团发酵90分钟',
+      '白菜剁碎撒盐腌10分钟挤干水分',
+      '鸡蛋打散热油锅炒成小金黄碎块晾凉',
+      '粉丝温水泡软切短，虾皮干锅焙香',
+      '将白菜碎、蛋碎、粉丝、虾皮放入大碗',
+      '加葱姜末、生抽、五香粉、白胡椒、香油、盐和糖拌匀成素馅',
+      '发好的面团排气搓条切剂子擀皮',
+      '包入25g馅料捏18个褶子包成素包子',
+      '包好二次醒发15分钟，冷水上锅大火蒸15分钟焖3分钟揭盖'
+    ]
+  },
+
+  cn_leek_egg_pancake: {
+    ingredients: [
+      ing('leek', 150, 'g'), ing('egg', 4, 'piece'), ing('flour', 100, 'g'),
+      ing('cooking_oil', 25, 'ml'), ing('salt', 3, 'g'), ing('white_pepper', 1, 'g'),
+      ing('sesame_oil', 5, 'ml'), ing('spring_onion', 10, 'g')
+    ],
+    steps: [
+      '韭菜（用韭葱代替）洗净沥干切碎末',
+      '面粉加4个鸡蛋和200ml清水搅打成无颗粒面糊',
+      '面糊加入韭菜末、盐、白胡椒和麻油拌匀',
+      '静置10分钟让面糊起筋',
+      '平底锅烧热刷油转小火',
+      '舀一大勺面糊倒入锅中，转动锅让面糊摊成均匀薄圆饼',
+      '小火煎2分钟至底部金黄',
+      '翻面再煎1分钟至两面金黄起焦边切块出锅'
+    ]
+  },
+
+  cn_fried_dough_twist: {
+    ingredients: [
+      ing('flour', 300, 'g'), ing('egg', 1, 'piece'), ing('sugar', 50, 'g'),
+      ing('cooking_oil', 1000, 'ml'), ing('salt', 2, 'g'), ing('milk', 60, 'ml'),
+      ing('butter', 30, 'g'), ing('sesame_oil', 5, 'ml')
+    ],
+    steps: [
+      '面粉加蛋、糖、盐、牛奶和融化的黄油揉成光滑面团',
+      '盖湿布醒30分钟',
+      '面团均匀切成20g小剂子',
+      '每个剂子搓成20cm长条',
+      '长条对折，两端各持一头朝相反方向搓拧成绳',
+      '松开后绳子自动盘成2股麻花，重复对折拧成3股麻花',
+      '麻花静置10分钟二次松弛',
+      '油温160℃下入麻花中小火慢炸4分钟至膨胀定型',
+      '油温升至180℃复炸30秒至深金黄酥脆，捞出沥油'
+    ]
+  },
+
+  cn_radish_lamb_soup: {
+    ingredients: [
+      ing('lamb_leg', 500, 'g'), ing('white_radish', 400, 'g'), ing('ginger', 25, 'g'),
+      ing('spring_onion', 20, 'g'), ing('cooking_wine', 30, 'ml'), ing('salt', 6, 'g'),
+      ing('white_pepper', 5, 'g'), ing('star_anise', 1, 'piece'), ing('bay_leaf', 1, 'piece'),
+      ing('goji_berry', 10, 'g'), ing('red_date', 15, 'g')
+    ],
+    steps: [
+      '羊腿肉切3cm块冷水加姜片葱段料酒下锅煮5分钟撇净浮沫',
+      '捞出温水冲净沥干',
+      '白萝卜去皮切大滚刀块焯水1分钟去苦味',
+      '砂锅放羊肉、姜拍裂、葱结、八角、月桂、红枣加足量热水',
+      '大火烧开转小火加盖炖60分钟至羊肉酥烂',
+      '加入白萝卜块继续炖25分钟至萝卜透明软糯',
+      '撒大量白胡椒粉和枸杞，调盐焖2分钟',
+      '撒葱花趁热饮汤，汤色奶白胡椒香浓郁'
+    ]
+  },
+
+  staple_beef_dumpling: {
+    ingredients: [
+      ing('flour', 400, 'g'), ing('beef_mince', 350, 'g'), ing('white_radish', 250, 'g'),
+      ing('ginger', 15, 'g'), ing('spring_onion', 25, 'g'), ing('light_soy', 25, 'ml'),
+      ing('dark_soy', 5, 'ml'), ing('sesame_oil', 15, 'ml'), ing('salt', 5, 'g'),
+      ing('cooking_oil', 15, 'ml'), ing('white_pepper', 2, 'g'), ing('cooking_wine', 10, 'ml'),
+      ing('egg', 1, 'piece')
+    ],
+    steps: [
+      '面粉加200ml凉水和2g盐揉成光滑面团醒40分钟',
+      '白萝卜擦丝焯水1分钟过凉挤干水分剁碎',
+      '牛肉末加姜末葱末生抽老抽料酒白胡椒蛋清和60ml葱姜水朝一个方向搅打上劲',
+      '加入挤干的萝卜碎和热油激香',
+      '加香油和盐拌匀成饺子馅',
+      '面团搓条切15g剂子擀皮',
+      '每张皮包入20g馅料捏成元宝形',
+      '宽水煮开下饺子，连续点三次凉水',
+      '饺子鼓胀浮起捞出，蘸醋蒜泥食用'
+    ]
+  },
+
+  staple_meat_pie: {
+    ingredients: [
+      ing('flour', 300, 'g'), ing('beef_mince', 300, 'g'), ing('onion', 150, 'g'),
+      ing('ginger', 10, 'g'), ing('spring_onion', 15, 'g'), ing('light_soy', 20, 'ml'),
+      ing('dark_soy', 5, 'ml'), ing('sesame_oil', 10, 'ml'), ing('cooking_oil', 30, 'ml'),
+      ing('salt', 4, 'g'), ing('white_pepper', 2, 'g'), ing('cooking_wine', 10, 'ml')
+    ],
+    steps: [
+      '面粉加170ml温水和2g盐揉成柔软面团抹油醒30分钟',
+      '洋葱切碎末，姜葱切末',
+      '牛肉末加葱姜末生抽老抽料酒白胡椒和60ml葱姜水朝一个方向搅打上劲',
+      '加入洋葱末和香油拌匀成饼馅',
+      '面团搓条切60g大剂子',
+      '剂子按扁擀成手掌大圆皮，包入80g馅料像包包子一样捏褶收口',
+      '收口朝下用手掌轻压成1.5cm厚的饼',
+      '平底锅刷油中小火烧热，放入馅饼煎3分钟至底面金黄',
+      '翻面再煎3分钟，盖盖小火焖煎5分钟至两面金黄熟透'
+    ]
+  },
+
+  staple_leek_pie: {
+    ingredients: [
+      ing('flour', 250, 'g'), ing('leek', 250, 'g'), ing('egg', 4, 'piece'),
+      ing('vermicelli', 30, 'g'), ing('dried_shrimp', 15, 'g'), ing('sesame_oil', 15, 'ml'),
+      ing('cooking_oil', 30, 'ml'), ing('salt', 4, 'g'), ing('white_pepper', 1, 'g'),
+      ing('five_spice', 2, 'g')
+    ],
+    steps: [
+      '面粉加140ml温水和1g盐揉成柔软面团醒30分钟',
+      '韭菜（用韭葱代替）洗净沥干切碎末',
+      '鸡蛋打散热油锅快速划散炒成小金黄碎块晾凉',
+      '粉丝泡软切短，虾皮干锅焙香',
+      '韭菜先拌1勺香油锁水，加蛋碎、粉丝、虾皮、五香粉、盐拌匀成馅',
+      '面团搓条切60g剂子，每个擀成手掌大圆皮',
+      '一张皮上中央放馅料，盖另一张皮捏边封口（或对折半圆捏花边）',
+      '平底锅刷油中小火放入韭菜盒煎3分钟至底面金黄',
+      '翻面盖盖焖煎3分钟至两面金黄外酥里嫩'
+    ]
+  },
+
+  staple_egg_pancake_wrap: {
+    ingredients: [
+      ing('flour', 200, 'g'), ing('egg', 4, 'piece'), ing('lettuce', 50, 'g'),
+      ing('sausage', 80, 'g'), ing('doubanjiang', 15, 'g'), ing('bean_paste', 15, 'g'),
+      ing('cooking_oil', 30, 'ml'), ing('salt', 3, 'g'), ing('spring_onion', 10, 'g'),
+      ing('white_pepper', 1, 'g'), ing('sesame_oil', 5, 'ml')
+    ],
+    steps: [
+      '面粉加100ml温水和2g盐揉成柔软面团醒30分钟',
+      '面团搓条切剂子擀成薄圆饼，刷一层油叠2层',
+      '平底锅烧热放入饼坯小火烙至两面起泡略变色',
+      '取出在两层中间用筷子戳一个小口形成口袋',
+      '鸡蛋打散加葱花、盐、白胡椒和麻油搅匀',
+      '将蛋液从口袋小口灌入，立即下锅煎',
+      '小火煎至蛋液凝固两面金黄',
+      '出锅刷一层甜面酱和辣酱',
+      '铺生菜叶和切片火腿肠卷起对折食用'
+    ]
+  },
+
+  cn_corn_pancake: {
+    ingredients: [
+      ing('cornmeal', 100, 'g'), ing('corn', 100, 'g'), ing('flour', 80, 'g'),
+      ing('egg', 2, 'piece'), ing('sugar', 15, 'g'), ing('milk', 100, 'ml'),
+      ing('salt', 2, 'g'), ing('cooking_oil', 20, 'ml'), ing('butter', 10, 'g')
+    ],
+    steps: [
+      '玉米粒沸水焯1分钟捞出沥干',
+      '玉米面、面粉、糖、盐混合，加蛋和牛奶搅成面糊',
+      '加入玉米粒拌匀',
+      '面糊静置15分钟',
+      '平底锅烧热加少许黄油融化',
+      '舀面糊倒入锅中摊成直径8cm的小圆饼',
+      '中小火煎2分钟至底部金黄起小气泡',
+      '翻面再煎1分钟至两面金黄外酥里软出锅'
+    ]
+  },
+
+  staple_corn_dumpling: {
+    ingredients: [
+      ing('flour', 400, 'g'), ing('pork_mince', 300, 'g'), ing('corn', 200, 'g'),
+      ing('ginger', 10, 'g'), ing('spring_onion', 20, 'g'), ing('sesame_oil', 15, 'ml'),
+      ing('light_soy', 25, 'ml'), ing('dark_soy', 5, 'ml'), ing('salt', 5, 'g'),
+      ing('egg', 1, 'piece'), ing('white_pepper', 2, 'g'), ing('cooking_wine', 10, 'ml'),
+      ing('cooking_oil', 15, 'ml')
+    ],
+    steps: [
+      '面粉加200ml凉水和2g盐揉成光滑面团醒40分钟',
+      '玉米粒沸水焯30秒沥干',
+      '猪肉末加姜末葱末生抽老抽料酒白胡椒蛋清和60ml葱姜水朝一个方向搅打上劲',
+      '加入玉米粒、热油激香、香油和盐拌匀成饺子馅',
+      '面团搓条切15g剂子擀皮',
+      '每张皮包入20g馅料捏成元宝形',
+      '宽水煮开下饺子，连续点三次凉水',
+      '饺子鼓胀浮起捞出蘸醋蒜泥食用'
+    ]
+  },
+
+  staple_mushroom_dumpling: {
+    ingredients: [
+      ing('flour', 400, 'g'), ing('pork_mince', 300, 'g'), ing('mushroom', 200, 'g'),
+      ing('dried_mushroom', 15, 'g'), ing('ginger', 10, 'g'), ing('spring_onion', 20, 'g'),
+      ing('sesame_oil', 15, 'ml'), ing('light_soy', 25, 'ml'), ing('dark_soy', 5, 'ml'),
+      ing('salt', 5, 'g'), ing('white_pepper', 2, 'g'), ing('cooking_wine', 10, 'ml'),
+      ing('cooking_oil', 20, 'ml'), ing('egg', 1, 'piece')
+    ],
+    steps: [
+      '面粉加200ml凉水和2g盐揉成光滑面团醒40分钟',
+      '干香菇泡发切碎末，鲜蘑菇切碎末',
+      '热锅下油炒香菇末3分钟至出香味盛出晾凉',
+      '猪肉末加姜末葱末生抽老抽料酒白胡椒蛋清和60ml葱姜水朝一个方向搅打上劲',
+      '加入炒过的蘑菇末、热油激香、香油和盐拌匀成饺子馅',
+      '面团搓条切15g剂子擀皮',
+      '每张皮包入20g馅料捏成元宝形',
+      '宽水煮开下饺子，浮起后点两次凉水再煮开1分钟',
+      '饺子鼓胀捞出蘸醋食用'
+    ]
+  },
+
+  cn_tofu_noodle_bkf: {
+    ingredients: [
+      ing('tofu', 500, 'g'), ing('light_soy', 15, 'ml'), ing('sesame_oil', 8, 'ml'),
+      ing('vinegar', 10, 'ml'), ing('chili_flakes', 5, 'g'), ing('spring_onion', 10, 'g'),
+      ing('dried_shrimp', 10, 'g'), ing('garlic', 10, 'g'), ing('mushroom', 30, 'g'),
+      ing('starch', 15, 'g'), ing('salt', 3, 'g'), ing('white_pepper', 1, 'g')
+    ],
+    steps: [
+      '嫩豆腐用勺小心舀入大碗，保持完整不要碎',
+      '蘑菇切碎末，蒜捣泥，葱切碎花，虾皮焙香',
+      '调卤汁：锅中加水煮开下蘑菇末和虾皮煮3分钟',
+      '加生抽、盐、白胡椒调味',
+      '水淀粉勾芡至浓稠成卤汁',
+      '蒜泥加米醋、生抽、辣椒油、香油调成蘸料',
+      '将卤汁浇在豆腐花上',
+      '淋蒜泥蘸料，撒葱花虾皮，轻拌食用'
+    ]
+  },
+
+  cn_lamb_noodle_soup: {
+    ingredients: [
+      ing('lamb_leg', 350, 'g'), ing('noodles_dried', 200, 'g'), ing('white_radish', 100, 'g'),
+      ing('ginger', 20, 'g'), ing('spring_onion', 20, 'g'), ing('garlic', 10, 'g'),
+      ing('salt', 6, 'g'), ing('white_pepper', 5, 'g'), ing('cooking_wine', 20, 'ml'),
+      ing('star_anise', 1, 'piece'), ing('bay_leaf', 1, 'piece'), ing('chili_flakes', 3, 'g'),
+      ing('sesame_oil', 5, 'ml')
+    ],
+    steps: [
+      '羊腿肉切薄片或小块冷水加姜葱料酒焯水5分钟撇浮沫',
+      '砂锅放羊肉、姜片、葱结、八角、月桂、白萝卜片加足量水',
+      '大火烧开转小火炖40分钟至羊肉酥烂萝卜软糯',
+      '另起一锅水煮面条至8分熟过凉水沥干',
+      '面条放入大碗',
+      '浇上滚烫的羊肉汤至七分满',
+      '撒大量白胡椒粉、葱花、蒜末',
+      '淋几滴香油和辣椒油即可食用'
+    ]
+  },
+
+  staple_bean_paste_noodle: {
+    ingredients: [
+      ing('noodles_dried', 250, 'g'), ing('pork_loin', 150, 'g'), ing('egg', 3, 'piece'),
+      ing('mushroom', 80, 'g'), ing('wood_ear', 20, 'g'), ing('dried_shrimp', 10, 'g'),
+      ing('light_soy', 20, 'ml'), ing('dark_soy', 5, 'ml'), ing('starch', 15, 'g'),
+      ing('spring_onion', 15, 'g'), ing('ginger', 10, 'g'), ing('salt', 4, 'g'),
+      ing('cooking_oil', 25, 'ml'), ing('sesame_oil', 5, 'ml'), ing('white_pepper', 2, 'g')
+    ],
+    steps: [
+      '猪肉切丝，蘑菇切片，木耳泡发撕小朵',
+      '热锅下油爆香姜末葱白',
+      '下肉丝大火滑炒至变色',
+      '加入蘑菇片和木耳翻炒2分钟',
+      '加生抽老抽和500ml热水大火烧开',
+      '加虾皮、盐、白胡椒调味',
+      '水淀粉勾厚芡至浓稠',
+      '淋入打散的蛋液形成蛋花',
+      '面条另锅煮熟过凉水捞入碗中',
+      '浇上滚烫卤汁撒葱花淋麻油拌食'
+    ]
+  },
+
+  cn_breakfast_dumpling_soup: {
+    ingredients: [
+      ing('flour', 250, 'g'), ing('pork_mince', 200, 'g'), ing('chinese_cabbage', 150, 'g'),
+      ing('ginger', 8, 'g'), ing('spring_onion', 15, 'g'), ing('light_soy', 15, 'ml'),
+      ing('sesame_oil', 10, 'ml'), ing('salt', 4, 'g'), ing('white_pepper', 2, 'g'),
+      ing('vinegar', 10, 'ml'), ing('cooking_wine', 5, 'ml'), ing('egg', 1, 'piece'),
+      ing('dried_shrimp', 5, 'g')
+    ],
+    steps: [
+      '面粉加130ml凉水和1g盐揉成光滑面团醒30分钟',
+      '白菜剁碎撒盐杀水挤干',
+      '猪肉末加姜末葱末生抽料酒白胡椒蛋清和葱姜水搅打上劲，拌入白菜碎和香油成馅',
+      '面团搓条切10g小剂子擀薄皮',
+      '每张皮包入10g馅料捏成小饺子（混沌大小）',
+      '碗中放生抽、米醋、麻油、白胡椒、葱花和虾皮调底料',
+      '锅中宽水煮开下饺子，连续点两次凉水',
+      '饺子浮起捞入调好的碗中',
+      '浇上煮饺子的原汤至七分满趁热食用'
+    ]
+  },
+
+  staple_chicken_fried_noodle: {
+    ingredients: [
+      ing('flour', 300, 'g'), ing('chicken_thigh', 250, 'g'), ing('capsicum', 80, 'g'),
+      ing('onion', 80, 'g'), ing('tomato', 100, 'g'), ing('garlic', 10, 'g'),
+      ing('light_soy', 20, 'ml'), ing('cooking_oil', 25, 'ml'), ing('cumin', 5, 'g'),
+      ing('chili_flakes', 5, 'g'), ing('salt', 4, 'g'), ing('tomato_paste', 15, 'g'),
+      ing('cooking_wine', 10, 'ml'), ing('white_pepper', 1, 'g')
+    ],
+    steps: [
+      '面粉加3g盐和160ml温水揉成软面团醒1小时（拉条子用）',
+      '醒好的面团搓成手指粗的长条抹油盘起再醒30分钟',
+      '鸡腿肉切1.5cm丁加生抽料酒和孜然腌15分钟',
+      '洋葱切丝，彩椒切丁，番茄去皮切丁，蒜切片',
+      '热锅下油爆香蒜片洋葱',
+      '下鸡丁大火翻炒至变色',
+      '加番茄和番茄酱炒出红油汁',
+      '加生抽、孜然粉、辣椒粉、白胡椒和小半碗水焖煮3分钟',
+      '加彩椒丁翻炒30秒成浇头',
+      '另一锅水烧开将拉条子抻成筷子粗细下锅煮3分钟',
+      '面条捞入碗中浇上鸡丁浇头拌匀食用'
+    ]
+  },
+
+  staple_eggplant_noodle: {
+    ingredients: [
+      ing('noodles_dried', 250, 'g'), ing('eggplant', 300, 'g'), ing('pork_mince', 150, 'g'),
+      ing('light_soy', 20, 'ml'), ing('dark_soy', 5, 'ml'), ing('garlic', 20, 'g'),
+      ing('ginger', 5, 'g'), ing('cooking_oil', 30, 'ml'), ing('spring_onion', 15, 'g'),
+      ing('starch', 8, 'g'), ing('sugar', 5, 'g'), ing('cooking_wine', 5, 'ml'),
+      ing('salt', 3, 'g'), ing('doubanjiang', 15, 'g')
+    ],
+    steps: [
+      '茄子切1cm见方丁，撒盐杀水10分钟挤干',
+      '蒜剁末，姜切末，葱切段',
+      '热锅下油烧至七成热下茄子炸至金黄软透盛出',
+      '锅留底油下肉末小火煸至变色',
+      '加蒜末姜末葱白和黄豆酱炒出酱香',
+      '烹料酒生抽老抽糖和半碗水',
+      '放入炸好的茄子翻炒3分钟入味',
+      '水淀粉勾薄芡成浓稠茄子卤',
+      '面条另锅煮熟捞入碗中浇茄子卤拌食'
+    ]
+  },
+
+  staple_lamb_noodle: {
+    ingredients: [
+      ing('flour', 300, 'g'), ing('lamb_leg', 250, 'g'), ing('tomato', 150, 'g'),
+      ing('capsicum', 80, 'g'), ing('onion', 80, 'g'), ing('garlic', 15, 'g'),
+      ing('cumin', 5, 'g'), ing('light_soy', 20, 'ml'), ing('cooking_oil', 25, 'ml'),
+      ing('salt', 4, 'g'), ing('tomato_paste', 15, 'g'), ing('chili_flakes', 5, 'g'),
+      ing('cooking_wine', 15, 'ml'), ing('white_pepper', 2, 'g')
+    ],
+    steps: [
+      '面粉加3g盐和160ml温水揉成软面团醒1小时（拉条子）',
+      '醒好的面团搓成手指粗长条抹油盘起再醒30分钟',
+      '羊腿肉切薄片加生抽、料酒、孜然腌15分钟',
+      '洋葱切丝，彩椒切条，番茄去皮切块，蒜切片',
+      '热锅下油爆香蒜片洋葱',
+      '下羊肉片大火翻炒至变色',
+      '加番茄和番茄酱炒出红油汁',
+      '加生抽、孜然粉、辣椒粉、白胡椒和小半碗水焖煮3分钟',
+      '加彩椒条翻炒30秒成浇头',
+      '另一锅水烧开将拉条子抻成筷子粗细下锅煮3分钟',
+      '面条捞入碗中浇上羊肉浇头拌匀，撒孜然食用'
+    ]
+  }
+};
+
+module.exports = { OVERRIDES };
