@@ -80,6 +80,12 @@
       "blockedIngredients": ["beef_sirloin", "beef_mince", "beef_shank", "beef_stock"],
       "description": "不食用牛肉及牛肉制品"
     },
+    "no_lamb": {
+      "nameZh": "不吃羊肉",
+      "nameEn": "No Lamb",
+      "blockedIngredients": ["lamb_leg", "lamb_chop", "lamb_mince", "lamb_shank", "mutton"],
+      "description": "不食用羊肉及羊肉制品"
+    },
     "no_seafood": {
       "nameZh": "不吃海鲜",
       "nameEn": "No Seafood",

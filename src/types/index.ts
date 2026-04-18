@@ -203,9 +203,10 @@ export type HealthCondition =
 export type DietaryRestriction =
   | 'vegetarian'     // 素食
   | 'vegan'          // 纯素
-  | 'halal'          // 清真
+  | 'halal'          // 清真(已含禁猪)
   | 'no_pork'        // 不吃猪肉
   | 'no_beef'        // 不吃牛肉
+  | 'no_lamb'        // 不吃羊肉
   | 'no_seafood'     // 不吃海鲜
   | 'no_spicy'       // 不吃辣
   | 'lactose_free'   // 无乳糖
@@ -224,11 +225,20 @@ export type AgeGroup =
   | 'senior';    // 老年 65+
 export type Gender = 'male' | 'female';
 
+export type FitnessGoal =
+  | 'cutting'   // 减脂: 热量赤字, 少油腻
+  | 'maintain'  // 维持: 标准热量
+  | 'bulking'   // 增肌: 热量盈余, 加蛋白
+  | 'wellness'; // 养生: 清淡少盐少油
+
 export interface FamilyMember {
   id: string;
   name: string;
   gender: Gender;
   ageGroup: AgeGroup;
+  height?: number;   // cm (可选,有了能算 BMR)
+  weight?: number;   // kg
+  fitnessGoal?: FitnessGoal;  // 健康目标 → 影响热量值 + 菜谱偏好
   healthConditions: HealthCondition[];
   dietaryRestrictions: DietaryRestriction[];
   dailyCalorieTarget: number;
@@ -270,6 +280,8 @@ export interface UserProfile {
     dinner: MealComposition;
   };
   dailyFruitCount?: number;                // 每天水果种类数(0=不推荐)
+  excludeIngredients?: string[];           // 长期排除的食材 ID（饮食限制补充）
+  budgetEnabled?: boolean;                  // 是否启用预算管理(false=不限预算)
 }
 
 // --- 每周计划 ---

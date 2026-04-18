@@ -92,6 +92,8 @@ const defaultProfile: UserProfile = {
     dinner:    { meatCount: 1, vegCount: 1, soupCount: 0, stapleCount: 0, coldDishCount: 0 },
   },
   dailyFruitCount: 0,
+  excludeIngredients: [],
+  budgetEnabled: true,
 };
 
 export const useAppStore = create<AppState>()(

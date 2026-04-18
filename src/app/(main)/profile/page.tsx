@@ -1,15 +1,18 @@
 'use client';
 
 import { useAppStore } from '@/lib/store';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useMemo } from 'react';
 import Link from 'next/link';
-import { Plus, Trash2, Save } from 'lucide-react';
+import { Plus, Trash2, Save, X } from 'lucide-react';
+import { getAllIngredients } from '@/lib/data/recipe-repository';
 import type {
   FamilyMember, HealthCondition, DietaryRestriction, CuisineType,
   AgeGroup, Gender, MealType, RegionalCuisine, FlavorPreference,
   CookingLevel, DifficultyLevel, CookingMethod, StaplePreference,
+  FitnessGoal,
 } from '@/types';
-import { getRecommendedCalories } from '@/lib/nutrition/calorie-defaults';
+import { getRecommendedCalories, getTargetCaloriesByGoal, GOAL_LABELS, GOAL_DESC } from '@/lib/nutrition/calorie-defaults';
+import { estimateSettingsCalories } from '@/lib/nutrition/settings-estimate';
 
 const GENDER_LABELS: Record<Gender, string> = {
   male: '男', female: '女',
@@ -28,7 +31,7 @@ const HEALTH_LABELS: Record<HealthCondition, string> = {
 
 const DIET_LABELS: Record<DietaryRestriction, string> = {
   vegetarian: '素食', vegan: '纯素', halal: '清真',
-  no_pork: '不吃猪肉', no_beef: '不吃牛肉', no_seafood: '不吃海鲜',
+  no_pork: '不吃猪肉', no_beef: '不吃牛肉', no_lamb: '不吃羊肉', no_seafood: '不吃海鲜',
   no_spicy: '不吃辣', lactose_free: '无乳糖', gluten_free: '无麸质', nut_free: '无坚果',
   avoid_processed: '规避加工食品',
 };
@@ -149,87 +152,70 @@ export default function ProfilePage() {
         )}
       </Section>
 
-      {/* 可选推荐品类 - 独立卡片 */}
-      <Section title="可选推荐品类">
-        <div className="space-y-2">
-          <SwitchRow label="推荐主食" desc={(profile.stapleMode || 'off') === 'off' ? '不推荐，留热量缺口给建议' : (profile.stapleMode || 'off') === 'fixed' ? '按偏好固定推荐' : '随机推荐'}
-            value={(profile.stapleMode || 'off') !== 'off'}
-            onClick={() => {
-              const modes: Array<'off' | 'fixed' | 'random'> = ['off', 'fixed', 'random'];
-              const idx = modes.indexOf(profile.stapleMode || 'off');
-              setProfile({ stapleMode: modes[(idx + 1) % 3] });
-            }} />
-          {(profile.stapleMode || 'off') !== 'off' && (
-            <div className="ml-4 mb-1">
-              <label className="text-xs text-muted block mb-1">主食偏好</label>
-              <div className="flex flex-wrap gap-1">
-                {(Object.keys(STAPLE_LABELS) as StaplePreference[]).map(s => (
-                  <ToggleChip key={s} label={STAPLE_LABELS[s]} small
-                    active={(profile.staplePreference || []).includes(s)}
-                    onClick={() => {
-                      if (s === 'any') { setProfile({ staplePreference: ['any'] }); }
-                      else {
-                        const curr = (profile.staplePreference || []).filter(x => x !== 'any');
-                        const next = curr.includes(s) ? curr.filter(x => x !== s) : [...curr, s];
-                        setProfile({ staplePreference: next.length > 0 ? next : ['any'] });
-                      }
-                    }} />
-                ))}
-              </div>
-            </div>
-          )}
-          <SwitchRow label="推荐汤品" desc="关闭则留热量缺口并给建议量"
-            value={profile.includeSoup || false} onClick={() => setProfile({ includeSoup: !profile.includeSoup })} />
-          <SwitchRow label="推荐凉菜" desc="关闭则只推荐热菜"
-            value={profile.includeColdDish || false} onClick={() => setProfile({ includeColdDish: !profile.includeColdDish })} />
-          <SwitchRow label="推荐水果" desc="关闭则留热量缺口并给建议量"
-            value={profile.includeFruit || false} onClick={() => setProfile({ includeFruit: !profile.includeFruit })} />
-        </div>
+      {/* 家庭成员 */}
+      <Section title="家庭成员">
+        {profile.members.map((member, idx) => (
+          <MemberCard
+            key={member.id}
+            member={member}
+            index={idx}
+            onUpdate={(updates) => updateMember(member.id, updates)}
+            onRemove={profile.members.length > 1 ? () => removeMember(member.id) : undefined}
+          />
+        ))}
+        <button
+          onClick={() => {
+            addMember({
+              id: `member_${Date.now()}`,
+              name: `家人${profile.members.length + 1}`,
+              gender: 'male',
+              ageGroup: 'adult',
+              healthConditions: ['none'],
+              dietaryRestrictions: [],
+              dailyCalorieTarget: getRecommendedCalories('male', 'adult'),
+            });
+          }}
+          className="flex items-center gap-1 text-primary text-sm"
+        >
+          <Plus className="w-4 h-4" /> 添加家庭成员
+        </button>
       </Section>
 
-      {/* 每餐菜品数量 - 自定义 */}
-      <Section title="每餐菜品数量">
-        <SwitchRow
-          label="手动设置每餐数量"
-          desc={profile.customMealComposition?.enabled ? '按下方数值推荐' : '按人数自动推算（2人1荤1素, 4人2荤2素）'}
-          value={profile.customMealComposition?.enabled || false}
-          onClick={() => setProfile({
-            customMealComposition: {
-              ...(profile.customMealComposition || { breakfast: {meatCount:0,vegCount:1,soupCount:0,stapleCount:1,coldDishCount:0}, lunch: {meatCount:1,vegCount:1,soupCount:0,stapleCount:0,coldDishCount:0}, dinner: {meatCount:1,vegCount:1,soupCount:0,stapleCount:0,coldDishCount:0} }),
-              enabled: !(profile.customMealComposition?.enabled || false),
-            },
-          })}
-        />
+      {/* 菜系偏好 - 提到厨艺之前 */}
+      <Section title="菜系偏好">
+        <label className="text-sm text-muted block mb-1">大类</label>
+        <div className="flex flex-wrap gap-2 mb-3">
+          {(Object.keys(CUISINE_LABELS) as CuisineType[]).map(c => (
+            <ToggleChip
+              key={c}
+              label={CUISINE_LABELS[c]}
+              active={profile.cuisinePreference.includes(c)}
+              onClick={() => {
+                const next = profile.cuisinePreference.includes(c)
+                  ? profile.cuisinePreference.filter(x => x !== c)
+                  : [...profile.cuisinePreference, c];
+                setProfile({ cuisinePreference: next.length > 0 ? next : ['chinese'] });
+              }}
+            />
+          ))}
+        </div>
 
-        {profile.customMealComposition?.enabled && (
-          <div className="space-y-4 mt-3">
-            {(['breakfast','lunch','dinner'] as MealType[]).filter(m => profile.mealsPerDay.includes(m)).map(mealType => {
-              const label = mealType === 'breakfast' ? '早餐' : mealType === 'lunch' ? '午餐' : '晚餐';
-              const c = profile.customMealComposition![mealType];
-              const updateCount = (key: keyof typeof c, delta: number) => {
-                const newVal = Math.max(0, Math.min(5, c[key] + delta));
-                setProfile({
-                  customMealComposition: {
-                    ...profile.customMealComposition!,
-                    [mealType]: { ...c, [key]: newVal },
-                  },
-                });
-              };
-              return (
-                <div key={mealType} className="border border-border rounded-lg p-3">
-                  <p className="text-sm font-medium mb-2">{label}</p>
-                  <div className="grid grid-cols-2 gap-2">
-                    <CounterRow label="🥩 荤菜" count={c.meatCount} onMinus={() => updateCount('meatCount', -1)} onPlus={() => updateCount('meatCount', 1)} />
-                    <CounterRow label="🥬 素菜" count={c.vegCount} onMinus={() => updateCount('vegCount', -1)} onPlus={() => updateCount('vegCount', 1)} />
-                    <CounterRow label="🍚 主食" count={c.stapleCount} onMinus={() => updateCount('stapleCount', -1)} onPlus={() => updateCount('stapleCount', 1)} />
-                    <CounterRow label="🥣 汤" count={c.soupCount} onMinus={() => updateCount('soupCount', -1)} onPlus={() => updateCount('soupCount', 1)} />
-                    <CounterRow label="🥗 凉菜" count={c.coldDishCount} onMinus={() => updateCount('coldDishCount', -1)} onPlus={() => updateCount('coldDishCount', 1)} />
-                  </div>
-                </div>
-              );
-            })}
-          </div>
-        )}
+        <label className="text-sm text-muted block mb-1">地域菜系（多选，留空则不限）</label>
+        <div className="flex flex-wrap gap-2 mb-3">
+          {profile.cuisinePreference.flatMap(c => REGIONAL_BY_CUISINE[c] || []).map(r => (
+            <ToggleChip
+              key={r}
+              label={REGIONAL_LABELS[r]}
+              active={(profile.regionalPreference || []).includes(r)}
+              onClick={() => {
+                const next = profile.regionalPreference.includes(r)
+                  ? profile.regionalPreference.filter(x => x !== r)
+                  : [...profile.regionalPreference, r];
+                setProfile({ regionalPreference: next });
+              }}
+            />
+          ))}
+        </div>
       </Section>
 
       {/* 厨艺与口味 - 基础/自定义模式 */}
@@ -309,43 +295,6 @@ export default function ProfilePage() {
         )}
       </Section>
 
-      {/* 菜系偏好 */}
-      <Section title="菜系偏好">
-        <label className="text-sm text-muted block mb-1">大类</label>
-        <div className="flex flex-wrap gap-2 mb-3">
-          {(Object.keys(CUISINE_LABELS) as CuisineType[]).map(c => (
-            <ToggleChip
-              key={c}
-              label={CUISINE_LABELS[c]}
-              active={profile.cuisinePreference.includes(c)}
-              onClick={() => {
-                const next = profile.cuisinePreference.includes(c)
-                  ? profile.cuisinePreference.filter(x => x !== c)
-                  : [...profile.cuisinePreference, c];
-                setProfile({ cuisinePreference: next.length > 0 ? next : ['chinese'] });
-              }}
-            />
-          ))}
-        </div>
-
-        <label className="text-sm text-muted block mb-1">地域菜系（多选，留空则不限）</label>
-        <div className="flex flex-wrap gap-2 mb-3">
-          {profile.cuisinePreference.flatMap(c => REGIONAL_BY_CUISINE[c] || []).map(r => (
-            <ToggleChip
-              key={r}
-              label={REGIONAL_LABELS[r]}
-              active={(profile.regionalPreference || []).includes(r)}
-              onClick={() => {
-                const next = profile.regionalPreference.includes(r)
-                  ? profile.regionalPreference.filter(x => x !== r)
-                  : [...profile.regionalPreference, r];
-                setProfile({ regionalPreference: next });
-              }}
-            />
-          ))}
-        </div>
-      </Section>
-
       {/* 基本设置 */}
       <Section title="用餐与采购">
         <label className="text-sm text-muted block mb-1">规划天数</label>
@@ -385,13 +334,25 @@ export default function ProfilePage() {
           将生成 {profile.planDays} 天 × {profile.mealsPerDay.length} 餐 = {profile.planDays * profile.mealsPerDay.length} 个菜谱
         </p>
 
-        <label className="text-sm text-muted block mb-1">每周预算 (NZD)</label>
-        <input
-          type="number"
-          value={profile.weeklyBudget}
-          onChange={e => setProfile({ weeklyBudget: Number(e.target.value) || 100 })}
-          className="w-full border border-border rounded-lg px-3 py-2 text-sm bg-card mb-3"
-        />
+        <div className="mb-3">
+          <SwitchRow
+            label="预算管理"
+            desc={profile.budgetEnabled === false ? '不限预算，推荐不受成本影响' : '按每周预算推荐，超支会警示'}
+            value={profile.budgetEnabled !== false}
+            onClick={() => setProfile({ budgetEnabled: profile.budgetEnabled === false })}
+          />
+          {profile.budgetEnabled !== false && (
+            <div className="mt-2">
+              <label className="text-sm text-muted block mb-1">每周预算 (NZD)</label>
+              <input
+                type="number"
+                value={profile.weeklyBudget}
+                onChange={e => setProfile({ weeklyBudget: Number(e.target.value) || 100 })}
+                className="w-full border border-border rounded-lg px-3 py-2 text-sm bg-card"
+              />
+            </div>
+          )}
+        </div>
 
         <div className="flex items-center justify-between">
           <label className="text-sm text-muted">生成菜谱时自动加入采购清单</label>
@@ -402,33 +363,138 @@ export default function ProfilePage() {
         </div>
       </Section>
 
-      {/* 家庭成员 */}
-      <Section title="家庭成员">
-        {profile.members.map((member, idx) => (
-          <MemberCard
-            key={member.id}
-            member={member}
-            index={idx}
-            onUpdate={(updates) => updateMember(member.id, updates)}
-            onRemove={profile.members.length > 1 ? () => removeMember(member.id) : undefined}
-          />
-        ))}
-        <button
-          onClick={() => {
-            addMember({
-              id: `member_${Date.now()}`,
-              name: `家人${profile.members.length + 1}`,
-              gender: 'male',
-              ageGroup: 'adult',
-              healthConditions: ['none'],
-              dietaryRestrictions: [],
-              dailyCalorieTarget: getRecommendedCalories('male', 'adult'),
-            });
-          }}
-          className="flex items-center gap-1 text-primary text-sm"
-        >
-          <Plus className="w-4 h-4" /> 添加家庭成员
-        </button>
+      {/* 可选推荐品类 - 独立卡片 */}
+      <Section title="可选推荐品类">
+        <div className="space-y-2">
+          <SwitchRow label="推荐主食" desc={(profile.stapleMode || 'off') === 'off' ? '不推荐，留热量缺口给建议' : (profile.stapleMode || 'off') === 'fixed' ? '按偏好固定推荐' : '随机推荐'}
+            value={(profile.stapleMode || 'off') !== 'off'}
+            onClick={() => {
+              const modes: Array<'off' | 'fixed' | 'random'> = ['off', 'fixed', 'random'];
+              const idx = modes.indexOf(profile.stapleMode || 'off');
+              setProfile({ stapleMode: modes[(idx + 1) % 3] });
+            }} />
+          {(profile.stapleMode || 'off') !== 'off' && (
+            <div className="ml-4 mb-1">
+              <label className="text-xs text-muted block mb-1">主食偏好</label>
+              <div className="flex flex-wrap gap-1">
+                {(Object.keys(STAPLE_LABELS) as StaplePreference[]).map(s => (
+                  <ToggleChip key={s} label={STAPLE_LABELS[s]} small
+                    active={(profile.staplePreference || []).includes(s)}
+                    onClick={() => {
+                      if (s === 'any') { setProfile({ staplePreference: ['any'] }); }
+                      else {
+                        const curr = (profile.staplePreference || []).filter(x => x !== 'any');
+                        const next = curr.includes(s) ? curr.filter(x => x !== s) : [...curr, s];
+                        setProfile({ staplePreference: next.length > 0 ? next : ['any'] });
+                      }
+                    }} />
+                ))}
+              </div>
+            </div>
+          )}
+          <SwitchRow label="推荐汤品" desc="关闭则留热量缺口并给建议量"
+            value={profile.includeSoup || false} onClick={() => setProfile({ includeSoup: !profile.includeSoup })} />
+          <SwitchRow label="推荐凉菜" desc="关闭则只推荐热菜"
+            value={profile.includeColdDish || false} onClick={() => setProfile({ includeColdDish: !profile.includeColdDish })} />
+          <SwitchRow label="推荐水果" desc="关闭则留热量缺口并给建议量"
+            value={profile.includeFruit || false} onClick={() => setProfile({ includeFruit: !profile.includeFruit })} />
+        </div>
+      </Section>
+
+      {/* 每餐菜品数量 - 自定义 */}
+      <Section title="每餐菜品数量">
+        <SwitchRow
+          label="手动设置每餐数量"
+          desc={profile.customMealComposition?.enabled ? '按下方数值推荐' : '按人数自动推算（2人1荤1素, 4人2荤2素）'}
+          value={profile.customMealComposition?.enabled || false}
+          onClick={() => setProfile({
+            customMealComposition: {
+              ...(profile.customMealComposition || { breakfast: {meatCount:0,vegCount:1,soupCount:0,stapleCount:1,coldDishCount:0}, lunch: {meatCount:1,vegCount:1,soupCount:0,stapleCount:0,coldDishCount:0}, dinner: {meatCount:1,vegCount:1,soupCount:0,stapleCount:0,coldDishCount:0} }),
+              enabled: !(profile.customMealComposition?.enabled || false),
+            },
+          })}
+        />
+
+        {profile.customMealComposition?.enabled && (
+          <div className="space-y-3 mt-3">
+            {/* 说明提示 */}
+            <div className="bg-background border border-border/50 rounded-lg p-2.5 text-xs text-muted">
+              <p className="mb-1">💡 <span className="text-foreground">提示</span></p>
+              <ul className="list-disc list-inside space-y-0.5">
+                <li>荤菜/素菜可直接调整</li>
+                <li>主食/汤/凉菜：需要先在「可选推荐品类」里打开对应开关才会生效</li>
+              </ul>
+            </div>
+
+            {(['breakfast','lunch','dinner'] as MealType[]).filter(m => profile.mealsPerDay.includes(m)).map(mealType => {
+              const label = mealType === 'breakfast' ? '🌅 早餐' : mealType === 'lunch' ? '☀️ 午餐' : '🌙 晚餐';
+              const c = profile.customMealComposition![mealType];
+              const updateCount = (key: keyof typeof c, delta: number) => {
+                const newVal = Math.max(0, Math.min(5, c[key] + delta));
+                setProfile({
+                  customMealComposition: {
+                    ...profile.customMealComposition!,
+                    [mealType]: { ...c, [key]: newVal },
+                  },
+                });
+              };
+              // 检查是否设置了某类但对应开关没开
+              const stapleConflict = c.stapleCount > 0 && (profile.stapleMode || 'off') === 'off';
+              const soupConflict = c.soupCount > 0 && !profile.includeSoup;
+              const coldConflict = c.coldDishCount > 0 && !profile.includeColdDish;
+
+              return (
+                <div key={mealType} className="border border-border rounded-lg p-3">
+                  <p className="text-sm font-medium mb-2">{label}</p>
+                  <div className="grid grid-cols-2 gap-2">
+                    <CounterRow label="🥩 荤菜" count={c.meatCount} onMinus={() => updateCount('meatCount', -1)} onPlus={() => updateCount('meatCount', 1)} />
+                    <CounterRow label="🥬 素菜" count={c.vegCount} onMinus={() => updateCount('vegCount', -1)} onPlus={() => updateCount('vegCount', 1)} />
+                    <CounterRow label={`🍚 主食${stapleConflict ? ' ⚠' : ''}`} count={c.stapleCount} onMinus={() => updateCount('stapleCount', -1)} onPlus={() => updateCount('stapleCount', 1)} />
+                    <CounterRow label={`🥣 汤${soupConflict ? ' ⚠' : ''}`} count={c.soupCount} onMinus={() => updateCount('soupCount', -1)} onPlus={() => updateCount('soupCount', 1)} />
+                    <CounterRow label={`🥗 凉菜${coldConflict ? ' ⚠' : ''}`} count={c.coldDishCount} onMinus={() => updateCount('coldDishCount', -1)} onPlus={() => updateCount('coldDishCount', 1)} />
+                  </div>
+                  {(stapleConflict || soupConflict || coldConflict) && (
+                    <p className="text-[10px] text-accent mt-2">
+                      ⚠ {[stapleConflict && '主食', soupConflict && '汤', coldConflict && '凉菜'].filter(Boolean).join('/')} 开关未开启，此设置不会生效
+                    </p>
+                  )}
+                </div>
+              );
+            })}
+          </div>
+        )}
+      </Section>
+
+      {/* 设置合理性检查 (需求1 提示) */}
+      {(() => {
+        const est = estimateSettingsCalories(profile);
+        if (est.warn === 'ok') return null;
+        const color = est.warn === 'high' ? 'bg-red-50 border-red-200 text-red-800' : 'bg-amber-50 border-amber-200 text-amber-800';
+        return (
+          <div className={`border rounded-lg p-3 ${color}`}>
+            <p className="text-sm font-medium">
+              {est.warn === 'high' ? '⚠ 设置可能导致每日热量大幅超标' : 'ℹ 设置略超目标'}
+            </p>
+            <p className="text-xs mt-1">
+              估算日均 <strong>{est.estimatedDaily}</strong> kcal · 目标 <strong>{est.targetDaily}</strong> kcal ·
+              <strong className="ml-1">{est.deltaPercent > 0 ? '+' : ''}{est.deltaPercent}%</strong>
+            </p>
+            {est.hints.length > 0 && (
+              <ul className="text-xs mt-1 list-disc list-inside space-y-0.5">
+                {est.hints.map((h, i) => <li key={i}>{h}</li>)}
+              </ul>
+            )}
+          </div>
+        );
+      })()}
+
+      {/* 长期排除食材 - 补充饮食限制 */}
+      <Section title="长期排除食材">
+        <p className="text-xs text-muted mb-2">推荐菜谱和搜索时自动过滤这些食材。比"饮食限制"更精细，可排除具体某种食材（如鸡蛋、香菜）。</p>
+        <ExcludeIngredientEditor
+          selectedIds={profile.excludeIngredients || []}
+          onChange={(ids) => setProfile({ excludeIngredients: ids })}
+        />
       </Section>
 
       {saved && (
@@ -534,26 +600,69 @@ function MemberCard({
       </div>
 
       <label className="text-xs text-muted block mb-1">饮食限制</label>
-      <div className="flex flex-wrap gap-1 mb-2">
-        {(Object.keys(DIET_LABELS) as DietaryRestriction[]).map(d => (
-          <ToggleChip
-            key={d}
-            label={DIET_LABELS[d]}
-            active={member.dietaryRestrictions.includes(d)}
-            onClick={() => {
-              const next = member.dietaryRestrictions.includes(d)
-                ? member.dietaryRestrictions.filter(x => x !== d)
-                : [...member.dietaryRestrictions, d];
-              onUpdate({ dietaryRestrictions: next });
-            }}
-            small
-          />
+      <div className="flex flex-wrap gap-1 mb-1">
+        {(Object.keys(DIET_LABELS) as DietaryRestriction[])
+          // 清真已包含不吃猪肉，两项只显示一项
+          .filter(d => !(d === 'no_pork' && member.dietaryRestrictions.includes('halal')))
+          .map(d => (
+            <ToggleChip
+              key={d}
+              label={DIET_LABELS[d]}
+              active={member.dietaryRestrictions.includes(d)}
+              onClick={() => {
+                let next = member.dietaryRestrictions.includes(d)
+                  ? member.dietaryRestrictions.filter(x => x !== d)
+                  : [...member.dietaryRestrictions, d];
+                // 选了清真自动移除重复的不吃猪肉
+                if (d === 'halal' && next.includes('halal')) {
+                  next = next.filter(x => x !== 'no_pork');
+                }
+                onUpdate({ dietaryRestrictions: next });
+              }}
+              small
+            />
         ))}
+      </div>
+      {member.dietaryRestrictions.includes('halal') && (
+        <p className="text-[10px] text-muted mb-2">清真已包含禁猪与禁酒精</p>
+      )}
+
+      {/* 身高体重(可选,用于更精准的 BMR 推算) */}
+      <div className="grid grid-cols-2 gap-2 mb-2">
+        <div>
+          <label className="text-xs text-muted block mb-1">身高 (cm)</label>
+          <input type="number" placeholder="可选" value={member.height || ''}
+            onChange={e => onUpdate({ height: Number(e.target.value) || undefined })}
+            className="w-full border border-border rounded px-2 py-1 text-sm bg-transparent" />
+        </div>
+        <div>
+          <label className="text-xs text-muted block mb-1">体重 (kg)</label>
+          <input type="number" placeholder="可选" value={member.weight || ''}
+            onChange={e => onUpdate({ weight: Number(e.target.value) || undefined })}
+            className="w-full border border-border rounded px-2 py-1 text-sm bg-transparent" />
+        </div>
+      </div>
+
+      {/* 健康目标 - 需求4 */}
+      <label className="text-xs text-muted block mb-1">健康目标</label>
+      <div className="grid grid-cols-2 gap-1 mb-2">
+        {(Object.keys(GOAL_LABELS) as FitnessGoal[]).map(g => {
+          const active = (member.fitnessGoal || 'maintain') === g;
+          const presetCal = getTargetCaloriesByGoal(gender, member.ageGroup, g, member.height, member.weight);
+          return (
+            <button key={g} onClick={() => onUpdate({ fitnessGoal: g, dailyCalorieTarget: presetCal })}
+              className={`text-left p-2 rounded border transition ${active ? 'border-primary bg-primary/5' : 'border-border hover:border-primary/50'}`}>
+              <p className="text-xs font-medium">{GOAL_LABELS[g]}</p>
+              <p className="text-[10px] text-muted">{GOAL_DESC[g]}</p>
+              <p className="text-[10px] text-primary">≈{presetCal} kcal</p>
+            </button>
+          );
+        })}
       </div>
 
       <label className="text-xs text-muted block mb-1">
         每日热量目标 (kcal)
-        <span className="text-primary ml-1">推荐: {recommended}</span>
+        <span className="text-primary ml-1">基础推荐: {recommended}</span>
       </label>
       <div className="flex gap-2 items-center">
         <input
@@ -564,7 +673,7 @@ function MemberCard({
         />
         {member.dailyCalorieTarget !== recommended && (
           <button
-            onClick={() => onUpdate({ dailyCalorieTarget: recommended })}
+            onClick={() => onUpdate({ dailyCalorieTarget: recommended, fitnessGoal: undefined })}
             className="text-xs text-primary hover:underline whitespace-nowrap"
           >
             重置推荐
@@ -609,6 +718,64 @@ function SwitchRow({ label, desc, value, onClick }: {
         className={`w-10 h-6 rounded-full transition flex-shrink-0 ${value ? 'bg-primary' : 'bg-border'}`}>
         <div className={`w-4 h-4 bg-white rounded-full shadow transition-transform mx-1 ${value ? 'translate-x-4' : ''}`} />
       </button>
+    </div>
+  );
+}
+
+function ExcludeIngredientEditor({ selectedIds, onChange }: {
+  selectedIds: string[]; onChange: (ids: string[]) => void;
+}) {
+  const [input, setInput] = useState('');
+  const allIng = useMemo(() => getAllIngredients(), []);
+  const suggestions = useMemo(() => {
+    if (!input.trim()) return [];
+    const q = input.toLowerCase();
+    return allIng
+      .filter(i => !selectedIds.includes(i.id))
+      .filter(i => i.nameZh.includes(input) || i.nameEn.toLowerCase().includes(q))
+      .slice(0, 8);
+  }, [input, selectedIds, allIng]);
+
+  return (
+    <div>
+      {selectedIds.length > 0 && (
+        <div className="flex flex-wrap gap-1 mb-2">
+          {selectedIds.map(id => {
+            const ing = allIng.find(i => i.id === id);
+            return (
+              <span key={id} className="inline-flex items-center gap-1 bg-red-50 text-red-700 text-xs px-2 py-1 rounded-full">
+                {ing?.nameZh || id}
+                <button onClick={() => onChange(selectedIds.filter(x => x !== id))} className="hover:text-red-900">
+                  <X className="w-3 h-3" />
+                </button>
+              </span>
+            );
+          })}
+        </div>
+      )}
+      <div className="relative">
+        <input
+          type="text"
+          value={input}
+          onChange={e => setInput(e.target.value)}
+          placeholder="搜索食材名添加到排除列表..."
+          className="w-full border border-border rounded px-3 py-1.5 text-sm bg-background"
+        />
+        {suggestions.length > 0 && (
+          <div className="absolute z-10 top-full left-0 right-0 bg-card border border-border rounded-lg mt-1 shadow-lg max-h-48 overflow-y-auto">
+            {suggestions.map(ing => (
+              <button
+                key={ing.id}
+                onClick={() => { onChange([...selectedIds, ing.id]); setInput(''); }}
+                className="w-full text-left px-3 py-2 text-sm hover:bg-background flex justify-between items-center"
+              >
+                <span>{ing.nameZh}</span>
+                <Plus className="w-3 h-3 text-muted" />
+              </button>
+            ))}
+          </div>
+        )}
+      </div>
     </div>
   );
 }

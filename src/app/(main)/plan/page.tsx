@@ -210,7 +210,7 @@ export default function PlanPage() {
                 <div className="flex items-center gap-2">
                   <span className="text-sm font-semibold text-primary">{MEAL_LABELS[mealType]}</span>
                   <span className="text-xs text-muted flex items-center gap-1">
-                    <Flame className="w-3 h-3 text-accent" />{mealCalories} kcal · ${mealCost.toFixed(2)}
+                    <Flame className="w-3 h-3 text-accent" />{mealCalories} kcal{profile.budgetEnabled !== false && ` · $${mealCost.toFixed(2)}`}
                   </span>
                 </div>
               </div>
@@ -334,16 +334,20 @@ export default function PlanPage() {
 
       {/* 周菜谱分享弹窗 */}
       {showWeekShare && weeklyPlan && (
-        <div className="fixed inset-0 bg-black/50 z-50 flex items-end sm:items-center justify-center" onClick={() => setShowWeekShare(false)}>
-          <div className="bg-card w-full max-w-md rounded-t-2xl sm:rounded-2xl p-5 space-y-4 max-h-[80vh] overflow-y-auto" onClick={e => e.stopPropagation()}>
-            <div className="flex items-center justify-between">
+        <div className="fixed inset-0 bg-black/50 z-50 flex items-end sm:items-center justify-center p-0 sm:p-4" onClick={() => setShowWeekShare(false)}>
+          <div className="bg-card w-full max-w-md rounded-t-2xl sm:rounded-2xl flex flex-col max-h-[90dvh] sm:max-h-[85vh] overflow-hidden" onClick={e => e.stopPropagation()}>
+            <div className="flex items-center justify-between p-4 border-b border-border flex-shrink-0">
               <h3 className="font-semibold">分享本周菜谱</h3>
               <button onClick={() => setShowWeekShare(false)} className="text-muted"><X className="w-5 h-5" /></button>
             </div>
-            <div className="bg-background rounded-lg p-3 text-xs max-h-64 overflow-y-auto whitespace-pre-wrap font-mono">
-              {generateWeekText(weeklyPlan, profile)}
+            {/* 滚动内容 */}
+            <div className="flex-1 overflow-y-auto p-4">
+              <div className="bg-background rounded-lg p-3 text-xs whitespace-pre-wrap font-mono">
+                {generateWeekText(weeklyPlan, profile)}
+              </div>
             </div>
-            <div className="flex gap-3">
+            {/* 按钮始终贴底 */}
+            <div className="flex gap-3 p-4 border-t border-border flex-shrink-0 bg-card">
               <button onClick={async () => {
                 await navigator.clipboard.writeText(generateWeekText(weeklyPlan, profile));
                 setWeekShareCopied(true);

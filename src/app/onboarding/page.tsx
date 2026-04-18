@@ -21,7 +21,7 @@ const HEALTH_LABELS: Record<HealthCondition, string> = {
 };
 const DIET_LABELS: Record<DietaryRestriction, string> = {
   vegetarian: '素食', vegan: '纯素', halal: '清真',
-  no_pork: '不吃猪肉', no_beef: '不吃牛肉', no_seafood: '不吃海鲜',
+  no_pork: '不吃猪肉', no_beef: '不吃牛肉', no_lamb: '不吃羊肉', no_seafood: '不吃海鲜',
   no_spicy: '不吃辣', lactose_free: '乳糖不耐', gluten_free: '麸质过敏', nut_free: '坚果过敏',
   avoid_processed: '规避加工食品',
 };

@@ -73,6 +73,67 @@ function scoreRecipeHighlights(recipe: Recipe, preferred: Set<NutritionHighlight
   return hit.size * 2; // 每命中 1 个偏好亮点 +2 分
 }
 
+/**
+ * 根据家庭健康目标调整菜谱评分 (需求4)
+ * cutting 减脂: +低热量低脂高纤 -油炸 -肥肉
+ * bulking 增肌: +高蛋白 +肉类
+ * wellness 养生: +低脂高纤 -油炸 -辣
+ */
+function scoreRecipeByGoals(recipe: Recipe, members: FamilyMember[]): number {
+  if (!members.length) return 0;
+  // 聚合家庭目标: 有几个成员偏向某目标
+  const counts: Record<string, number> = { cutting: 0, bulking: 0, wellness: 0 };
+  for (const m of members) {
+    const g = m.fitnessGoal || 'maintain';
+    if (g !== 'maintain') counts[g] = (counts[g] || 0) + 1;
+  }
+  const total = members.length;
+
+  let score = 0;
+
+  // 收集食材亮点
+  const ingHighlights = new Set<NutritionHighlight>();
+  for (const ri of recipe.ingredients) {
+    const ing = getIngredientById(ri.ingredientId);
+    if (!ing) continue;
+    for (const h of (ing.highlights || [])) ingHighlights.add(h);
+  }
+
+  // 减脂: 偏好低热量/低脂/高纤; 惩罚 deep_fry 和高脂肥肉食材
+  if (counts.cutting > 0) {
+    const w = counts.cutting / total;
+    if (ingHighlights.has('low_calorie')) score += 4 * w;
+    if (ingHighlights.has('low_fat')) score += 3 * w;
+    if (ingHighlights.has('high_fiber')) score += 3 * w;
+    if (recipe.cookingMethod === 'deep_fry') score -= 6 * w;
+    if (recipe.cookingMethod === 'cold_dish') score += 2 * w;
+    // 肥肉/培根/香肠的菜扣分
+    const fatIds = new Set(['pork_belly', 'bacon', 'sausage', 'lamb_chop']);
+    const hitsFat = recipe.ingredients.some(ri => fatIds.has(ri.ingredientId));
+    if (hitsFat) score -= 4 * w;
+  }
+
+  // 增肌: 偏好高蛋白 + 肉类荤菜; 惩罚纯素菜和高油炸
+  if (counts.bulking > 0) {
+    const w = counts.bulking / total;
+    if (ingHighlights.has('high_protein')) score += 5 * w;
+    if (isMeatDish(recipe)) score += 3 * w;
+    if (inferRole(recipe) === 'main_veg' && !ingHighlights.has('high_protein')) score -= 2 * w;
+  }
+
+  // 养生: 偏好低脂/高纤; 惩罚 deep_fry/辣
+  if (counts.wellness > 0) {
+    const w = counts.wellness / total;
+    if (ingHighlights.has('low_fat')) score += 3 * w;
+    if (ingHighlights.has('high_fiber')) score += 3 * w;
+    if (recipe.cookingMethod === 'steam' || recipe.cookingMethod === 'boil') score += 2 * w;
+    if (recipe.cookingMethod === 'deep_fry') score -= 6 * w;
+    if (recipe.flavors.includes('spicy')) score -= 3 * w;
+  }
+
+  return score;
+}
+
 function getBlockedCategories(members: FamilyMember[]): Set<IngredientCategory> {
   const cats = new Set<IngredientCategory>();
   for (const m of members) {
@@ -99,9 +160,12 @@ export function isRecipeSafe(recipe: Recipe, profile: UserProfile): boolean {
   const blockedTags = getBlockedTags(profile.members);
   const blockedCats = getBlockedCategories(profile.members);
   const blockedIds = getBlockedIngredientIds(profile.members);
+  // Profile 长期排除食材（需求6）
+  const userExcluded = new Set(profile.excludeIngredients || []);
 
   for (const ri of recipe.ingredients) {
     if (blockedIds.has(ri.ingredientId)) return false;
+    if (userExcluded.has(ri.ingredientId)) return false;
     const ingredient = getIngredientById(ri.ingredientId);
     if (!ingredient) continue;
     if (blockedCats.has(ingredient.category)) return false;
@@ -187,13 +251,45 @@ export function getFilteredRecipes(profile: UserProfile, mealType?: MealType): R
   });
 }
 
-/** 排序: 口味匹配 + 已有食材匹配 + 用户偏好 + 健康亮点 + 反馈调整 */
+/**
+ * 计算一份菜(按 familySize 份)的预估热量
+ * recipe 的原始热量是按 recipe.servings 算的，这里缩放到 familySize 份
+ */
+function calcRecipeCalForFamily(recipe: Recipe, familySize: number): number {
+  const total = calcRecipeNutrition(recipe).totalCalories;
+  return Math.round(total * (familySize / recipe.servings));
+}
+
+/**
+ * 计算每餐的热量预算 (家庭总和)
+ * 热量按早/午/晚 25%/40%/35% 分配，只计划哪几餐就在这几餐里按比例归一
+ * 需求1核心: 选菜时据此限制超标
+ */
+export function getMealCalorieBudget(profile: UserProfile, mealType: MealType): number {
+  // 1) 家庭每日总目标(基于 members.dailyCalorieTarget, 家庭大小 >成员数时按均值补齐)
+  const membersCount = Math.max(1, profile.members.length);
+  const avgTarget = profile.members.reduce((s, m) => s + m.dailyCalorieTarget, 0) / membersCount;
+  const householdDaily = profile.members.reduce((s, m) => s + m.dailyCalorieTarget, 0)
+    + avgTarget * Math.max(0, profile.familySize - membersCount);
+
+  // 2) 按实际开启的餐次归一分配
+  const defaultWeights: Record<MealType, number> = { breakfast: 0.25, lunch: 0.40, dinner: 0.35 };
+  const active = profile.mealsPerDay;
+  if (!active.includes(mealType)) return 0;
+  const totalWeight = active.reduce((s, m) => s + (defaultWeights[m] || 0.33), 0) || 1;
+  const ratio = (defaultWeights[mealType] || 0.33) / totalWeight;
+  return Math.round(householdDaily * ratio);
+}
+
+/** 排序: 口味匹配 + 已有食材匹配 + 用户偏好 + 健康亮点 + 反馈调整 + 热量预算 */
 function scoreRecipe(
   recipe: Recipe,
   profile: UserProfile,
   ownedIngredients: string[],
   getPreference?: (id: string) => number,
   getFeedback?: (r: Recipe) => number,
+  /** 本餐剩余热量预算(kcal, familySize 份) — 超过会扣分 */
+  remainingCal?: number,
 ): number {
   let score = 0;
 
@@ -222,6 +318,25 @@ function scoreRecipe(
   const preferred = getPreferredHighlights(profile.members);
   score += scoreRecipeHighlights(recipe, preferred);
 
+  // 家庭健康目标调整 (减脂/增肌/养生) - 需求4
+  score += scoreRecipeByGoals(recipe, profile.members);
+
+  // 热量预算控制 (需求1)
+  // remainingCal = 本餐剩余可用热量, dishCal = 本菜预计热量
+  // 如果 dishCal > remainingCal, 严重扣分; 如果只剩少量预算而菜热量很大, 扣分递增
+  if (remainingCal !== undefined && remainingCal > 0) {
+    const dishCal = calcRecipeCalForFamily(recipe, profile.familySize);
+    if (dishCal > remainingCal * 1.5) score -= 15;             // 超预算 50% → -15
+    else if (dishCal > remainingCal * 1.2) score -= 8;         // 超预算 20% → -8
+    else if (dishCal > remainingCal) score -= 3;                // 刚好超 → -3
+    else if (dishCal < remainingCal * 0.4 && remainingCal > 300) score += 2;  // 还剩很多预算 → 偏好稍大的菜
+    else if (dishCal <= remainingCal) score += 1;              // 刚好在预算内 → +1
+  } else if (remainingCal !== undefined && remainingCal <= 0) {
+    // 预算已用完, 强烈惩罚任何菜 → 几乎全扣分
+    const dishCal = calcRecipeCalForFamily(recipe, profile.familySize);
+    score -= Math.min(25, dishCal / 50);  // 菜越大扣越多
+  }
+
   // 加随机扰动 (0-1) 保证多样性
   score += Math.random();
 
@@ -236,16 +351,20 @@ function pickBest(
   ownedIngredients: string[],
   getPreference?: (id: string) => number,
   getFeedback?: (r: Recipe) => number,
+  remainingCal?: number,
 ): Recipe | null {
   let available = pool.filter(r => !usedIds.has(r.id));
   if (available.length === 0) available = pool;
   if (available.length === 0) return null;
 
   const scored = available
-    .map(r => ({ recipe: r, score: scoreRecipe(r, profile, ownedIngredients, getPreference, getFeedback) }))
+    .map(r => ({ recipe: r, score: scoreRecipe(r, profile, ownedIngredients, getPreference, getFeedback, remainingCal) }))
     .sort((a, b) => b.score - a.score);
 
-  const topCount = Math.max(1, Math.ceil(scored.length * 0.3));
+  // 热量控制: 如果有预算且剩余很少，只从 top 15% 选；否则 top 30%
+  const tight = remainingCal !== undefined && remainingCal > 0 && remainingCal < 400;
+  const topPct = tight ? 0.15 : 0.3;
+  const topCount = Math.max(1, Math.ceil(scored.length * topPct));
   return scored[Math.floor(Math.random() * topCount)].recipe;
 }
 
@@ -371,16 +490,22 @@ function composeMeal(
 
   const minDishes = adjustedMeat + adjustedVeg;
 
+  // 需求1: 每餐热量预算跟踪
+  const mealBudget = getMealCalorieBudget(profile, mealType);
+  let accumulatedCal = 0;
+  const remainingBudget = () => mealBudget > 0 ? Math.max(0, mealBudget - accumulatedCal) : undefined;
+  const trackPick = (r: Recipe) => { accumulatedCal += calcRecipeCalForFamily(r, profile.familySize); };
+
   // === 荤菜 ===
   for (let i = 0; i < adjustedMeat; i++) {
-    const r = pickBest(meatPool, usedIds, profile, ownedIngredients, getPreference, getFeedback);
-    if (r) { result.push({ recipeId: r.id, role: 'main_meat' }); usedIds.add(r.id); }
+    const r = pickBest(meatPool, usedIds, profile, ownedIngredients, getPreference, getFeedback, remainingBudget());
+    if (r) { result.push({ recipeId: r.id, role: 'main_meat' }); usedIds.add(r.id); trackPick(r); }
   }
 
   // === 素菜 ===
   for (let i = 0; i < adjustedVeg; i++) {
-    const r = pickBest(vegPool, usedIds, profile, ownedIngredients, getPreference, getFeedback);
-    if (r) { result.push({ recipeId: r.id, role: 'main_veg' }); usedIds.add(r.id); }
+    const r = pickBest(vegPool, usedIds, profile, ownedIngredients, getPreference, getFeedback, remainingBudget());
+    if (r) { result.push({ recipeId: r.id, role: 'main_veg' }); usedIds.add(r.id); trackPick(r); }
   }
 
   // === 补充: 热菜不够时从全池补 ===
@@ -389,22 +514,23 @@ function composeMeal(
     return role === 'main_meat' || role === 'main_veg';
   });
   while (result.length < minDishes && hotDishPool.length > 0) {
-    const r = pickBest(hotDishPool, usedIds, profile, ownedIngredients, getPreference, getFeedback);
+    const r = pickBest(hotDishPool, usedIds, profile, ownedIngredients, getPreference, getFeedback, remainingBudget());
     if (!r) break;
     result.push({ recipeId: r.id, role: isMeatDish(r) ? 'main_meat' : 'main_veg' });
     usedIds.add(r.id);
+    trackPick(r);
   }
 
   // === 凉菜 ===
   for (let i = 0; i < coldCount; i++) {
-    const r = pickBest(coldPool, usedIds, profile, ownedIngredients, getPreference, getFeedback);
-    if (r) { result.push({ recipeId: r.id, role: 'cold' }); usedIds.add(r.id); }
+    const r = pickBest(coldPool, usedIds, profile, ownedIngredients, getPreference, getFeedback, remainingBudget());
+    if (r) { result.push({ recipeId: r.id, role: 'cold' }); usedIds.add(r.id); trackPick(r); }
   }
 
   // === 汤 ===
   for (let i = 0; i < plan.soupCount; i++) {
-    const r = pickBest(soupPool, usedIds, profile, ownedIngredients, getPreference, getFeedback);
-    if (r) { result.push({ recipeId: r.id, role: 'soup' }); usedIds.add(r.id); }
+    const r = pickBest(soupPool, usedIds, profile, ownedIngredients, getPreference, getFeedback, remainingBudget());
+    if (r) { result.push({ recipeId: r.id, role: 'soup' }); usedIds.add(r.id); trackPick(r); }
   }
 
   // === 主食 ===
@@ -419,15 +545,15 @@ function composeMeal(
       if (preferred.length > 0) filtered = preferred;
     }
     for (let i = 0; i < plan.stapleCount; i++) {
-      const r = pickBest(filtered, usedIds, profile, ownedIngredients, getPreference, getFeedback);
-      if (r) { result.push({ recipeId: r.id, role: 'staple' }); usedIds.add(r.id); }
+      const r = pickBest(filtered, usedIds, profile, ownedIngredients, getPreference, getFeedback, remainingBudget());
+      if (r) { result.push({ recipeId: r.id, role: 'staple' }); usedIds.add(r.id); trackPick(r); }
     }
   }
 
   // fallback
   if (result.length === 0) {
-    const r = pickBest(allCandidates, usedIds, profile, ownedIngredients, getPreference, getFeedback);
-    if (r) { result.push({ recipeId: r.id, role: isMeatDish(r) ? 'main_meat' : 'main_veg' }); usedIds.add(r.id); }
+    const r = pickBest(allCandidates, usedIds, profile, ownedIngredients, getPreference, getFeedback, remainingBudget());
+    if (r) { result.push({ recipeId: r.id, role: isMeatDish(r) ? 'main_meat' : 'main_veg' }); usedIds.add(r.id); trackPick(r); }
   }
 
   return result;
@@ -480,13 +606,14 @@ function smartPick(
   ownedIngredients: string[],
   getPreference?: (id: string) => number,
   getFeedback?: (r: Recipe) => number,
+  remainingCal?: number,
 ): Recipe | null {
   const available = pool.filter(r => !usedIds.has(r.id));
   if (available.length === 0) return pool.length > 0 ? pool[Math.floor(Math.random() * pool.length)] : null;
 
   const preferredHighlights = getPreferredHighlights(profile.members);
 
-  // 评分: 避免最近重复 + 口味匹配 + 已有食材 + 健康亮点
+  // 评分: 避免最近重复 + 口味匹配 + 已有食材 + 健康亮点 + 热量预算
   const scored = available.map(r => {
     let score = 10; // 基础分
 
@@ -527,6 +654,22 @@ function smartPick(
 
     // 营养亮点加权(根据家庭健康状况偏好)
     score += scoreRecipeHighlights(r, preferredHighlights);
+
+    // 家庭健康目标调整 (减脂/增肌/养生)
+    score += scoreRecipeByGoals(r, profile.members);
+
+    // 热量预算 (需求1)
+    if (remainingCal !== undefined && remainingCal > 0) {
+      const dishCal = calcRecipeCalForFamily(r, profile.familySize);
+      if (dishCal > remainingCal * 1.5) score -= 15;
+      else if (dishCal > remainingCal * 1.2) score -= 8;
+      else if (dishCal > remainingCal) score -= 3;
+      else if (dishCal < remainingCal * 0.4 && remainingCal > 300) score += 2;
+      else if (dishCal <= remainingCal) score += 1;
+    } else if (remainingCal !== undefined && remainingCal <= 0) {
+      const dishCal = calcRecipeCalForFamily(r, profile.familySize);
+      score -= Math.min(25, dishCal / 50);
+    }
 
     // 随机扰动
     score += Math.random() * 2;
@@ -588,6 +731,12 @@ function generateSmartPlan(
         if (adjVeg > 0) adjVeg--; else adjMeat--;
       }
 
+      // 需求1: 本餐热量预算
+      const mealBudget = getMealCalorieBudget(profile, mealType);
+      let accumulatedCal = 0;
+      const remaining = () => mealBudget > 0 ? Math.max(0, mealBudget - accumulatedCal) : undefined;
+      const track = (r: Recipe) => { accumulatedCal += calcRecipeCalForFamily(r, profile.familySize); };
+
       // === 荤菜: 智能选(考虑蛋白质轮换) ===
       for (let i = 0; i < adjMeat; i++) {
         // 如果某类蛋白质本周已经用太多次，降低其优先级
@@ -597,10 +746,11 @@ function generateSmartPlan(
         });
         const pool = adjustedMeatPool.length >= 3 ? adjustedMeatPool : meatPool;
 
-        const r = smartPick(pool, usedIds, recentProteins, recentVegs, recentMethods, profile, ownedIngredients, getPreference, getFeedback);
+        const r = smartPick(pool, usedIds, recentProteins, recentVegs, recentMethods, profile, ownedIngredients, getPreference, getFeedback, remaining());
         if (r) {
           recipes.push({ recipeId: r.id, role: 'main_meat' });
           usedIds.add(r.id);
+          track(r);
           const pCat = getProteinCategory(getProteinSource(r));
           recentProteins.push(pCat);
           if (recentProteins.length > 2) recentProteins.shift();
@@ -612,10 +762,11 @@ function generateSmartPlan(
 
       // === 素菜: 智能选(考虑蔬菜不重复) ===
       for (let i = 0; i < adjVeg; i++) {
-        const r = smartPick(vegPool, usedIds, recentProteins, recentVegs, recentMethods, profile, ownedIngredients, getPreference, getFeedback);
+        const r = smartPick(vegPool, usedIds, recentProteins, recentVegs, recentMethods, profile, ownedIngredients, getPreference, getFeedback, remaining());
         if (r) {
           recipes.push({ recipeId: r.id, role: 'main_veg' });
           usedIds.add(r.id);
+          track(r);
           const veg = getMainVegetable(r);
           recentVegs.push(veg);
           if (recentVegs.length > 3) recentVegs.shift();
@@ -626,14 +777,14 @@ function generateSmartPlan(
 
       // === 凉菜 ===
       for (let i = 0; i < coldCount; i++) {
-        const r = smartPick(coldPool, usedIds, recentProteins, recentVegs, recentMethods, profile, ownedIngredients, getPreference, getFeedback);
-        if (r) { recipes.push({ recipeId: r.id, role: 'cold' }); usedIds.add(r.id); }
+        const r = smartPick(coldPool, usedIds, recentProteins, recentVegs, recentMethods, profile, ownedIngredients, getPreference, getFeedback, remaining());
+        if (r) { recipes.push({ recipeId: r.id, role: 'cold' }); usedIds.add(r.id); track(r); }
       }
 
       // === 汤 ===
       for (let i = 0; i < plan.soupCount; i++) {
-        const r = smartPick(soupPool, usedIds, recentProteins, recentVegs, recentMethods, profile, ownedIngredients, getPreference, getFeedback);
-        if (r) { recipes.push({ recipeId: r.id, role: 'soup' }); usedIds.add(r.id); }
+        const r = smartPick(soupPool, usedIds, recentProteins, recentVegs, recentMethods, profile, ownedIngredients, getPreference, getFeedback, remaining());
+        if (r) { recipes.push({ recipeId: r.id, role: 'soup' }); usedIds.add(r.id); track(r); }
       }
 
       // === 主食 ===
@@ -646,15 +797,15 @@ function generateSmartPlan(
           if (preferred.length > 0) filtered = preferred;
         }
         for (let i = 0; i < plan.stapleCount; i++) {
-          const r = smartPick(filtered, usedIds, [], [], [], profile, ownedIngredients, getPreference, getFeedback);
-          if (r) { recipes.push({ recipeId: r.id, role: 'staple' }); usedIds.add(r.id); }
+          const r = smartPick(filtered, usedIds, [], [], [], profile, ownedIngredients, getPreference, getFeedback, remaining());
+          if (r) { recipes.push({ recipeId: r.id, role: 'staple' }); usedIds.add(r.id); track(r); }
         }
       }
 
       // fallback
       if (recipes.length === 0) {
-        const r = smartPick(allCandidates, usedIds, recentProteins, recentVegs, recentMethods, profile, ownedIngredients, getPreference, getFeedback);
-        if (r) { recipes.push({ recipeId: r.id, role: isMeatDish(r) ? 'main_meat' : 'main_veg' }); usedIds.add(r.id); }
+        const r = smartPick(allCandidates, usedIds, recentProteins, recentVegs, recentMethods, profile, ownedIngredients, getPreference, getFeedback, remaining());
+        if (r) { recipes.push({ recipeId: r.id, role: isMeatDish(r) ? 'main_meat' : 'main_veg' }); usedIds.add(r.id); track(r); }
       }
 
       slots.push({ day, mealType, recipes, servings: profile.familySize });
