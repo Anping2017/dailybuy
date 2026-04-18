@@ -398,6 +398,12 @@ export default function ProfilePage() {
             value={profile.includeColdDish || false} onClick={() => setProfile({ includeColdDish: !profile.includeColdDish })} />
           <SwitchRow label="推荐水果" desc="关闭则留热量缺口并给建议量"
             value={profile.includeFruit || false} onClick={() => setProfile({ includeFruit: !profile.includeFruit })} />
+          <SwitchRow
+            label="收藏菜谱优先推荐"
+            desc={profile.favoritesInRandom !== false ? `本周规划时优先选你收藏的菜（${(profile.favoriteRecipes || []).length} 道）` : '收藏只保留在菜谱库中，不参与随机推荐'}
+            value={profile.favoritesInRandom !== false}
+            onClick={() => setProfile({ favoritesInRandom: profile.favoritesInRandom === false })}
+          />
         </div>
       </Section>
 
@@ -487,15 +493,6 @@ export default function ProfilePage() {
           </div>
         );
       })()}
-
-      {/* 长期排除食材 - 补充饮食限制 */}
-      <Section title="长期排除食材">
-        <p className="text-xs text-muted mb-2">推荐菜谱和搜索时自动过滤这些食材。比"饮食限制"更精细，可排除具体某种食材（如鸡蛋、香菜）。</p>
-        <ExcludeIngredientEditor
-          selectedIds={profile.excludeIngredients || []}
-          onChange={(ids) => setProfile({ excludeIngredients: ids })}
-        />
-      </Section>
 
       {saved && (
         <div className="fixed top-4 left-1/2 -translate-x-1/2 bg-primary text-white px-4 py-2 rounded-lg text-sm shadow-lg">
@@ -626,6 +623,16 @@ function MemberCard({
       {member.dietaryRestrictions.includes('halal') && (
         <p className="text-[10px] text-muted mb-2">清真已包含禁猪与禁酒精</p>
       )}
+
+      {/* 长期排除食材 - 个人级 */}
+      <label className="text-xs text-muted block mb-1">长期排除食材</label>
+      <p className="text-[10px] text-muted mb-1.5">补充饮食限制，可排除具体某种食材（如鸡蛋、香菜）</p>
+      <div className="mb-3">
+        <ExcludeIngredientEditor
+          selectedIds={member.excludeIngredients || []}
+          onChange={(ids) => onUpdate({ excludeIngredients: ids })}
+        />
+      </div>
 
       {/* 身高体重(可选,用于更精准的 BMR 推算) */}
       <div className="grid grid-cols-2 gap-2 mb-2">

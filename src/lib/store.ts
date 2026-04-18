@@ -28,6 +28,7 @@ interface AppState {
   weeklyPlan: WeeklyPlan | null;
   setWeeklyPlan: (plan: WeeklyPlan) => void;
   replaceSingleRecipe: (day: string, mealType: MealType, oldRecipeId: string, newRecipeId: string, role: string) => void;
+  addRecipeToMeal: (day: string, mealType: MealType, recipeId: string, role: string) => void;
   removeMealSlot: (day: string, mealType: MealType) => void;
 
   // --- 采购清单 ---
@@ -50,6 +51,11 @@ interface AppState {
   userFeedback: UserFeedback;
   recordSwapReason: (recipeId: string, reason: SwapReason, recipe?: Recipe | null) => void;
   clearFeedback: () => void;
+
+  // --- 菜谱库扩展 ---
+  upsertCustomRecipe: (recipe: Recipe) => void;
+  removeCustomRecipe: (id: string) => void;
+  toggleFavorite: (recipeId: string) => void;
 
   // --- 引导状态 ---
   onboardingComplete: boolean;
@@ -94,6 +100,9 @@ const defaultProfile: UserProfile = {
   dailyFruitCount: 0,
   excludeIngredients: [],
   budgetEnabled: true,
+  customRecipes: [],
+  favoriteRecipes: [],
+  favoritesInRandom: true,
 };
 
 export const useAppStore = create<AppState>()(
@@ -157,6 +166,27 @@ export const useAppStore = create<AppState>()(
         })),
 
       setWeeklyPlan: (plan) => set({ weeklyPlan: plan }),
+
+      addRecipeToMeal: (day, mealType, recipeId, role) =>
+        set((s) => {
+          if (!s.weeklyPlan) return s;
+          const slots = [...s.weeklyPlan.slots];
+          const idx = slots.findIndex(slot => slot.day === day && slot.mealType === mealType);
+          if (idx >= 0) {
+            const slot = slots[idx];
+            // 已存在则不重复添加
+            if ((slot.recipes || []).some(m => m.recipeId === recipeId)) return s;
+            slots[idx] = { ...slot, recipes: [...(slot.recipes || []), { recipeId, role: role as never }] };
+          } else {
+            slots.push({
+              day: day as never,
+              mealType,
+              recipes: [{ recipeId, role: role as never }],
+              servings: s.profile.familySize,
+            });
+          }
+          return { weeklyPlan: { ...s.weeklyPlan, slots } };
+        }),
 
       replaceSingleRecipe: (day, mealType, oldRecipeId, newRecipeId, role) =>
         set((s) => {
@@ -424,6 +454,36 @@ export const useAppStore = create<AppState>()(
           },
         }),
 
+      // --- 菜谱库扩展 ---
+      upsertCustomRecipe: (recipe) =>
+        set((s) => {
+          const list = s.profile.customRecipes || [];
+          const idx = list.findIndex(r => r.id === recipe.id);
+          const next = [...list];
+          if (idx >= 0) next[idx] = { ...recipe, isCustom: true };
+          else next.unshift({ ...recipe, isCustom: true, customCreatedAt: new Date().toISOString() });
+          return { profile: { ...s.profile, customRecipes: next } };
+        }),
+
+      removeCustomRecipe: (id) =>
+        set((s) => ({
+          profile: {
+            ...s.profile,
+            customRecipes: (s.profile.customRecipes || []).filter(r => r.id !== id),
+            // 同时移出收藏
+            favoriteRecipes: (s.profile.favoriteRecipes || []).filter(rid => rid !== id),
+          },
+        })),
+
+      toggleFavorite: (recipeId) =>
+        set((s) => {
+          const list = s.profile.favoriteRecipes || [];
+          const next = list.includes(recipeId)
+            ? list.filter(x => x !== recipeId)
+            : [...list, recipeId];
+          return { profile: { ...s.profile, favoriteRecipes: next } };
+        }),
+
       setOnboardingComplete: (v) => set({ onboardingComplete: v }),
     }),
     {
@@ -440,6 +500,16 @@ export const useAppStore = create<AppState>()(
     }
   )
 );
+
+/** 解析菜谱ID(包含静态库 + 用户自定义) */
+export function resolveRecipe(id: string): Recipe | undefined {
+  const custom = (useAppStore.getState().profile.customRecipes || []).find(r => r.id === id);
+  if (custom) return custom;
+  // 动态导入避免循环依赖
+  // eslint-disable-next-line @typescript-eslint/no-require-imports
+  const { getRecipe } = require('@/lib/data/recipe-repository') as typeof import('@/lib/data/recipe-repository');
+  return getRecipe(id);
+}
 
 /** 获取菜谱偏好分(带60天半衰期时间衰减) */
 export function getPreferenceScore(recipeId: string): number {
@@ -499,9 +569,19 @@ export function getFeedbackAdjustment(recipe: Recipe): number {
 
 // Supabase 自动同步: store 变更后自动推送到云端
 if (typeof window !== 'undefined') {
+  // 首次加载把 customRecipes 同步到 repository 缓存
+  import('./data/recipe-repository').then(({ registerCustomRecipes }) => {
+    registerCustomRecipes(useAppStore.getState().profile.customRecipes || []);
+  });
+
   let syncTimeout: ReturnType<typeof setTimeout> | null = null;
 
   useAppStore.subscribe((state) => {
+    // 保持 repository customCache 与 store 同步
+    import('./data/recipe-repository').then(({ registerCustomRecipes }) => {
+      registerCustomRecipes(state.profile.customRecipes || []);
+    });
+
     // 防抖: 500ms 内的多次变更合并为一次推送
     if (syncTimeout) clearTimeout(syncTimeout);
     syncTimeout = setTimeout(async () => {

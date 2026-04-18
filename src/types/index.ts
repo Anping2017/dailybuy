@@ -186,6 +186,9 @@ export interface Recipe {
   status?: RecipeStatus;
   source?: string;
   dataIssues?: string[];
+  // 用户自定义菜谱
+  isCustom?: boolean;             // 标记为用户自定义
+  customCreatedAt?: string;       // ISO 时间
 }
 
 export type RecipeStatus = 'pending' | 'reviewed' | 'disabled';
@@ -241,6 +244,7 @@ export interface FamilyMember {
   fitnessGoal?: FitnessGoal;  // 健康目标 → 影响热量值 + 菜谱偏好
   healthConditions: HealthCondition[];
   dietaryRestrictions: DietaryRestriction[];
+  excludeIngredients?: string[];  // 该成员长期排除的食材 ID（饮食限制补充）
   dailyCalorieTarget: number;
 }
 
@@ -282,6 +286,9 @@ export interface UserProfile {
   dailyFruitCount?: number;                // 每天水果种类数(0=不推荐)
   excludeIngredients?: string[];           // 长期排除的食材 ID（饮食限制补充）
   budgetEnabled?: boolean;                  // 是否启用预算管理(false=不限预算)
+  customRecipes?: Recipe[];                 // 用户自定义菜谱
+  favoriteRecipes?: string[];               // 收藏的菜谱 ID
+  favoritesInRandom?: boolean;              // 收藏菜谱是否参与随机推荐
 }
 
 // --- 每周计划 ---

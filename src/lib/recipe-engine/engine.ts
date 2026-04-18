@@ -160,8 +160,11 @@ export function isRecipeSafe(recipe: Recipe, profile: UserProfile): boolean {
   const blockedTags = getBlockedTags(profile.members);
   const blockedCats = getBlockedCategories(profile.members);
   const blockedIds = getBlockedIngredientIds(profile.members);
-  // Profile 长期排除食材（需求6）
-  const userExcluded = new Set(profile.excludeIngredients || []);
+  // 长期排除食材：profile 全局 + 每个成员各自的排除
+  const userExcluded = new Set<string>(profile.excludeIngredients || []);
+  for (const m of profile.members) {
+    for (const id of (m.excludeIngredients || [])) userExcluded.add(id);
+  }
 
   for (const ri of recipe.ingredients) {
     if (blockedIds.has(ri.ingredientId)) return false;
@@ -221,7 +224,9 @@ function inferRole(recipe: Recipe): DishRole {
 
 /** 获取符合用户条件的菜谱（自动放宽保证有结果） */
 export function getFilteredRecipes(profile: UserProfile, mealType?: MealType): Recipe[] {
-  const all = getReviewedRecipes();
+  // 合并: 内置审核菜谱 + 用户自定义菜谱
+  const customRecipes = profile.customRecipes || [];
+  const all = [...getReviewedRecipes(), ...customRecipes];
 
   const strict = all.filter(r => {
     if (mealType && !r.mealTypes.includes(mealType)) return false;
@@ -320,6 +325,13 @@ function scoreRecipe(
 
   // 家庭健康目标调整 (减脂/增肌/养生) - 需求4
   score += scoreRecipeByGoals(recipe, profile.members);
+
+  // 收藏菜谱加权: 用户收藏 + 开启随机推荐时 +6
+  if (profile.favoritesInRandom !== false && (profile.favoriteRecipes || []).includes(recipe.id)) {
+    score += 6;
+  }
+  // 自定义菜谱稍微加权 +2 (用户自己加的菜希望多看到)
+  if (recipe.isCustom) score += 2;
 
   // 热量预算控制 (需求1)
   // remainingCal = 本餐剩余可用热量, dishCal = 本菜预计热量
@@ -657,6 +669,10 @@ function smartPick(
 
     // 家庭健康目标调整 (减脂/增肌/养生)
     score += scoreRecipeByGoals(r, profile.members);
+
+    // 收藏 + 自定义加权
+    if (profile.favoritesInRandom !== false && (profile.favoriteRecipes || []).includes(r.id)) score += 6;
+    if (r.isCustom) score += 2;
 
     // 热量预算 (需求1)
     if (remainingCal !== undefined && remainingCal > 0) {

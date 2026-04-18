@@ -14,10 +14,16 @@ const recipeMap = new Map<string, Recipe>(allRecipes.map(r => [r.id, r]));
 const allIngredients = ingredientsData as Ingredient[];
 const ingredientMap = new Map<string, Ingredient>(allIngredients.map(i => [i.id, i]));
 
+// --- 用户自定义菜谱缓存(由 store 同步) ---
+let customCache: Recipe[] = [];
+export function registerCustomRecipes(recipes: Recipe[]): void {
+  customCache = recipes;
+}
+
 // --- 菜谱查询 ---
 
 export function getRecipe(id: string): Recipe | undefined {
-  return recipeMap.get(id);
+  return recipeMap.get(id) || customCache.find(r => r.id === id);
 }
 
 export function getAllRecipes(): Recipe[] {

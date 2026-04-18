@@ -23,7 +23,9 @@ export default function RecipeDetailPage() {
   const [showShare, setShowShare] = useState(false);
 
   const recipeId = decodeURIComponent(params.id as string);
-  const recipe = getRecipe(recipeId);
+  // 先查用户自定义菜谱，再查内置菜谱
+  const customRecipe = (profile.customRecipes || []).find(r => r.id === recipeId);
+  const recipe = customRecipe || getRecipe(recipeId);
   if (!recipe) return <div className="text-center py-16 text-muted">菜谱不存在</div>;
 
   const nutr = calcRecipeNutrition(recipe);
