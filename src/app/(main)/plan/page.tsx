@@ -1,6 +1,6 @@
 'use client';
 
-import { useAppStore, getPreferenceScore } from '@/lib/store';
+import { useAppStore, getPreferenceScore, getFeedbackAdjustment } from '@/lib/store';
 import { useRouter } from 'next/navigation';
 import { useEffect, useState } from 'react';
 import { RefreshCw, X, Flame, ShoppingCart, Check, Sparkles, Share2, Copy, CheckCheck, CalendarDays, List } from 'lucide-react';
@@ -29,15 +29,43 @@ const ROLE_COLORS: Record<DishRole, string> = {
 
 export default function PlanPage() {
   const router = useRouter();
-  const { profile, weeklyPlan, shoppingList, setWeeklyPlan, setShoppingList, removeMealSlot, replaceSingleRecipe, ownedIngredients, addRecipeToShoppingList, removeRecipeFromShoppingList, recordAction } = useAppStore();
+  const { profile, weeklyPlan, shoppingList, setWeeklyPlan, setShoppingList, removeMealSlot, replaceSingleRecipe, ownedIngredients, addRecipeToShoppingList, removeRecipeFromShoppingList, recordAction, recordSwapReason } = useAppStore();
   const [mounted, setMounted] = useState(false);
   const [showWeekShare, setShowWeekShare] = useState(false);
   const [weekShareCopied, setWeekShareCopied] = useState(false);
   const [viewMode, setViewMode] = useState<'day' | 'calendar'>('day');
+  const [swapTarget, setSwapTarget] = useState<{ recipeId: string; mealType: MealType; role: DishRole; day: DayOfWeek } | null>(null);
   const [selectedDay, setSelectedDay] = useState<DayOfWeek>(() => {
     const d = new Date().getDay();
     return DAYS[d === 0 ? 6 : d - 1];
   });
+
+  // 带原因的换菜(需求3)
+  const handleSwapWithReason = (targetRecipeId: string, mealType: MealType, role: DishRole, day: DayOfWeek, reason: import('@/types').SwapReason) => {
+    const oldRecipe = getRecipe(targetRecipeId);
+    // 先记录反馈(细粒度)
+    if (oldRecipe) recordSwapReason(targetRecipeId, reason, oldRecipe);
+    // 同角色候选池(反馈会在scoreRecipe中生效)
+    const pool = getFilteredRecipes(profile, mealType);
+    const meal = weeklyPlan?.slots.find(s => s.day === day && s.mealType === mealType);
+    const sameRole = pool.filter(r => {
+      if (r.id === targetRecipeId) return false;
+      if ((meal?.recipes || []).some(m => m.recipeId === r.id)) return false;
+      const rRole = r.cookingMethod === 'soup' ? 'soup' : r.cookingMethod === 'staple' ? 'staple' : r.cookingMethod === 'cold_dish' ? 'cold' : (r.ingredients.some(ri => { const ing = getIngredient(ri.ingredientId); return ing && ['meat','seafood'].includes(ing.category); }) ? 'main_meat' : 'main_veg');
+      return rRole === role;
+    });
+    if (sameRole.length === 0) { setSwapTarget(null); return; }
+    // 用 feedback 评分从前 30% 随机选
+    const scored = sameRole
+      .map(r => ({ r, s: getFeedbackAdjustment(r) + getPreferenceScore(r.id) * 0.5 + Math.random() * 3 }))
+      .sort((a, b) => b.s - a.s);
+    const topN = Math.max(1, Math.ceil(scored.length * 0.3));
+    const pick = scored[Math.floor(Math.random() * topN)].r;
+    recordAction(targetRecipeId, 'rejected', reason);
+    recordAction(pick.id, 'swapped_in');
+    replaceSingleRecipe(day, mealType, targetRecipeId, pick.id, role);
+    setSwapTarget(null);
+  };
 
   useEffect(() => { setMounted(true); }, []);
   if (!mounted) return null;
@@ -56,12 +84,19 @@ export default function PlanPage() {
         }
       }
     }
-    const plan = generateWeeklyPlan(profile, ownedIngredients || [], getPreferenceScore);
+    const plan = generateWeeklyPlan(profile, ownedIngredients || [], getPreferenceScore, getFeedbackAdjustment);
     setWeeklyPlan(plan);
     if (profile.autoAddToShoppingList) {
       setShoppingList(generateShoppingList(plan, ownedIngredients || []));
     } else {
       setShoppingList({ id: `list_${Date.now()}`, weeklyPlanId: plan.id, items: [], totalEstimatedCost: 0, createdAt: new Date().toISOString(), updatedAt: new Date().toISOString() });
+    }
+
+    // 需求2: AI 队列分析模式 → 把本次方案写入待分析队列
+    if (profile.recommendMode === 'ai_queue') {
+      import('@/lib/supabase/pending').then(({ savePendingAnalysis }) => {
+        savePendingAnalysis(profile, plan).catch(() => { /* 静默失败 */ });
+      });
     }
   };
 
@@ -85,6 +120,12 @@ export default function PlanPage() {
 
   return (
     <div className="space-y-4">
+      {profile.recommendMode === 'ai_queue' && (
+        <div className="bg-primary/5 border border-primary/20 rounded-lg p-3 text-xs">
+          <span className="font-medium text-primary">🤖 AI 队列分析模式</span>
+          <span className="text-muted ml-2">本次方案已提交分析队列，Claude 分析完后你会在后台看到优化建议</span>
+        </div>
+      )}
       <div className="flex items-center justify-between">
         <div>
           <h1 className="text-xl font-bold">{planDays === 7 ? '本周菜谱' : `${planDays}天菜谱`}</h1>
@@ -200,24 +241,8 @@ export default function PlanPage() {
                         <div className="flex items-center gap-2">
                           <span className="text-xs text-accent font-medium">{perServing} kcal</span>
                           <button
-                            onClick={() => {
-                              // 随机换一道同角色的菜
-                              const pool = getFilteredRecipes(profile, mealType);
-                              const sameRole = pool.filter(r => {
-                                if (r.id === mr.recipeId) return false;
-                                // 已在本餐中的不选
-                                if ((slot.recipes || []).some(m => m.recipeId === r.id)) return false;
-                                const role = r.cookingMethod === 'soup' ? 'soup' : r.cookingMethod === 'staple' ? 'staple' : r.cookingMethod === 'cold_dish' ? 'cold' : (r.ingredients.some(ri => { const ing = getIngredient(ri.ingredientId); return ing && ['meat','seafood'].includes(ing.category); }) ? 'main_meat' : 'main_veg');
-                                return role === mr.role;
-                              });
-                              if (sameRole.length > 0) {
-                                const pick = sameRole[Math.floor(Math.random() * sameRole.length)];
-                                recordAction(mr.recipeId, 'rejected');
-                                recordAction(pick.id, 'swapped_in');
-                                replaceSingleRecipe(selectedDay, mealType, mr.recipeId, pick.id, mr.role);
-                              }
-                            }}
-                            className="text-muted hover:text-primary transition" title="随机换一道">
+                            onClick={() => setSwapTarget({ recipeId: mr.recipeId, mealType, role: mr.role, day: selectedDay })}
+                            className="text-muted hover:text-primary transition" title="换一道">
                             <RefreshCw className="w-3.5 h-3.5" />
                           </button>
                         </div>
@@ -343,6 +368,58 @@ export default function PlanPage() {
           </div>
         </div>
       )}
+
+      {/* 换菜原因弹窗 (需求3) */}
+      {swapTarget && (
+        <SwapReasonDialog
+          recipeName={getRecipe(swapTarget.recipeId)?.nameZh || ''}
+          onClose={() => setSwapTarget(null)}
+          onPick={(reason) => handleSwapWithReason(swapTarget.recipeId, swapTarget.mealType, swapTarget.role, swapTarget.day, reason)}
+        />
+      )}
+    </div>
+  );
+}
+
+/** 换菜原因选择弹窗 */
+function SwapReasonDialog({ recipeName, onClose, onPick }: {
+  recipeName: string;
+  onClose: () => void;
+  onPick: (reason: import('@/types').SwapReason) => void;
+}) {
+  const options: Array<{ reason: import('@/types').SwapReason; icon: string; label: string; desc: string }> = [
+    { reason: 'just_want_different', icon: '🔄', label: '只是想换一个', desc: '不扣分，随机推荐' },
+    { reason: 'dislike_ingredient', icon: '🥕', label: '不喜欢这个食材', desc: '后续减少含此食材的菜' },
+    { reason: 'dislike_flavor', icon: '👅', label: '不喜欢这个口味', desc: '后续减少同类口味' },
+    { reason: 'inconvenient_ingredient', icon: '🛒', label: '食材不方便获取', desc: '后续减少含此食材' },
+    { reason: 'too_complex', icon: '⏱️', label: '烹饪太复杂', desc: '后续推荐简单菜' },
+  ];
+  return (
+    <div className="fixed inset-0 z-50 bg-black/50 flex items-end sm:items-center justify-center p-4" onClick={onClose}>
+      <div className="bg-card rounded-t-2xl sm:rounded-2xl border border-border w-full max-w-sm overflow-hidden" onClick={e => e.stopPropagation()}>
+        <div className="p-4 border-b border-border">
+          <p className="text-xs text-muted">换菜原因</p>
+          <p className="font-semibold text-sm truncate">{recipeName}</p>
+        </div>
+        <div className="divide-y divide-border">
+          {options.map(o => (
+            <button
+              key={o.reason}
+              onClick={() => onPick(o.reason)}
+              className="w-full flex items-center gap-3 px-4 py-3 hover:bg-background transition text-left"
+            >
+              <span className="text-xl">{o.icon}</span>
+              <div className="flex-1">
+                <p className="text-sm font-medium">{o.label}</p>
+                <p className="text-xs text-muted">{o.desc}</p>
+              </div>
+            </button>
+          ))}
+        </div>
+        <button onClick={onClose} className="w-full py-3 text-sm text-muted border-t border-border hover:bg-background transition">
+          取消
+        </button>
+      </div>
     </div>
   );
 }

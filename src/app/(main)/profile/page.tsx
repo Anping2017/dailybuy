@@ -109,32 +109,43 @@ export default function ProfilePage() {
 
       {/* 推荐模式 */}
       <Section title="推荐模式">
-        <div className="flex gap-2 mb-2">
+        <div className="space-y-2">
           <button
             onClick={() => setProfile({ recommendMode: 'basic' })}
-            className={`flex-1 p-3 rounded-lg border-2 text-left transition ${
+            className={`w-full p-3 rounded-lg border-2 text-left transition ${
               profile.recommendMode === 'basic'
                 ? 'border-primary bg-primary/5'
                 : 'border-border hover:border-primary/50'
             }`}
           >
-            <p className="font-medium text-sm">基础菜谱库</p>
-            <p className="text-xs text-muted mt-0.5">从1200+内置菜谱中智能匹配</p>
+            <p className="font-medium text-sm">🔍 基础菜谱库</p>
+            <p className="text-xs text-muted mt-0.5">从1200+内置菜谱中智能匹配（即时、免费）</p>
           </button>
           <button
-            onClick={() => setProfile({ recommendMode: 'ai' })}
-            className={`flex-1 p-3 rounded-lg border-2 text-left transition ${
-              profile.recommendMode === 'ai'
+            onClick={() => setProfile({ recommendMode: 'ai_queue' })}
+            className={`w-full p-3 rounded-lg border-2 text-left transition ${
+              profile.recommendMode === 'ai_queue'
+                ? 'border-primary bg-primary/5'
+                : 'border-border hover:border-primary/50'
+            }`}
+          >
+            <p className="font-medium text-sm">🤖 AI 队列分析（免费）</p>
+            <p className="text-xs text-muted mt-0.5">先用基础库生成，方案放入队列异步分析优化，后续更新更贴合</p>
+          </button>
+          <button
+            onClick={() => setProfile({ recommendMode: 'ai_online' })}
+            className={`w-full p-3 rounded-lg border-2 text-left transition ${
+              profile.recommendMode === 'ai_online'
                 ? 'border-accent bg-accent/5'
                 : 'border-border hover:border-primary/50'
             }`}
           >
-            <p className="font-medium text-sm">AI 智能推荐</p>
-            <p className="text-xs text-muted mt-0.5">AI实时生成个性化菜谱</p>
+            <p className="font-medium text-sm">⚡ AI 在线推荐（付费）</p>
+            <p className="text-xs text-muted mt-0.5">实时调用 API 生成个性化方案 + 详细菜谱说明</p>
           </button>
         </div>
-        {profile.recommendMode === 'ai' && !process.env.NEXT_PUBLIC_HAS_API_KEY && (
-          <p className="text-xs text-accent">⚠ 未配置API Key，将使用本地增强推荐</p>
+        {profile.recommendMode === 'ai_online' && !process.env.NEXT_PUBLIC_HAS_API_KEY && (
+          <p className="text-xs text-accent mt-2">⚠ 未配置 API Key，将回退为基础库生成</p>
         )}
       </Section>
 

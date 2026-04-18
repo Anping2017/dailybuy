@@ -2,8 +2,9 @@
 
 import { useState, useCallback, useMemo } from 'react';
 import Link from 'next/link';
-import { Search, Sparkles, Clock, X, ChevronRight, Ban, Plus } from 'lucide-react';
+import { Search, Sparkles, Clock, X, ChevronRight, Ban, Plus, Send } from 'lucide-react';
 import { getAllIngredients } from '@/lib/data/recipe-repository';
+import { savePendingRequest } from '@/lib/supabase/pending';
 
 interface SearchResult {
   id: string;
@@ -42,6 +43,9 @@ export default function SearchPage() {
   const [results, setResults] = useState<SearchResult[]>([]);
   const [loading, setLoading] = useState(false);
   const [searched, setSearched] = useState(false);
+  const [lastParsed, setLastParsed] = useState<unknown>(null);
+  const [lastQuery, setLastQuery] = useState('');
+  const [submitState, setSubmitState] = useState<'idle' | 'submitting' | 'done'>('idle');
 
   const allIngredients = useMemo(() => getAllIngredients(), []);
 
@@ -59,6 +63,8 @@ export default function SearchPage() {
     if (!q.trim() && excl.length === 0) return;
     setLoading(true);
     setSearched(true);
+    setSubmitState('idle');
+    setLastQuery(q);
     try {
       const res = await fetch('/api/search', {
         method: 'POST',
@@ -67,6 +73,7 @@ export default function SearchPage() {
       });
       const data = await res.json();
       setResults(data.results || []);
+      setLastParsed(data.parsed || null);
     } catch (e) {
       console.error(e);
       setResults([]);
@@ -74,6 +81,18 @@ export default function SearchPage() {
       setLoading(false);
     }
   }, []);
+
+  // 需求1: 提交到待新增菜谱队列
+  const submitAsPending = useCallback(async () => {
+    if (!lastQuery.trim()) return;
+    setSubmitState('submitting');
+    try {
+      await savePendingRequest(lastQuery, lastParsed, excludeIds);
+      setSubmitState('done');
+    } catch {
+      setSubmitState('idle');
+    }
+  }, [lastQuery, lastParsed, excludeIds]);
 
   const addExclude = (id: string) => {
     if (!excludeIds.includes(id)) setExcludeIds([...excludeIds, id]);
@@ -197,6 +216,23 @@ export default function SearchPage() {
             <div className="text-center py-12">
               <p className="text-muted">没有找到匹配的菜谱</p>
               <p className="text-xs text-muted mt-1">试试减少排除食材或换个描述</p>
+              <div className="mt-6 bg-card border border-border rounded-lg p-4 text-left max-w-md mx-auto">
+                <p className="text-sm font-medium">💡 提交给我们，帮你补充这道菜</p>
+                <p className="text-xs text-muted mt-1">
+                  我们会把你的搜索需求（<span className="text-foreground">{lastQuery}</span>）加入「待新增菜谱」队列，收录后你会看到结果。
+                </p>
+                {submitState === 'done' ? (
+                  <p className="text-sm text-primary mt-3">✓ 已提交，感谢反馈</p>
+                ) : (
+                  <button
+                    onClick={submitAsPending}
+                    disabled={submitState === 'submitting'}
+                    className="mt-3 flex items-center gap-1 bg-primary text-white text-xs px-3 py-1.5 rounded-full disabled:opacity-50"
+                  >
+                    <Send className="w-3 h-3" /> {submitState === 'submitting' ? '提交中...' : '提交需求'}
+                  </button>
+                )}
+              </div>
             </div>
           ) : (
             <>

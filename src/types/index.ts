@@ -257,7 +257,7 @@ export interface UserProfile {
   includeColdDish: boolean;                // 是否推荐凉菜
   cookingLevel: CookingLevel;             // 厨艺等级
   acceptedDifficulty: DifficultyLevel[];  // 可接受的难度(多选)
-  recommendMode: 'basic' | 'ai';           // 基础库 | AI智能推荐
+  recommendMode: 'basic' | 'ai_queue' | 'ai_online';  // 基础库 | AI队列分析(免费,异步) | AI在线(付费,即时)
   autoAddToShoppingList: boolean;          // 生成菜谱时自动加入清单
   planDays: number;                        // 规划几天 (1-7)
   mealsPerDay: MealType[];                // 每天规划哪几餐
@@ -358,6 +358,14 @@ export interface ShoppingList {
 // --- 用户行为学习 ---
 export type RecipeAction = 'accepted' | 'rejected' | 'swapped_in' | 'added_to_list';
 
+// 刷新/换菜原因（需求3: 智能调整权重而非一棒打死）
+export type SwapReason =
+  | 'dislike_ingredient'       // 不喜欢这个食材
+  | 'dislike_flavor'           // 不喜欢这个口味
+  | 'inconvenient_ingredient'  // 食材不方便获取
+  | 'too_complex'              // 烹饪太复杂
+  | 'just_want_different';     // 只是想换一个（不扣分）
+
 export interface RecipePreference {
   recipeId: string;
   score: number;            // clamped [-10, 50]
@@ -371,7 +379,16 @@ export interface RecipePreference {
 export interface RecentAction {
   recipeId: string;
   action: RecipeAction;
+  reason?: SwapReason;
   timestamp: number;
+}
+
+// 细粒度用户反馈（短期衰减，影响评分）
+export interface UserFeedback {
+  dislikedIngredients: Record<string, { count: number; lastTime: number }>;      // 食材 ID
+  dislikedFlavors: Record<string, { count: number; lastTime: number }>;          // flavor
+  inconvenientIngredients: Record<string, { count: number; lastTime: number }>;  // 食材 ID
+  complexityRejections: { count: number; lastTime: number };                     // 嫌烹饪复杂次数
 }
 
 // --- 存储层抽象 (为迁移 Supabase 准备) ---

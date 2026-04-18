@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { LayoutDashboard, UtensilsCrossed, AlertTriangle, Apple, Sparkles } from 'lucide-react';
+import { LayoutDashboard, UtensilsCrossed, AlertTriangle, Apple, Sparkles, Inbox, Brain } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 const NAV = [
@@ -10,6 +10,8 @@ const NAV = [
   { href: '/admin/recipes', label: '菜谱管理', icon: UtensilsCrossed },
   { href: '/admin/ingredients', label: '食材管理', icon: Apple },
   { href: '/admin/ingredients/pending', label: '待新增食材', icon: Sparkles },
+  { href: '/admin/pending-requests', label: '待新增菜谱', icon: Inbox },
+  { href: '/admin/pending-analysis', label: '待分析方案', icon: Brain },
   { href: '/admin/validation', label: '数据校验', icon: AlertTriangle },
 ];
 

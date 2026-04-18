@@ -8,6 +8,7 @@ import type {
   UserProfile, WeeklyPlan, ShoppingList, ShoppingItem,
   FamilyMember, MealSlot, CuisineType, MealType,
   Recipe, Ingredient, RecipeAction, RecipePreference, RecentAction,
+  SwapReason, UserFeedback,
 } from '@/types';
 
 interface AppState {
@@ -43,7 +44,12 @@ interface AppState {
   // --- 用户偏好学习 ---
   recipePreferences: Record<string, RecipePreference>;
   recentActions: RecentAction[];
-  recordAction: (recipeId: string, action: RecipeAction) => void;
+  recordAction: (recipeId: string, action: RecipeAction, reason?: SwapReason) => void;
+
+  // --- 细粒度反馈(需求3) ---
+  userFeedback: UserFeedback;
+  recordSwapReason: (recipeId: string, reason: SwapReason, recipe?: Recipe | null) => void;
+  clearFeedback: () => void;
 
   // --- 引导状态 ---
   onboardingComplete: boolean;
@@ -95,6 +101,12 @@ export const useAppStore = create<AppState>()(
       ownedIngredients: [],
       recipePreferences: {},
       recentActions: [],
+      userFeedback: {
+        dislikedIngredients: {},
+        dislikedFlavors: {},
+        inconvenientIngredients: {},
+        complexityRejections: { count: 0, lastTime: 0 },
+      },
       weeklyPlan: null,
       shoppingList: null,
       onboardingComplete: true,
@@ -322,9 +334,14 @@ export const useAppStore = create<AppState>()(
           };
         }),
 
-      recordAction: (recipeId, action) =>
+      recordAction: (recipeId, action, reason) =>
         set((s) => {
-          const weights: Record<RecipeAction, number> = { accepted: 1, rejected: -3, swapped_in: 5, added_to_list: 2 };
+          // 权重: 如果是 rejected 但有温和原因，扣分减轻
+          const baseWeights: Record<RecipeAction, number> = { accepted: 1, rejected: -3, swapped_in: 5, added_to_list: 2 };
+          let actionWeight = baseWeights[action];
+          if (action === 'rejected' && reason === 'just_want_different') actionWeight = 0;  // 只是想换一个不扣分
+          if (action === 'rejected' && reason === 'inconvenient_ingredient') actionWeight = -1;  // 食材问题对菜谱本身扣分轻
+
           const prefs = { ...s.recipePreferences };
           const existing = prefs[recipeId] || { recipeId, score: 0, acceptCount: 0, rejectCount: 0, swapInCount: 0, addToListCount: 0, lastInteraction: 0 };
 
@@ -333,13 +350,13 @@ export const useAppStore = create<AppState>()(
           const lastSameAction = s.recentActions.filter(a => a.recipeId === recipeId && a.action === action);
           if (lastSameAction.length > 0 && Date.now() - lastSameAction[lastSameAction.length - 1].timestamp < TEN_MIN) {
             // 冷却中，只记录事件不加分
-            const recent = [...s.recentActions, { recipeId, action, timestamp: Date.now() }];
+            const recent = [...s.recentActions, { recipeId, action, reason, timestamp: Date.now() }];
             if (recent.length > 50) recent.shift();
             return { recentActions: recent };
           }
 
           const updated = { ...existing };
-          updated.score = Math.max(-10, Math.min(50, updated.score + weights[action]));
+          updated.score = Math.max(-10, Math.min(50, updated.score + actionWeight));
           updated.lastInteraction = Date.now();
           if (action === 'accepted') updated.acceptCount++;
           if (action === 'rejected') updated.rejectCount++;
@@ -356,16 +373,68 @@ export const useAppStore = create<AppState>()(
           }
 
           // recentActions FIFO 50条
-          const recent = [...s.recentActions, { recipeId, action, timestamp: Date.now() }];
+          const recent = [...s.recentActions, { recipeId, action, reason, timestamp: Date.now() }];
           if (recent.length > 50) recent.shift();
 
           return { recipePreferences: prefs, recentActions: recent };
+        }),
+
+      recordSwapReason: (recipeId, reason, recipe) =>
+        set((s) => {
+          const now = Date.now();
+          const fb = { ...s.userFeedback };
+          const bump = (map: Record<string, { count: number; lastTime: number }>, key: string) => {
+            map[key] = { count: (map[key]?.count || 0) + 1, lastTime: now };
+          };
+
+          if (reason === 'dislike_ingredient' && recipe) {
+            fb.dislikedIngredients = { ...fb.dislikedIngredients };
+            // 标记菜中主要食材(非调料)
+            for (const ri of recipe.ingredients) {
+              bump(fb.dislikedIngredients, ri.ingredientId);
+            }
+          }
+          if (reason === 'dislike_flavor' && recipe) {
+            fb.dislikedFlavors = { ...fb.dislikedFlavors };
+            for (const f of recipe.flavors || []) {
+              bump(fb.dislikedFlavors, f);
+            }
+          }
+          if (reason === 'inconvenient_ingredient' && recipe) {
+            fb.inconvenientIngredients = { ...fb.inconvenientIngredients };
+            for (const ri of recipe.ingredients) {
+              bump(fb.inconvenientIngredients, ri.ingredientId);
+            }
+          }
+          if (reason === 'too_complex') {
+            fb.complexityRejections = { count: fb.complexityRejections.count + 1, lastTime: now };
+          }
+          return { userFeedback: fb };
+        }),
+
+      clearFeedback: () =>
+        set({
+          userFeedback: {
+            dislikedIngredients: {},
+            dislikedFlavors: {},
+            inconvenientIngredients: {},
+            complexityRejections: { count: 0, lastTime: 0 },
+          },
         }),
 
       setOnboardingComplete: (v) => set({ onboardingComplete: v }),
     }),
     {
       name: 'dailybuy-store',
+      migrate: (persisted: unknown) => {
+        // 兼容旧 recommendMode === 'ai'  → 'ai_online'
+        const p = persisted as { profile?: { recommendMode?: string } } | null;
+        if (p?.profile && p.profile.recommendMode === 'ai') {
+          p.profile.recommendMode = 'ai_online';
+        }
+        return persisted;
+      },
+      version: 2,
     }
   )
 );
@@ -382,6 +451,48 @@ export function getPreferenceScore(recipeId: string): number {
   const effective = pref.score * decay;
 
   return Math.abs(effective) < 0.5 ? 0 : Math.round(effective * 10) / 10;
+}
+
+/**
+ * 根据用户反馈计算菜谱调整分（需求3）
+ * 不喜欢食材/口味/不方便/太复杂 → 对应维度扣分
+ * 3天半衰期
+ */
+export function getFeedbackAdjustment(recipe: Recipe): number {
+  const fb = useAppStore.getState().userFeedback;
+  const HALF_LIFE_DAYS = 3;  // 3天衰减一半
+  let penalty = 0;
+
+  const decayFor = (lastTime: number) => {
+    if (!lastTime) return 0;
+    const daysSince = (Date.now() - lastTime) / 86400000;
+    return Math.pow(0.5, daysSince / HALF_LIFE_DAYS);
+  };
+
+  // 1. 不喜欢的食材：菜谱中出现即扣
+  for (const ri of recipe.ingredients) {
+    const e = fb.dislikedIngredients[ri.ingredientId];
+    if (e) penalty -= 20 * Math.min(3, e.count) * decayFor(e.lastTime);
+  }
+  // 2. 不喜欢的口味
+  for (const f of recipe.flavors || []) {
+    const e = fb.dislikedFlavors[f];
+    if (e) penalty -= 10 * Math.min(3, e.count) * decayFor(e.lastTime);
+  }
+  // 3. 不方便的食材：扣分较轻
+  for (const ri of recipe.ingredients) {
+    const e = fb.inconvenientIngredients[ri.ingredientId];
+    if (e) penalty -= 10 * Math.min(3, e.count) * decayFor(e.lastTime);
+  }
+  // 4. 嫌复杂：hard -15, medium -5
+  const cx = fb.complexityRejections;
+  if (cx.count > 0) {
+    const d = decayFor(cx.lastTime);
+    if (recipe.difficulty === 'hard') penalty -= 15 * Math.min(3, cx.count) * d;
+    else if (recipe.difficulty === 'medium') penalty -= 5 * Math.min(3, cx.count) * d;
+  }
+
+  return Math.round(penalty * 10) / 10;
 }
 
 // Supabase 自动同步: store 变更后自动推送到云端

@@ -187,8 +187,14 @@ export function getFilteredRecipes(profile: UserProfile, mealType?: MealType): R
   });
 }
 
-/** 排序: 口味匹配 + 已有食材匹配 + 用户偏好 + 健康亮点 */
-function scoreRecipe(recipe: Recipe, profile: UserProfile, ownedIngredients: string[], getPreference?: (id: string) => number): number {
+/** 排序: 口味匹配 + 已有食材匹配 + 用户偏好 + 健康亮点 + 反馈调整 */
+function scoreRecipe(
+  recipe: Recipe,
+  profile: UserProfile,
+  ownedIngredients: string[],
+  getPreference?: (id: string) => number,
+  getFeedback?: (r: Recipe) => number,
+): number {
   let score = 0;
 
   // 口味匹配
@@ -207,6 +213,11 @@ function scoreRecipe(recipe: Recipe, profile: UserProfile, ownedIngredients: str
     score += getPreference(recipe.id) * 0.5;
   }
 
+  // 细粒度反馈调整（不喜欢食材/口味/不方便/太复杂）
+  if (getFeedback) {
+    score += getFeedback(recipe);
+  }
+
   // 营养亮点加权(根据家庭健康状况偏好)
   const preferred = getPreferredHighlights(profile.members);
   score += scoreRecipeHighlights(recipe, preferred);
@@ -218,13 +229,20 @@ function scoreRecipe(recipe: Recipe, profile: UserProfile, ownedIngredients: str
 }
 
 /** 从候选池中选一道(评分最高的前N个中随机) */
-function pickBest(pool: Recipe[], usedIds: Set<string>, profile: UserProfile, ownedIngredients: string[], getPreference?: (id: string) => number): Recipe | null {
+function pickBest(
+  pool: Recipe[],
+  usedIds: Set<string>,
+  profile: UserProfile,
+  ownedIngredients: string[],
+  getPreference?: (id: string) => number,
+  getFeedback?: (r: Recipe) => number,
+): Recipe | null {
   let available = pool.filter(r => !usedIds.has(r.id));
   if (available.length === 0) available = pool;
   if (available.length === 0) return null;
 
   const scored = available
-    .map(r => ({ recipe: r, score: scoreRecipe(r, profile, ownedIngredients, getPreference) }))
+    .map(r => ({ recipe: r, score: scoreRecipe(r, profile, ownedIngredients, getPreference, getFeedback) }))
     .sort((a, b) => b.score - a.score);
 
   const topCount = Math.max(1, Math.ceil(scored.length * 0.3));
@@ -325,6 +343,7 @@ function composeMeal(
   ownedIngredients: string[],
   mealIndex: number,
   getPreference?: (id: string) => number,
+  getFeedback?: (r: Recipe) => number,
 ): MealRecipe[] {
   const allCandidates = getFilteredRecipes(profile, mealType);
   const plan = getMealPlan(profile, mealType);
@@ -354,13 +373,13 @@ function composeMeal(
 
   // === 荤菜 ===
   for (let i = 0; i < adjustedMeat; i++) {
-    const r = pickBest(meatPool, usedIds, profile, ownedIngredients, getPreference);
+    const r = pickBest(meatPool, usedIds, profile, ownedIngredients, getPreference, getFeedback);
     if (r) { result.push({ recipeId: r.id, role: 'main_meat' }); usedIds.add(r.id); }
   }
 
   // === 素菜 ===
   for (let i = 0; i < adjustedVeg; i++) {
-    const r = pickBest(vegPool, usedIds, profile, ownedIngredients, getPreference);
+    const r = pickBest(vegPool, usedIds, profile, ownedIngredients, getPreference, getFeedback);
     if (r) { result.push({ recipeId: r.id, role: 'main_veg' }); usedIds.add(r.id); }
   }
 
@@ -370,7 +389,7 @@ function composeMeal(
     return role === 'main_meat' || role === 'main_veg';
   });
   while (result.length < minDishes && hotDishPool.length > 0) {
-    const r = pickBest(hotDishPool, usedIds, profile, ownedIngredients, getPreference);
+    const r = pickBest(hotDishPool, usedIds, profile, ownedIngredients, getPreference, getFeedback);
     if (!r) break;
     result.push({ recipeId: r.id, role: isMeatDish(r) ? 'main_meat' : 'main_veg' });
     usedIds.add(r.id);
@@ -378,13 +397,13 @@ function composeMeal(
 
   // === 凉菜 ===
   for (let i = 0; i < coldCount; i++) {
-    const r = pickBest(coldPool, usedIds, profile, ownedIngredients, getPreference);
+    const r = pickBest(coldPool, usedIds, profile, ownedIngredients, getPreference, getFeedback);
     if (r) { result.push({ recipeId: r.id, role: 'cold' }); usedIds.add(r.id); }
   }
 
   // === 汤 ===
   for (let i = 0; i < plan.soupCount; i++) {
-    const r = pickBest(soupPool, usedIds, profile, ownedIngredients, getPreference);
+    const r = pickBest(soupPool, usedIds, profile, ownedIngredients, getPreference, getFeedback);
     if (r) { result.push({ recipeId: r.id, role: 'soup' }); usedIds.add(r.id); }
   }
 
@@ -400,14 +419,14 @@ function composeMeal(
       if (preferred.length > 0) filtered = preferred;
     }
     for (let i = 0; i < plan.stapleCount; i++) {
-      const r = pickBest(filtered, usedIds, profile, ownedIngredients, getPreference);
+      const r = pickBest(filtered, usedIds, profile, ownedIngredients, getPreference, getFeedback);
       if (r) { result.push({ recipeId: r.id, role: 'staple' }); usedIds.add(r.id); }
     }
   }
 
   // fallback
   if (result.length === 0) {
-    const r = pickBest(allCandidates, usedIds, profile, ownedIngredients, getPreference);
+    const r = pickBest(allCandidates, usedIds, profile, ownedIngredients, getPreference, getFeedback);
     if (r) { result.push({ recipeId: r.id, role: isMeatDish(r) ? 'main_meat' : 'main_veg' }); usedIds.add(r.id); }
   }
 
@@ -460,6 +479,7 @@ function smartPick(
   profile: UserProfile,
   ownedIngredients: string[],
   getPreference?: (id: string) => number,
+  getFeedback?: (r: Recipe) => number,
 ): Recipe | null {
   const available = pool.filter(r => !usedIds.has(r.id));
   if (available.length === 0) return pool.length > 0 ? pool[Math.floor(Math.random() * pool.length)] : null;
@@ -500,6 +520,11 @@ function smartPick(
       score += getPreference(r.id) * 0.5;
     }
 
+    // 细粒度反馈调整（不喜欢食材/口味/不方便/太复杂）
+    if (getFeedback) {
+      score += getFeedback(r);
+    }
+
     // 营养亮点加权(根据家庭健康状况偏好)
     score += scoreRecipeHighlights(r, preferredHighlights);
 
@@ -521,6 +546,7 @@ function generateSmartPlan(
   planDays: number,
   activeDays: DayOfWeek[],
   getPreference?: (id: string) => number,
+  getFeedback?: (r: Recipe) => number,
 ): MealSlot[] {
   const allCandidates = getFilteredRecipes(profile);
   const isLunchDinner = (mt: MealType) => mt === 'lunch' || mt === 'dinner';
@@ -571,7 +597,7 @@ function generateSmartPlan(
         });
         const pool = adjustedMeatPool.length >= 3 ? adjustedMeatPool : meatPool;
 
-        const r = smartPick(pool, usedIds, recentProteins, recentVegs, recentMethods, profile, ownedIngredients, getPreference);
+        const r = smartPick(pool, usedIds, recentProteins, recentVegs, recentMethods, profile, ownedIngredients, getPreference, getFeedback);
         if (r) {
           recipes.push({ recipeId: r.id, role: 'main_meat' });
           usedIds.add(r.id);
@@ -586,7 +612,7 @@ function generateSmartPlan(
 
       // === 素菜: 智能选(考虑蔬菜不重复) ===
       for (let i = 0; i < adjVeg; i++) {
-        const r = smartPick(vegPool, usedIds, recentProteins, recentVegs, recentMethods, profile, ownedIngredients, getPreference);
+        const r = smartPick(vegPool, usedIds, recentProteins, recentVegs, recentMethods, profile, ownedIngredients, getPreference, getFeedback);
         if (r) {
           recipes.push({ recipeId: r.id, role: 'main_veg' });
           usedIds.add(r.id);
@@ -600,13 +626,13 @@ function generateSmartPlan(
 
       // === 凉菜 ===
       for (let i = 0; i < coldCount; i++) {
-        const r = smartPick(coldPool, usedIds, recentProteins, recentVegs, recentMethods, profile, ownedIngredients, getPreference);
+        const r = smartPick(coldPool, usedIds, recentProteins, recentVegs, recentMethods, profile, ownedIngredients, getPreference, getFeedback);
         if (r) { recipes.push({ recipeId: r.id, role: 'cold' }); usedIds.add(r.id); }
       }
 
       // === 汤 ===
       for (let i = 0; i < plan.soupCount; i++) {
-        const r = smartPick(soupPool, usedIds, recentProteins, recentVegs, recentMethods, profile, ownedIngredients, getPreference);
+        const r = smartPick(soupPool, usedIds, recentProteins, recentVegs, recentMethods, profile, ownedIngredients, getPreference, getFeedback);
         if (r) { recipes.push({ recipeId: r.id, role: 'soup' }); usedIds.add(r.id); }
       }
 
@@ -620,14 +646,14 @@ function generateSmartPlan(
           if (preferred.length > 0) filtered = preferred;
         }
         for (let i = 0; i < plan.stapleCount; i++) {
-          const r = smartPick(filtered, usedIds, [], [], [], profile, ownedIngredients, getPreference);
+          const r = smartPick(filtered, usedIds, [], [], [], profile, ownedIngredients, getPreference, getFeedback);
           if (r) { recipes.push({ recipeId: r.id, role: 'staple' }); usedIds.add(r.id); }
         }
       }
 
       // fallback
       if (recipes.length === 0) {
-        const r = smartPick(allCandidates, usedIds, recentProteins, recentVegs, recentMethods, profile, ownedIngredients, getPreference);
+        const r = smartPick(allCandidates, usedIds, recentProteins, recentVegs, recentMethods, profile, ownedIngredients, getPreference, getFeedback);
         if (r) { recipes.push({ recipeId: r.id, role: isMeatDish(r) ? 'main_meat' : 'main_veg' }); usedIds.add(r.id); }
       }
 
@@ -643,15 +669,20 @@ function generateSmartPlan(
 // 生成周计划
 // ============================================================
 
-export function generateWeeklyPlan(profile: UserProfile, ownedIngredients: string[] = [], getPreference?: (id: string) => number): WeeklyPlan {
+export function generateWeeklyPlan(
+  profile: UserProfile,
+  ownedIngredients: string[] = [],
+  getPreference?: (id: string) => number,
+  getFeedback?: (r: Recipe) => number,
+): WeeklyPlan {
   const planDays = Math.min(7, Math.max(1, profile.planDays || 7));
   const activeDays = DAYS.slice(0, planDays);
 
   let slots: MealSlot[];
 
-  if (profile.recommendMode === 'ai') {
+  if (profile.recommendMode === 'ai_queue' || profile.recommendMode === 'ai_online') {
     // AI智能模式: 周维度整体规划，蛋白质轮换+蔬菜不重复+做法多样
-    slots = generateSmartPlan(profile, ownedIngredients, planDays, activeDays, getPreference);
+    slots = generateSmartPlan(profile, ownedIngredients, planDays, activeDays, getPreference, getFeedback);
   } else {
     // 基础模式: 逐餐随机
     const usedIds = new Set<string>();
@@ -659,7 +690,7 @@ export function generateWeeklyPlan(profile: UserProfile, ownedIngredients: strin
     let mealIndex = 0;
     for (const day of activeDays) {
       for (const mealType of profile.mealsPerDay) {
-        const recipes = composeMeal(profile, mealType, usedIds, ownedIngredients, mealIndex, getPreference);
+        const recipes = composeMeal(profile, mealType, usedIds, ownedIngredients, mealIndex, getPreference, getFeedback);
         mealIndex++;
         slots.push({ day, mealType, recipes, servings: profile.familySize });
       }
