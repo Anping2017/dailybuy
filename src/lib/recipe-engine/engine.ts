@@ -289,6 +289,35 @@ const STAPLE_KEYWORDS: Record<string, string[]> = {
  * - 凉菜: 仅午晚餐，开启后影响热菜配比(减1道热菜或选低热量热菜)，不是每餐都推
  * - 水果: 不在此处推荐，由 generateWeeklyPlan 单独生成每日水果方案
  */
+/**
+ * 获取每餐菜品数量配置
+ * 优先级: 用户自定义 > 按人数自动
+ */
+function getMealPlan(profile: UserProfile, mealType: MealType) {
+  // 用户启用了自定义
+  if (profile.customMealComposition?.enabled) {
+    const c = profile.customMealComposition[mealType];
+    return {
+      meatCount: c.meatCount,
+      vegCount: c.vegCount,
+      soupCount: c.soupCount,
+      stapleCount: c.stapleCount,
+      coldDishCount: c.coldDishCount,
+    };
+  }
+
+  // 默认：按人数自动推算 + 开关控制
+  const hot = getHotDishComposition(profile.familySize, mealType);
+  const isLunchOrDinner = mealType === 'lunch' || mealType === 'dinner';
+  return {
+    meatCount: hot.meatCount,
+    vegCount: hot.vegCount,
+    soupCount: (profile.includeSoup && isLunchOrDinner) ? 1 : 0,
+    stapleCount: ((profile.stapleMode || 'off') !== 'off' && (mealType === 'breakfast' || isLunchOrDinner)) ? 1 : 0,
+    coldDishCount: (profile.includeColdDish && isLunchOrDinner) ? 1 : 0, // 自定义模式不做间隔推荐
+  };
+}
+
 function composeMeal(
   profile: UserProfile,
   mealType: MealType,
@@ -298,7 +327,7 @@ function composeMeal(
   getPreference?: (id: string) => number,
 ): MealRecipe[] {
   const allCandidates = getFilteredRecipes(profile, mealType);
-  const comp = getHotDishComposition(profile.familySize, mealType);
+  const plan = getMealPlan(profile, mealType);
 
   const meatPool = allCandidates.filter(r => inferRole(r) === 'main_meat');
   const vegPool = allCandidates.filter(r => inferRole(r) === 'main_veg');
@@ -306,31 +335,31 @@ function composeMeal(
   const soupPool = allCandidates.filter(r => inferRole(r) === 'soup');
   const staplePool = allCandidates.filter(r => inferRole(r) === 'staple');
 
-  const isLunchOrDinner = mealType === 'lunch' || mealType === 'dinner';
   const result: MealRecipe[] = [];
 
-  // 凉菜是否推荐本餐 (开启后每隔一餐推荐一次，不是每餐)
-  const shouldAddCold = profile.includeColdDish && isLunchOrDinner && mealIndex % 2 === 0;
+  // 非自定义模式下，凉菜按隔餐推荐
+  const useCustom = profile.customMealComposition?.enabled === true;
+  let coldCount = plan.coldDishCount;
+  if (!useCustom && coldCount > 0 && mealIndex % 2 !== 0) coldCount = 0;
 
-  // 如果有凉菜，热菜减1道(但至少保留1道)
-  let adjustedMeatCount = comp.meatCount;
-  let adjustedVegCount = comp.vegCount;
-  if (shouldAddCold && (adjustedMeatCount + adjustedVegCount) > 1) {
-    // 优先减素菜，素菜不够减荤菜
-    if (adjustedVegCount > 0) adjustedVegCount--;
-    else adjustedMeatCount--;
+  // 如果凉菜被添加，默认模式下减1道素菜（自定义模式不减）
+  let adjustedMeat = plan.meatCount;
+  let adjustedVeg = plan.vegCount;
+  if (!useCustom && coldCount > 0 && (adjustedMeat + adjustedVeg) > 1) {
+    if (adjustedVeg > 0) adjustedVeg--;
+    else adjustedMeat--;
   }
 
-  const minDishes = adjustedMeatCount + adjustedVegCount;
+  const minDishes = adjustedMeat + adjustedVeg;
 
-  // === 核心: 荤菜(热菜) ===
-  for (let i = 0; i < adjustedMeatCount; i++) {
+  // === 荤菜 ===
+  for (let i = 0; i < adjustedMeat; i++) {
     const r = pickBest(meatPool, usedIds, profile, ownedIngredients, getPreference);
     if (r) { result.push({ recipeId: r.id, role: 'main_meat' }); usedIds.add(r.id); }
   }
 
-  // === 核心: 素菜(热菜) ===
-  for (let i = 0; i < adjustedVegCount; i++) {
+  // === 素菜 ===
+  for (let i = 0; i < adjustedVeg; i++) {
     const r = pickBest(vegPool, usedIds, profile, ownedIngredients, getPreference);
     if (r) { result.push({ recipeId: r.id, role: 'main_veg' }); usedIds.add(r.id); }
   }
@@ -347,32 +376,30 @@ function composeMeal(
     usedIds.add(r.id);
   }
 
-  // === 额外: 凉菜 (开启+午晚餐+间隔推荐) ===
-  if (shouldAddCold) {
+  // === 凉菜 ===
+  for (let i = 0; i < coldCount; i++) {
     const r = pickBest(coldPool, usedIds, profile, ownedIngredients, getPreference);
     if (r) { result.push({ recipeId: r.id, role: 'cold' }); usedIds.add(r.id); }
   }
 
-  // === 额外: 汤 (开启+仅午晚餐) ===
-  if (profile.includeSoup && isLunchOrDinner) {
+  // === 汤 ===
+  for (let i = 0; i < plan.soupCount; i++) {
     const r = pickBest(soupPool, usedIds, profile, ownedIngredients, getPreference);
     if (r) { result.push({ recipeId: r.id, role: 'soup' }); usedIds.add(r.id); }
   }
 
-  // === 额外: 主食 (开启+仅午晚餐, 早餐可自由推荐) ===
-  const stapleMode = profile.stapleMode || 'off';
-  if (stapleMode !== 'off' && staplePool.length > 0) {
-    // 早餐: 总是可以推荐主食(粥、面等)
-    // 午晚餐: 开启后推荐
-    if (mealType === 'breakfast' || isLunchOrDinner) {
-      let filtered = staplePool;
-      if (stapleMode === 'fixed' && profile.staplePreference?.length > 0 && !profile.staplePreference.includes('any')) {
-        const keywords = (profile.staplePreference || []).flatMap(p => STAPLE_KEYWORDS[p] || []);
-        const preferred = staplePool.filter(r =>
-          keywords.some(k => r.nameZh.includes(k) || r.nameEn.toLowerCase().includes(k.toLowerCase()))
-        );
-        if (preferred.length > 0) filtered = preferred;
-      }
+  // === 主食 ===
+  if (plan.stapleCount > 0 && staplePool.length > 0) {
+    let filtered = staplePool;
+    const stapleMode = profile.stapleMode || 'off';
+    if (stapleMode === 'fixed' && profile.staplePreference?.length > 0 && !profile.staplePreference.includes('any')) {
+      const keywords = (profile.staplePreference || []).flatMap(p => STAPLE_KEYWORDS[p] || []);
+      const preferred = staplePool.filter(r =>
+        keywords.some(k => r.nameZh.includes(k) || r.nameEn.toLowerCase().includes(k.toLowerCase()))
+      );
+      if (preferred.length > 0) filtered = preferred;
+    }
+    for (let i = 0; i < plan.stapleCount; i++) {
       const r = pickBest(filtered, usedIds, profile, ownedIngredients, getPreference);
       if (r) { result.push({ recipeId: r.id, role: 'staple' }); usedIds.add(r.id); }
     }
@@ -520,15 +547,18 @@ function generateSmartPlan(
 
   for (const day of activeDays) {
     for (const mealType of profile.mealsPerDay) {
-      const comp = getHotDishComposition(profile.familySize, mealType);
+      const plan = getMealPlan(profile, mealType);
       const recipes: MealRecipe[] = [];
       const ld = isLunchDinner(mealType);
+      const useCustom = profile.customMealComposition?.enabled === true;
 
-      // 凉菜间隔推荐
-      const shouldAddCold = profile.includeColdDish && ld && mealIndex % 3 === 0;
-      let adjMeat = comp.meatCount;
-      let adjVeg = comp.vegCount;
-      if (shouldAddCold && (adjMeat + adjVeg) > 1) {
+      // 凉菜间隔推荐(仅默认模式)
+      let coldCount = plan.coldDishCount;
+      if (!useCustom && coldCount > 0 && mealIndex % 3 !== 0) coldCount = 0;
+
+      let adjMeat = plan.meatCount;
+      let adjVeg = plan.vegCount;
+      if (!useCustom && coldCount > 0 && (adjMeat + adjVeg) > 1) {
         if (adjVeg > 0) adjVeg--; else adjMeat--;
       }
 
@@ -569,28 +599,30 @@ function generateSmartPlan(
       }
 
       // === 凉菜 ===
-      if (shouldAddCold) {
+      for (let i = 0; i < coldCount; i++) {
         const r = smartPick(coldPool, usedIds, recentProteins, recentVegs, recentMethods, profile, ownedIngredients, getPreference);
         if (r) { recipes.push({ recipeId: r.id, role: 'cold' }); usedIds.add(r.id); }
       }
 
       // === 汤 ===
-      if (profile.includeSoup && ld) {
+      for (let i = 0; i < plan.soupCount; i++) {
         const r = smartPick(soupPool, usedIds, recentProteins, recentVegs, recentMethods, profile, ownedIngredients, getPreference);
         if (r) { recipes.push({ recipeId: r.id, role: 'soup' }); usedIds.add(r.id); }
       }
 
       // === 主食 ===
-      const stapleMode = profile.stapleMode || 'off';
-      if (stapleMode !== 'off' && staplePool.length > 0 && (mealType === 'breakfast' || ld)) {
+      if (plan.stapleCount > 0 && staplePool.length > 0) {
         let filtered = staplePool;
+        const stapleMode = profile.stapleMode || 'off';
         if (stapleMode === 'fixed' && profile.staplePreference?.length > 0 && !profile.staplePreference.includes('any')) {
           const keywords = (profile.staplePreference || []).flatMap(p => STAPLE_KEYWORDS[p] || []);
           const preferred = staplePool.filter(r => keywords.some(k => r.nameZh.includes(k) || r.nameEn.toLowerCase().includes(k.toLowerCase())));
           if (preferred.length > 0) filtered = preferred;
         }
-        const r = smartPick(filtered, usedIds, [], [], [], profile, ownedIngredients, getPreference);
-        if (r) { recipes.push({ recipeId: r.id, role: 'staple' }); usedIds.add(r.id); }
+        for (let i = 0; i < plan.stapleCount; i++) {
+          const r = smartPick(filtered, usedIds, [], [], [], profile, ownedIngredients, getPreference);
+          if (r) { recipes.push({ recipeId: r.id, role: 'staple' }); usedIds.add(r.id); }
+        }
       }
 
       // fallback

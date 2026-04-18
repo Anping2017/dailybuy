@@ -119,7 +119,7 @@ export default function ProfilePage() {
             }`}
           >
             <p className="font-medium text-sm">基础菜谱库</p>
-            <p className="text-xs text-muted mt-0.5">从300+内置菜谱中智能匹配</p>
+            <p className="text-xs text-muted mt-0.5">从1200+内置菜谱中智能匹配</p>
           </button>
           <button
             onClick={() => setProfile({ recommendMode: 'ai' })}
@@ -174,6 +174,51 @@ export default function ProfilePage() {
           <SwitchRow label="推荐水果" desc="关闭则留热量缺口并给建议量"
             value={profile.includeFruit || false} onClick={() => setProfile({ includeFruit: !profile.includeFruit })} />
         </div>
+      </Section>
+
+      {/* 每餐菜品数量 - 自定义 */}
+      <Section title="每餐菜品数量">
+        <SwitchRow
+          label="手动设置每餐数量"
+          desc={profile.customMealComposition?.enabled ? '按下方数值推荐' : '按人数自动推算（2人1荤1素, 4人2荤2素）'}
+          value={profile.customMealComposition?.enabled || false}
+          onClick={() => setProfile({
+            customMealComposition: {
+              ...(profile.customMealComposition || { breakfast: {meatCount:0,vegCount:1,soupCount:0,stapleCount:1,coldDishCount:0}, lunch: {meatCount:1,vegCount:1,soupCount:0,stapleCount:0,coldDishCount:0}, dinner: {meatCount:1,vegCount:1,soupCount:0,stapleCount:0,coldDishCount:0} }),
+              enabled: !(profile.customMealComposition?.enabled || false),
+            },
+          })}
+        />
+
+        {profile.customMealComposition?.enabled && (
+          <div className="space-y-4 mt-3">
+            {(['breakfast','lunch','dinner'] as MealType[]).filter(m => profile.mealsPerDay.includes(m)).map(mealType => {
+              const label = mealType === 'breakfast' ? '早餐' : mealType === 'lunch' ? '午餐' : '晚餐';
+              const c = profile.customMealComposition![mealType];
+              const updateCount = (key: keyof typeof c, delta: number) => {
+                const newVal = Math.max(0, Math.min(5, c[key] + delta));
+                setProfile({
+                  customMealComposition: {
+                    ...profile.customMealComposition!,
+                    [mealType]: { ...c, [key]: newVal },
+                  },
+                });
+              };
+              return (
+                <div key={mealType} className="border border-border rounded-lg p-3">
+                  <p className="text-sm font-medium mb-2">{label}</p>
+                  <div className="grid grid-cols-2 gap-2">
+                    <CounterRow label="🥩 荤菜" count={c.meatCount} onMinus={() => updateCount('meatCount', -1)} onPlus={() => updateCount('meatCount', 1)} />
+                    <CounterRow label="🥬 素菜" count={c.vegCount} onMinus={() => updateCount('vegCount', -1)} onPlus={() => updateCount('vegCount', 1)} />
+                    <CounterRow label="🍚 主食" count={c.stapleCount} onMinus={() => updateCount('stapleCount', -1)} onPlus={() => updateCount('stapleCount', 1)} />
+                    <CounterRow label="🥣 汤" count={c.soupCount} onMinus={() => updateCount('soupCount', -1)} onPlus={() => updateCount('soupCount', 1)} />
+                    <CounterRow label="🥗 凉菜" count={c.coldDishCount} onMinus={() => updateCount('coldDishCount', -1)} onPlus={() => updateCount('coldDishCount', 1)} />
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        )}
       </Section>
 
       {/* 厨艺与口味 - 基础/自定义模式 */}
@@ -553,6 +598,33 @@ function SwitchRow({ label, desc, value, onClick }: {
         className={`w-10 h-6 rounded-full transition flex-shrink-0 ${value ? 'bg-primary' : 'bg-border'}`}>
         <div className={`w-4 h-4 bg-white rounded-full shadow transition-transform mx-1 ${value ? 'translate-x-4' : ''}`} />
       </button>
+    </div>
+  );
+}
+
+function CounterRow({ label, count, onMinus, onPlus }: {
+  label: string; count: number; onMinus: () => void; onPlus: () => void;
+}) {
+  return (
+    <div className="flex items-center justify-between bg-background rounded px-2 py-1.5">
+      <span className="text-xs">{label}</span>
+      <div className="flex items-center gap-2">
+        <button
+          onClick={onMinus}
+          disabled={count <= 0}
+          className="w-6 h-6 rounded border border-border text-sm disabled:opacity-30 hover:border-primary/50 transition"
+        >
+          −
+        </button>
+        <span className="text-sm font-medium w-4 text-center">{count}</span>
+        <button
+          onClick={onPlus}
+          disabled={count >= 5}
+          className="w-6 h-6 rounded border border-border text-sm disabled:opacity-30 hover:border-primary/50 transition"
+        >
+          +
+        </button>
+      </div>
     </div>
   );
 }

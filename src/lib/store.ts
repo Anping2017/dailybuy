@@ -79,6 +79,13 @@ const defaultProfile: UserProfile = {
   planDays: 7,
   weeklyBudget: 150,
   mealsPerDay: ['lunch', 'dinner'],
+  customMealComposition: {
+    enabled: false,
+    breakfast: { meatCount: 0, vegCount: 1, soupCount: 0, stapleCount: 1, coldDishCount: 0 },
+    lunch:     { meatCount: 1, vegCount: 1, soupCount: 0, stapleCount: 0, coldDishCount: 0 },
+    dinner:    { meatCount: 1, vegCount: 1, soupCount: 0, stapleCount: 0, coldDishCount: 0 },
+  },
+  dailyFruitCount: 0,
 };
 
 export const useAppStore = create<AppState>()(

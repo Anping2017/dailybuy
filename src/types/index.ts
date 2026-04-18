@@ -234,6 +234,15 @@ export interface FamilyMember {
   dailyCalorieTarget: number;
 }
 
+// 每餐菜品配置
+export interface MealComposition {
+  meatCount: number;        // 荤菜数
+  vegCount: number;         // 素菜数
+  soupCount: number;        // 汤数(0=不推荐)
+  stapleCount: number;      // 主食数(0=不推荐)
+  coldDishCount: number;    // 凉菜数(0=不推荐)
+}
+
 export interface UserProfile {
   familySize: number;
   members: FamilyMember[];
@@ -253,6 +262,14 @@ export interface UserProfile {
   planDays: number;                        // 规划几天 (1-7)
   mealsPerDay: MealType[];                // 每天规划哪几餐
   weeklyBudget: number;                   // NZD
+  // 每餐菜品数量(可手动设置，覆盖默认的按人数自动推算)
+  customMealComposition?: {
+    enabled: boolean;                      // 是否启用自定义(否则按人数自动)
+    breakfast: MealComposition;
+    lunch: MealComposition;
+    dinner: MealComposition;
+  };
+  dailyFruitCount?: number;                // 每天水果种类数(0=不推荐)
 }
 
 // --- 每周计划 ---

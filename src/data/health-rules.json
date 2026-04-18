@@ -65,32 +65,33 @@
     "halal": {
       "nameZh": "清真",
       "nameEn": "Halal",
-      "blockedIngredients": ["pork_belly", "pork_mince", "cooking_wine"],
-      "description": "不食用猪肉和含酒精食材"
+      "blockedIngredients": ["pork_belly", "pork_mince", "pork_loin", "pork_ribs", "bacon", "sausage", "cooking_wine", "sake", "mirin"],
+      "description": "不食用猪肉及含酒精食材"
     },
     "no_pork": {
       "nameZh": "不吃猪肉",
       "nameEn": "No Pork",
-      "blockedIngredients": ["pork_belly", "pork_mince"],
-      "description": "不食用猪肉"
+      "blockedIngredients": ["pork_belly", "pork_mince", "pork_loin", "pork_ribs", "bacon", "sausage"],
+      "description": "不食用猪肉及猪肉制品"
     },
     "no_beef": {
       "nameZh": "不吃牛肉",
       "nameEn": "No Beef",
-      "blockedIngredients": ["beef_sirloin", "beef_mince"],
-      "description": "不食用牛肉"
+      "blockedIngredients": ["beef_sirloin", "beef_mince", "beef_shank", "beef_stock"],
+      "description": "不食用牛肉及牛肉制品"
     },
     "no_seafood": {
       "nameZh": "不吃海鲜",
       "nameEn": "No Seafood",
       "blockedCategories": ["seafood"],
-      "description": "不食用任何海鲜"
+      "blockedIngredients": ["dried_shrimp", "fish_sauce"],
+      "description": "不食用任何海鲜及海鲜调味品"
     },
     "no_spicy": {
       "nameZh": "不吃辣",
       "nameEn": "No Spicy",
-      "blockedIngredients": ["doubanjiang"],
-      "description": "不食用辛辣食材"
+      "blockedIngredients": ["doubanjiang", "chili_pepper", "chili_flakes", "sichuan_pepper", "curry_paste", "kimchi"],
+      "description": "不食用辛辣食材和辣味调料"
     },
     "lactose_free": {
       "nameZh": "无乳糖",

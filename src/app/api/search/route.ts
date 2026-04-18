@@ -4,12 +4,22 @@ import { getReviewedRecipes } from '@/lib/data/recipe-repository';
 
 export async function POST(req: NextRequest) {
   try {
-    const { query } = await req.json() as { query: string };
+    const { query, excludeIngredients } = await req.json() as {
+      query: string;
+      excludeIngredients?: string[];
+    };
     if (!query || typeof query !== 'string') {
       return NextResponse.json({ error: '请输入搜索内容' }, { status: 400 });
     }
 
     const parsed = parseQuery(query);
+    // 合并 UI 传入的排除食材到 parsed 中
+    if (excludeIngredients?.length) {
+      parsed.excludeIngredients = [
+        ...(parsed.excludeIngredients || []),
+        ...excludeIngredients,
+      ];
+    }
     const recipes = getReviewedRecipes();
     const results = searchRecipes(recipes, parsed, query).slice(0, 50);
 
