@@ -140,7 +140,7 @@ export function RecipeDetailSheet({ recipe, isFavorite, onClose, onToggleFav, on
             onClick={onAddToPlan}
             className="flex-1 flex items-center justify-center gap-1.5 py-2.5 bg-primary text-white rounded-lg text-sm hover:bg-primary/90 transition"
           >
-            <CalendarPlus className="w-4 h-4" /> 加入本周
+            <CalendarPlus className="w-4 h-4" /> 加入规划
           </button>
         </div>
       </div>

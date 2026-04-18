@@ -359,6 +359,7 @@ export interface ShoppingItem {
   totalAmount: number;
   unit: string;
   estimatedPrice: number;
+  actualPrice?: number;          // 实际购买价格（用于消费记录）
   category: IngredientCategory;
   isOwned: boolean;              // 家里已有
   isPurchased: boolean;          // 已购买

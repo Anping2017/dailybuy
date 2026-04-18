@@ -39,15 +39,73 @@ function generateShoppingText(list: ShoppingList, budgetOn: boolean): string {
   return text;
 }
 
+/** 生成消费记录分享文本（按已购的实际价格） */
+function generateSpendingText(list: ShoppingList): string {
+  const purchased = list.items.filter(i => i.isPurchased);
+  // 用 actualPrice 优先，回退到 estimatedPrice
+  const priceOf = (item: typeof purchased[number]) => (item.actualPrice !== undefined ? item.actualPrice : item.estimatedPrice);
+  const total = purchased.reduce((s, i) => s + priceOf(i), 0);
+
+  let text = '💰 消费记录\n';
+  text += `日期: ${new Date().toLocaleDateString('zh-CN')}\n`;
+  text += `总花费: $${total.toFixed(2)} NZD · ${purchased.length} 项\n\n`;
+
+  // 按分类分组
+  const byCategory = new Map<string, typeof purchased>();
+  for (const item of purchased) {
+    const list = byCategory.get(item.category) || [];
+    list.push(item);
+    byCategory.set(item.category, list);
+  }
+
+  // 分类小计
+  text += '【分类小计】\n';
+  const sortedCats = Array.from(byCategory.keys()).sort();
+  for (const cat of sortedCats) {
+    const subTotal = byCategory.get(cat)!.reduce((s, i) => s + priceOf(i), 0);
+    text += `  ${CATEGORY_LABELS[cat] || cat}: $${subTotal.toFixed(2)}\n`;
+  }
+  text += '\n';
+
+  // 明细
+  text += '【明细】\n';
+  for (const cat of sortedCats) {
+    text += `${CATEGORY_LABELS[cat] || cat}:\n`;
+    for (const item of byCategory.get(cat)!) {
+      const p = priceOf(item);
+      const note = item.actualPrice !== undefined ? '' : '(估)';
+      text += `  • ${item.ingredientName} · ${Math.round(item.totalAmount)}${item.unit} · $${p.toFixed(2)}${note}\n`;
+    }
+  }
+  text += '\n— DailyBuy 生成';
+  return text;
+}
+
 export default function ShoppingPage() {
-  const { profile, shoppingList, togglePurchased, removeShoppingItem, removeMultipleShoppingItems } = useAppStore();
+  const { profile, shoppingList, togglePurchased, removeShoppingItem, removeMultipleShoppingItems, updateItemActualPrice } = useAppStore();
   const budgetOn = profile.budgetEnabled !== false;
   const [mounted, setMounted] = useState(false);
   const [filter, setFilter] = useState<'all' | 'to_buy' | 'purchased'>('all');
   const [showShare, setShowShare] = useState(false);
+  const [showSpendShare, setShowSpendShare] = useState(false);
   const [copied, setCopied] = useState(false);
+  const [allDoneNotified, setAllDoneNotified] = useState(false);
 
   useEffect(() => { setMounted(true); }, []);
+
+  // 全部勾选时自动弹出消费记录分享
+  useEffect(() => {
+    if (!mounted || !shoppingList || shoppingList.items.length === 0) return;
+    const allPurchased = shoppingList.items.every(i => i.isPurchased);
+    if (allPurchased && !allDoneNotified) {
+      setShowSpendShare(true);
+      setAllDoneNotified(true);
+    }
+    if (!allPurchased && allDoneNotified) {
+      setAllDoneNotified(false);
+    }
+  }, [mounted, shoppingList, allDoneNotified]);
+
   if (!mounted) return null;
 
   if (!shoppingList || shoppingList.items.length === 0) {
@@ -77,9 +135,18 @@ export default function ShoppingPage() {
 
   return (
     <div className="space-y-4">
-      <div className="flex items-center justify-between gap-3">
+      <div className="flex items-center justify-between gap-2 flex-wrap">
         <h1 className="text-xl font-bold">采购清单</h1>
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-2 flex-wrap">
+          {purchasedCount > 0 && (
+            <button
+              onClick={() => setShowSpendShare(true)}
+              title="消费记录"
+              className="flex items-center gap-1 text-xs px-3 py-1.5 border border-border rounded-lg hover:border-primary hover:text-primary transition"
+            >
+              💰 消费
+            </button>
+          )}
           <button
             onClick={() => setShowShare(true)}
             className="flex items-center gap-1 text-xs px-3 py-1.5 border border-border rounded-lg hover:border-primary hover:text-primary transition"
@@ -189,8 +256,26 @@ export default function ShoppingPage() {
                   </div>
 
                   {/* 价格和删除 */}
-                  <div className="flex items-center gap-3 flex-shrink-0">
-                    {budgetOn && <span className="text-sm font-medium">${item.estimatedPrice.toFixed(2)}</span>}
+                  <div className="flex items-center gap-2 flex-shrink-0">
+                    {budgetOn && (
+                      item.isPurchased ? (
+                        // 已购: 实际价格可编辑
+                        <div className="flex items-center">
+                          <span className="text-xs text-muted mr-0.5">$</span>
+                          <input
+                            type="number"
+                            step="0.01"
+                            value={item.actualPrice ?? item.estimatedPrice}
+                            onChange={(e) => updateItemActualPrice(item.ingredientId, Number(e.target.value) || 0)}
+                            placeholder={item.estimatedPrice.toFixed(2)}
+                            title="实际付款金额"
+                            className="w-16 text-sm font-medium border border-border rounded px-1.5 py-0.5 bg-background focus:border-primary outline-none"
+                          />
+                        </div>
+                      ) : (
+                        <span className="text-sm font-medium text-muted" title="预估价格">${item.estimatedPrice.toFixed(2)}</span>
+                      )
+                    )}
                     <button
                       onClick={() => removeShoppingItem(item.ingredientId)}
                       title="删除"
@@ -205,6 +290,54 @@ export default function ShoppingPage() {
           </div>
         );
       })}
+
+      {/* 消费记录弹窗（全部勾选自动触发 / 手动） */}
+      {showSpendShare && (
+        <div className="fixed inset-0 bg-black/50 z-[60] flex items-end sm:items-center justify-center p-0 sm:p-4" onClick={() => setShowSpendShare(false)}>
+          <div className="bg-card w-full max-w-md rounded-t-2xl sm:rounded-2xl flex flex-col max-h-[90dvh] sm:max-h-[85vh] overflow-hidden" onClick={e => e.stopPropagation()}>
+            <div className="flex items-center justify-between p-4 border-b border-border flex-shrink-0">
+              <div>
+                <h3 className="font-semibold flex items-center gap-2">🎉 全部购买完成</h3>
+                <p className="text-xs text-muted mt-0.5">分享本次消费记录给家人吧</p>
+              </div>
+              <button onClick={() => setShowSpendShare(false)} className="text-muted"><X className="w-5 h-5" /></button>
+            </div>
+            <div className="flex-1 overflow-y-auto p-4">
+              <p className="text-xs text-muted mb-2">💡 已购的食材可以在清单上修改实际付款金额(默认用预估价)</p>
+              <div className="bg-background rounded-lg p-3 text-xs whitespace-pre-wrap font-mono">
+                {generateSpendingText(shoppingList)}
+              </div>
+            </div>
+            <div className="flex gap-3 p-4 border-t border-border flex-shrink-0 bg-card">
+              <button onClick={() => setShowSpendShare(false)}
+                className="flex-1 py-2.5 border border-border rounded-lg text-sm hover:border-primary transition">
+                稍后
+              </button>
+              <button onClick={async () => {
+                await navigator.clipboard.writeText(generateSpendingText(shoppingList));
+                setCopied(true);
+                setTimeout(() => setCopied(false), 2000);
+              }}
+                className="flex-1 flex items-center justify-center gap-2 py-2.5 border border-border rounded-lg text-sm hover:border-primary transition">
+                {copied ? <><CheckCheck className="w-4 h-4 text-primary" /> 已复制</> : <><Copy className="w-4 h-4" /> 复制</>}
+              </button>
+              <button onClick={async () => {
+                const text = generateSpendingText(shoppingList);
+                if (navigator.share) {
+                  try { await navigator.share({ title: '消费记录', text }); } catch { /* user cancelled */ }
+                } else {
+                  await navigator.clipboard.writeText(text);
+                  setCopied(true);
+                  setTimeout(() => setCopied(false), 2000);
+                }
+              }}
+                className="flex-1 flex items-center justify-center gap-2 py-2.5 bg-primary text-white rounded-lg text-sm hover:bg-primary/90 transition">
+                <Share2 className="w-4 h-4" /> 分享
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
 
       {/* 分享弹窗 */}
       {showShare && (

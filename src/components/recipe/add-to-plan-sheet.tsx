@@ -34,7 +34,7 @@ export function AddToPlanSheet({ recipe, onClose }: { recipe: Recipe; onClose: (
     return (
       <div className="fixed inset-0 z-[60] bg-black/50 flex items-center justify-center p-4" onClick={onClose}>
         <div className="bg-card rounded-2xl p-6 max-w-sm" onClick={e => e.stopPropagation()}>
-          <p className="text-sm">还没有本周计划，请先去「菜谱」页生成。</p>
+          <p className="text-sm">还没有规划，请先去「规划」页生成。</p>
           <button onClick={onClose} className="mt-3 px-4 py-2 bg-primary text-white rounded-lg text-sm w-full">
             知道了
           </button>
@@ -82,7 +82,7 @@ export function AddToPlanSheet({ recipe, onClose }: { recipe: Recipe; onClose: (
       >
         <div className="p-4 border-b border-border flex items-start justify-between flex-shrink-0">
           <div className="flex-1 min-w-0">
-            <p className="text-xs text-muted">加入本周菜谱</p>
+            <p className="text-xs text-muted">加入规划菜谱</p>
             <p className="font-semibold text-sm truncate">{recipe.nameZh}</p>
           </div>
           <button onClick={onClose} className="text-muted ml-2"><X className="w-5 h-5" /></button>
@@ -93,7 +93,7 @@ export function AddToPlanSheet({ recipe, onClose }: { recipe: Recipe; onClose: (
             <div className="w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center mx-auto mb-3">
               <Check className="w-6 h-6" />
             </div>
-            <p className="text-sm font-medium">已加入本周菜谱</p>
+            <p className="text-sm font-medium">已加入规划菜谱</p>
           </div>
         ) : (
           <>
@@ -199,7 +199,7 @@ export function AddToPlanSheet({ recipe, onClose }: { recipe: Recipe; onClose: (
 
               {mode === 'random' && (
                 <div className="bg-background border border-border rounded-lg p-3 text-sm text-muted">
-                  系统会从本周可用日期中随机挑选一天一餐，把这道菜加进去。
+                  系统会从规划日期中随机挑选一天一餐，把这道菜加进去。
                 </div>
               )}
             </div>

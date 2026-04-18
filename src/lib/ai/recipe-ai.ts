@@ -113,7 +113,12 @@ function generateEnhancedPlan(profile: UserProfile): WeeklyPlan {
 /** 从 AI 返回的菜谱列表构建 WeeklyPlan */
 function buildPlanFromRecipes(recipes: Recipe[], profile: UserProfile): WeeklyPlan {
   const planDays = Math.min(7, Math.max(1, profile.planDays || 7));
-  const activeDays = DAYS.slice(0, planDays);
+  const todayJsIdx = new Date().getDay();
+  const todayDayIdx = todayJsIdx === 0 ? 6 : todayJsIdx - 1;
+  const activeDays: DayOfWeek[] = [];
+  for (let i = 0; i < planDays; i++) {
+    activeDays.push(DAYS[(todayDayIdx + i) % 7]);
+  }
   const slots: MealSlot[] = [];
   let recipeIdx = 0;
 

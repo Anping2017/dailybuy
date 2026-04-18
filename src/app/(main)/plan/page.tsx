@@ -3,7 +3,7 @@
 import { useAppStore, getPreferenceScore, getFeedbackAdjustment } from '@/lib/store';
 import { useRouter } from 'next/navigation';
 import { useEffect, useState } from 'react';
-import { RefreshCw, X, Flame, ShoppingCart, Check, Sparkles, Share2, Copy, CheckCheck, CalendarDays, List, ChevronRight } from 'lucide-react';
+import { RefreshCw, X, Flame, ShoppingCart, Check, Sparkles, Share2, Copy, CheckCheck, CalendarDays, List, ChevronRight, Package, ChevronDown } from 'lucide-react';
 import { getRecipe, calcRecipeNutrition, calcRecipeCost } from '@/lib/nutrition/calculator';
 import { getFilteredRecipes, generateWeeklyPlan, generateShoppingList } from '@/lib/recipe-engine/engine';
 import { getIngredient, getAllIngredients } from '@/lib/data/recipe-repository';
@@ -29,12 +29,14 @@ const ROLE_COLORS: Record<DishRole, string> = {
 
 export default function PlanPage() {
   const router = useRouter();
-  const { profile, weeklyPlan, shoppingList, setWeeklyPlan, setShoppingList, removeMealSlot, replaceSingleRecipe, ownedIngredients, addRecipeToShoppingList, removeRecipeFromShoppingList, recordAction, recordSwapReason } = useAppStore();
+  const { profile, weeklyPlan, shoppingList, setWeeklyPlan, setShoppingList, removeMealSlot, replaceSingleRecipe, ownedIngredients, addOwnedIngredient, removeOwnedIngredient, addRecipeToShoppingList, removeRecipeFromShoppingList, recordAction, recordSwapReason } = useAppStore();
   const [mounted, setMounted] = useState(false);
   const [showWeekShare, setShowWeekShare] = useState(false);
   const [weekShareCopied, setWeekShareCopied] = useState(false);
   const [viewMode, setViewMode] = useState<'day' | 'calendar'>('day');
   const [swapTarget, setSwapTarget] = useState<{ recipeId: string; mealType: MealType; role: DishRole; day: DayOfWeek } | null>(null);
+  const [showOwnedPanel, setShowOwnedPanel] = useState(false);
+  const [ingSearch, setIngSearch] = useState('');
   const [selectedDay, setSelectedDay] = useState<DayOfWeek>(() => {
     const d = new Date().getDay();
     return DAYS[d === 0 ? 6 : d - 1];
@@ -115,7 +117,13 @@ export default function PlanPage() {
   }
 
   const planDays = Math.min(7, Math.max(1, profile.planDays || 7));
-  const activeDays = DAYS.slice(0, planDays);
+  // 从今天开始顺序排
+  const todayJsIdx = new Date().getDay();
+  const todayDayIdx = todayJsIdx === 0 ? 6 : todayJsIdx - 1;
+  const activeDays: DayOfWeek[] = [];
+  for (let i = 0; i < planDays; i++) {
+    activeDays.push(DAYS[(todayDayIdx + i) % 7]);
+  }
   const daySlots = weeklyPlan.slots.filter(s => s.day === selectedDay);
 
   return (
@@ -128,7 +136,7 @@ export default function PlanPage() {
       )}
       <div>
         <div className="flex items-center justify-between gap-2">
-          <h1 className="text-lg font-bold flex-shrink-0">{planDays === 7 ? '本周菜谱' : `${planDays}天菜谱`}</h1>
+          <h1 className="text-lg font-bold flex-shrink-0">{planDays === 7 ? '规划菜谱' : `${planDays}天规划`}</h1>
           <div className="flex gap-1.5">
             {/* 视图切换 */}
             <div className="flex border border-border rounded-lg overflow-hidden">
@@ -144,7 +152,7 @@ export default function PlanPage() {
               </button>
             </div>
             <button onClick={() => setShowWeekShare(true)}
-              title="分享本周"
+              title="分享规划"
               className="px-2 py-1.5 border border-border rounded-lg text-muted hover:text-primary hover:border-primary transition">
               <Share2 className="w-4 h-4" />
             </button>
@@ -156,6 +164,62 @@ export default function PlanPage() {
           </div>
         </div>
         <ConfigSummary />
+      </div>
+
+      {/* 家里有什么食材 - 可折叠 */}
+      <div className="bg-card border border-border rounded-lg">
+        <button
+          onClick={() => setShowOwnedPanel(!showOwnedPanel)}
+          className="w-full flex items-center justify-between p-3 hover:bg-background/50 transition"
+        >
+          <div className="flex items-center gap-2 text-sm">
+            <Package className="w-4 h-4 text-primary" />
+            <span className="font-medium">家里有什么食材</span>
+            <span className="text-xs text-muted">优先推荐{ownedIngredients.length > 0 ? ` · 已设 ${ownedIngredients.length} 项` : ''}</span>
+          </div>
+          <ChevronDown className={`w-4 h-4 text-muted transition-transform ${showOwnedPanel ? 'rotate-180' : ''}`} />
+        </button>
+        {showOwnedPanel && (
+          <div className="p-3 pt-0 border-t border-border">
+            <div className="relative mt-3">
+              <input type="text" placeholder="搜索食材名..." value={ingSearch}
+                onChange={e => setIngSearch(e.target.value)}
+                className="w-full border border-border rounded px-3 py-1.5 text-sm bg-background" />
+              {ingSearch.length > 0 && (() => {
+                const allIng = getAllIngredients();
+                const results = allIng.filter(i =>
+                  !ownedIngredients.includes(i.id) &&
+                  (i.nameZh.includes(ingSearch) || i.nameEn.toLowerCase().includes(ingSearch.toLowerCase()))
+                ).slice(0, 8);
+                if (results.length === 0) return null;
+                return (
+                  <div className="absolute z-10 top-full left-0 right-0 bg-card border border-border rounded-lg mt-1 shadow-lg max-h-48 overflow-y-auto">
+                    {results.map(ing => (
+                      <button key={ing.id} onClick={() => { addOwnedIngredient(ing.id); setIngSearch(''); }}
+                        className="w-full text-left px-3 py-2 text-sm hover:bg-background flex justify-between">
+                        <span>{ing.nameZh}</span>
+                        <span className="text-xs text-muted">{ing.nameEn}</span>
+                      </button>
+                    ))}
+                  </div>
+                );
+              })()}
+            </div>
+            {ownedIngredients.length > 0 && (
+              <div className="flex flex-wrap gap-1 mt-2">
+                {ownedIngredients.map(id => {
+                  const ing = getIngredient(id);
+                  return ing ? (
+                    <span key={id} className="inline-flex items-center gap-1 bg-primary-light text-primary text-xs px-2 py-0.5 rounded-full">
+                      {ing.nameZh}
+                      <button onClick={() => removeOwnedIngredient(id)}><X className="w-3 h-3" /></button>
+                    </span>
+                  ) : null;
+                })}
+              </div>
+            )}
+          </div>
+        )}
       </div>
 
       {/* 日历视图 */}
@@ -359,7 +423,7 @@ export default function PlanPage() {
         <div className="fixed inset-0 bg-black/50 z-[60] flex items-end sm:items-center justify-center p-0 sm:p-4" onClick={() => setShowWeekShare(false)}>
           <div className="bg-card w-full max-w-md rounded-t-2xl sm:rounded-2xl flex flex-col max-h-[90dvh] sm:max-h-[85vh] overflow-hidden" onClick={e => e.stopPropagation()}>
             <div className="flex items-center justify-between p-4 border-b border-border flex-shrink-0">
-              <h3 className="font-semibold">分享本周菜谱</h3>
+              <h3 className="font-semibold">分享规划菜谱</h3>
               <button onClick={() => setShowWeekShare(false)} className="text-muted"><X className="w-5 h-5" /></button>
             </div>
             {/* 滚动内容 */}
@@ -380,7 +444,7 @@ export default function PlanPage() {
               </button>
               <button onClick={async () => {
                 if (navigator.share) {
-                  await navigator.share({ title: '本周菜谱', text: generateWeekText(weeklyPlan, profile) });
+                  await navigator.share({ title: '规划菜谱', text: generateWeekText(weeklyPlan, profile) });
                 } else {
                   await navigator.clipboard.writeText(generateWeekText(weeklyPlan, profile));
                   setWeekShareCopied(true);
@@ -525,7 +589,7 @@ function generateWeekText(plan: import('@/types').WeeklyPlan, profile: import('@
   const roleZh: Record<string, string> = { main_meat:'荤', main_veg:'素', soup:'汤', staple:'主食', cold:'凉', side:'配' };
 
   const days = ['monday','tuesday','wednesday','thursday','friday','saturday','sunday'];
-  let text = `📋 本周菜谱（${profile.familySize}人）\n\n`;
+  let text = `📋 规划菜谱（${profile.familySize}人）\n\n`;
 
   for (const day of days) {
     const slots = plan.slots.filter(s => s.day === day);

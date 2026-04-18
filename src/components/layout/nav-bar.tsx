@@ -7,7 +7,7 @@ import { cn } from '@/lib/utils';
 
 const NAV_ITEMS = [
   { href: '/dashboard', label: '首页', icon: Home },
-  { href: '/plan', label: '本周', icon: UtensilsCrossed },
+  { href: '/plan', label: '规划', icon: UtensilsCrossed },
   { href: '/recipes', label: '菜谱库', icon: Library },
   { href: '/shopping', label: '清单', icon: ShoppingCart },
   { href: '/profile', label: '设置', icon: User },

@@ -39,6 +39,7 @@ interface AppState {
   toggleOwned: (ingredientId: string) => void;
   togglePurchased: (ingredientId: string) => void;
   updateItemAmount: (ingredientId: string, amount: number) => void;
+  updateItemActualPrice: (ingredientId: string, price: number) => void;
   removeShoppingItem: (ingredientId: string) => void;
   removeMultipleShoppingItems: (ids: string[]) => void;
 
@@ -329,6 +330,19 @@ export const useAppStore = create<AppState>()(
           const items = s.shoppingList.items.map((item) =>
             item.ingredientId === ingredientId
               ? { ...item, totalAmount: amount }
+              : item
+          );
+          return {
+            shoppingList: { ...s.shoppingList, items, updatedAt: new Date().toISOString() },
+          };
+        }),
+
+      updateItemActualPrice: (ingredientId, price) =>
+        set((s) => {
+          if (!s.shoppingList) return s;
+          const items = s.shoppingList.items.map((item) =>
+            item.ingredientId === ingredientId
+              ? { ...item, actualPrice: price >= 0 ? price : undefined }
               : item
           );
           return {

@@ -843,7 +843,13 @@ export function generateWeeklyPlan(
   getFeedback?: (r: Recipe) => number,
 ): WeeklyPlan {
   const planDays = Math.min(7, Math.max(1, profile.planDays || 7));
-  const activeDays = DAYS.slice(0, planDays);
+  // 从今天开始按顺序排, 而不是固定 monday
+  const todayJsIdx = new Date().getDay();        // 0=Sun, 1=Mon, ..., 6=Sat
+  const todayDayIdx = todayJsIdx === 0 ? 6 : todayJsIdx - 1;  // 转 monday=0
+  const activeDays: DayOfWeek[] = [];
+  for (let i = 0; i < planDays; i++) {
+    activeDays.push(DAYS[(todayDayIdx + i) % 7]);
+  }
 
   let slots: MealSlot[];
 
