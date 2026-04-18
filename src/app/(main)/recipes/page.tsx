@@ -131,7 +131,7 @@ export default function RecipesPage() {
             <span className="text-amber-800">
               {profile.favoritesInRandom !== false ? '✓ 收藏菜谱会优先出现在本周规划' : '⊘ 收藏不参与随机推荐'}
             </span>
-            <Link href="/profile" className="text-primary hover:underline">设置</Link>
+            <Link href="/profile#favorites-random" className="text-primary hover:underline">去设置</Link>
           </div>
         </div>
       )}

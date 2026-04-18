@@ -128,7 +128,8 @@ export default function ShoppingPage() {
           }
         };
         const deleteAllInCategory = () => {
-          if (confirm(`确定删除「${CATEGORY_LABELS[category] || category}」分类下所有 ${categoryItems.length} 项？`)) {
+          const msg = `确定批量删除「${CATEGORY_LABELS[category] || category}」分类下所有 ${categoryItems.length} 项吗？\n\n⚠ 此操作不可恢复，请确认。`;
+          if (confirm(msg)) {
             removeMultipleShoppingItems(categoryItems.map(i => i.ingredientId));
           }
         };
@@ -142,19 +143,19 @@ export default function ShoppingPage() {
               <div className="flex gap-1">
                 <button
                   onClick={toggleAllInCategory}
-                  title={allChecked ? '全部取消勾选' : '全部勾选已购'}
+                  title={allChecked ? '批量取消勾选' : '批量标记为已购'}
                   className={`flex items-center gap-1 text-xs px-2 py-1 rounded border transition ${
                     allChecked ? 'bg-primary text-white border-primary' : someChecked ? 'border-primary text-primary' : 'border-border text-muted hover:border-primary'
                   }`}
                 >
-                  <CheckAll className="w-3 h-3" /> {allChecked ? '取消勾选' : '全部已购'}
+                  <CheckAll className="w-3 h-3" /> {allChecked ? '批量取消' : '批量已购'}
                 </button>
                 <button
                   onClick={deleteAllInCategory}
-                  title="删除该分类全部"
+                  title="批量删除该分类（不可恢复）"
                   className="flex items-center gap-1 text-xs px-2 py-1 rounded border border-border text-muted hover:border-danger hover:text-danger transition"
                 >
-                  <Trash2 className="w-3 h-3" /> 全部删除
+                  <Trash2 className="w-3 h-3" /> 批量删除
                 </button>
               </div>
             </div>
@@ -207,7 +208,7 @@ export default function ShoppingPage() {
 
       {/* 分享弹窗 */}
       {showShare && (
-        <div className="fixed inset-0 bg-black/50 z-50 flex items-end sm:items-center justify-center p-0 sm:p-4" onClick={() => setShowShare(false)}>
+        <div className="fixed inset-0 bg-black/50 z-[60] flex items-end sm:items-center justify-center p-0 sm:p-4" onClick={() => setShowShare(false)}>
           <div className="bg-card w-full max-w-md rounded-t-2xl sm:rounded-2xl flex flex-col max-h-[90dvh] sm:max-h-[85vh] overflow-hidden" onClick={e => e.stopPropagation()}>
             <div className="flex items-center justify-between p-4 border-b border-border flex-shrink-0">
               <h3 className="font-semibold">分享采购清单</h3>

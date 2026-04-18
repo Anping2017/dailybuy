@@ -94,6 +94,26 @@ export default function ProfilePage() {
   const [saved, setSaved] = useState(false);
 
   useEffect(() => { setMounted(true); }, []);
+
+  // 处理 hash 跳转 + 高亮
+  useEffect(() => {
+    if (!mounted) return;
+    if (typeof window === 'undefined') return;
+    const hash = window.location.hash.slice(1);
+    if (!hash) return;
+    // 等 DOM 完成
+    const tid = setTimeout(() => {
+      const el = document.getElementById(hash);
+      if (!el) return;
+      el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      el.classList.add('ring-2', 'ring-yellow-400', 'bg-yellow-50');
+      setTimeout(() => {
+        el.classList.remove('ring-2', 'ring-yellow-400', 'bg-yellow-50');
+      }, 2500);
+    }, 200);
+    return () => clearTimeout(tid);
+  }, [mounted]);
+
   if (!mounted) return null;
 
   const showSaved = () => {
@@ -398,12 +418,14 @@ export default function ProfilePage() {
             value={profile.includeColdDish || false} onClick={() => setProfile({ includeColdDish: !profile.includeColdDish })} />
           <SwitchRow label="推荐水果" desc="关闭则留热量缺口并给建议量"
             value={profile.includeFruit || false} onClick={() => setProfile({ includeFruit: !profile.includeFruit })} />
-          <SwitchRow
-            label="收藏菜谱优先推荐"
-            desc={profile.favoritesInRandom !== false ? `本周规划时优先选你收藏的菜（${(profile.favoriteRecipes || []).length} 道）` : '收藏只保留在菜谱库中，不参与随机推荐'}
-            value={profile.favoritesInRandom !== false}
-            onClick={() => setProfile({ favoritesInRandom: profile.favoritesInRandom === false })}
-          />
+          <div id="favorites-random" className="scroll-mt-20 -mx-2 px-2 -my-1 py-1 rounded-lg transition-all duration-500">
+            <SwitchRow
+              label="收藏菜谱优先推荐"
+              desc={profile.favoritesInRandom !== false ? `本周规划时优先选你收藏的菜（${(profile.favoriteRecipes || []).length} 道）` : '收藏只保留在菜谱库中，不参与随机推荐'}
+              value={profile.favoritesInRandom !== false}
+              onClick={() => setProfile({ favoritesInRandom: profile.favoritesInRandom === false })}
+            />
+          </div>
         </div>
       </Section>
 

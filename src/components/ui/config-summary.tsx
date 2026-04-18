@@ -20,8 +20,8 @@ export function ConfigSummary() {
   const flavors = (profile.flavorPreference || []).map(f => FLAVOR[f]).join('') || '不限';
 
   return (
-    <p className="text-xs text-muted leading-relaxed">
-      {people}人 · {days}天×{meals}餐 · {level}厨艺 · 口味{flavors}
+    <p className="text-xs text-muted">
+      {people}人·{days}天×{meals}餐·{level}·{flavors}
     </p>
   );
 }

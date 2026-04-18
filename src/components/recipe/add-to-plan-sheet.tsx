@@ -32,7 +32,7 @@ export function AddToPlanSheet({ recipe, onClose }: { recipe: Recipe; onClose: (
 
   if (!weeklyPlan) {
     return (
-      <div className="fixed inset-0 z-50 bg-black/50 flex items-center justify-center p-4" onClick={onClose}>
+      <div className="fixed inset-0 z-[60] bg-black/50 flex items-center justify-center p-4" onClick={onClose}>
         <div className="bg-card rounded-2xl p-6 max-w-sm" onClick={e => e.stopPropagation()}>
           <p className="text-sm">还没有本周计划，请先去「菜谱」页生成。</p>
           <button onClick={onClose} className="mt-3 px-4 py-2 bg-primary text-white rounded-lg text-sm w-full">
@@ -75,7 +75,7 @@ export function AddToPlanSheet({ recipe, onClose }: { recipe: Recipe; onClose: (
   };
 
   return (
-    <div className="fixed inset-0 z-50 bg-black/50 flex items-end sm:items-center justify-center p-0 sm:p-4" onClick={onClose}>
+    <div className="fixed inset-0 z-[60] bg-black/50 flex items-end sm:items-center justify-center p-0 sm:p-4" onClick={onClose}>
       <div
         className="bg-card w-full max-w-md rounded-t-2xl sm:rounded-2xl flex flex-col max-h-[90dvh] sm:max-h-[85vh] overflow-hidden"
         onClick={e => e.stopPropagation()}
