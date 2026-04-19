@@ -41,6 +41,8 @@ export default function RecipesPage() {
   const [filterMethod, setFilterMethod] = useState<CookingMethod | 'all'>('all');
   const [filterDiff, setFilterDiff] = useState<DifficultyLevel | 'all'>('all');
   const [filterFlavor, setFilterFlavor] = useState<FlavorPreference | 'all'>('all');
+  const [page, setPage] = useState(1);
+  const PAGE_SIZE = 50;
 
   const [detailRecipe, setDetailRecipe] = useState<Recipe | null>(null);
   const [addToPlanRecipe, setAddToPlanRecipe] = useState<Recipe | null>(null);
@@ -71,10 +73,18 @@ export default function RecipesPage() {
     if (filterDiff !== 'all') pool = pool.filter(r => r.difficulty === filterDiff);
     if (filterFlavor !== 'all') pool = pool.filter(r => r.flavors.includes(filterFlavor));
 
-    return pool.slice(0, 200);  // 限制渲染数
+    return pool;  // 不再硬限, 由分页处理
   }, [mounted, allCombined, favoriteIds, tab, search, filterCuisine, filterMeal, filterMethod, filterDiff, filterFlavor]);
 
+  // 筛选/搜索变化时重置回第一页
+  useEffect(() => { setPage(1); }, [tab, search, filterCuisine, filterMeal, filterMethod, filterDiff, filterFlavor]);
+
   if (!mounted) return null;
+
+  const totalCount = filtered.length;
+  const totalPages = Math.max(1, Math.ceil(totalCount / PAGE_SIZE));
+  const safePage = Math.min(page, totalPages);
+  const pagedItems = filtered.slice((safePage - 1) * PAGE_SIZE, safePage * PAGE_SIZE);
 
   const activeFilters = [
     filterCuisine !== 'all', filterMeal !== 'all', filterMethod !== 'all',
@@ -208,25 +218,68 @@ export default function RecipesPage() {
       )}
 
       {/* 列表 */}
-      <p className="text-xs text-muted">{filtered.length} 道菜{filtered.length === 200 && '（已限 200）'}</p>
-      {filtered.length === 0 ? (
+      <div className="flex items-center justify-between">
+        <p className="text-xs text-muted">
+          共 {totalCount} 道菜 · 第 {safePage}/{totalPages} 页
+        </p>
+        {totalPages > 1 && (
+          <div className="flex items-center gap-1">
+            <button
+              onClick={() => setPage(p => Math.max(1, p - 1))}
+              disabled={safePage <= 1}
+              className="px-2 py-1 text-xs border border-border rounded disabled:opacity-30 hover:border-primary"
+            >
+              ← 上一页
+            </button>
+            <button
+              onClick={() => setPage(p => Math.min(totalPages, p + 1))}
+              disabled={safePage >= totalPages}
+              className="px-2 py-1 text-xs border border-border rounded disabled:opacity-30 hover:border-primary"
+            >
+              下一页 →
+            </button>
+          </div>
+        )}
+      </div>
+      {totalCount === 0 ? (
         <div className="text-center py-12 text-muted">
           <p>没有匹配的菜谱</p>
           {tab === 'favorites' && <p className="text-xs mt-1">点击菜谱旁的 ⭐ 加入收藏</p>}
           {tab === 'mine' && <p className="text-xs mt-1">点右上角"+ 新建"创建你自己的菜谱</p>}
         </div>
       ) : (
-        <div className="space-y-2">
-          {filtered.map(recipe => (
-            <RecipeCard
-              key={recipe.id}
-              recipe={recipe}
-              isFavorite={favoriteIds.has(recipe.id)}
-              onToggleFav={() => toggleFavorite(recipe.id)}
-              onClick={() => setDetailRecipe(recipe)}
-            />
-          ))}
-        </div>
+        <>
+          <div className="space-y-2">
+            {pagedItems.map(recipe => (
+              <RecipeCard
+                key={recipe.id}
+                recipe={recipe}
+                isFavorite={favoriteIds.has(recipe.id)}
+                onToggleFav={() => toggleFavorite(recipe.id)}
+                onClick={() => setDetailRecipe(recipe)}
+              />
+            ))}
+          </div>
+          {totalPages > 1 && (
+            <div className="flex items-center justify-center gap-2 mt-3">
+              <button
+                onClick={() => setPage(p => Math.max(1, p - 1))}
+                disabled={safePage <= 1}
+                className="px-3 py-1.5 text-sm border border-border rounded disabled:opacity-30 hover:border-primary"
+              >
+                ← 上一页
+              </button>
+              <span className="text-xs text-muted">{safePage} / {totalPages}</span>
+              <button
+                onClick={() => setPage(p => Math.min(totalPages, p + 1))}
+                disabled={safePage >= totalPages}
+                className="px-3 py-1.5 text-sm border border-border rounded disabled:opacity-30 hover:border-primary"
+              >
+                下一页 →
+              </button>
+            </div>
+          )}
+        </>
       )}
 
       {/* 详情弹窗 */}

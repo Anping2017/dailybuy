@@ -112697,5 +112697,2182 @@
     "tags": [
       "早餐"
     ]
+  },
+  {
+    "cuisine": "chinese",
+    "regionalCuisine": "homestyle",
+    "cookingMethod": "staple",
+    "difficulty": "easy",
+    "minCookingLevel": "beginner",
+    "status": "reviewed",
+    "id": "staple_rice_1p",
+    "nameZh": "白米饭(1人份)",
+    "nameEn": "Rice 1-Serving",
+    "flavors": [
+      "light"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "prepTime": 3,
+    "cookTime": 25,
+    "servings": 1,
+    "description": "电饭煲一键, 1 人份。",
+    "ingredients": [
+      {
+        "ingredientId": "rice",
+        "amount": 80,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "大米淘洗",
+      "加水到米的 1.2 倍",
+      "煮饭模式 25 分钟"
+    ],
+    "tags": [
+      "主食",
+      "快手菜"
+    ]
+  },
+  {
+    "cuisine": "chinese",
+    "regionalCuisine": "homestyle",
+    "cookingMethod": "staple",
+    "difficulty": "easy",
+    "minCookingLevel": "beginner",
+    "status": "reviewed",
+    "id": "staple_rice_2p",
+    "nameZh": "白米饭(2人份)",
+    "nameEn": "Rice 2-Serving",
+    "flavors": [
+      "light"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "prepTime": 3,
+    "cookTime": 25,
+    "servings": 2,
+    "description": "电饭煲, 2 人份。",
+    "ingredients": [
+      {
+        "ingredientId": "rice",
+        "amount": 160,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "大米淘洗",
+      "加水到米的 1.2 倍",
+      "煮饭模式 25 分钟"
+    ],
+    "tags": [
+      "主食",
+      "快手菜"
+    ]
+  },
+  {
+    "cuisine": "chinese",
+    "regionalCuisine": "homestyle",
+    "cookingMethod": "staple",
+    "difficulty": "easy",
+    "minCookingLevel": "beginner",
+    "status": "reviewed",
+    "id": "staple_rice_3p",
+    "nameZh": "白米饭(3人份)",
+    "nameEn": "Rice 3-Serving",
+    "flavors": [
+      "light"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "prepTime": 3,
+    "cookTime": 25,
+    "servings": 3,
+    "description": "电饭煲, 3 人份。",
+    "ingredients": [
+      {
+        "ingredientId": "rice",
+        "amount": 240,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "大米淘洗",
+      "加水到米的 1.2 倍",
+      "煮饭模式 25 分钟"
+    ],
+    "tags": [
+      "主食"
+    ]
+  },
+  {
+    "cuisine": "chinese",
+    "regionalCuisine": "homestyle",
+    "cookingMethod": "staple",
+    "difficulty": "easy",
+    "minCookingLevel": "beginner",
+    "status": "reviewed",
+    "id": "staple_mantou_2p",
+    "nameZh": "白馒头(2人份)",
+    "nameEn": "Mantou 2-Serving",
+    "flavors": [
+      "light"
+    ],
+    "mealTypes": [
+      "breakfast",
+      "lunch",
+      "dinner"
+    ],
+    "prepTime": 90,
+    "cookTime": 15,
+    "servings": 2,
+    "description": "北方家常主食。",
+    "ingredients": [
+      {
+        "ingredientId": "flour",
+        "amount": 250,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 5,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "面粉加酵母糖温水揉团发酵 1 小时",
+      "排气分 4 份搓圆",
+      "二发 20 分钟蒸 12 分钟"
+    ],
+    "tags": [
+      "主食"
+    ]
+  },
+  {
+    "cuisine": "chinese",
+    "regionalCuisine": "homestyle",
+    "cookingMethod": "staple",
+    "difficulty": "easy",
+    "minCookingLevel": "beginner",
+    "status": "reviewed",
+    "id": "staple_mantou_4p",
+    "nameZh": "白馒头(4人份)",
+    "nameEn": "Mantou 4-Serving",
+    "flavors": [
+      "light"
+    ],
+    "mealTypes": [
+      "breakfast",
+      "lunch",
+      "dinner"
+    ],
+    "prepTime": 90,
+    "cookTime": 18,
+    "servings": 4,
+    "description": "一次蒸一锅。",
+    "ingredients": [
+      {
+        "ingredientId": "flour",
+        "amount": 500,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 10,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "面粉加酵母糖温水揉团发酵 1 小时",
+      "排气分 8 份搓圆",
+      "二发 20 分钟蒸 15 分钟"
+    ],
+    "tags": [
+      "主食"
+    ]
+  },
+  {
+    "cuisine": "chinese",
+    "regionalCuisine": "homestyle",
+    "cookingMethod": "staple",
+    "difficulty": "easy",
+    "minCookingLevel": "beginner",
+    "status": "reviewed",
+    "id": "staple_huajuan_2p",
+    "nameZh": "葱花花卷(2人份)",
+    "nameEn": "Scallion Roll 2p",
+    "flavors": [
+      "salty",
+      "light"
+    ],
+    "mealTypes": [
+      "breakfast",
+      "lunch",
+      "dinner"
+    ],
+    "prepTime": 90,
+    "cookTime": 15,
+    "servings": 2,
+    "description": "面香葱香, 2 人量。",
+    "ingredients": [
+      {
+        "ingredientId": "flour",
+        "amount": 250,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 2,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "面团发酵",
+      "擀薄涂油撒葱盐",
+      "卷起切段叠压",
+      "二发蒸 12 分钟"
+    ],
+    "tags": [
+      "主食",
+      "北方"
+    ]
+  },
+  {
+    "cuisine": "chinese",
+    "regionalCuisine": "homestyle",
+    "cookingMethod": "staple",
+    "difficulty": "easy",
+    "minCookingLevel": "beginner",
+    "status": "reviewed",
+    "id": "staple_grain_rice_1p",
+    "nameZh": "杂粮饭(1人份)",
+    "nameEn": "Multi-grain 1p",
+    "flavors": [
+      "light"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "prepTime": 30,
+    "cookTime": 35,
+    "servings": 1,
+    "description": "糙米+小米, 健康主食。",
+    "ingredients": [
+      {
+        "ingredientId": "rice",
+        "amount": 50,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "brown_rice",
+        "amount": 25,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "millet",
+        "amount": 15,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "糙米浸泡",
+      "所有米淘洗加 1.3 倍水",
+      "杂粮饭模式 35 分钟"
+    ],
+    "tags": [
+      "主食",
+      "健康",
+      "减脂"
+    ]
+  },
+  {
+    "cuisine": "chinese",
+    "regionalCuisine": "homestyle",
+    "cookingMethod": "staple",
+    "difficulty": "easy",
+    "minCookingLevel": "beginner",
+    "status": "reviewed",
+    "id": "staple_plain_noodles_1p",
+    "nameZh": "清汤面(1人份)",
+    "nameEn": "Plain Noodles 1p",
+    "flavors": [
+      "light",
+      "salty"
+    ],
+    "mealTypes": [
+      "breakfast",
+      "lunch",
+      "dinner"
+    ],
+    "prepTime": 2,
+    "cookTime": 6,
+    "servings": 1,
+    "description": "清汤面, 5 分钟搞定。",
+    "ingredients": [
+      {
+        "ingredientId": "noodles_dried",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "sesame_oil",
+        "amount": 3,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 2,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "水开下面煮5分钟",
+      "碗加生抽香油盐冲热水",
+      "面条入碗撒葱"
+    ],
+    "tags": [
+      "主食",
+      "快手菜",
+      "清淡"
+    ]
+  },
+  {
+    "cuisine": "chinese",
+    "regionalCuisine": "homestyle",
+    "cookingMethod": "staple",
+    "difficulty": "easy",
+    "minCookingLevel": "beginner",
+    "status": "reviewed",
+    "id": "staple_pancake_1p",
+    "nameZh": "家常烙饼(1人份)",
+    "nameEn": "Flatbread 1p",
+    "flavors": [
+      "light",
+      "salty"
+    ],
+    "mealTypes": [
+      "breakfast",
+      "lunch",
+      "dinner"
+    ],
+    "prepTime": 30,
+    "cookTime": 8,
+    "servings": 1,
+    "description": "一个人的简易主食。",
+    "ingredients": [
+      {
+        "ingredientId": "flour",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 8,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 1,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "面粉温水揉软团醒30分钟",
+      "擀薄刷油撒盐卷盘擀圆",
+      "平底锅小火两面烙金黄"
+    ],
+    "tags": [
+      "主食",
+      "北方"
+    ]
+  },
+  {
+    "cuisine": "chinese",
+    "regionalCuisine": "homestyle",
+    "status": "reviewed",
+    "id": "soup_2p_seaweed_egg",
+    "nameZh": "紫菜虾皮蛋花汤(2人份)",
+    "nameEn": "Seaweed Shrimp Egg Soup 2p",
+    "cookingMethod": "soup",
+    "flavors": [
+      "umami",
+      "light"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "easy",
+    "minCookingLevel": "beginner",
+    "prepTime": 3,
+    "cookTime": 5,
+    "servings": 2,
+    "description": "快手低卡汤，2 人份。",
+    "ingredients": [
+      {
+        "ingredientId": "nori",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "dried_shrimp",
+        "amount": 8,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "egg",
+        "amount": 1,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sesame_oil",
+        "amount": 3,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 2,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "水800ml烧开下虾皮",
+      "紫菜撕碎下锅",
+      "淋蛋花",
+      "调盐撒葱花香油"
+    ],
+    "tags": [
+      "汤",
+      "低卡",
+      "快手菜"
+    ]
+  },
+  {
+    "cuisine": "chinese",
+    "regionalCuisine": "homestyle",
+    "status": "reviewed",
+    "id": "soup_2p_tomato_egg",
+    "nameZh": "番茄蛋花汤(2人份)",
+    "nameEn": "Tomato Egg Soup 2p",
+    "cookingMethod": "soup",
+    "flavors": [
+      "sour",
+      "umami"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "easy",
+    "minCookingLevel": "beginner",
+    "prepTime": 3,
+    "cookTime": 8,
+    "servings": 2,
+    "description": "酸甜清爽。",
+    "ingredients": [
+      {
+        "ingredientId": "tomato",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "egg",
+        "amount": 1,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 5,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 2,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "番茄切块",
+      "锅热油炒番茄出汁",
+      "加水800ml煮开",
+      "淋蛋花调盐撒葱"
+    ],
+    "tags": [
+      "汤",
+      "低卡",
+      "快手菜"
+    ]
+  },
+  {
+    "cuisine": "chinese",
+    "regionalCuisine": "homestyle",
+    "status": "reviewed",
+    "id": "soup_2p_winter_melon",
+    "nameZh": "冬瓜清汤(2人份)",
+    "nameEn": "Winter Melon Clear Soup 2p",
+    "cookingMethod": "soup",
+    "flavors": [
+      "light",
+      "umami"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "easy",
+    "minCookingLevel": "beginner",
+    "prepTime": 5,
+    "cookTime": 12,
+    "servings": 2,
+    "description": "清热利水。",
+    "ingredients": [
+      {
+        "ingredientId": "winter_melon",
+        "amount": 250,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "dried_shrimp",
+        "amount": 8,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sesame_oil",
+        "amount": 3,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 2,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "冬瓜切片",
+      "水800ml下虾皮姜片煮开",
+      "加冬瓜煮8分钟",
+      "调盐淋香油"
+    ],
+    "tags": [
+      "汤",
+      "低卡",
+      "清淡"
+    ]
+  },
+  {
+    "cuisine": "chinese",
+    "regionalCuisine": "homestyle",
+    "status": "reviewed",
+    "id": "soup_2p_radish_seaweed",
+    "nameZh": "萝卜紫菜汤(2人份)",
+    "nameEn": "Radish Seaweed Soup 2p",
+    "cookingMethod": "soup",
+    "flavors": [
+      "light",
+      "umami"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "easy",
+    "minCookingLevel": "beginner",
+    "prepTime": 5,
+    "cookTime": 12,
+    "servings": 2,
+    "description": "清润润燥。",
+    "ingredients": [
+      {
+        "ingredientId": "white_radish",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "nori",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "dried_shrimp",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sesame_oil",
+        "amount": 3,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 2,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "萝卜切丝",
+      "水800ml下萝卜虾皮煮 10 分钟",
+      "紫菜撕碎下锅煮 1 分钟",
+      "调盐淋香油"
+    ],
+    "tags": [
+      "汤",
+      "低卡",
+      "清淡"
+    ]
+  },
+  {
+    "cuisine": "chinese",
+    "regionalCuisine": "homestyle",
+    "status": "reviewed",
+    "id": "soup_2p_egg_drop_corn",
+    "nameZh": "玉米蛋花汤(2人份)",
+    "nameEn": "Corn Egg Drop Soup 2p",
+    "cookingMethod": "soup",
+    "flavors": [
+      "sweet",
+      "umami"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "easy",
+    "minCookingLevel": "beginner",
+    "prepTime": 5,
+    "cookTime": 10,
+    "servings": 2,
+    "description": "甜润玉米搭蛋花。",
+    "ingredients": [
+      {
+        "ingredientId": "corn",
+        "amount": 150,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "egg",
+        "amount": 1,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 2,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "玉米粒下锅水800ml煮 8 分钟",
+      "水淀粉勾稀芡",
+      "淋蛋花",
+      "调盐撒葱"
+    ],
+    "tags": [
+      "汤",
+      "低卡"
+    ]
+  },
+  {
+    "cuisine": "chinese",
+    "regionalCuisine": "homestyle",
+    "status": "reviewed",
+    "id": "soup_2p_tofu_seaweed",
+    "nameZh": "豆腐海带汤(2人份)",
+    "nameEn": "Tofu Kelp Soup 2p",
+    "cookingMethod": "soup",
+    "flavors": [
+      "umami",
+      "light"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "easy",
+    "minCookingLevel": "beginner",
+    "prepTime": 5,
+    "cookTime": 12,
+    "servings": 2,
+    "description": "海带豆腐, 富含碘和蛋白。",
+    "ingredients": [
+      {
+        "ingredientId": "tofu",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "kelp",
+        "amount": 80,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sesame_oil",
+        "amount": 3,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 2,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "豆腐切块, 海带泡软",
+      "水800ml下海带姜煮 8 分钟",
+      "加豆腐煮 3 分钟",
+      "调盐淋香油"
+    ],
+    "tags": [
+      "汤",
+      "低卡",
+      "高碘"
+    ]
+  },
+  {
+    "cuisine": "chinese",
+    "regionalCuisine": "homestyle",
+    "status": "reviewed",
+    "id": "soup_2p_mushroom_egg",
+    "nameZh": "香菇蛋汤(2人份)",
+    "nameEn": "Mushroom Egg Soup 2p",
+    "cookingMethod": "soup",
+    "flavors": [
+      "umami",
+      "light"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "easy",
+    "minCookingLevel": "beginner",
+    "prepTime": 8,
+    "cookTime": 10,
+    "servings": 2,
+    "description": "菇香蛋香, 简单暖胃。",
+    "ingredients": [
+      {
+        "ingredientId": "mushroom",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "egg",
+        "amount": 1,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sesame_oil",
+        "amount": 3,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 2,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "香菇切片",
+      "水800ml下香菇煮 5 分钟",
+      "淋蛋花",
+      "调盐撒葱淋香油"
+    ],
+    "tags": [
+      "汤",
+      "低卡"
+    ]
+  },
+  {
+    "cuisine": "chinese",
+    "regionalCuisine": "homestyle",
+    "status": "reviewed",
+    "id": "porridge_2p_plain",
+    "nameZh": "白粥(2人份)",
+    "nameEn": "Plain Congee 2p",
+    "cookingMethod": "staple",
+    "flavors": [
+      "light"
+    ],
+    "mealTypes": [
+      "breakfast",
+      "dinner"
+    ],
+    "difficulty": "easy",
+    "minCookingLevel": "beginner",
+    "prepTime": 5,
+    "cookTime": 50,
+    "servings": 2,
+    "description": "清淡养胃, 2 人份。",
+    "ingredients": [
+      {
+        "ingredientId": "rice",
+        "amount": 60,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "大米加水 1000ml",
+      "大火煮开转小火 45 分钟",
+      "搅几次防糊"
+    ],
+    "tags": [
+      "主食",
+      "养胃",
+      "清淡",
+      "低卡"
+    ]
+  },
+  {
+    "cuisine": "chinese",
+    "regionalCuisine": "homestyle",
+    "status": "reviewed",
+    "id": "porridge_2p_millet",
+    "nameZh": "小米粥(2人份)",
+    "nameEn": "Millet Congee 2p",
+    "cookingMethod": "staple",
+    "flavors": [
+      "light"
+    ],
+    "mealTypes": [
+      "breakfast",
+      "dinner"
+    ],
+    "difficulty": "easy",
+    "minCookingLevel": "beginner",
+    "prepTime": 5,
+    "cookTime": 30,
+    "servings": 2,
+    "description": "金黄养胃。",
+    "ingredients": [
+      {
+        "ingredientId": "millet",
+        "amount": 80,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "小米淘洗一次",
+      "加水 1000ml",
+      "大火开转小火 25 分钟",
+      "焖 5 分钟"
+    ],
+    "tags": [
+      "主食",
+      "养胃",
+      "低卡"
+    ]
+  },
+  {
+    "cuisine": "chinese",
+    "regionalCuisine": "homestyle",
+    "status": "reviewed",
+    "id": "porridge_2p_pumpkin_millet",
+    "nameZh": "南瓜小米粥(2人份)",
+    "nameEn": "Pumpkin Millet Congee 2p",
+    "cookingMethod": "staple",
+    "flavors": [
+      "sweet",
+      "light"
+    ],
+    "mealTypes": [
+      "breakfast",
+      "dinner"
+    ],
+    "difficulty": "easy",
+    "minCookingLevel": "beginner",
+    "prepTime": 5,
+    "cookTime": 35,
+    "servings": 2,
+    "description": "甘甜暖胃。",
+    "ingredients": [
+      {
+        "ingredientId": "millet",
+        "amount": 60,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "pumpkin",
+        "amount": 150,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "南瓜去皮切块",
+      "小米加水煮 15 分钟",
+      "加南瓜再煮 15 分钟"
+    ],
+    "tags": [
+      "主食",
+      "低卡",
+      "养胃"
+    ]
+  },
+  {
+    "cuisine": "chinese",
+    "regionalCuisine": "homestyle",
+    "status": "reviewed",
+    "id": "porridge_2p_red_bean_oats",
+    "nameZh": "燕麦红豆粥(2人份)",
+    "nameEn": "Oat Red Bean Congee 2p",
+    "cookingMethod": "staple",
+    "flavors": [
+      "sweet",
+      "light"
+    ],
+    "mealTypes": [
+      "breakfast"
+    ],
+    "difficulty": "easy",
+    "minCookingLevel": "beginner",
+    "prepTime": 240,
+    "cookTime": 30,
+    "servings": 2,
+    "description": "高纤维补血粥。",
+    "ingredients": [
+      {
+        "ingredientId": "oats",
+        "amount": 50,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "red_bean",
+        "amount": 50,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 10,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "红豆浸泡 4 小时",
+      "红豆加水煮 20 分钟",
+      "加燕麦再煮 8 分钟",
+      "加糖"
+    ],
+    "tags": [
+      "主食",
+      "健康",
+      "低卡"
+    ]
+  },
+  {
+    "cuisine": "chinese",
+    "regionalCuisine": "homestyle",
+    "status": "reviewed",
+    "id": "porridge_2p_century_lean_pork",
+    "nameZh": "皮蛋瘦肉粥(2人份)",
+    "nameEn": "Century Egg Pork Congee 2p",
+    "cookingMethod": "staple",
+    "flavors": [
+      "umami",
+      "salty"
+    ],
+    "mealTypes": [
+      "breakfast",
+      "dinner"
+    ],
+    "difficulty": "easy",
+    "minCookingLevel": "basic",
+    "prepTime": 10,
+    "cookTime": 50,
+    "servings": 2,
+    "description": "粤式经典咸粥。",
+    "ingredients": [
+      {
+        "ingredientId": "rice",
+        "amount": 60,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "pork_loin",
+        "amount": 80,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "preserved_egg",
+        "amount": 1,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 2,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sesame_oil",
+        "amount": 3,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "大米加水煮开转小火 30 分钟",
+      "瘦肉切丝加生抽淀粉腌",
+      "皮蛋切丁",
+      "下瘦肉煮 5 分钟",
+      "加皮蛋煮 3 分钟",
+      "调盐撒葱姜淋香油"
+    ],
+    "tags": [
+      "主食",
+      "粤菜",
+      "低卡"
+    ]
+  },
+  {
+    "cuisine": "chinese",
+    "regionalCuisine": "homestyle",
+    "status": "reviewed",
+    "id": "porridge_2p_mushroom_chicken",
+    "nameZh": "香菇鸡丝粥(2人份)",
+    "nameEn": "Mushroom Chicken Congee 2p",
+    "cookingMethod": "staple",
+    "flavors": [
+      "umami",
+      "light"
+    ],
+    "mealTypes": [
+      "breakfast",
+      "dinner"
+    ],
+    "difficulty": "easy",
+    "minCookingLevel": "basic",
+    "prepTime": 10,
+    "cookTime": 50,
+    "servings": 2,
+    "description": "鲜香低卡, 病后调养。",
+    "ingredients": [
+      {
+        "ingredientId": "rice",
+        "amount": 60,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "chicken_breast",
+        "amount": 80,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "mushroom",
+        "amount": 50,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 2,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "大米加水煮 30 分钟",
+      "鸡胸撕丝, 香菇切片",
+      "下香菇姜煮 5 分钟",
+      "加鸡丝煮 3 分钟调盐"
+    ],
+    "tags": [
+      "主食",
+      "低卡",
+      "高蛋白"
+    ]
+  },
+  {
+    "cuisine": "chinese",
+    "regionalCuisine": "homestyle",
+    "status": "reviewed",
+    "id": "porridge_2p_seafood",
+    "nameZh": "海鲜粥(2人份)",
+    "nameEn": "Seafood Congee 2p",
+    "cookingMethod": "staple",
+    "flavors": [
+      "umami"
+    ],
+    "mealTypes": [
+      "breakfast",
+      "dinner"
+    ],
+    "difficulty": "easy",
+    "minCookingLevel": "basic",
+    "prepTime": 10,
+    "cookTime": 50,
+    "servings": 2,
+    "description": "鲜美海鲜粥。",
+    "ingredients": [
+      {
+        "ingredientId": "rice",
+        "amount": 60,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "shrimp",
+        "amount": 80,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "squid",
+        "amount": 60,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 3,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "大米加水煮 30 分钟",
+      "虾仁鱿鱼切丁",
+      "下海鲜姜煮 4 分钟",
+      "调盐撒葱"
+    ],
+    "tags": [
+      "主食",
+      "高蛋白",
+      "低卡"
+    ]
+  },
+  {
+    "cuisine": "chinese",
+    "regionalCuisine": "homestyle",
+    "status": "reviewed",
+    "cookingMethod": "staple",
+    "id": "noodle_2p_soy_sauce",
+    "nameZh": "葱油拌面(2人份)",
+    "nameEn": "Scallion Oil Noodles 2p",
+    "flavors": [
+      "salty",
+      "umami"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "easy",
+    "minCookingLevel": "basic",
+    "prepTime": 5,
+    "cookTime": 10,
+    "servings": 2,
+    "description": "上海经典, 简单浓香。",
+    "ingredients": [
+      {
+        "ingredientId": "noodles_dried",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 30,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 30,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 25,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "dark_soy",
+        "amount": 5,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 8,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "葱切段",
+      "锅冷油下葱小火慢慢熬至焦黄",
+      "生抽老抽糖混合葱油",
+      "面条煮熟过水",
+      "拌酱和葱油"
+    ],
+    "tags": [
+      "主食",
+      "快手菜"
+    ]
+  },
+  {
+    "cuisine": "chinese",
+    "regionalCuisine": "homestyle",
+    "status": "reviewed",
+    "cookingMethod": "staple",
+    "id": "noodle_2p_dandan",
+    "nameZh": "担担面(2人份)",
+    "nameEn": "Dan Dan Noodles 2p",
+    "flavors": [
+      "spicy",
+      "salty",
+      "umami"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "medium",
+    "minCookingLevel": "intermediate",
+    "prepTime": 10,
+    "cookTime": 12,
+    "servings": 2,
+    "description": "川式麻辣面。",
+    "ingredients": [
+      {
+        "ingredientId": "noodles_dried",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "pork_mince",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "pickled_mustard",
+        "amount": 30,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sesame_paste",
+        "amount": 20,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "chili_oil",
+        "amount": 20,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "sichuan_pepper",
+        "amount": 2,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 20,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 10,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "肉末加榨菜炒散",
+      "碗加芝麻酱辣油花椒粉生抽冲热水",
+      "面条煮熟入碗",
+      "盖肉末撒葱花"
+    ],
+    "tags": [
+      "主食",
+      "川菜"
+    ]
+  },
+  {
+    "cuisine": "chinese",
+    "regionalCuisine": "homestyle",
+    "status": "reviewed",
+    "cookingMethod": "staple",
+    "id": "noodle_2p_beef_noodle",
+    "nameZh": "红烧牛肉面(2人份)",
+    "nameEn": "Braised Beef Noodles 2p",
+    "flavors": [
+      "salty",
+      "umami"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "medium",
+    "minCookingLevel": "intermediate",
+    "prepTime": 15,
+    "cookTime": 90,
+    "servings": 2,
+    "description": "汤浓肉烂, 经典国民面。",
+    "ingredients": [
+      {
+        "ingredientId": "noodles_dried",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "beef_shank",
+        "amount": 250,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "doubanjiang",
+        "amount": 25,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 25,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 8,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "star_anise",
+        "amount": 2,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "bok_choy",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 10,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "牛肉切块焯水",
+      "炒糖色下牛肉煸炒加豆瓣酱姜八角",
+      "加水炖 1 小时",
+      "面条煮熟入碗加青菜淋牛肉汤"
+    ],
+    "tags": [
+      "主食",
+      "家常"
+    ]
+  },
+  {
+    "cuisine": "chinese",
+    "regionalCuisine": "sichuan",
+    "status": "reviewed",
+    "cookingMethod": "staple",
+    "id": "noodle_2p_chongqing",
+    "nameZh": "重庆小面(2人份)",
+    "nameEn": "Chongqing Noodles 2p",
+    "flavors": [
+      "spicy",
+      "salty",
+      "umami"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "easy",
+    "minCookingLevel": "basic",
+    "prepTime": 5,
+    "cookTime": 10,
+    "servings": 2,
+    "description": "川渝麻辣面食代表。",
+    "ingredients": [
+      {
+        "ingredientId": "noodles_dried",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "chili_oil",
+        "amount": 25,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "sichuan_pepper",
+        "amount": 2,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 20,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "vinegar",
+        "amount": 5,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "pickled_mustard",
+        "amount": 30,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "peanut",
+        "amount": 20,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 10,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "碗底加生抽辣油花椒醋葱花榨菜花生碎",
+      "冲热水或骨汤搅匀",
+      "面条煮熟入碗"
+    ],
+    "tags": [
+      "主食",
+      "川菜",
+      "快手菜"
+    ]
+  },
+  {
+    "cuisine": "chinese",
+    "regionalCuisine": "cantonese",
+    "status": "reviewed",
+    "cookingMethod": "staple",
+    "id": "noodle_2p_cantonese_wonton",
+    "nameZh": "云吞面(2人份)",
+    "nameEn": "Cantonese Wonton Noodle 2p",
+    "flavors": [
+      "umami",
+      "light"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "medium",
+    "minCookingLevel": "intermediate",
+    "prepTime": 30,
+    "cookTime": 10,
+    "servings": 2,
+    "description": "港式经典。",
+    "ingredients": [
+      {
+        "ingredientId": "noodles_dried",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "shrimp",
+        "amount": 150,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "pork_mince",
+        "amount": 80,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "flour",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "bok_choy",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "sesame_oil",
+        "amount": 5,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "虾仁剁碎和肉末调馅",
+      "面粉擀皮包馅",
+      "高汤煮开下云吞 4 分钟",
+      "面条入碗加青菜淋汤"
+    ],
+    "tags": [
+      "主食",
+      "粤菜"
+    ]
+  },
+  {
+    "cuisine": "chinese",
+    "regionalCuisine": "homestyle",
+    "status": "reviewed",
+    "cookingMethod": "staple",
+    "id": "noodle_2p_cold_sesame",
+    "nameZh": "麻酱凉面(2人份)",
+    "nameEn": "Cold Sesame Noodles 2p",
+    "flavors": [
+      "salty",
+      "umami"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "easy",
+    "minCookingLevel": "basic",
+    "prepTime": 8,
+    "cookTime": 8,
+    "servings": 2,
+    "description": "夏日凉面, 麻酱浓郁。",
+    "ingredients": [
+      {
+        "ingredientId": "noodles_dried",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sesame_paste",
+        "amount": 40,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 25,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "vinegar",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 8,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cucumber",
+        "amount": 80,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "carrot",
+        "amount": 50,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 10,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "麻酱加水稀释",
+      "加生抽醋糖蒜泥",
+      "面条煮熟过凉",
+      "黄瓜胡萝卜切丝铺面上",
+      "浇麻酱拌匀"
+    ],
+    "tags": [
+      "主食",
+      "快手菜",
+      "夏季"
+    ]
+  },
+  {
+    "cuisine": "asian_other",
+    "regionalCuisine": "japanese",
+    "status": "reviewed",
+    "cookingMethod": "staple",
+    "id": "noodle_2p_yakisoba",
+    "nameZh": "日式炒面(2人份)",
+    "nameEn": "Yakisoba 2p",
+    "flavors": [
+      "salty",
+      "umami",
+      "sweet"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "easy",
+    "minCookingLevel": "basic",
+    "prepTime": 8,
+    "cookTime": 8,
+    "servings": 2,
+    "description": "日式酱炒面。",
+    "ingredients": [
+      {
+        "ingredientId": "udon_noodles",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cabbage",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "carrot",
+        "amount": 50,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "pork_belly",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 20,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "oyster_sauce",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 15,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "面条焯水松散",
+      "锅热油炒猪肉胡萝卜白菜",
+      "下面条翻炒",
+      "加生抽蚝油糖炒匀"
+    ],
+    "tags": [
+      "主食",
+      "日式"
+    ]
+  },
+  {
+    "cuisine": "chinese",
+    "regionalCuisine": "cantonese",
+    "status": "reviewed",
+    "cookingMethod": "staple",
+    "id": "staple_2p_soy_sauce_chicken_rice",
+    "nameZh": "豉油鸡饭(2人份)",
+    "nameEn": "Soy Sauce Chicken Rice 2p",
+    "flavors": [
+      "salty",
+      "umami",
+      "sweet"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "medium",
+    "minCookingLevel": "intermediate",
+    "prepTime": 10,
+    "cookTime": 30,
+    "servings": 2,
+    "description": "粤式经典烧腊饭。",
+    "ingredients": [
+      {
+        "ingredientId": "rice",
+        "amount": 160,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "chicken_thigh",
+        "amount": 250,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 30,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "dark_soy",
+        "amount": 8,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "bok_choy",
+        "amount": 80,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "鸡腿用豉油糖姜葱腌 30 分钟",
+      "锅煮鸡腿 20 分钟",
+      "米饭煮熟",
+      "青菜焯水",
+      "鸡腿切片配饭"
+    ],
+    "tags": [
+      "主食",
+      "粤菜"
+    ]
+  },
+  {
+    "cuisine": "chinese",
+    "regionalCuisine": "homestyle",
+    "status": "reviewed",
+    "cookingMethod": "staple",
+    "id": "staple_2p_egg_fried_rice",
+    "nameZh": "蛋炒饭(2人份)",
+    "nameEn": "Egg Fried Rice 2p",
+    "flavors": [
+      "salty"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "easy",
+    "minCookingLevel": "beginner",
+    "prepTime": 3,
+    "cookTime": 8,
+    "servings": 2,
+    "description": "简单经典。",
+    "ingredients": [
+      {
+        "ingredientId": "rice",
+        "amount": 250,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "egg",
+        "amount": 3,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 20,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 8,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 2,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "蛋打散",
+      "锅热油炒蛋至半熟",
+      "下米饭翻炒散",
+      "加葱花生抽盐"
+    ],
+    "tags": [
+      "主食",
+      "快手菜"
+    ]
+  },
+  {
+    "cuisine": "chinese",
+    "regionalCuisine": "homestyle",
+    "status": "reviewed",
+    "cookingMethod": "staple",
+    "id": "staple_2p_yangzhou_fried_rice",
+    "nameZh": "扬州炒饭(2人份)",
+    "nameEn": "Yangzhou Fried Rice 2p",
+    "flavors": [
+      "salty",
+      "umami"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "easy",
+    "minCookingLevel": "basic",
+    "prepTime": 8,
+    "cookTime": 10,
+    "servings": 2,
+    "description": "料丰富的经典炒饭。",
+    "ingredients": [
+      {
+        "ingredientId": "rice",
+        "amount": 250,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "egg",
+        "amount": 2,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "shrimp",
+        "amount": 80,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ham",
+        "amount": 50,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "corn",
+        "amount": 50,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "green_bean",
+        "amount": 30,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 20,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 2,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "豌豆玉米焯水",
+      "蛋炒散盛出",
+      "锅炒虾仁火腿",
+      "下米饭炒散",
+      "加豌豆玉米和蛋拌匀",
+      "加葱生抽盐"
+    ],
+    "tags": [
+      "主食"
+    ]
+  },
+  {
+    "cuisine": "chinese",
+    "regionalCuisine": "homestyle",
+    "status": "reviewed",
+    "cookingMethod": "staple",
+    "id": "staple_2p_egg_pancake",
+    "nameZh": "鸡蛋葱花饼(2人份)",
+    "nameEn": "Egg Scallion Pancake 2p",
+    "flavors": [
+      "salty"
+    ],
+    "mealTypes": [
+      "breakfast",
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "easy",
+    "minCookingLevel": "basic",
+    "prepTime": 5,
+    "cookTime": 6,
+    "servings": 2,
+    "description": "简单家常饼。",
+    "ingredients": [
+      {
+        "ingredientId": "flour",
+        "amount": 150,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "egg",
+        "amount": 2,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 20,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 2,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "面粉加蛋葱花盐温水调糊",
+      "平底锅小油摊薄煎两面金黄"
+    ],
+    "tags": [
+      "主食",
+      "快手菜"
+    ]
+  },
+  {
+    "cuisine": "chinese",
+    "regionalCuisine": "homestyle",
+    "status": "reviewed",
+    "cookingMethod": "staple",
+    "id": "staple_2p_pork_dumplings",
+    "nameZh": "猪肉白菜饺子(2人份)",
+    "nameEn": "Pork Cabbage Dumplings 2p",
+    "flavors": [
+      "salty",
+      "umami"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "medium",
+    "minCookingLevel": "intermediate",
+    "prepTime": 60,
+    "cookTime": 10,
+    "servings": 2,
+    "description": "北方经典饺子。",
+    "ingredients": [
+      {
+        "ingredientId": "flour",
+        "amount": 250,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "pork_mince",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cabbage",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "sesame_oil",
+        "amount": 10,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 4,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "面团醒 30 分钟",
+      "白菜切碎挤水",
+      "肉葱姜剁碎调馅",
+      "擀皮包饺子",
+      "水开下饺子煮熟"
+    ],
+    "tags": [
+      "主食",
+      "北方"
+    ]
+  },
+  {
+    "cuisine": "chinese",
+    "regionalCuisine": "homestyle",
+    "status": "reviewed",
+    "cookingMethod": "staple",
+    "id": "staple_2p_xiaolongbao",
+    "nameZh": "小笼包(2人份)",
+    "nameEn": "Soup Dumpling 2p",
+    "flavors": [
+      "umami",
+      "salty"
+    ],
+    "mealTypes": [
+      "breakfast",
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "hard",
+    "minCookingLevel": "advanced",
+    "prepTime": 180,
+    "cookTime": 12,
+    "servings": 2,
+    "description": "上海经典小笼。",
+    "ingredients": [
+      {
+        "ingredientId": "flour",
+        "amount": 150,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "pork_mince",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "pork_skin",
+        "amount": 80,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 8,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 12,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 8,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 4,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 8,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "猪皮熬汤冷冻成冻",
+      "冻切丁拌肉馅",
+      "面团擀薄皮包馅捏褶",
+      "蒸 10 分钟"
+    ],
+    "tags": [
+      "主食",
+      "江浙"
+    ]
   }
 ]

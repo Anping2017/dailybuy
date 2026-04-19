@@ -711,13 +711,33 @@ function composeMeal(
       }
     }
 
-    // 2) 超量反向移除: 累积超 1.3×预算时, 优先移素菜, 不够再移荤菜
+    // 2) 超量反向移除: 累积超 1.3×预算时
+    // 减菜优先级根据主食类型决定:
+    //   - 粥类主食 → 优先减汤(汤+粥都是水水的)
+    //   - 荤类主食 (肉包/牛肉面) → 优先减荤菜
+    //   - 素类主食 (素馄饨/葱花面) → 优先减素菜
+    //   - 默认 → 先减素菜
     let safety = 3;
     while (accumulatedCal > mealBudget * 1.3 && safety > 0) {
       safety--;
-      const vegIdx = result.findIndex(mr => mr.role === 'main_veg');
-      let removeIdx = vegIdx;
-      if (removeIdx < 0) removeIdx = result.findIndex(mr => mr.role === 'main_meat');
+
+      // 找当前餐里的主食决定优先级
+      const stapleMr = result.find(mr => mr.role === 'staple');
+      const stapleRecipe = stapleMr ? allCandidates.find(r => r.id === stapleMr.recipeId) : null;
+      let priorityRoles: DishRole[] = ['main_veg', 'main_meat']; // 默认先素后荤
+      if (stapleRecipe) {
+        const subtype = stapleSubtype(stapleRecipe);
+        const stapleIsMeaty = isMeatDish(stapleRecipe);
+        if (subtype === 'porridge') priorityRoles = ['soup', 'main_veg', 'main_meat'];
+        else if (stapleIsMeaty) priorityRoles = ['main_meat', 'main_veg']; // 荤主食先减荤菜
+        else priorityRoles = ['main_veg', 'main_meat']; // 素主食先减素菜
+      }
+
+      let removeIdx = -1;
+      for (const role of priorityRoles) {
+        removeIdx = result.findIndex(mr => mr.role === role);
+        if (removeIdx >= 0) break;
+      }
       if (removeIdx < 0) break;
       const removed = result.splice(removeIdx, 1)[0];
       const removedRecipe = allCandidates.find(r => r.id === removed.recipeId);
