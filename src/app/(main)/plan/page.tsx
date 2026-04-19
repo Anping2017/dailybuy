@@ -536,8 +536,8 @@ export default function PlanPage() {
                   <div className="flex items-center gap-2">
                     <span className="text-sm font-semibold text-primary">{MEAL_LABELS[mealType]}</span>
                     {isLunchboxDinner && (
-                      <span className="text-[10px] px-1.5 py-0.5 rounded bg-amber-100 text-amber-700 border border-amber-300">
-                        🍱 带饭
+                      <span className="text-[10px] px-1.5 py-0.5 rounded bg-amber-100 text-amber-700 border border-amber-300 font-bold">
+                        🍱 带饭 ×2
                       </span>
                     )}
                     {(profile.calorieEnabled !== false || profile.budgetEnabled !== false) && (
@@ -557,7 +557,7 @@ export default function PlanPage() {
                 </div>
                 {isLunchboxDinner && (
                   <p className="text-[11px] text-amber-700 mt-1">
-                    💡 带饭模式: 晚餐目标已自动包含次日午餐(=日目标-早餐-未开启品类自补), 多做的部分装饭盒作明日午餐。
+                    💡 带饭模式 ×2: 本餐烹制量 ≈ 2 餐份(今日晚餐 + 明日午餐), 目标已扣除早餐/未开启品类自补 = 日目标 − 早餐 − 缺口。
                   </p>
                 )}
                 {suggestMultiplier > 1 && !isLunchboxDinner && (
@@ -604,6 +604,11 @@ export default function PlanPage() {
                           </span>
                           {mr.completed && (
                             <span className="text-[10px] px-1 py-0 rounded bg-green-100 text-green-700 border border-green-300">已完成</span>
+                          )}
+                          {isLunchboxDinner && (
+                            <span className="text-[10px] px-1 py-0 rounded bg-amber-100 text-amber-700 border border-amber-300 font-bold" title="带饭模式: 晚餐所有菜品一并烹制, 相当于 2 餐量(今日晚餐+明日午餐)">
+                              ×2
+                            </span>
                           )}
                         </div>
                         <div className="flex items-center gap-2 flex-shrink-0">
