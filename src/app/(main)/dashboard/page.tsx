@@ -92,7 +92,7 @@ export default function DashboardPage() {
           )}
 
           {/* 每位成员热量建议 - 移到今日菜谱之后 */}
-          {weeklyPlan.memberAdvice && weeklyPlan.memberAdvice.length > 0 && (
+          {profile.calorieEnabled !== false && weeklyPlan.memberAdvice && weeklyPlan.memberAdvice.length > 0 && (
             <div className="space-y-2">
               <h2 className="text-sm font-semibold">热量建议</h2>
               {weeklyPlan.memberAdvice.map(adv => {

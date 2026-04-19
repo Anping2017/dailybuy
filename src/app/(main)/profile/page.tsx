@@ -179,6 +179,7 @@ export default function ProfilePage() {
             key={member.id}
             member={member}
             index={idx}
+            calorieEnabled={profile.calorieEnabled !== false}
             onUpdate={(updates) => updateMember(member.id, updates)}
             onRemove={profile.members.length > 1 ? () => removeMember(member.id) : undefined}
           />
@@ -374,6 +375,15 @@ export default function ProfilePage() {
           )}
         </div>
 
+        <div className="mb-3">
+          <SwitchRow
+            label="卡路里计算"
+            desc={profile.calorieEnabled === false ? '关闭后所有热量相关显示都会隐藏' : '显示菜品/餐次/今日热量与人均'}
+            value={profile.calorieEnabled !== false}
+            onClick={() => setProfile({ calorieEnabled: profile.calorieEnabled === false })}
+          />
+        </div>
+
         <div className="flex items-center justify-between">
           <label className="text-sm text-muted">生成菜谱时自动加入采购清单</label>
           <button onClick={() => setProfile({ autoAddToShoppingList: !profile.autoAddToShoppingList })}
@@ -493,8 +503,8 @@ export default function ProfilePage() {
         )}
       </Section>
 
-      {/* 设置合理性检查 (需求1 提示) */}
-      {(() => {
+      {/* 设置合理性检查 (需求1 提示) - 仅在启用热量计算时显示 */}
+      {profile.calorieEnabled !== false && (() => {
         const est = estimateSettingsCalories(profile);
         if (est.warn === 'ok') return null;
         const color = est.warn === 'high' ? 'bg-red-50 border-red-200 text-red-800' : 'bg-amber-50 border-amber-200 text-amber-800';
@@ -535,9 +545,10 @@ function Section({ title, children }: { title: string; children: React.ReactNode
 }
 
 function MemberCard({
-  member, index, onUpdate, onRemove,
+  member, index, calorieEnabled, onUpdate, onRemove,
 }: {
   member: FamilyMember; index: number;
+  calorieEnabled?: boolean;
   onUpdate: (updates: Partial<FamilyMember>) => void;
   onRemove?: () => void;
 }) {
@@ -672,43 +683,47 @@ function MemberCard({
         </div>
       </div>
 
-      {/* 健康目标 - 需求4 */}
-      <label className="text-xs text-muted block mb-1">健康目标</label>
-      <div className="grid grid-cols-2 gap-1 mb-2">
-        {(Object.keys(GOAL_LABELS) as FitnessGoal[]).map(g => {
-          const active = (member.fitnessGoal || 'maintain') === g;
-          const presetCal = getTargetCaloriesByGoal(gender, member.ageGroup, g, member.height, member.weight);
-          return (
-            <button key={g} onClick={() => onUpdate({ fitnessGoal: g, dailyCalorieTarget: presetCal })}
-              className={`text-left p-2 rounded border transition ${active ? 'border-primary bg-primary/5' : 'border-border hover:border-primary/50'}`}>
-              <p className="text-xs font-medium">{GOAL_LABELS[g]}</p>
-              <p className="text-[10px] text-muted">{GOAL_DESC[g]}</p>
-              <p className="text-[10px] text-primary">≈{presetCal} kcal</p>
-            </button>
-          );
-        })}
-      </div>
+      {/* 健康目标 + 每日热量 - 仅在启用热量计算时显示 */}
+      {calorieEnabled !== false && (
+        <>
+          <label className="text-xs text-muted block mb-1">健康目标</label>
+          <div className="grid grid-cols-2 gap-1 mb-2">
+            {(Object.keys(GOAL_LABELS) as FitnessGoal[]).map(g => {
+              const active = (member.fitnessGoal || 'maintain') === g;
+              const presetCal = getTargetCaloriesByGoal(gender, member.ageGroup, g, member.height, member.weight);
+              return (
+                <button key={g} onClick={() => onUpdate({ fitnessGoal: g, dailyCalorieTarget: presetCal })}
+                  className={`text-left p-2 rounded border transition ${active ? 'border-primary bg-primary/5' : 'border-border hover:border-primary/50'}`}>
+                  <p className="text-xs font-medium">{GOAL_LABELS[g]}</p>
+                  <p className="text-[10px] text-muted">{GOAL_DESC[g]}</p>
+                  <p className="text-[10px] text-primary">≈{presetCal} kcal</p>
+                </button>
+              );
+            })}
+          </div>
 
-      <label className="text-xs text-muted block mb-1">
-        每日热量目标 (kcal)
-        <span className="text-primary ml-1">基础推荐: {recommended}</span>
-      </label>
-      <div className="flex gap-2 items-center">
-        <input
-          type="number"
-          value={member.dailyCalorieTarget}
-          onChange={e => onUpdate({ dailyCalorieTarget: Number(e.target.value) || 2000 })}
-          className="flex-1 border border-border rounded px-2 py-1 text-sm bg-transparent"
-        />
-        {member.dailyCalorieTarget !== recommended && (
-          <button
-            onClick={() => onUpdate({ dailyCalorieTarget: recommended, fitnessGoal: undefined })}
-            className="text-xs text-primary hover:underline whitespace-nowrap"
-          >
-            重置推荐
-          </button>
-        )}
-      </div>
+          <label className="text-xs text-muted block mb-1">
+            每日热量目标 (kcal)
+            <span className="text-primary ml-1">基础推荐: {recommended}</span>
+          </label>
+          <div className="flex gap-2 items-center">
+            <input
+              type="number"
+              value={member.dailyCalorieTarget}
+              onChange={e => onUpdate({ dailyCalorieTarget: Number(e.target.value) || 2000 })}
+              className="flex-1 border border-border rounded px-2 py-1 text-sm bg-transparent"
+            />
+            {member.dailyCalorieTarget !== recommended && (
+              <button
+                onClick={() => onUpdate({ dailyCalorieTarget: recommended, fitnessGoal: undefined })}
+                className="text-xs text-primary hover:underline whitespace-nowrap"
+              >
+                重置推荐
+              </button>
+            )}
+          </div>
+        </>
+      )}
     </div>
   );
 }

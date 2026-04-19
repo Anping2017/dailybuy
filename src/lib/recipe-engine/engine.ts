@@ -333,20 +333,29 @@ function scoreRecipe(
   // 自定义菜谱稍微加权 +2 (用户自己加的菜希望多看到)
   if (recipe.isCustom) score += 2;
 
+  // servings 匹配度: 偏向选份数与家庭人数匹配的菜，减少 "做 3 人份给 2 人吃" 的浪费
+  const servingDiff = Math.abs((recipe.servings || 2) - (profile.familySize || 2));
+  if (servingDiff === 0) score += 3;
+  else if (servingDiff === 1) score += 1;
+  else if (servingDiff === 2) score -= 2;
+  else score -= 5;
+
   // 热量预算控制 (需求1)
   // remainingCal = 本餐剩余可用热量, dishCal = 本菜预计热量
-  // 如果 dishCal > remainingCal, 严重扣分; 如果只剩少量预算而菜热量很大, 扣分递增
   if (remainingCal !== undefined && remainingCal > 0) {
     const dishCal = calcRecipeCalForFamily(recipe, profile.familySize);
+    // 超预算 → 扣分
     if (dishCal > remainingCal * 1.5) score -= 15;             // 超预算 50% → -15
     else if (dishCal > remainingCal * 1.2) score -= 8;         // 超预算 20% → -8
     else if (dishCal > remainingCal) score -= 3;                // 刚好超 → -3
-    else if (dishCal < remainingCal * 0.4 && remainingCal > 300) score += 2;  // 还剩很多预算 → 偏好稍大的菜
+    // 预算大 → 偏好大菜(对抗"全是小菜堆热量"的问题)
+    else if (remainingCal > 800 && dishCal > remainingCal * 0.6) score += 4;
+    else if (remainingCal > 500 && dishCal > remainingCal * 0.5) score += 2;
     else if (dishCal <= remainingCal) score += 1;              // 刚好在预算内 → +1
   } else if (remainingCal !== undefined && remainingCal <= 0) {
-    // 预算已用完, 强烈惩罚任何菜 → 几乎全扣分
+    // 预算已用完, 强烈惩罚任何菜
     const dishCal = calcRecipeCalForFamily(recipe, profile.familySize);
-    score -= Math.min(25, dishCal / 50);  // 菜越大扣越多
+    score -= Math.min(25, dishCal / 50);
   }
 
   // 加随机扰动 (0-1) 保证多样性
@@ -568,6 +577,33 @@ function composeMeal(
     if (r) { result.push({ recipeId: r.id, role: isMeatDish(r) ? 'main_meat' : 'main_veg' }); usedIds.add(r.id); trackPick(r); }
   }
 
+  // 缺口补菜: 如果缺口 > 40% 预算且 > 400 kcal, 补一道大菜(最多补 1 道)
+  if (mealBudget > 0) {
+    const deficit = mealBudget - accumulatedCal;
+    if (deficit > mealBudget * 0.4 && deficit > 400) {
+      const fillPool = allCandidates.filter(r => !usedIds.has(r.id));
+      const preferHot = fillPool.filter(r => {
+        const role = inferRole(r);
+        return role === 'main_meat' || role === 'main_veg';
+      });
+      const pool = preferHot.length > 0 ? preferHot : fillPool;
+      const pick = pickBest(
+        pool,
+        usedIds, profile, ownedIngredients, getPreference, getFeedback,
+        deficit,  // 把缺口当作 remainingCal, 引导选大菜
+      );
+      if (pick) {
+        const role: DishRole = pick.cookingMethod === 'soup' ? 'soup'
+          : pick.cookingMethod === 'staple' ? 'staple'
+          : pick.cookingMethod === 'cold_dish' ? 'cold'
+          : (isMeatDish(pick) ? 'main_meat' : 'main_veg');
+        result.push({ recipeId: pick.id, role });
+        usedIds.add(pick.id);
+        trackPick(pick);
+      }
+    }
+  }
+
   return result;
 }
 
@@ -674,13 +710,22 @@ function smartPick(
     if (profile.favoritesInRandom !== false && (profile.favoriteRecipes || []).includes(r.id)) score += 6;
     if (r.isCustom) score += 2;
 
+    // servings 匹配度
+    const servingDiff = Math.abs((r.servings || 2) - (profile.familySize || 2));
+    if (servingDiff === 0) score += 3;
+    else if (servingDiff === 1) score += 1;
+    else if (servingDiff === 2) score -= 2;
+    else score -= 5;
+
     // 热量预算 (需求1)
     if (remainingCal !== undefined && remainingCal > 0) {
       const dishCal = calcRecipeCalForFamily(r, profile.familySize);
       if (dishCal > remainingCal * 1.5) score -= 15;
       else if (dishCal > remainingCal * 1.2) score -= 8;
       else if (dishCal > remainingCal) score -= 3;
-      else if (dishCal < remainingCal * 0.4 && remainingCal > 300) score += 2;
+      // 预算大 → 偏好大菜
+      else if (remainingCal > 800 && dishCal > remainingCal * 0.6) score += 4;
+      else if (remainingCal > 500 && dishCal > remainingCal * 0.5) score += 2;
       else if (dishCal <= remainingCal) score += 1;
     } else if (remainingCal !== undefined && remainingCal <= 0) {
       const dishCal = calcRecipeCalForFamily(r, profile.familySize);
@@ -1117,13 +1162,12 @@ export function generateShoppingList(plan: WeeklyPlan, ownedIngredients: string[
       const recipe = recipeMap.get(mr.recipeId);
       if (!recipe) continue;
 
-      const ratio = slot.servings / recipe.servings;
-
       for (const ri of recipe.ingredients) {
         const ingredient = getIngredientById(ri.ingredientId);
         if (!ingredient) continue;
 
-        const amount = ri.amount * ratio;
+        // 食材按原配方量(不缩放) — 用户按菜谱做整份菜
+        const amount = ri.amount;
         const existing = itemMap.get(ri.ingredientId);
 
         if (existing) {

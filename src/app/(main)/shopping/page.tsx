@@ -82,7 +82,7 @@ function generateSpendingText(list: ShoppingList): string {
 }
 
 export default function ShoppingPage() {
-  const { profile, shoppingList, togglePurchased, removeShoppingItem, removeMultipleShoppingItems, updateItemActualPrice } = useAppStore();
+  const { profile, shoppingList, togglePurchased, removeShoppingItem, removeMultipleShoppingItems, updateItemActualPrice, updateItemAmount } = useAppStore();
   const budgetOn = profile.budgetEnabled !== false;
   const [mounted, setMounted] = useState(false);
   const [filter, setFilter] = useState<'all' | 'to_buy' | 'purchased'>('all');
@@ -250,9 +250,24 @@ export default function ShoppingPage() {
                   <div className={`flex-1 min-w-0 ${item.isPurchased ? 'line-through-animated' : ''}`}>
                     <p className="font-medium text-sm">{item.ingredientName}</p>
                     <p className="text-xs text-muted">{item.ingredientNameEn}</p>
-                    <p className="text-xs text-muted mt-0.5">
-                      {item.totalAmount}{item.unit} &middot; 用于: {item.fromRecipes.join(', ')}
-                    </p>
+                    {item.isPurchased ? (
+                      // 已购: 重量可编辑
+                      <div className="flex items-center gap-1 mt-0.5 text-xs text-muted">
+                        <input
+                          type="number"
+                          value={item.totalAmount}
+                          onChange={(e) => updateItemAmount(item.ingredientId, Number(e.target.value) || 0)}
+                          title="实际购买数量"
+                          className="w-14 border border-border rounded px-1 py-0.5 bg-background focus:border-primary outline-none"
+                        />
+                        <span>{item.unit}</span>
+                        <span>&middot; 用于: {item.fromRecipes.join(', ')}</span>
+                      </div>
+                    ) : (
+                      <p className="text-xs text-muted mt-0.5">
+                        {item.totalAmount}{item.unit} &middot; 用于: {item.fromRecipes.join(', ')}
+                      </p>
+                    )}
                   </div>
 
                   {/* 价格和删除 */}

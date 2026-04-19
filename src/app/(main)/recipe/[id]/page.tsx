@@ -63,35 +63,37 @@ export default function RecipeDetailPage() {
         {recipe.tags?.map(t => <Tag key={t} label={t} />)}
       </div>
 
-      {/* 营养概览 */}
-      <div className="bg-card border border-border rounded-lg p-4">
-        <div className="grid grid-cols-3 gap-3 text-center mb-3">
-          <div>
-            <p className="text-2xl font-bold text-accent">{perServing}</p>
-            <p className="text-xs text-muted">kcal/人</p>
+      {/* 营养概览 - calorieEnabled=false 时整块隐藏 */}
+      {profile.calorieEnabled !== false && (
+        <div className="bg-card border border-border rounded-lg p-4">
+          <div className="grid grid-cols-3 gap-3 text-center mb-3">
+            <div>
+              <p className="text-2xl font-bold text-accent">{perServing}</p>
+              <p className="text-xs text-muted">kcal/人</p>
+            </div>
+            <div>
+              <p className="text-2xl font-bold text-primary">${cost.toFixed(2)}</p>
+              <p className="text-xs text-muted">预估成本</p>
+            </div>
+            <div>
+              <p className="text-2xl font-bold">{recipe.prepTime + recipe.cookTime}</p>
+              <p className="text-xs text-muted">分钟</p>
+            </div>
           </div>
-          <div>
-            <p className="text-2xl font-bold text-primary">${cost.toFixed(2)}</p>
-            <p className="text-xs text-muted">预估成本</p>
-          </div>
-          <div>
-            <p className="text-2xl font-bold">{recipe.prepTime + recipe.cookTime}</p>
-            <p className="text-xs text-muted">分钟</p>
-          </div>
-        </div>
 
-        {/* 三大营养素 */}
-        <div className="flex h-3 rounded-full overflow-hidden mb-2">
-          <div className="bg-blue-400" style={{ width: `${pP}%` }} />
-          <div className="bg-yellow-400" style={{ width: `${fP}%` }} />
-          <div className="bg-green-400" style={{ width: `${cP}%` }} />
+          {/* 三大营养素 */}
+          <div className="flex h-3 rounded-full overflow-hidden mb-2">
+            <div className="bg-blue-400" style={{ width: `${pP}%` }} />
+            <div className="bg-yellow-400" style={{ width: `${fP}%` }} />
+            <div className="bg-green-400" style={{ width: `${cP}%` }} />
+          </div>
+          <div className="flex justify-between text-xs text-muted">
+            <span>蛋白 {nutr.protein.toFixed(1)}g ({pP}%)</span>
+            <span>脂肪 {nutr.fat.toFixed(1)}g ({fP}%)</span>
+            <span>碳水 {nutr.carbs.toFixed(1)}g ({cP}%)</span>
+          </div>
         </div>
-        <div className="flex justify-between text-xs text-muted">
-          <span>蛋白 {nutr.protein.toFixed(1)}g ({pP}%)</span>
-          <span>脂肪 {nutr.fat.toFixed(1)}g ({fP}%)</span>
-          <span>碳水 {nutr.carbs.toFixed(1)}g ({cP}%)</span>
-        </div>
-      </div>
+      )}
 
       {/* 食材 */}
       <div className="bg-card border border-border rounded-lg p-4">

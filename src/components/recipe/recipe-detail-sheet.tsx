@@ -3,6 +3,7 @@
 import { useAppStore } from '@/lib/store';
 import { getIngredient } from '@/lib/data/recipe-repository';
 import { calcRecipeNutrition } from '@/lib/nutrition/calculator';
+// useAppStore for calorieEnabled flag
 import { Star, X, CalendarPlus, Edit, Trash2, Clock, Users } from 'lucide-react';
 import type { Recipe } from '@/types';
 import Link from 'next/link';
@@ -21,7 +22,8 @@ export function RecipeDetailSheet({ recipe, isFavorite, onClose, onToggleFav, on
   onAddToPlan: () => void;
   onEdit?: () => void;
 }) {
-  const { removeCustomRecipe } = useAppStore();
+  const { removeCustomRecipe, profile } = useAppStore();
+  const calorieOn = profile.calorieEnabled !== false;
   const nutrition = calcRecipeNutrition(recipe);
   const perServing = Math.round(nutrition.totalCalories / Math.max(1, recipe.servings));
 
@@ -66,7 +68,7 @@ export function RecipeDetailSheet({ recipe, isFavorite, onClose, onToggleFav, on
             <span className="flex items-center gap-1"><Users className="w-3 h-3" /> {recipe.servings} 人份</span>
             <span>{METHOD_LABELS[recipe.cookingMethod] || recipe.cookingMethod}</span>
             <span>{DIFF_LABELS[recipe.difficulty]}</span>
-            <span className="text-accent">{perServing} kcal/份</span>
+            {calorieOn && <span className="text-accent">{perServing} kcal/份</span>}
           </div>
 
           {/* 食材 */}

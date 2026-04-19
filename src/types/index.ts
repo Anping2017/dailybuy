@@ -286,6 +286,7 @@ export interface UserProfile {
   dailyFruitCount?: number;                // 每天水果种类数(0=不推荐)
   excludeIngredients?: string[];           // 长期排除的食材 ID（饮食限制补充）
   budgetEnabled?: boolean;                  // 是否启用预算管理(false=不限预算)
+  calorieEnabled?: boolean;                 // 是否启用热量计算(false=隐藏所有 kcal 显示)
   customRecipes?: Recipe[];                 // 用户自定义菜谱
   favoriteRecipes?: string[];               // 收藏的菜谱 ID
   favoritesInRandom?: boolean;              // 收藏菜谱是否参与随机推荐

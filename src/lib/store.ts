@@ -101,6 +101,7 @@ const defaultProfile: UserProfile = {
   dailyFruitCount: 0,
   excludeIngredients: [],
   budgetEnabled: true,
+  calorieEnabled: true,
   customRecipes: [],
   favoriteRecipes: [],
   favoritesInRandom: true,
@@ -226,13 +227,13 @@ export const useAppStore = create<AppState>()(
           };
 
           const items = [...list.items];
-          const ratio = servings / recipe.servings;
 
           for (const ri of recipe.ingredients) {
             const ingredient = getIngredient(ri.ingredientId) as Ingredient | undefined;
             if (!ingredient) continue;
 
-            const amount = ri.amount * ratio;
+            // 食材按原配方量(不缩放) — 用户按菜谱做整份菜
+            const amount = ri.amount;
             const existing = items.find(i => i.ingredientId === ri.ingredientId);
 
             if (existing) {
