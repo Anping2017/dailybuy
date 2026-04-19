@@ -337,21 +337,28 @@ export default function ProfilePage() {
           ))}
         </div>
 
-        <label className="text-sm text-muted block mb-1">每日餐次（多选）</label>
+        <label className="text-sm text-muted block mb-1">
+          每日餐次（多选）
+          {profile.lunchboxMode && <span className="text-[11px] text-muted ml-1">· 带饭模式仅可选 早/晚 餐</span>}
+        </label>
         <div className="flex gap-2 mb-3">
-          {(Object.keys(MEAL_LABELS) as MealType[]).map(m => (
-            <ToggleChip
-              key={m}
-              label={MEAL_LABELS[m]}
-              active={profile.mealsPerDay.includes(m)}
-              onClick={() => {
-                const next = profile.mealsPerDay.includes(m)
-                  ? profile.mealsPerDay.filter(x => x !== m)
-                  : [...profile.mealsPerDay, m];
-                setProfile({ mealsPerDay: next.length > 0 ? next : ['dinner'] });
-              }}
-            />
-          ))}
+          {(Object.keys(MEAL_LABELS) as MealType[]).map(m => {
+            const disabled = profile.lunchboxMode && m === 'lunch';
+            return (
+              <ToggleChip
+                key={m}
+                label={MEAL_LABELS[m]}
+                active={profile.mealsPerDay.includes(m) && !disabled}
+                onClick={() => {
+                  if (disabled) return;
+                  const next = profile.mealsPerDay.includes(m)
+                    ? profile.mealsPerDay.filter(x => x !== m)
+                    : [...profile.mealsPerDay, m];
+                  setProfile({ mealsPerDay: next.length > 0 ? next : ['dinner'] });
+                }}
+              />
+            );
+          })}
         </div>
         <p className="text-xs text-muted mb-3">
           将生成 {profile.planDays} 天 × {profile.mealsPerDay.length} 餐 = {profile.planDays * profile.mealsPerDay.length} 个菜谱
@@ -384,6 +391,31 @@ export default function ProfilePage() {
             value={profile.calorieEnabled !== false}
             onClick={() => setProfile({ calorieEnabled: profile.calorieEnabled === false })}
           />
+        </div>
+
+        <div className="mb-3">
+          <SwitchRow
+            label="带饭模式"
+            desc={profile.lunchboxMode
+              ? `晚餐按 ${profile.familySize}×2=${profile.familySize * 2} 人规划，多做的留作明天午餐`
+              : '关闭则按实际人数规划三餐'}
+            value={!!profile.lunchboxMode}
+            onClick={() => {
+              const turningOn = !profile.lunchboxMode;
+              const updates: Partial<typeof profile> = { lunchboxMode: turningOn };
+              // 开启带饭模式: 强制只保留早餐+晚餐(午餐由前一晚的剩菜补足)
+              if (turningOn) {
+                const next = profile.mealsPerDay.filter(m => m === 'breakfast' || m === 'dinner');
+                updates.mealsPerDay = next.length > 0 ? next : ['breakfast', 'dinner'];
+              }
+              setProfile(updates);
+            }}
+          />
+          {profile.lunchboxMode && (
+            <p className="ml-1 mt-1 text-[11px] text-muted">
+              💡 已自动隐藏午餐规划。晚餐按 2 倍人数热量自动多选/加菜，方便次日带饭。
+            </p>
+          )}
         </div>
 
         <div className="flex items-center justify-between">
@@ -465,9 +497,9 @@ export default function ProfilePage() {
           {profile.includeSoup && (
             <div className="ml-4 mb-1">
               <label className="text-xs text-muted block mb-1">汤偏好</label>
-              <div className="flex gap-1">
-                {(['any','meat','veg'] as const).map(v => {
-                  const label = v === 'any' ? '不限' : v === 'meat' ? '荤汤' : '素汤';
+              <div className="flex gap-1 flex-wrap">
+                {(['any','meat','egg','veg'] as const).map(v => {
+                  const label = v === 'any' ? '不限' : v === 'meat' ? '荤汤' : v === 'egg' ? '蛋汤' : '素汤';
                   const active = (profile.soupStyle || 'any') === v;
                   return (
                     <button key={v} onClick={() => setProfile({ soupStyle: v })}

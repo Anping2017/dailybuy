@@ -1,6 +1,6 @@
 'use client';
 
-import { useAppStore, getPreferenceScore, getFeedbackAdjustment } from '@/lib/store';
+import { useAppStore, getPreferenceScore, getFeedbackAdjustment, getRecentCookPenalty } from '@/lib/store';
 import { useRouter } from 'next/navigation';
 import { useEffect, useState } from 'react';
 import { RefreshCw, X, Flame, ShoppingCart, Check, Sparkles, Share2, Copy, CheckCheck, CalendarDays, List, ChevronRight, Package, ChevronDown, Save, Archive, Trash2 } from 'lucide-react';
@@ -30,7 +30,7 @@ const ROLE_COLORS: Record<DishRole, string> = {
 
 export default function PlanPage() {
   const router = useRouter();
-  const { profile, weeklyPlan, shoppingList, setWeeklyPlan, setShoppingList, removeMealSlot, replaceSingleRecipe, ownedIngredients, addOwnedIngredient, removeOwnedIngredient, addRecipeToShoppingList, removeRecipeFromShoppingList, recordAction, recordSwapReason, savedPlans, saveCurrentPlan, loadSavedPlan, deleteSavedPlan } = useAppStore();
+  const { profile, setProfile, weeklyPlan, shoppingList, setWeeklyPlan, setShoppingList, removeMealSlot, replaceSingleRecipe, ownedIngredients, addOwnedIngredient, removeOwnedIngredient, addRecipeToShoppingList, removeRecipeFromShoppingList, recordAction, recordSwapReason, savedPlans, saveCurrentPlan, loadSavedPlan, deleteSavedPlan } = useAppStore();
   const [mounted, setMounted] = useState(false);
   const [showWeekShare, setShowWeekShare] = useState(false);
   const [weekShareCopied, setWeekShareCopied] = useState(false);
@@ -79,9 +79,17 @@ export default function PlanPage() {
     if (reason === 'dislike_flavor' && specifics?.flavors) {
       specifics.flavors.forEach(f => excludeFlavors.add(f));
     }
+    // 本周已选菜谱 ID 集合(避免一周内重复, 即使是别的餐次)
+    const thisWeekIds = new Set<string>();
+    for (const slot of (weeklyPlan?.slots || [])) {
+      for (const mr of (slot.recipes || [])) {
+        if (mr.recipeId !== targetRecipeId) thisWeekIds.add(mr.recipeId);  // 排除目标菜本身(允许换回原菜的角色但 r.id 检查会拒绝原菜)
+      }
+    }
     const sameRole = pool.filter(r => {
       if (r.id === targetRecipeId) return false;
       if ((meal?.recipes || []).some(m => m.recipeId === r.id)) return false;
+      if (thisWeekIds.has(r.id)) return false;  // 本周不重复
       // 本次换菜: 排除含勾选食材的菜
       if (excludeIngIds.size > 0 && r.ingredients.some(ri => excludeIngIds.has(ri.ingredientId))) return false;
       // 本次换菜: 排除含勾选口味的菜
@@ -93,7 +101,7 @@ export default function PlanPage() {
     });
     if (sameRole.length === 0) { setSwapTarget(null); return; }
     const scored = sameRole
-      .map(r => ({ r, s: getFeedbackAdjustment(r) + getPreferenceScore(r.id) * 0.5 + Math.random() * 3 }))
+      .map(r => ({ r, s: getFeedbackAdjustment(r) + (getPreferenceScore(r.id) + getRecentCookPenalty(r.id)) * 0.5 + Math.random() * 3 }))
       .sort((a, b) => b.s - a.s);
     const topN = Math.max(1, Math.ceil(scored.length * 0.3));
     const pick = scored[Math.floor(Math.random() * topN)].r;
@@ -128,7 +136,9 @@ export default function PlanPage() {
         }
       }
     }
-    const plan = generateWeeklyPlan(profile, ownedIngredients || [], getPreferenceScore, getFeedbackAdjustment);
+    // 偏好打分 = 历史反馈分 + 短期烹饪衰减(越近做过越扣分)
+    const prefWithRecency = (id: string) => getPreferenceScore(id) + getRecentCookPenalty(id);
+    const plan = generateWeeklyPlan(profile, ownedIngredients || [], prefWithRecency, getFeedbackAdjustment);
 
     // AI 辅助分析模式: 把本次方案写入队列, 把分析 id 关联到 plan
     if (profile.recommendMode === 'ai_assist') {
@@ -639,7 +649,6 @@ export default function PlanPage() {
             onClose={() => setSwapTarget(null)}
             onPick={(reason, specifics) => handleSwapWithReason(swapTarget.recipeId, swapTarget.mealType, swapTarget.role, swapTarget.day, reason, specifics)}
             onPickSpecific={(newRecipeId) => {
-              // 直接替换为指定菜
               recordAction(swapTarget.recipeId, 'rejected', 'just_want_different');
               recordAction(newRecipeId, 'swapped_in');
               replaceSingleRecipe(swapTarget.day, swapTarget.mealType, swapTarget.recipeId, newRecipeId, swapTarget.role);
@@ -649,6 +658,12 @@ export default function PlanPage() {
                 addRecipeToShoppingList(newRecipeId, slot?.servings || profile.familySize);
               }
               setSwapTarget(null);
+            }}
+            onAddPermanentExclude={(ingredientIds) => {
+              // 加入 profile.excludeIngredients (去重)
+              const current = new Set(profile.excludeIngredients || []);
+              ingredientIds.forEach(id => current.add(id));
+              setProfile({ excludeIngredients: Array.from(current) });
             }}
           />
         );
@@ -794,16 +809,18 @@ const FLAVOR_ZH: Record<string, string> = {
   salty: '咸', umami: '鲜', light: '清淡',
 };
 
-function SwapReasonDialog({ recipe, role, onClose, onPick, onPickSpecific }: {
+function SwapReasonDialog({ recipe, role, onClose, onPick, onPickSpecific, onAddPermanentExclude }: {
   recipe: import('@/types').Recipe;
   role: DishRole;
   onClose: () => void;
   onPick: (reason: import('@/types').SwapReason, specifics?: { ingredientIds?: string[]; flavors?: string[] }) => void;
   onPickSpecific: (recipeId: string) => void;
+  onAddPermanentExclude: (ingredientIds: string[]) => void;  // 把食材加入 profile.excludeIngredients
 }) {
   const [step, setStep] = useState<'main' | 'ingredients' | 'flavors' | 'inconvenient' | 'library'>('main');
   const [selectedIngs, setSelectedIngs] = useState<string[]>([]);
   const [selectedFlavors, setSelectedFlavors] = useState<string[]>([]);
+  const [inconvenientPersist, setInconvenientPersist] = useState<'short' | 'long'>('short');  // 不方便: 短期(30天)/长期(永久排除)
   const [librarySearch, setLibrarySearch] = useState('');
   const [sameRoleOnly, setSameRoleOnly] = useState(true);
 
@@ -865,6 +882,11 @@ function SwapReasonDialog({ recipe, role, onClose, onPick, onPickSpecific }: {
       onPick('dislike_flavor', { flavors: selectedFlavors });
     } else if (step === 'inconvenient') {
       if (selectedIngs.length === 0) return;
+      if (inconvenientPersist === 'long') {
+        // 长期: 加入 profile.excludeIngredients(永久排除)
+        onAddPermanentExclude(selectedIngs);
+      }
+      // 同时执行本次换菜(短期/长期都要换菜); 长期时不再写30天feedback(已永久排除)
       onPick('inconvenient_ingredient', { ingredientIds: selectedIngs });
     }
   };
@@ -963,7 +985,7 @@ function SwapReasonDialog({ recipe, role, onClose, onPick, onPickSpecific }: {
           <div className="flex-1 overflow-y-auto p-4">
             <p className="text-sm font-medium mb-1">选择哪个食材？</p>
             <p className="text-xs text-muted mb-3">
-              {step === 'ingredients' ? '本次换菜会避开含勾选食材的菜' : '本次换菜避开，且 30 天内降权类似菜'}
+              {step === 'ingredients' ? '本次换菜会避开含勾选食材的菜' : '本次换菜避开'}
             </p>
             <div className="flex flex-wrap gap-1.5">
               {ingList.map(ing => {
@@ -979,9 +1001,35 @@ function SwapReasonDialog({ recipe, role, onClose, onPick, onPickSpecific }: {
                 );
               })}
             </div>
-            <p className="text-[10px] text-muted mt-3 leading-relaxed">
-              💡 <span>这是一次性反馈</span>，只影响本次换菜。如果长期不吃这种食材，建议去<Link href="/profile" className="text-primary underline">偏好设置</Link>的「长期排除食材」添加，效果更稳定。
-            </p>
+
+            {/* 不方便获取: 长期/短期 选择 */}
+            {step === 'inconvenient' && (
+              <div className="mt-4 pt-3 border-t border-border">
+                <p className="text-xs font-medium mb-2">这次不方便, 还是长期都不方便?</p>
+                <div className="flex gap-2">
+                  <button
+                    onClick={() => setInconvenientPersist('short')}
+                    className={`flex-1 p-2 rounded border text-xs text-left transition ${inconvenientPersist === 'short' ? 'border-primary bg-primary/5' : 'border-border'}`}
+                  >
+                    <p className="font-medium">⏱ 短期(本次)</p>
+                    <p className="text-muted">只本次换菜, 不影响后续</p>
+                  </button>
+                  <button
+                    onClick={() => setInconvenientPersist('long')}
+                    className={`flex-1 p-2 rounded border text-xs text-left transition ${inconvenientPersist === 'long' ? 'border-primary bg-primary/5' : 'border-border'}`}
+                  >
+                    <p className="font-medium">🚫 长期(永久排除)</p>
+                    <p className="text-muted">加入设置→长期排除食材</p>
+                  </button>
+                </div>
+              </div>
+            )}
+
+            {step === 'ingredients' && (
+              <p className="text-[10px] text-muted mt-3 leading-relaxed">
+                💡 这是一次性反馈, 只影响本次换菜。如果长期不吃这种食材, 建议去<Link href="/profile" className="text-primary underline">偏好设置</Link>的「长期排除食材」添加, 效果更稳定。
+              </p>
+            )}
           </div>
         )}
 

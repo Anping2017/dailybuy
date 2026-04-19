@@ -268,7 +268,7 @@ export interface UserProfile {
   staplePreference: StaplePreference[];    // 主食偏好(多选)
   stapleMode: 'off' | 'fixed' | 'random'; // 主食推荐模式: 不推荐|固定|随机
   includeSoup: boolean;                    // 是否推荐汤
-  soupStyle?: 'meat' | 'veg' | 'any';      // 汤偏好: 荤汤/素汤/不限(默认)
+  soupStyle?: 'meat' | 'veg' | 'egg' | 'any';  // 汤偏好: 荤汤/素汤/蛋汤/不限(默认)
   includeFruit: boolean;                   // 是否推荐水果
   includeColdDish: boolean;                // 是否推荐凉菜
   coldDishStyle?: 'meat' | 'veg' | 'any';  // 凉菜偏好: 荤凉菜/素凉菜/不限(默认)
@@ -293,6 +293,7 @@ export interface UserProfile {
   customRecipes?: Recipe[];                 // 用户自定义菜谱
   favoriteRecipes?: string[];               // 收藏的菜谱 ID
   favoritesInRandom?: boolean;              // 收藏菜谱是否参与随机推荐
+  lunchboxMode?: boolean;                    // 带饭模式: 晚餐按人数×2 规划(预留第二天午餐)
 }
 
 // --- 每周计划 ---

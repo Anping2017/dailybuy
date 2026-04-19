@@ -113,6 +113,7 @@ const defaultProfile: UserProfile = {
   customRecipes: [],
   favoriteRecipes: [],
   favoritesInRandom: true,
+  lunchboxMode: false,
 };
 
 export const useAppStore = create<AppState>()(
@@ -579,6 +580,42 @@ export function getPreferenceScore(recipeId: string): number {
   const effective = pref.score * decay;
 
   return Math.abs(effective) < 0.5 ? 0 : Math.round(effective * 10) / 10;
+}
+
+/**
+ * 短期烹饪权重: 越近做的菜, 扣分越多, 减少出现频率
+ *  - 0~3 天内做过: -8 (最强抑制, 让用户换换口味)
+ *  - 3~7 天: -4
+ *  - 7~14 天: -2
+ *  - >14 天: 0 (完全恢复)
+ * 用 7 天半衰期; 与 getPreferenceScore 的 60 天半衰期独立, 仅靠"近期是否被规划过"决定
+ */
+export function getRecentCookPenalty(recipeId: string): number {
+  const prefs = useAppStore.getState().recipePreferences;
+  const pref = prefs[recipeId];
+  if (!pref || !pref.lastInteraction) return 0;
+
+  const daysSince = (Date.now() - pref.lastInteraction) / 86400000;
+  if (daysSince > 14) return 0;
+
+  // 7 天半衰期 + 基础 -8 分
+  const HALF_LIFE_DAYS = 7;
+  const decay = Math.pow(0.5, daysSince / HALF_LIFE_DAYS);
+  const penalty = -8 * decay;
+  return Math.round(penalty * 10) / 10;  // 例: 当天 -8, 7天后 -4, 14 天后 -2 接近 0
+}
+
+/** 获取本周计划中已用的菜谱 ID 集合, 用于"本周不重复" */
+export function getThisWeekRecipeIds(): Set<string> {
+  const plan = useAppStore.getState().weeklyPlan;
+  if (!plan) return new Set();
+  const ids = new Set<string>();
+  for (const slot of plan.slots || []) {
+    for (const mr of slot.recipes || []) {
+      if (mr.recipeId) ids.add(mr.recipeId);
+    }
+  }
+  return ids;
 }
 
 /**
