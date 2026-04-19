@@ -244,7 +244,8 @@ function isBeverage(recipe: Recipe): boolean {
   const name = recipe.nameZh || '';
   // 茶/咖啡/果汁/奶昔/果茶/奶茶/汽水/可乐, 但排除"汤"和"羹"
   if (/汤|羹/.test(name)) return false;
-  return /茶$|奶茶|果汁|果汁$|柠檬水|咖啡|拿铁|卡布奇诺|摩卡|奶昔|思慕雪|smoothie|气泡水|苏打|可乐|柚子蜜|蜂蜜水|姜茶|柠水|豆浆$|豆奶$|豆浆|椰汁|椰奶|米酒/.test(name);
+  // 豆浆/豆奶虽是液体但按中式早餐习惯归主食, 不当饮品
+  return /茶$|奶茶|果汁|果汁$|柠檬水|咖啡|拿铁|卡布奇诺|摩卡|奶昔|思慕雪|smoothie|气泡水|苏打|可乐|柚子蜜|蜂蜜水|姜茶|柠水|椰汁|椰奶|米酒/.test(name);
 }
 
 /**
