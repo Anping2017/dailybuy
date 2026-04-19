@@ -189,16 +189,10 @@ export default function PlanPage() {
   const daySlots = weeklyPlan.slots.filter(s => s.day === selectedDay);
 
   // 今日合计 (家庭总 + 人均) - 跨所有餐次
-  // 核心原则: 烹制量 = slot.servings 份; 每道菜热量 = recipe.totalCalories × (slot.servings / recipe.servings)
-  // 带饭模式晚餐: engine 已选 servings≈2×familySize 的菜, slot.servings=2×familySize
-  //    → 缩放因子 = 1 (不再额外 ×2, 避免双倍叠加)
-  // 非带饭: slot.servings = familySize, 若 recipe.servings ≠ familySize, 按比例缩放
+  // 核心: 每道菜按原配方烹制(不缩放), 显示其 recipe.totalCalories
+  //   与引擎 budget 口径一致 (engine 用 calcRecipeCalForFamily → 返回 totalCalories 无缩放)
+  //   用户按菜谱做整份, 人均 = 总热量 / familySize
   const familySize = Math.max(1, profile.familySize);
-  const calcDishCal = (recipeTotalCal: number, recipeServings: number, slotServings: number) => {
-    const rs = Math.max(1, recipeServings || 1);
-    const ss = Math.max(1, slotServings || familySize);
-    return Math.round(recipeTotalCal * (ss / rs));
-  };
   let dayTotalCal = 0;
   let dayTotalCost = 0;
   for (const slot of daySlots) {
@@ -206,9 +200,8 @@ export default function PlanPage() {
       const r = getRecipe(mr.recipeId);
       if (r) {
         const n = calcRecipeNutrition(r);
-        const cal = calcDishCal(n.totalCalories, r.servings, slot.servings);
-        dayTotalCal += cal;
-        dayTotalCost += calcRecipeCost(r) * (slot.servings / Math.max(1, r.servings || 1));
+        dayTotalCal += Math.round(n.totalCalories);
+        dayTotalCost += calcRecipeCost(r);
       }
     }
   }
@@ -499,9 +492,7 @@ export default function PlanPage() {
             );
           }
 
-          // 餐次总热量: 各菜热量 = recipe.totalCalories × (slot.servings / recipe.servings)
-          // 带饭模式: engine 的 budget 已包含晚餐 + 明日午餐的量, 选出的菜品总热量自动 ~2× 正常晚餐
-          //   slot.servings = familySize (不再 ×2), 不需要额外缩放
+          // 餐次总热量: 各菜按原配方总热量求和(不缩放), 与引擎 budget 口径一致
           const isLunchboxDinner = !!profile.lunchboxMode && mealType === 'dinner';
           let mealCalories = 0;
           let mealCost = 0;
@@ -509,8 +500,8 @@ export default function PlanPage() {
             const r = getRecipe(mr.recipeId);
             if (r) {
               const n = calcRecipeNutrition(r);
-              mealCalories += calcDishCal(n.totalCalories, r.servings, slot.servings);
-              mealCost += calcRecipeCost(r) * (slot.servings / Math.max(1, r.servings || 1));
+              mealCalories += Math.round(n.totalCalories);
+              mealCost += calcRecipeCost(r);
             }
           }
           const perPersonCal = Math.round(mealCalories / familySize);
@@ -580,10 +571,10 @@ export default function PlanPage() {
                   const nutr = calcRecipeNutrition(recipe);
                   // 食材不缩放: 这道菜做出来就是配方总热量
                   // 带饭模式晚餐: 本菜按 slotMult(=2)倍计; 显示 ×2 标识
-                  // 单菜显示热量 = recipe.totalCalories × (slot.servings / recipe.servings)
-                  const dishTotal = calcDishCal(nutr.totalCalories, recipe.servings, slot.servings);
+                  // 单菜热量 = 菜谱原总热量 (不缩放, 保持默认卡路里值)
+                  const dishTotal = Math.round(nutr.totalCalories);
                   const perPerson = Math.round(dishTotal / familySize);
-                  // servings 不匹配提示 (带饭模式保留该提示, 因菜谱可能正好匹配 familySize)
+                  // servings 不匹配提示
                   const servingMismatch = recipe.servings !== familySize
                     && Math.abs(recipe.servings - familySize) > 1;
                   const isInList = shoppingList?.items.some(i => i.fromRecipes.includes(recipe.nameZh));

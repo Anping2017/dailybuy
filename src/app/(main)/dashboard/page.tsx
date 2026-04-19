@@ -93,19 +93,12 @@ export default function DashboardPage() {
 
           {/* 每位成员热量建议 - 以今日数据为基础(需求5) */}
           {profile.calorieEnabled !== false && weeklyPlan.memberAdvice && weeklyPlan.memberAdvice.length > 0 && (() => {
-            // 重新计算"今日"菜品总热量
-            // 每道菜 = recipe.totalCalories × (slot.servings / recipe.servings)
-            // 带饭模式已在 engine 选了 servings≈2×familySize 的菜, 无需额外 ×2
-            const fs = Math.max(1, profile.familySize || 1);
+            // 今日菜品总热量: 每道菜按原配方总热量(不缩放), 与 engine budget / 规划页显示一致
             let todayDishTotal = 0;
             for (const slot of todaySlots) {
               for (const mr of (slot.recipes || [])) {
                 const r = getRecipe(mr.recipeId);
-                if (r) {
-                  const rs = Math.max(1, r.servings || 1);
-                  const ss = Math.max(1, slot.servings || fs);
-                  todayDishTotal += calcRecipeNutrition(r).totalCalories * (ss / rs);
-                }
+                if (r) todayDishTotal += calcRecipeNutrition(r).totalCalories;
               }
             }
             const totalDailyTarget = weeklyPlan.memberAdvice.reduce((s, a) => s + a.dailyTarget, 0) || 1;
