@@ -511,43 +511,53 @@ export function getMemberPlanningDailyCal(member: FamilyMember): number {
 
 /**
  * 计算每餐的热量预算 (家庭总和)
- * 热量按早/午/晚 25%/40%/35% 分配，只计划哪几餐就在这几餐里按比例归一
- * 需求1核心: 选菜时据此限制超标
  *
- * #10: 成员 skipMeals 在本餐被跳过时, 不贡献本餐热量预算 (如: 妈妈不吃早餐,
- * 早餐预算 = 家里其他人的早餐预算之和)
+ * 原则:
+ *  - 3 餐比例: 25/40/35 (早/午/晚)
+ *  - 只规划部分餐次时, 剩余餐次按比例归一到这几餐 (例: 只规划午+晚 → 午 53% / 晚 47%)
+ *  - 跳过本餐的成员不计入本餐预算 (如: 妈妈不吃早餐 → 早餐预算 = 爸爸+孩子)
+ *  - 禁用的成员(enabled=false) 完全不计入
+ *  - 带饭模式(lunchboxMode): 午餐由前晚剩菜补足, 占比归一时视为 "3 餐都活跃"
+ *    (避免把午餐比例再分给早/晚导致预算翻倍)
+ *  - familySize > 成员数时, 多出的按平均目标计(占位成员, 无个性化配置)
  */
 export function getMealCalorieBudget(profile: UserProfile, mealType: MealType): number {
-  // 1) 家庭每日总目标(只算启用的成员; 跳过本餐次的成员不计入本餐)
   const active = profile.members.filter(m => m.enabled !== false);
   const members = active.length > 0 ? active : profile.members;
   const membersForThisMeal = members.filter(m => !(m.skipMeals || []).includes(mealType));
-  const membersCount = Math.max(1, members.length);
-  const avgTarget = members.reduce((s, m) => s + m.dailyCalorieTarget, 0) / membersCount;
-  // 每个成员按自己跳餐后的 planning daily cal 算, 再乘本餐占比
   const ratioMap: Record<MealType, number> = { breakfast: 0.25, lunch: 0.40, dinner: 0.35 };
   const mealRatio = ratioMap[mealType] || 0.33;
-  // 本餐家庭预算: 所有参与本餐成员的 (dailyTarget × 本餐占比) 之和
-  // 注意: 这里直接用原 dailyTarget × mealRatio (而不是 planningDailyCal × mealRatio)
-  //       因为 planningDailyCal 已扣除跳餐, 本餐若被跳过, 不应计入
-  let mealBudgetBase = membersForThisMeal.reduce((s, m) => s + m.dailyCalorieTarget * mealRatio, 0);
-  // 占位成员(profile.familySize > members.length)用平均目标 × 本餐占比
-  const extraPeople = Math.max(0, profile.familySize - membersCount);
-  mealBudgetBase += extraPeople * avgTarget * mealRatio;
 
-  // 计算"归一化"系数: 实际启用的餐次加起来应该 = 家庭日总目标
-  // 例: 只规划午+晚(跳过早餐), 午+晚应分摊 100% 日目标而不是 75%
+  const avgTarget = members.length > 0
+    ? members.reduce((s, m) => s + m.dailyCalorieTarget, 0) / members.length
+    : 2000;
+
+  // extraPeople: 比"启用成员数"多出的家人(没有成员记录的占位)
+  // 禁用成员已从 members 过滤掉, 不重复计
+  const extraPeople = Math.max(0, profile.familySize - profile.members.length);
+  const extraForThisMeal = extraPeople;  // 占位成员默认吃所有餐
+
+  // 本餐家庭预算基础值 = 所有参与本餐成员的 (dailyTarget × 本餐占比) 之和
+  let mealBudgetBase = membersForThisMeal.reduce((s, m) => s + m.dailyCalorieTarget * mealRatio, 0)
+    + extraForThisMeal * avgTarget * mealRatio;
+
+  // 归一化: 未规划的餐次该吃的热量按比例分摊到已规划的餐次
+  // 带饭模式: 午餐由晚餐剩菜补足, 不是"未规划", 视为活跃 → activeMeals 加上 lunch
   const activeMeals = profile.mealsPerDay;
   if (!activeMeals.includes(mealType)) return 0;
-  const activeWeightTotal = activeMeals.reduce((s, m) => s + (ratioMap[m] || 0.33), 0) || 1;
-  const normalized = mealBudgetBase / mealRatio * (ratioMap[mealType] || 0.33) / activeWeightTotal;
+  const effectiveMeals = profile.lunchboxMode && !activeMeals.includes('lunch')
+    ? [...activeMeals, 'lunch' as MealType]
+    : activeMeals;
+  const effectiveWeightTotal = effectiveMeals.reduce((s, m) => s + (ratioMap[m] || 0.33), 0) || 1;
+  // normalized = base × (1 / effectiveWeightTotal), 乘以 mealRatio 再除以 mealRatio 化简掉
+  const normalized = mealBudgetBase / effectiveWeightTotal;
 
   let budget = normalized;
 
-  // 2) 留出"用户不规划项"的热量缺口（用户会自己补充, 系统不规划这部分）
-  // 按本餐占比扣 (日缺口 × 本餐占比归一)
+  // 未开启品类的热量缺口(用户自补, 不让系统规划这部分)
+  // 按本餐在 effective 分配中的占比扣
   const familyMul = Math.max(1, profile.familySize);
-  const gapFactor = (ratioMap[mealType] || 0.33) / activeWeightTotal;
+  const gapFactor = mealRatio / effectiveWeightTotal;
   if ((profile.stapleMode || 'off') === 'off') budget -= 400 * familyMul * gapFactor;
   if (!profile.includeFruit) budget -= 150 * familyMul * gapFactor;
   if (!profile.includeSoup) budget -= 100 * familyMul * gapFactor;
@@ -907,33 +917,42 @@ function composeMeal(
   // 跟踪因超标被减的菜数
   let reducedDishes = 0;
 
-  // 卡路里启用时: 缺口补菜 + 超量移除
+  // 卡路里启用时: 循环缺口补菜(至 85% 预算) + 循环超量移除(至 1.15× 预算)
+  // 目标: 让实际推荐的热量 ≈ 预算(±15%), 避免和日目标差距过大
   if (profile.calorieEnabled !== false && mealBudget > 0) {
-    // 1) 缺口补菜: 如果还差 > 40% 预算且 > 400kcal, 补一道大菜(最多补 1 道)
-    //   带饭模式晚餐: 缺口大时主动补菜以满足 2× 热量(预留次日午餐)
-    const deficit = mealBudget - accumulatedCal;
-    if (deficit > mealBudget * 0.4 && deficit > 400) {
+    // 1) 循环缺口补菜: 直到 accumulated ≥ 0.85×预算 或无可补菜
+    const TARGET_LO = mealBudget * 0.85;
+    const TARGET_HI = mealBudget * 1.15;
+    let fillSafety = 5;
+    while (accumulatedCal < TARGET_LO && fillSafety > 0) {
+      fillSafety--;
       const fillPool = allCandidates.filter(r => !usedIds.has(r.id));
-      const preferHot = fillPool.filter(r => {
-        const role = inferRole(r);
-        return role === 'main_meat' || role === 'main_veg';
-      });
-      const pool = preferHot.length > 0 ? preferHot : fillPool;
-      const pick = pickBest(pool, usedIds, effectiveProfile, ownedIngredients, getPreference, getFeedback, deficit);
-      if (pick) {
-        const role: DishRole = inferRole(pick);
-        result.push({ recipeId: pick.id, role });
-        usedIds.add(pick.id);
-        trackPick(pick);
+      if (fillPool.length === 0) break;
+      // 根据缺口大小选: 缺口大选热菜, 缺口小选小菜
+      const deficit = mealBudget - accumulatedCal;
+      let preferRole: DishRole[];
+      if (deficit > mealBudget * 0.3) {
+        preferRole = ['main_meat', 'main_veg'];  // 补大菜
+      } else if (deficit > mealBudget * 0.15) {
+        preferRole = ['main_veg', 'cold', 'soup'];  // 补中菜
+      } else {
+        preferRole = ['cold', 'soup', 'main_veg'];  // 补小菜
       }
+      const preferredPool = fillPool.filter(r => preferRole.includes(inferRole(r)));
+      const pool = preferredPool.length > 0 ? preferredPool : fillPool;
+      const pick = pickBest(pool, usedIds, effectiveProfile, ownedIngredients, getPreference, getFeedback, deficit);
+      if (!pick) break;
+      result.push({ recipeId: pick.id, role: inferRole(pick) });
+      usedIds.add(pick.id);
+      trackPick(pick);
     }
 
-    // 2) 超量反向移除: 累积超 1.3×预算时
+    // 2) 循环超量移除: 累积超 1.15× 预算时
     // 舍弃优先级 (从高到低): 素菜 → 凉菜 → 汤 → 荤菜  (主食永不舍弃)
     const REMOVAL_PRIORITY: DishRole[] = ['main_veg', 'cold', 'soup', 'main_meat'];
-    let safety = 4;
-    while (accumulatedCal > mealBudget * 1.3 && safety > 0) {
-      safety--;
+    let rmSafety = 5;
+    while (accumulatedCal > TARGET_HI && rmSafety > 0) {
+      rmSafety--;
       let removeIdx = -1;
       for (const role of REMOVAL_PRIORITY) {
         removeIdx = result.findIndex(mr => mr.role === role);
@@ -1222,6 +1241,47 @@ function generateSmartPlan(
         if (r) { recipes.push({ recipeId: r.id, role: isMeatDish(r) ? 'main_meat' : 'main_veg' }); usedIds.add(r.id); track(r); }
       }
 
+      // 热量预算匹配: 循环补菜到 85%, 移除超过 115% 部分 (与 composeMeal 一致)
+      if (profile.calorieEnabled !== false && mealBudget > 0) {
+        const TARGET_LO = mealBudget * 0.85;
+        const TARGET_HI = mealBudget * 1.15;
+        let fillSafety = 5;
+        while (accumulatedCal < TARGET_LO && fillSafety > 0) {
+          fillSafety--;
+          const fillPool = allCandidates.filter(r => !usedIds.has(r.id));
+          if (fillPool.length === 0) break;
+          const deficit = mealBudget - accumulatedCal;
+          let preferRole: DishRole[];
+          if (deficit > mealBudget * 0.3) preferRole = ['main_meat', 'main_veg'];
+          else if (deficit > mealBudget * 0.15) preferRole = ['main_veg', 'cold', 'soup'];
+          else preferRole = ['cold', 'soup', 'main_veg'];
+          const preferredPool = fillPool.filter(r => preferRole.includes(inferRole(r)));
+          const pool = preferredPool.length > 0 ? preferredPool : fillPool;
+          const pick = smartPick(pool, usedIds, recentProteins, recentVegs, recentMethods, effectiveProfile, ownedIngredients, getPreference, getFeedback, deficit);
+          if (!pick) break;
+          recipes.push({ recipeId: pick.id, role: inferRole(pick) });
+          usedIds.add(pick.id);
+          track(pick);
+        }
+        const REMOVAL_PRIORITY: DishRole[] = ['main_veg', 'cold', 'soup', 'main_meat'];
+        let rmSafety = 5;
+        while (accumulatedCal > TARGET_HI && rmSafety > 0) {
+          rmSafety--;
+          let removeIdx = -1;
+          for (const role of REMOVAL_PRIORITY) {
+            removeIdx = recipes.findIndex(mr => mr.role === role);
+            if (removeIdx >= 0) break;
+          }
+          if (removeIdx < 0) break;
+          const removed = recipes.splice(removeIdx, 1)[0];
+          const removedRecipe = allCandidates.find(r => r.id === removed.recipeId);
+          if (removedRecipe) {
+            accumulatedCal -= calcRecipeCalForFamily(removedRecipe, effectiveProfile.familySize);
+            usedIds.delete(removed.recipeId);
+          }
+        }
+      }
+
       // 带饭模式晚餐: servings 设为 2×familySize, 让采购清单/热量显示自动按双倍计算
       // 普通情况: servings = profile.familySize
       const slotServings = (profile.lunchboxMode && mealType === 'dinner')
@@ -1298,14 +1358,17 @@ export function generateWeeklyPlan(
   // 菜是按 familySize 份做的，总热量已包含所有人的量
   // 分配逻辑: 如果有N个成员档案，按各自目标热量占比分配
   //          如果 familySize > members.length，多出的人按平均分
-  const actualPersons = Math.max(profile.familySize, profile.members.length);
+  // 禁用的成员(enabled=false) 不参与任何计算
+  const activeMembers = profile.members.filter(m => m.enabled !== false);
+  const enrolledMembers = activeMembers.length > 0 ? activeMembers : profile.members;
+  const actualPersons = Math.max(profile.familySize, enrolledMembers.length);
   const dishCaloriesPerDay = planDays > 0 ? Math.round(totalCalories / planDays) : 0;
 
-  // 构建完整的成员列表（补齐到 familySize）
-  const effectiveMembers = [...profile.members];
+  // 构建完整的成员列表（补齐到 familySize）- 仅用启用的成员
+  const effectiveMembers = [...enrolledMembers];
   while (effectiveMembers.length < profile.familySize) {
-    // 补齐的成员使用所有成员的平均热量目标
-    const avgTarget = Math.round(profile.members.reduce((s, m) => s + m.dailyCalorieTarget, 0) / profile.members.length);
+    // 补齐的成员使用所有启用成员的平均热量目标
+    const avgTarget = Math.round(enrolledMembers.reduce((s, m) => s + m.dailyCalorieTarget, 0) / Math.max(1, enrolledMembers.length));
     effectiveMembers.push({
       id: `auto_${effectiveMembers.length}`,
       name: `家人${effectiveMembers.length + 1}`,

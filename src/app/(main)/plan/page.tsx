@@ -189,32 +189,44 @@ export default function PlanPage() {
   const daySlots = weeklyPlan.slots.filter(s => s.day === selectedDay);
 
   // 今日合计 (家庭总 + 人均) - 跨所有餐次
-  // 食材不缩放: 按原配方做整份, 总热量 = 配方总热量
-  // 人均 = 总热量 / familySize (家里几个人分这道菜)
-  // 带饭模式晚餐: slot.servings = 2 × familySize, 热量按 ×2 计 (做2份量留午餐)
+  // 核心原则: 烹制量 = slot.servings 份; 每道菜热量 = recipe.totalCalories × (slot.servings / recipe.servings)
+  // 带饭模式晚餐: engine 已选 servings≈2×familySize 的菜, slot.servings=2×familySize
+  //    → 缩放因子 = 1 (不再额外 ×2, 避免双倍叠加)
+  // 非带饭: slot.servings = familySize, 若 recipe.servings ≠ familySize, 按比例缩放
   const familySize = Math.max(1, profile.familySize);
-  const getSlotCalMultiplier = (slot: typeof daySlots[number]) => {
-    // 当 slot.servings > familySize 时, 按 slot.servings / familySize 倍率计算(一般=2)
-    return Math.max(1, (slot.servings || familySize) / familySize);
+  const calcDishCal = (recipeTotalCal: number, recipeServings: number, slotServings: number) => {
+    const rs = Math.max(1, recipeServings || 1);
+    const ss = Math.max(1, slotServings || familySize);
+    return Math.round(recipeTotalCal * (ss / rs));
   };
   let dayTotalCal = 0;
   let dayTotalCost = 0;
   for (const slot of daySlots) {
-    const mult = getSlotCalMultiplier(slot);
     for (const mr of (slot.recipes || [])) {
       const r = getRecipe(mr.recipeId);
       if (r) {
         const n = calcRecipeNutrition(r);
-        dayTotalCal += Math.round(n.totalCalories * mult);
-        dayTotalCost += calcRecipeCost(r) * mult;
+        const cal = calcDishCal(n.totalCalories, r.servings, slot.servings);
+        dayTotalCal += cal;
+        dayTotalCost += calcRecipeCost(r) * (slot.servings / Math.max(1, r.servings || 1));
       }
     }
   }
   const dayPerPerson = Math.round(dayTotalCal / familySize);
   // 家庭目标
-  const householdTarget = profile.members.reduce((s, m) => s + m.dailyCalorieTarget, 0)
-    + (Math.max(0, familySize - profile.members.length))
-      * (profile.members.reduce((s, m) => s + m.dailyCalorieTarget, 0) / Math.max(1, profile.members.length));
+  // 家庭目标: 只含启用成员 + 额外占位人按启用成员均值(禁用的成员不计入任何计算)
+  // 每个启用成员按 skipMeals 扣除相应比例(不吃早餐扣 25%, 午餐 40%, 晚餐 35%)
+  const activeMembers = profile.members.filter(m => m.enabled !== false);
+  const enrolledMembers = activeMembers.length > 0 ? activeMembers : profile.members;
+  const mealRatios = { breakfast: 0.25, lunch: 0.40, dinner: 0.35 };
+  const memberEffectiveTarget = (m: typeof enrolledMembers[number]) => {
+    const skipRatio = (m.skipMeals || []).reduce((s, meal) => s + (mealRatios[meal] || 0), 0);
+    return m.dailyCalorieTarget * (1 - skipRatio);
+  };
+  const activeTargetSum = enrolledMembers.reduce((s, m) => s + memberEffectiveTarget(m), 0);
+  const avgEffective = enrolledMembers.length > 0 ? activeTargetSum / enrolledMembers.length : 2000;
+  const householdTarget = activeTargetSum
+    + Math.max(0, familySize - enrolledMembers.length) * avgEffective;
 
   return (
     <div className="space-y-4">
@@ -409,34 +421,56 @@ export default function PlanPage() {
               </div>
             </div>
             {(() => {
-              // 按家庭每日总目标 × 营养学建议比例估算缺口
-              // 早/午/晚 25%/40%/35%; 主食/水果/汤 在总热量中各自的占比(不独立加)
-              // 主食 约 30% 日热量, 水果 5%, 汤 3%
-              // 带饭模式: 午餐由晚餐×2 留下的补足, 不视为"未规划缺口"
+              // 按家庭每日总目标估算缺口 (同 Dashboard 逻辑, 确保规划页热量与目标一致)
+              //   未规划餐次: 按早/午/晚 25%/40%/35% 估算缺口(带饭模式午餐由剩菜补足, 不算)
+              //   未开启品类: 主食 400/人/天, 水果 150/人/天, 汤 100/人/天
               const target = Math.round(householdTarget);
-              const items: { label: string; cal: number }[] = [];
-              if (!profile.mealsPerDay.includes('breakfast')) items.push({ label: '早餐', cal: Math.round(target * 0.25) });
-              if (!profile.mealsPerDay.includes('lunch') && !profile.lunchboxMode) items.push({ label: '午餐', cal: Math.round(target * 0.40) });
-              if (!profile.mealsPerDay.includes('dinner')) items.push({ label: '晚餐', cal: Math.round(target * 0.35) });
-              // 主食/水果/汤 是每餐的补充, 不重复算(已经扣在每餐目标里)
-              const sideItems: string[] = [];
-              if ((profile.stapleMode || 'off') === 'off') sideItems.push('主食');
-              if (!profile.includeFruit) sideItems.push('水果');
-              if (!profile.includeSoup) sideItems.push('汤');
+              const famSize = Math.max(1, familySize);
 
-              if (items.length === 0 && sideItems.length === 0) return null;
-              const totalMissing = items.reduce((s, i) => s + i.cal, 0);
+              // 1) 未规划餐次缺口
+              const mealItems: { label: string; cal: number }[] = [];
+              if (!profile.mealsPerDay.includes('breakfast')) mealItems.push({ label: '早餐', cal: Math.round(target * 0.25) });
+              if (!profile.mealsPerDay.includes('lunch') && !profile.lunchboxMode) mealItems.push({ label: '午餐', cal: Math.round(target * 0.40) });
+              if (!profile.mealsPerDay.includes('dinner')) mealItems.push({ label: '晚餐', cal: Math.round(target * 0.35) });
+
+              // 2) 未开启品类缺口 (本地补足, 同 Dashboard)
+              const categoryItems: { label: string; cal: number }[] = [];
+              if ((profile.stapleMode || 'off') === 'off') categoryItems.push({ label: '主食', cal: 400 * famSize });
+              if (!profile.includeFruit) categoryItems.push({ label: '水果', cal: 150 * famSize });
+              if (!profile.includeSoup) categoryItems.push({ label: '汤', cal: 100 * famSize });
+
+              const totalMealGap = mealItems.reduce((s, i) => s + i.cal, 0);
+              const totalCatGap = categoryItems.reduce((s, i) => s + i.cal, 0);
+              const totalEstimated = dayTotalCal + totalMealGap + totalCatGap;
+              const diff = Math.abs(totalEstimated - target);
+              const diffPct = target > 0 ? (diff / target * 100) : 0;
+              // 颜色: ≤10% 绿色(合理), ≤20% 橙色(稍有偏差), >20% 红色(差异较大)
+              const statusColor = diffPct <= 10 ? 'text-green-700' : diffPct <= 20 ? 'text-amber-700' : 'text-red-600';
+
+              if (mealItems.length === 0 && categoryItems.length === 0 && diffPct <= 10) {
+                // 无缺口且基本对上, 给一个简短成功提示
+                return (
+                  <p className="text-[11px] text-green-700 mt-1.5">
+                    ✓ 达标: {dayTotalCal} / 目标 {target} kcal (偏差 {Math.round(diffPct)}%)
+                  </p>
+                );
+              }
 
               return (
-                <div className="text-[10px] text-muted mt-1.5 space-y-0.5">
-                  {items.length > 0 && (
-                    <p>⚠ 未规划餐次(按家庭目标比例): {items.map(i => `${i.label}~${i.cal}kcal`).join('、')}</p>
+                <div className="text-[11px] mt-1.5 space-y-0.5">
+                  {mealItems.length > 0 && (
+                    <p className="text-muted">⚠ 未规划餐次(自补): {mealItems.map(i => `${i.label}~${i.cal}`).join('、')} kcal</p>
                   )}
-                  {sideItems.length > 0 && (
-                    <p>ℹ 未开启: {sideItems.join('、')}(从每餐里自行补充)</p>
+                  {categoryItems.length > 0 && (
+                    <p className="text-muted">ℹ 未开启品类(自补): {categoryItems.map(i => `${i.label}~${i.cal}`).join('、')} kcal</p>
                   )}
-                  {totalMissing > 0 && (
-                    <p className="mt-0.5">含未规划餐家庭日目标总 <span className="text-amber-700 font-medium">{dayTotalCal + totalMissing}</span> / <span className="font-medium">{target}</span> kcal</p>
+                  <p className={`mt-0.5 font-medium ${statusColor}`}>
+                    估算全天 <span className="font-bold">{totalEstimated}</span> / 目标 <span className="font-bold">{target}</span> kcal (偏差 {Math.round(diffPct)}%)
+                  </p>
+                  {diffPct > 20 && (
+                    <p className="text-[10px] text-red-500">
+                      💡 偏差较大, 考虑调整: {totalEstimated < target ? '加菜/加量/开主食' : '减菜/减量/关某品类'}
+                    </p>
                   )}
                 </div>
               );
@@ -454,26 +488,43 @@ export default function PlanPage() {
             );
           }
 
-          // 餐次总热量 = 各菜原配方总热量之和 (做整份)
-          // 带饭模式晚餐: slot.servings = 2×familySize → 整餐按 ×2 算(做双倍留午餐)
-          const slotMult = Math.max(1, (slot.servings || familySize) / familySize);
-          const isLunchboxDinner = profile.lunchboxMode && mealType === 'dinner' && slotMult > 1;
+          // 餐次总热量: 各菜热量 = recipe.totalCalories × (slot.servings / recipe.servings)
+          // 带饭模式晚餐: slot.servings = 2×familySize, 但 recipe.servings 也是 2×familySize (engine 匹配)
+          //   → 单菜缩放因子=1, 无需额外 ×2; 整餐总热量自然≈2× 正常晚餐
+          // isLunchboxDinner 仅用于显示 "带饭" 标识
+          const isLunchboxDinner = !!profile.lunchboxMode && mealType === 'dinner';
+          const slotMult = Math.max(1, (slot.servings || familySize) / familySize);  // 仅用于标识显示倍率
           let mealCalories = 0;
           let mealCost = 0;
           for (const mr of (slot.recipes || [])) {
             const r = getRecipe(mr.recipeId);
             if (r) {
               const n = calcRecipeNutrition(r);
-              mealCalories += Math.round(n.totalCalories * slotMult);
-              mealCost += calcRecipeCost(r) * slotMult;
+              mealCalories += calcDishCal(n.totalCalories, r.servings, slot.servings);
+              mealCost += calcRecipeCost(r) * (slot.servings / Math.max(1, r.servings || 1));
             }
           }
           const perPersonCal = Math.round(mealCalories / familySize);
           // 手动模式(customMealComposition.enabled) + 热量不足时建议 ×N 量
-          // 目标: 本餐占日目标的比例 × 倍率(带饭晚餐×2); 实际 < 70% 时给出建议
+          // 目标: 本餐占日目标的比例 × 倍率(带饭晚餐×2); 未开启品类的热量从本餐目标扣除
+          //   以便 mealCalories ≈ mealTargetAfterGap 时不会错误提示缺口
           const manualMode = profile.customMealComposition?.enabled;
           const mealTargetRatio = mealType === 'breakfast' ? 0.25 : mealType === 'lunch' ? 0.40 : 0.35;
-          const mealTargetCal = Math.round(householdTarget * mealTargetRatio * slotMult);
+          const activeMealsCount = profile.mealsPerDay.filter(m => m === 'breakfast' || m === 'lunch' || m === 'dinner').length;
+          const activeRatioSum = profile.mealsPerDay.reduce((s, m) => s + (m === 'breakfast' ? 0.25 : m === 'lunch' ? 0.4 : 0.35), 0) || 1;
+          // 本餐目标(未扣品类): 日目标 × 本餐比例(归一到开启的餐次)
+          const mealFullTarget = Math.round(householdTarget * mealTargetRatio / activeRatioSum * slotMult);
+          // 本餐扣除品类缺口 (与引擎 getMealCalorieBudget 一致)
+          const mealGapDeduct = (() => {
+            const fam = Math.max(1, familySize);
+            const factor = mealTargetRatio / activeRatioSum;
+            let gap = 0;
+            if ((profile.stapleMode || 'off') === 'off') gap += 400 * fam * factor;
+            if (!profile.includeFruit) gap += 150 * fam * factor;
+            if (!profile.includeSoup) gap += 100 * fam * factor;
+            return Math.round(gap * slotMult);
+          })();
+          const mealTargetCal = Math.max(200, mealFullTarget - mealGapDeduct);
           const mealRatio = mealTargetCal > 0 ? mealCalories / mealTargetCal : 1;
           // 推荐倍率: 让 mealCalories × N ≈ mealTargetCal; 向 0.5 取整(如 1.5x/2x/2.5x)
           let suggestMultiplier = 1;
@@ -499,7 +550,7 @@ export default function PlanPage() {
                         {profile.calorieEnabled !== false && (
                           <>
                             <Flame className="w-3 h-3 text-accent" />
-                            {familySize}人共 {mealCalories} kcal · 人均 {perPersonCal}
+                            {familySize}人共 {mealCalories} / 目标 {mealTargetCal} kcal · 人均 {perPersonCal}
                           </>
                         )}
                         {profile.budgetEnabled !== false && (
@@ -534,10 +585,12 @@ export default function PlanPage() {
                   const nutr = calcRecipeNutrition(recipe);
                   // 食材不缩放: 这道菜做出来就是配方总热量
                   // 带饭模式晚餐: 本菜按 slotMult(=2)倍计; 显示 ×2 标识
-                  const dishTotal = Math.round(nutr.totalCalories * slotMult);
+                  // 单菜显示热量 = recipe.totalCalories × (slot.servings / recipe.servings)
+                  const dishTotal = calcDishCal(nutr.totalCalories, recipe.servings, slot.servings);
                   const perPerson = Math.round(dishTotal / familySize);
-                  // 带饭模式下不提示 servings 不匹配(已经双倍了, 无需再提醒)
-                  const servingMismatch = !isLunchboxDinner && recipe.servings !== familySize;
+                  // 带饭模式 + 菜谱 servings 接近 2× familySize 时不提示份数不匹配
+                  const servingMismatch = !isLunchboxDinner && recipe.servings !== familySize
+                    && Math.abs(recipe.servings - familySize) > 1;
                   const isInList = shoppingList?.items.some(i => i.fromRecipes.includes(recipe.nameZh));
 
                   return (

@@ -721,26 +721,26 @@ function MemberCard({
 
   return (
     <div className={`border border-border rounded-lg p-3 mb-3 transition ${isEnabled ? '' : 'opacity-60 bg-background/50'}`}>
-      <div className="flex items-center justify-between mb-2">
+      <div className="flex items-center justify-between gap-2 mb-2">
         <input
           type="text"
           value={member.name}
           onChange={e => onUpdate({ name: e.target.value })}
-          className="font-medium bg-transparent border-b border-transparent hover:border-border focus:border-primary focus:outline-none"
+          className="font-medium bg-transparent border-b border-transparent hover:border-border focus:border-primary focus:outline-none min-w-0 flex-1 max-w-[40%]"
         />
-        {/* 启用/禁用开关 + 删除按钮 (横向布局+增加宽度, 防止换行) */}
-        <div className="flex items-center gap-2 flex-shrink-0">
+        {/* 启用/禁用开关 + 删除按钮 (居右紧凑布局, 防止溢出) */}
+        <div className="flex items-center gap-1.5 flex-shrink-0">
           <button
             onClick={() => onUpdate({ enabled: !isEnabled })}
             title={isEnabled ? '临时不规划该成员' : '恢复参与规划'}
-            className={`text-xs px-3 py-1.5 rounded-full border transition whitespace-nowrap min-w-[90px] ${
+            className={`text-xs px-2.5 py-1 rounded-full border transition whitespace-nowrap ${
               isEnabled ? 'border-primary text-primary bg-primary/5' : 'border-border text-muted'
             }`}
           >
             {isEnabled ? '✓ 参与规划' : '⊘ 已跳过'}
           </button>
           {onRemove && (
-            <button onClick={onRemove} className="text-muted hover:text-danger flex-shrink-0">
+            <button onClick={onRemove} className="text-muted hover:text-danger flex-shrink-0 p-0.5">
               <Trash2 className="w-4 h-4" />
             </button>
           )}
