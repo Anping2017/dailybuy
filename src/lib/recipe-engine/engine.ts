@@ -534,14 +534,28 @@ export function getMealCalorieBudget(profile: UserProfile, mealType: MealType): 
   const householdDaily = members.reduce((s, m) => s + m.dailyCalorieTarget, 0)
     + extraPeople * avgTarget;
 
-  // 家庭未开启品类预估(营养学: 主食 25% / 水果 7% / 汤 4% × 日目标)
-  // 只算启用且参与本餐的成员 (skipMeals 未跳过本餐)
+  // 家庭未开启品类预估(营养学 × 健康目标调整)
+  //   maintain 维持: 主食 25% / 水果 7% / 汤 4%
+  //   cutting 减脂: 18% / 8% / 3%
+  //   bulking 增肌: 32% / 6% / 3%
+  //   wellness 养生: 25% / 8% / 6%
   const membersForThisMeal = members.filter(m => !(m.skipMeals || []).includes(mealType));
   const thisMealHouseholdTarget = membersForThisMeal.reduce((s, m) => s + m.dailyCalorieTarget, 0)
     + extraPeople * avgTarget;
-  const stapleGap = (profile.stapleMode || 'off') === 'off' ? householdDaily * 0.25 : 0;
-  const fruitGap = !profile.includeFruit ? householdDaily * 0.07 : 0;
-  const soupGap = !profile.includeSoup ? householdDaily * 0.04 : 0;
+  // 按每个成员的 fitnessGoal 计算自己的 staple/fruit/soup 预估, 再汇总
+  const ratios: Record<string, { staple: number; fruit: number; soup: number }> = {
+    cutting: { staple: 0.18, fruit: 0.08, soup: 0.03 },
+    bulking: { staple: 0.32, fruit: 0.06, soup: 0.03 },
+    wellness: { staple: 0.25, fruit: 0.08, soup: 0.06 },
+    maintain: { staple: 0.25, fruit: 0.07, soup: 0.04 },
+  };
+  const getR = (m: FamilyMember) => ratios[m.fitnessGoal || 'maintain'] || ratios.maintain;
+  const sumByGoal = (field: 'staple' | 'fruit' | 'soup') =>
+    members.reduce((s, m) => s + m.dailyCalorieTarget * getR(m)[field], 0)
+    + extraPeople * avgTarget * ratios.maintain[field];
+  const stapleGap = (profile.stapleMode || 'off') === 'off' ? sumByGoal('staple') : 0;
+  const fruitGap = !profile.includeFruit ? sumByGoal('fruit') : 0;
+  const soupGap = !profile.includeSoup ? sumByGoal('soup') : 0;
   const totalGaps = stapleGap + fruitGap + soupGap;
 
   const activeMeals = profile.mealsPerDay;
@@ -1408,30 +1422,51 @@ export function generateWeeklyPlan(
     const memberDishCalories = Math.round(dishCaloriesPerDay * ratio);
 
     // ===== 营养学标准: 中国居民膳食指南 2022 + USDA 综合 =====
-    // 统一口径: 按日目标热量的百分比 (与 getMealCalorieBudget 完全一致)
-    //   主食: 25% 日目标 (约 200-300g 生重/日, 含米/面/杂粮, 中国指南)
+    // 基础比例 (maintain 维持):
+    //   主食: 25% 日目标 (约 200-300g 生重/日, 含米/面/杂粮)
     //   水果: 7% 日目标 (约 200-350g/日)
     //   汤: 4% 日目标 (约 2 碗清汤/日)
+    //
+    // 健康目标调整 (基于运动营养学):
+    //   cutting 减脂: 降低碳水, 减少汤(通常偏咸), 水果保持(高纤维饱腹)
+    //     → 主食 18%, 水果 8%, 汤 3%
+    //   bulking 增肌: 加大碳水保证糖原补充 + 餐前汤少量
+    //     → 主食 32%, 水果 6%, 汤 3%
+    //   wellness 养生: 均衡且偏清淡, 多汤补水, 水果略多
+    //     → 主食 25%, 水果 8%, 汤 6%
+    //   maintain: 25% / 7% / 4% (默认)
+    const goal = member.fitnessGoal || 'maintain';
+    const ratios: Record<string, { staple: number; fruit: number; soup: number }> = {
+      cutting: { staple: 0.18, fruit: 0.08, soup: 0.03 },
+      bulking: { staple: 0.32, fruit: 0.06, soup: 0.03 },
+      wellness: { staple: 0.25, fruit: 0.08, soup: 0.06 },
+      maintain: { staple: 0.25, fruit: 0.07, soup: 0.04 },
+    };
+    const r = ratios[goal] || ratios.maintain;
 
-    // 主食克数建议(生重/每餐, 供显示): 按年龄+性别微调
+    // 主食克数建议(生重/每餐, 供显示): 按年龄+性别+目标微调
+    // 减脂 ×0.72 (= 0.18/0.25), 增肌 ×1.28, 养生×1, 维持×1
     const baseStaplePerMeal = ag === 'toddler' ? 35 : ag === 'child' ? 55
       : ag === 'preteen' ? 75 : ag === 'teen' ? 95
       : ag === 'young_adult' ? 100 : ag === 'adult' ? 100
       : ag === 'middle_age' ? 85 : 70;
     const genderFactor = member.gender === 'female' ? 0.85 : 1;
-    const adjStaplePerMeal = Math.round(baseStaplePerMeal * genderFactor);
+    const goalStapleFactor = r.staple / 0.25;
+    const adjStaplePerMeal = Math.round(baseStaplePerMeal * genderFactor * goalStapleFactor);
     const adjStapleGrams = adjStaplePerMeal * 3;
 
-    // 实际主食热量 = 25% × 日目标 (口径统一, 避免重复计算)
-    const finalStapleCalories = Math.round(member.dailyCalorieTarget * 0.25);
+    // 实际主食热量 (按目标调整的比例 × 日目标)
+    const finalStapleCalories = Math.round(member.dailyCalorieTarget * r.staple);
 
-    // 水果克数建议(用于显示):
-    const fruitGrams = ag === 'toddler' ? 100 : ag === 'child' ? 150
+    // 水果克数建议(按目标调整): 减脂/养生鼓励多吃水果, 增肌稍少
+    const baseFruitGrams = ag === 'toddler' ? 100 : ag === 'child' ? 150
       : ag === 'senior' || ag === 'middle_age' ? 180 : 250;
-    const finalFruitCalories = Math.round(member.dailyCalorieTarget * 0.07);
+    const goalFruitFactor = r.fruit / 0.07;
+    const fruitGrams = Math.round(baseFruitGrams * goalFruitFactor);
+    const finalFruitCalories = Math.round(member.dailyCalorieTarget * r.fruit);
 
-    // 汤: 4% 日目标
-    const soupCaloriesPerDay = Math.round(member.dailyCalorieTarget * 0.04);
+    // 汤热量 (按目标调整)
+    const soupCaloriesPerDay = Math.round(member.dailyCalorieTarget * r.soup);
 
     // ===== 跳过的餐次 =====
     // 三餐热量比例: 早25% 午40% 晚35%
