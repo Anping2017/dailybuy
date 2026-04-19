@@ -222,10 +222,21 @@ function isMeatDish(recipe: Recipe): boolean {
   });
 }
 
-/** 名字含主食关键词 → 算主食(覆盖 cookingMethod 错分类的情况) */
+/**
+ * 名字含主食关键词 → 算主食(覆盖 cookingMethod 错分类)
+ * 注意: 用更明确的复合词避免误伤(如"包菜/拌菜/面色"不是主食)
+ */
 function isStapleByName(recipe: Recipe): boolean {
   const name = recipe.nameZh || '';
-  return /粥|饭|面|饼|包|馒头|饺|馄饨|抄手|米线|河粉|烩饭|盖饭|炒饭|拌面|凉面|寿司|寿司饭|意面|意大利面|乌冬|拉面|河粉|肠粉/.test(name);
+  // 排除明显不是主食的(凉拌/沙拉等)
+  if (/凉拌|凉菜|沙拉|拌(?!面|粉|饭)|蘸料|包菜|包心菜|大白菜|小白菜|菜花/.test(name)) return false;
+  return /粥|饭$|米饭|蛋炒饭|盖饭|烩饭|炒饭|寿司|意面|意大利面|乌冬|拉面|肠粉|河粉|米线|米粉|面条|面$|凉面|拌面|炒面|烩面|擀面|碱面|面包|烤面包|三明治|汉堡|薯条|吐司|馒头|花卷|馕|烧饼|大饼|烙饼|煎饼|月饼|蛋饼|手抓饼|烤饼|包子|生煎|小笼|烧麦|饺子|馄饨|抄手|凉皮|凉粉|粽子|韭菜盒子|意式饺|烤红薯|蒸红薯|蒸玉米/.test(name);
+}
+
+/** 名字含汤关键词 → 算汤(覆盖 cookingMethod 错分类) */
+function isSoupByName(recipe: Recipe): boolean {
+  const name = recipe.nameZh || '';
+  return /汤$|羹$|煲$|高汤|清汤|浓汤|奶汤|鱼汤|肉汤|菜汤|蛋汤|味噌|罗宋|乌鸡汤|鸡汤|肉骨茶/.test(name);
 }
 
 /** 名字含饮品关键词 → 算饮品(不参与正餐推荐) */
@@ -233,15 +244,19 @@ function isBeverage(recipe: Recipe): boolean {
   const name = recipe.nameZh || '';
   // 茶/咖啡/果汁/奶昔/果茶/奶茶/汽水/可乐, 但排除"汤"和"羹"
   if (/汤|羹/.test(name)) return false;
-  return /茶$|奶茶|果汁|果汁$|柠檬水|咖啡|拿铁|卡布奇诺|摩卡|奶昔|思慕雪|smoothie|气泡水|苏打|可乐|柚子蜜|蜂蜜水|姜茶|柠水/.test(name);
+  return /茶$|奶茶|果汁|果汁$|柠檬水|咖啡|拿铁|卡布奇诺|摩卡|奶昔|思慕雪|smoothie|气泡水|苏打|可乐|柚子蜜|蜂蜜水|姜茶|柠水|豆浆$|豆奶$|豆浆|椰汁|椰奶|米酒/.test(name);
 }
 
-/** 推断菜在一餐中的角色 */
+/**
+ * 推断菜在一餐中的角色
+ * - 汤优先识别(很多汤被错分类), 用 isSoupByName 兜底
+ * - 凉菜不再独立: 含肉 → main_meat, 不含 → main_veg (集成到主菜)
+ */
 function inferRole(recipe: Recipe): DishRole {
   if (isBeverage(recipe)) return 'drink';
   if (recipe.cookingMethod === 'staple' || isStapleByName(recipe)) return 'staple';
-  if (recipe.cookingMethod === 'soup') return 'soup';
-  if (recipe.cookingMethod === 'cold_dish') return 'cold';
+  if (recipe.cookingMethod === 'soup' || isSoupByName(recipe)) return 'soup';
+  // 凉菜按是否含肉归到 main_meat 或 main_veg
   if (isMeatDish(recipe)) return 'main_meat';
   return 'main_veg';
 }
@@ -556,32 +571,30 @@ function composeMeal(
 
   const meatPool = allCandidates.filter(r => inferRole(r) === 'main_meat');
   const vegPool = allCandidates.filter(r => inferRole(r) === 'main_veg');
-  const coldPool = allCandidates.filter(r => inferRole(r) === 'cold');
   const soupPool = allCandidates.filter(r => inferRole(r) === 'soup');
   const staplePool = allCandidates.filter(r => inferRole(r) === 'staple');
 
   const result: MealRecipe[] = [];
 
-  // 非自定义模式下，凉菜按隔餐推荐
+  // 凉菜不再独立分类(归到荤/素), coldCount 在自定义模式下保留向后兼容(可视作"凉菜风格的素菜"槽位)
   const useCustom = profile.customMealComposition?.enabled === true;
-  let coldCount = plan.coldDishCount;
-  if (!useCustom && coldCount > 0 && mealIndex % 2 !== 0) coldCount = 0;
 
-  // 如果凉菜被添加，默认模式下减1道素菜（自定义模式不减）
   let adjustedMeat = plan.meatCount;
   let adjustedVeg = plan.vegCount;
-  if (!useCustom && coldCount > 0 && (adjustedMeat + adjustedVeg) > 1) {
-    if (adjustedVeg > 0) adjustedVeg--;
-    else adjustedMeat--;
-  }
 
   const minDishes = adjustedMeat + adjustedVeg;
 
-  // 需求1: 每餐热量预算跟踪
+  // 每餐热量预算跟踪
   const mealBudget = getMealCalorieBudget(profile, mealType);
   let accumulatedCal = 0;
   const remainingBudget = () => mealBudget > 0 ? Math.max(0, mealBudget - accumulatedCal) : undefined;
   const trackPick = (r: Recipe) => { accumulatedCal += calcRecipeCalForFamily(r, profile.familySize); };
+
+  // === 汤优先 (用户开汤后必有) ===
+  for (let i = 0; i < plan.soupCount; i++) {
+    const r = pickBest(soupPool, usedIds, profile, ownedIngredients, getPreference, getFeedback, remainingBudget());
+    if (r) { result.push({ recipeId: r.id, role: 'soup' }); usedIds.add(r.id); trackPick(r); }
+  }
 
   // === 荤菜 ===
   for (let i = 0; i < adjustedMeat; i++) {
@@ -608,16 +621,20 @@ function composeMeal(
     trackPick(r);
   }
 
-  // === 凉菜 ===
-  for (let i = 0; i < coldCount; i++) {
-    const r = pickBest(coldPool, usedIds, profile, ownedIngredients, getPreference, getFeedback, remainingBudget());
-    if (r) { result.push({ recipeId: r.id, role: 'cold' }); usedIds.add(r.id); trackPick(r); }
-  }
-
-  // === 汤 ===
-  for (let i = 0; i < plan.soupCount; i++) {
-    const r = pickBest(soupPool, usedIds, profile, ownedIngredients, getPreference, getFeedback, remainingBudget());
-    if (r) { result.push({ recipeId: r.id, role: 'soup' }); usedIds.add(r.id); trackPick(r); }
+  // 兼容: 自定义模式下用户设了凉菜数量, 仍从素菜/荤菜池选(有"凉拌"做法标签的优先)
+  const customColdCount = useCustom ? plan.coldDishCount : 0;
+  for (let i = 0; i < customColdCount; i++) {
+    // 优先选"凉拌"做法的菜
+    const coldStylePool = allCandidates.filter(r => r.cookingMethod === 'cold_dish');
+    const pool = coldStylePool.length > 0 ? coldStylePool : vegPool;
+    const r = pickBest(pool, usedIds, profile, ownedIngredients, getPreference, getFeedback, remainingBudget());
+    if (r) {
+      // role 还是按 inferRole 标 (主菜系)
+      const role = isMeatDish(r) ? 'main_meat' : 'main_veg';
+      result.push({ recipeId: r.id, role });
+      usedIds.add(r.id);
+      trackPick(r);
+    }
   }
 
   // === 主食 ===
@@ -643,9 +660,9 @@ function composeMeal(
     if (r) { result.push({ recipeId: r.id, role: isMeatDish(r) ? 'main_meat' : 'main_veg' }); usedIds.add(r.id); trackPick(r); }
   }
 
-  // 缺口补菜: 如果缺口 > 40% 预算且 > 400 kcal, 补一道大菜(最多补 1 道)
-  // 仅在用户启用卡路里计算时执行
+  // 卡路里启用时: 缺口补菜 + 超量移除
   if (profile.calorieEnabled !== false && mealBudget > 0) {
+    // 1) 缺口补菜: 如果还差 > 40% 预算且 > 400kcal, 补一道大菜(最多补 1 道)
     const deficit = mealBudget - accumulatedCal;
     if (deficit > mealBudget * 0.4 && deficit > 400) {
       const fillPool = allCandidates.filter(r => !usedIds.has(r.id));
@@ -654,19 +671,31 @@ function composeMeal(
         return role === 'main_meat' || role === 'main_veg';
       });
       const pool = preferHot.length > 0 ? preferHot : fillPool;
-      const pick = pickBest(
-        pool,
-        usedIds, profile, ownedIngredients, getPreference, getFeedback,
-        deficit,  // 把缺口当作 remainingCal, 引导选大菜
-      );
+      const pick = pickBest(pool, usedIds, profile, ownedIngredients, getPreference, getFeedback, deficit);
       if (pick) {
-        const role: DishRole = pick.cookingMethod === 'soup' ? 'soup'
-          : pick.cookingMethod === 'staple' ? 'staple'
-          : pick.cookingMethod === 'cold_dish' ? 'cold'
-          : (isMeatDish(pick) ? 'main_meat' : 'main_veg');
+        const role: DishRole = inferRole(pick);
         result.push({ recipeId: pick.id, role });
         usedIds.add(pick.id);
         trackPick(pick);
+      }
+    }
+
+    // 2) 超量反向移除: 如果累积超 1.3×预算, 优先移素菜, 不够再移荤菜
+    // 但保留汤和主食(用户必需的)
+    let safety = 3;
+    while (accumulatedCal > mealBudget * 1.3 && safety > 0) {
+      safety--;
+      // 找一个素菜移除
+      const vegIdx = result.findIndex(mr => mr.role === 'main_veg');
+      let removeIdx = vegIdx;
+      // 没素菜则找荤菜
+      if (removeIdx < 0) removeIdx = result.findIndex(mr => mr.role === 'main_meat');
+      if (removeIdx < 0) break;
+      const removed = result.splice(removeIdx, 1)[0];
+      const removedRecipe = allCandidates.find(r => r.id === removed.recipeId);
+      if (removedRecipe) {
+        accumulatedCal -= calcRecipeCalForFamily(removedRecipe, profile.familySize);
+        usedIds.delete(removed.recipeId);
       }
     }
   }
@@ -1128,12 +1157,13 @@ export function generateWeeklyPlan(
       melon: edibleFruits.filter(f => ['watermelon','cantaloupe'].includes(f.id)),
     };
 
-    // 当前月份(新西兰时区)
+    // 当前月份(新西兰南半球)
     const currentMonth = String(new Date().getMonth() + 1);
 
-    // 优先当季水果
-    const inSeason = edibleFruits.filter(f => f.season && f.season.length > 0 && f.season.includes(currentMonth));
-    const offSeason = edibleFruits.filter(f => !f.season || f.season.length === 0 || !f.season.includes(currentMonth));
+    // 当季水果 = 有季节标签且包含当前月, 或没季节标签(视为全年可售如香蕉/橙子/猕猴桃)
+    const inSeason = edibleFruits.filter(f => !f.season || f.season.length === 0 || f.season.includes(currentMonth));
+    // 反季水果 = 有明确季节但不含当前月
+    const offSeason = edibleFruits.filter(f => f.season && f.season.length > 0 && !f.season.includes(currentMonth));
 
     // 每组随机选1种(优先当季)，再补充到4-6种
     const selected = new Set<string>();
@@ -1155,10 +1185,15 @@ export function generateWeeklyPlan(
     const targetCount = Math.min(edibleFruits.length, 4 + Math.floor(Math.random() * 3)); // 4-6种
     const remainingSeasonal = inSeason.filter(f => !selected.has(f.id)).sort(() => Math.random() - 0.5);
     const remainingOff = offSeason.filter(f => !selected.has(f.id)).sort(() => Math.random() - 0.5);
-    const remaining = [...remainingSeasonal, ...remainingOff];
 
-    while (selectedFruits.length < targetCount && remaining.length > 0) {
-      const pick = remaining.pop()!;
+    // 优先加当季, 用 shift() 从头取, 不够时再从非当季补
+    while (selectedFruits.length < targetCount && remainingSeasonal.length > 0) {
+      const pick = remainingSeasonal.shift()!;
+      selected.add(pick.id);
+      selectedFruits.push(pick);
+    }
+    while (selectedFruits.length < targetCount && remainingOff.length > 0) {
+      const pick = remainingOff.shift()!;
       selected.add(pick.id);
       selectedFruits.push(pick);
     }
