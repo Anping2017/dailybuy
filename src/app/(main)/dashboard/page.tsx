@@ -121,7 +121,7 @@ export default function DashboardPage() {
                 const todayDishCal = Math.round(todayDishTotal * ratio);
                 const advStaple = (profile.stapleMode || 'off') === 'off' ? adv.stapleCalories : 0;
                 const advFruit = !profile.includeFruit ? adv.fruitCalories : 0;
-                const advSoup = !profile.includeSoup ? 40 : 0;
+                const advSoup = !profile.includeSoup ? (adv.soupCalories || 0) : 0;
                 // 带饭模式: 午餐由前一晚剩菜补足, 不视为"未规划缺口"
                 const skippedList = profile.lunchboxMode
                   ? (adv.skippedMeals || []).filter(m => m.mealType !== 'lunch')

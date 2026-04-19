@@ -269,3 +269,124 @@ export async function updatePendingAnalysis(
   }
   return false;
 }
+
+// ============================================================
+// 需求3: 菜谱编辑建议 (用户可编辑, 进入审批队列)
+// ============================================================
+
+import type { Recipe } from '@/types';
+
+export interface PendingRecipeEdit {
+  id: string;
+  recipeId: string;           // 目标菜谱 ID
+  originalName: string;        // 原菜名(便于列表显示)
+  edited: Partial<Recipe>;     // 用户编辑的字段(只含改动)
+  reason?: string;             // 用户填写的修改原因
+  deviceId: string;
+  createdAt: string;
+  status: 'pending' | 'approved' | 'rejected';
+  reviewerNote?: string;
+}
+
+const LS_RECIPE_EDITS = 'dailybuy_pending_recipe_edits';
+
+export async function savePendingRecipeEdit(
+  recipeId: string,
+  originalName: string,
+  edited: Partial<Recipe>,
+  reason?: string,
+): Promise<boolean> {
+  const record: PendingRecipeEdit = {
+    id: `edit_${Date.now()}_${Math.random().toString(36).slice(2, 8)}`,
+    recipeId,
+    originalName,
+    edited,
+    reason,
+    deviceId: typeof window !== 'undefined' ? getDeviceId() : 'server',
+    createdAt: new Date().toISOString(),
+    status: 'pending',
+  };
+
+  if (isSupabaseEnabled() && supabase) {
+    const { error } = await supabase.from('pending_recipe_edits').insert({
+      id: record.id,
+      recipe_id: record.recipeId,
+      original_name: record.originalName,
+      edited: record.edited,
+      reason: record.reason || null,
+      device_id: record.deviceId,
+      status: 'pending',
+    });
+    if (!error) return true;
+    console.warn('Supabase 待审编辑写入失败(表可能未创建):', error.message);
+  }
+
+  if (typeof window !== 'undefined') {
+    const all = listPendingRecipeEditsLocal();
+    all.unshift(record);
+    localStorage.setItem(LS_RECIPE_EDITS, JSON.stringify(all.slice(0, 200)));
+    return true;
+  }
+  return false;
+}
+
+export function listPendingRecipeEditsLocal(): PendingRecipeEdit[] {
+  if (typeof window === 'undefined') return [];
+  try {
+    return JSON.parse(localStorage.getItem(LS_RECIPE_EDITS) || '[]');
+  } catch { return []; }
+}
+
+export async function listPendingRecipeEdits(): Promise<PendingRecipeEdit[]> {
+  const local = listPendingRecipeEditsLocal();
+  if (isSupabaseEnabled() && supabase) {
+    const { data, error } = await supabase
+      .from('pending_recipe_edits')
+      .select('*')
+      .order('created_at', { ascending: false })
+      .limit(200);
+    if (!error && data) {
+      const cloud: PendingRecipeEdit[] = data.map((r: Record<string, unknown>) => ({
+        id: r.id as string,
+        recipeId: r.recipe_id as string,
+        originalName: r.original_name as string,
+        edited: r.edited as Partial<Recipe>,
+        reason: r.reason as string | undefined,
+        deviceId: r.device_id as string,
+        createdAt: r.created_at as string,
+        status: (r.status as 'pending' | 'approved' | 'rejected') || 'pending',
+        reviewerNote: r.reviewer_note as string | undefined,
+      }));
+      const seen = new Set(cloud.map(c => c.id));
+      return [...cloud, ...local.filter(l => !seen.has(l.id))];
+    }
+  }
+  return local;
+}
+
+export async function updatePendingRecipeEdit(
+  id: string,
+  updates: { status?: 'pending' | 'approved' | 'rejected'; reviewerNote?: string }
+): Promise<boolean> {
+  const dbUpdates: Record<string, unknown> = {};
+  if (updates.status) dbUpdates.status = updates.status;
+  if (updates.reviewerNote !== undefined) dbUpdates.reviewer_note = updates.reviewerNote;
+
+  if (isSupabaseEnabled() && supabase) {
+    const { error } = await supabase
+      .from('pending_recipe_edits')
+      .update(dbUpdates)
+      .eq('id', id);
+    if (!error) return true;
+  }
+  if (typeof window !== 'undefined') {
+    const all = listPendingRecipeEditsLocal();
+    const idx = all.findIndex(r => r.id === id);
+    if (idx >= 0) {
+      all[idx] = { ...all[idx], ...updates };
+      localStorage.setItem(LS_RECIPE_EDITS, JSON.stringify(all));
+      return true;
+    }
+  }
+  return false;
+}

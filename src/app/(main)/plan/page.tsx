@@ -421,34 +421,43 @@ export default function PlanPage() {
               </div>
             </div>
             {(() => {
-              // 按家庭每日总目标估算缺口 (同 Dashboard 逻辑, 确保规划页热量与目标一致)
-              //   未规划餐次: 按早/午/晚 25%/40%/35% 估算缺口(带饭模式午餐由剩菜补足, 不算)
-              //   未开启品类: 主食 400/人/天, 水果 150/人/天, 汤 100/人/天
+              // 数据源: weeklyPlan.memberAdvice (与 Dashboard 完全一致, 由营养学 engine 统一计算)
+              // 避免两处计算不同导致数据不一致
+              const memberAdvice = weeklyPlan.memberAdvice || [];
               const target = Math.round(householdTarget);
-              const famSize = Math.max(1, familySize);
 
-              // 1) 未规划餐次缺口
-              const mealItems: { label: string; cal: number }[] = [];
-              if (!profile.mealsPerDay.includes('breakfast')) mealItems.push({ label: '早餐', cal: Math.round(target * 0.25) });
-              if (!profile.mealsPerDay.includes('lunch') && !profile.lunchboxMode) mealItems.push({ label: '午餐', cal: Math.round(target * 0.40) });
-              if (!profile.mealsPerDay.includes('dinner')) mealItems.push({ label: '晚餐', cal: Math.round(target * 0.35) });
+              // 1) 未规划餐次缺口: 汇总所有成员的 skippedMeals
+              // 带饭模式: 午餐由晚餐剩菜补, 不算缺口
+              const skippedByMeal: Record<string, { label: string; cal: number }> = {};
+              for (const adv of memberAdvice) {
+                const list = profile.lunchboxMode
+                  ? (adv.skippedMeals || []).filter(m => m.mealType !== 'lunch')
+                  : (adv.skippedMeals || []);
+                for (const sm of list) {
+                  if (!skippedByMeal[sm.mealType]) skippedByMeal[sm.mealType] = { label: sm.label, cal: 0 };
+                  skippedByMeal[sm.mealType].cal += sm.suggestedCalories;
+                }
+              }
+              const mealItems = Object.values(skippedByMeal).map(x => ({ label: x.label, cal: Math.round(x.cal) }));
 
-              // 2) 未开启品类缺口 (本地补足, 同 Dashboard)
+              // 2) 未开启品类缺口: 汇总所有成员的 stapleCalories/fruitCalories/soupCalories
+              //    同 Dashboard: advStaple = adv.stapleCalories; advFruit = adv.fruitCalories; advSoup = adv.soupCalories
               const categoryItems: { label: string; cal: number }[] = [];
-              if ((profile.stapleMode || 'off') === 'off') categoryItems.push({ label: '主食', cal: 400 * famSize });
-              if (!profile.includeFruit) categoryItems.push({ label: '水果', cal: 150 * famSize });
-              if (!profile.includeSoup) categoryItems.push({ label: '汤', cal: 100 * famSize });
+              const sumStaple = memberAdvice.reduce((s, a) => s + (a.stapleCalories || 0), 0);
+              const sumFruit = memberAdvice.reduce((s, a) => s + (a.fruitCalories || 0), 0);
+              const sumSoup = memberAdvice.reduce((s, a) => s + (a.soupCalories || 0), 0);
+              if ((profile.stapleMode || 'off') === 'off' && sumStaple > 0) categoryItems.push({ label: '主食', cal: sumStaple });
+              if (!profile.includeFruit && sumFruit > 0) categoryItems.push({ label: '水果', cal: sumFruit });
+              if (!profile.includeSoup && sumSoup > 0) categoryItems.push({ label: '汤', cal: sumSoup });
 
               const totalMealGap = mealItems.reduce((s, i) => s + i.cal, 0);
               const totalCatGap = categoryItems.reduce((s, i) => s + i.cal, 0);
               const totalEstimated = dayTotalCal + totalMealGap + totalCatGap;
               const diff = Math.abs(totalEstimated - target);
               const diffPct = target > 0 ? (diff / target * 100) : 0;
-              // 颜色: ≤10% 绿色(合理), ≤20% 橙色(稍有偏差), >20% 红色(差异较大)
               const statusColor = diffPct <= 10 ? 'text-green-700' : diffPct <= 20 ? 'text-amber-700' : 'text-red-600';
 
               if (mealItems.length === 0 && categoryItems.length === 0 && diffPct <= 10) {
-                // 无缺口且基本对上, 给一个简短成功提示
                 return (
                   <p className="text-[11px] text-green-700 mt-1.5">
                     ✓ 达标: {dayTotalCal} / 目标 {target} kcal (偏差 {Math.round(diffPct)}%)
@@ -506,31 +515,39 @@ export default function PlanPage() {
           }
           const perPersonCal = Math.round(mealCalories / familySize);
           // 手动模式(customMealComposition.enabled) + 热量不足时建议 ×N 量
-          // 目标: 本餐占日目标的比例 × 倍率(带饭晚餐×2); 未开启品类的热量从本餐目标扣除
-          //   以便 mealCalories ≈ mealTargetAfterGap 时不会错误提示缺口
+          // 本餐目标 = 日目标 × 本餐占比 (归一到 effectiveMeals, 带饭模式 lunch 视为活跃, 保持原目标)
+          // 重要: 带饭模式晚餐目标 = 正常晚餐目标 (不 ×2); cooking amount 为 2× 目标(给明日午餐留)
           const manualMode = profile.customMealComposition?.enabled;
           const mealTargetRatio = mealType === 'breakfast' ? 0.25 : mealType === 'lunch' ? 0.40 : 0.35;
-          const activeMealsCount = profile.mealsPerDay.filter(m => m === 'breakfast' || m === 'lunch' || m === 'dinner').length;
-          const activeRatioSum = profile.mealsPerDay.reduce((s, m) => s + (m === 'breakfast' ? 0.25 : m === 'lunch' ? 0.4 : 0.35), 0) || 1;
-          // 本餐目标(未扣品类): 日目标 × 本餐比例(归一到开启的餐次)
-          const mealFullTarget = Math.round(householdTarget * mealTargetRatio / activeRatioSum * slotMult);
-          // 本餐扣除品类缺口 (与引擎 getMealCalorieBudget 一致)
+          // effectiveMeals: 带饭模式把 lunch 视为活跃(由剩菜补), 避免重新归一导致目标翻倍
+          const effectiveMealsForTarget = profile.lunchboxMode && !profile.mealsPerDay.includes('lunch')
+            ? [...profile.mealsPerDay, 'lunch' as MealType]
+            : profile.mealsPerDay;
+          const activeRatioSum = effectiveMealsForTarget.reduce((s, m) => s + (m === 'breakfast' ? 0.25 : m === 'lunch' ? 0.4 : 0.35), 0) || 1;
+          // 本餐目标(未扣品类): 日目标 × 本餐比例; 不乘 slotMult (目标反映每日每人摄入, 不因烹制量变化)
+          const mealFullTarget = Math.round(householdTarget * mealTargetRatio / activeRatioSum);
+          // 本餐扣除品类缺口 (与引擎 memberAdvice 口径一致)
           const mealGapDeduct = (() => {
-            const fam = Math.max(1, familySize);
+            const memberAdvice = weeklyPlan.memberAdvice || [];
             const factor = mealTargetRatio / activeRatioSum;
+            const sumStaple = memberAdvice.reduce((s, a) => s + (a.stapleCalories || 0), 0);
+            const sumFruit = memberAdvice.reduce((s, a) => s + (a.fruitCalories || 0), 0);
+            const sumSoup = memberAdvice.reduce((s, a) => s + (a.soupCalories || 0), 0);
             let gap = 0;
-            if ((profile.stapleMode || 'off') === 'off') gap += 400 * fam * factor;
-            if (!profile.includeFruit) gap += 150 * fam * factor;
-            if (!profile.includeSoup) gap += 100 * fam * factor;
-            return Math.round(gap * slotMult);
+            if ((profile.stapleMode || 'off') === 'off') gap += sumStaple * factor;
+            if (!profile.includeFruit) gap += sumFruit * factor;
+            if (!profile.includeSoup) gap += sumSoup * factor;
+            return Math.round(gap);  // 不乘 slotMult
           })();
           const mealTargetCal = Math.max(200, mealFullTarget - mealGapDeduct);
-          const mealRatio = mealTargetCal > 0 ? mealCalories / mealTargetCal : 1;
-          // 推荐倍率: 让 mealCalories × N ≈ mealTargetCal; 向 0.5 取整(如 1.5x/2x/2.5x)
+          // 对比实际烹制 vs 目标 (带饭模式期望比例接近 slotMult, 即 2×)
+          const expectedRatio = isLunchboxDinner ? slotMult : 1;  // 带饭晚餐期望 2×, 其他 1×
+          const mealRatio = mealTargetCal > 0 ? (mealCalories / mealTargetCal) / expectedRatio : 1;
+          // 推荐倍率: 让 mealCalories × N ≈ expectedRatio × mealTargetCal
           let suggestMultiplier = 1;
           if (manualMode && profile.calorieEnabled !== false && mealRatio < 0.7 && mealCalories > 0) {
-            suggestMultiplier = Math.max(1.5, Math.round((mealTargetCal / mealCalories) * 2) / 2);
-            if (suggestMultiplier > 3) suggestMultiplier = 3;  // 最多建议 ×3
+            suggestMultiplier = Math.max(1.5, Math.round((expectedRatio * mealTargetCal / mealCalories) * 2) / 2);
+            if (suggestMultiplier > 3) suggestMultiplier = 3;
           }
 
           return (
@@ -550,7 +567,7 @@ export default function PlanPage() {
                         {profile.calorieEnabled !== false && (
                           <>
                             <Flame className="w-3 h-3 text-accent" />
-                            {familySize}人共 {mealCalories} / 目标 {mealTargetCal} kcal · 人均 {perPersonCal}
+                            {familySize}人共 {mealCalories} / 目标 {isLunchboxDinner ? `${mealTargetCal}×${Math.round(slotMult)}` : mealTargetCal} kcal · 人均 {perPersonCal}
                           </>
                         )}
                         {profile.budgetEnabled !== false && (

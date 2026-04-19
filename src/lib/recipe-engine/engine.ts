@@ -555,13 +555,22 @@ export function getMealCalorieBudget(profile: UserProfile, mealType: MealType): 
   let budget = normalized;
 
   // 未开启品类的热量缺口(用户自补, 不让系统规划这部分)
-  // 按本餐在 effective 分配中的占比扣
-  const familyMul = Math.max(1, profile.familySize);
+  // 采用营养学专家值: 成人标准 日目标 × 对应比例, 按所有启用成员汇总
+  //   主食 ~25% 日目标 (中国居民膳食指南: 生重 200-300g/天)
+  //   水果 ~7% 日目标 (200-350g/天)
+  //   汤 ~4% 日目标 (2 碗/天)
   const gapFactor = mealRatio / effectiveWeightTotal;
-  if ((profile.stapleMode || 'off') === 'off') budget -= 400 * familyMul * gapFactor;
-  if (!profile.includeFruit) budget -= 150 * familyMul * gapFactor;
-  if (!profile.includeSoup) budget -= 100 * familyMul * gapFactor;
+  const daysStapleTotal = membersForThisMeal.reduce((s, m) => s + m.dailyCalorieTarget * 0.25, 0)
+    + extraForThisMeal * avgTarget * 0.25;
+  const daysFruitTotal = membersForThisMeal.reduce((s, m) => s + m.dailyCalorieTarget * 0.07, 0)
+    + extraForThisMeal * avgTarget * 0.07;
+  const daysSoupTotal = membersForThisMeal.reduce((s, m) => s + m.dailyCalorieTarget * 0.04, 0)
+    + extraForThisMeal * avgTarget * 0.04;
+  if ((profile.stapleMode || 'off') === 'off') budget -= daysStapleTotal * gapFactor;
+  if (!profile.includeFruit) budget -= daysFruitTotal * gapFactor;
+  if (!profile.includeSoup) budget -= daysSoupTotal * gapFactor;
 
+  const familyMul = Math.max(1, profile.familySize);
   budget = Math.max(300 * familyMul * gapFactor, budget);
   return Math.round(budget);
 }
@@ -1389,24 +1398,33 @@ export function generateWeeklyPlan(
     const ratio = totalDailyTarget > 0 ? member.dailyCalorieTarget / totalDailyTarget : 1 / effectiveMembers.length;
     const memberDishCalories = Math.round(dishCaloriesPerDay * ratio);
 
-    // 按年龄段+性别微调 每餐 主食建议量
-    const baseStaplePerMeal = ag === 'toddler' ? 50 : ag === 'child' ? 80
-      : ag === 'preteen' ? 120 : ag === 'teen' ? 150
-      : ag === 'young_adult' ? 150 : ag === 'adult' ? 150
-      : ag === 'middle_age' ? 120 : 100;
+    // ===== 营养学标准: 中国居民膳食指南 2022 + USDA 综合 =====
+    // 统一口径: 按日目标热量的百分比 (与 getMealCalorieBudget 完全一致)
+    //   主食: 25% 日目标 (约 200-300g 生重/日, 含米/面/杂粮, 中国指南)
+    //   水果: 7% 日目标 (约 200-350g/日)
+    //   汤: 4% 日目标 (约 2 碗清汤/日)
+
+    // 主食克数建议(生重/每餐, 供显示): 按年龄+性别微调
+    const baseStaplePerMeal = ag === 'toddler' ? 35 : ag === 'child' ? 55
+      : ag === 'preteen' ? 75 : ag === 'teen' ? 95
+      : ag === 'young_adult' ? 100 : ag === 'adult' ? 100
+      : ag === 'middle_age' ? 85 : 70;
     const genderFactor = member.gender === 'female' ? 0.85 : 1;
     const adjStaplePerMeal = Math.round(baseStaplePerMeal * genderFactor);
-    // 全天主食 = 每餐 × 规划的餐数 (未规划的餐次也算，因为也要吃主食)
-    const totalMealsPerDay = 3; // 一天3餐都需要主食
-    const adjStapleGrams = adjStaplePerMeal * totalMealsPerDay;
-    const stapleCalories = Math.round(adjStapleGrams * 1.3); // 米饭~130kcal/100g
+    const adjStapleGrams = adjStaplePerMeal * 3;
 
-    // 水果建议 (全天总量，不按餐分)
+    // 实际主食热量 = 25% × 日目标 (口径统一, 避免重复计算)
+    const finalStapleCalories = Math.round(member.dailyCalorieTarget * 0.25);
+
+    // 水果克数建议(用于显示):
     const fruitGrams = ag === 'toddler' ? 100 : ag === 'child' ? 150
-      : ag === 'senior' || ag === 'middle_age' ? 150 : 200;
-    const fruitCalories = Math.round(fruitGrams * 0.5); // 水果平均~50kcal/100g
+      : ag === 'senior' || ag === 'middle_age' ? 180 : 250;
+    const finalFruitCalories = Math.round(member.dailyCalorieTarget * 0.07);
 
-    // 跳过的餐次建议
+    // 汤: 4% 日目标
+    const soupCaloriesPerDay = Math.round(member.dailyCalorieTarget * 0.04);
+
+    // ===== 跳过的餐次 =====
     // 三餐热量比例: 早25% 午40% 晚35%
     const allMeals: Array<{ type: 'breakfast' | 'lunch' | 'dinner'; label: string; ratio: number }> = [
       { type: 'breakfast', label: '早餐', ratio: 0.25 },
@@ -1416,12 +1434,12 @@ export function generateWeeklyPlan(
     const skippedMeals = allMeals
       .filter(m => !profile.mealsPerDay.includes(m.type))
       .map(m => {
-        // 该餐总热量 = 目标 * 比例
+        // 该餐总热量 = 目标 × 比例
         const totalMealCal = Math.round(member.dailyCalorieTarget * m.ratio);
-        // 减去该餐中主食/水果/汤的建议热量（已经单独给了建议）
-        const mealStaple = (profile.stapleMode || 'off') === 'off' ? Math.round(stapleCalories / profile.mealsPerDay.length) : 0;
-        const mealFruit = !profile.includeFruit ? Math.round(fruitCalories / 3) : 0; // 水果按3餐平摊
-        const mealSoup = !profile.includeSoup ? 15 : 0; // 汤按单餐~15kcal
+        // 该餐中主食/水果/汤的建议热量(已单独给了建议) → 从缺口中减去避免重复
+        const mealStaple = (profile.stapleMode || 'off') === 'off' ? Math.round(finalStapleCalories / 3) : 0;
+        const mealFruit = !profile.includeFruit ? Math.round(finalFruitCalories / 3) : 0;
+        const mealSoup = !profile.includeSoup ? Math.round(soupCaloriesPerDay / 2) : 0;
         const suggestedCalories = Math.max(0, totalMealCal - mealStaple - mealFruit - mealSoup);
         return {
           mealType: m.type as 'breakfast' | 'lunch' | 'dinner',
@@ -1443,9 +1461,10 @@ export function generateWeeklyPlan(
       dishCalories: memberDishCalories,
       staplePerMeal: adjStaplePerMeal,
       stapleGrams: adjStapleGrams,
-      stapleCalories,
+      stapleCalories: finalStapleCalories,
       fruitGrams,
-      fruitCalories,
+      fruitCalories: finalFruitCalories,
+      soupCalories: soupCaloriesPerDay,  // 新增: 统一供 UI 使用
       skippedMeals,
       gap,
     };

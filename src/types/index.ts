@@ -344,6 +344,7 @@ export interface MemberCalorieAdvice {
   stapleCalories: number;        // 全天主食热量
   fruitGrams: number;            // 建议水果克数
   fruitCalories: number;         // 水果热量
+  soupCalories?: number;         // 全天汤热量(~4% 日目标)
   skippedMeals: SkippedMealAdvice[]; // 未规划的餐次建议
   gap: number;                   // 剩余热量缺口
 }

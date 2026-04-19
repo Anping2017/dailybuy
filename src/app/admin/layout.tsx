@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useState, useEffect } from 'react';
-import { LayoutDashboard, UtensilsCrossed, AlertTriangle, Apple, Sparkles, Inbox, Brain, Menu, X } from 'lucide-react';
+import { LayoutDashboard, UtensilsCrossed, AlertTriangle, Apple, Sparkles, Inbox, Brain, Menu, X, Edit3 } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 const NAV = [
@@ -12,6 +12,7 @@ const NAV = [
   { href: '/admin/ingredients', label: '食材管理', icon: Apple },
   { href: '/admin/ingredients/pending', label: '待新增食材', icon: Sparkles },
   { href: '/admin/pending-requests', label: '待新增菜谱', icon: Inbox },
+  { href: '/admin/pending-recipe-edits', label: '菜谱修改建议', icon: Edit3 },
   { href: '/admin/pending-analysis', label: '待分析方案', icon: Brain },
   { href: '/admin/validation', label: '数据校验', icon: AlertTriangle },
 ];

@@ -3,13 +3,14 @@
 import { useParams, useRouter, useSearchParams } from 'next/navigation';
 import { useState, useEffect, useCallback } from 'react';
 import Link from 'next/link';
-import { ArrowLeft, Flame, Clock, DollarSign, ShoppingCart, Check, ChefHat, ChevronLeft, ChevronRight, X, Share2, Copy, CheckCheck, CalendarPlus } from 'lucide-react';
+import { ArrowLeft, Flame, Clock, DollarSign, ShoppingCart, Check, ChefHat, ChevronLeft, ChevronRight, X, Share2, Copy, CheckCheck, CalendarPlus, Edit3 } from 'lucide-react';
 import { AddToPlanSheet } from '@/components/recipe/add-to-plan-sheet';
 import { getRecipe, calcRecipeNutrition, calcRecipeCost } from '@/lib/nutrition/calculator';
 import { getIngredient } from '@/lib/data/recipe-repository';
 import { useAppStore, getPreferenceScore } from '@/lib/store';
 import { NutritionBadges, PerServingPanel } from '@/components/recipe/nutrition-badges';
-import type { DifficultyLevel, CookingMethod } from '@/types';
+import { savePendingRecipeEdit } from '@/lib/supabase/pending';
+import type { DifficultyLevel, CookingMethod, Recipe } from '@/types';
 
 const DIFF_LABELS: Record<DifficultyLevel, string> = { easy: '简单', medium: '中等', hard: '困难' };
 const METHOD_LABELS: Record<CookingMethod, string> = {
@@ -25,6 +26,8 @@ export default function RecipeDetailPage() {
   const [cookingMode, setCookingMode] = useState(false);
   const [showShare, setShowShare] = useState(false);
   const [showAddToPlan, setShowAddToPlan] = useState(false);
+  const [showEditSuggest, setShowEditSuggest] = useState(false);
+  const [editSubmitState, setEditSubmitState] = useState<'idle' | 'submitting' | 'done' | 'error'>('idle');
 
   // 支持 ?cook=1 自动开烹饪模式（菜谱库点"开始烹饪"跳转）
   useEffect(() => {
@@ -55,12 +58,24 @@ export default function RecipeDetailPage() {
       </button>
 
       {/* 标题 */}
-      <div>
-        <h1 className="text-xl font-bold">{recipe.nameZh}</h1>
-        <p className="text-sm text-muted">{recipe.nameEn}</p>
-        {prefScore > 5 && <span className="inline-block mt-1 text-xs bg-green-100 text-green-700 px-2 py-0.5 rounded-full">常做的菜</span>}
-        {prefScore > 0 && prefScore <= 5 && <span className="inline-block mt-1 text-xs bg-green-50 text-green-600 px-2 py-0.5 rounded-full">做过几次</span>}
-        {prefScore < -3 && <span className="inline-block mt-1 text-xs bg-gray-100 text-gray-500 px-2 py-0.5 rounded-full">不太喜欢</span>}
+      <div className="flex items-start justify-between gap-2">
+        <div className="flex-1 min-w-0">
+          <h1 className="text-xl font-bold">{recipe.nameZh}</h1>
+          <p className="text-sm text-muted">{recipe.nameEn}</p>
+          {prefScore > 5 && <span className="inline-block mt-1 text-xs bg-green-100 text-green-700 px-2 py-0.5 rounded-full">常做的菜</span>}
+          {prefScore > 0 && prefScore <= 5 && <span className="inline-block mt-1 text-xs bg-green-50 text-green-600 px-2 py-0.5 rounded-full">做过几次</span>}
+          {prefScore < -3 && <span className="inline-block mt-1 text-xs bg-gray-100 text-gray-500 px-2 py-0.5 rounded-full">不太喜欢</span>}
+        </div>
+        {/* 用户自定义菜谱不需要提建议 (用户可直接编辑自己的) */}
+        {!customRecipe && (
+          <button
+            onClick={() => setShowEditSuggest(true)}
+            title="提交编辑建议 (经审批后生效)"
+            className="flex-shrink-0 flex items-center gap-1 px-2 py-1 border border-border rounded-lg text-xs text-muted hover:border-primary hover:text-primary transition"
+          >
+            <Edit3 className="w-3.5 h-3.5" /> 建议修改
+          </button>
+        )}
       </div>
 
       {/* 标签 */}
@@ -209,6 +224,21 @@ export default function RecipeDetailPage() {
 
       {showAddToPlan && (
         <AddToPlanSheet recipe={recipe} onClose={() => setShowAddToPlan(false)} />
+      )}
+
+      {/* 建议修改 弹窗 (提交后进入审批队列) */}
+      {showEditSuggest && (
+        <EditSuggestModal
+          recipe={recipe}
+          submitState={editSubmitState}
+          onSubmit={async (edited, reason) => {
+            setEditSubmitState('submitting');
+            const ok = await savePendingRecipeEdit(recipe.id, recipe.nameZh, edited, reason);
+            setEditSubmitState(ok ? 'done' : 'error');
+            if (ok) setTimeout(() => { setShowEditSuggest(false); setEditSubmitState('idle'); }, 1500);
+          }}
+          onClose={() => { setShowEditSuggest(false); setEditSubmitState('idle'); }}
+        />
       )}
     </div>
   );
@@ -410,6 +440,123 @@ function CookingMode({ recipeName, steps, ingredients, onClose }: {
             {isFirst ? '开始' : '下一步'} <ChevronRight className="w-5 h-5" />
           </button>
         )}
+      </div>
+    </div>
+  );
+}
+
+/** 建议修改弹窗: 用户可修改关键字段, 提交到审批队列 */
+function EditSuggestModal({ recipe, submitState, onSubmit, onClose }: {
+  recipe: Recipe;
+  submitState: 'idle' | 'submitting' | 'done' | 'error';
+  onSubmit: (edited: Partial<Recipe>, reason: string) => void;
+  onClose: () => void;
+}) {
+  const [nameZh, setNameZh] = useState(recipe.nameZh);
+  const [nameEn, setNameEn] = useState(recipe.nameEn);
+  const [difficulty, setDifficulty] = useState<DifficultyLevel>(recipe.difficulty);
+  const [prepTime, setPrepTime] = useState(recipe.prepTime);
+  const [cookTime, setCookTime] = useState(recipe.cookTime);
+  const [servings, setServings] = useState(recipe.servings);
+  const [description, setDescription] = useState(recipe.description || '');
+  const [steps, setSteps] = useState<string>((recipe.steps || []).join('\n'));
+  const [reason, setReason] = useState('');
+
+  const handleSubmit = () => {
+    // 只提交有改动的字段
+    const edited: Partial<Recipe> = {};
+    if (nameZh !== recipe.nameZh) edited.nameZh = nameZh;
+    if (nameEn !== recipe.nameEn) edited.nameEn = nameEn;
+    if (difficulty !== recipe.difficulty) edited.difficulty = difficulty;
+    if (prepTime !== recipe.prepTime) edited.prepTime = prepTime;
+    if (cookTime !== recipe.cookTime) edited.cookTime = cookTime;
+    if (servings !== recipe.servings) edited.servings = servings;
+    if (description !== (recipe.description || '')) edited.description = description;
+    const newSteps = steps.split('\n').map(s => s.trim()).filter(Boolean);
+    if (JSON.stringify(newSteps) !== JSON.stringify(recipe.steps || [])) edited.steps = newSteps;
+
+    if (Object.keys(edited).length === 0) {
+      alert('没有任何修改');
+      return;
+    }
+    onSubmit(edited, reason);
+  };
+
+  return (
+    <div className="fixed inset-0 z-[60] bg-black/50 flex items-end sm:items-center justify-center p-4" onClick={onClose}>
+      <div className="bg-card rounded-2xl border border-border w-full max-w-md flex flex-col max-h-[90vh]" onClick={e => e.stopPropagation()}>
+        <div className="p-4 border-b border-border flex items-center justify-between">
+          <h3 className="font-semibold flex items-center gap-2"><Edit3 className="w-4 h-4 text-primary" /> 建议修改此菜谱</h3>
+          <button onClick={onClose} className="text-muted"><X className="w-5 h-5" /></button>
+        </div>
+        <div className="flex-1 overflow-y-auto p-4 space-y-3">
+          <p className="text-xs text-muted">提交后将进入管理员审批队列, 批准后此菜谱自动更新。</p>
+
+          <div>
+            <label className="text-xs text-muted block mb-1">中文名</label>
+            <input type="text" value={nameZh} onChange={e => setNameZh(e.target.value)}
+              className="w-full border border-border rounded px-3 py-2 text-sm bg-background" />
+          </div>
+          <div>
+            <label className="text-xs text-muted block mb-1">英文名</label>
+            <input type="text" value={nameEn} onChange={e => setNameEn(e.target.value)}
+              className="w-full border border-border rounded px-3 py-2 text-sm bg-background" />
+          </div>
+          <div>
+            <label className="text-xs text-muted block mb-1">描述</label>
+            <textarea value={description} onChange={e => setDescription(e.target.value)} rows={2}
+              className="w-full border border-border rounded px-3 py-2 text-sm bg-background" />
+          </div>
+          <div className="grid grid-cols-3 gap-2">
+            <div>
+              <label className="text-xs text-muted block mb-1">难度</label>
+              <select value={difficulty} onChange={e => setDifficulty(e.target.value as DifficultyLevel)}
+                className="w-full border border-border rounded px-2 py-2 text-sm bg-background">
+                <option value="easy">简单</option>
+                <option value="medium">中等</option>
+                <option value="hard">困难</option>
+              </select>
+            </div>
+            <div>
+              <label className="text-xs text-muted block mb-1">准备(分)</label>
+              <input type="number" value={prepTime} onChange={e => setPrepTime(Number(e.target.value) || 0)}
+                className="w-full border border-border rounded px-2 py-2 text-sm bg-background" />
+            </div>
+            <div>
+              <label className="text-xs text-muted block mb-1">烹饪(分)</label>
+              <input type="number" value={cookTime} onChange={e => setCookTime(Number(e.target.value) || 0)}
+                className="w-full border border-border rounded px-2 py-2 text-sm bg-background" />
+            </div>
+          </div>
+          <div>
+            <label className="text-xs text-muted block mb-1">几人份</label>
+            <input type="number" value={servings} onChange={e => setServings(Number(e.target.value) || 1)}
+              className="w-full border border-border rounded px-3 py-2 text-sm bg-background" min={1} max={12} />
+          </div>
+          <div>
+            <label className="text-xs text-muted block mb-1">步骤(每行一步)</label>
+            <textarea value={steps} onChange={e => setSteps(e.target.value)} rows={6}
+              className="w-full border border-border rounded px-3 py-2 text-sm bg-background font-mono" />
+          </div>
+          <div>
+            <label className="text-xs text-muted block mb-1">修改原因(可选)</label>
+            <textarea value={reason} onChange={e => setReason(e.target.value)} rows={2}
+              placeholder="例: 用时更准确/步骤更清晰/菜名应改为XX"
+              className="w-full border border-border rounded px-3 py-2 text-sm bg-background" />
+          </div>
+        </div>
+        <div className="p-4 border-t border-border flex gap-2">
+          <button onClick={onClose} className="flex-1 py-2.5 border border-border rounded-lg text-sm" disabled={submitState === 'submitting'}>
+            取消
+          </button>
+          <button
+            onClick={handleSubmit}
+            disabled={submitState === 'submitting' || submitState === 'done'}
+            className="flex-1 py-2.5 bg-primary text-white rounded-lg text-sm font-medium disabled:opacity-50 transition"
+          >
+            {submitState === 'submitting' ? '提交中...' : submitState === 'done' ? '✓ 已提交审批' : submitState === 'error' ? '❌ 失败, 重试' : '提交建议'}
+          </button>
+        </div>
       </div>
     </div>
   );
