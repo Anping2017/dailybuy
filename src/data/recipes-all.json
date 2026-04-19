@@ -49023,7 +49023,7 @@
       "下饭菜"
     ],
     "description": "粤式家常好味。精心烹饪，口感鲜美、咸香，适合午餐/晚餐享用。",
-    "cookingMethod": "staple",
+    "cookingMethod": "stir_fry",
     "status": "reviewed",
     "source": "chinese-1"
   },
@@ -49849,7 +49849,7 @@
       "下饭菜"
     ],
     "description": "家常家常好味。精心烹饪，口感香辣、咸香、鲜美，适合晚餐享用。",
-    "cookingMethod": "staple",
+    "cookingMethod": "stir_fry",
     "status": "reviewed",
     "source": "chinese-1"
   },
@@ -50364,7 +50364,7 @@
       "炒菜"
     ],
     "description": "鲁菜家常好味。精心烹饪，口感咸香、鲜美，新手友好，快手完成。",
-    "cookingMethod": "staple",
+    "cookingMethod": "stir_fry",
     "status": "reviewed",
     "source": "chinese-1"
   },
@@ -52456,7 +52456,7 @@
       "下饭菜"
     ],
     "description": "鲁菜家常好味。精心烹饪，口感咸香、鲜美，适合午餐/晚餐享用。",
-    "cookingMethod": "staple",
+    "cookingMethod": "stir_fry",
     "status": "reviewed",
     "source": "chinese-1"
   },
@@ -53864,7 +53864,7 @@
       "低脂"
     ],
     "description": "家常家常好味。精心烹饪，口感鲜美、清淡，新手友好，快手完成。",
-    "cookingMethod": "staple",
+    "cookingMethod": "stir_fry",
     "status": "reviewed",
     "source": "chinese-2"
   },
@@ -54464,7 +54464,7 @@
       "冬季暖身"
     ],
     "description": "鲁菜家常好味。精心烹饪，口感咸香、鲜美，适合晚餐享用。",
-    "cookingMethod": "staple",
+    "cookingMethod": "stir_fry",
     "status": "reviewed",
     "source": "chinese-2"
   },
@@ -56444,7 +56444,7 @@
       "嫩滑"
     ],
     "description": "粤式家常好味。精心烹饪，口感清淡、鲜美，新手友好，快手完成。",
-    "cookingMethod": "staple",
+    "cookingMethod": "stir_fry",
     "status": "reviewed",
     "source": "chinese-2"
   },
@@ -65530,7 +65530,7 @@
       "泰式"
     ],
     "description": "东南亚风味家常好味。精心烹饪，口感咸香、鲜美，适合晚餐享用。",
-    "cookingMethod": "staple",
+    "cookingMethod": "stir_fry",
     "status": "reviewed",
     "source": "international"
   },
@@ -89141,7 +89141,7 @@
     "nameEn": "Beef Burrito",
     "cuisine": "western",
     "regionalCuisine": "american",
-    "cookingMethod": "staple",
+    "cookingMethod": "stir_fry",
     "flavors": [
       "salty",
       "spicy"
