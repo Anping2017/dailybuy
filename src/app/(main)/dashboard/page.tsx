@@ -93,12 +93,13 @@ export default function DashboardPage() {
 
           {/* 每位成员热量建议 - 以今日数据为基础(需求5) */}
           {profile.calorieEnabled !== false && weeklyPlan.memberAdvice && weeklyPlan.memberAdvice.length > 0 && (() => {
-            // 今日菜品总热量: 每道菜按原配方总热量(不缩放), 与 engine budget / 规划页显示一致
+            // 今日菜品总热量: 带饭模式晚餐 ×2 (实际烹制双份), 其他按原配方
             let todayDishTotal = 0;
             for (const slot of todaySlots) {
+              const mult = (profile.lunchboxMode && slot.mealType === 'dinner') ? 2 : 1;
               for (const mr of (slot.recipes || [])) {
                 const r = getRecipe(mr.recipeId);
-                if (r) todayDishTotal += calcRecipeNutrition(r).totalCalories;
+                if (r) todayDishTotal += calcRecipeNutrition(r).totalCalories * mult;
               }
             }
             const totalDailyTarget = weeklyPlan.memberAdvice.reduce((s, a) => s + a.dailyTarget, 0) || 1;

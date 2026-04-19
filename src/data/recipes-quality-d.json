@@ -88,12 +88,12 @@
     "stapleCategory": "noodles",
     "perServing": {
       "calories": 598,
-      "protein": 19.8,
+      "protein": 20.4,
       "fat": 32.7,
-      "carbs": 56.7,
+      "carbs": 56.5,
       "fiber": 3.4,
-      "sodium": 1069,
-      "sugar": 4.5
+      "sodium": 1064,
+      "sugar": 4.4
     },
     "nutritionWarnings": [
       "high_sodium"
@@ -318,12 +318,12 @@
     "dishStyle": "veg",
     "stapleCategory": null,
     "perServing": {
-      "calories": 568,
-      "protein": 16.9,
+      "calories": 563,
+      "protein": 16.8,
       "fat": 39.3,
       "carbs": 41.2,
       "fiber": 9.6,
-      "sodium": 1353,
+      "sodium": 1352,
       "sugar": 23.2
     },
     "nutritionWarnings": [
@@ -444,16 +444,17 @@
     "dishStyle": "veg",
     "stapleCategory": "rice",
     "perServing": {
-      "calories": 428,
-      "protein": 17.8,
-      "fat": 22.9,
-      "carbs": 40,
-      "fiber": 3.5,
-      "sodium": 1829,
-      "sugar": 5.9
+      "calories": 621,
+      "protein": 21.3,
+      "fat": 23.3,
+      "carbs": 83.3,
+      "fiber": 4.2,
+      "sodium": 1833,
+      "sugar": 6.8
     },
     "nutritionWarnings": [
-      "high_sodium"
+      "high_sodium",
+      "high_carb"
     ],
     "nutritionHighlights": [
       "high_fiber",
@@ -552,18 +553,18 @@
     "dishStyle": "meat",
     "stapleCategory": null,
     "perServing": {
-      "calories": 387,
-      "protein": 26,
-      "fat": 29.3,
+      "calories": 375,
+      "protein": 17.9,
+      "fat": 31.3,
       "carbs": 5.1,
       "fiber": 1.7,
-      "sodium": 497,
+      "sodium": 484,
       "sugar": 0.5
     },
     "nutritionWarnings": [],
     "nutritionHighlights": [
-      "high_protein",
       "high_fiber",
+      "high_protein",
       "low_calorie"
     ],
     "allergens": [
@@ -652,17 +653,15 @@
     "dishStyle": "meat",
     "stapleCategory": null,
     "perServing": {
-      "calories": 325,
-      "protein": 18.4,
-      "fat": 19.6,
-      "carbs": 22.5,
+      "calories": 284,
+      "protein": 10.4,
+      "fat": 19.2,
+      "carbs": 22.6,
       "fiber": 6.7,
-      "sodium": 939,
+      "sodium": 588,
       "sugar": 8.6
     },
-    "nutritionWarnings": [
-      "high_sodium"
-    ],
+    "nutritionWarnings": [],
     "nutritionHighlights": [
       "high_fiber",
       "high_protein"
@@ -861,13 +860,13 @@
     "dishStyle": "veg",
     "stapleCategory": "bread",
     "perServing": {
-      "calories": 335,
-      "protein": 19.9,
-      "fat": 25.3,
-      "carbs": 8.2,
+      "calories": 326,
+      "protein": 19.5,
+      "fat": 24.2,
+      "carbs": 7.8,
       "fiber": 1.5,
-      "sodium": 665,
-      "sugar": 5.1
+      "sodium": 683,
+      "sugar": 4.4
     },
     "nutritionWarnings": [],
     "nutritionHighlights": [
@@ -962,12 +961,12 @@
     "dishStyle": "veg",
     "stapleCategory": null,
     "perServing": {
-      "calories": 334,
+      "calories": 341,
       "protein": 6.2,
-      "fat": 17.7,
-      "carbs": 38.9,
+      "fat": 18.4,
+      "carbs": 38.8,
       "fiber": 4.8,
-      "sodium": 690,
+      "sodium": 685,
       "sugar": 4.3
     },
     "nutritionWarnings": [],
@@ -1078,20 +1077,20 @@
     "dishStyle": "veg",
     "stapleCategory": null,
     "perServing": {
-      "calories": 537,
-      "protein": 24,
-      "fat": 24.6,
-      "carbs": 58.8,
-      "fiber": 5.2,
-      "sodium": 1373,
-      "sugar": 8.1
+      "calories": 616,
+      "protein": 25.7,
+      "fat": 30.8,
+      "carbs": 62.3,
+      "fiber": 7.5,
+      "sodium": 1418,
+      "sugar": 6
     },
     "nutritionWarnings": [
       "high_sodium"
     ],
     "nutritionHighlights": [
-      "high_fiber",
       "high_protein",
+      "high_fiber",
       "low_calorie"
     ],
     "allergens": [
@@ -1204,10 +1203,10 @@
       "calories": 470,
       "protein": 18.4,
       "fat": 30.2,
-      "carbs": 29.9,
+      "carbs": 29.6,
       "fiber": 2.2,
-      "sodium": 796,
-      "sugar": 4.2
+      "sodium": 791,
+      "sugar": 4
     },
     "nutritionWarnings": [],
     "nutritionHighlights": [
@@ -1604,15 +1603,18 @@
     "dishStyle": "veg",
     "stapleCategory": "rice",
     "perServing": {
-      "calories": 508,
-      "protein": 30,
-      "fat": 18.3,
-      "carbs": 58.7,
-      "fiber": 6.7,
-      "sodium": 357,
-      "sugar": 5.8
+      "calories": 855,
+      "protein": 36.4,
+      "fat": 18.1,
+      "carbs": 136.5,
+      "fiber": 8.1,
+      "sodium": 372,
+      "sugar": 5.6
     },
-    "nutritionWarnings": [],
+    "nutritionWarnings": [
+      "high_calorie",
+      "high_carb"
+    ],
     "nutritionHighlights": [
       "high_protein",
       "high_fiber",
@@ -1718,13 +1720,13 @@
     "dishStyle": "meat",
     "stapleCategory": "noodles",
     "perServing": {
-      "calories": 629,
-      "protein": 36.8,
-      "fat": 19.3,
+      "calories": 564,
+      "protein": 32.1,
+      "fat": 14,
       "carbs": 71.2,
-      "fiber": 3.9,
+      "fiber": 4.1,
       "sodium": 1830,
-      "sugar": 9.9
+      "sugar": 10
     },
     "nutritionWarnings": [
       "high_sodium"
@@ -1851,13 +1853,13 @@
     "dishStyle": "meat",
     "stapleCategory": "noodles",
     "perServing": {
-      "calories": 654,
-      "protein": 19,
-      "fat": 42,
-      "carbs": 46.6,
-      "fiber": 1.5,
-      "sodium": 1416,
-      "sugar": 8.8
+      "calories": 686,
+      "protein": 18.9,
+      "fat": 48.3,
+      "carbs": 40,
+      "fiber": 1.8,
+      "sodium": 2090,
+      "sugar": 8.5
     },
     "nutritionWarnings": [
       "high_sodium",
@@ -1980,13 +1982,13 @@
     "dishStyle": "meat",
     "stapleCategory": null,
     "perServing": {
-      "calories": 287,
-      "protein": 37,
-      "fat": 9.1,
-      "carbs": 20.1,
+      "calories": 269,
+      "protein": 31.7,
+      "fat": 9.4,
+      "carbs": 20,
       "fiber": 4.6,
-      "sodium": 716,
-      "sugar": 9
+      "sodium": 727,
+      "sugar": 9.2
     },
     "nutritionWarnings": [],
     "nutritionHighlights": [
@@ -2095,12 +2097,12 @@
     "stapleCategory": null,
     "perServing": {
       "calories": 299,
-      "protein": 12.1,
-      "fat": 8.8,
-      "carbs": 52,
-      "fiber": 10.3,
-      "sodium": 1464,
-      "sugar": 32.1
+      "protein": 12.2,
+      "fat": 8.9,
+      "carbs": 51.8,
+      "fiber": 10.1,
+      "sodium": 1351,
+      "sugar": 32.6
     },
     "nutritionWarnings": [
       "high_sodium",
@@ -2220,13 +2222,13 @@
     "dishStyle": "meat",
     "stapleCategory": null,
     "perServing": {
-      "calories": 306,
-      "protein": 20.8,
-      "fat": 15,
-      "carbs": 20.7,
-      "fiber": 0.5,
-      "sodium": 682,
-      "sugar": 1.8
+      "calories": 390,
+      "protein": 20,
+      "fat": 10.4,
+      "carbs": 51.9,
+      "fiber": 1,
+      "sodium": 690,
+      "sugar": 1.7
     },
     "nutritionWarnings": [],
     "nutritionHighlights": [
@@ -2340,11 +2342,11 @@
     "dishStyle": "veg",
     "stapleCategory": null,
     "perServing": {
-      "calories": 690,
-      "protein": 26.5,
-      "fat": 54.8,
+      "calories": 686,
+      "protein": 26.7,
+      "fat": 54.6,
       "carbs": 36.4,
-      "fiber": 11.2,
+      "fiber": 9.8,
       "sodium": 432,
       "sugar": 15
     },
@@ -2487,13 +2489,13 @@
     "dishStyle": "meat",
     "stapleCategory": "noodles",
     "perServing": {
-      "calories": 675,
-      "protein": 35.6,
-      "fat": 28.2,
-      "carbs": 70,
-      "fiber": 4.6,
-      "sodium": 1436,
-      "sugar": 6.4
+      "calories": 617,
+      "protein": 32.9,
+      "fat": 22.9,
+      "carbs": 69.3,
+      "fiber": 4.8,
+      "sodium": 1437,
+      "sugar": 7.2
     },
     "nutritionWarnings": [
       "high_sodium"
@@ -2612,13 +2614,13 @@
     "dishStyle": "meat",
     "stapleCategory": null,
     "perServing": {
-      "calories": 421,
+      "calories": 420,
       "protein": 15.3,
       "fat": 35.2,
-      "carbs": 13.1,
-      "fiber": 2.6,
+      "carbs": 14.1,
+      "fiber": 2.7,
       "sodium": 611,
-      "sugar": 5.8
+      "sugar": 6.3
     },
     "nutritionWarnings": [
       "high_fat"
@@ -2748,18 +2750,20 @@
     "dishStyle": "veg",
     "stapleCategory": "rice",
     "perServing": {
-      "calories": 467,
-      "protein": 21.5,
-      "fat": 20.4,
-      "carbs": 53.8,
-      "fiber": 5.4,
-      "sodium": 757,
-      "sugar": 11.7
+      "calories": 699,
+      "protein": 26,
+      "fat": 20.3,
+      "carbs": 105.7,
+      "fiber": 5.7,
+      "sodium": 765,
+      "sugar": 12.4
     },
-    "nutritionWarnings": [],
+    "nutritionWarnings": [
+      "high_carb"
+    ],
     "nutritionHighlights": [
-      "high_fiber",
       "high_protein",
+      "high_fiber",
       "low_calorie"
     ],
     "allergens": [
@@ -2884,13 +2888,13 @@
     "dishStyle": "meat",
     "stapleCategory": null,
     "perServing": {
-      "calories": 533,
-      "protein": 20.3,
-      "fat": 35.5,
-      "carbs": 32.7,
-      "fiber": 1.4,
-      "sodium": 692,
-      "sugar": 7.1
+      "calories": 550,
+      "protein": 21.8,
+      "fat": 37.3,
+      "carbs": 32.3,
+      "fiber": 1.6,
+      "sodium": 654,
+      "sugar": 6.6
     },
     "nutritionWarnings": [
       "high_fat"
@@ -3005,13 +3009,13 @@
     "dishStyle": "meat",
     "stapleCategory": "noodles",
     "perServing": {
-      "calories": 569,
-      "protein": 18.6,
-      "fat": 15.2,
-      "carbs": 88.4,
-      "fiber": 2.7,
+      "calories": 548,
+      "protein": 16.8,
+      "fat": 13.7,
+      "carbs": 87,
+      "fiber": 2.9,
       "sodium": 796,
-      "sugar": 2.6
+      "sugar": 3.1
     },
     "nutritionWarnings": [
       "high_carb"
@@ -3127,13 +3131,13 @@
     "dishStyle": "meat",
     "stapleCategory": null,
     "perServing": {
-      "calories": 391,
-      "protein": 22.3,
-      "fat": 26,
-      "carbs": 16.6,
+      "calories": 339,
+      "protein": 18.6,
+      "fat": 21.8,
+      "carbs": 16.4,
       "fiber": 2.5,
-      "sodium": 541,
-      "sugar": 6.8
+      "sodium": 438,
+      "sugar": 6
     },
     "nutritionWarnings": [],
     "nutritionHighlights": [
@@ -3252,17 +3256,19 @@
     "dishStyle": "meat",
     "stapleCategory": "rice",
     "perServing": {
-      "calories": 648,
-      "protein": 30.5,
-      "fat": 39.8,
-      "carbs": 43.3,
-      "fiber": 1.4,
-      "sodium": 2364,
-      "sugar": 11.5
+      "calories": 835,
+      "protein": 23.8,
+      "fat": 39.6,
+      "carbs": 94.8,
+      "fiber": 2.4,
+      "sodium": 2044,
+      "sugar": 11
     },
     "nutritionWarnings": [
+      "high_calorie",
       "high_sodium",
-      "high_fat"
+      "high_fat",
+      "high_carb"
     ],
     "nutritionHighlights": [
       "high_protein",
@@ -3371,13 +3377,13 @@
     "dishStyle": "egg",
     "stapleCategory": null,
     "perServing": {
-      "calories": 693,
-      "protein": 22,
-      "fat": 27.3,
-      "carbs": 89,
-      "fiber": 4.6,
-      "sodium": 1250,
-      "sugar": 2.1
+      "calories": 688,
+      "protein": 21.7,
+      "fat": 26.3,
+      "carbs": 88.7,
+      "fiber": 4.7,
+      "sodium": 1165,
+      "sugar": 1.5
     },
     "nutritionWarnings": [
       "high_sodium",
@@ -3519,13 +3525,13 @@
     "dishStyle": "meat",
     "stapleCategory": null,
     "perServing": {
-      "calories": 375,
+      "calories": 373,
       "protein": 23,
-      "fat": 25.3,
-      "carbs": 13.7,
-      "fiber": 2.5,
+      "fat": 25.4,
+      "carbs": 13.4,
+      "fiber": 2.3,
       "sodium": 788,
-      "sugar": 1.7
+      "sugar": 2.5
     },
     "nutritionWarnings": [],
     "nutritionHighlights": [
@@ -3625,13 +3631,13 @@
     "dishStyle": "egg",
     "stapleCategory": null,
     "perServing": {
-      "calories": 134,
-      "protein": 6.1,
-      "fat": 9.8,
-      "carbs": 7.2,
-      "fiber": 1,
-      "sodium": 692,
-      "sugar": 2.8
+      "calories": 130,
+      "protein": 6,
+      "fat": 9.3,
+      "carbs": 7,
+      "fiber": 1.8,
+      "sodium": 697,
+      "sugar": 2.9
     },
     "nutritionWarnings": [],
     "nutritionHighlights": [
@@ -3734,12 +3740,12 @@
     "stapleCategory": null,
     "perServing": {
       "calories": 301,
-      "protein": 18.2,
+      "protein": 18.1,
       "fat": 19.7,
-      "carbs": 12.5,
+      "carbs": 12.3,
       "fiber": 2.8,
-      "sodium": 955,
-      "sugar": 2.9
+      "sodium": 952,
+      "sugar": 2.8
     },
     "nutritionWarnings": [
       "high_sodium"
@@ -3838,12 +3844,12 @@
     "stapleCategory": null,
     "perServing": {
       "calories": 164,
-      "protein": 13.3,
+      "protein": 13.4,
       "fat": 11.4,
-      "carbs": 6.6,
+      "carbs": 6,
       "fiber": 3.5,
-      "sodium": 940,
-      "sugar": 1.1
+      "sodium": 865,
+      "sugar": 1.2
     },
     "nutritionWarnings": [
       "high_sodium"
@@ -3950,13 +3956,13 @@
     "dishStyle": "meat",
     "stapleCategory": null,
     "perServing": {
-      "calories": 237,
-      "protein": 19.1,
-      "fat": 12.4,
-      "carbs": 12.7,
-      "fiber": 3.2,
-      "sodium": 444,
-      "sugar": 4.9
+      "calories": 236,
+      "protein": 19.6,
+      "fat": 12.3,
+      "carbs": 13.5,
+      "fiber": 3,
+      "sodium": 432,
+      "sugar": 4.7
     },
     "nutritionWarnings": [],
     "nutritionHighlights": [
@@ -4050,20 +4056,19 @@
     "dishStyle": "veg",
     "stapleCategory": "congee",
     "perServing": {
-      "calories": 182,
-      "protein": 3.1,
-      "fat": 0.2,
-      "carbs": 44.7,
-      "fiber": 2.2,
-      "sodium": 13,
-      "sugar": 26.1
+      "calories": 275,
+      "protein": 4.9,
+      "fat": 0.4,
+      "carbs": 64.1,
+      "fiber": 2.5,
+      "sodium": 14,
+      "sugar": 26.2
     },
     "nutritionWarnings": [
       "high_sugar"
     ],
     "nutritionHighlights": [
       "low_fat",
-      "low_calorie",
       "high_fiber"
     ],
     "allergens": [],
@@ -4180,12 +4185,12 @@
     "stapleCategory": null,
     "perServing": {
       "calories": 551,
-      "protein": 14.5,
-      "fat": 49.9,
-      "carbs": 10.5,
-      "fiber": 1,
-      "sodium": 375,
-      "sugar": 5.4
+      "protein": 14.6,
+      "fat": 49.7,
+      "carbs": 11.1,
+      "fiber": 0.9,
+      "sodium": 372,
+      "sugar": 5.8
     },
     "nutritionWarnings": [
       "high_fat"
@@ -4313,10 +4318,10 @@
       "calories": 375,
       "protein": 41.3,
       "fat": 10,
-      "carbs": 29.2,
+      "carbs": 29.1,
       "fiber": 2.4,
-      "sodium": 1303,
-      "sugar": 7.4
+      "sodium": 1302,
+      "sugar": 7.3
     },
     "nutritionWarnings": [
       "high_sodium"
@@ -4435,9 +4440,9 @@
       "protein": 33.4,
       "fat": 6,
       "carbs": 17.4,
-      "fiber": 2.3,
+      "fiber": 2.5,
       "sodium": 1314,
-      "sugar": 5.5
+      "sugar": 5.7
     },
     "nutritionWarnings": [
       "high_sodium"
@@ -4539,16 +4544,14 @@
     "stapleCategory": null,
     "perServing": {
       "calories": 399,
-      "protein": 29.8,
-      "fat": 23.3,
-      "carbs": 10.3,
+      "protein": 30.9,
+      "fat": 24.5,
+      "carbs": 10,
       "fiber": 0.8,
-      "sodium": 902,
-      "sugar": 0.5
+      "sodium": 732,
+      "sugar": 0.4
     },
-    "nutritionWarnings": [
-      "high_sodium"
-    ],
+    "nutritionWarnings": [],
     "nutritionHighlights": [
       "high_protein",
       "high_fiber",
@@ -4651,9 +4654,9 @@
       "calories": 315,
       "protein": 37.8,
       "fat": 14.1,
-      "carbs": 5.8,
-      "fiber": 0.7,
-      "sodium": 989,
+      "carbs": 5.7,
+      "fiber": 0.8,
+      "sodium": 987,
       "sugar": 2.4
     },
     "nutritionWarnings": [
@@ -4763,10 +4766,10 @@
       "calories": 347,
       "protein": 38.5,
       "fat": 19.1,
-      "carbs": 4.8,
+      "carbs": 4.7,
       "fiber": 1,
-      "sodium": 860,
-      "sugar": 1.1
+      "sodium": 857,
+      "sugar": 1
     },
     "nutritionWarnings": [
       "high_sodium"
@@ -4896,12 +4899,12 @@
     ],
     "perServing": {
       "calories": 826,
-      "protein": 14.9,
-      "fat": 82.4,
+      "protein": 15.2,
+      "fat": 82.1,
       "carbs": 7.6,
-      "fiber": 0.4,
-      "sodium": 536,
-      "sugar": 2.7
+      "fiber": 0.5,
+      "sodium": 533,
+      "sugar": 2.6
     },
     "nutritionWarnings": [
       "high_calorie",
@@ -4988,7 +4991,7 @@
       "protein": 4,
       "fat": 10.5,
       "carbs": 9.1,
-      "fiber": 1.9,
+      "fiber": 3.1,
       "sodium": 351,
       "sugar": 0.6
     },
@@ -5107,10 +5110,10 @@
       "calories": 356,
       "protein": 31.9,
       "fat": 21.7,
-      "carbs": 8,
+      "carbs": 7.9,
       "fiber": 0.8,
-      "sodium": 587,
-      "sugar": 2.4
+      "sodium": 585,
+      "sugar": 2.3
     },
     "nutritionWarnings": [],
     "nutritionHighlights": [
@@ -5192,13 +5195,13 @@
     "dishStyle": "veg",
     "stapleCategory": null,
     "perServing": {
-      "calories": 128,
-      "protein": 1.3,
-      "fat": 0.1,
-      "carbs": 33.1,
-      "fiber": 1.6,
+      "calories": 129,
+      "protein": 1.6,
+      "fat": 0.3,
+      "carbs": 32.9,
+      "fiber": 2.3,
       "sodium": 16,
-      "sugar": 28.6
+      "sugar": 29.2
     },
     "nutritionWarnings": [
       "high_sugar"
@@ -5368,13 +5371,13 @@
     "dishStyle": "veg",
     "stapleCategory": null,
     "perServing": {
-      "calories": 178,
-      "protein": 7.8,
-      "fat": 2.5,
-      "carbs": 34.7,
+      "calories": 216,
+      "protein": 7.4,
+      "fat": 7.1,
+      "carbs": 34.3,
       "fiber": 3.2,
-      "sodium": 101,
-      "sugar": 28.4
+      "sodium": 99,
+      "sugar": 28.6
     },
     "nutritionWarnings": [
       "high_sugar"
@@ -5478,12 +5481,12 @@
     "dishStyle": "meat",
     "stapleCategory": "congee",
     "perServing": {
-      "calories": 196,
-      "protein": 23.9,
-      "fat": 3.2,
-      "carbs": 16.9,
-      "fiber": 0.9,
-      "sodium": 858,
+      "calories": 291,
+      "protein": 21.9,
+      "fat": 2.9,
+      "carbs": 42.9,
+      "fiber": 1.4,
+      "sodium": 845,
       "sugar": 0.4
     },
     "nutritionWarnings": [
@@ -5491,9 +5494,9 @@
     ],
     "nutritionHighlights": [
       "low_fat",
-      "low_calorie",
       "high_fiber",
-      "high_protein"
+      "high_protein",
+      "low_calorie"
     ],
     "allergens": [
       "allergen_seafood",
@@ -5586,12 +5589,12 @@
     "stapleCategory": "noodles",
     "perServing": {
       "calories": 245,
-      "protein": 8.2,
+      "protein": 8.3,
       "fat": 8.6,
       "carbs": 34,
       "fiber": 2,
       "sodium": 1261,
-      "sugar": 1.2
+      "sugar": 1.3
     },
     "nutritionWarnings": [
       "high_sodium"
@@ -5694,13 +5697,13 @@
     "dishStyle": "veg",
     "stapleCategory": "bread",
     "perServing": {
-      "calories": 465,
-      "protein": 14.5,
-      "fat": 20.6,
-      "carbs": 59.2,
+      "calories": 462,
+      "protein": 14.4,
+      "fat": 20.2,
+      "carbs": 59.4,
       "fiber": 9.3,
-      "sodium": 819,
-      "sugar": 6.5
+      "sodium": 824,
+      "sugar": 6.3
     },
     "nutritionWarnings": [
       "high_sodium"

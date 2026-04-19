@@ -547,23 +547,15 @@ export function getMealCalorieBudget(profile: UserProfile, mealType: MealType): 
   const activeMeals = profile.mealsPerDay;
   if (!activeMeals.includes(mealType)) return 0;
 
-  // === 带饭模式: 晚餐吸收午餐份额 + 所有品类缺口 ===
-  // 用户需求: 晚餐目标 = 日目标 - 早餐 - 缺口(主食/水果/汤未开启的预估)
-  //   理由: 午餐由晚餐剩菜补, 所以 dinner_cooked = 今日 dinner + 明日 lunch
-  //         早餐单独吃, 其他缺口都是用户自补, 剩下的就是晚餐要规划的量
-  if (profile.lunchboxMode && mealType === 'dinner') {
-    const breakfastShare = activeMeals.includes('breakfast') ? householdDaily * 0.25 : 0;
-    const dinnerBudget = householdDaily - breakfastShare - totalGaps;
-    return Math.round(Math.max(500, dinnerBudget));
-  }
-
-  // === 带饭模式早餐: 保持 25% × 日目标 (缺口全给 dinner) ===
-  if (profile.lunchboxMode && mealType === 'breakfast') {
-    return Math.round(householdDaily * 0.25);
-  }
-
-  // === 非带饭模式: 按比例归一, 缺口按本餐占比扣 ===
-  const effectiveWeightTotal = activeMeals.reduce((s, m) => s + (ratioMap[m] || 0.33), 0) || 1;
+  // === 带饭模式: 目标值 = 正常晚餐目标 (不变) ===
+  // 用户需求: 目标值保持不变 (每餐一人消费的量)
+  //   带饭模式效果体现在"烹制量×2"上: 选出的菜按×2量烹制
+  //   因此: budget 返回正常值, UI 层显示 ×2 表示烹制量
+  // 归一化: 带饭模式 lunch 视为活跃(由剩菜补), 避免 weight 分配异常
+  const effectiveMeals = profile.lunchboxMode && !activeMeals.includes('lunch')
+    ? [...activeMeals, 'lunch' as MealType]
+    : activeMeals;
+  const effectiveWeightTotal = effectiveMeals.reduce((s, m) => s + (ratioMap[m] || 0.33), 0) || 1;
   const mealRatio = ratioMap[mealType] || 0.33;
   const mealShare = mealRatio / effectiveWeightTotal;
   // 本餐预算(未扣缺口): 跳餐成员不计入本餐 → 用 thisMealHouseholdTarget 代替 householdDaily
@@ -1310,9 +1302,11 @@ function generateSmartPlan(
         }
       }
 
-      // 带饭模式: budget 已包含午餐份额 + 缺口, engine 选菜总卡路里已经"2× 正常晚餐"
-      // slot.servings = familySize (正常), 用户烹制选出的所有菜品即覆盖 2 餐
-      slots.push({ day, mealType, recipes, servings: profile.familySize });
+      // 带饭模式晚餐: servings = 2×familySize (让采购清单/显示层双倍)
+      // 普通: servings = familySize
+      const lunchboxDouble = profile.lunchboxMode && mealType === 'dinner';
+      const slotServings = lunchboxDouble ? profile.familySize * 2 : profile.familySize;
+      slots.push({ day, mealType, recipes, servings: slotServings });
       mealIndex++;
     }
   }
@@ -1353,9 +1347,10 @@ export function generateWeeklyPlan(
       for (const mealType of profile.mealsPerDay) {
         const { recipes, reducedDishes } = composeMeal(profile, mealType, usedIds, ownedIngredients, mealIndex, getPreference, getFeedback);
         mealIndex++;
-        // 带饭模式: budget 已包含午餐份额 + 缺口, 总热量已"2× 正常晚餐" (通过 budget)
-        // slot.servings = familySize (不 ×2), 烹制选出的全部菜品即覆盖 2 餐
-        slots.push({ day, mealType, recipes, servings: profile.familySize, reducedDishes: reducedDishes > 0 ? reducedDishes : undefined });
+        // 带饭模式晚餐: servings = 2×familySize (采购清单/显示层双倍)
+        const lunchboxDouble = profile.lunchboxMode && mealType === 'dinner';
+        const slotServings = lunchboxDouble ? profile.familySize * 2 : profile.familySize;
+        slots.push({ day, mealType, recipes, servings: slotServings, reducedDishes: reducedDishes > 0 ? reducedDishes : undefined });
       }
     }
   }

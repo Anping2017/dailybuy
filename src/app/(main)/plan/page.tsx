@@ -189,19 +189,20 @@ export default function PlanPage() {
   const daySlots = weeklyPlan.slots.filter(s => s.day === selectedDay);
 
   // 今日合计 (家庭总 + 人均) - 跨所有餐次
-  // 核心: 每道菜按原配方烹制(不缩放), 显示其 recipe.totalCalories
-  //   与引擎 budget 口径一致 (engine 用 calcRecipeCalForFamily → 返回 totalCalories 无缩放)
-  //   用户按菜谱做整份, 人均 = 总热量 / familySize
+  // 核心: 每道菜按原配方显示热量, 带饭模式晚餐显示 ×2 (因为烹制双份)
+  //   目标值(budget)保持不变 = 正常晚餐目标; ×2 仅体现在"实际烹制量"上
   const familySize = Math.max(1, profile.familySize);
+  const lunchboxMult = (mealType: MealType) => (profile.lunchboxMode && mealType === 'dinner') ? 2 : 1;
   let dayTotalCal = 0;
   let dayTotalCost = 0;
   for (const slot of daySlots) {
+    const mult = lunchboxMult(slot.mealType);
     for (const mr of (slot.recipes || [])) {
       const r = getRecipe(mr.recipeId);
       if (r) {
         const n = calcRecipeNutrition(r);
-        dayTotalCal += Math.round(n.totalCalories);
-        dayTotalCost += calcRecipeCost(r);
+        dayTotalCal += Math.round(n.totalCalories) * mult;
+        dayTotalCost += calcRecipeCost(r) * mult;
       }
     }
   }
@@ -492,16 +493,17 @@ export default function PlanPage() {
             );
           }
 
-          // 餐次总热量: 各菜按原配方总热量求和(不缩放), 与引擎 budget 口径一致
+          // 餐次总热量: 带饭模式晚餐 ×2 (每道菜显示烹制双份的值), 目标值不变
           const isLunchboxDinner = !!profile.lunchboxMode && mealType === 'dinner';
+          const mult = isLunchboxDinner ? 2 : 1;
           let mealCalories = 0;
           let mealCost = 0;
           for (const mr of (slot.recipes || [])) {
             const r = getRecipe(mr.recipeId);
             if (r) {
               const n = calcRecipeNutrition(r);
-              mealCalories += Math.round(n.totalCalories);
-              mealCost += calcRecipeCost(r);
+              mealCalories += Math.round(n.totalCalories) * mult;
+              mealCost += calcRecipeCost(r) * mult;
             }
           }
           const perPersonCal = Math.round(mealCalories / familySize);
@@ -571,8 +573,8 @@ export default function PlanPage() {
                   const nutr = calcRecipeNutrition(recipe);
                   // 食材不缩放: 这道菜做出来就是配方总热量
                   // 带饭模式晚餐: 本菜按 slotMult(=2)倍计; 显示 ×2 标识
-                  // 单菜热量 = 菜谱原总热量 (不缩放, 保持默认卡路里值)
-                  const dishTotal = Math.round(nutr.totalCalories);
+                  // 单菜热量: 带饭模式晚餐 ×2 (烹制双份), 非带饭按原值
+                  const dishTotal = Math.round(nutr.totalCalories) * mult;
                   const perPerson = Math.round(dishTotal / familySize);
                   // servings 不匹配提示
                   const servingMismatch = recipe.servings !== familySize

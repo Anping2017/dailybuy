@@ -5,12 +5,12 @@
     "nameEn": "Chicken Breast",
     "category": "meat",
     "nutrition": {
-      "calories": 165,
-      "protein": 31,
-      "fat": 3.6,
+      "calories": 120,
+      "protein": 22.5,
+      "fat": 2.6,
       "carbs": 0,
       "fiber": 0,
-      "sodium": 74,
+      "sodium": 45,
       "sugar": 0
     },
     "priceNZD": 15.4,
@@ -31,12 +31,12 @@
     "nameEn": "Chicken Thigh",
     "category": "meat",
     "nutrition": {
-      "calories": 209,
-      "protein": 26,
-      "fat": 10.9,
+      "calories": 119,
+      "protein": 20.5,
+      "fat": 3.4,
       "carbs": 0,
       "fiber": 0,
-      "sodium": 84,
+      "sodium": 86,
       "sugar": 0
     },
     "priceNZD": 9.99,
@@ -88,7 +88,7 @@
       "fat": 21,
       "carbs": 0,
       "fiber": 0,
-      "sodium": 66,
+      "sodium": 56,
       "sugar": 0
     },
     "priceNZD": 13.99,
@@ -109,9 +109,9 @@
     "nameEn": "Beef Sirloin",
     "category": "meat",
     "nutrition": {
-      "calories": 271,
-      "protein": 26,
-      "fat": 18,
+      "calories": 206,
+      "protein": 21.3,
+      "fat": 12.7,
       "carbs": 0,
       "fiber": 0,
       "sodium": 54,
@@ -164,12 +164,12 @@
     "nameEn": "Lamb Leg",
     "category": "meat",
     "nutrition": {
-      "calories": 258,
-      "protein": 25,
-      "fat": 17,
+      "calories": 201,
+      "protein": 20.6,
+      "fat": 12.6,
       "carbs": 0,
       "fiber": 0,
-      "sodium": 59,
+      "sodium": 60,
       "sugar": 0
     },
     "priceNZD": 17.9,
@@ -251,13 +251,13 @@
     "nameEn": "Eggs",
     "category": "egg_dairy",
     "nutrition": {
-      "calories": 155,
-      "protein": 13,
-      "fat": 11,
-      "carbs": 1.1,
+      "calories": 143,
+      "protein": 12.6,
+      "fat": 9.5,
+      "carbs": 0.7,
       "fiber": 0,
-      "sodium": 124,
-      "sugar": 1.1
+      "sodium": 142,
+      "sugar": 0.4
     },
     "priceNZD": 8.76,
     "unit": "dozen",
@@ -303,13 +303,13 @@
     "nameEn": "Rice",
     "category": "grain",
     "nutrition": {
-      "calories": 130,
-      "protein": 2.7,
-      "fat": 0.3,
-      "carbs": 28,
-      "fiber": 0.4,
-      "sodium": 1,
-      "sugar": 0
+      "calories": 365,
+      "protein": 7.1,
+      "fat": 0.7,
+      "carbs": 80,
+      "fiber": 1.3,
+      "sodium": 5,
+      "sugar": 0.1
     },
     "priceNZD": 4,
     "unit": "kg",
@@ -329,13 +329,13 @@
     "nameEn": "Dried Noodles",
     "category": "grain",
     "nutrition": {
-      "calories": 350,
+      "calories": 353,
       "protein": 12,
       "fat": 1.5,
       "carbs": 72,
-      "fiber": 3,
-      "sodium": 5,
-      "sugar": 2
+      "fiber": 3.2,
+      "sodium": 6,
+      "sugar": 2.6
     },
     "priceNZD": 2.8,
     "unit": "pack",
@@ -492,8 +492,8 @@
     "nameEn": "Capsicum / Bell Pepper",
     "category": "vegetable",
     "nutrition": {
-      "calories": 31,
-      "protein": 1,
+      "calories": 26,
+      "protein": 0.9,
       "fat": 0.3,
       "carbs": 6,
       "fiber": 2.1,
@@ -783,8 +783,8 @@
     "nutrition": {
       "calories": 53,
       "protein": 8,
-      "fat": 0.1,
-      "carbs": 4.9,
+      "fat": 0.6,
+      "carbs": 5,
       "fiber": 0.8,
       "sodium": 5493,
       "sugar": 0.4
@@ -868,7 +868,7 @@
       "protein": 1.4,
       "fat": 0.3,
       "carbs": 11,
-      "fiber": 0,
+      "fiber": 0.3,
       "sodium": 2733,
       "sugar": 4
     },
@@ -919,13 +919,13 @@
     "nameEn": "Milk",
     "category": "egg_dairy",
     "nutrition": {
-      "calories": 42,
-      "protein": 3.4,
-      "fat": 1,
-      "carbs": 5,
+      "calories": 61,
+      "protein": 3.2,
+      "fat": 3.3,
+      "carbs": 4.8,
       "fiber": 0,
-      "sodium": 44,
-      "sugar": 5
+      "sodium": 43,
+      "sugar": 5.1
     },
     "priceNZD": 2.31,
     "unit": "litre",
@@ -1088,11 +1088,11 @@
     "nutrition": {
       "calories": 31,
       "protein": 1.8,
-      "fat": 0.1,
+      "fat": 0.2,
       "carbs": 7,
-      "fiber": 3.4,
+      "fiber": 2.7,
       "sodium": 6,
-      "sugar": 1.4
+      "sugar": 3.3
     },
     "priceNZD": 4.8,
     "unit": "pack",
@@ -1138,13 +1138,13 @@
     "nameEn": "Rice Vermicelli",
     "category": "grain",
     "nutrition": {
-      "calories": 360,
-      "protein": 3.4,
+      "calories": 364,
+      "protein": 5.9,
       "fat": 0.6,
-      "carbs": 83,
-      "fiber": 1.6,
-      "sodium": 10,
-      "sugar": 0
+      "carbs": 81,
+      "fiber": 1.8,
+      "sodium": 182,
+      "sugar": 0.3
     },
     "priceNZD": 2.29,
     "unit": "pack",
@@ -1295,12 +1295,12 @@
     "category": "seasoning",
     "nutrition": {
       "calories": 87,
-      "protein": 1.3,
+      "protein": 0.1,
       "fat": 0,
-      "carbs": 4.9,
+      "carbs": 2.5,
       "fiber": 0,
-      "sodium": 40,
-      "sugar": 2
+      "sodium": 4,
+      "sugar": 0.2
     },
     "priceNZD": 3.99,
     "unit": "bottle",
@@ -1318,13 +1318,13 @@
     "nameEn": "Bean Sprouts",
     "category": "vegetable",
     "nutrition": {
-      "calories": 31,
+      "calories": 30,
       "protein": 3,
       "fat": 0.2,
       "carbs": 5.9,
       "fiber": 1.8,
       "sodium": 6,
-      "sugar": 2.1
+      "sugar": 4.1
     },
     "priceNZD": 2.45,
     "unit": "pack",
@@ -1344,12 +1344,12 @@
     "nameEn": "Pork Ribs",
     "category": "meat",
     "nutrition": {
-      "calories": 250,
-      "protein": 19,
-      "fat": 19,
+      "calories": 277,
+      "protein": 18.3,
+      "fat": 22,
       "carbs": 0,
       "fiber": 0,
-      "sodium": 65,
+      "sodium": 68,
       "sugar": 0
     },
     "priceNZD": 15.9,
@@ -1368,12 +1368,12 @@
     "nameEn": "Chicken Wings",
     "category": "meat",
     "nutrition": {
-      "calories": 203,
-      "protein": 18,
-      "fat": 14,
+      "calories": 222,
+      "protein": 19.3,
+      "fat": 15.8,
       "carbs": 0,
       "fiber": 0,
-      "sodium": 77,
+      "sodium": 82,
       "sugar": 0
     },
     "priceNZD": 10.4,
@@ -1418,12 +1418,12 @@
     "nameEn": "Bacon",
     "category": "meat",
     "nutrition": {
-      "calories": 541,
-      "protein": 37,
-      "fat": 42,
-      "carbs": 1,
+      "calories": 417,
+      "protein": 13,
+      "fat": 41,
+      "carbs": 1.4,
       "fiber": 0,
-      "sodium": 1717,
+      "sodium": 662,
       "sugar": 0
     },
     "priceNZD": 8.99,
@@ -1565,12 +1565,12 @@
     "category": "vegetable",
     "nutrition": {
       "calories": 18,
-      "protein": 0.7,
+      "protein": 0.6,
       "fat": 0.1,
-      "carbs": 4,
+      "carbs": 4.1,
       "fiber": 1.6,
       "sodium": 21,
-      "sugar": 2
+      "sugar": 2.5
     },
     "priceNZD": 3.99,
     "unit": "kg",
@@ -1724,13 +1724,13 @@
     "nameEn": "Leek",
     "category": "vegetable",
     "nutrition": {
-      "calories": 30,
-      "protein": 3,
+      "calories": 61,
+      "protein": 1.5,
       "fat": 0.3,
-      "carbs": 4.4,
-      "fiber": 2.6,
-      "sodium": 35,
-      "sugar": 1.5
+      "carbs": 14.2,
+      "fiber": 1.8,
+      "sodium": 20,
+      "sugar": 3.9
     },
     "priceNZD": 2.5,
     "unit": "bunch",
@@ -1876,13 +1876,13 @@
     "nameEn": "Winter Melon",
     "category": "vegetable",
     "nutrition": {
-      "calories": 12,
+      "calories": 13,
       "protein": 0.4,
       "fat": 0.2,
-      "carbs": 2.6,
-      "fiber": 0.7,
+      "carbs": 3,
+      "fiber": 2.9,
       "sodium": 111,
-      "sugar": 0
+      "sugar": 1.9
     },
     "priceNZD": 3.99,
     "unit": "kg",
@@ -1903,10 +1903,10 @@
     "category": "dried",
     "nutrition": {
       "calories": 284,
-      "protein": 10,
-      "fat": 0.5,
-      "carbs": 65,
-      "fiber": 30,
+      "protein": 9.3,
+      "fat": 0.7,
+      "carbs": 73,
+      "fiber": 70,
       "sodium": 35,
       "sugar": 0
     },
@@ -1958,12 +1958,12 @@
     "nameEn": "Dried Shrimp",
     "category": "dried",
     "nutrition": {
-      "calories": 292,
-      "protein": 56,
-      "fat": 3.7,
-      "carbs": 6.5,
+      "calories": 299,
+      "protein": 58.2,
+      "fat": 4.1,
+      "carbs": 3.1,
       "fiber": 0,
-      "sodium": 5057,
+      "sodium": 2800,
       "sugar": 0
     },
     "priceNZD": 7.99,
@@ -1990,10 +1990,10 @@
     "category": "dried",
     "nutrition": {
       "calories": 296,
-      "protein": 10,
-      "fat": 1.3,
-      "carbs": 64,
-      "fiber": 11,
+      "protein": 9.6,
+      "fat": 1,
+      "carbs": 75,
+      "fiber": 12,
       "sodium": 13,
       "sugar": 2
     },
@@ -2177,10 +2177,10 @@
     "nameEn": "Five Spice Powder",
     "category": "seasoning",
     "nutrition": {
-      "calories": 325,
-      "protein": 6,
-      "fat": 15,
-      "carbs": 47,
+      "calories": 335,
+      "protein": 9.5,
+      "fat": 13,
+      "carbs": 50,
       "fiber": 22,
       "sodium": 20,
       "sugar": 0
@@ -2206,8 +2206,8 @@
       "calories": 282,
       "protein": 12,
       "fat": 14,
-      "carbs": 30,
-      "fiber": 27,
+      "carbs": 57,
+      "fiber": 28,
       "sodium": 30,
       "sugar": 10
     },
@@ -2229,13 +2229,13 @@
     "nameEn": "Ketchup / Tomato Sauce",
     "category": "seasoning",
     "nutrition": {
-      "calories": 112,
-      "protein": 1.3,
-      "fat": 0.1,
-      "carbs": 26,
-      "fiber": 0.3,
-      "sodium": 907,
-      "sugar": 22
+      "calories": 82,
+      "protein": 4.3,
+      "fat": 0.5,
+      "carbs": 19,
+      "fiber": 4.1,
+      "sodium": 59,
+      "sugar": 12
     },
     "priceNZD": 4,
     "unit": "bottle",
@@ -2260,9 +2260,9 @@
       "protein": 8,
       "fat": 0.1,
       "carbs": 4.9,
-      "fiber": 0,
+      "fiber": 0.8,
       "sodium": 5637,
-      "sugar": 0
+      "sugar": 0.4
     },
     "priceNZD": 4.1,
     "unit": "bottle",
@@ -2288,7 +2288,7 @@
       "protein": 5,
       "fat": 0.1,
       "carbs": 9,
-      "fiber": 0,
+      "fiber": 0.8,
       "sodium": 5220,
       "sugar": 5
     },
@@ -2340,12 +2340,12 @@
     "nameEn": "Sichuan Pepper",
     "category": "seasoning",
     "nutrition": {
-      "calories": 264,
-      "protein": 10,
-      "fat": 3,
-      "carbs": 50,
-      "fiber": 18,
-      "sodium": 9,
+      "calories": 260,
+      "protein": 10.6,
+      "fat": 6.7,
+      "carbs": 46,
+      "fiber": 14,
+      "sodium": 7,
       "sugar": 0
     },
     "priceNZD": 4.99,
@@ -2393,12 +2393,12 @@
     "category": "seasoning",
     "nutrition": {
       "calories": 375,
-      "protein": 18,
-      "fat": 22,
+      "protein": 17.8,
+      "fat": 22.3,
       "carbs": 44,
-      "fiber": 11,
+      "fiber": 10.5,
       "sodium": 168,
-      "sugar": 2
+      "sugar": 2.3
     },
     "priceNZD": 2,
     "unit": "pack",
@@ -2449,12 +2449,12 @@
     "category": "egg_dairy",
     "nutrition": {
       "calories": 340,
-      "protein": 2,
+      "protein": 2.8,
       "fat": 36,
-      "carbs": 3,
+      "carbs": 2.8,
       "fiber": 0,
-      "sodium": 34,
-      "sugar": 3
+      "sodium": 27,
+      "sugar": 2.9
     },
     "priceNZD": 3,
     "unit": "pack",
@@ -2661,9 +2661,9 @@
     "category": "grain",
     "nutrition": {
       "calories": 291,
-      "protein": 8,
-      "fat": 1,
-      "carbs": 60,
+      "protein": 8.5,
+      "fat": 1.9,
+      "carbs": 58,
       "fiber": 2,
       "sodium": 430,
       "sugar": 1
@@ -2978,12 +2978,12 @@
     "nameEn": "Dragon Fruit",
     "category": "fruit",
     "nutrition": {
-      "calories": 50,
-      "protein": 1.1,
-      "fat": 0.4,
-      "carbs": 11,
+      "calories": 60,
+      "protein": 1.2,
+      "fat": 0,
+      "carbs": 13,
       "fiber": 3,
-      "sodium": 39,
+      "sodium": 3,
       "sugar": 8
     },
     "priceNZD": 5.99,
@@ -3453,9 +3453,9 @@
     "nameEn": "Crab",
     "category": "seafood",
     "nutrition": {
-      "calories": 97,
-      "protein": 19,
-      "fat": 1.5,
+      "calories": 83,
+      "protein": 18.1,
+      "fat": 0.7,
       "carbs": 0,
       "fiber": 0,
       "sodium": 395,
@@ -3485,10 +3485,10 @@
     "nameEn": "Scallop",
     "category": "seafood",
     "nutrition": {
-      "calories": 88,
-      "protein": 16.8,
-      "fat": 0.8,
-      "carbs": 2.4,
+      "calories": 69,
+      "protein": 12.1,
+      "fat": 0.5,
+      "carbs": 3.2,
       "fiber": 0,
       "sodium": 161,
       "sugar": 0
@@ -3537,9 +3537,9 @@
     "nameEn": "Duck",
     "category": "meat",
     "nutrition": {
-      "calories": 337,
-      "protein": 19,
-      "fat": 28,
+      "calories": 404,
+      "protein": 11.5,
+      "fat": 39.3,
       "carbs": 0,
       "fiber": 0,
       "sodium": 59,
@@ -3563,12 +3563,12 @@
     "nameEn": "Duck Leg",
     "category": "meat",
     "nutrition": {
-      "calories": 211,
-      "protein": 18,
-      "fat": 15,
+      "calories": 188,
+      "protein": 18.3,
+      "fat": 12.4,
       "carbs": 0,
       "fiber": 0,
-      "sodium": 70,
+      "sodium": 74,
       "sugar": 0
     },
     "priceNZD": 15.99,
@@ -3587,12 +3587,12 @@
     "nameEn": "Lamb Chop",
     "category": "meat",
     "nutrition": {
-      "calories": 294,
-      "protein": 25,
-      "fat": 21,
+      "calories": 282,
+      "protein": 16.9,
+      "fat": 23,
       "carbs": 0,
       "fiber": 0,
-      "sodium": 72,
+      "sodium": 59,
       "sugar": 0
     },
     "priceNZD": 23.95,
@@ -3615,12 +3615,12 @@
     "nameEn": "Beef Brisket",
     "category": "meat",
     "nutrition": {
-      "calories": 280,
-      "protein": 19,
-      "fat": 22,
+      "calories": 250,
+      "protein": 18.6,
+      "fat": 18.9,
       "carbs": 0,
       "fiber": 0,
-      "sodium": 55,
+      "sodium": 56,
       "sugar": 0
     },
     "priceNZD": 19.9,
@@ -3641,12 +3641,12 @@
     "nameEn": "Beef Shank",
     "category": "meat",
     "nutrition": {
-      "calories": 201,
-      "protein": 22,
-      "fat": 12,
+      "calories": 147,
+      "protein": 21.4,
+      "fat": 6.3,
       "carbs": 0,
       "fiber": 0,
-      "sodium": 66,
+      "sodium": 50,
       "sugar": 0
     },
     "priceNZD": 19.99,
@@ -3667,9 +3667,9 @@
     "nameEn": "Pork Trotter",
     "category": "meat",
     "nutrition": {
-      "calories": 256,
-      "protein": 22,
-      "fat": 19,
+      "calories": 232,
+      "protein": 22.8,
+      "fat": 15,
       "carbs": 0,
       "fiber": 0,
       "sodium": 75,
@@ -3719,12 +3719,12 @@
     "nameEn": "Oyster",
     "category": "seafood",
     "nutrition": {
-      "calories": 81,
-      "protein": 9.5,
-      "fat": 2.3,
-      "carbs": 4.6,
+      "calories": 68,
+      "protein": 7,
+      "fat": 2.5,
+      "carbs": 3.9,
       "fiber": 0,
-      "sodium": 106,
+      "sodium": 207,
       "sugar": 0
     },
     "priceNZD": 44.4,
@@ -3953,7 +3953,7 @@
       "calories": 190,
       "protein": 12.7,
       "fat": 13,
-      "carbs": 6.3,
+      "carbs": 1.5,
       "fiber": 0,
       "sodium": 1429,
       "sugar": 0
@@ -3979,12 +3979,12 @@
     "category": "egg_dairy",
     "nutrition": {
       "calories": 171,
-      "protein": 13,
+      "protein": 13.1,
       "fat": 12,
-      "carbs": 3,
+      "carbs": 2.3,
       "fiber": 0,
       "sodium": 543,
-      "sugar": 1
+      "sugar": 0
     },
     "priceNZD": 0.63,
     "unit": "piece",
@@ -4005,9 +4005,9 @@
     "category": "egg_dairy",
     "nutrition": {
       "calories": 280,
-      "protein": 28,
-      "fat": 17,
-      "carbs": 3.1,
+      "protein": 22,
+      "fat": 22,
+      "carbs": 2.2,
       "fiber": 0,
       "sodium": 627,
       "sugar": 1
@@ -4260,7 +4260,7 @@
       "protein": 6.8,
       "fat": 0.7,
       "carbs": 82,
-      "fiber": 2.8,
+      "fiber": 1.6,
       "sodium": 5,
       "sugar": 0
     },
@@ -4280,13 +4280,13 @@
     "nameEn": "Cornmeal",
     "category": "grain",
     "nutrition": {
-      "calories": 362,
-      "protein": 8,
-      "fat": 3.6,
-      "carbs": 77,
-      "fiber": 7,
-      "sodium": 35,
-      "sugar": 1.5
+      "calories": 370,
+      "protein": 7.1,
+      "fat": 1.7,
+      "carbs": 79,
+      "fiber": 7.3,
+      "sodium": 4,
+      "sugar": 1.4
     },
     "priceNZD": 4.99,
     "unit": "kg",
@@ -4408,13 +4408,13 @@
     "nameEn": "Tortilla",
     "category": "grain",
     "nutrition": {
-      "calories": 218,
-      "protein": 5.7,
-      "fat": 2.9,
-      "carbs": 45,
-      "fiber": 3.2,
-      "sodium": 377,
-      "sugar": 1.6
+      "calories": 306,
+      "protein": 8.2,
+      "fat": 7.9,
+      "carbs": 50.5,
+      "fiber": 4.5,
+      "sodium": 632,
+      "sugar": 2.1
     },
     "priceNZD": 5.99,
     "unit": "pack",
@@ -4866,7 +4866,7 @@
     "category": "seasoning",
     "nutrition": {
       "calories": 18,
-      "protein": 0.1,
+      "protein": 0.3,
       "fat": 0,
       "carbs": 0.04,
       "fiber": 0,
@@ -4919,13 +4919,13 @@
     "nameEn": "Peanut Butter",
     "category": "seasoning",
     "nutrition": {
-      "calories": 588,
-      "protein": 25,
-      "fat": 50,
-      "carbs": 20,
-      "fiber": 6,
-      "sodium": 459,
-      "sugar": 9
+      "calories": 598,
+      "protein": 22.2,
+      "fat": 51.4,
+      "carbs": 22,
+      "fiber": 5,
+      "sodium": 17,
+      "sugar": 9.2
     },
     "priceNZD": 9.9,
     "unit": "bottle",
@@ -5354,12 +5354,12 @@
     "nameEn": "Jujube / Red Date",
     "category": "dried",
     "nutrition": {
-      "calories": 277,
-      "protein": 1.8,
-      "fat": 0.2,
-      "carbs": 75,
-      "fiber": 6.7,
-      "sodium": 2,
+      "calories": 282,
+      "protein": 3.7,
+      "fat": 1.1,
+      "carbs": 74,
+      "fiber": 6,
+      "sodium": 3,
       "sugar": 66
     },
     "priceNZD": 9.99,
@@ -5438,7 +5438,7 @@
     "nameEn": "Dried Lily Bud",
     "category": "dried",
     "nutrition": {
-      "calories": 200,
+      "calories": 261,
       "protein": 14,
       "fat": 0.4,
       "carbs": 60,
@@ -5526,12 +5526,12 @@
     "nameEn": "Lamb Mince",
     "category": "meat",
     "nutrition": {
-      "calories": 282,
-      "protein": 17,
-      "fat": 23,
+      "calories": 294,
+      "protein": 16.6,
+      "fat": 23.4,
       "carbs": 0,
       "fiber": 0,
-      "sodium": 63,
+      "sodium": 72,
       "sugar": 0
     },
     "priceNZD": 18.5,
@@ -5552,12 +5552,12 @@
     "nameEn": "Duck Breast",
     "category": "meat",
     "nutrition": {
-      "calories": 201,
-      "protein": 23,
-      "fat": 11,
+      "calories": 123,
+      "protein": 19.9,
+      "fat": 4.2,
       "carbs": 0,
       "fiber": 0,
-      "sodium": 74,
+      "sodium": 89,
       "sugar": 0
     },
     "priceNZD": 28,
@@ -5578,12 +5578,12 @@
     "nameEn": "Pork Chop",
     "category": "meat",
     "nutrition": {
-      "calories": 231,
-      "protein": 26,
-      "fat": 14,
+      "calories": 198,
+      "protein": 19.9,
+      "fat": 12.6,
       "carbs": 0,
       "fiber": 0,
-      "sodium": 62,
+      "sodium": 54,
       "sugar": 0
     },
     "priceNZD": 14,
@@ -5605,11 +5605,11 @@
     "category": "meat",
     "nutrition": {
       "calories": 215,
-      "protein": 19,
-      "fat": 15,
-      "carbs": 0,
+      "protein": 19.4,
+      "fat": 14.6,
+      "carbs": 0.2,
       "fiber": 0,
-      "sodium": 68,
+      "sodium": 67,
       "sugar": 0
     },
     "priceNZD": 7.5,
@@ -5653,11 +5653,11 @@
     "category": "meat",
     "nutrition": {
       "calories": 150,
-      "protein": 36,
+      "protein": 36.7,
       "fat": 0.5,
       "carbs": 0,
       "fiber": 0,
-      "sodium": 35,
+      "sodium": 47,
       "sugar": 0
     },
     "priceNZD": 14.7,
@@ -5732,13 +5732,13 @@
     "nameEn": "Chinese Sausage",
     "category": "meat",
     "nutrition": {
-      "calories": 450,
-      "protein": 22,
+      "calories": 442,
+      "protein": 16,
       "fat": 37,
-      "carbs": 12,
+      "carbs": 11,
       "fiber": 0,
-      "sodium": 1800,
-      "sugar": 10
+      "sodium": 1850,
+      "sugar": 9
     },
     "priceNZD": 26,
     "unit": "kg",
@@ -5763,12 +5763,12 @@
     "category": "meat",
     "nutrition": {
       "calories": 336,
-      "protein": 22,
-      "fat": 26,
+      "protein": 21.8,
+      "fat": 26.1,
       "carbs": 2.4,
       "fiber": 0,
       "sodium": 1740,
-      "sugar": 0
+      "sugar": 0.4
     },
     "priceNZD": 43.9,
     "unit": "kg",
@@ -5792,12 +5792,12 @@
     "nameEn": "Whole Prawns",
     "category": "seafood",
     "nutrition": {
-      "calories": 99,
-      "protein": 24,
-      "fat": 0.3,
+      "calories": 85,
+      "protein": 20.1,
+      "fat": 0.5,
       "carbs": 0.2,
       "fiber": 0,
-      "sodium": 111,
+      "sodium": 119,
       "sugar": 0
     },
     "priceNZD": 26.25,
@@ -5826,7 +5826,7 @@
       "fat": 0.9,
       "carbs": 0,
       "fiber": 0,
-      "sodium": 486,
+      "sodium": 296,
       "sugar": 0
     },
     "priceNZD": 75,
@@ -6017,11 +6017,11 @@
     "category": "seafood",
     "nutrition": {
       "calories": 127,
-      "protein": 17,
-      "fat": 4.9,
+      "protein": 17.7,
+      "fat": 5.6,
       "carbs": 0,
       "fiber": 0,
-      "sodium": 150,
+      "sodium": 50,
       "sugar": 0
     },
     "priceNZD": 17.88,
@@ -6127,12 +6127,12 @@
     "nameEn": "Sour Cream",
     "category": "egg_dairy",
     "nutrition": {
-      "calories": 193,
+      "calories": 198,
       "protein": 2.4,
-      "fat": 19,
+      "fat": 19.3,
       "carbs": 4.6,
       "fiber": 0,
-      "sodium": 53,
+      "sodium": 39,
       "sugar": 3.5
     },
     "priceNZD": 3.9,
@@ -6349,10 +6349,10 @@
     "category": "bean",
     "nutrition": {
       "calories": 192,
-      "protein": 20,
-      "fat": 11,
+      "protein": 20.3,
+      "fat": 10.8,
       "carbs": 7.6,
-      "fiber": 1.4,
+      "fiber": 0,
       "sodium": 9,
       "sugar": 0
     },
@@ -6404,12 +6404,12 @@
     "category": "bean",
     "nutrition": {
       "calories": 459,
-      "protein": 44,
-      "fat": 24,
-      "carbs": 17,
-      "fiber": 2,
-      "sodium": 26,
-      "sugar": 0
+      "protein": 45,
+      "fat": 22,
+      "carbs": 22,
+      "fiber": 1,
+      "sodium": 14,
+      "sugar": 3
     },
     "priceNZD": 12,
     "unit": "kg",
@@ -6517,12 +6517,12 @@
     "category": "grain",
     "nutrition": {
       "calories": 376,
-      "protein": 13,
+      "protein": 12.8,
       "fat": 0.6,
-      "carbs": 77,
+      "carbs": 77.4,
       "fiber": 5,
       "sodium": 10,
-      "sugar": 0.2
+      "sugar": 0
     },
     "priceNZD": 6,
     "unit": "kg",
@@ -6541,12 +6541,12 @@
     "category": "grain",
     "nutrition": {
       "calories": 364,
-      "protein": 6,
+      "protein": 5.9,
       "fat": 0.6,
-      "carbs": 82,
-      "fiber": 1.6,
+      "carbs": 80.9,
+      "fiber": 1.8,
       "sodium": 182,
-      "sugar": 0.1
+      "sugar": 0.3
     },
     "priceNZD": 2.29,
     "unit": "400g",
@@ -6564,12 +6564,12 @@
     "nameEn": "Egg Noodles",
     "category": "grain",
     "nutrition": {
-      "calories": 370,
-      "protein": 13,
+      "calories": 384,
+      "protein": 14.2,
       "fat": 4.4,
-      "carbs": 71,
+      "carbs": 71.3,
       "fiber": 3.3,
-      "sodium": 8,
+      "sodium": 21,
       "sugar": 1.9
     },
     "priceNZD": 3.09,
@@ -6591,13 +6591,13 @@
     "nameEn": "Ramen Noodles",
     "category": "grain",
     "nutrition": {
-      "calories": 356,
-      "protein": 10,
-      "fat": 2,
-      "carbs": 77,
-      "fiber": 2.1,
-      "sodium": 156,
-      "sugar": 2
+      "calories": 436,
+      "protein": 10.1,
+      "fat": 17.4,
+      "carbs": 61.7,
+      "fiber": 2.6,
+      "sodium": 1721,
+      "sugar": 1.5
     },
     "priceNZD": 4.49,
     "unit": "500g",
@@ -6752,10 +6752,10 @@
       "calories": 24,
       "protein": 3.4,
       "fat": 0.6,
-      "carbs": 3.9,
+      "carbs": 3.4,
       "fiber": 3,
       "sodium": 118,
-      "sugar": 0.5
+      "sugar": 0.6
     },
     "priceNZD": 4.3,
     "unit": "bunch",
@@ -6783,7 +6783,7 @@
       "protein": 2.5,
       "fat": 0.3,
       "carbs": 4,
-      "fiber": 1.3,
+      "fiber": 2.2,
       "sodium": 20,
       "sugar": 0
     },
@@ -6809,12 +6809,12 @@
     "nameEn": "Pea Shoots",
     "category": "vegetable",
     "nutrition": {
-      "calories": 41,
-      "protein": 3,
-      "fat": 0.2,
-      "carbs": 7.4,
-      "fiber": 3,
-      "sodium": 17,
+      "calories": 42,
+      "protein": 3.6,
+      "fat": 0.3,
+      "carbs": 8.4,
+      "fiber": 2.8,
+      "sodium": 4,
       "sugar": 4
     },
     "priceNZD": 7.5,
@@ -6840,10 +6840,10 @@
       "calories": 20,
       "protein": 1.2,
       "fat": 0.2,
-      "carbs": 4.4,
-      "fiber": 0.5,
-      "sodium": 3,
-      "sugar": 1.7
+      "carbs": 4.3,
+      "fiber": 1.1,
+      "sodium": 2,
+      "sugar": 2
     },
     "priceNZD": 6,
     "unit": "kg",
@@ -6898,12 +6898,12 @@
     "category": "vegetable",
     "nutrition": {
       "calories": 26,
-      "protein": 2.5,
+      "protein": 2.7,
       "fat": 0.2,
-      "carbs": 6,
-      "fiber": 2.2,
+      "carbs": 5.2,
+      "fiber": 1.8,
       "sodium": 3,
-      "sugar": 1.8
+      "sugar": 1.9
     },
     "priceNZD": 8.75,
     "unit": "kg",
@@ -6924,12 +6924,12 @@
     "category": "vegetable",
     "nutrition": {
       "calories": 30,
-      "protein": 3.3,
-      "fat": 0.7,
-      "carbs": 4.3,
-      "fiber": 2.5,
-      "sodium": 6,
-      "sugar": 1.8
+      "protein": 3,
+      "fat": 0.3,
+      "carbs": 4.4,
+      "fiber": 2.6,
+      "sodium": 35,
+      "sugar": 1.5
     },
     "priceNZD": 5.2,
     "unit": "bunch",
@@ -6953,13 +6953,13 @@
     "nameEn": "Yellow Chives",
     "category": "vegetable",
     "nutrition": {
-      "calories": 28,
-      "protein": 2.4,
+      "calories": 22,
+      "protein": 1.6,
       "fat": 0.3,
-      "carbs": 4.5,
+      "carbs": 4,
       "fiber": 1.2,
-      "sodium": 2,
-      "sugar": 1.2
+      "sodium": 8,
+      "sugar": 1
     },
     "priceNZD": 5.5,
     "unit": "bunch",
@@ -7029,13 +7029,13 @@
     "nameEn": "Portobello Mushroom",
     "category": "vegetable",
     "nutrition": {
-      "calories": 26,
-      "protein": 2.5,
-      "fat": 0.3,
+      "calories": 22,
+      "protein": 2.1,
+      "fat": 0.4,
       "carbs": 3.9,
       "fiber": 1.3,
-      "sodium": 8,
-      "sugar": 0.9
+      "sodium": 9,
+      "sugar": 2.5
     },
     "priceNZD": 15.99,
     "unit": "kg",
@@ -7138,9 +7138,9 @@
     "category": "seasoning",
     "nutrition": {
       "calories": 130,
-      "protein": 0.1,
+      "protein": 0.3,
       "fat": 0,
-      "carbs": 4,
+      "carbs": 5,
       "fiber": 0,
       "sodium": 2100,
       "sugar": 4
@@ -7190,12 +7190,12 @@
     "nameEn": "Chinese Black Vinegar",
     "category": "seasoning",
     "nutrition": {
-      "calories": 6,
+      "calories": 28,
       "protein": 0.4,
       "fat": 0,
-      "carbs": 0.7,
+      "carbs": 6.3,
       "fiber": 0,
-      "sodium": 8,
+      "sodium": 14,
       "sugar": 0
     },
     "priceNZD": 5.29,
@@ -7264,13 +7264,13 @@
     "nameEn": "XO Sauce",
     "category": "seasoning",
     "nutrition": {
-      "calories": 350,
+      "calories": 400,
       "protein": 15,
-      "fat": 28,
-      "carbs": 12,
+      "fat": 35,
+      "carbs": 8,
       "fiber": 1,
       "sodium": 2800,
-      "sugar": 8
+      "sugar": 2
     },
     "priceNZD": 14,
     "unit": "200g",
@@ -7291,13 +7291,13 @@
     "nameEn": "Shacha Sauce",
     "category": "seasoning",
     "nutrition": {
-      "calories": 460,
+      "calories": 450,
       "protein": 8,
-      "fat": 42,
-      "carbs": 15,
+      "fat": 40,
+      "carbs": 14,
       "fiber": 2,
-      "sodium": 2500,
-      "sugar": 9
+      "sodium": 1600,
+      "sugar": 3
     },
     "priceNZD": 5.99,
     "unit": "250g",
@@ -7347,8 +7347,8 @@
     "nutrition": {
       "calories": 66,
       "protein": 4.4,
-      "fat": 3.3,
-      "carbs": 5.8,
+      "fat": 4,
+      "carbs": 5.3,
       "fiber": 3.3,
       "sodium": 1120,
       "sugar": 0.9
@@ -7400,10 +7400,10 @@
       "calories": 109,
       "protein": 4.8,
       "fat": 0.6,
-      "carbs": 23,
+      "carbs": 23.5,
       "fiber": 7.8,
       "sodium": 17,
-      "sugar": 2
+      "sugar": 4.4
     },
     "priceNZD": 8,
     "unit": "43g",
@@ -7447,13 +7447,13 @@
     "nameEn": "Galangal",
     "category": "seasoning",
     "nutrition": {
-      "calories": 72,
-      "protein": 2,
-      "fat": 0.3,
-      "carbs": 16,
+      "calories": 71,
+      "protein": 1.3,
+      "fat": 0.6,
+      "carbs": 15,
       "fiber": 2,
-      "sodium": 8,
-      "sugar": 0
+      "sodium": 10,
+      "sugar": 1.5
     },
     "priceNZD": 27.5,
     "unit": "kg",
@@ -7471,12 +7471,12 @@
     "nameEn": "Kaffir Lime Leaf",
     "category": "seasoning",
     "nutrition": {
-      "calories": 50,
-      "protein": 2,
+      "calories": 60,
+      "protein": 2.5,
       "fat": 1,
-      "carbs": 10,
-      "fiber": 5,
-      "sodium": 5,
+      "carbs": 14,
+      "fiber": 4,
+      "sodium": 4,
       "sugar": 0
     },
     "priceNZD": 5.95,
@@ -7498,9 +7498,9 @@
       "calories": 265,
       "protein": 9,
       "fat": 4.3,
-      "carbs": 69,
-      "fiber": 42,
-      "sodium": 25,
+      "carbs": 68.9,
+      "fiber": 42.5,
+      "sodium": 15,
       "sugar": 4.1
     },
     "priceNZD": 2,
@@ -7677,12 +7677,12 @@
     "category": "seasoning",
     "nutrition": {
       "calories": 341,
-      "protein": 10,
+      "protein": 10.4,
       "fat": 1,
-      "carbs": 79,
+      "carbs": 79.1,
       "fiber": 15,
       "sodium": 73,
-      "sugar": 8
+      "sugar": 6.4
     },
     "priceNZD": 2.7,
     "unit": "50g",
@@ -7702,13 +7702,13 @@
     "nameEn": "Yellow Mustard",
     "category": "seasoning",
     "nutrition": {
-      "calories": 60,
-      "protein": 4,
-      "fat": 3,
-      "carbs": 6,
-      "fiber": 3,
-      "sodium": 1135,
-      "sugar": 1
+      "calories": 66,
+      "protein": 4.4,
+      "fat": 4,
+      "carbs": 5.3,
+      "fiber": 3.3,
+      "sodium": 1120,
+      "sugar": 0.9
     },
     "priceNZD": 3.7,
     "unit": "200g",
@@ -7942,13 +7942,13 @@
     "nameEn": "Persimmon",
     "category": "fruit",
     "nutrition": {
-      "calories": 81,
+      "calories": 70,
       "protein": 0.6,
       "fat": 0.2,
-      "carbs": 21,
+      "carbs": 18.6,
       "fiber": 3.6,
       "sodium": 1,
-      "sugar": 18
+      "sugar": 12.5
     },
     "priceNZD": 9.9,
     "unit": "kg",
@@ -8167,11 +8167,11 @@
     "category": "dried",
     "nutrition": {
       "calories": 325,
-      "protein": 0.2,
+      "protein": 0,
       "fat": 1.4,
       "carbs": 83,
-      "fiber": 5.7,
-      "sodium": 5,
+      "fiber": 5.6,
+      "sodium": 4,
       "sugar": 73
     },
     "priceNZD": 12,
@@ -8457,12 +8457,12 @@
     "category": "dried",
     "nutrition": {
       "calories": 324,
-      "protein": 10,
-      "fat": 17,
-      "carbs": 57,
+      "protein": 12,
+      "fat": 17.3,
+      "carbs": 56.6,
       "fiber": 28,
       "sodium": 91,
-      "sugar": 0
+      "sugar": 10.3
     },
     "priceNZD": 35,
     "unit": "kg",
@@ -8486,9 +8486,9 @@
       "protein": 4.9,
       "fat": 0.4,
       "carbs": 74,
-      "fiber": 0,
+      "fiber": 8,
       "sodium": 48,
-      "sugar": 60
+      "sugar": 66
     },
     "priceNZD": 30,
     "unit": "kg",
@@ -8508,13 +8508,13 @@
     "nameEn": "Dried Hawthorn",
     "category": "dried",
     "nutrition": {
-      "calories": 85,
-      "protein": 0.7,
-      "fat": 0.5,
-      "carbs": 22,
-      "fiber": 3.1,
-      "sodium": 2,
-      "sugar": 14
+      "calories": 350,
+      "protein": 1.3,
+      "fat": 1.2,
+      "carbs": 89,
+      "fiber": 15,
+      "sodium": 3,
+      "sugar": 80
     },
     "priceNZD": 21.9,
     "unit": "kg",
@@ -8532,13 +8532,13 @@
     "nameEn": "Dried Chrysanthemum",
     "category": "dried",
     "nutrition": {
-      "calories": 24,
-      "protein": 3.4,
-      "fat": 0.6,
-      "carbs": 3.9,
-      "fiber": 3,
-      "sodium": 2,
-      "sugar": 0.5
+      "calories": 268,
+      "protein": 11,
+      "fat": 7.5,
+      "carbs": 55.3,
+      "fiber": 18,
+      "sodium": 20,
+      "sugar": 0
     },
     "priceNZD": 21.9,
     "unit": "kg",
@@ -8662,13 +8662,13 @@
     "nameEn": "Glutinous Rice Flour",
     "category": "grain",
     "nutrition": {
-      "calories": 363,
-      "protein": 6,
-      "fat": 1.2,
-      "carbs": 80,
+      "calories": 364,
+      "protein": 5.9,
+      "fat": 1.4,
+      "carbs": 80.1,
       "fiber": 2.4,
-      "sodium": 4,
-      "sugar": 0.2
+      "sodium": 0,
+      "sugar": 0
     },
     "priceNZD": 4,
     "unit": "kg",
@@ -8780,12 +8780,12 @@
     "nameEn": "Lotus Leaf",
     "category": "dried",
     "nutrition": {
-      "calories": 40,
-      "protein": 3,
-      "fat": 0.5,
-      "carbs": 8,
-      "fiber": 5,
-      "sodium": 5,
+      "calories": 250,
+      "protein": 8,
+      "fat": 2,
+      "carbs": 65,
+      "fiber": 40,
+      "sodium": 30,
       "sugar": 0
     },
     "priceNZD": 10,
@@ -8803,11 +8803,11 @@
     "category": "grain",
     "nutrition": {
       "calories": 340,
-      "protein": 0.5,
-      "fat": 0,
-      "carbs": 84,
-      "fiber": 1,
-      "sodium": 23,
+      "protein": 0.2,
+      "fat": 0.3,
+      "carbs": 83.3,
+      "fiber": 2.4,
+      "sodium": 88,
       "sugar": 0
     },
     "priceNZD": 3.4,
@@ -8852,12 +8852,12 @@
     "nameEn": "Pork Skin",
     "category": "meat",
     "nutrition": {
-      "calories": 362,
-      "protein": 26.4,
-      "fat": 28,
+      "calories": 545,
+      "protein": 61.3,
+      "fat": 32,
       "carbs": 0,
       "fiber": 0,
-      "sodium": 20,
+      "sodium": 1305,
       "sugar": 0
     },
     "priceNZD": 4.5,
@@ -8882,10 +8882,10 @@
       "calories": 275,
       "protein": 9,
       "fat": 1.2,
-      "carbs": 55,
+      "carbs": 55.7,
       "fiber": 2.2,
       "sodium": 536,
-      "sugar": 0.8
+      "sugar": 1.3
     },
     "priceNZD": 5,
     "unit": "包",
@@ -8907,10 +8907,10 @@
       "calories": 310,
       "protein": 9,
       "fat": 6,
-      "carbs": 54,
-      "fiber": 2,
-      "sodium": 500,
-      "sugar": 4
+      "carbs": 53.6,
+      "fiber": 2.2,
+      "sodium": 446,
+      "sugar": 3.5
     },
     "priceNZD": 3,
     "unit": "包",
@@ -8983,9 +8983,9 @@
       "calories": 383,
       "protein": 0,
       "fat": 0,
-      "carbs": 96,
+      "carbs": 98.6,
       "fiber": 0,
-      "sodium": 60,
+      "sodium": 5,
       "sugar": 94
     },
     "priceNZD": 5.39,
@@ -9028,13 +9028,13 @@
     "nameEn": "Pandan Leaf",
     "category": "seasoning",
     "nutrition": {
-      "calories": 33,
-      "protein": 1,
+      "calories": 26,
+      "protein": 0.5,
       "fat": 0.2,
-      "carbs": 7.6,
-      "fiber": 4,
-      "sodium": 3,
-      "sugar": 1
+      "carbs": 6.9,
+      "fiber": 1,
+      "sodium": 2,
+      "sugar": 0.5
     },
     "priceNZD": 3,
     "unit": "把",
@@ -9052,13 +9052,13 @@
     "nameEn": "Curry Paste",
     "category": "seasoning",
     "nutrition": {
-      "calories": 150,
-      "protein": 3,
-      "fat": 12,
-      "carbs": 8,
-      "fiber": 2.5,
-      "sodium": 1850,
-      "sugar": 2
+      "calories": 146,
+      "protein": 2.1,
+      "fat": 11,
+      "carbs": 11.6,
+      "fiber": 4.1,
+      "sodium": 1780,
+      "sugar": 5.3
     },
     "priceNZD": 8.39,
     "unit": "bottle",
@@ -9087,8 +9087,8 @@
       "fat": 0.5,
       "carbs": 2.4,
       "fiber": 1.6,
-      "sodium": 670,
-      "sugar": 0.8
+      "sodium": 498,
+      "sugar": 1
     },
     "priceNZD": 6.99,
     "unit": "pack",
@@ -9114,13 +9114,13 @@
     "nameEn": "Beef Stock",
     "category": "seasoning",
     "nutrition": {
-      "calories": 20,
-      "protein": 3,
-      "fat": 0.5,
-      "carbs": 1,
+      "calories": 13,
+      "protein": 2.7,
+      "fat": 0.3,
+      "carbs": 0.1,
       "fiber": 0,
-      "sodium": 450,
-      "sugar": 0.5
+      "sodium": 331,
+      "sugar": 0.1
     },
     "priceNZD": 3.99,
     "unit": "bottle",
@@ -9208,11 +9208,11 @@
     "nameEn": "Wheat Starch",
     "category": "grain",
     "nutrition": {
-      "calories": 360,
-      "protein": 0.3,
+      "calories": 381,
+      "protein": 0.2,
       "fat": 0.2,
-      "carbs": 89,
-      "fiber": 0.2,
+      "carbs": 94,
+      "fiber": 0,
       "sodium": 2,
       "sugar": 0
     },
@@ -9237,12 +9237,12 @@
     "nameEn": "Dried Black Fungus",
     "category": "dried",
     "nutrition": {
-      "calories": 25,
-      "protein": 2,
-      "fat": 0.2,
-      "carbs": 6,
-      "fiber": 5,
-      "sodium": 9,
+      "calories": 284,
+      "protein": 9.3,
+      "fat": 0.7,
+      "carbs": 73,
+      "fiber": 70,
+      "sodium": 35,
       "sugar": 0
     },
     "priceNZD": 35,
@@ -9263,11 +9263,11 @@
     "nameEn": "Dried Lily Flower",
     "category": "dried",
     "nutrition": {
-      "calories": 199,
+      "calories": 261,
       "protein": 14,
-      "fat": 1.4,
+      "fat": 0.4,
       "carbs": 60,
-      "fiber": 7,
+      "fiber": 7.7,
       "sodium": 59,
       "sugar": 0
     },
@@ -9287,13 +9287,13 @@
     "nameEn": "Dried Bamboo Shoots",
     "category": "dried",
     "nutrition": {
-      "calories": 30,
-      "protein": 3,
-      "fat": 0.3,
-      "carbs": 6,
-      "fiber": 3,
-      "sodium": 5,
-      "sugar": 0
+      "calories": 239,
+      "protein": 22.8,
+      "fat": 4,
+      "carbs": 47.4,
+      "fiber": 43,
+      "sodium": 20,
+      "sugar": 4
     },
     "priceNZD": 28,
     "unit": "kg",
@@ -9311,13 +9311,13 @@
     "nameEn": "Dried Jujube",
     "category": "dried",
     "nutrition": {
-      "calories": 287,
-      "protein": 4,
-      "fat": 0.5,
-      "carbs": 71,
+      "calories": 282,
+      "protein": 3.7,
+      "fat": 1.1,
+      "carbs": 74,
       "fiber": 6,
-      "sodium": 9,
-      "sugar": 55
+      "sodium": 3,
+      "sugar": 66
     },
     "priceNZD": 21.9,
     "unit": "kg",
@@ -9335,13 +9335,13 @@
     "nameEn": "Purple Sweet Potato",
     "category": "vegetable",
     "nutrition": {
-      "calories": 86,
-      "protein": 1.6,
+      "calories": 70,
+      "protein": 1.3,
       "fat": 0.1,
-      "carbs": 20,
-      "fiber": 3,
-      "sodium": 55,
-      "sugar": 4
+      "carbs": 17,
+      "fiber": 1.5,
+      "sodium": 6,
+      "sugar": 1.2
     },
     "priceNZD": 7,
     "unit": "kg",
@@ -9392,12 +9392,12 @@
     "nameEn": "Snow Vegetable Pickle",
     "category": "vegetable",
     "nutrition": {
-      "calories": 24,
-      "protein": 2,
+      "calories": 25,
+      "protein": 2.3,
       "fat": 0.4,
-      "carbs": 4,
+      "carbs": 3.5,
       "fiber": 2,
-      "sodium": 1300,
+      "sodium": 680,
       "sugar": 1
     },
     "priceNZD": 19.93,
@@ -9418,13 +9418,13 @@
     "nameEn": "Preserved Mustard Green",
     "category": "vegetable",
     "nutrition": {
-      "calories": 36,
-      "protein": 2,
-      "fat": 0.4,
-      "carbs": 6,
-      "fiber": 2,
-      "sodium": 1100,
-      "sugar": 2
+      "calories": 34,
+      "protein": 3.5,
+      "fat": 0.6,
+      "carbs": 5,
+      "fiber": 2.5,
+      "sodium": 320,
+      "sugar": 1
     },
     "priceNZD": 8.6,
     "unit": "kg",
@@ -9447,10 +9447,10 @@
       "calories": 47,
       "protein": 1.7,
       "fat": 0.4,
-      "carbs": 11,
-      "fiber": 2,
-      "sodium": 5,
-      "sugar": 2
+      "carbs": 10.9,
+      "fiber": 1.8,
+      "sodium": 4,
+      "sugar": 1
     },
     "priceNZD": 30,
     "unit": "kg",
@@ -9470,11 +9470,11 @@
     "nameEn": "Indian Lettuce",
     "category": "vegetable",
     "nutrition": {
-      "calories": 14,
-      "protein": 1.4,
-      "fat": 0.4,
-      "carbs": 2,
-      "fiber": 1,
+      "calories": 16,
+      "protein": 1.5,
+      "fat": 0.2,
+      "carbs": 2.9,
+      "fiber": 1.4,
       "sodium": 28,
       "sugar": 1
     },
@@ -9501,12 +9501,12 @@
     "category": "vegetable",
     "nutrition": {
       "calories": 18,
-      "protein": 1.6,
-      "fat": 0.3,
-      "carbs": 3,
+      "protein": 0.9,
+      "fat": 0.2,
+      "carbs": 3.7,
       "fiber": 1.7,
       "sodium": 11,
-      "sugar": 1.4
+      "sugar": 1.6
     },
     "priceNZD": 6,
     "unit": "kg",
@@ -9532,10 +9532,10 @@
       "calories": 23,
       "protein": 1.2,
       "fat": 0.2,
-      "carbs": 4,
-      "fiber": 2,
+      "carbs": 5.7,
+      "fiber": 1.9,
       "sodium": 5,
-      "sugar": 2
+      "sugar": 1.5
     },
     "priceNZD": 4.99,
     "unit": "kg",
@@ -9558,13 +9558,13 @@
     "nameEn": "Pickled Cabbage (NE-style)",
     "category": "vegetable",
     "nutrition": {
-      "calories": 19,
-      "protein": 1,
-      "fat": 0.1,
-      "carbs": 4,
-      "fiber": 2,
-      "sodium": 750,
-      "sugar": 1.4
+      "calories": 23,
+      "protein": 2.1,
+      "fat": 0.3,
+      "carbs": 3.2,
+      "fiber": 1.8,
+      "sodium": 860,
+      "sugar": 0.5
     },
     "priceNZD": 10,
     "unit": "kg",
@@ -9689,13 +9689,13 @@
     "nameEn": "Oat Milk",
     "category": "bean",
     "nutrition": {
-      "calories": 47,
-      "protein": 1,
-      "fat": 1.5,
-      "carbs": 7,
+      "calories": 43,
+      "protein": 0.8,
+      "fat": 1.4,
+      "carbs": 7.1,
       "fiber": 0.8,
-      "sodium": 50,
-      "sugar": 4
+      "sodium": 42,
+      "sugar": 4.1
     },
     "priceNZD": 3,
     "unit": "L",
@@ -9715,12 +9715,12 @@
     "nameEn": "Fatty Beef Slice",
     "category": "meat",
     "nutrition": {
-      "calories": 260,
-      "protein": 17,
-      "fat": 21,
+      "calories": 288,
+      "protein": 15.7,
+      "fat": 24,
       "carbs": 0,
       "fiber": 0,
-      "sodium": 70,
+      "sodium": 65,
       "sugar": 0
     },
     "priceNZD": 27,
@@ -9743,13 +9743,13 @@
     "nameEn": "Chinese Cured Pork",
     "category": "meat",
     "nutrition": {
-      "calories": 470,
-      "protein": 20,
-      "fat": 43,
-      "carbs": 2,
+      "calories": 457,
+      "protein": 17.3,
+      "fat": 42.7,
+      "carbs": 1,
       "fiber": 0,
-      "sodium": 2000,
-      "sugar": 1
+      "sodium": 2130,
+      "sugar": 0
     },
     "priceNZD": 32,
     "unit": "kg",
@@ -9776,7 +9776,7 @@
       "calories": 108,
       "protein": 17.1,
       "fat": 2.7,
-      "carbs": 0,
+      "carbs": 3.8,
       "fiber": 0,
       "sodium": 41,
       "sugar": 0
@@ -9884,13 +9884,13 @@
     "nameEn": "Frozen Tofu",
     "category": "bean",
     "nutrition": {
-      "calories": 80,
-      "protein": 9,
-      "fat": 5,
-      "carbs": 2,
+      "calories": 120,
+      "protein": 12.8,
+      "fat": 7.6,
+      "carbs": 3,
       "fiber": 0.5,
-      "sodium": 10,
-      "sugar": 0.5
+      "sodium": 11,
+      "sugar": 0.9
     },
     "priceNZD": 6,
     "unit": "pack",
@@ -9912,11 +9912,13 @@
     "nameEn": "Coffee Beans",
     "category": "dried",
     "nutrition": {
-      "calories": 200,
+      "calories": 500,
       "protein": 13,
       "fat": 15,
-      "carbs": 35,
-      "fiber": 25
+      "carbs": 79.6,
+      "fiber": 30,
+      "sodium": 29,
+      "sugar": 0
     },
     "priceNZD": 20,
     "unit": "kg",
@@ -9933,11 +9935,13 @@
     "nameEn": "Espresso Shot",
     "category": "seasoning",
     "nutrition": {
-      "calories": 2,
+      "calories": 9,
       "protein": 0.1,
-      "fat": 0,
-      "carbs": 0.4,
-      "fiber": 0
+      "fat": 0.2,
+      "carbs": 1.7,
+      "fiber": 0,
+      "sodium": 14,
+      "sugar": 0
     },
     "priceNZD": 3,
     "unit": "份",
@@ -9954,11 +9958,13 @@
     "nameEn": "Instant Coffee",
     "category": "dried",
     "nutrition": {
-      "calories": 7,
-      "protein": 0.3,
-      "fat": 0,
-      "carbs": 1.2,
-      "fiber": 0
+      "calories": 353,
+      "protein": 12.2,
+      "fat": 0.5,
+      "carbs": 75.1,
+      "fiber": 0,
+      "sodium": 76,
+      "sugar": 0
     },
     "priceNZD": 12,
     "unit": "瓶",
@@ -9976,10 +9982,12 @@
     "category": "dried",
     "nutrition": {
       "calories": 324,
-      "protein": 31,
-      "fat": 5,
-      "carbs": 39,
-      "fiber": 38
+      "protein": 29.6,
+      "fat": 5.3,
+      "carbs": 38.5,
+      "fiber": 38.5,
+      "sodium": 48,
+      "sugar": 0
     },
     "priceNZD": 25,
     "unit": "罐",
@@ -9998,11 +10006,13 @@
     "nameEn": "Black Tea",
     "category": "dried",
     "nutrition": {
-      "calories": 1,
-      "protein": 0,
-      "fat": 0,
-      "carbs": 0.3,
-      "fiber": 0
+      "calories": 293,
+      "protein": 20.3,
+      "fat": 5.1,
+      "carbs": 57.4,
+      "fiber": 23,
+      "sodium": 3,
+      "sugar": 0
     },
     "priceNZD": 10,
     "unit": "包",
@@ -10019,11 +10029,13 @@
     "nameEn": "Green Tea",
     "category": "dried",
     "nutrition": {
-      "calories": 1,
-      "protein": 0,
-      "fat": 0,
-      "carbs": 0.2,
-      "fiber": 0
+      "calories": 293,
+      "protein": 20.3,
+      "fat": 5.1,
+      "carbs": 57.4,
+      "fiber": 23,
+      "sodium": 3,
+      "sugar": 0
     },
     "priceNZD": 10,
     "unit": "包",
@@ -10040,11 +10052,13 @@
     "nameEn": "Oolong Tea",
     "category": "dried",
     "nutrition": {
-      "calories": 1,
-      "protein": 0,
-      "fat": 0,
-      "carbs": 0.2,
-      "fiber": 0
+      "calories": 293,
+      "protein": 20.3,
+      "fat": 5.1,
+      "carbs": 57.4,
+      "fiber": 23,
+      "sodium": 3,
+      "sugar": 0
     },
     "priceNZD": 12,
     "unit": "包",
@@ -10061,11 +10075,13 @@
     "nameEn": "Jasmine Tea",
     "category": "dried",
     "nutrition": {
-      "calories": 1,
-      "protein": 0,
-      "fat": 0,
-      "carbs": 0.2,
-      "fiber": 0
+      "calories": 293,
+      "protein": 20.3,
+      "fat": 5.1,
+      "carbs": 57.4,
+      "fiber": 23,
+      "sodium": 3,
+      "sugar": 0
     },
     "priceNZD": 12,
     "unit": "包",
@@ -10082,11 +10098,13 @@
     "nameEn": "Pu-erh Tea",
     "category": "dried",
     "nutrition": {
-      "calories": 1,
-      "protein": 0,
-      "fat": 0,
-      "carbs": 0.2,
-      "fiber": 0
+      "calories": 293,
+      "protein": 20.3,
+      "fat": 5.1,
+      "carbs": 57.4,
+      "fiber": 23,
+      "sodium": 3,
+      "sugar": 0
     },
     "priceNZD": 15,
     "unit": "饼",
@@ -10103,11 +10121,13 @@
     "nameEn": "Earl Grey Tea",
     "category": "dried",
     "nutrition": {
-      "calories": 1,
-      "protein": 0,
-      "fat": 0,
-      "carbs": 0.3,
-      "fiber": 0
+      "calories": 293,
+      "protein": 20.3,
+      "fat": 5.1,
+      "carbs": 57.4,
+      "fiber": 23,
+      "sodium": 3,
+      "sugar": 0
     },
     "priceNZD": 12,
     "unit": "包",
@@ -10124,11 +10144,13 @@
     "nameEn": "Tieguanyin Oolong",
     "category": "dried",
     "nutrition": {
-      "calories": 1,
-      "protein": 0,
-      "fat": 0,
-      "carbs": 0.2,
-      "fiber": 0
+      "calories": 293,
+      "protein": 20.3,
+      "fat": 5.1,
+      "carbs": 57.4,
+      "fiber": 23,
+      "sodium": 3,
+      "sugar": 0
     },
     "priceNZD": 18,
     "unit": "包",
@@ -10145,11 +10167,13 @@
     "nameEn": "Longjing Green Tea",
     "category": "dried",
     "nutrition": {
-      "calories": 1,
-      "protein": 0,
-      "fat": 0,
-      "carbs": 0.2,
-      "fiber": 0
+      "calories": 293,
+      "protein": 20.3,
+      "fat": 5.1,
+      "carbs": 57.4,
+      "fiber": 23,
+      "sodium": 3,
+      "sugar": 0
     },
     "priceNZD": 20,
     "unit": "罐",
@@ -10169,8 +10193,10 @@
       "calories": 1,
       "protein": 0,
       "fat": 0,
-      "carbs": 0.3,
-      "fiber": 0
+      "carbs": 0.2,
+      "fiber": 0,
+      "sodium": 1,
+      "sugar": 0
     },
     "priceNZD": 8,
     "unit": "包",
@@ -10187,11 +10213,13 @@
     "nameEn": "Chrysanthemum Flower",
     "category": "dried",
     "nutrition": {
-      "calories": 25,
-      "protein": 2.5,
-      "fat": 0.5,
-      "carbs": 4,
-      "fiber": 3
+      "calories": 1,
+      "protein": 0,
+      "fat": 0,
+      "carbs": 0.2,
+      "fiber": 0,
+      "sodium": 1,
+      "sugar": 0
     },
     "priceNZD": 8,
     "unit": "包",
@@ -10208,11 +10236,13 @@
     "nameEn": "Osmanthus Flower",
     "category": "dried",
     "nutrition": {
-      "calories": 15,
-      "protein": 1,
-      "fat": 0.2,
-      "carbs": 3,
-      "fiber": 2
+      "calories": 85,
+      "protein": 5,
+      "fat": 1,
+      "carbs": 15,
+      "fiber": 10,
+      "sodium": 10,
+      "sugar": 0
     },
     "priceNZD": 15,
     "unit": "瓶",
@@ -10234,9 +10264,11 @@
     "nutrition": {
       "calories": 598,
       "protein": 7.8,
-      "fat": 43,
-      "carbs": 46,
-      "fiber": 11
+      "fat": 42.6,
+      "carbs": 45.9,
+      "fiber": 10.9,
+      "sodium": 24,
+      "sugar": 24
     },
     "priceNZD": 15,
     "unit": "kg",
@@ -10260,7 +10292,9 @@
       "protein": 5.9,
       "fat": 32,
       "carbs": 59,
-      "fiber": 0
+      "fiber": 0.2,
+      "sodium": 90,
+      "sugar": 59
     },
     "priceNZD": 12,
     "unit": "kg",
@@ -10284,9 +10318,11 @@
     "nutrition": {
       "calories": 228,
       "protein": 19.6,
-      "fat": 14,
-      "carbs": 58,
-      "fiber": 33
+      "fat": 13.7,
+      "carbs": 57.9,
+      "fiber": 37,
+      "sodium": 21,
+      "sugar": 1.8
     },
     "priceNZD": 8,
     "unit": "罐",
@@ -10308,8 +10344,10 @@
       "calories": 53,
       "protein": 0,
       "fat": 0,
-      "carbs": 28,
-      "fiber": 0
+      "carbs": 27.7,
+      "fiber": 0.2,
+      "sodium": 10600,
+      "sugar": 0
     },
     "priceNZD": 5,
     "unit": "罐",
@@ -10332,7 +10370,9 @@
       "protein": 0,
       "fat": 0,
       "carbs": 0,
-      "fiber": 0
+      "fiber": 0,
+      "sodium": 27360,
+      "sugar": 0
     },
     "priceNZD": 3,
     "unit": "包",
@@ -10352,10 +10392,12 @@
     "category": "seasoning",
     "nutrition": {
       "calories": 325,
-      "protein": 40,
+      "protein": 40.4,
       "fat": 7.6,
-      "carbs": 41,
-      "fiber": 27
+      "carbs": 41.2,
+      "fiber": 26.9,
+      "sodium": 51,
+      "sugar": 0
     },
     "priceNZD": 6,
     "unit": "包",
@@ -10375,10 +10417,12 @@
     "category": "dried",
     "nutrition": {
       "calories": 335,
-      "protein": 86,
+      "protein": 85.6,
       "fat": 0.1,
       "carbs": 0,
-      "fiber": 0
+      "fiber": 0,
+      "sodium": 196,
+      "sugar": 0
     },
     "priceNZD": 8,
     "unit": "包",
@@ -10401,7 +10445,9 @@
       "protein": 2.8,
       "fat": 36,
       "carbs": 2.8,
-      "fiber": 0
+      "fiber": 0,
+      "sodium": 27,
+      "sugar": 2.9
     },
     "priceNZD": 6,
     "unit": "盒",
@@ -10423,10 +10469,12 @@
     "category": "grain",
     "nutrition": {
       "calories": 362,
-      "protein": 8.5,
-      "fat": 0.8,
-      "carbs": 78,
-      "fiber": 2.5
+      "protein": 8.2,
+      "fat": 0.9,
+      "carbs": 78.5,
+      "fiber": 1.7,
+      "sodium": 2,
+      "sugar": 0.3
     },
     "priceNZD": 5,
     "unit": "包",
@@ -10446,10 +10494,12 @@
     "category": "grain",
     "nutrition": {
       "calories": 361,
-      "protein": 13,
-      "fat": 1.2,
-      "carbs": 73,
-      "fiber": 2.7
+      "protein": 12,
+      "fat": 1.7,
+      "carbs": 72.5,
+      "fiber": 2.4,
+      "sodium": 2,
+      "sugar": 0.3
     },
     "priceNZD": 5,
     "unit": "包",
@@ -10468,11 +10518,13 @@
     "nameEn": "Custard Powder",
     "category": "seasoning",
     "nutrition": {
-      "calories": 380,
-      "protein": 1,
-      "fat": 0.5,
-      "carbs": 94,
-      "fiber": 0
+      "calories": 361,
+      "protein": 4.3,
+      "fat": 0.7,
+      "carbs": 87,
+      "fiber": 0.5,
+      "sodium": 182,
+      "sugar": 59
     },
     "priceNZD": 6,
     "unit": "罐",
@@ -10491,11 +10543,13 @@
     "nameEn": "Sago",
     "category": "grain",
     "nutrition": {
-      "calories": 355,
+      "calories": 358,
       "protein": 0.2,
       "fat": 0,
       "carbs": 88,
-      "fiber": 0.5
+      "fiber": 0.9,
+      "sodium": 1,
+      "sugar": 0
     },
     "priceNZD": 6,
     "unit": "包",
@@ -10515,8 +10569,10 @@
       "calories": 358,
       "protein": 0.2,
       "fat": 0,
-      "carbs": 89,
-      "fiber": 0.9
+      "carbs": 88.7,
+      "fiber": 0.9,
+      "sodium": 1,
+      "sugar": 3.3
     },
     "priceNZD": 8,
     "unit": "包",
@@ -10533,11 +10589,13 @@
     "nameEn": "Grass Jelly",
     "category": "dried",
     "nutrition": {
-      "calories": 23,
-      "protein": 0.2,
-      "fat": 0,
-      "carbs": 5.6,
-      "fiber": 0.2
+      "calories": 30,
+      "protein": 0.1,
+      "fat": 0.1,
+      "carbs": 7,
+      "fiber": 0.4,
+      "sodium": 4,
+      "sugar": 3
     },
     "priceNZD": 5,
     "unit": "罐",
@@ -10554,11 +10612,13 @@
     "nameEn": "Snow Pear",
     "category": "fruit",
     "nutrition": {
-      "calories": 57,
-      "protein": 0.4,
-      "fat": 0.1,
-      "carbs": 15,
-      "fiber": 3.1
+      "calories": 45,
+      "protein": 0.3,
+      "fat": 0.2,
+      "carbs": 12,
+      "fiber": 3.1,
+      "sodium": 1,
+      "sugar": 7.8
     },
     "priceNZD": 4,
     "unit": "kg",
@@ -10581,10 +10641,12 @@
     "category": "dried",
     "nutrition": {
       "calories": 573,
-      "protein": 18,
-      "fat": 50,
+      "protein": 17.7,
+      "fat": 49.7,
       "carbs": 23,
-      "fiber": 12
+      "fiber": 11.8,
+      "sodium": 11,
+      "sugar": 0.3
     },
     "priceNZD": 12,
     "unit": "kg",
@@ -10609,7 +10671,9 @@
       "protein": 1.6,
       "fat": 0.1,
       "carbs": 20,
-      "fiber": 3
+      "fiber": 3,
+      "sodium": 55,
+      "sugar": 4.2
     },
     "priceNZD": 5,
     "unit": "kg",
@@ -10631,8 +10695,10 @@
       "calories": 97,
       "protein": 2.2,
       "fat": 0.7,
-      "carbs": 23,
-      "fiber": 10
+      "carbs": 23.4,
+      "fiber": 10.4,
+      "sodium": 28,
+      "sugar": 11.2
     },
     "priceNZD": 15,
     "unit": "kg",
@@ -10653,11 +10719,13 @@
     "nameEn": "Yuzu",
     "category": "fruit",
     "nutrition": {
-      "calories": 50,
-      "protein": 0.8,
+      "calories": 53,
+      "protein": 0.9,
       "fat": 0.3,
       "carbs": 13,
-      "fiber": 1.9
+      "fiber": 1.8,
+      "sodium": 2,
+      "sugar": 10
     },
     "priceNZD": 8,
     "unit": "kg",
@@ -10680,7 +10748,9 @@
       "protein": 0,
       "fat": 0,
       "carbs": 0,
-      "fiber": 0
+      "fiber": 0,
+      "sodium": 10,
+      "sugar": 0
     },
     "priceNZD": 3,
     "unit": "瓶",
@@ -10699,9 +10769,11 @@
     "nutrition": {
       "calories": 381,
       "protein": 0.3,
-      "fat": 0,
+      "fat": 0.1,
       "carbs": 91,
-      "fiber": 0.9
+      "fiber": 0.9,
+      "sodium": 9,
+      "sugar": 0
     },
     "priceNZD": 4,
     "unit": "包",
@@ -10718,11 +10790,13 @@
     "nameEn": "Pork Shoulder",
     "category": "meat",
     "nutrition": {
-      "calories": 242,
-      "protein": 20,
-      "fat": 17,
+      "calories": 205,
+      "protein": 19,
+      "fat": 13.9,
       "carbs": 0,
-      "fiber": 0
+      "fiber": 0,
+      "sodium": 66,
+      "sugar": 0
     },
     "priceNZD": 14,
     "unit": "kg",
@@ -10741,11 +10815,13 @@
     "nameEn": "Maltose",
     "category": "seasoning",
     "nutrition": {
-      "calories": 318,
+      "calories": 361,
       "protein": 0,
       "fat": 0,
-      "carbs": 79,
-      "fiber": 0
+      "carbs": 90.4,
+      "fiber": 0,
+      "sodium": 1,
+      "sugar": 90.4
     },
     "priceNZD": 6,
     "unit": "瓶",
@@ -10764,11 +10840,13 @@
     "nameEn": "Dried Tangerine Peel",
     "category": "dried",
     "nutrition": {
-      "calories": 200,
-      "protein": 4,
-      "fat": 1,
-      "carbs": 48,
-      "fiber": 14
+      "calories": 248,
+      "protein": 4.8,
+      "fat": 2,
+      "carbs": 65,
+      "fiber": 27,
+      "sodium": 9,
+      "sugar": 30
     },
     "priceNZD": 15,
     "unit": "包",
@@ -10788,8 +10866,10 @@
       "calories": 166,
       "protein": 3.2,
       "fat": 0.1,
-      "carbs": 39,
-      "fiber": 1.7
+      "carbs": 38.8,
+      "fiber": 1.7,
+      "sodium": 1,
+      "sugar": 0
     },
     "priceNZD": 12,
     "unit": "包",

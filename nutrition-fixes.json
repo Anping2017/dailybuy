@@ -1,0 +1,1295 @@
+{
+  "deviations": [
+    {
+      "id": "chicken_breast",
+      "nameZh": "鸡胸肉",
+      "issues": [
+        "calories: 存165 vs USDA 120 (38%偏差)",
+        "protein: 存31 vs USDA 22.5 (38%偏差)",
+        "fat: 存3.6 vs USDA 2.6 (38%偏差)",
+        "sodium: 存74 vs USDA 45 (64%偏差)"
+      ],
+      "ref": {
+        "calories": 120,
+        "protein": 22.5,
+        "fat": 2.6,
+        "carbs": 0,
+        "fiber": 0,
+        "sodium": 45,
+        "sugar": 0,
+        "src": "FDC 171077 chicken breast boneless skinless raw"
+      },
+      "stored": {
+        "calories": 165,
+        "protein": 31,
+        "fat": 3.6,
+        "carbs": 0,
+        "fiber": 0,
+        "sodium": 74,
+        "sugar": 0
+      }
+    },
+    {
+      "id": "chicken_thigh",
+      "nameZh": "鸡腿肉",
+      "issues": [
+        "calories: 存209 vs USDA 119 (76%偏差)",
+        "protein: 存26 vs USDA 20.5 (27%偏差)",
+        "fat: 存10.9 vs USDA 3.4 (221%偏差)"
+      ],
+      "ref": {
+        "calories": 119,
+        "protein": 20.5,
+        "fat": 3.4,
+        "carbs": 0,
+        "fiber": 0,
+        "sodium": 86,
+        "sugar": 0,
+        "src": "FDC 171463 chicken thigh raw, meat only"
+      },
+      "stored": {
+        "calories": 209,
+        "protein": 26,
+        "fat": 10.9,
+        "carbs": 0,
+        "fiber": 0,
+        "sodium": 84,
+        "sugar": 0
+      }
+    },
+    {
+      "id": "pork_mince",
+      "nameZh": "猪肉末",
+      "issues": [
+        "sodium: 存66 vs USDA 56 (18%偏差)"
+      ],
+      "ref": {
+        "calories": 263,
+        "protein": 17,
+        "fat": 21,
+        "carbs": 0,
+        "fiber": 0,
+        "sodium": 56,
+        "sugar": 0,
+        "src": "FDC 168258 ground pork 80%"
+      },
+      "stored": {
+        "calories": 263,
+        "protein": 17,
+        "fat": 21,
+        "carbs": 0,
+        "fiber": 0,
+        "sodium": 66,
+        "sugar": 0
+      }
+    },
+    {
+      "id": "beef_sirloin",
+      "nameZh": "牛里脊",
+      "issues": [
+        "calories: 存271 vs USDA 206 (32%偏差)",
+        "protein: 存26 vs USDA 21.3 (22%偏差)",
+        "fat: 存18 vs USDA 12.7 (42%偏差)"
+      ],
+      "ref": {
+        "calories": 206,
+        "protein": 21.3,
+        "fat": 12.7,
+        "carbs": 0,
+        "fiber": 0,
+        "sodium": 54,
+        "sugar": 0,
+        "src": "FDC 168624 beef sirloin raw"
+      },
+      "stored": {
+        "calories": 271,
+        "protein": 26,
+        "fat": 18,
+        "carbs": 0,
+        "fiber": 0,
+        "sodium": 54,
+        "sugar": 0
+      }
+    },
+    {
+      "id": "lamb_leg",
+      "nameZh": "羊腿肉",
+      "issues": [
+        "calories: 存258 vs USDA 201 (28%偏差)",
+        "protein: 存25 vs USDA 20.6 (21%偏差)",
+        "fat: 存17 vs USDA 12.6 (35%偏差)"
+      ],
+      "ref": {
+        "calories": 201,
+        "protein": 20.6,
+        "fat": 12.6,
+        "carbs": 0,
+        "fiber": 0,
+        "sodium": 60,
+        "sugar": 0,
+        "src": "FDC 174760 lamb leg raw"
+      },
+      "stored": {
+        "calories": 258,
+        "protein": 25,
+        "fat": 17,
+        "carbs": 0,
+        "fiber": 0,
+        "sodium": 59,
+        "sugar": 0
+      }
+    },
+    {
+      "id": "egg",
+      "nameZh": "鸡蛋",
+      "issues": [
+        "fat: 存11 vs USDA 9.5 (16%偏差)",
+        "carbs: 存1.1 vs USDA 0.7 (40%偏差)",
+        "sodium: 存124 vs USDA 142 (13%偏差)",
+        "sugar: 存1.1 vs USDA 0.4 (70%偏差)"
+      ],
+      "ref": {
+        "calories": 143,
+        "protein": 12.6,
+        "fat": 9.5,
+        "carbs": 0.7,
+        "fiber": 0,
+        "sodium": 142,
+        "sugar": 0.4,
+        "src": "FDC 172183 whole egg raw"
+      },
+      "stored": {
+        "calories": 155,
+        "protein": 13,
+        "fat": 11,
+        "carbs": 1.1,
+        "fiber": 0,
+        "sodium": 124,
+        "sugar": 1.1
+      }
+    },
+    {
+      "id": "rice",
+      "nameZh": "大米",
+      "issues": [
+        "calories: 存130 vs USDA 365 (64%偏差)",
+        "protein: 存2.7 vs USDA 7.1 (62%偏差)",
+        "fat: 存0.3 vs USDA 0.7 (40%偏差)",
+        "carbs: 存28 vs USDA 80 (65%偏差)",
+        "fiber: 存0.4 vs USDA 1.3 (69%偏差)",
+        "sodium: 存1 vs USDA 5 (80%偏差)"
+      ],
+      "ref": {
+        "calories": 365,
+        "protein": 7.1,
+        "fat": 0.7,
+        "carbs": 80,
+        "fiber": 1.3,
+        "sodium": 5,
+        "sugar": 0.1,
+        "src": "FDC 169702 white rice long-grain raw"
+      },
+      "stored": {
+        "calories": 130,
+        "protein": 2.7,
+        "fat": 0.3,
+        "carbs": 28,
+        "fiber": 0.4,
+        "sodium": 1,
+        "sugar": 0
+      }
+    },
+    {
+      "id": "noodles_dried",
+      "nameZh": "挂面",
+      "issues": [
+        "sodium: 存5 vs USDA 6 (17%偏差)",
+        "sugar: 存2 vs USDA 2.6 (23%偏差)"
+      ],
+      "ref": {
+        "calories": 353,
+        "protein": 12,
+        "fat": 1.5,
+        "carbs": 72,
+        "fiber": 3.2,
+        "sodium": 6,
+        "sugar": 2.6,
+        "src": "FDC 170155 dried wheat noodle"
+      },
+      "stored": {
+        "calories": 350,
+        "protein": 12,
+        "fat": 1.5,
+        "carbs": 72,
+        "fiber": 3,
+        "sodium": 5,
+        "sugar": 2
+      }
+    },
+    {
+      "id": "capsicum",
+      "nameZh": "彩椒",
+      "issues": [
+        "calories: 存31 vs USDA 26 (19%偏差)"
+      ],
+      "ref": {
+        "calories": 26,
+        "protein": 0.9,
+        "fat": 0.3,
+        "carbs": 6,
+        "fiber": 2.1,
+        "sodium": 4,
+        "sugar": 4.2,
+        "src": "FDC 170108 red bell pepper raw"
+      },
+      "stored": {
+        "calories": 31,
+        "protein": 1,
+        "fat": 0.3,
+        "carbs": 6,
+        "fiber": 2.1,
+        "sodium": 4,
+        "sugar": 4.2
+      }
+    },
+    {
+      "id": "soy_sauce",
+      "nameZh": "酱油",
+      "issues": [
+        "fat: 存0.1 vs USDA 0.6 (50%偏差)"
+      ],
+      "ref": {
+        "calories": 53,
+        "protein": 8,
+        "fat": 0.6,
+        "carbs": 5,
+        "fiber": 0.8,
+        "sodium": 5493,
+        "sugar": 0.4,
+        "src": "FDC 174277 soy sauce tamari"
+      },
+      "stored": {
+        "calories": 53,
+        "protein": 8,
+        "fat": 0.1,
+        "carbs": 4.9,
+        "fiber": 0.8,
+        "sodium": 5493,
+        "sugar": 0.4
+      }
+    },
+    {
+      "id": "oyster_sauce",
+      "nameZh": "蚝油",
+      "issues": [
+        "fiber: 存0 vs USDA 0.3 (30%偏差)"
+      ],
+      "ref": {
+        "calories": 51,
+        "protein": 1.4,
+        "fat": 0.3,
+        "carbs": 11,
+        "fiber": 0.3,
+        "sodium": 2733,
+        "sugar": 4,
+        "src": "FDC 173590 oyster sauce"
+      },
+      "stored": {
+        "calories": 51,
+        "protein": 1.4,
+        "fat": 0.3,
+        "carbs": 11,
+        "fiber": 0,
+        "sodium": 2733,
+        "sugar": 4
+      }
+    },
+    {
+      "id": "milk",
+      "nameZh": "牛奶",
+      "issues": [
+        "calories: 存42 vs USDA 61 (31%偏差)",
+        "fat: 存1 vs USDA 3.3 (70%偏差)"
+      ],
+      "ref": {
+        "calories": 61,
+        "protein": 3.2,
+        "fat": 3.3,
+        "carbs": 4.8,
+        "fiber": 0,
+        "sodium": 43,
+        "sugar": 5.1,
+        "src": "FDC 171269 whole milk 3.25%"
+      },
+      "stored": {
+        "calories": 42,
+        "protein": 3.4,
+        "fat": 1,
+        "carbs": 5,
+        "fiber": 0,
+        "sodium": 44,
+        "sugar": 5
+      }
+    },
+    {
+      "id": "green_bean",
+      "nameZh": "四季豆",
+      "issues": [
+        "fiber: 存3.4 vs USDA 2.7 (26%偏差)",
+        "sugar: 存1.4 vs USDA 3.3 (58%偏差)"
+      ],
+      "ref": {
+        "calories": 31,
+        "protein": 1.8,
+        "fat": 0.2,
+        "carbs": 7,
+        "fiber": 2.7,
+        "sodium": 6,
+        "sugar": 3.3,
+        "src": "FDC 169229 green bean raw"
+      },
+      "stored": {
+        "calories": 31,
+        "protein": 1.8,
+        "fat": 0.1,
+        "carbs": 7,
+        "fiber": 3.4,
+        "sodium": 6,
+        "sugar": 1.4
+      }
+    },
+    {
+      "id": "dried_noodles_rice",
+      "nameZh": "米粉",
+      "issues": [
+        "protein: 存3.4 vs USDA 5.9 (42%偏差)",
+        "fiber: 存1.6 vs USDA 1.8 (11%偏差)",
+        "sodium: 存10 vs USDA 182 (95%偏差)",
+        "sugar: 存0 vs USDA 0.3 (30%偏差)"
+      ],
+      "ref": {
+        "calories": 364,
+        "protein": 5.9,
+        "fat": 0.6,
+        "carbs": 81,
+        "fiber": 1.8,
+        "sodium": 182,
+        "sugar": 0.3,
+        "src": "FDC 170162 rice noodles dry"
+      },
+      "stored": {
+        "calories": 360,
+        "protein": 3.4,
+        "fat": 0.6,
+        "carbs": 83,
+        "fiber": 1.6,
+        "sodium": 10,
+        "sugar": 0
+      }
+    },
+    {
+      "id": "cooking_wine",
+      "nameZh": "料酒",
+      "issues": [
+        "protein: 存1.3 vs USDA 0.1 (120%偏差)",
+        "carbs: 存4.9 vs USDA 2.5 (96%偏差)",
+        "sodium: 存40 vs USDA 4 (900%偏差)",
+        "sugar: 存2 vs USDA 0.2 (180%偏差)"
+      ],
+      "ref": {
+        "calories": 87,
+        "protein": 0.1,
+        "fat": 0,
+        "carbs": 2.5,
+        "fiber": 0,
+        "sodium": 4,
+        "sugar": 0.2,
+        "src": "FDC 174478 rice wine (mirin)"
+      },
+      "stored": {
+        "calories": 87,
+        "protein": 1.3,
+        "fat": 0,
+        "carbs": 4.9,
+        "fiber": 0,
+        "sodium": 40,
+        "sugar": 2
+      }
+    },
+    {
+      "id": "bean_sprouts",
+      "nameZh": "豆芽",
+      "issues": [
+        "sugar: 存2.1 vs USDA 4.1 (49%偏差)"
+      ],
+      "ref": {
+        "calories": 30,
+        "protein": 3,
+        "fat": 0.2,
+        "carbs": 5.9,
+        "fiber": 1.8,
+        "sodium": 6,
+        "sugar": 4.1,
+        "src": "FDC 169968 mung bean sprouts raw"
+      },
+      "stored": {
+        "calories": 31,
+        "protein": 3,
+        "fat": 0.2,
+        "carbs": 5.9,
+        "fiber": 1.8,
+        "sodium": 6,
+        "sugar": 2.1
+      }
+    },
+    {
+      "id": "pork_ribs",
+      "nameZh": "排骨",
+      "issues": [
+        "fat: 存19 vs USDA 22 (14%偏差)"
+      ],
+      "ref": {
+        "calories": 277,
+        "protein": 18.3,
+        "fat": 22,
+        "carbs": 0,
+        "fiber": 0,
+        "sodium": 68,
+        "sugar": 0,
+        "src": "FDC 168252 pork spareribs raw"
+      },
+      "stored": {
+        "calories": 250,
+        "protein": 19,
+        "fat": 19,
+        "carbs": 0,
+        "fiber": 0,
+        "sodium": 65,
+        "sugar": 0
+      }
+    },
+    {
+      "id": "chicken_wing",
+      "nameZh": "鸡翅",
+      "issues": [
+        "fat: 存14 vs USDA 15.8 (11%偏差)"
+      ],
+      "ref": {
+        "calories": 222,
+        "protein": 19.3,
+        "fat": 15.8,
+        "carbs": 0,
+        "fiber": 0,
+        "sodium": 82,
+        "sugar": 0,
+        "src": "FDC 171464 chicken wing raw, meat + skin"
+      },
+      "stored": {
+        "calories": 203,
+        "protein": 18,
+        "fat": 14,
+        "carbs": 0,
+        "fiber": 0,
+        "sodium": 77,
+        "sugar": 0
+      }
+    },
+    {
+      "id": "bacon",
+      "nameZh": "培根",
+      "issues": [
+        "calories: 存541 vs USDA 417 (30%偏差)",
+        "protein: 存37 vs USDA 13 (185%偏差)",
+        "carbs: 存1 vs USDA 1.4 (29%偏差)",
+        "sodium: 存1717 vs USDA 662 (159%偏差)"
+      ],
+      "ref": {
+        "calories": 417,
+        "protein": 13,
+        "fat": 41,
+        "carbs": 1.4,
+        "fiber": 0,
+        "sodium": 662,
+        "sugar": 0,
+        "src": "FDC 168277 bacon raw cured"
+      },
+      "stored": {
+        "calories": 541,
+        "protein": 37,
+        "fat": 42,
+        "carbs": 1,
+        "fiber": 0,
+        "sodium": 1717,
+        "sugar": 0
+      }
+    },
+    {
+      "id": "white_radish",
+      "nameZh": "白萝卜",
+      "issues": [
+        "sugar: 存2 vs USDA 2.5 (20%偏差)"
+      ],
+      "ref": {
+        "calories": 18,
+        "protein": 0.6,
+        "fat": 0.1,
+        "carbs": 4.1,
+        "fiber": 1.6,
+        "sodium": 21,
+        "sugar": 2.5,
+        "src": "FDC 169276 daikon raw"
+      },
+      "stored": {
+        "calories": 18,
+        "protein": 0.7,
+        "fat": 0.1,
+        "carbs": 4,
+        "fiber": 1.6,
+        "sodium": 21,
+        "sugar": 2
+      }
+    },
+    {
+      "id": "winter_melon",
+      "nameZh": "冬瓜",
+      "issues": [
+        "carbs: 存2.6 vs USDA 3 (13%偏差)",
+        "fiber: 存0.7 vs USDA 2.9 (76%偏差)",
+        "sugar: 存0 vs USDA 1.9"
+      ],
+      "ref": {
+        "calories": 13,
+        "protein": 0.4,
+        "fat": 0.2,
+        "carbs": 3,
+        "fiber": 2.9,
+        "sodium": 111,
+        "sugar": 1.9,
+        "src": "FDC 169269 winter melon raw"
+      },
+      "stored": {
+        "calories": 12,
+        "protein": 0.4,
+        "fat": 0.2,
+        "carbs": 2.6,
+        "fiber": 0.7,
+        "sodium": 111,
+        "sugar": 0
+      }
+    },
+    {
+      "id": "wood_ear",
+      "nameZh": "木耳(干)",
+      "issues": [
+        "fat: 存0.5 vs USDA 0.7 (20%偏差)",
+        "carbs: 存65 vs USDA 73 (11%偏差)",
+        "fiber: 存30 vs USDA 70 (57%偏差)"
+      ],
+      "ref": {
+        "calories": 284,
+        "protein": 9.3,
+        "fat": 0.7,
+        "carbs": 73,
+        "fiber": 70,
+        "sodium": 35,
+        "sugar": 0,
+        "src": "FDC 171112 wood ear dried"
+      },
+      "stored": {
+        "calories": 284,
+        "protein": 10,
+        "fat": 0.5,
+        "carbs": 65,
+        "fiber": 30,
+        "sodium": 35,
+        "sugar": 0
+      }
+    },
+    {
+      "id": "dried_shrimp",
+      "nameZh": "虾皮/虾米",
+      "issues": [
+        "carbs: 存6.5 vs USDA 3.1 (110%偏差)",
+        "sodium: 存5057 vs USDA 2800 (81%偏差)"
+      ],
+      "ref": {
+        "calories": 299,
+        "protein": 58.2,
+        "fat": 4.1,
+        "carbs": 3.1,
+        "fiber": 0,
+        "sodium": 2800,
+        "sugar": 0,
+        "src": "reference dried shrimp"
+      },
+      "stored": {
+        "calories": 292,
+        "protein": 56,
+        "fat": 3.7,
+        "carbs": 6.5,
+        "fiber": 0,
+        "sodium": 5057,
+        "sugar": 0
+      }
+    },
+    {
+      "id": "dried_mushroom",
+      "nameZh": "香菇(干)",
+      "issues": [
+        "fat: 存1.3 vs USDA 1 (30%偏差)",
+        "carbs: 存64 vs USDA 75 (15%偏差)"
+      ],
+      "ref": {
+        "calories": 296,
+        "protein": 9.6,
+        "fat": 1,
+        "carbs": 75,
+        "fiber": 12,
+        "sodium": 13,
+        "sugar": 2,
+        "src": "FDC 171115 shiitake dried"
+      },
+      "stored": {
+        "calories": 296,
+        "protein": 10,
+        "fat": 1.3,
+        "carbs": 64,
+        "fiber": 11,
+        "sodium": 13,
+        "sugar": 2
+      }
+    },
+    {
+      "id": "five_spice",
+      "nameZh": "五香粉",
+      "issues": [
+        "protein: 存6 vs USDA 9.5 (37%偏差)",
+        "fat: 存15 vs USDA 13 (15%偏差)"
+      ],
+      "ref": {
+        "calories": 335,
+        "protein": 9.5,
+        "fat": 13,
+        "carbs": 50,
+        "fiber": 22,
+        "sodium": 20,
+        "sugar": 0,
+        "src": "reference five spice"
+      },
+      "stored": {
+        "calories": 325,
+        "protein": 6,
+        "fat": 15,
+        "carbs": 47,
+        "fiber": 22,
+        "sodium": 20,
+        "sugar": 0
+      }
+    },
+    {
+      "id": "chili_flakes",
+      "nameZh": "辣椒粉/辣椒面",
+      "issues": [
+        "carbs: 存30 vs USDA 57 (47%偏差)"
+      ],
+      "ref": {
+        "calories": 282,
+        "protein": 12,
+        "fat": 14,
+        "carbs": 57,
+        "fiber": 28,
+        "sodium": 30,
+        "sugar": 10,
+        "src": "FDC 170937 chili powder"
+      },
+      "stored": {
+        "calories": 282,
+        "protein": 12,
+        "fat": 14,
+        "carbs": 30,
+        "fiber": 27,
+        "sodium": 30,
+        "sugar": 10
+      }
+    },
+    {
+      "id": "tomato_paste",
+      "nameZh": "番茄酱",
+      "issues": [
+        "calories: 存112 vs USDA 82 (37%偏差)",
+        "protein: 存1.3 vs USDA 4.3 (70%偏差)",
+        "fat: 存0.1 vs USDA 0.5 (40%偏差)",
+        "carbs: 存26 vs USDA 19 (37%偏差)",
+        "fiber: 存0.3 vs USDA 4.1 (93%偏差)",
+        "sodium: 存907 vs USDA 59 (1437%偏差)",
+        "sugar: 存22 vs USDA 12 (83%偏差)"
+      ],
+      "ref": {
+        "calories": 82,
+        "protein": 4.3,
+        "fat": 0.5,
+        "carbs": 19,
+        "fiber": 4.1,
+        "sodium": 59,
+        "sugar": 12,
+        "src": "FDC 170459 tomato paste canned"
+      },
+      "stored": {
+        "calories": 112,
+        "protein": 1.3,
+        "fat": 0.1,
+        "carbs": 26,
+        "fiber": 0.3,
+        "sodium": 907,
+        "sugar": 22
+      }
+    },
+    {
+      "id": "light_soy",
+      "nameZh": "生抽",
+      "issues": [
+        "fiber: 存0 vs USDA 0.8",
+        "sugar: 存0 vs USDA 0.4 (40%偏差)"
+      ],
+      "ref": {
+        "calories": 53,
+        "protein": 8,
+        "fat": 0.1,
+        "carbs": 4.9,
+        "fiber": 0.8,
+        "sodium": 5637,
+        "sugar": 0.4,
+        "src": "FDC 174278 soy sauce light"
+      },
+      "stored": {
+        "calories": 53,
+        "protein": 8,
+        "fat": 0.1,
+        "carbs": 4.9,
+        "fiber": 0,
+        "sodium": 5637,
+        "sugar": 0
+      }
+    },
+    {
+      "id": "dark_soy",
+      "nameZh": "老抽",
+      "issues": [
+        "fiber: 存0 vs USDA 0.8"
+      ],
+      "ref": {
+        "calories": 60,
+        "protein": 5,
+        "fat": 0.1,
+        "carbs": 9,
+        "fiber": 0.8,
+        "sodium": 5220,
+        "sugar": 5,
+        "src": "FDC 174279 dark soy sauce"
+      },
+      "stored": {
+        "calories": 60,
+        "protein": 5,
+        "fat": 0.1,
+        "carbs": 9,
+        "fiber": 0,
+        "sodium": 5220,
+        "sugar": 5
+      }
+    },
+    {
+      "id": "sichuan_pepper",
+      "nameZh": "花椒",
+      "issues": [
+        "fat: 存3 vs USDA 6.7 (55%偏差)",
+        "fiber: 存18 vs USDA 14 (29%偏差)",
+        "sodium: 存9 vs USDA 7 (29%偏差)"
+      ],
+      "ref": {
+        "calories": 260,
+        "protein": 10.6,
+        "fat": 6.7,
+        "carbs": 46,
+        "fiber": 14,
+        "sodium": 7,
+        "sugar": 0,
+        "src": "FDC-reference sichuan pepper"
+      },
+      "stored": {
+        "calories": 264,
+        "protein": 10,
+        "fat": 3,
+        "carbs": 50,
+        "fiber": 18,
+        "sodium": 9,
+        "sugar": 0
+      }
+    },
+    {
+      "id": "cumin",
+      "nameZh": "孜然",
+      "issues": [
+        "sugar: 存2 vs USDA 2.3 (13%偏差)"
+      ],
+      "ref": {
+        "calories": 375,
+        "protein": 17.8,
+        "fat": 22.3,
+        "carbs": 44,
+        "fiber": 10.5,
+        "sodium": 168,
+        "sugar": 2.3,
+        "src": "FDC 170923 cumin seed"
+      },
+      "stored": {
+        "calories": 375,
+        "protein": 18,
+        "fat": 22,
+        "carbs": 44,
+        "fiber": 11,
+        "sodium": 168,
+        "sugar": 2
+      }
+    },
+    {
+      "id": "cream",
+      "nameZh": "淡奶油",
+      "issues": [
+        "protein: 存2 vs USDA 2.8 (29%偏差)",
+        "sodium: 存34 vs USDA 27 (26%偏差)"
+      ],
+      "ref": {
+        "calories": 340,
+        "protein": 2.8,
+        "fat": 36,
+        "carbs": 2.8,
+        "fiber": 0,
+        "sodium": 27,
+        "sugar": 2.9,
+        "src": "FDC 170859 heavy cream 36%"
+      },
+      "stored": {
+        "calories": 340,
+        "protein": 2,
+        "fat": 36,
+        "carbs": 3,
+        "fiber": 0,
+        "sodium": 34,
+        "sugar": 3
+      }
+    },
+    {
+      "id": "wonton_wrapper",
+      "nameZh": "馄饨皮/饺子皮",
+      "issues": [
+        "fat: 存1 vs USDA 1.9 (47%偏差)"
+      ],
+      "ref": {
+        "calories": 291,
+        "protein": 8.5,
+        "fat": 1.9,
+        "carbs": 58,
+        "fiber": 2,
+        "sodium": 430,
+        "sugar": 1,
+        "src": "FDC 170193 wonton wrapper"
+      },
+      "stored": {
+        "calories": 291,
+        "protein": 8,
+        "fat": 1,
+        "carbs": 60,
+        "fiber": 2,
+        "sodium": 430,
+        "sugar": 1
+      }
+    },
+    {
+      "id": "crab",
+      "nameZh": "螃蟹",
+      "issues": [
+        "calories: 存97 vs USDA 83 (17%偏差)",
+        "fat: 存1.5 vs USDA 0.7 (80%偏差)"
+      ],
+      "ref": {
+        "calories": 83,
+        "protein": 18.1,
+        "fat": 0.7,
+        "carbs": 0,
+        "fiber": 0,
+        "sodium": 395,
+        "sugar": 0,
+        "src": "FDC 171981 blue crab raw"
+      },
+      "stored": {
+        "calories": 97,
+        "protein": 19,
+        "fat": 1.5,
+        "carbs": 0,
+        "fiber": 0,
+        "sodium": 395,
+        "sugar": 0
+      }
+    },
+    {
+      "id": "scallop",
+      "nameZh": "扇贝",
+      "issues": [
+        "calories: 存88 vs USDA 69 (28%偏差)",
+        "protein: 存16.8 vs USDA 12.1 (39%偏差)",
+        "fat: 存0.8 vs USDA 0.5 (30%偏差)",
+        "carbs: 存2.4 vs USDA 3.2 (25%偏差)"
+      ],
+      "ref": {
+        "calories": 69,
+        "protein": 12.1,
+        "fat": 0.5,
+        "carbs": 3.2,
+        "fiber": 0,
+        "sodium": 161,
+        "sugar": 0,
+        "src": "FDC 174213 scallop raw"
+      },
+      "stored": {
+        "calories": 88,
+        "protein": 16.8,
+        "fat": 0.8,
+        "carbs": 2.4,
+        "fiber": 0,
+        "sodium": 161,
+        "sugar": 0
+      }
+    },
+    {
+      "id": "duck",
+      "nameZh": "鸭肉",
+      "issues": [
+        "calories: 存337 vs USDA 404 (17%偏差)",
+        "protein: 存19 vs USDA 11.5 (65%偏差)",
+        "fat: 存28 vs USDA 39.3 (29%偏差)"
+      ],
+      "ref": {
+        "calories": 404,
+        "protein": 11.5,
+        "fat": 39.3,
+        "carbs": 0,
+        "fiber": 0,
+        "sodium": 59,
+        "sugar": 0,
+        "src": "FDC 171060 duck domesticated meat+skin raw"
+      },
+      "stored": {
+        "calories": 337,
+        "protein": 19,
+        "fat": 28,
+        "carbs": 0,
+        "fiber": 0,
+        "sodium": 59,
+        "sugar": 0
+      }
+    },
+    {
+      "id": "duck_leg",
+      "nameZh": "鸭腿",
+      "issues": [
+        "calories: 存211 vs USDA 188 (12%偏差)",
+        "fat: 存15 vs USDA 12.4 (21%偏差)"
+      ],
+      "ref": {
+        "calories": 188,
+        "protein": 18.3,
+        "fat": 12.4,
+        "carbs": 0,
+        "fiber": 0,
+        "sodium": 74,
+        "sugar": 0,
+        "src": "FDC 171064 duck leg meat only raw"
+      },
+      "stored": {
+        "calories": 211,
+        "protein": 18,
+        "fat": 15,
+        "carbs": 0,
+        "fiber": 0,
+        "sodium": 70,
+        "sugar": 0
+      }
+    },
+    {
+      "id": "lamb_chop",
+      "nameZh": "羊排",
+      "issues": [
+        "protein: 存25 vs USDA 16.9 (48%偏差)",
+        "sodium: 存72 vs USDA 59 (22%偏差)"
+      ],
+      "ref": {
+        "calories": 282,
+        "protein": 16.9,
+        "fat": 23,
+        "carbs": 0,
+        "fiber": 0,
+        "sodium": 59,
+        "sugar": 0,
+        "src": "FDC 174761 lamb loin chop raw"
+      },
+      "stored": {
+        "calories": 294,
+        "protein": 25,
+        "fat": 21,
+        "carbs": 0,
+        "fiber": 0,
+        "sodium": 72,
+        "sugar": 0
+      }
+    },
+    {
+      "id": "beef_brisket",
+      "nameZh": "牛腩",
+      "issues": [
+        "calories: 存280 vs USDA 250 (12%偏差)",
+        "fat: 存22 vs USDA 18.9 (16%偏差)"
+      ],
+      "ref": {
+        "calories": 250,
+        "protein": 18.6,
+        "fat": 18.9,
+        "carbs": 0,
+        "fiber": 0,
+        "sodium": 56,
+        "sugar": 0,
+        "src": "FDC 168613 beef brisket whole raw"
+      },
+      "stored": {
+        "calories": 280,
+        "protein": 19,
+        "fat": 22,
+        "carbs": 0,
+        "fiber": 0,
+        "sodium": 55,
+        "sugar": 0
+      }
+    },
+    {
+      "id": "beef_shank",
+      "nameZh": "牛腱",
+      "issues": [
+        "calories: 存201 vs USDA 147 (37%偏差)",
+        "fat: 存12 vs USDA 6.3 (90%偏差)",
+        "sodium: 存66 vs USDA 50 (32%偏差)"
+      ],
+      "ref": {
+        "calories": 147,
+        "protein": 21.4,
+        "fat": 6.3,
+        "carbs": 0,
+        "fiber": 0,
+        "sodium": 50,
+        "sugar": 0,
+        "src": "FDC 168610 beef shank raw"
+      },
+      "stored": {
+        "calories": 201,
+        "protein": 22,
+        "fat": 12,
+        "carbs": 0,
+        "fiber": 0,
+        "sodium": 66,
+        "sugar": 0
+      }
+    },
+    {
+      "id": "pork_trotter",
+      "nameZh": "猪蹄",
+      "issues": [
+        "calories: 存256 vs USDA 232 (10%偏差)",
+        "fat: 存19 vs USDA 15 (27%偏差)"
+      ],
+      "ref": {
+        "calories": 232,
+        "protein": 22.8,
+        "fat": 15,
+        "carbs": 0,
+        "fiber": 0,
+        "sodium": 75,
+        "sugar": 0,
+        "src": "FDC 169014 pork feet raw"
+      },
+      "stored": {
+        "calories": 256,
+        "protein": 22,
+        "fat": 19,
+        "carbs": 0,
+        "fiber": 0,
+        "sodium": 75,
+        "sugar": 0
+      }
+    },
+    {
+      "id": "oyster",
+      "nameZh": "生蚝",
+      "issues": [
+        "calories: 存81 vs USDA 68 (19%偏差)",
+        "protein: 存9.5 vs USDA 7 (36%偏差)",
+        "carbs: 存4.6 vs USDA 3.9 (18%偏差)",
+        "sodium: 存106 vs USDA 207 (49%偏差)"
+      ],
+      "ref": {
+        "calories": 68,
+        "protein": 7,
+        "fat": 2.5,
+        "carbs": 3.9,
+        "fiber": 0,
+        "sodium": 207,
+        "sugar": 0,
+        "src": "FDC 175174 oyster eastern raw"
+      },
+      "stored": {
+        "calories": 81,
+        "protein": 9.5,
+        "fat": 2.3,
+        "carbs": 4.6,
+        "fiber": 0,
+        "sodium": 106,
+        "sugar": 0
+      }
+    },
+    {
+      "id": "mozzarella",
+      "nameZh": "马苏里拉",
+      "issues": [
+        "protein: 存28 vs USDA 22 (27%偏差)",
+        "fat: 存17 vs USDA 22 (23%偏差)",
+        "carbs: 存3.1 vs USDA 2.2 (41%偏差)"
+      ],
+      "ref": {
+        "calories": 280,
+        "protein": 22,
+        "fat": 22,
+        "carbs": 2.2,
+        "fiber": 0,
+        "sodium": 627,
+        "sugar": 1,
+        "src": "FDC 173441 mozzarella part skim"
+      },
+      "stored": {
+        "calories": 280,
+        "protein": 28,
+        "fat": 17,
+        "carbs": 3.1,
+        "fiber": 0,
+        "sodium": 627,
+        "sugar": 1
+      }
+    },
+    {
+      "id": "glutinous_rice",
+      "nameZh": "糯米",
+      "issues": [
+        "fiber: 存2.8 vs USDA 1.6 (75%偏差)"
+      ],
+      "ref": {
+        "calories": 370,
+        "protein": 6.8,
+        "fat": 0.7,
+        "carbs": 82,
+        "fiber": 1.6,
+        "sodium": 5,
+        "sugar": 0,
+        "src": "FDC 169705 glutinous rice raw"
+      },
+      "stored": {
+        "calories": 370,
+        "protein": 6.8,
+        "fat": 0.7,
+        "carbs": 82,
+        "fiber": 2.8,
+        "sodium": 5,
+        "sugar": 0
+      }
+    },
+    {
+      "id": "cornmeal",
+      "nameZh": "玉米粉",
+      "issues": [
+        "protein: 存8 vs USDA 7.1 (13%偏差)",
+        "fat: 存3.6 vs USDA 1.7 (112%偏差)",
+        "sodium: 存35 vs USDA 4 (775%偏差)"
+      ],
+      "ref": {
+        "calories": 370,
+        "protein": 7.1,
+        "fat": 1.7,
+        "carbs": 79,
+        "fiber": 7.3,
+        "sodium": 4,
+        "sugar": 1.4,
+        "src": "FDC 170288 degermed cornmeal"
+      },
+      "stored": {
+        "calories": 362,
+        "protein": 8,
+        "fat": 3.6,
+        "carbs": 77,
+        "fiber": 7,
+        "sodium": 35,
+        "sugar": 1.5
+      }
+    },
+    {
+      "id": "rice_vinegar",
+      "nameZh": "米醋",
+      "issues": [
+        "protein: 存0.1 vs USDA 0.3 (20%偏差)"
+      ],
+      "ref": {
+        "calories": 18,
+        "protein": 0.3,
+        "fat": 0,
+        "carbs": 0.04,
+        "fiber": 0,
+        "sodium": 5,
+        "sugar": 0,
+        "src": "FDC 173472 rice vinegar"
+      },
+      "stored": {
+        "calories": 18,
+        "protein": 0.1,
+        "fat": 0,
+        "carbs": 0.04,
+        "fiber": 0,
+        "sodium": 5,
+        "sugar": 0
+      }
+    },
+    {
+      "id": "red_date",
+      "nameZh": "红枣",
+      "issues": [
+        "protein: 存1.8 vs USDA 3.7 (51%偏差)",
+        "fat: 存0.2 vs USDA 1.1 (82%偏差)",
+        "fiber: 存6.7 vs USDA 6 (12%偏差)",
+        "sodium: 存2 vs USDA 3 (33%偏差)"
+      ],
+      "ref": {
+        "calories": 282,
+        "protein": 3.7,
+        "fat": 1.1,
+        "carbs": 74,
+        "fiber": 6,
+        "sodium": 3,
+        "sugar": 66,
+        "src": "FDC 171713 jujube dried"
+      },
+      "stored": {
+        "calories": 277,
+        "protein": 1.8,
+        "fat": 0.2,
+        "carbs": 75,
+        "fiber": 6.7,
+        "sodium": 2,
+        "sugar": 66
+      }
+    }
+  ],
+  "fixesCount": 47
+}
