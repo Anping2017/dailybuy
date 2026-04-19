@@ -301,6 +301,7 @@ export interface MealSlot {
   mealType: MealType;
   recipes: MealRecipe[];   // 多道菜组合
   servings: number;
+  reducedDishes?: number;  // 因为热量超标自动减的菜数(>0 时提示用户)
 }
 
 export interface SkippedMealAdvice {

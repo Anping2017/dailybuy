@@ -233,6 +233,21 @@ function isStapleByName(recipe: Recipe): boolean {
   return /粥|饭$|米饭|蛋炒饭|盖饭|烩饭|炒饭|寿司|意面|意大利面|乌冬|拉面|肠粉|河粉|米线|米粉|面条|面$|凉面|拌面|炒面|烩面|擀面|碱面|面包|烤面包|三明治|汉堡|薯条|吐司|馒头|花卷|馕|烧饼|大饼|烙饼|煎饼|月饼|蛋饼|手抓饼|烤饼|包子|生煎|小笼|烧麦|饺子|馄饨|抄手|凉皮|凉粉|粽子|韭菜盒子|意式饺|烤红薯|蒸红薯|蒸玉米/.test(name);
 }
 
+/** 主食子类型推断: 粥/饭/面/饼/馒头/包子/饺子 */
+function stapleSubtype(recipe: Recipe): string {
+  const n = recipe.nameZh || '';
+  if (/粥/.test(n)) return 'porridge';
+  if (/饭|寿司/.test(n)) return 'rice';
+  if (/面条|面$|拌面|炒面|烩面|凉面|乌冬|拉面|意面|米线|米粉|肠粉|河粉/.test(n)) return 'noodle';
+  if (/馒头|花卷|馕/.test(n)) return 'mantou';
+  if (/饼/.test(n)) return 'pancake';
+  if (/包子|小笼|烧麦/.test(n)) return 'bun';
+  if (/饺子|馄饨|抄手/.test(n)) return 'dumpling';
+  if (/红薯|玉米|南瓜/.test(n)) return 'tuber';
+  if (/豆浆|粽子/.test(n)) return 'other';
+  return 'other';
+}
+
 /** 名字含汤关键词 → 算汤(覆盖 cookingMethod 错分类) */
 function isSoupByName(recipe: Recipe): boolean {
   const name = recipe.nameZh || '';
@@ -424,6 +439,18 @@ function scoreRecipe(
   // 季节性食材评分（不当季 → 扣分）
   score += scoreSeasonality(recipe);
 
+  // 主食多样性: 粥太容易被推荐, 其他主食类型加分
+  if (inferRole(recipe) === 'staple') {
+    const subtype = stapleSubtype(recipe);
+    if (subtype === 'porridge') score -= 2;           // 粥降权(避免总是粥)
+    else if (subtype === 'rice') score += 1;          // 米饭
+    else if (subtype === 'mantou' || subtype === 'bun') score += 3;  // 馒头包子(少见)
+    else if (subtype === 'pancake') score += 2;       // 各种饼
+    else if (subtype === 'dumpling') score += 2;      // 饺子
+    else if (subtype === 'tuber') score += 2;         // 薯类/玉米
+    // noodle 保持 0
+  }
+
   // 热量预算控制 (需求1) - 仅在用户启用卡路里计算时参与
   if (profile.calorieEnabled !== false) {
     if (remainingCal !== undefined && remainingCal > 0) {
@@ -566,7 +593,7 @@ function composeMeal(
   mealIndex: number,
   getPreference?: (id: string) => number,
   getFeedback?: (r: Recipe) => number,
-): MealRecipe[] {
+): { recipes: MealRecipe[]; reducedDishes: number } {
   const allCandidates = getFilteredRecipes(profile, mealType);
   const plan = getMealPlan(profile, mealType);
 
@@ -661,6 +688,9 @@ function composeMeal(
     if (r) { result.push({ recipeId: r.id, role: isMeatDish(r) ? 'main_meat' : 'main_veg' }); usedIds.add(r.id); trackPick(r); }
   }
 
+  // 跟踪因超标被减的菜数
+  let reducedDishes = 0;
+
   // 卡路里启用时: 缺口补菜 + 超量移除
   if (profile.calorieEnabled !== false && mealBudget > 0) {
     // 1) 缺口补菜: 如果还差 > 40% 预算且 > 400kcal, 补一道大菜(最多补 1 道)
@@ -681,15 +711,12 @@ function composeMeal(
       }
     }
 
-    // 2) 超量反向移除: 如果累积超 1.3×预算, 优先移素菜, 不够再移荤菜
-    // 但保留汤和主食(用户必需的)
+    // 2) 超量反向移除: 累积超 1.3×预算时, 优先移素菜, 不够再移荤菜
     let safety = 3;
     while (accumulatedCal > mealBudget * 1.3 && safety > 0) {
       safety--;
-      // 找一个素菜移除
       const vegIdx = result.findIndex(mr => mr.role === 'main_veg');
       let removeIdx = vegIdx;
-      // 没素菜则找荤菜
       if (removeIdx < 0) removeIdx = result.findIndex(mr => mr.role === 'main_meat');
       if (removeIdx < 0) break;
       const removed = result.splice(removeIdx, 1)[0];
@@ -697,11 +724,12 @@ function composeMeal(
       if (removedRecipe) {
         accumulatedCal -= calcRecipeCalForFamily(removedRecipe, profile.familySize);
         usedIds.delete(removed.recipeId);
+        reducedDishes++;
       }
     }
   }
 
-  return result;
+  return { recipes: result, reducedDishes };
 }
 
 // ============================================================
@@ -1010,9 +1038,9 @@ export function generateWeeklyPlan(
     let mealIndex = 0;
     for (const day of activeDays) {
       for (const mealType of profile.mealsPerDay) {
-        const recipes = composeMeal(profile, mealType, usedIds, ownedIngredients, mealIndex, getPreference, getFeedback);
+        const { recipes, reducedDishes } = composeMeal(profile, mealType, usedIds, ownedIngredients, mealIndex, getPreference, getFeedback);
         mealIndex++;
-        slots.push({ day, mealType, recipes, servings: profile.familySize });
+        slots.push({ day, mealType, recipes, servings: profile.familySize, reducedDishes: reducedDishes > 0 ? reducedDishes : undefined });
       }
     }
   }

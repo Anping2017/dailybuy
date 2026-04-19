@@ -6,7 +6,7 @@ import { useEffect, useState } from 'react';
 import { RefreshCw, X, Flame, ShoppingCart, Check, Sparkles, Share2, Copy, CheckCheck, CalendarDays, List, ChevronRight, Package, ChevronDown, Save, Archive, Trash2 } from 'lucide-react';
 import { getRecipe, calcRecipeNutrition, calcRecipeCost } from '@/lib/nutrition/calculator';
 import { getFilteredRecipes, generateWeeklyPlan, generateShoppingList } from '@/lib/recipe-engine/engine';
-import { getIngredient, getAllIngredients } from '@/lib/data/recipe-repository';
+import { getIngredient, getAllIngredients, getAllRecipes } from '@/lib/data/recipe-repository';
 import { ConfigSummary } from '@/components/ui/config-summary';
 import Link from 'next/link';
 import type { DayOfWeek, MealType, DishRole } from '@/types';
@@ -411,23 +411,30 @@ export default function PlanPage() {
           return (
             <div key={mealType} className="bg-card border border-border rounded-lg p-4">
               {/* 餐次标题 - 明确总/人均 */}
-              <div className="flex items-center justify-between mb-3 flex-wrap gap-1">
-                <div className="flex items-center gap-2">
-                  <span className="text-sm font-semibold text-primary">{MEAL_LABELS[mealType]}</span>
-                  {(profile.calorieEnabled !== false || profile.budgetEnabled !== false) && (
-                    <span className="text-xs text-muted flex items-center gap-1">
-                      {profile.calorieEnabled !== false && (
-                        <>
-                          <Flame className="w-3 h-3 text-accent" />
-                          {familySize}人共 {mealCalories} kcal · 人均 {perPersonCal}
-                        </>
-                      )}
-                      {profile.budgetEnabled !== false && (
-                        <>{profile.calorieEnabled !== false && ' · '}${mealCost.toFixed(2)}</>
-                      )}
-                    </span>
-                  )}
+              <div className="mb-3">
+                <div className="flex items-center justify-between flex-wrap gap-1">
+                  <div className="flex items-center gap-2">
+                    <span className="text-sm font-semibold text-primary">{MEAL_LABELS[mealType]}</span>
+                    {(profile.calorieEnabled !== false || profile.budgetEnabled !== false) && (
+                      <span className="text-xs text-muted flex items-center gap-1">
+                        {profile.calorieEnabled !== false && (
+                          <>
+                            <Flame className="w-3 h-3 text-accent" />
+                            {familySize}人共 {mealCalories} kcal · 人均 {perPersonCal}
+                          </>
+                        )}
+                        {profile.budgetEnabled !== false && (
+                          <>{profile.calorieEnabled !== false && ' · '}${mealCost.toFixed(2)}</>
+                        )}
+                      </span>
+                    )}
+                  </div>
                 </div>
+                {slot.reducedDishes && slot.reducedDishes > 0 && (
+                  <p className="text-[10px] text-amber-600 mt-1">
+                    ⚖️ 为控制热量, 自动减了 {slot.reducedDishes} 道菜
+                  </p>
+                )}
               </div>
 
               {/* 每道菜 */}
@@ -628,8 +635,21 @@ export default function PlanPage() {
         return (
           <SwapReasonDialog
             recipe={targetRecipe}
+            role={swapTarget.role}
             onClose={() => setSwapTarget(null)}
             onPick={(reason, specifics) => handleSwapWithReason(swapTarget.recipeId, swapTarget.mealType, swapTarget.role, swapTarget.day, reason, specifics)}
+            onPickSpecific={(newRecipeId) => {
+              // 直接替换为指定菜
+              recordAction(swapTarget.recipeId, 'rejected', 'just_want_different');
+              recordAction(newRecipeId, 'swapped_in');
+              replaceSingleRecipe(swapTarget.day, swapTarget.mealType, swapTarget.recipeId, newRecipeId, swapTarget.role);
+              if (targetRecipe && shoppingList?.items.some(i => i.fromRecipes.includes(targetRecipe.nameZh))) {
+                removeRecipeFromShoppingList(swapTarget.recipeId);
+                const slot = weeklyPlan?.slots.find(s => s.day === swapTarget.day && s.mealType === swapTarget.mealType);
+                addRecipeToShoppingList(newRecipeId, slot?.servings || profile.familySize);
+              }
+              setSwapTarget(null);
+            }}
           />
         );
       })()}
@@ -774,14 +794,18 @@ const FLAVOR_ZH: Record<string, string> = {
   salty: '咸', umami: '鲜', light: '清淡',
 };
 
-function SwapReasonDialog({ recipe, onClose, onPick }: {
+function SwapReasonDialog({ recipe, role, onClose, onPick, onPickSpecific }: {
   recipe: import('@/types').Recipe;
+  role: DishRole;
   onClose: () => void;
   onPick: (reason: import('@/types').SwapReason, specifics?: { ingredientIds?: string[]; flavors?: string[] }) => void;
+  onPickSpecific: (recipeId: string) => void;
 }) {
-  const [step, setStep] = useState<'main' | 'ingredients' | 'flavors' | 'inconvenient'>('main');
+  const [step, setStep] = useState<'main' | 'ingredients' | 'flavors' | 'inconvenient' | 'library'>('main');
   const [selectedIngs, setSelectedIngs] = useState<string[]>([]);
   const [selectedFlavors, setSelectedFlavors] = useState<string[]>([]);
+  const [librarySearch, setLibrarySearch] = useState('');
+  const [sameRoleOnly, setSameRoleOnly] = useState(true);
 
   const options: Array<{ reason: import('@/types').SwapReason; icon: string; label: string; desc: string; next?: 'ingredients' | 'flavors' | 'inconvenient' }> = [
     { reason: 'just_want_different', icon: '🔄', label: '只是想换一个', desc: '本次推荐换一道，不影响后续' },
@@ -795,6 +819,33 @@ function SwapReasonDialog({ recipe, onClose, onPick }: {
     const ing = getIngredient(ri.ingredientId);
     return { id: ri.ingredientId, name: ing?.nameZh || ri.ingredientId };
   });
+
+  // 菜谱库搜索结果 (限 50 条)
+  const libraryResults = (() => {
+    if (step !== 'library') return [];
+    const all = [...getAllRecipes()].filter(r => r.id !== recipe.id);
+    let filtered = all;
+    if (sameRoleOnly) {
+      // 按相同 role 过滤 (粗糙判断: meat/seafood 含即 meat, soup cookingMethod = soup, staple 名字判断)
+      filtered = filtered.filter(r => {
+        if (role === 'soup') return r.cookingMethod === 'soup' || /汤|羹/.test(r.nameZh);
+        if (role === 'staple') return r.cookingMethod === 'staple';
+        if (role === 'main_meat' || role === 'main_veg') {
+          const isMeat = r.ingredients.some(ri => {
+            const ing = getIngredient(ri.ingredientId);
+            return ing && (ing.category === 'meat' || ing.category === 'seafood');
+          });
+          return role === 'main_meat' ? isMeat : !isMeat;
+        }
+        return true;
+      });
+    }
+    if (librarySearch.trim()) {
+      const q = librarySearch.toLowerCase();
+      filtered = filtered.filter(r => r.nameZh.toLowerCase().includes(q) || r.nameEn.toLowerCase().includes(q));
+    }
+    return filtered.slice(0, 50);
+  })();
 
   const handlePickMain = (opt: typeof options[number]) => {
     // 无二级选择的直接执行
@@ -833,20 +884,78 @@ function SwapReasonDialog({ recipe, onClose, onPick }: {
         </div>
 
         {step === 'main' && (
-          <div className="divide-y divide-border flex-1 overflow-y-auto">
-            {options.map(o => (
-              <button
-                key={o.reason}
-                onClick={() => handlePickMain(o)}
-                className="w-full flex items-center gap-3 px-4 py-3 hover:bg-background transition text-left"
-              >
-                <span className="text-xl">{o.icon}</span>
-                <div className="flex-1">
-                  <p className="text-sm font-medium">{o.label}</p>
-                  <p className="text-xs text-muted">{o.desc}</p>
+          <div className="flex-1 overflow-y-auto">
+            {/* 顶部: 直接从菜谱库选 */}
+            <button
+              onClick={() => setStep('library')}
+              className="w-full flex items-center gap-3 px-4 py-3 bg-primary/5 hover:bg-primary/10 transition text-left border-b border-border"
+            >
+              <span className="text-xl">📚</span>
+              <div className="flex-1">
+                <p className="text-sm font-medium text-primary">从菜谱库选一道</p>
+                <p className="text-xs text-muted">浏览 1300+ 菜谱指定换成谁</p>
+              </div>
+              <ChevronRight className="w-4 h-4 text-primary" />
+            </button>
+            <div className="divide-y divide-border">
+              <p className="px-4 pt-3 pb-1 text-[11px] text-muted">— 或告诉我们原因，系统智能推荐 —</p>
+              {options.map(o => (
+                <button
+                  key={o.reason}
+                  onClick={() => handlePickMain(o)}
+                  className="w-full flex items-center gap-3 px-4 py-3 hover:bg-background transition text-left"
+                >
+                  <span className="text-xl">{o.icon}</span>
+                  <div className="flex-1">
+                    <p className="text-sm font-medium">{o.label}</p>
+                    <p className="text-xs text-muted">{o.desc}</p>
+                  </div>
+                </button>
+              ))}
+            </div>
+          </div>
+        )}
+
+        {step === 'library' && (
+          <div className="flex-1 overflow-hidden flex flex-col">
+            <div className="p-3 border-b border-border space-y-2">
+              <input
+                type="text"
+                value={librarySearch}
+                onChange={e => setLibrarySearch(e.target.value)}
+                placeholder="搜索菜名..."
+                className="w-full border border-border rounded-lg px-3 py-2 text-sm bg-background"
+                autoFocus
+              />
+              <label className="flex items-center gap-2 text-xs text-muted cursor-pointer">
+                <input
+                  type="checkbox"
+                  checked={sameRoleOnly}
+                  onChange={e => setSameRoleOnly(e.target.checked)}
+                  className="accent-primary"
+                />
+                只显示同角色菜 ({ROLE_LABELS[role]})
+              </label>
+            </div>
+            <div className="flex-1 overflow-y-auto">
+              {libraryResults.length === 0 ? (
+                <p className="text-center text-sm text-muted py-8">没有匹配的菜谱</p>
+              ) : (
+                <div className="divide-y divide-border">
+                  {libraryResults.map(r => (
+                    <button
+                      key={r.id}
+                      onClick={() => onPickSpecific(r.id)}
+                      className="w-full text-left px-4 py-2.5 hover:bg-background/50 transition"
+                    >
+                      <p className="text-sm font-medium">{r.nameZh}</p>
+                      <p className="text-xs text-muted">{r.nameEn} · {r.cookingMethod}</p>
+                    </button>
+                  ))}
                 </div>
-              </button>
-            ))}
+              )}
+              <p className="text-center text-xs text-muted py-2">共 {libraryResults.length} 道{libraryResults.length === 50 && '(限前 50)'}</p>
+            </div>
           </div>
         )}
 
