@@ -294,20 +294,28 @@ export default function PlanPage() {
               </div>
             </div>
             {(() => {
-              // 列出"不包含的项" — 用户没规划的餐次/没开的可选品类
-              const missing: string[] = [];
+              // 列出"不包含的项"+预计补充热量 (家庭总, 按 familySize 算)
+              const items: { label: string; cal: number }[] = [];
               const allMeals: MealType[] = ['breakfast', 'lunch', 'dinner'];
+              const PER_PERSON_CAL = {
+                breakfast: 400, lunch: 700, dinner: 600,
+                staple: 400, fruit: 150, soup: 100,
+              };
               for (const m of allMeals) {
-                if (!profile.mealsPerDay.includes(m)) missing.push(MEAL_LABELS[m]);
+                if (!profile.mealsPerDay.includes(m)) {
+                  items.push({ label: MEAL_LABELS[m], cal: PER_PERSON_CAL[m] * familySize });
+                }
               }
-              if ((profile.stapleMode || 'off') === 'off') missing.push('主食');
-              if (!profile.includeFruit) missing.push('水果');
-              if (!profile.includeSoup) missing.push('汤');
-              if (missing.length === 0) return null;
+              if ((profile.stapleMode || 'off') === 'off') items.push({ label: '主食', cal: PER_PERSON_CAL.staple * familySize });
+              if (!profile.includeFruit) items.push({ label: '水果', cal: PER_PERSON_CAL.fruit * familySize });
+              if (!profile.includeSoup) items.push({ label: '汤', cal: PER_PERSON_CAL.soup * familySize });
+              if (items.length === 0) return null;
+              const totalMissing = items.reduce((s, i) => s + i.cal, 0);
               return (
-                <p className="text-[10px] text-muted mt-1.5">
-                  ⚠ 该热量不包含{missing.join('、')}（未规划/未开启）
-                </p>
+                <div className="text-[10px] text-muted mt-1.5">
+                  <p>⚠ 该热量不包含: {items.map(i => `${i.label}(~${i.cal}kcal)`).join('、')}</p>
+                  <p className="mt-0.5">合计约缺 <span className="text-amber-700 font-medium">{totalMissing}</span> kcal · 加上后家庭总 ~ <span className="text-amber-700 font-medium">{dayTotalCal + totalMissing}</span> kcal</p>
+                </div>
               );
             })()}
           </div>
@@ -427,9 +435,6 @@ export default function PlanPage() {
                       {servingMismatch && (
                         <p className="text-[10px] text-amber-600 mt-1">
                           📌 菜按 {recipe.servings} 人份做，家里 {familySize} 人分
-                          {recipe.servings > familySize
-                            ? `（菜偏多，吃不完会剩或人均量大）`
-                            : `（菜偏少，人均量小可能吃不饱）`}
                         </p>
                       )}
 
