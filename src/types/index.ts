@@ -268,8 +268,10 @@ export interface UserProfile {
   staplePreference: StaplePreference[];    // 主食偏好(多选)
   stapleMode: 'off' | 'fixed' | 'random'; // 主食推荐模式: 不推荐|固定|随机
   includeSoup: boolean;                    // 是否推荐汤
+  soupStyle?: 'meat' | 'veg' | 'any';      // 汤偏好: 荤汤/素汤/不限(默认)
   includeFruit: boolean;                   // 是否推荐水果
   includeColdDish: boolean;                // 是否推荐凉菜
+  coldDishStyle?: 'meat' | 'veg' | 'any';  // 凉菜偏好: 荤凉菜/素凉菜/不限(默认)
   cookingLevel: CookingLevel;             // 厨艺等级
   acceptedDifficulty: DifficultyLevel[];  // 可接受的难度(多选)
   recommendMode: 'basic' | 'ai_assist' | 'ai_online';  // 基础库 | AI辅助分析(异步给报告) | AI在线(付费,即时)

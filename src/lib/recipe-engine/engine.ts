@@ -265,16 +265,21 @@ function isBeverage(recipe: Recipe): boolean {
 
 /**
  * 推断菜在一餐中的角色
- * - 汤优先识别(很多汤被错分类), 用 isSoupByName 兜底
- * - 凉菜不再独立: 含肉 → main_meat, 不含 → main_veg (集成到主菜)
+ * 新分类体系:
+ * - drink: 饮品(茶/咖啡等), 不参与规划
+ * - staple: 主食(粥/饭/面/饼等)
+ * - soup: 汤
+ * - cold: 凉菜(含荤凉菜和素凉菜, 不按荤素分)
+ * - main_meat: 热的荤菜
+ * - main_veg: 热的素菜
  */
 function inferRole(recipe: Recipe): DishRole {
   if (isBeverage(recipe)) return 'drink';
   if (recipe.cookingMethod === 'staple' || isStapleByName(recipe)) return 'staple';
   if (recipe.cookingMethod === 'soup' || isSoupByName(recipe)) return 'soup';
-  // 凉菜按是否含肉归到 main_meat 或 main_veg
-  if (isMeatDish(recipe)) return 'main_meat';
-  return 'main_veg';
+  if (recipe.cookingMethod === 'cold_dish') return 'cold';  // 凉菜独立(含荤凉菜)
+  if (isMeatDish(recipe)) return 'main_meat';  // 热荤菜
+  return 'main_veg';  // 热素菜
 }
 
 // ============================================================
@@ -599,18 +604,21 @@ function composeMeal(
 
   const meatPool = allCandidates.filter(r => inferRole(r) === 'main_meat');
   const vegPool = allCandidates.filter(r => inferRole(r) === 'main_veg');
-  const soupPool = allCandidates.filter(r => inferRole(r) === 'soup');
+  const allColdPool = allCandidates.filter(r => inferRole(r) === 'cold');
+  const allSoupPool = allCandidates.filter(r => inferRole(r) === 'soup');
   const staplePool = allCandidates.filter(r => inferRole(r) === 'staple');
 
+  // 凉菜/汤按用户偏好过滤(meat=只荤, veg=只素, any=不限)
+  const coldStyle = profile.coldDishStyle || 'any';
+  const soupStyle = profile.soupStyle || 'any';
+  const coldPool = coldStyle === 'any' ? allColdPool
+    : coldStyle === 'meat' ? allColdPool.filter(r => isMeatDish(r))
+    : allColdPool.filter(r => !isMeatDish(r));
+  const soupPool = soupStyle === 'any' ? allSoupPool
+    : soupStyle === 'meat' ? allSoupPool.filter(r => isMeatDish(r))
+    : allSoupPool.filter(r => !isMeatDish(r));
+
   const result: MealRecipe[] = [];
-
-  // 凉菜不再独立分类(归到荤/素), coldCount 在自定义模式下保留向后兼容(可视作"凉菜风格的素菜"槽位)
-  const useCustom = profile.customMealComposition?.enabled === true;
-
-  let adjustedMeat = plan.meatCount;
-  let adjustedVeg = plan.vegCount;
-
-  const minDishes = adjustedMeat + adjustedVeg;
 
   // 每餐热量预算跟踪
   const mealBudget = getMealCalorieBudget(profile, mealType);
@@ -618,54 +626,10 @@ function composeMeal(
   const remainingBudget = () => mealBudget > 0 ? Math.max(0, mealBudget - accumulatedCal) : undefined;
   const trackPick = (r: Recipe) => { accumulatedCal += calcRecipeCalForFamily(r, profile.familySize); };
 
-  // === 汤优先 (用户开汤后必有) ===
-  for (let i = 0; i < plan.soupCount; i++) {
-    const r = pickBest(soupPool, usedIds, profile, ownedIngredients, getPreference, getFeedback, remainingBudget());
-    if (r) { result.push({ recipeId: r.id, role: 'soup' }); usedIds.add(r.id); trackPick(r); }
-  }
+  // 选菜按优先级顺序: 主食 → 荤菜 → 汤 → 凉菜 → 素菜
+  // (优先级反映"必保留度", 越靠前越不可能被舍弃)
 
-  // === 荤菜 ===
-  for (let i = 0; i < adjustedMeat; i++) {
-    const r = pickBest(meatPool, usedIds, profile, ownedIngredients, getPreference, getFeedback, remainingBudget());
-    if (r) { result.push({ recipeId: r.id, role: 'main_meat' }); usedIds.add(r.id); trackPick(r); }
-  }
-
-  // === 素菜 ===
-  for (let i = 0; i < adjustedVeg; i++) {
-    const r = pickBest(vegPool, usedIds, profile, ownedIngredients, getPreference, getFeedback, remainingBudget());
-    if (r) { result.push({ recipeId: r.id, role: 'main_veg' }); usedIds.add(r.id); trackPick(r); }
-  }
-
-  // === 补充: 热菜不够时从全池补 ===
-  const hotDishPool = allCandidates.filter(r => {
-    const role = inferRole(r);
-    return role === 'main_meat' || role === 'main_veg';
-  });
-  while (result.length < minDishes && hotDishPool.length > 0) {
-    const r = pickBest(hotDishPool, usedIds, profile, ownedIngredients, getPreference, getFeedback, remainingBudget());
-    if (!r) break;
-    result.push({ recipeId: r.id, role: isMeatDish(r) ? 'main_meat' : 'main_veg' });
-    usedIds.add(r.id);
-    trackPick(r);
-  }
-
-  // 兼容: 自定义模式下用户设了凉菜数量, 仍从素菜/荤菜池选(有"凉拌"做法标签的优先)
-  const customColdCount = useCustom ? plan.coldDishCount : 0;
-  for (let i = 0; i < customColdCount; i++) {
-    // 优先选"凉拌"做法的菜
-    const coldStylePool = allCandidates.filter(r => r.cookingMethod === 'cold_dish');
-    const pool = coldStylePool.length > 0 ? coldStylePool : vegPool;
-    const r = pickBest(pool, usedIds, profile, ownedIngredients, getPreference, getFeedback, remainingBudget());
-    if (r) {
-      // role 还是按 inferRole 标 (主菜系)
-      const role = isMeatDish(r) ? 'main_meat' : 'main_veg';
-      result.push({ recipeId: r.id, role });
-      usedIds.add(r.id);
-      trackPick(r);
-    }
-  }
-
-  // === 主食 ===
+  // === 1. 主食 (优先级最高) ===
   if (plan.stapleCount > 0 && staplePool.length > 0) {
     let filtered = staplePool;
     const stapleMode = profile.stapleMode || 'off';
@@ -680,6 +644,51 @@ function composeMeal(
       const r = pickBest(filtered, usedIds, profile, ownedIngredients, getPreference, getFeedback, remainingBudget());
       if (r) { result.push({ recipeId: r.id, role: 'staple' }); usedIds.add(r.id); trackPick(r); }
     }
+  }
+
+  // === 2. 荤菜 ===
+  for (let i = 0; i < plan.meatCount; i++) {
+    const r = pickBest(meatPool, usedIds, profile, ownedIngredients, getPreference, getFeedback, remainingBudget());
+    if (r) { result.push({ recipeId: r.id, role: 'main_meat' }); usedIds.add(r.id); trackPick(r); }
+  }
+
+  // === 3. 汤 ===
+  for (let i = 0; i < plan.soupCount; i++) {
+    const r = pickBest(soupPool, usedIds, profile, ownedIngredients, getPreference, getFeedback, remainingBudget());
+    if (r) { result.push({ recipeId: r.id, role: 'soup' }); usedIds.add(r.id); trackPick(r); }
+  }
+
+  // === 4. 凉菜 (高于素菜) ===
+  // 凉菜独立分类: 含荤凉菜+素凉菜, 优先从 cold_dish 池选; 不够时回退素菜池中的凉拌菜
+  for (let i = 0; i < plan.coldDishCount; i++) {
+    const fallback = vegPool.filter(r => /凉拌|凉菜|沙拉|拌(?!面|粉|饭)/.test(r.nameZh));
+    const pool = coldPool.length > 0 ? coldPool : fallback;
+    if (pool.length === 0) break;
+    const r = pickBest(pool, usedIds, profile, ownedIngredients, getPreference, getFeedback, remainingBudget());
+    if (r) { result.push({ recipeId: r.id, role: 'cold' }); usedIds.add(r.id); trackPick(r); }
+  }
+
+  // === 5. 素菜 (最低优先级) ===
+  for (let i = 0; i < plan.vegCount; i++) {
+    const r = pickBest(vegPool, usedIds, profile, ownedIngredients, getPreference, getFeedback, remainingBudget());
+    if (r) { result.push({ recipeId: r.id, role: 'main_veg' }); usedIds.add(r.id); trackPick(r); }
+  }
+
+  // === 补充: 如果热菜数远低于预期, 从全池补荤/素 ===
+  const minHotDishes = plan.meatCount + plan.vegCount;
+  const currentHot = result.filter(mr => mr.role === 'main_meat' || mr.role === 'main_veg').length;
+  const hotDishPool = allCandidates.filter(r => {
+    const role = inferRole(r);
+    return role === 'main_meat' || role === 'main_veg';
+  });
+  let hotFillSafety = 5;
+  while (currentHot + (result.length - currentHot - (plan.stapleCount + plan.soupCount + plan.coldDishCount)) < minHotDishes && hotFillSafety > 0 && hotDishPool.length > 0) {
+    hotFillSafety--;
+    const r = pickBest(hotDishPool, usedIds, profile, ownedIngredients, getPreference, getFeedback, remainingBudget());
+    if (!r) break;
+    result.push({ recipeId: r.id, role: isMeatDish(r) ? 'main_meat' : 'main_veg' });
+    usedIds.add(r.id);
+    trackPick(r);
   }
 
   // fallback
@@ -712,33 +721,17 @@ function composeMeal(
     }
 
     // 2) 超量反向移除: 累积超 1.3×预算时
-    // 减菜优先级根据主食类型决定:
-    //   - 粥类主食 → 优先减汤(汤+粥都是水水的)
-    //   - 荤类主食 (肉包/牛肉面) → 优先减荤菜
-    //   - 素类主食 (素馄饨/葱花面) → 优先减素菜
-    //   - 默认 → 先减素菜
-    let safety = 3;
+    // 舍弃优先级 (从高到低): 素菜 → 凉菜 → 汤 → 荤菜  (主食永不舍弃)
+    const REMOVAL_PRIORITY: DishRole[] = ['main_veg', 'cold', 'soup', 'main_meat'];
+    let safety = 4;
     while (accumulatedCal > mealBudget * 1.3 && safety > 0) {
       safety--;
-
-      // 找当前餐里的主食决定优先级
-      const stapleMr = result.find(mr => mr.role === 'staple');
-      const stapleRecipe = stapleMr ? allCandidates.find(r => r.id === stapleMr.recipeId) : null;
-      let priorityRoles: DishRole[] = ['main_veg', 'main_meat']; // 默认先素后荤
-      if (stapleRecipe) {
-        const subtype = stapleSubtype(stapleRecipe);
-        const stapleIsMeaty = isMeatDish(stapleRecipe);
-        if (subtype === 'porridge') priorityRoles = ['soup', 'main_veg', 'main_meat'];
-        else if (stapleIsMeaty) priorityRoles = ['main_meat', 'main_veg']; // 荤主食先减荤菜
-        else priorityRoles = ['main_veg', 'main_meat']; // 素主食先减素菜
-      }
-
       let removeIdx = -1;
-      for (const role of priorityRoles) {
+      for (const role of REMOVAL_PRIORITY) {
         removeIdx = result.findIndex(mr => mr.role === role);
         if (removeIdx >= 0) break;
       }
-      if (removeIdx < 0) break;
+      if (removeIdx < 0) break; // 只剩主食时停止
       const removed = result.splice(removeIdx, 1)[0];
       const removedRecipe = allCandidates.find(r => r.id === removed.recipeId);
       if (removedRecipe) {
@@ -908,9 +901,19 @@ function generateSmartPlan(
   // 分池
   const meatPool = allCandidates.filter(r => inferRole(r) === 'main_meat');
   const vegPool = allCandidates.filter(r => inferRole(r) === 'main_veg');
-  const coldPool = allCandidates.filter(r => inferRole(r) === 'cold');
-  const soupPool = allCandidates.filter(r => inferRole(r) === 'soup');
+  const allColdPool = allCandidates.filter(r => inferRole(r) === 'cold');
+  const allSoupPool = allCandidates.filter(r => inferRole(r) === 'soup');
   const staplePool = allCandidates.filter(r => inferRole(r) === 'staple');
+
+  // smartPlan 也按 coldDishStyle/soupStyle 过滤
+  const coldStyle = profile.coldDishStyle || 'any';
+  const soupStyle = profile.soupStyle || 'any';
+  const coldPool = coldStyle === 'any' ? allColdPool
+    : coldStyle === 'meat' ? allColdPool.filter(r => isMeatDish(r))
+    : allColdPool.filter(r => !isMeatDish(r));
+  const soupPool = soupStyle === 'any' ? allSoupPool
+    : soupStyle === 'meat' ? allSoupPool.filter(r => isMeatDish(r))
+    : allSoupPool.filter(r => !isMeatDish(r));
 
   const usedIds = new Set<string>();
   const slots: MealSlot[] = [];
@@ -929,34 +932,36 @@ function generateSmartPlan(
     for (const mealType of profile.mealsPerDay) {
       const plan = getMealPlan(profile, mealType);
       const recipes: MealRecipe[] = [];
-      const ld = isLunchDinner(mealType);
-      const useCustom = profile.customMealComposition?.enabled === true;
-
-      // 凉菜间隔推荐(仅默认模式)
-      let coldCount = plan.coldDishCount;
-      if (!useCustom && coldCount > 0 && mealIndex % 3 !== 0) coldCount = 0;
-
-      let adjMeat = plan.meatCount;
-      let adjVeg = plan.vegCount;
-      if (!useCustom && coldCount > 0 && (adjMeat + adjVeg) > 1) {
-        if (adjVeg > 0) adjVeg--; else adjMeat--;
-      }
-
-      // 需求1: 本餐热量预算
+      // 本餐热量预算
       const mealBudget = getMealCalorieBudget(profile, mealType);
       let accumulatedCal = 0;
       const remaining = () => mealBudget > 0 ? Math.max(0, mealBudget - accumulatedCal) : undefined;
       const track = (r: Recipe) => { accumulatedCal += calcRecipeCalForFamily(r, profile.familySize); };
 
-      // === 荤菜: 智能选(考虑蛋白质轮换) ===
-      for (let i = 0; i < adjMeat; i++) {
-        // 如果某类蛋白质本周已经用太多次，降低其优先级
+      // 选菜按优先级: 主食 → 荤菜 → 汤 → 凉菜 → 素菜
+
+      // === 1. 主食 ===
+      if (plan.stapleCount > 0 && staplePool.length > 0) {
+        let filtered = staplePool;
+        const stapleMode = profile.stapleMode || 'off';
+        if (stapleMode === 'fixed' && profile.staplePreference?.length > 0 && !profile.staplePreference.includes('any')) {
+          const keywords = (profile.staplePreference || []).flatMap(p => STAPLE_KEYWORDS[p] || []);
+          const preferred = staplePool.filter(r => keywords.some(k => r.nameZh.includes(k) || r.nameEn.toLowerCase().includes(k.toLowerCase())));
+          if (preferred.length > 0) filtered = preferred;
+        }
+        for (let i = 0; i < plan.stapleCount; i++) {
+          const r = smartPick(filtered, usedIds, [], [], [], profile, ownedIngredients, getPreference, getFeedback, remaining());
+          if (r) { recipes.push({ recipeId: r.id, role: 'staple' }); usedIds.add(r.id); track(r); }
+        }
+      }
+
+      // === 2. 荤菜 (智能选: 蛋白质轮换) ===
+      for (let i = 0; i < plan.meatCount; i++) {
         const adjustedMeatPool = meatPool.filter(r => {
           const pCat = getProteinCategory(getProteinSource(r));
-          return (weekProteinCount[pCat] || 0) < Math.ceil(planDays * 0.5); // 同一蛋白质不超过一半天数
+          return (weekProteinCount[pCat] || 0) < Math.ceil(planDays * 0.5);
         });
         const pool = adjustedMeatPool.length >= 3 ? adjustedMeatPool : meatPool;
-
         const r = smartPick(pool, usedIds, recentProteins, recentVegs, recentMethods, profile, ownedIngredients, getPreference, getFeedback, remaining());
         if (r) {
           recipes.push({ recipeId: r.id, role: 'main_meat' });
@@ -971,8 +976,20 @@ function generateSmartPlan(
         }
       }
 
-      // === 素菜: 智能选(考虑蔬菜不重复) ===
-      for (let i = 0; i < adjVeg; i++) {
+      // === 3. 汤 ===
+      for (let i = 0; i < plan.soupCount; i++) {
+        const r = smartPick(soupPool, usedIds, recentProteins, recentVegs, recentMethods, profile, ownedIngredients, getPreference, getFeedback, remaining());
+        if (r) { recipes.push({ recipeId: r.id, role: 'soup' }); usedIds.add(r.id); track(r); }
+      }
+
+      // === 4. 凉菜 ===
+      for (let i = 0; i < plan.coldDishCount; i++) {
+        const r = smartPick(coldPool, usedIds, recentProteins, recentVegs, recentMethods, profile, ownedIngredients, getPreference, getFeedback, remaining());
+        if (r) { recipes.push({ recipeId: r.id, role: 'cold' }); usedIds.add(r.id); track(r); }
+      }
+
+      // === 5. 素菜 (智能选: 蔬菜不重复) ===
+      for (let i = 0; i < plan.vegCount; i++) {
         const r = smartPick(vegPool, usedIds, recentProteins, recentVegs, recentMethods, profile, ownedIngredients, getPreference, getFeedback, remaining());
         if (r) {
           recipes.push({ recipeId: r.id, role: 'main_veg' });
@@ -983,33 +1000,6 @@ function generateSmartPlan(
           if (recentVegs.length > 3) recentVegs.shift();
           recentMethods.push(r.cookingMethod);
           if (recentMethods.length > 2) recentMethods.shift();
-        }
-      }
-
-      // === 凉菜 ===
-      for (let i = 0; i < coldCount; i++) {
-        const r = smartPick(coldPool, usedIds, recentProteins, recentVegs, recentMethods, profile, ownedIngredients, getPreference, getFeedback, remaining());
-        if (r) { recipes.push({ recipeId: r.id, role: 'cold' }); usedIds.add(r.id); track(r); }
-      }
-
-      // === 汤 ===
-      for (let i = 0; i < plan.soupCount; i++) {
-        const r = smartPick(soupPool, usedIds, recentProteins, recentVegs, recentMethods, profile, ownedIngredients, getPreference, getFeedback, remaining());
-        if (r) { recipes.push({ recipeId: r.id, role: 'soup' }); usedIds.add(r.id); track(r); }
-      }
-
-      // === 主食 ===
-      if (plan.stapleCount > 0 && staplePool.length > 0) {
-        let filtered = staplePool;
-        const stapleMode = profile.stapleMode || 'off';
-        if (stapleMode === 'fixed' && profile.staplePreference?.length > 0 && !profile.staplePreference.includes('any')) {
-          const keywords = (profile.staplePreference || []).flatMap(p => STAPLE_KEYWORDS[p] || []);
-          const preferred = staplePool.filter(r => keywords.some(k => r.nameZh.includes(k) || r.nameEn.toLowerCase().includes(k.toLowerCase())));
-          if (preferred.length > 0) filtered = preferred;
-        }
-        for (let i = 0; i < plan.stapleCount; i++) {
-          const r = smartPick(filtered, usedIds, [], [], [], profile, ownedIngredients, getPreference, getFeedback, remaining());
-          if (r) { recipes.push({ recipeId: r.id, role: 'staple' }); usedIds.add(r.id); track(r); }
         }
       }
 

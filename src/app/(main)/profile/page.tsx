@@ -462,6 +462,23 @@ export default function ProfilePage() {
               }
               setProfile(updates);
             }} />
+          {profile.includeSoup && (
+            <div className="ml-4 mb-1">
+              <label className="text-xs text-muted block mb-1">汤偏好</label>
+              <div className="flex gap-1">
+                {(['any','meat','veg'] as const).map(v => {
+                  const label = v === 'any' ? '不限' : v === 'meat' ? '荤汤' : '素汤';
+                  const active = (profile.soupStyle || 'any') === v;
+                  return (
+                    <button key={v} onClick={() => setProfile({ soupStyle: v })}
+                      className={`px-2 py-0.5 rounded-full text-xs border transition ${active ? 'bg-primary text-white border-primary' : 'border-border hover:border-primary/50'}`}>
+                      {label}
+                    </button>
+                  );
+                })}
+              </div>
+            </div>
+          )}
           <SwitchRow label="推荐凉菜" desc="关闭则只推荐热菜"
             value={profile.includeColdDish || false}
             onClick={() => {
@@ -478,6 +495,23 @@ export default function ProfilePage() {
               }
               setProfile(updates);
             }} />
+          {profile.includeColdDish && (
+            <div className="ml-4 mb-1">
+              <label className="text-xs text-muted block mb-1">凉菜偏好</label>
+              <div className="flex gap-1">
+                {(['any','meat','veg'] as const).map(v => {
+                  const label = v === 'any' ? '不限' : v === 'meat' ? '荤凉菜' : '素凉菜';
+                  const active = (profile.coldDishStyle || 'any') === v;
+                  return (
+                    <button key={v} onClick={() => setProfile({ coldDishStyle: v })}
+                      className={`px-2 py-0.5 rounded-full text-xs border transition ${active ? 'bg-primary text-white border-primary' : 'border-border hover:border-primary/50'}`}>
+                      {label}
+                    </button>
+                  );
+                })}
+              </div>
+            </div>
+          )}
           <SwitchRow label="推荐水果" desc="关闭则留热量缺口并给建议量"
             value={profile.includeFruit || false} onClick={() => setProfile({ includeFruit: !profile.includeFruit })} />
           <div id="favorites-random" className="scroll-mt-20 -mx-2 px-2 -my-1 py-1 rounded-lg transition-all duration-500">
