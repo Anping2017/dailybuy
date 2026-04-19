@@ -501,35 +501,59 @@ function calcRecipeCalForFamily(recipe: Recipe, _familySize: number): number {
   return Math.round(calcRecipeNutrition(recipe).totalCalories);
 }
 
+/** 成员的"参与规划"每日热量 = 原目标 - 跳过餐次的占比(25%/40%/35%) */
+export function getMemberPlanningDailyCal(member: FamilyMember): number {
+  const skip = member.skipMeals || [];
+  const ratioMap: Record<MealType, number> = { breakfast: 0.25, lunch: 0.40, dinner: 0.35 };
+  const skipRatio = skip.reduce((s, m) => s + (ratioMap[m] || 0), 0);
+  return Math.max(500, Math.round(member.dailyCalorieTarget * (1 - skipRatio)));
+}
+
 /**
  * 计算每餐的热量预算 (家庭总和)
  * 热量按早/午/晚 25%/40%/35% 分配，只计划哪几餐就在这几餐里按比例归一
  * 需求1核心: 选菜时据此限制超标
+ *
+ * #10: 成员 skipMeals 在本餐被跳过时, 不贡献本餐热量预算 (如: 妈妈不吃早餐,
+ * 早餐预算 = 家里其他人的早餐预算之和)
  */
 export function getMealCalorieBudget(profile: UserProfile, mealType: MealType): number {
-  // 1) 家庭每日总目标(只算启用的成员)
+  // 1) 家庭每日总目标(只算启用的成员; 跳过本餐次的成员不计入本餐)
   const active = profile.members.filter(m => m.enabled !== false);
   const members = active.length > 0 ? active : profile.members;
+  const membersForThisMeal = members.filter(m => !(m.skipMeals || []).includes(mealType));
   const membersCount = Math.max(1, members.length);
   const avgTarget = members.reduce((s, m) => s + m.dailyCalorieTarget, 0) / membersCount;
-  let householdDaily = members.reduce((s, m) => s + m.dailyCalorieTarget, 0)
-    + avgTarget * Math.max(0, profile.familySize - membersCount);
+  // 每个成员按自己跳餐后的 planning daily cal 算, 再乘本餐占比
+  const ratioMap: Record<MealType, number> = { breakfast: 0.25, lunch: 0.40, dinner: 0.35 };
+  const mealRatio = ratioMap[mealType] || 0.33;
+  // 本餐家庭预算: 所有参与本餐成员的 (dailyTarget × 本餐占比) 之和
+  // 注意: 这里直接用原 dailyTarget × mealRatio (而不是 planningDailyCal × mealRatio)
+  //       因为 planningDailyCal 已扣除跳餐, 本餐若被跳过, 不应计入
+  let mealBudgetBase = membersForThisMeal.reduce((s, m) => s + m.dailyCalorieTarget * mealRatio, 0);
+  // 占位成员(profile.familySize > members.length)用平均目标 × 本餐占比
+  const extraPeople = Math.max(0, profile.familySize - membersCount);
+  mealBudgetBase += extraPeople * avgTarget * mealRatio;
 
-  // 2) 留出"用户不规划项"的热量缺口（用户会自己补充, 系统不规划这部分）
-  const familyMul = Math.max(1, profile.familySize);
-  if ((profile.stapleMode || 'off') === 'off') householdDaily -= 400 * familyMul;  // 主食缺口 ~400 kcal/人/天
-  if (!profile.includeFruit) householdDaily -= 150 * familyMul;                      // 水果缺口 ~150 kcal/人/天
-  if (!profile.includeSoup) householdDaily -= 100 * familyMul;                       // 汤缺口 ~100 kcal/人/天
-
-  householdDaily = Math.max(800 * familyMul, householdDaily);  // 不能扣到不合理低
-
-  // 3) 按实际开启的餐次归一分配 (午餐 > 晚餐 > 早餐)
-  const defaultWeights: Record<MealType, number> = { breakfast: 0.25, lunch: 0.40, dinner: 0.35 };
+  // 计算"归一化"系数: 实际启用的餐次加起来应该 = 家庭日总目标
+  // 例: 只规划午+晚(跳过早餐), 午+晚应分摊 100% 日目标而不是 75%
   const activeMeals = profile.mealsPerDay;
   if (!activeMeals.includes(mealType)) return 0;
-  const totalWeight = activeMeals.reduce((s, m) => s + (defaultWeights[m] || 0.33), 0) || 1;
-  const ratio = (defaultWeights[mealType] || 0.33) / totalWeight;
-  return Math.round(householdDaily * ratio);
+  const activeWeightTotal = activeMeals.reduce((s, m) => s + (ratioMap[m] || 0.33), 0) || 1;
+  const normalized = mealBudgetBase / mealRatio * (ratioMap[mealType] || 0.33) / activeWeightTotal;
+
+  let budget = normalized;
+
+  // 2) 留出"用户不规划项"的热量缺口（用户会自己补充, 系统不规划这部分）
+  // 按本餐占比扣 (日缺口 × 本餐占比归一)
+  const familyMul = Math.max(1, profile.familySize);
+  const gapFactor = (ratioMap[mealType] || 0.33) / activeWeightTotal;
+  if ((profile.stapleMode || 'off') === 'off') budget -= 400 * familyMul * gapFactor;
+  if (!profile.includeFruit) budget -= 150 * familyMul * gapFactor;
+  if (!profile.includeSoup) budget -= 100 * familyMul * gapFactor;
+
+  budget = Math.max(300 * familyMul * gapFactor, budget);
+  return Math.round(budget);
 }
 
 /** 排序: 口味匹配 + 已有食材匹配 + 用户偏好 + 健康亮点 + 反馈调整 + 热量预算 */

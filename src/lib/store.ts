@@ -23,6 +23,7 @@ interface AppState {
   ownedIngredients: string[];
   addOwnedIngredient: (id: string) => void;
   removeOwnedIngredient: (id: string) => void;
+  clearOwnedIngredients: () => void;
 
   // --- 周计划 ---
   weeklyPlan: WeeklyPlan | null;
@@ -32,6 +33,7 @@ interface AppState {
   removeMealSlot: (day: string, mealType: MealType) => void;
   toggleRecipeCompleted: (day: string, mealType: MealType, recipeId: string) => void;
   moveRecipeToDay: (fromDay: string, mealType: MealType, recipeId: string, toDay: string) => void;
+  removeRecipeFromSlot: (day: string, mealType: MealType, recipeId: string) => void;
 
   // --- 采购清单 ---
   shoppingList: ShoppingList | null;
@@ -65,6 +67,10 @@ interface AppState {
   saveCurrentPlan: (name: string, note?: string) => void;
   loadSavedPlan: (id: string) => void;
   deleteSavedPlan: (id: string) => void;
+  markSavedPlanViewed: (id: string) => void;
+  duplicateSavedPlan: (id: string) => void;
+  /** 新保存/更新后都标记所有为未查看状态(下次打开弹窗自动标记 viewed) */
+  markAllSavedPlansViewed: () => void;
 
   // --- 引导状态 ---
   onboardingComplete: boolean;
@@ -148,6 +154,8 @@ export const useAppStore = create<AppState>()(
           ownedIngredients: s.ownedIngredients.filter((x) => x !== id),
         })),
 
+      clearOwnedIngredients: () => set({ ownedIngredients: [] }),
+
       setProfile: (updates) =>
         set((s) => ({ profile: { ...s.profile, ...updates } })),
 
@@ -221,6 +229,16 @@ export const useAppStore = create<AppState>()(
           const slots = s.weeklyPlan.slots.filter(
             (slot) => !(slot.day === day && slot.mealType === mealType)
           );
+          return { weeklyPlan: { ...s.weeklyPlan, slots } };
+        }),
+
+      removeRecipeFromSlot: (day, mealType, recipeId) =>
+        set((s) => {
+          if (!s.weeklyPlan) return s;
+          const slots = s.weeklyPlan.slots.map(slot => {
+            if (slot.day !== day || slot.mealType !== mealType) return slot;
+            return { ...slot, recipes: (slot.recipes || []).filter(mr => mr.recipeId !== recipeId) };
+          }).filter(slot => (slot.recipes || []).length > 0);  // 清空的 slot 移除
           return { weeklyPlan: { ...s.weeklyPlan, slots } };
         }),
 
@@ -565,13 +583,16 @@ export const useAppStore = create<AppState>()(
       saveCurrentPlan: (name, note) =>
         set((s) => {
           if (!s.weeklyPlan) return s;
+          const now = new Date().toISOString();
           const saved: SavedPlan = {
             id: `saved_${Date.now()}_${Math.random().toString(36).slice(2, 6)}`,
             name: name.trim() || `方案 ${new Date().toLocaleDateString('zh-CN')}`,
-            createdAt: new Date().toISOString(),
+            createdAt: now,
             weeklyPlan: s.weeklyPlan,
             shoppingList: s.shoppingList || undefined,
             note,
+            viewed: false,       // 新建的方案默认未查看
+            updatedAt: now,
           };
           return { savedPlans: [saved, ...s.savedPlans] };
         }),
@@ -588,6 +609,32 @@ export const useAppStore = create<AppState>()(
 
       deleteSavedPlan: (id) =>
         set((s) => ({ savedPlans: s.savedPlans.filter(p => p.id !== id) })),
+
+      markSavedPlanViewed: (id) =>
+        set((s) => ({
+          savedPlans: s.savedPlans.map(p => p.id === id ? { ...p, viewed: true } : p),
+        })),
+
+      markAllSavedPlansViewed: () =>
+        set((s) => ({
+          savedPlans: s.savedPlans.map(p => ({ ...p, viewed: true })),
+        })),
+
+      duplicateSavedPlan: (id) =>
+        set((s) => {
+          const orig = s.savedPlans.find(p => p.id === id);
+          if (!orig) return s;
+          const now = new Date().toISOString();
+          const copy: SavedPlan = {
+            ...orig,
+            id: `saved_${Date.now()}_${Math.random().toString(36).slice(2, 6)}`,
+            name: `${orig.name} (副本)`,
+            createdAt: now,
+            updatedAt: now,
+            viewed: false,
+          };
+          return { savedPlans: [copy, ...s.savedPlans] };
+        }),
 
       setOnboardingComplete: (v) => set({ onboardingComplete: v }),
     }),

@@ -39,7 +39,15 @@ const METHOD_LABELS: Record<string, string> = {
 
 export default function SearchPage() {
   const { profile } = useAppStore();
-  const excludeIds = useMemo(() => profile.excludeIngredients || [], [profile.excludeIngredients]);
+  // #7: 聚合所有启用成员的排除食材 (profile 级 + 每个成员的 excludeIngredients)
+  const excludeIds = useMemo(() => {
+    const set = new Set<string>(profile.excludeIngredients || []);
+    for (const m of profile.members || []) {
+      if (m.enabled === false) continue;
+      for (const id of (m.excludeIngredients || [])) set.add(id);
+    }
+    return Array.from(set);
+  }, [profile.excludeIngredients, profile.members]);
   const [input, setInput] = useState('');
   const [results, setResults] = useState<SearchResult[]>([]);
   const [loading, setLoading] = useState(false);
@@ -123,22 +131,7 @@ export default function SearchPage() {
         </button>
       </div>
 
-      {/* 已启用的长期排除食材 (从 Profile 读取，只读展示) */}
-      {excludeIds.length > 0 && (
-        <div className="bg-red-50 border border-red-100 rounded-lg p-2 text-xs">
-          <div className="flex items-start gap-2">
-            <Ban className="w-3.5 h-3.5 text-red-500 mt-0.5 flex-shrink-0" />
-            <div className="flex-1">
-              <span className="text-red-700">已排除 {excludeIds.length} 种食材：</span>
-              <span className="text-muted ml-1">
-                {excludeIds.slice(0, 6).map(id => allIngredients.find(i => i.id === id)?.nameZh || id).join('、')}
-                {excludeIds.length > 6 && ` 等${excludeIds.length}种`}
-              </span>
-              <Link href="/profile" className="text-primary hover:underline ml-2">去设置修改</Link>
-            </div>
-          </div>
-        </div>
-      )}
+      {/* #7: 已排除食材不再提示(自动按 Profile 聚合家庭所有启用成员的禁忌) */}
 
       {/* 快捷搜索 */}
       {!searched && (

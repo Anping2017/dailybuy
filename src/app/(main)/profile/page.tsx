@@ -685,19 +685,39 @@ function MemberCard({
   onRemove?: () => void;
 }) {
   const gender = member.gender || 'male';
-  const recommended = getRecommendedCalories(gender, member.ageGroup);
+  // #9: 基础推荐值随 gender/age/height/weight/goal 动态计算
+  // 有身高体重 → 用 BMR × 1.4 + 目标调整; 无则按默认表
+  const recommended = (() => {
+    const currentGoal = member.fitnessGoal || 'maintain';
+    return getTargetCaloriesByGoal(gender, member.ageGroup, currentGoal, member.height, member.weight);
+  })();
 
   const handleGenderChange = (g: Gender) => {
-    const cal = getRecommendedCalories(g, member.ageGroup);
+    const cal = getTargetCaloriesByGoal(g, member.ageGroup, member.fitnessGoal || 'maintain', member.height, member.weight);
     onUpdate({ gender: g, dailyCalorieTarget: cal });
   };
 
   const handleAgeChange = (ag: AgeGroup) => {
-    const cal = getRecommendedCalories(gender, ag);
+    const cal = getTargetCaloriesByGoal(gender, ag, member.fitnessGoal || 'maintain', member.height, member.weight);
     onUpdate({ ageGroup: ag, dailyCalorieTarget: cal });
   };
 
+  // 身高/体重变化时自动更新热量推荐
+  const handleHeightChange = (h: number | undefined) => {
+    const cal = getTargetCaloriesByGoal(gender, member.ageGroup, member.fitnessGoal || 'maintain', h, member.weight);
+    onUpdate({ height: h, dailyCalorieTarget: cal });
+  };
+  const handleWeightChange = (w: number | undefined) => {
+    const cal = getTargetCaloriesByGoal(gender, member.ageGroup, member.fitnessGoal || 'maintain', member.height, w);
+    onUpdate({ weight: w, dailyCalorieTarget: cal });
+  };
+
   const isEnabled = member.enabled !== false;
+  const skipMeals = member.skipMeals || [];
+  const toggleSkipMeal = (m: MealType) => {
+    const next = skipMeals.includes(m) ? skipMeals.filter(x => x !== m) : [...skipMeals, m];
+    onUpdate({ skipMeals: next });
+  };
 
   return (
     <div className={`border border-border rounded-lg p-3 mb-3 transition ${isEnabled ? '' : 'opacity-60 bg-background/50'}`}>
@@ -708,19 +728,19 @@ function MemberCard({
           onChange={e => onUpdate({ name: e.target.value })}
           className="font-medium bg-transparent border-b border-transparent hover:border-border focus:border-primary focus:outline-none"
         />
-        {/* 启用/禁用开关 + 删除按钮 */}
-        <div className="flex items-center gap-2">
+        {/* 启用/禁用开关 + 删除按钮 (横向布局+增加宽度, 防止换行) */}
+        <div className="flex items-center gap-2 flex-shrink-0">
           <button
             onClick={() => onUpdate({ enabled: !isEnabled })}
             title={isEnabled ? '临时不规划该成员' : '恢复参与规划'}
-            className={`text-xs px-2 py-1 rounded-full border transition ${
-              isEnabled ? 'border-primary text-primary' : 'border-border text-muted'
+            className={`text-xs px-3 py-1.5 rounded-full border transition whitespace-nowrap min-w-[90px] ${
+              isEnabled ? 'border-primary text-primary bg-primary/5' : 'border-border text-muted'
             }`}
           >
             {isEnabled ? '✓ 参与规划' : '⊘ 已跳过'}
           </button>
           {onRemove && (
-            <button onClick={onRemove} className="text-muted hover:text-danger">
+            <button onClick={onRemove} className="text-muted hover:text-danger flex-shrink-0">
               <Trash2 className="w-4 h-4" />
             </button>
           )}
@@ -813,21 +833,41 @@ function MemberCard({
         />
       </div>
 
-      {/* 身高体重(可选,用于更精准的 BMR 推算) */}
+      {/* 身高体重(可选,用于更精准的 BMR 推算); 更新会自动更新每日热量推荐 */}
       <div className="grid grid-cols-2 gap-2 mb-2">
         <div>
           <label className="text-xs text-muted block mb-1">身高 (cm)</label>
           <input type="number" placeholder="可选" value={member.height || ''}
-            onChange={e => onUpdate({ height: Number(e.target.value) || undefined })}
+            onChange={e => handleHeightChange(Number(e.target.value) || undefined)}
             className="w-full border border-border rounded px-2 py-1 text-sm bg-transparent" />
         </div>
         <div>
           <label className="text-xs text-muted block mb-1">体重 (kg)</label>
           <input type="number" placeholder="可选" value={member.weight || ''}
-            onChange={e => onUpdate({ weight: Number(e.target.value) || undefined })}
+            onChange={e => handleWeightChange(Number(e.target.value) || undefined)}
             className="w-full border border-border rounded px-2 py-1 text-sm bg-transparent" />
         </div>
       </div>
+
+      {/* #10 不吃的餐次(按餐扣热量) */}
+      <label className="text-xs text-muted block mb-1">不吃哪些餐(会自动扣除对应热量)</label>
+      <div className="flex flex-wrap gap-1 mb-2">
+        {(['breakfast','lunch','dinner'] as MealType[]).map(m => {
+          const label = m === 'breakfast' ? '不吃早餐' : m === 'lunch' ? '不吃午餐' : '不吃晚餐';
+          const active = skipMeals.includes(m);
+          return (
+            <button key={m} onClick={() => toggleSkipMeal(m)}
+              className={`text-xs px-2 py-1 rounded-full border transition ${active ? 'bg-amber-50 border-amber-400 text-amber-700' : 'border-border text-muted hover:border-primary/50'}`}>
+              {active ? '✓ ' : ''}{label}
+            </button>
+          );
+        })}
+      </div>
+      {skipMeals.length > 0 && (
+        <p className="text-[10px] text-muted mb-2">
+          ℹ 已扣除 {skipMeals.map(m => m === 'breakfast' ? '早餐25%' : m === 'lunch' ? '午餐40%' : '晚餐35%').join('+')} 的热量 → 参与规划热量 ~{Math.round(member.dailyCalorieTarget * (1 - skipMeals.reduce((s, m) => s + (m === 'breakfast' ? 0.25 : m === 'lunch' ? 0.4 : 0.35), 0)))} kcal
+        </p>
+      )}
 
       {/* 健康目标 + 每日热量 - 仅在启用热量计算时显示 */}
       {calorieEnabled !== false && (

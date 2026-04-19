@@ -28,6 +28,23 @@ const FLAVOR_LABELS: Record<FlavorPreference, string> = {
   sour: '酸', sweet: '甜', bitter: '苦', spicy: '辣',
   salty: '咸', umami: '鲜', light: '清淡',
 };
+const REGIONAL_LABELS: Record<RegionalCuisine, string> = {
+  sichuan: '川菜', cantonese: '粤菜', shandong: '鲁菜', jiangsu: '苏菜', hunan: '湘菜',
+  fujian: '闽菜', dongbei: '东北', zhejiang: '浙菜', anhui: '徽菜', yunnan: '云南',
+  xinjiang: '新疆', taiwanese: '台湾', homestyle: '家常',
+  italian: '意式', american: '美式', french: '法式',
+  japanese: '日式', korean: '韩式', southeast_asian: '东南亚',
+};
+// 角色快捷筛选
+type RoleFilter = 'all' | 'meat' | 'veg' | 'soup' | 'cold' | 'staple';
+const ROLE_FILTER_LABELS: Record<RoleFilter, string> = {
+  all: '全部', meat: '荤菜', veg: '素菜', soup: '汤', cold: '凉菜', staple: '主食',
+};
+// 时间筛选
+type TimeFilter = 'all' | 'quick' | 'medium' | 'long';  // <15min / 15-30 / >30
+const TIME_LABELS: Record<TimeFilter, string> = {
+  all: '全部', quick: '快手<15min', medium: '15-30min', long: '>30min',
+};
 
 type Tab = 'all' | 'favorites' | 'mine';
 
@@ -38,10 +55,14 @@ export default function RecipesPage() {
   const [search, setSearch] = useState('');
   const [showFilter, setShowFilter] = useState(false);
   const [filterCuisine, setFilterCuisine] = useState<CuisineType | 'all'>('all');
+  const [filterRegional, setFilterRegional] = useState<RegionalCuisine | 'all'>('all');
   const [filterMeal, setFilterMeal] = useState<MealType | 'all'>('all');
   const [filterMethod, setFilterMethod] = useState<CookingMethod | 'all'>('all');
   const [filterDiff, setFilterDiff] = useState<DifficultyLevel | 'all'>('all');
   const [filterFlavor, setFilterFlavor] = useState<FlavorPreference | 'all'>('all');
+  const [filterRole, setFilterRole] = useState<RoleFilter>('all');
+  const [filterTime, setFilterTime] = useState<TimeFilter>('all');
+  const [filterNoSpicy, setFilterNoSpicy] = useState(false);  // 仅不辣
   const [page, setPage] = useState(1);
   const PAGE_SIZE = 50;
 
@@ -69,16 +90,39 @@ export default function RecipesPage() {
       pool = pool.filter(r => r.nameZh.toLowerCase().includes(q) || r.nameEn.toLowerCase().includes(q));
     }
     if (filterCuisine !== 'all') pool = pool.filter(r => r.cuisine === filterCuisine);
+    if (filterRegional !== 'all') pool = pool.filter(r => r.regionalCuisine === filterRegional);
     if (filterMeal !== 'all') pool = pool.filter(r => r.mealTypes.includes(filterMeal));
     if (filterMethod !== 'all') pool = pool.filter(r => r.cookingMethod === filterMethod);
     if (filterDiff !== 'all') pool = pool.filter(r => r.difficulty === filterDiff);
     if (filterFlavor !== 'all') pool = pool.filter(r => r.flavors.includes(filterFlavor));
+    // 角色快捷筛选(基于 cookingMethod/dishRole/tags 综合判断)
+    if (filterRole !== 'all') {
+      pool = pool.filter(r => {
+        if (filterRole === 'soup') return r.cookingMethod === 'soup' || r.dishRole === 'soup';
+        if (filterRole === 'cold') return r.cookingMethod === 'cold_dish' || r.dishRole === 'cold';
+        if (filterRole === 'staple') return r.cookingMethod === 'staple' || r.dishRole === 'staple';
+        if (filterRole === 'meat') return r.dishRole === 'main_meat' || r.isVegetarian === false;
+        if (filterRole === 'veg') return r.dishRole === 'main_veg' || r.isVegetarian === true;
+        return true;
+      });
+    }
+    // 时间筛选
+    if (filterTime !== 'all') {
+      pool = pool.filter(r => {
+        const total = (r.prepTime || 0) + (r.cookTime || 0);
+        if (filterTime === 'quick') return total < 15;
+        if (filterTime === 'medium') return total >= 15 && total <= 30;
+        return total > 30;
+      });
+    }
+    // 不辣
+    if (filterNoSpicy) pool = pool.filter(r => !r.flavors.includes('spicy'));
 
     return pool;  // 不再硬限, 由分页处理
-  }, [mounted, allCombined, favoriteIds, tab, search, filterCuisine, filterMeal, filterMethod, filterDiff, filterFlavor]);
+  }, [mounted, allCombined, favoriteIds, tab, search, filterCuisine, filterRegional, filterMeal, filterMethod, filterDiff, filterFlavor, filterRole, filterTime, filterNoSpicy]);
 
   // 筛选/搜索变化时重置回第一页
-  useEffect(() => { setPage(1); }, [tab, search, filterCuisine, filterMeal, filterMethod, filterDiff, filterFlavor]);
+  useEffect(() => { setPage(1); }, [tab, search, filterCuisine, filterRegional, filterMeal, filterMethod, filterDiff, filterFlavor, filterRole, filterTime, filterNoSpicy]);
 
   if (!mounted) return null;
 
@@ -88,13 +132,15 @@ export default function RecipesPage() {
   const pagedItems = filtered.slice((safePage - 1) * PAGE_SIZE, safePage * PAGE_SIZE);
 
   const activeFilters = [
-    filterCuisine !== 'all', filterMeal !== 'all', filterMethod !== 'all',
-    filterDiff !== 'all', filterFlavor !== 'all',
+    filterCuisine !== 'all', filterRegional !== 'all', filterMeal !== 'all', filterMethod !== 'all',
+    filterDiff !== 'all', filterFlavor !== 'all', filterRole !== 'all', filterTime !== 'all',
+    filterNoSpicy,
   ].filter(Boolean).length;
 
   const clearFilters = () => {
-    setFilterCuisine('all'); setFilterMeal('all'); setFilterMethod('all');
-    setFilterDiff('all'); setFilterFlavor('all');
+    setFilterCuisine('all'); setFilterRegional('all'); setFilterMeal('all'); setFilterMethod('all');
+    setFilterDiff('all'); setFilterFlavor('all'); setFilterRole('all'); setFilterTime('all');
+    setFilterNoSpicy(false);
   };
 
   return (
@@ -182,10 +228,21 @@ export default function RecipesPage() {
       {/* 筛选面板 */}
       {showFilter && (
         <div className="bg-card border border-border rounded-lg p-3 space-y-3">
+          <FilterRow label="角色">
+            {(Object.keys(ROLE_FILTER_LABELS) as RoleFilter[]).map(k => (
+              <FilterChip key={k} active={filterRole === k} onClick={() => setFilterRole(k)}>{ROLE_FILTER_LABELS[k]}</FilterChip>
+            ))}
+          </FilterRow>
           <FilterRow label="菜系">
             <FilterChip active={filterCuisine === 'all'} onClick={() => setFilterCuisine('all')}>全部</FilterChip>
             {(Object.keys(CUISINE_LABELS) as CuisineType[]).map(k => (
               <FilterChip key={k} active={filterCuisine === k} onClick={() => setFilterCuisine(k)}>{CUISINE_LABELS[k]}</FilterChip>
+            ))}
+          </FilterRow>
+          <FilterRow label="地域">
+            <FilterChip active={filterRegional === 'all'} onClick={() => setFilterRegional('all')}>全部</FilterChip>
+            {(Object.keys(REGIONAL_LABELS) as RegionalCuisine[]).map(k => (
+              <FilterChip key={k} active={filterRegional === k} onClick={() => setFilterRegional(k)}>{REGIONAL_LABELS[k]}</FilterChip>
             ))}
           </FilterRow>
           <FilterRow label="餐次">
@@ -206,11 +263,19 @@ export default function RecipesPage() {
               <FilterChip key={k} active={filterDiff === k} onClick={() => setFilterDiff(k)}>{DIFF_LABELS[k]}</FilterChip>
             ))}
           </FilterRow>
+          <FilterRow label="用时">
+            {(Object.keys(TIME_LABELS) as TimeFilter[]).map(k => (
+              <FilterChip key={k} active={filterTime === k} onClick={() => setFilterTime(k)}>{TIME_LABELS[k]}</FilterChip>
+            ))}
+          </FilterRow>
           <FilterRow label="口味">
             <FilterChip active={filterFlavor === 'all'} onClick={() => setFilterFlavor('all')}>全部</FilterChip>
             {(Object.keys(FLAVOR_LABELS) as FlavorPreference[]).map(k => (
               <FilterChip key={k} active={filterFlavor === k} onClick={() => setFilterFlavor(k)}>{FLAVOR_LABELS[k]}</FilterChip>
             ))}
+          </FilterRow>
+          <FilterRow label="其他">
+            <FilterChip active={filterNoSpicy} onClick={() => setFilterNoSpicy(!filterNoSpicy)}>不辣</FilterChip>
           </FilterRow>
           {activeFilters > 0 && (
             <button onClick={clearFilters} className="text-xs text-primary hover:underline">清除筛选</button>

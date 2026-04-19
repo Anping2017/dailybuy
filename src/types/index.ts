@@ -265,6 +265,7 @@ export interface FamilyMember {
   excludeIngredients?: string[];  // 该成员长期排除的食材 ID（饮食限制补充）
   dailyCalorieTarget: number;
   enabled?: boolean;              // 是否参与规划(false = 临时跳过, 不算人数/不算限制/不算热量)
+  skipMeals?: MealType[];         // 不吃的餐次(早/午/晚)，会从其日热量目标中扣除
 }
 
 // 每餐菜品配置
@@ -384,6 +385,8 @@ export interface SavedPlan {
   weeklyPlan: WeeklyPlan;
   shoppingList?: ShoppingList;
   note?: string;
+  viewed?: boolean;    // 用户是否查看过(未查看的有角标提醒, 查看后自动隐藏)
+  updatedAt?: string;  // 最近更新时间(viewed < updatedAt 时显示角标)
 }
 
 // --- 采购清单 ---

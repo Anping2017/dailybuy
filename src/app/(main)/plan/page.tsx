@@ -31,8 +31,13 @@ const ROLE_COLORS: Record<DishRole, string> = {
 
 export default function PlanPage() {
   const router = useRouter();
-  const { profile, setProfile, weeklyPlan, shoppingList, setWeeklyPlan, setShoppingList, removeMealSlot, replaceSingleRecipe, ownedIngredients, addOwnedIngredient, removeOwnedIngredient, addRecipeToShoppingList, removeRecipeFromShoppingList, recordAction, recordSwapReason, savedPlans, saveCurrentPlan, loadSavedPlan, deleteSavedPlan, toggleRecipeCompleted, moveRecipeToDay, togglePurchased } = useAppStore();
+  const { profile, setProfile, weeklyPlan, shoppingList, setWeeklyPlan, setShoppingList, removeMealSlot, replaceSingleRecipe, ownedIngredients, addOwnedIngredient, removeOwnedIngredient, clearOwnedIngredients, addRecipeToShoppingList, removeRecipeFromShoppingList, recordAction, recordSwapReason, savedPlans, saveCurrentPlan, loadSavedPlan, deleteSavedPlan, toggleRecipeCompleted, moveRecipeToDay, togglePurchased, removeRecipeFromSlot, markSavedPlanViewed, markAllSavedPlansViewed, duplicateSavedPlan } = useAppStore();
+  const [showClearOwnedConfirm, setShowClearOwnedConfirm] = useState(false);
+  const [previewSavedId, setPreviewSavedId] = useState<string | null>(null);
+  // 未查看的方案数(用于角标; 查看后清零)
+  const unviewedSavedCount = savedPlans.filter(p => !p.viewed).length;
   const [moveTarget, setMoveTarget] = useState<{ recipeId: string; fromDay: DayOfWeek; mealType: MealType } | null>(null);
+  const [deleteTarget, setDeleteTarget] = useState<{ recipeId: string; mealType: MealType; day: DayOfWeek; name: string } | null>(null);
   const [mounted, setMounted] = useState(false);
   const [showWeekShare, setShowWeekShare] = useState(false);
   const [weekShareCopied, setWeekShareCopied] = useState(false);
@@ -238,13 +243,14 @@ export default function PlanPage() {
               className="px-2 py-1.5 border border-border rounded-lg text-muted hover:text-primary hover:border-primary transition">
               <Save className="w-4 h-4" />
             </button>
-            <button onClick={() => setShowSavedPlans(true)}
-              title="我保存的方案"
+            <button onClick={() => { setShowSavedPlans(true); }}
+              title={unviewedSavedCount > 0 ? `我保存的方案 (${unviewedSavedCount} 未查看)` : '我保存的方案'}
               className="relative px-2 py-1.5 border border-border rounded-lg text-muted hover:text-primary hover:border-primary transition">
               <Archive className="w-4 h-4" />
-              {savedPlans.length > 0 && (
-                <span className="absolute -top-1 -right-1 w-4 h-4 bg-primary text-white rounded-full text-[10px] flex items-center justify-center">
-                  {savedPlans.length}
+              {/* #6b: 只有未查看的方案有角标; 查看后自动隐藏 */}
+              {unviewedSavedCount > 0 && (
+                <span className="absolute -top-1 -right-1 w-4 h-4 bg-primary text-white rounded-full text-[10px] flex items-center justify-center animate-pulse">
+                  {unviewedSavedCount}
                 </span>
               )}
             </button>
@@ -303,21 +309,56 @@ export default function PlanPage() {
               })()}
             </div>
             {ownedIngredients.length > 0 && (
-              <div className="flex flex-wrap gap-1 mt-2">
-                {ownedIngredients.map(id => {
-                  const ing = getIngredient(id);
-                  return ing ? (
-                    <span key={id} className="inline-flex items-center gap-1 bg-primary-light text-primary text-xs px-2 py-0.5 rounded-full">
-                      {ing.nameZh}
-                      <button onClick={() => removeOwnedIngredient(id)}><X className="w-3 h-3" /></button>
-                    </span>
-                  ) : null;
-                })}
-              </div>
+              <>
+                <div className="flex items-center justify-between mt-2 mb-1">
+                  <span className="text-xs text-muted">已设 {ownedIngredients.length} 项</span>
+                  <button
+                    onClick={() => setShowClearOwnedConfirm(true)}
+                    className="text-xs text-red-500 hover:text-red-700 flex items-center gap-1 transition"
+                  >
+                    <Trash2 className="w-3 h-3" /> 一键清除
+                  </button>
+                </div>
+                <div className="flex flex-wrap gap-1">
+                  {ownedIngredients.map(id => {
+                    const ing = getIngredient(id);
+                    return ing ? (
+                      <span key={id} className="inline-flex items-center gap-1 bg-primary-light text-primary text-xs px-2 py-0.5 rounded-full">
+                        {ing.nameZh}
+                        <button onClick={() => removeOwnedIngredient(id)}><X className="w-3 h-3" /></button>
+                      </span>
+                    ) : null;
+                  })}
+                </div>
+              </>
             )}
           </div>
         )}
       </div>
+
+      {/* 清除已有食材确认弹窗 */}
+      {showClearOwnedConfirm && (
+        <div className="fixed inset-0 z-[60] bg-black/50 flex items-end sm:items-center justify-center p-4" onClick={() => setShowClearOwnedConfirm(false)}>
+          <div className="bg-card rounded-2xl border border-border w-full max-w-sm p-5" onClick={e => e.stopPropagation()}>
+            <h3 className="font-semibold mb-1 flex items-center gap-2">
+              <Trash2 className="w-4 h-4 text-red-500" /> 清除已有食材?
+            </h3>
+            <p className="text-sm text-muted mb-4">
+              将移除全部 <span className="font-medium">{ownedIngredients.length}</span> 项"家里已有的食材"。
+              <br /><span className="text-xs text-amber-600 mt-1 inline-block">💡 此操作不可撤销, 但不影响采购清单。</span>
+            </p>
+            <div className="flex gap-2">
+              <button onClick={() => setShowClearOwnedConfirm(false)} className="flex-1 py-2.5 border border-border rounded-lg text-sm">取消</button>
+              <button
+                onClick={() => { clearOwnedIngredients(); setShowClearOwnedConfirm(false); }}
+                className="flex-1 py-2.5 bg-red-500 text-white rounded-lg text-sm font-medium hover:bg-red-600 transition"
+              >
+                确认清除
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
 
       {/* 日历视图 */}
       {viewMode === 'calendar' && (
@@ -507,40 +548,32 @@ export default function PlanPage() {
                         window.location.href = `/recipe/${mr.recipeId}`;
                       }}
                     >
-                      <div className="flex items-start justify-between">
-                        <div className="flex-1 min-w-0">
-                          <div className="flex items-center gap-2 flex-wrap">
-                            <span className={`text-[10px] px-1.5 py-0.5 rounded ${ROLE_COLORS[mr.role]}`}>
-                              {ROLE_LABELS[mr.role]}
+                      {/* 顶部: 标签(一行) + 右侧操作按钮 */}
+                      <div className="flex items-start justify-between gap-2">
+                        <div className="flex items-center gap-1.5 flex-wrap flex-1 min-w-0">
+                          <span className={`text-[10px] px-1.5 py-0.5 rounded ${ROLE_COLORS[mr.role]}`}>
+                            {ROLE_LABELS[mr.role]}
+                          </span>
+                          {mr.completed && (
+                            <span className="text-[10px] px-1 py-0 rounded bg-green-100 text-green-700 border border-green-300">已完成</span>
+                          )}
+                          {isLunchboxDinner && (
+                            <span className="text-[10px] px-1 py-0 rounded bg-amber-100 text-amber-700 border border-amber-300 font-bold" title={`带饭模式: 本菜按 ×${Math.round(slotMult)} 量烹制, 多做的部分作明日午餐`}>
+                              ×{Math.round(slotMult)}
                             </span>
-                            <Link href={`/recipe/${mr.recipeId}`} className={`font-medium text-sm group-hover:text-primary transition ${mr.completed ? 'line-through text-muted' : ''}`}>
-                              {recipe.nameZh}
-                            </Link>
-                            {mr.completed && (
-                              <span className="text-[10px] px-1 py-0 rounded bg-green-100 text-green-700 border border-green-300">已完成</span>
-                            )}
-                            {isLunchboxDinner && (
-                              <span className="text-[10px] px-1 py-0 rounded bg-amber-100 text-amber-700 border border-amber-300 font-bold" title={`带饭模式: 本菜按 ×${Math.round(slotMult)} 量烹制, 多做的部分作明日午餐`}>
-                                ×{Math.round(slotMult)}
-                              </span>
-                            )}
-                            <ChevronRight className="w-3.5 h-3.5 text-muted opacity-50 group-hover:opacity-100 group-hover:text-primary transition" />
-                          </div>
-                          <p className="text-xs text-muted mt-0.5">{recipe.nameEn}</p>
+                          )}
                         </div>
                         <div className="flex items-center gap-2 flex-shrink-0">
                           {profile.calorieEnabled !== false && (
                             <span className={`text-xs font-medium ${mr.completed ? 'text-muted line-through' : 'text-accent'}`} title={`${familySize} 人分 = 人均 ${perPerson}${isLunchboxDinner ? ` (含明日午餐, 按 ×${Math.round(slotMult)} 计)` : ''}`}>
-                              共 {dishTotal} kcal · 人均 {perPerson}
+                              共 {dishTotal} · 人均 {perPerson}
                             </span>
                           )}
                           <button
                             onClick={() => {
-                              // 切换完成状态; 标记完成时把这道菜食材标记为已购 + 从清单划掉
                               const nowCompleted = !mr.completed;
                               toggleRecipeCompleted(selectedDay, mealType, mr.recipeId);
                               if (nowCompleted) {
-                                // 把这道菜对应的食材在清单中标记"已购"(划掉)
                                 for (const ri of recipe.ingredients) {
                                   const item = shoppingList?.items.find(it => it.ingredientId === ri.ingredientId && it.fromRecipes.includes(recipe.nameZh));
                                   if (item && !item.isPurchased) togglePurchased(ri.ingredientId);
@@ -561,23 +594,34 @@ export default function PlanPage() {
                             className="text-muted hover:text-primary transition" title="换一道">
                             <RefreshCw className="w-3.5 h-3.5" />
                           </button>
+                          <button
+                            onClick={() => setDeleteTarget({ recipeId: mr.recipeId, mealType, day: selectedDay, name: recipe.nameZh })}
+                            className="text-muted hover:text-red-500 transition" title="从今日餐次中删除">
+                            <Trash2 className="w-3.5 h-3.5" />
+                          </button>
                         </div>
                       </div>
 
-                      {/* 食材标签 */}
+                      {/* 菜名: 独占一行 */}
+                      <div className="mt-1.5">
+                        <Link href={`/recipe/${mr.recipeId}`} className={`font-medium text-[15px] group-hover:text-primary transition inline-flex items-center gap-1 ${mr.completed ? 'line-through text-muted' : ''}`}>
+                          {recipe.nameZh}
+                          <ChevronRight className="w-3.5 h-3.5 text-muted opacity-50 group-hover:opacity-100 group-hover:text-primary transition" />
+                        </Link>
+                        <p className="text-xs text-muted mt-0.5">{recipe.nameEn}</p>
+                      </div>
+
+                      {/* 食材标签 - 完整罗列 + 自动换行 */}
                       <div className={`flex flex-wrap gap-1 mt-2 ${mr.completed ? 'opacity-50' : ''}`}>
-                        {recipe.ingredients.slice(0, 5).map(ri => {
+                        {recipe.ingredients.map(ri => {
                           const ing = getIngredient(ri.ingredientId);
                           return ing ? (
                             <Link key={ri.ingredientId} href={`/ingredient/${ri.ingredientId}`}
-                              className={`text-[11px] bg-card px-1.5 py-0.5 rounded hover:bg-primary-light transition ${mr.completed ? 'line-through text-muted' : ''}`}>
+                              className={`text-[11px] bg-card px-1.5 py-0.5 rounded hover:bg-primary-light transition whitespace-nowrap ${mr.completed ? 'line-through text-muted' : ''}`}>
                               {ing.nameZh}
                             </Link>
                           ) : null;
                         })}
-                        {recipe.ingredients.length > 5 && (
-                          <span className="text-[11px] text-muted">+{recipe.ingredients.length - 5}</span>
-                        )}
                       </div>
 
                       {/* 份数不匹配提示 */}
@@ -776,6 +820,33 @@ export default function PlanPage() {
         );
       })()}
 
+      {/* 删除菜谱确认弹窗 */}
+      {deleteTarget && (
+        <div className="fixed inset-0 z-[60] bg-black/50 flex items-end sm:items-center justify-center p-4" onClick={() => setDeleteTarget(null)}>
+          <div className="bg-card rounded-2xl border border-border w-full max-w-sm p-5" onClick={e => e.stopPropagation()}>
+            <h3 className="font-semibold mb-1 flex items-center gap-2">
+              <Trash2 className="w-4 h-4 text-red-500" /> 确定删除?
+            </h3>
+            <p className="text-sm text-muted mb-4">
+              将从 <span className="font-medium">{DAY_LABELS[deleteTarget.day]} · {MEAL_LABELS[deleteTarget.mealType]}</span> 移除「{deleteTarget.name}」。
+              <br /><span className="text-xs text-amber-600 mt-1 inline-block">💡 对应食材不会自动从采购清单移除, 请手动处理。</span>
+            </p>
+            <div className="flex gap-2">
+              <button onClick={() => setDeleteTarget(null)} className="flex-1 py-2.5 border border-border rounded-lg text-sm">取消</button>
+              <button
+                onClick={() => {
+                  removeRecipeFromSlot(deleteTarget.day, deleteTarget.mealType, deleteTarget.recipeId);
+                  setDeleteTarget(null);
+                }}
+                className="flex-1 py-2.5 bg-red-500 text-white rounded-lg text-sm font-medium hover:bg-red-600 transition"
+              >
+                确认删除
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+
       {/* 保存方案弹窗 */}
       {showSaveDialog && (
         <div className="fixed inset-0 z-[60] bg-black/50 flex items-end sm:items-center justify-center p-4" onClick={() => setShowSaveDialog(false)}>
@@ -810,7 +881,10 @@ export default function PlanPage() {
       )}
 
       {/* 保存的方案列表弹窗 */}
-      {showSavedPlans && (
+      {showSavedPlans && (() => {
+        // 打开弹窗时自动标记所有为已查看(角标消失)
+        if (unviewedSavedCount > 0) setTimeout(() => markAllSavedPlansViewed(), 500);
+        return (
         <div className="fixed inset-0 z-[60] bg-black/50 flex items-end sm:items-center justify-center p-4" onClick={() => setShowSavedPlans(false)}>
           <div className="bg-card rounded-2xl border border-border w-full max-w-md flex flex-col max-h-[85vh]" onClick={e => e.stopPropagation()}>
             <div className="p-4 border-b border-border flex items-center justify-between">
@@ -826,12 +900,25 @@ export default function PlanPage() {
                     <div key={s.id} className="p-3 hover:bg-background/50">
                       <div className="flex items-start justify-between gap-2">
                         <div className="flex-1 min-w-0">
-                          <p className="font-medium text-sm truncate">{s.name}</p>
+                          {/* 点名字展开预览(文字版) */}
+                          <button onClick={() => { markSavedPlanViewed(s.id); setPreviewSavedId(previewSavedId === s.id ? null : s.id); }}
+                            className="text-left font-medium text-sm hover:text-primary transition flex items-center gap-1">
+                            {s.name}
+                            {!s.viewed && <span className="w-1.5 h-1.5 rounded-full bg-primary inline-block" title="未查看" />}
+                            <ChevronDown className={`w-3.5 h-3.5 text-muted transition-transform ${previewSavedId === s.id ? 'rotate-180' : ''}`} />
+                          </button>
                           <p className="text-xs text-muted">
                             {new Date(s.createdAt).toLocaleString('zh-CN')} · {s.weeklyPlan.slots.length} 餐
                           </p>
                         </div>
                         <div className="flex gap-1 flex-shrink-0">
+                          <button
+                            onClick={() => { duplicateSavedPlan(s.id); }}
+                            className="text-muted hover:text-primary p-1"
+                            title="复制方案"
+                          >
+                            <Copy className="w-3.5 h-3.5" />
+                          </button>
                           <button
                             onClick={() => {
                               if (confirm(`加载「${s.name}」会替换当前方案, 继续?`)) {
@@ -851,6 +938,23 @@ export default function PlanPage() {
                           </button>
                         </div>
                       </div>
+                      {/* 文字版预览 */}
+                      {previewSavedId === s.id && (
+                        <div className="mt-2 bg-background rounded p-2 text-[11px] space-y-1 max-h-60 overflow-y-auto">
+                          {s.weeklyPlan.slots.map((slot, idx) => (
+                            <div key={idx}>
+                              <span className="font-medium text-primary">{DAY_LABELS[slot.day] || slot.day} · {MEAL_LABELS[slot.mealType]}</span>
+                              <span className="text-muted">({slot.servings}人份)</span>:
+                              <span className="ml-1">
+                                {slot.recipes.map(mr => {
+                                  const r = getRecipe(mr.recipeId);
+                                  return r?.nameZh || '?';
+                                }).join('、')}
+                              </span>
+                            </div>
+                          ))}
+                        </div>
+                      )}
                     </div>
                   ))}
                 </div>
@@ -858,7 +962,8 @@ export default function PlanPage() {
             </div>
           </div>
         </div>
-      )}
+        );
+      })()}
     </div>
   );
 }
