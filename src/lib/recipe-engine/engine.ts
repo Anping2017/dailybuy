@@ -26,9 +26,17 @@ interface RestrictionRule { blockedCategories?: IngredientCategory[]; blockedIng
 // 幼儿/儿童自动屏蔽酒精(无需显式配置)
 const CHILD_AGE_GROUPS = new Set(['toddler', 'child']);
 
+/** 过滤出参与规划的成员(enabled !== false) */
+export function getActiveMembers(profile: UserProfile): FamilyMember[] {
+  const list = profile.members.filter(m => m.enabled !== false);
+  // 至少保留 1 个成员避免空集
+  return list.length > 0 ? list : profile.members;
+}
+
 function getBlockedTags(members: FamilyMember[]): Set<HealthTag> {
   const tags = new Set<HealthTag>();
   for (const m of members) {
+    if (m.enabled === false) continue;  // 跳过已禁用成员
     for (const c of m.healthConditions) {
       if (c === 'none') continue;
       const rule = (healthRulesData.conditions as Record<string, ConditionRule>)[c];
@@ -50,6 +58,7 @@ function getBlockedTags(members: FamilyMember[]): Set<HealthTag> {
 function getPreferredHighlights(members: FamilyMember[]): Set<NutritionHighlight> {
   const hs = new Set<NutritionHighlight>();
   for (const m of members) {
+    if (m.enabled === false) continue;
     for (const c of m.healthConditions) {
       if (c === 'none') continue;
       const rule = (healthRulesData.conditions as Record<string, ConditionRule>)[c];
@@ -80,14 +89,15 @@ function scoreRecipeHighlights(recipe: Recipe, preferred: Set<NutritionHighlight
  * wellness 养生: +低脂高纤 -油炸 -辣
  */
 function scoreRecipeByGoals(recipe: Recipe, members: FamilyMember[]): number {
-  if (!members.length) return 0;
+  const active = members.filter(m => m.enabled !== false);
+  if (!active.length) return 0;
   // 聚合家庭目标: 有几个成员偏向某目标
   const counts: Record<string, number> = { cutting: 0, bulking: 0, wellness: 0 };
-  for (const m of members) {
+  for (const m of active) {
     const g = m.fitnessGoal || 'maintain';
     if (g !== 'maintain') counts[g] = (counts[g] || 0) + 1;
   }
-  const total = members.length;
+  const total = active.length;
 
   let score = 0;
 
@@ -137,6 +147,7 @@ function scoreRecipeByGoals(recipe: Recipe, members: FamilyMember[]): number {
 function getBlockedCategories(members: FamilyMember[]): Set<IngredientCategory> {
   const cats = new Set<IngredientCategory>();
   for (const m of members) {
+    if (m.enabled === false) continue;
     for (const r of m.dietaryRestrictions) {
       const rule = (healthRulesData.restrictions as Record<string, RestrictionRule>)[r];
       if (rule?.blockedCategories) rule.blockedCategories.forEach(c => cats.add(c as IngredientCategory));
@@ -148,6 +159,7 @@ function getBlockedCategories(members: FamilyMember[]): Set<IngredientCategory> 
 function getBlockedIngredientIds(members: FamilyMember[]): Set<string> {
   const ids = new Set<string>();
   for (const m of members) {
+    if (m.enabled === false) continue;
     for (const r of m.dietaryRestrictions) {
       const rule = (healthRulesData.restrictions as Record<string, RestrictionRule>)[r];
       if (rule?.blockedIngredients) rule.blockedIngredients.forEach(id => ids.add(id));
@@ -160,9 +172,10 @@ export function isRecipeSafe(recipe: Recipe, profile: UserProfile): boolean {
   const blockedTags = getBlockedTags(profile.members);
   const blockedCats = getBlockedCategories(profile.members);
   const blockedIds = getBlockedIngredientIds(profile.members);
-  // 长期排除食材：profile 全局 + 每个成员各自的排除
+  // 长期排除食材：profile 全局 + 每个启用的成员的排除
   const userExcluded = new Set<string>(profile.excludeIngredients || []);
   for (const m of profile.members) {
+    if (m.enabled === false) continue;
     for (const id of (m.excludeIngredients || [])) userExcluded.add(id);
   }
 
@@ -209,10 +222,25 @@ function isMeatDish(recipe: Recipe): boolean {
   });
 }
 
+/** 名字含主食关键词 → 算主食(覆盖 cookingMethod 错分类的情况) */
+function isStapleByName(recipe: Recipe): boolean {
+  const name = recipe.nameZh || '';
+  return /粥|饭|面|饼|包|馒头|饺|馄饨|抄手|米线|河粉|烩饭|盖饭|炒饭|拌面|凉面|寿司|寿司饭|意面|意大利面|乌冬|拉面|河粉|肠粉/.test(name);
+}
+
+/** 名字含饮品关键词 → 算饮品(不参与正餐推荐) */
+function isBeverage(recipe: Recipe): boolean {
+  const name = recipe.nameZh || '';
+  // 茶/咖啡/果汁/奶昔/果茶/奶茶/汽水/可乐, 但排除"汤"和"羹"
+  if (/汤|羹/.test(name)) return false;
+  return /茶$|奶茶|果汁|果汁$|柠檬水|咖啡|拿铁|卡布奇诺|摩卡|奶昔|思慕雪|smoothie|气泡水|苏打|可乐|柚子蜜|蜂蜜水|姜茶|柠水/.test(name);
+}
+
 /** 推断菜在一餐中的角色 */
 function inferRole(recipe: Recipe): DishRole {
+  if (isBeverage(recipe)) return 'drink';
+  if (recipe.cookingMethod === 'staple' || isStapleByName(recipe)) return 'staple';
   if (recipe.cookingMethod === 'soup') return 'soup';
-  if (recipe.cookingMethod === 'staple') return 'staple';
   if (recipe.cookingMethod === 'cold_dish') return 'cold';
   if (isMeatDish(recipe)) return 'main_meat';
   return 'main_veg';
@@ -226,7 +254,7 @@ function inferRole(recipe: Recipe): DishRole {
 export function getFilteredRecipes(profile: UserProfile, mealType?: MealType): Recipe[] {
   // 合并: 内置审核菜谱 + 用户自定义菜谱
   const customRecipes = profile.customRecipes || [];
-  const all = [...getReviewedRecipes(), ...customRecipes];
+  const all = [...getReviewedRecipes(), ...customRecipes].filter(r => !isBeverage(r)); // 饮品不参与规划
 
   const strict = all.filter(r => {
     if (mealType && !r.mealTypes.includes(mealType)) return false;
@@ -257,12 +285,32 @@ export function getFilteredRecipes(profile: UserProfile, mealType?: MealType): R
 }
 
 /**
+ * 季节性评分: 当前月份不在食材 season 列表中 → 扣分
+ * (食材有 season 字段才参与评分; 没有的当作全年可买)
+ * 假设南半球(NZ)
+ */
+function scoreSeasonality(recipe: Recipe): number {
+  const month = String(new Date().getMonth() + 1);  // 1-12
+  let outOfSeason = 0;
+  let inSeasonHits = 0;
+  for (const ri of recipe.ingredients) {
+    const ing = getIngredientById(ri.ingredientId);
+    if (!ing || !ing.season || ing.season.length === 0) continue;
+    if (ing.season.includes(month)) inSeasonHits++;
+    else outOfSeason++;
+  }
+  // 不当季食材每个 -1.5; 当季食材每个 +0.5 (轻量加权)
+  return inSeasonHits * 0.5 - outOfSeason * 1.5;
+}
+
+/**
  * 计算一份菜(按 familySize 份)的预估热量
  * recipe 的原始热量是按 recipe.servings 算的，这里缩放到 familySize 份
  */
-function calcRecipeCalForFamily(recipe: Recipe, familySize: number): number {
-  const total = calcRecipeNutrition(recipe).totalCalories;
-  return Math.round(total * (familySize / recipe.servings));
+function calcRecipeCalForFamily(recipe: Recipe, _familySize: number): number {
+  // 食材不缩放: 一道菜的总热量就是配方总热量(做整份)
+  // _familySize 参数保留为兼容 API, 实际不再使用
+  return Math.round(calcRecipeNutrition(recipe).totalCalories);
 }
 
 /**
@@ -271,17 +319,27 @@ function calcRecipeCalForFamily(recipe: Recipe, familySize: number): number {
  * 需求1核心: 选菜时据此限制超标
  */
 export function getMealCalorieBudget(profile: UserProfile, mealType: MealType): number {
-  // 1) 家庭每日总目标(基于 members.dailyCalorieTarget, 家庭大小 >成员数时按均值补齐)
-  const membersCount = Math.max(1, profile.members.length);
-  const avgTarget = profile.members.reduce((s, m) => s + m.dailyCalorieTarget, 0) / membersCount;
-  const householdDaily = profile.members.reduce((s, m) => s + m.dailyCalorieTarget, 0)
+  // 1) 家庭每日总目标(只算启用的成员)
+  const active = profile.members.filter(m => m.enabled !== false);
+  const members = active.length > 0 ? active : profile.members;
+  const membersCount = Math.max(1, members.length);
+  const avgTarget = members.reduce((s, m) => s + m.dailyCalorieTarget, 0) / membersCount;
+  let householdDaily = members.reduce((s, m) => s + m.dailyCalorieTarget, 0)
     + avgTarget * Math.max(0, profile.familySize - membersCount);
 
-  // 2) 按实际开启的餐次归一分配
+  // 2) 留出"用户不规划项"的热量缺口（用户会自己补充, 系统不规划这部分）
+  const familyMul = Math.max(1, profile.familySize);
+  if ((profile.stapleMode || 'off') === 'off') householdDaily -= 400 * familyMul;  // 主食缺口 ~400 kcal/人/天
+  if (!profile.includeFruit) householdDaily -= 150 * familyMul;                      // 水果缺口 ~150 kcal/人/天
+  if (!profile.includeSoup) householdDaily -= 100 * familyMul;                       // 汤缺口 ~100 kcal/人/天
+
+  householdDaily = Math.max(800 * familyMul, householdDaily);  // 不能扣到不合理低
+
+  // 3) 按实际开启的餐次归一分配 (午餐 > 晚餐 > 早餐)
   const defaultWeights: Record<MealType, number> = { breakfast: 0.25, lunch: 0.40, dinner: 0.35 };
-  const active = profile.mealsPerDay;
-  if (!active.includes(mealType)) return 0;
-  const totalWeight = active.reduce((s, m) => s + (defaultWeights[m] || 0.33), 0) || 1;
+  const activeMeals = profile.mealsPerDay;
+  if (!activeMeals.includes(mealType)) return 0;
+  const totalWeight = activeMeals.reduce((s, m) => s + (defaultWeights[m] || 0.33), 0) || 1;
   const ratio = (defaultWeights[mealType] || 0.33) / totalWeight;
   return Math.round(householdDaily * ratio);
 }
@@ -339,6 +397,9 @@ function scoreRecipe(
   else if (servingDiff === 1) score += 1;
   else if (servingDiff === 2) score -= 2;
   else score -= 5;
+
+  // 季节性食材评分（不当季 → 扣分）
+  score += scoreSeasonality(recipe);
 
   // 热量预算控制 (需求1)
   // remainingCal = 本餐剩余可用热量, dishCal = 本菜预计热量
@@ -716,6 +777,9 @@ function smartPick(
     else if (servingDiff === 1) score += 1;
     else if (servingDiff === 2) score -= 2;
     else score -= 5;
+
+    // 季节性
+    score += scoreSeasonality(r);
 
     // 热量预算 (需求1)
     if (remainingCal !== undefined && remainingCal > 0) {

@@ -141,7 +141,7 @@ export type StaplePreference =
   | 'any';      // 不限
 
 // 菜在一餐中的角色
-export type DishRole = 'main_meat' | 'main_veg' | 'soup' | 'staple' | 'side' | 'cold';
+export type DishRole = 'main_meat' | 'main_veg' | 'soup' | 'staple' | 'side' | 'cold' | 'drink';
 
 export interface MealRecipe {
   recipeId: string;
@@ -246,6 +246,7 @@ export interface FamilyMember {
   dietaryRestrictions: DietaryRestriction[];
   excludeIngredients?: string[];  // 该成员长期排除的食材 ID（饮食限制补充）
   dailyCalorieTarget: number;
+  enabled?: boolean;              // 是否参与规划(false = 临时跳过, 不算人数/不算限制/不算热量)
 }
 
 // 每餐菜品配置

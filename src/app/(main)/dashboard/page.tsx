@@ -4,7 +4,7 @@ import { useAppStore } from '@/lib/store';
 import { useRouter } from 'next/navigation';
 import { useEffect, useState } from 'react';
 import { ShoppingCart, ChevronRight, UtensilsCrossed } from 'lucide-react';
-import { getRecipe } from '@/lib/nutrition/calculator';
+import { getRecipe, calcRecipeNutrition } from '@/lib/nutrition/calculator';
 import { ConfigSummary } from '@/components/ui/config-summary';
 
 const MEAL_LABELS: Record<string, string> = { breakfast: '早餐', lunch: '午餐', dinner: '晚餐' };
@@ -91,17 +91,30 @@ export default function DashboardPage() {
             </div>
           )}
 
-          {/* 每位成员热量建议 - 移到今日菜谱之后 */}
-          {profile.calorieEnabled !== false && weeklyPlan.memberAdvice && weeklyPlan.memberAdvice.length > 0 && (
+          {/* 每位成员热量建议 - 以今日数据为基础(需求5) */}
+          {profile.calorieEnabled !== false && weeklyPlan.memberAdvice && weeklyPlan.memberAdvice.length > 0 && (() => {
+            // 重新计算"今日"菜品总热量(替换 adv.dishCalories 的周平均)
+            let todayDishTotal = 0;
+            for (const slot of todaySlots) {
+              for (const mr of (slot.recipes || [])) {
+                const r = getRecipe(mr.recipeId);
+                if (r) todayDishTotal += calcRecipeNutrition(r).totalCalories;
+              }
+            }
+            const totalDailyTarget = weeklyPlan.memberAdvice.reduce((s, a) => s + a.dailyTarget, 0) || 1;
+            return (
             <div className="space-y-2">
-              <h2 className="text-sm font-semibold">热量建议</h2>
+              <h2 className="text-sm font-semibold">今日热量建议（{['周日','周一','周二','周三','周四','周五','周六'][new Date().getDay()]}）</h2>
               {weeklyPlan.memberAdvice.map(adv => {
+                // 今日该成员的菜品热量 = 家庭今日菜品 × 该成员热量目标占比
+                const ratio = adv.dailyTarget / totalDailyTarget;
+                const todayDishCal = Math.round(todayDishTotal * ratio);
                 const advStaple = (profile.stapleMode || 'off') === 'off' ? adv.stapleCalories : 0;
                 const advFruit = !profile.includeFruit ? adv.fruitCalories : 0;
                 const advSoup = !profile.includeSoup ? 40 : 0;
                 const advSkipped = (adv.skippedMeals || []).reduce((s, m) => s + m.suggestedCalories, 0);
-                const totalWithAdvice = adv.dishCalories + advStaple + advFruit + advSoup + advSkipped;
-                const pctDish = Math.round(adv.dishCalories / adv.dailyTarget * 100);
+                const totalWithAdvice = todayDishCal + advStaple + advFruit + advSoup + advSkipped;
+                const pctDish = Math.round(todayDishCal / adv.dailyTarget * 100);
                 const pctSkipped = Math.round(advSkipped / adv.dailyTarget * 100);
                 const pctStaple = Math.round(advStaple / adv.dailyTarget * 100);
                 const pctFruit = Math.round(advFruit / adv.dailyTarget * 100);
@@ -122,7 +135,7 @@ export default function DashboardPage() {
                     {pctSoup > 0 && <div className="bg-blue-300 h-full" style={{ width: `${pctSoup}%` }} />}
                   </div>
                   <div className="flex flex-wrap gap-x-3 text-[10px] text-muted mb-1">
-                    <span className="flex items-center gap-1"><span className="w-2 h-2 rounded-full bg-accent inline-block" />菜品 {adv.dishCalories}</span>
+                    <span className="flex items-center gap-1"><span className="w-2 h-2 rounded-full bg-accent inline-block" />菜品 {todayDishCal}</span>
                     {advSkipped > 0 && <span className="flex items-center gap-1"><span className="w-2 h-2 rounded-full bg-purple-300 inline-block" />自理餐 {advSkipped}</span>}
                     {advStaple > 0 && <span className="flex items-center gap-1"><span className="w-2 h-2 rounded-full bg-yellow-400 inline-block" />主食 {advStaple}</span>}
                     {advFruit > 0 && <span className="flex items-center gap-1"><span className="w-2 h-2 rounded-full bg-green-400 inline-block" />水果 {advFruit}</span>}
@@ -142,7 +155,8 @@ export default function DashboardPage() {
                 );
               })}
             </div>
-          )}
+            );
+          })()}
         </>
       )}
     </div>

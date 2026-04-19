@@ -1,9 +1,10 @@
 'use client';
 
-import { useParams, useRouter } from 'next/navigation';
+import { useParams, useRouter, useSearchParams } from 'next/navigation';
 import { useState, useEffect, useCallback } from 'react';
 import Link from 'next/link';
-import { ArrowLeft, Flame, Clock, DollarSign, ShoppingCart, Check, ChefHat, ChevronLeft, ChevronRight, X, Share2, Copy, CheckCheck } from 'lucide-react';
+import { ArrowLeft, Flame, Clock, DollarSign, ShoppingCart, Check, ChefHat, ChevronLeft, ChevronRight, X, Share2, Copy, CheckCheck, CalendarPlus } from 'lucide-react';
+import { AddToPlanSheet } from '@/components/recipe/add-to-plan-sheet';
 import { getRecipe, calcRecipeNutrition, calcRecipeCost } from '@/lib/nutrition/calculator';
 import { getIngredient } from '@/lib/data/recipe-repository';
 import { useAppStore, getPreferenceScore } from '@/lib/store';
@@ -18,9 +19,16 @@ const METHOD_LABELS: Record<CookingMethod, string> = {
 export default function RecipeDetailPage() {
   const params = useParams();
   const router = useRouter();
+  const searchParams = useSearchParams();
   const { shoppingList, addRecipeToShoppingList, removeRecipeFromShoppingList, recordAction, profile } = useAppStore();
   const [cookingMode, setCookingMode] = useState(false);
   const [showShare, setShowShare] = useState(false);
+  const [showAddToPlan, setShowAddToPlan] = useState(false);
+
+  // 支持 ?cook=1 自动开烹饪模式（菜谱库点"开始烹饪"跳转）
+  useEffect(() => {
+    if (searchParams.get('cook') === '1') setCookingMode(true);
+  }, [searchParams]);
 
   const recipeId = decodeURIComponent(params.id as string);
   // 先查用户自定义菜谱，再查内置菜谱
@@ -112,15 +120,21 @@ export default function RecipeDetailPage() {
         </div>
       </div>
 
+      {/* 主操作: 加入规划 + 开始烹饪 */}
+      <div className="grid grid-cols-2 gap-2">
+        <button onClick={() => setShowAddToPlan(true)}
+          className="flex items-center justify-center gap-1.5 py-2.5 border border-primary text-primary rounded-lg text-sm hover:bg-primary/5 transition">
+          <CalendarPlus className="w-4 h-4" /> 加入规划
+        </button>
+        <button onClick={() => setCookingMode(true)}
+          className="flex items-center justify-center gap-1.5 py-2.5 bg-primary text-white rounded-lg text-sm hover:bg-primary/90 transition">
+          <ChefHat className="w-4 h-4" /> 开始烹饪
+        </button>
+      </div>
+
       {/* 步骤 */}
       <div className="bg-card border border-border rounded-lg p-4">
-        <div className="flex items-center justify-between mb-3">
-          <h3 className="font-semibold text-sm">做法步骤</h3>
-          <button onClick={() => setCookingMode(true)}
-            className="flex items-center gap-1 text-xs bg-primary text-white px-3 py-1.5 rounded-full hover:bg-primary/90 transition">
-            <ChefHat className="w-3.5 h-3.5" /> 开始烹饪
-          </button>
-        </div>
+        <h3 className="font-semibold text-sm mb-3">做法步骤</h3>
         <ol className="space-y-2">
           {recipe.steps.map((step, i) => (
             <li key={i} className="flex gap-3 text-sm">
@@ -170,6 +184,10 @@ export default function RecipeDetailPage() {
           perServing={perServing}
           onClose={() => setShowShare(false)}
         />
+      )}
+
+      {showAddToPlan && (
+        <AddToPlanSheet recipe={recipe} onClose={() => setShowAddToPlan(false)} />
       )}
     </div>
   );

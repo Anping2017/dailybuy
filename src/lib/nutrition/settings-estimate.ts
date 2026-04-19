@@ -5,14 +5,14 @@
  */
 import type { UserProfile, MealType } from '@/types';
 
-// 经验值: 一道菜的平均热量(按 familySize 份)
-// 基础假设: 2 人份荤菜 ~ 700 kcal, 素菜 ~ 350 kcal, 主食 ~ 400 kcal, 汤 ~ 200 kcal, 凉菜 ~ 200 kcal
+// 经验值: 一道菜的总热量(食材不缩放, 按原配方做整份)
+// 基础假设: 荤菜 ~ 700 kcal, 素菜 ~ 350 kcal, 主食 ~ 400 kcal, 汤 ~ 200 kcal, 凉菜 ~ 200 kcal
 const AVG_CAL_PER_DISH = {
-  meat: 350,     // 每人份
-  veg: 175,
-  staple: 200,
-  soup: 100,
-  cold: 100,
+  meat: 700,
+  veg: 350,
+  staple: 400,
+  soup: 200,
+  cold: 200,
 };
 
 /**
@@ -67,11 +67,12 @@ export function estimateSettingsCalories(profile: UserProfile): {
     if (stapleCount > 0 && (profile.stapleMode || 'off') === 'off') stapleCount = 0;
     if (coldCount > 0 && !profile.includeColdDish) coldCount = 0;
 
-    const cal = (meatCount * AVG_CAL_PER_DISH.meat
+    // 不再乘 familySize: 食材不缩放, 每道菜的热量就是配方总和
+    const cal = meatCount * AVG_CAL_PER_DISH.meat
       + vegCount * AVG_CAL_PER_DISH.veg
       + soupCount * AVG_CAL_PER_DISH.soup
       + stapleCount * AVG_CAL_PER_DISH.staple
-      + coldCount * AVG_CAL_PER_DISH.cold) * familySize;
+      + coldCount * AVG_CAL_PER_DISH.cold;
     return cal;
   };
 

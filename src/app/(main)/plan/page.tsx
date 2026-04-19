@@ -19,12 +19,13 @@ const DAY_LABELS: Record<string, string> = {
 const MEAL_LABELS: Record<string, string> = { breakfast: '早餐', lunch: '午餐', dinner: '晚餐' };
 const MEAL_ORDER: MealType[] = ['breakfast', 'lunch', 'dinner'];
 const ROLE_LABELS: Record<DishRole, string> = {
-  main_meat: '荤菜', main_veg: '素菜', soup: '汤', staple: '主食', side: '配菜', cold: '凉菜',
+  main_meat: '荤菜', main_veg: '素菜', soup: '汤', staple: '主食', side: '配菜', cold: '凉菜', drink: '饮品',
 };
 const ROLE_COLORS: Record<DishRole, string> = {
   main_meat: 'bg-red-100 text-red-700', main_veg: 'bg-green-100 text-green-700',
   soup: 'bg-blue-100 text-blue-700', staple: 'bg-yellow-100 text-yellow-700',
   side: 'bg-gray-100 text-gray-600', cold: 'bg-cyan-100 text-cyan-700',
+  drink: 'bg-purple-100 text-purple-700',
 };
 
 export default function PlanPage() {
@@ -130,7 +131,8 @@ export default function PlanPage() {
   const daySlots = weeklyPlan.slots.filter(s => s.day === selectedDay);
 
   // 今日合计 (家庭总 + 人均) - 跨所有餐次
-  // 热量按"实际吃的比例" min(slot, recipe)/recipe; 成本按"做整份"(不缩放)
+  // 食材不缩放: 按原配方做整份, 总热量 = 配方总热量
+  // 人均 = 总热量 / familySize (家里几个人分这道菜)
   const familySize = Math.max(1, profile.familySize);
   let dayTotalCal = 0;
   let dayTotalCost = 0;
@@ -139,8 +141,7 @@ export default function PlanPage() {
       const r = getRecipe(mr.recipeId);
       if (r) {
         const n = calcRecipeNutrition(r);
-        const eaten = Math.min(slot.servings, r.servings) / r.servings;
-        dayTotalCal += Math.round(n.totalCalories * eaten);
+        dayTotalCal += Math.round(n.totalCalories);
         dayTotalCost += calcRecipeCost(r);
       }
     }
@@ -322,15 +323,15 @@ export default function PlanPage() {
             );
           }
 
-          // 计算这一餐的总热量 (按实际吃的比例) + 成本(按整份做)
+          // 餐次总热量 = 各菜原配方总热量之和 (做整份)
+          // 人均 = 总和 / familySize
           let mealCalories = 0;
           let mealCost = 0;
           for (const mr of (slot.recipes || [])) {
             const r = getRecipe(mr.recipeId);
             if (r) {
               const n = calcRecipeNutrition(r);
-              const eaten = Math.min(slot.servings, r.servings) / r.servings;
-              mealCalories += Math.round(n.totalCalories * eaten);
+              mealCalories += Math.round(n.totalCalories);
               mealCost += calcRecipeCost(r);
             }
           }
@@ -364,11 +365,11 @@ export default function PlanPage() {
                   const recipe = getRecipe(mr.recipeId);
                   if (!recipe) return null;
                   const nutr = calcRecipeNutrition(recipe);
-                  // 实际吃的份数 = min(slot, recipe) — 不超过菜的总量
-                  const eatenRatio = Math.min(slot.servings, recipe.servings) / recipe.servings;
-                  const dishTotalForFamily = Math.round(nutr.totalCalories * eatenRatio);
-                  const perPerson = Math.round(dishTotalForFamily / familySize);
-                  const servingMismatch = recipe.servings !== slot.servings;
+                  // 食材不缩放: 这道菜做出来就是配方总热量
+                  // 人均 = 总 / familySize (家里几个人分这道菜)
+                  const dishTotal = Math.round(nutr.totalCalories);
+                  const perPerson = Math.round(dishTotal / familySize);
+                  const servingMismatch = recipe.servings !== familySize;
                   const isInList = shoppingList?.items.some(i => i.fromRecipes.includes(recipe.nameZh));
 
                   return (
@@ -394,7 +395,9 @@ export default function PlanPage() {
                         </div>
                         <div className="flex items-center gap-2 flex-shrink-0">
                           {profile.calorieEnabled !== false && (
-                            <span className="text-xs text-accent font-medium" title={`${familySize}人共 ${dishTotalForFamily} kcal`}>{perPerson} kcal/人</span>
+                            <span className="text-xs text-accent font-medium" title={`${familySize} 人分 = 人均 ${perPerson}`}>
+                              共 {dishTotal} kcal · 人均 {perPerson}
+                            </span>
                           )}
                           <button
                             onClick={() => setSwapTarget({ recipeId: mr.recipeId, mealType, role: mr.role, day: selectedDay })}
@@ -423,10 +426,10 @@ export default function PlanPage() {
                       {/* 份数不匹配提示 */}
                       {servingMismatch && (
                         <p className="text-[10px] text-amber-600 mt-1">
-                          📌 原配方 {recipe.servings} 人份，规划 {slot.servings} 人吃
-                          {recipe.servings > slot.servings
-                            ? `（热量按吃 ${slot.servings}/${recipe.servings} 算，会有剩余）`
-                            : `（食材不够 ${slot.servings} 人，建议加量或换菜）`}
+                          📌 菜按 {recipe.servings} 人份做，家里 {familySize} 人分
+                          {recipe.servings > familySize
+                            ? `（菜偏多，吃不完会剩或人均量大）`
+                            : `（菜偏少，人均量小可能吃不饱）`}
                         </p>
                       )}
 

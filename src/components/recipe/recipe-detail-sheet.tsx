@@ -4,7 +4,7 @@ import { useAppStore } from '@/lib/store';
 import { getIngredient } from '@/lib/data/recipe-repository';
 import { calcRecipeNutrition } from '@/lib/nutrition/calculator';
 // useAppStore for calorieEnabled flag
-import { Star, X, CalendarPlus, Edit, Trash2, Clock, Users } from 'lucide-react';
+import { Star, X, CalendarPlus, Edit, Trash2, Clock, Users, ChefHat } from 'lucide-react';
 import type { Recipe } from '@/types';
 import Link from 'next/link';
 
@@ -121,29 +121,41 @@ export function RecipeDetailSheet({ recipe, isFavorite, onClose, onToggleFav, on
         </div>
 
         {/* 底部操作 */}
-        <div className="flex gap-2 p-3 border-t border-border flex-shrink-0 bg-card">
-          <Link
-            href={`/recipe/${recipe.id}`}
-            className="flex-1 py-2.5 border border-border rounded-lg text-sm text-center hover:border-primary transition"
-          >
-            完整页面
-          </Link>
-          {onEdit && (
-            <button onClick={onEdit} className="px-3 py-2.5 border border-border rounded-lg hover:border-primary transition">
-              <Edit className="w-4 h-4" />
+        <div className="border-t border-border flex-shrink-0 bg-card">
+          {/* 第一行: 主操作 */}
+          <div className="flex gap-2 p-3 pb-1.5">
+            <Link
+              href={`/recipe/${recipe.id}?cook=1`}
+              className="flex-1 flex items-center justify-center gap-1.5 py-2.5 border border-primary text-primary rounded-lg text-sm hover:bg-primary/5 transition"
+            >
+              <ChefHat className="w-4 h-4" /> 开始烹饪
+            </Link>
+            <button
+              onClick={onAddToPlan}
+              className="flex-1 flex items-center justify-center gap-1.5 py-2.5 bg-primary text-white rounded-lg text-sm hover:bg-primary/90 transition"
+            >
+              <CalendarPlus className="w-4 h-4" /> 加入规划
             </button>
-          )}
-          {recipe.isCustom && (
-            <button onClick={handleDelete} className="px-3 py-2.5 border border-border rounded-lg text-muted hover:text-danger hover:border-danger transition">
-              <Trash2 className="w-4 h-4" />
-            </button>
-          )}
-          <button
-            onClick={onAddToPlan}
-            className="flex-1 flex items-center justify-center gap-1.5 py-2.5 bg-primary text-white rounded-lg text-sm hover:bg-primary/90 transition"
-          >
-            <CalendarPlus className="w-4 h-4" /> 加入规划
-          </button>
+          </div>
+          {/* 第二行: 辅助操作 */}
+          <div className="flex gap-2 px-3 pb-3">
+            <Link
+              href={`/recipe/${recipe.id}`}
+              className="flex-1 py-2 border border-border rounded-lg text-xs text-center text-muted hover:border-primary transition"
+            >
+              完整页面
+            </Link>
+            {onEdit && (
+              <button onClick={onEdit} className="px-3 py-2 border border-border rounded-lg text-muted hover:border-primary transition">
+                <Edit className="w-3.5 h-3.5" />
+              </button>
+            )}
+            {recipe.isCustom && (
+              <button onClick={handleDelete} className="px-3 py-2 border border-border rounded-lg text-muted hover:text-danger hover:border-danger transition">
+                <Trash2 className="w-3.5 h-3.5" />
+              </button>
+            )}
+          </div>
         </div>
       </div>
     </div>
