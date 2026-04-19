@@ -759,14 +759,15 @@ const STAPLE_KEYWORDS: Record<string, string[]> = {
  * - 水果: 不在此处推荐，由 generateWeeklyPlan 单独生成每日水果方案
  */
 /**
- * 自由模式: 可选品类(汤/凉菜/主食) 按 "人数/2 ~ 人数" 原则随机数量
- * 实际上限设 2 (一餐 3 个汤没意义), 主食固定 1 (多规格由 staple 变体处理)
+ * 自由模式: 可选品类(汤/凉菜) 按人数随机数量
+ * - 1-2 人: 固定 1 道 (避免菜太多)
+ * - 3-4 人: 随机 1-2 道
+ * - 5+ 人: 2 道
  */
-function randomOptionalCount(familySize: number, cap = 2): number {
-  const min = Math.max(1, Math.floor(familySize / 2));
-  const max = Math.min(cap, Math.max(min, familySize));
-  if (max <= min) return min;
-  return min + Math.floor(Math.random() * (max - min + 1));
+function randomOptionalCount(familySize: number): number {
+  if (familySize <= 2) return 1;
+  if (familySize <= 4) return Math.random() < 0.5 ? 1 : 2;
+  return 2;
 }
 
 /**
@@ -801,9 +802,9 @@ function getMealPlan(profile: UserProfile, mealType: MealType) {
   return {
     meatCount: hot.meatCount,
     vegCount: hot.vegCount,
-    soupCount: (profile.includeSoup && isLunchOrDinner) ? randomOptionalCount(fs, 2) : 0,
+    soupCount: (profile.includeSoup && isLunchOrDinner) ? randomOptionalCount(fs) : 0,
     stapleCount: ((profile.stapleMode || 'off') !== 'off' && (mealType === 'breakfast' || isLunchOrDinner)) ? 1 : 0,
-    coldDishCount: (profile.includeColdDish && isLunchOrDinner) ? randomOptionalCount(fs, 2) : 0,
+    coldDishCount: (profile.includeColdDish && isLunchOrDinner) ? randomOptionalCount(fs) : 0,
   };
 }
 
@@ -923,30 +924,42 @@ function composeMeal(
   // 跟踪因超标被减的菜数
   let reducedDishes = 0;
 
-  // 卡路里启用时: 循环缺口补菜(至 85% 预算) + 循环超量移除(至 1.15× 预算)
-  // 目标: 让实际推荐的热量 ≈ 预算(±15%), 避免和日目标差距过大
+  // 卡路里启用时: 缺口补菜 + 超量移除, 目标接近预算 ±15%
+  // 补菜原则:
+  //   1. 不补用户未开启的品类(凉菜/汤/主食不开就真不加)
+  //   2. 优先选"卡路里最接近缺口"的菜, 避免补太多(如两个人推荐 6 道的情况)
+  //   3. 最多补 1-2 次(视家庭规模), 不死循环补小菜
   if (profile.calorieEnabled !== false && mealBudget > 0) {
-    // 1) 循环缺口补菜: 直到 accumulated ≥ 0.85×预算 或无可补菜
     const TARGET_LO = mealBudget * 0.85;
     const TARGET_HI = mealBudget * 1.15;
-    let fillSafety = 5;
-    while (accumulatedCal < TARGET_LO && fillSafety > 0) {
-      fillSafety--;
-      const fillPool = allCandidates.filter(r => !usedIds.has(r.id));
-      if (fillPool.length === 0) break;
-      // 根据缺口大小选: 缺口大选热菜, 缺口小选小菜
+    // 家庭小的最多补 1 道, 大家庭最多 2 道
+    const MAX_FILLS = profile.familySize <= 2 ? 1 : 2;
+    let fillIters = 0;
+    while (accumulatedCal < TARGET_LO && fillIters < MAX_FILLS) {
+      fillIters++;
       const deficit = mealBudget - accumulatedCal;
-      let preferRole: DishRole[];
-      if (deficit > mealBudget * 0.3) {
-        preferRole = ['main_meat', 'main_veg'];  // 补大菜
-      } else if (deficit > mealBudget * 0.15) {
-        preferRole = ['main_veg', 'cold', 'soup'];  // 补中菜
-      } else {
-        preferRole = ['cold', 'soup', 'main_veg'];  // 补小菜
-      }
-      const preferredPool = fillPool.filter(r => preferRole.includes(inferRole(r)));
-      const pool = preferredPool.length > 0 ? preferredPool : fillPool;
-      const pick = pickBest(pool, usedIds, effectiveProfile, ownedIngredients, getPreference, getFeedback, deficit);
+      // 过滤: 排除已用, 排除用户未开启的品类 (凉菜/汤/主食)
+      const fillPool = allCandidates.filter(r => {
+        if (usedIds.has(r.id)) return false;
+        const role = inferRole(r);
+        if (role === 'cold' && !profile.includeColdDish) return false;
+        if (role === 'soup' && !profile.includeSoup) return false;
+        if (role === 'staple' && (profile.stapleMode || 'off') === 'off') return false;
+        return true;
+      });
+      if (fillPool.length === 0) break;
+
+      // 按"卡路里接近缺口"挑 top 候选, 再从中按分数选
+      // 排除明显过量 (> 1.3× deficit) 的菜, 避免补一道就爆掉
+      const candidates = fillPool
+        .map(r => ({ r, cal: calcRecipeCalForFamily(r, profile.familySize) }))
+        .filter(x => x.cal > 0 && x.cal <= deficit * 1.3)
+        .sort((a, b) => Math.abs(a.cal - deficit) - Math.abs(b.cal - deficit))
+        .slice(0, 5);  // 取前 5 个最接近的
+      if (candidates.length === 0) break;
+
+      // 在这 5 个候选中, 按综合分数(口味/偏好/季节等) 选最佳
+      const pick = pickBest(candidates.map(x => x.r), usedIds, effectiveProfile, ownedIngredients, getPreference, getFeedback, deficit);
       if (!pick) break;
       result.push({ recipeId: pick.id, role: inferRole(pick) });
       usedIds.add(pick.id);
@@ -1245,23 +1258,34 @@ function generateSmartPlan(
         if (r) { recipes.push({ recipeId: r.id, role: isMeatDish(r) ? 'main_meat' : 'main_veg' }); usedIds.add(r.id); track(r); }
       }
 
-      // 热量预算匹配: 循环补菜到 85%, 移除超过 115% 部分 (与 composeMeal 一致)
+      // 热量预算匹配 (与 composeMeal 一致):
+      //  1. 不补未开启的品类
+      //  2. 选"卡路里最接近缺口"的菜, 避免补太多
+      //  3. 最多补 1-2 次 (按家庭规模)
       if (profile.calorieEnabled !== false && mealBudget > 0) {
         const TARGET_LO = mealBudget * 0.85;
         const TARGET_HI = mealBudget * 1.15;
-        let fillSafety = 5;
-        while (accumulatedCal < TARGET_LO && fillSafety > 0) {
-          fillSafety--;
-          const fillPool = allCandidates.filter(r => !usedIds.has(r.id));
-          if (fillPool.length === 0) break;
+        const MAX_FILLS = profile.familySize <= 2 ? 1 : 2;
+        let fillIters = 0;
+        while (accumulatedCal < TARGET_LO && fillIters < MAX_FILLS) {
+          fillIters++;
           const deficit = mealBudget - accumulatedCal;
-          let preferRole: DishRole[];
-          if (deficit > mealBudget * 0.3) preferRole = ['main_meat', 'main_veg'];
-          else if (deficit > mealBudget * 0.15) preferRole = ['main_veg', 'cold', 'soup'];
-          else preferRole = ['cold', 'soup', 'main_veg'];
-          const preferredPool = fillPool.filter(r => preferRole.includes(inferRole(r)));
-          const pool = preferredPool.length > 0 ? preferredPool : fillPool;
-          const pick = smartPick(pool, usedIds, recentProteins, recentVegs, recentMethods, effectiveProfile, ownedIngredients, getPreference, getFeedback, deficit);
+          const fillPool = allCandidates.filter(r => {
+            if (usedIds.has(r.id)) return false;
+            const role = inferRole(r);
+            if (role === 'cold' && !profile.includeColdDish) return false;
+            if (role === 'soup' && !profile.includeSoup) return false;
+            if (role === 'staple' && (profile.stapleMode || 'off') === 'off') return false;
+            return true;
+          });
+          if (fillPool.length === 0) break;
+          const candidates = fillPool
+            .map(r => ({ r, cal: calcRecipeCalForFamily(r, effectiveProfile.familySize) }))
+            .filter(x => x.cal > 0 && x.cal <= deficit * 1.3)
+            .sort((a, b) => Math.abs(a.cal - deficit) - Math.abs(b.cal - deficit))
+            .slice(0, 5);
+          if (candidates.length === 0) break;
+          const pick = smartPick(candidates.map(x => x.r), usedIds, recentProteins, recentVegs, recentMethods, effectiveProfile, ownedIngredients, getPreference, getFeedback, deficit);
           if (!pick) break;
           recipes.push({ recipeId: pick.id, role: inferRole(pick) });
           usedIds.add(pick.id);
