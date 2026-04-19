@@ -74,17 +74,21 @@ export default function RecipeDetailPage() {
       {/* 营养概览 - calorieEnabled=false 时整块隐藏 */}
       {profile.calorieEnabled !== false && (
         <div className="bg-card border border-border rounded-lg p-4">
-          <div className="grid grid-cols-3 gap-3 text-center mb-3">
+          <div className="grid grid-cols-4 gap-2 text-center mb-3">
             <div>
-              <p className="text-2xl font-bold text-accent">{perServing}</p>
+              <p className="text-xl font-bold text-accent">{Math.round(nutr.totalCalories)}</p>
+              <p className="text-xs text-muted">kcal/总</p>
+            </div>
+            <div>
+              <p className="text-xl font-bold text-accent">{perServing}</p>
               <p className="text-xs text-muted">kcal/人</p>
             </div>
             <div>
-              <p className="text-2xl font-bold text-primary">${cost.toFixed(2)}</p>
+              <p className="text-xl font-bold text-primary">${cost.toFixed(2)}</p>
               <p className="text-xs text-muted">预估成本</p>
             </div>
             <div>
-              <p className="text-2xl font-bold">{recipe.prepTime + recipe.cookTime}</p>
+              <p className="text-xl font-bold">{recipe.prepTime + recipe.cookTime}</p>
               <p className="text-xs text-muted">分钟</p>
             </div>
           </div>
@@ -100,6 +104,7 @@ export default function RecipeDetailPage() {
             <span>脂肪 {nutr.fat.toFixed(1)}g ({fP}%)</span>
             <span>碳水 {nutr.carbs.toFixed(1)}g ({cP}%)</span>
           </div>
+          <p className="text-[10px] text-muted mt-1.5">原配方 {recipe.servings} 人份共 {Math.round(nutr.totalCalories)} kcal · 每人 {perServing} kcal</p>
         </div>
       )}
 
