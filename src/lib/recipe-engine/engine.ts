@@ -377,6 +377,13 @@ function scoreRecipe(
     score += getFeedback(recipe);
   }
 
+  // 久未推荐加权: 让常被推荐的菜分数衰减, 让冷门菜有机会
+  // (用 recipePreferences 中的 lastInteraction; 如果没有记录则视为新菜 +2)
+  if (getPreference) {
+    const score0 = getPreference(recipe.id);
+    if (score0 === 0) score += 2;  // 从没见过 → 鼓励
+  }
+
   // 营养亮点加权(根据家庭健康状况偏好)
   const preferred = getPreferredHighlights(profile.members);
   score += scoreRecipeHighlights(recipe, preferred);
@@ -419,13 +426,13 @@ function scoreRecipe(
     score -= Math.min(25, dishCal / 50);
   }
 
-  // 加随机扰动 (0-1) 保证多样性
-  score += Math.random();
+  // 加随机扰动 (0-3) 保证多样性 — 加大扰动避免"反复推那几个"
+  score += Math.random() * 3;
 
   return score;
 }
 
-/** 从候选池中选一道(评分最高的前N个中随机) */
+/** 从候选池中选一道(评分最高的前N个中随机, 大幅增加多样性) */
 function pickBest(
   pool: Recipe[],
   usedIds: Set<string>,
@@ -443,9 +450,9 @@ function pickBest(
     .map(r => ({ recipe: r, score: scoreRecipe(r, profile, ownedIngredients, getPreference, getFeedback, remainingCal) }))
     .sort((a, b) => b.score - a.score);
 
-  // 热量控制: 如果有预算且剩余很少，只从 top 15% 选；否则 top 30%
+  // 热量控制: 如果有预算且剩余很少，只从 top 25% 选；否则 top 50% (扩大池子保证多样性)
   const tight = remainingCal !== undefined && remainingCal > 0 && remainingCal < 400;
-  const topPct = tight ? 0.15 : 0.3;
+  const topPct = tight ? 0.25 : 0.5;
   const topCount = Math.max(1, Math.ceil(scored.length * topPct));
   return scored[Math.floor(Math.random() * topCount)].recipe;
 }
@@ -754,6 +761,7 @@ function smartPick(
     // 用户历史偏好
     if (getPreference) {
       score += getPreference(r.id) * 0.5;
+      if (getPreference(r.id) === 0) score += 2;  // 从没推荐过的菜 → 鼓励
     }
 
     // 细粒度反馈调整（不喜欢食材/口味/不方便/太复杂）
@@ -796,14 +804,14 @@ function smartPick(
       score -= Math.min(25, dishCal / 50);
     }
 
-    // 随机扰动
-    score += Math.random() * 2;
+    // 随机扰动 — 加大保证多样性
+    score += Math.random() * 4;
 
     return { recipe: r, score };
   }).sort((a, b) => b.score - a.score);
 
-  // 从前20%中随机选，保证质量的同时增加多样性
-  const topCount = Math.max(1, Math.ceil(scored.length * 0.2));
+  // 从前35%中随机选(加大池子保证多样性, 之前 20% 太窄)
+  const topCount = Math.max(1, Math.ceil(scored.length * 0.35));
   return scored[Math.floor(Math.random() * topCount)].recipe;
 }
 
