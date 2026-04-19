@@ -354,6 +354,16 @@ export interface WeeklyPlan {
   aiAnalysisId?: string;            // 关联 pending_analysis_plans.id（AI辅助模式）
 }
 
+/** 保存的规划方案 */
+export interface SavedPlan {
+  id: string;
+  name: string;
+  createdAt: string;
+  weeklyPlan: WeeklyPlan;
+  shoppingList?: ShoppingList;
+  note?: string;
+}
+
 // --- 采购清单 ---
 export interface ShoppingItem {
   ingredientId: string;

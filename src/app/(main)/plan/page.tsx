@@ -3,7 +3,7 @@
 import { useAppStore, getPreferenceScore, getFeedbackAdjustment } from '@/lib/store';
 import { useRouter } from 'next/navigation';
 import { useEffect, useState } from 'react';
-import { RefreshCw, X, Flame, ShoppingCart, Check, Sparkles, Share2, Copy, CheckCheck, CalendarDays, List, ChevronRight, Package, ChevronDown } from 'lucide-react';
+import { RefreshCw, X, Flame, ShoppingCart, Check, Sparkles, Share2, Copy, CheckCheck, CalendarDays, List, ChevronRight, Package, ChevronDown, Save, Archive, Trash2 } from 'lucide-react';
 import { getRecipe, calcRecipeNutrition, calcRecipeCost } from '@/lib/nutrition/calculator';
 import { getFilteredRecipes, generateWeeklyPlan, generateShoppingList } from '@/lib/recipe-engine/engine';
 import { getIngredient, getAllIngredients } from '@/lib/data/recipe-repository';
@@ -30,7 +30,7 @@ const ROLE_COLORS: Record<DishRole, string> = {
 
 export default function PlanPage() {
   const router = useRouter();
-  const { profile, weeklyPlan, shoppingList, setWeeklyPlan, setShoppingList, removeMealSlot, replaceSingleRecipe, ownedIngredients, addOwnedIngredient, removeOwnedIngredient, addRecipeToShoppingList, removeRecipeFromShoppingList, recordAction, recordSwapReason } = useAppStore();
+  const { profile, weeklyPlan, shoppingList, setWeeklyPlan, setShoppingList, removeMealSlot, replaceSingleRecipe, ownedIngredients, addOwnedIngredient, removeOwnedIngredient, addRecipeToShoppingList, removeRecipeFromShoppingList, recordAction, recordSwapReason, savedPlans, saveCurrentPlan, loadSavedPlan, deleteSavedPlan } = useAppStore();
   const [mounted, setMounted] = useState(false);
   const [showWeekShare, setShowWeekShare] = useState(false);
   const [weekShareCopied, setWeekShareCopied] = useState(false);
@@ -38,27 +38,60 @@ export default function PlanPage() {
   const [swapTarget, setSwapTarget] = useState<{ recipeId: string; mealType: MealType; role: DishRole; day: DayOfWeek } | null>(null);
   const [showOwnedPanel, setShowOwnedPanel] = useState(false);
   const [ingSearch, setIngSearch] = useState('');
+  const [showSavedPlans, setShowSavedPlans] = useState(false);
+  const [showSaveDialog, setShowSaveDialog] = useState(false);
+  const [saveName, setSaveName] = useState('');
   const [selectedDay, setSelectedDay] = useState<DayOfWeek>(() => {
     const d = new Date().getDay();
     return DAYS[d === 0 ? 6 : d - 1];
   });
 
-  // 带原因的换菜(需求3)
-  const handleSwapWithReason = (targetRecipeId: string, mealType: MealType, role: DishRole, day: DayOfWeek, reason: import('@/types').SwapReason) => {
+  // 带原因的换菜(精细版)
+  // 原因分类:
+  //   - just_want_different/too_complex: 只影响本次换菜, 不写入长期 userFeedback
+  //   - dislike_ingredient/dislike_flavor: 只影响本次换菜, 用 excludeIds/excludeFlavors 参数
+  //   - inconvenient_ingredient: 记录到 userFeedback (30天降权)
+  const handleSwapWithReason = (
+    targetRecipeId: string,
+    mealType: MealType,
+    role: DishRole,
+    day: DayOfWeek,
+    reason: import('@/types').SwapReason,
+    specifics?: { ingredientIds?: string[]; flavors?: string[] },
+  ) => {
     const oldRecipe = getRecipe(targetRecipeId);
-    // 先记录反馈(细粒度)
-    if (oldRecipe) recordSwapReason(targetRecipeId, reason, oldRecipe);
-    // 同角色候选池(反馈会在scoreRecipe中生效)
+    // 只对"不方便获取"做长期记录(30天), 其他原因只本次有效
+    if (reason === 'inconvenient_ingredient' && specifics?.ingredientIds?.length && oldRecipe) {
+      recordSwapReason(targetRecipeId, 'inconvenient_ingredient', {
+        ...oldRecipe,
+        // 只记录用户勾选的具体食材(不要所有食材)
+        ingredients: oldRecipe.ingredients.filter(ri => specifics.ingredientIds!.includes(ri.ingredientId)),
+      });
+    }
+    // 同角色候选池, 本次换菜的临时 filter
     const pool = getFilteredRecipes(profile, mealType);
     const meal = weeklyPlan?.slots.find(s => s.day === day && s.mealType === mealType);
+    const excludeIngIds = new Set<string>();
+    if ((reason === 'dislike_ingredient' || reason === 'inconvenient_ingredient') && specifics?.ingredientIds) {
+      specifics.ingredientIds.forEach(id => excludeIngIds.add(id));
+    }
+    const excludeFlavors = new Set<string>();
+    if (reason === 'dislike_flavor' && specifics?.flavors) {
+      specifics.flavors.forEach(f => excludeFlavors.add(f));
+    }
     const sameRole = pool.filter(r => {
       if (r.id === targetRecipeId) return false;
       if ((meal?.recipes || []).some(m => m.recipeId === r.id)) return false;
+      // 本次换菜: 排除含勾选食材的菜
+      if (excludeIngIds.size > 0 && r.ingredients.some(ri => excludeIngIds.has(ri.ingredientId))) return false;
+      // 本次换菜: 排除含勾选口味的菜
+      if (excludeFlavors.size > 0 && (r.flavors || []).some(f => excludeFlavors.has(f))) return false;
+      // 烹饪太复杂: 本次只选 easy/medium
+      if (reason === 'too_complex' && r.difficulty === 'hard') return false;
       const rRole = r.cookingMethod === 'soup' ? 'soup' : r.cookingMethod === 'staple' ? 'staple' : r.cookingMethod === 'cold_dish' ? 'cold' : (r.ingredients.some(ri => { const ing = getIngredient(ri.ingredientId); return ing && ['meat','seafood'].includes(ing.category); }) ? 'main_meat' : 'main_veg');
       return rRole === role;
     });
     if (sameRole.length === 0) { setSwapTarget(null); return; }
-    // 用 feedback 评分从前 30% 随机选
     const scored = sameRole
       .map(r => ({ r, s: getFeedbackAdjustment(r) + getPreferenceScore(r.id) * 0.5 + Math.random() * 3 }))
       .sort((a, b) => b.s - a.s);
@@ -67,6 +100,14 @@ export default function PlanPage() {
     recordAction(targetRecipeId, 'rejected', reason);
     recordAction(pick.id, 'swapped_in');
     replaceSingleRecipe(day, mealType, targetRecipeId, pick.id, role);
+
+    // 如果原菜在采购清单中，自动同步到新菜
+    if (oldRecipe && shoppingList?.items.some(i => i.fromRecipes.includes(oldRecipe.nameZh))) {
+      removeRecipeFromShoppingList(targetRecipeId);
+      const slot = weeklyPlan?.slots.find(s => s.day === day && s.mealType === mealType);
+      addRecipeToShoppingList(pick.id, slot?.servings || profile.familySize);
+    }
+
     setSwapTarget(null);
   };
 
@@ -174,6 +215,21 @@ export default function PlanPage() {
                 <CalendarDays className="w-4 h-4" />
               </button>
             </div>
+            <button onClick={() => setShowSaveDialog(true)}
+              title="保存当前方案"
+              className="px-2 py-1.5 border border-border rounded-lg text-muted hover:text-primary hover:border-primary transition">
+              <Save className="w-4 h-4" />
+            </button>
+            <button onClick={() => setShowSavedPlans(true)}
+              title="我保存的方案"
+              className="relative px-2 py-1.5 border border-border rounded-lg text-muted hover:text-primary hover:border-primary transition">
+              <Archive className="w-4 h-4" />
+              {savedPlans.length > 0 && (
+                <span className="absolute -top-1 -right-1 w-4 h-4 bg-primary text-white rounded-full text-[10px] flex items-center justify-center">
+                  {savedPlans.length}
+                </span>
+              )}
+            </button>
             <button onClick={() => setShowWeekShare(true)}
               title="分享规划"
               className="px-2 py-1.5 border border-border rounded-lg text-muted hover:text-primary hover:border-primary transition">
@@ -294,27 +350,34 @@ export default function PlanPage() {
               </div>
             </div>
             {(() => {
-              // 列出"不包含的项"+预计补充热量 (家庭总, 按 familySize 算)
+              // 按家庭每日总目标 × 营养学建议比例估算缺口
+              // 早/午/晚 25%/40%/35%; 主食/水果/汤 在总热量中各自的占比(不独立加)
+              // 主食 约 30% 日热量, 水果 5%, 汤 3%
+              const target = Math.round(householdTarget);
               const items: { label: string; cal: number }[] = [];
-              const allMeals: MealType[] = ['breakfast', 'lunch', 'dinner'];
-              const PER_PERSON_CAL = {
-                breakfast: 400, lunch: 700, dinner: 600,
-                staple: 400, fruit: 150, soup: 100,
-              };
-              for (const m of allMeals) {
-                if (!profile.mealsPerDay.includes(m)) {
-                  items.push({ label: MEAL_LABELS[m], cal: PER_PERSON_CAL[m] * familySize });
-                }
-              }
-              if ((profile.stapleMode || 'off') === 'off') items.push({ label: '主食', cal: PER_PERSON_CAL.staple * familySize });
-              if (!profile.includeFruit) items.push({ label: '水果', cal: PER_PERSON_CAL.fruit * familySize });
-              if (!profile.includeSoup) items.push({ label: '汤', cal: PER_PERSON_CAL.soup * familySize });
-              if (items.length === 0) return null;
+              if (!profile.mealsPerDay.includes('breakfast')) items.push({ label: '早餐', cal: Math.round(target * 0.25) });
+              if (!profile.mealsPerDay.includes('lunch')) items.push({ label: '午餐', cal: Math.round(target * 0.40) });
+              if (!profile.mealsPerDay.includes('dinner')) items.push({ label: '晚餐', cal: Math.round(target * 0.35) });
+              // 主食/水果/汤 是每餐的补充, 不重复算(已经扣在每餐目标里)
+              const sideItems: string[] = [];
+              if ((profile.stapleMode || 'off') === 'off') sideItems.push('主食');
+              if (!profile.includeFruit) sideItems.push('水果');
+              if (!profile.includeSoup) sideItems.push('汤');
+
+              if (items.length === 0 && sideItems.length === 0) return null;
               const totalMissing = items.reduce((s, i) => s + i.cal, 0);
+
               return (
-                <div className="text-[10px] text-muted mt-1.5">
-                  <p>⚠ 该热量不包含: {items.map(i => `${i.label}(~${i.cal}kcal)`).join('、')}</p>
-                  <p className="mt-0.5">合计约缺 <span className="text-amber-700 font-medium">{totalMissing}</span> kcal · 加上后家庭总 ~ <span className="text-amber-700 font-medium">{dayTotalCal + totalMissing}</span> kcal</p>
+                <div className="text-[10px] text-muted mt-1.5 space-y-0.5">
+                  {items.length > 0 && (
+                    <p>⚠ 未规划餐次(按家庭目标比例): {items.map(i => `${i.label}~${i.cal}kcal`).join('、')}</p>
+                  )}
+                  {sideItems.length > 0 && (
+                    <p>ℹ 未开启: {sideItems.join('、')}(从每餐里自行补充)</p>
+                  )}
+                  {totalMissing > 0 && (
+                    <p className="mt-0.5">含未规划餐家庭日目标总 <span className="text-amber-700 font-medium">{dayTotalCal + totalMissing}</span> / <span className="font-medium">{target}</span> kcal</p>
+                  )}
                 </div>
               );
             })()}
@@ -558,13 +621,101 @@ export default function PlanPage() {
         </div>
       )}
 
-      {/* 换菜原因弹窗 (需求3) */}
-      {swapTarget && (
-        <SwapReasonDialog
-          recipeName={getRecipe(swapTarget.recipeId)?.nameZh || ''}
-          onClose={() => setSwapTarget(null)}
-          onPick={(reason) => handleSwapWithReason(swapTarget.recipeId, swapTarget.mealType, swapTarget.role, swapTarget.day, reason)}
-        />
+      {/* 换菜原因弹窗 */}
+      {swapTarget && (() => {
+        const targetRecipe = getRecipe(swapTarget.recipeId);
+        if (!targetRecipe) return null;
+        return (
+          <SwapReasonDialog
+            recipe={targetRecipe}
+            onClose={() => setSwapTarget(null)}
+            onPick={(reason, specifics) => handleSwapWithReason(swapTarget.recipeId, swapTarget.mealType, swapTarget.role, swapTarget.day, reason, specifics)}
+          />
+        );
+      })()}
+
+      {/* 保存方案弹窗 */}
+      {showSaveDialog && (
+        <div className="fixed inset-0 z-[60] bg-black/50 flex items-end sm:items-center justify-center p-4" onClick={() => setShowSaveDialog(false)}>
+          <div className="bg-card rounded-2xl border border-border w-full max-w-sm p-5" onClick={e => e.stopPropagation()}>
+            <h3 className="font-semibold mb-3">保存当前方案</h3>
+            <p className="text-xs text-muted mb-3">保存后可随时调用这份规划</p>
+            <input
+              type="text"
+              value={saveName}
+              onChange={e => setSaveName(e.target.value)}
+              placeholder="方案名称(如: 工作日家常 / 周末聚餐)"
+              className="w-full border border-border rounded-lg px-3 py-2 text-sm bg-background mb-3"
+              autoFocus
+            />
+            <div className="flex gap-2">
+              <button onClick={() => setShowSaveDialog(false)} className="flex-1 py-2.5 border border-border rounded-lg text-sm">
+                取消
+              </button>
+              <button
+                onClick={() => {
+                  saveCurrentPlan(saveName || `方案 ${new Date().toLocaleDateString('zh-CN')}`);
+                  setSaveName('');
+                  setShowSaveDialog(false);
+                }}
+                className="flex-1 py-2.5 bg-primary text-white rounded-lg text-sm font-medium"
+              >
+                保存
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* 保存的方案列表弹窗 */}
+      {showSavedPlans && (
+        <div className="fixed inset-0 z-[60] bg-black/50 flex items-end sm:items-center justify-center p-4" onClick={() => setShowSavedPlans(false)}>
+          <div className="bg-card rounded-2xl border border-border w-full max-w-md flex flex-col max-h-[85vh]" onClick={e => e.stopPropagation()}>
+            <div className="p-4 border-b border-border flex items-center justify-between">
+              <h3 className="font-semibold">我的方案 ({savedPlans.length})</h3>
+              <button onClick={() => setShowSavedPlans(false)} className="text-muted"><X className="w-5 h-5" /></button>
+            </div>
+            <div className="flex-1 overflow-y-auto">
+              {savedPlans.length === 0 ? (
+                <p className="p-8 text-center text-sm text-muted">还没有保存的方案</p>
+              ) : (
+                <div className="divide-y divide-border">
+                  {savedPlans.map(s => (
+                    <div key={s.id} className="p-3 hover:bg-background/50">
+                      <div className="flex items-start justify-between gap-2">
+                        <div className="flex-1 min-w-0">
+                          <p className="font-medium text-sm truncate">{s.name}</p>
+                          <p className="text-xs text-muted">
+                            {new Date(s.createdAt).toLocaleString('zh-CN')} · {s.weeklyPlan.slots.length} 餐
+                          </p>
+                        </div>
+                        <div className="flex gap-1 flex-shrink-0">
+                          <button
+                            onClick={() => {
+                              if (confirm(`加载「${s.name}」会替换当前方案, 继续?`)) {
+                                loadSavedPlan(s.id);
+                                setShowSavedPlans(false);
+                              }
+                            }}
+                            className="text-xs bg-primary text-white px-2 py-1 rounded"
+                          >
+                            加载
+                          </button>
+                          <button
+                            onClick={() => { if (confirm(`删除方案「${s.name}」?`)) deleteSavedPlan(s.id); }}
+                            className="text-muted hover:text-danger p-1"
+                          >
+                            <Trash2 className="w-3.5 h-3.5" />
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              )}
+            </div>
+          </div>
+        </div>
       )}
     </div>
   );
@@ -618,43 +769,151 @@ function AiReportBanner({ analysisId }: { analysisId: string }) {
   );
 }
 
-function SwapReasonDialog({ recipeName, onClose, onPick }: {
-  recipeName: string;
+const FLAVOR_ZH: Record<string, string> = {
+  sour: '酸', sweet: '甜', bitter: '苦', spicy: '辣',
+  salty: '咸', umami: '鲜', light: '清淡',
+};
+
+function SwapReasonDialog({ recipe, onClose, onPick }: {
+  recipe: import('@/types').Recipe;
   onClose: () => void;
-  onPick: (reason: import('@/types').SwapReason) => void;
+  onPick: (reason: import('@/types').SwapReason, specifics?: { ingredientIds?: string[]; flavors?: string[] }) => void;
 }) {
-  const options: Array<{ reason: import('@/types').SwapReason; icon: string; label: string; desc: string }> = [
-    { reason: 'just_want_different', icon: '🔄', label: '只是想换一个', desc: '不扣分，随机推荐' },
-    { reason: 'dislike_ingredient', icon: '🥕', label: '不喜欢这个食材', desc: '后续减少含此食材的菜' },
-    { reason: 'dislike_flavor', icon: '👅', label: '不喜欢这个口味', desc: '后续减少同类口味' },
-    { reason: 'inconvenient_ingredient', icon: '🛒', label: '食材不方便获取', desc: '后续减少含此食材' },
-    { reason: 'too_complex', icon: '⏱️', label: '烹饪太复杂', desc: '后续推荐简单菜' },
+  const [step, setStep] = useState<'main' | 'ingredients' | 'flavors' | 'inconvenient'>('main');
+  const [selectedIngs, setSelectedIngs] = useState<string[]>([]);
+  const [selectedFlavors, setSelectedFlavors] = useState<string[]>([]);
+
+  const options: Array<{ reason: import('@/types').SwapReason; icon: string; label: string; desc: string; next?: 'ingredients' | 'flavors' | 'inconvenient' }> = [
+    { reason: 'just_want_different', icon: '🔄', label: '只是想换一个', desc: '本次推荐换一道，不影响后续' },
+    { reason: 'dislike_ingredient', icon: '🥕', label: '不喜欢某个食材', desc: '本次排除该食材菜', next: 'ingredients' },
+    { reason: 'dislike_flavor', icon: '👅', label: '不喜欢这个口味', desc: '本次少推同类口味', next: 'flavors' },
+    { reason: 'inconvenient_ingredient', icon: '🛒', label: '食材不方便获取', desc: '本次排除 + 30天降权', next: 'inconvenient' },
+    { reason: 'too_complex', icon: '⏱️', label: '烹饪太复杂', desc: '本次换简单的菜' },
   ];
+
+  const ingList = recipe.ingredients.map(ri => {
+    const ing = getIngredient(ri.ingredientId);
+    return { id: ri.ingredientId, name: ing?.nameZh || ri.ingredientId };
+  });
+
+  const handlePickMain = (opt: typeof options[number]) => {
+    // 无二级选择的直接执行
+    if (!opt.next) {
+      onPick(opt.reason);
+      return;
+    }
+    setStep(opt.next);
+  };
+
+  const handleConfirmSpecifics = () => {
+    if (step === 'ingredients') {
+      if (selectedIngs.length === 0) return;
+      onPick('dislike_ingredient', { ingredientIds: selectedIngs });
+    } else if (step === 'flavors') {
+      if (selectedFlavors.length === 0) return;
+      onPick('dislike_flavor', { flavors: selectedFlavors });
+    } else if (step === 'inconvenient') {
+      if (selectedIngs.length === 0) return;
+      onPick('inconvenient_ingredient', { ingredientIds: selectedIngs });
+    }
+  };
+
   return (
     <div className="fixed inset-0 z-[60] bg-black/50 flex items-end sm:items-center justify-center p-4" onClick={onClose}>
-      <div className="bg-card rounded-t-2xl sm:rounded-2xl border border-border w-full max-w-sm overflow-hidden" onClick={e => e.stopPropagation()}>
-        <div className="p-4 border-b border-border">
-          <p className="text-xs text-muted">换菜原因</p>
-          <p className="font-semibold text-sm truncate">{recipeName}</p>
+      <div className="bg-card rounded-t-2xl sm:rounded-2xl border border-border w-full max-w-sm overflow-hidden flex flex-col max-h-[85vh]" onClick={e => e.stopPropagation()}>
+        <div className="p-4 border-b border-border flex items-center justify-between">
+          <div className="min-w-0">
+            {step !== 'main' && (
+              <button onClick={() => { setStep('main'); setSelectedIngs([]); setSelectedFlavors([]); }} className="text-xs text-primary mb-1">← 返回</button>
+            )}
+            <p className="text-xs text-muted">换菜原因</p>
+            <p className="font-semibold text-sm truncate">{recipe.nameZh}</p>
+          </div>
+          <button onClick={onClose} className="text-muted text-xl leading-none">×</button>
         </div>
-        <div className="divide-y divide-border">
-          {options.map(o => (
+
+        {step === 'main' && (
+          <div className="divide-y divide-border flex-1 overflow-y-auto">
+            {options.map(o => (
+              <button
+                key={o.reason}
+                onClick={() => handlePickMain(o)}
+                className="w-full flex items-center gap-3 px-4 py-3 hover:bg-background transition text-left"
+              >
+                <span className="text-xl">{o.icon}</span>
+                <div className="flex-1">
+                  <p className="text-sm font-medium">{o.label}</p>
+                  <p className="text-xs text-muted">{o.desc}</p>
+                </div>
+              </button>
+            ))}
+          </div>
+        )}
+
+        {(step === 'ingredients' || step === 'inconvenient') && (
+          <div className="flex-1 overflow-y-auto p-4">
+            <p className="text-sm font-medium mb-1">选择哪个食材？</p>
+            <p className="text-xs text-muted mb-3">
+              {step === 'ingredients' ? '本次换菜会避开含勾选食材的菜' : '本次换菜避开，且 30 天内降权类似菜'}
+            </p>
+            <div className="flex flex-wrap gap-1.5">
+              {ingList.map(ing => {
+                const active = selectedIngs.includes(ing.id);
+                return (
+                  <button
+                    key={ing.id}
+                    onClick={() => setSelectedIngs(active ? selectedIngs.filter(x => x !== ing.id) : [...selectedIngs, ing.id])}
+                    className={`px-3 py-1.5 rounded-full text-sm border transition ${active ? 'bg-primary text-white border-primary' : 'border-border hover:border-primary/50'}`}
+                  >
+                    {ing.name}
+                  </button>
+                );
+              })}
+            </div>
+            <p className="text-[10px] text-muted mt-3 leading-relaxed">
+              💡 <span>这是一次性反馈</span>，只影响本次换菜。如果长期不吃这种食材，建议去<Link href="/profile" className="text-primary underline">偏好设置</Link>的「长期排除食材」添加，效果更稳定。
+            </p>
+          </div>
+        )}
+
+        {step === 'flavors' && (
+          <div className="flex-1 overflow-y-auto p-4">
+            <p className="text-sm font-medium mb-1">不喜欢哪个口味？</p>
+            <p className="text-xs text-muted mb-3">本次换菜会避开这些口味的菜</p>
+            <div className="flex flex-wrap gap-1.5">
+              {(recipe.flavors || []).map(f => {
+                const active = selectedFlavors.includes(f);
+                return (
+                  <button
+                    key={f}
+                    onClick={() => setSelectedFlavors(active ? selectedFlavors.filter(x => x !== f) : [...selectedFlavors, f])}
+                    className={`px-3 py-1.5 rounded-full text-sm border transition ${active ? 'bg-primary text-white border-primary' : 'border-border hover:border-primary/50'}`}
+                  >
+                    {FLAVOR_ZH[f] || f}
+                  </button>
+                );
+              })}
+            </div>
+            <p className="text-[10px] text-muted mt-3 leading-relaxed">
+              💡 这是一次性反馈。如果某口味长期不吃，建议在<Link href="/profile" className="text-primary underline">偏好设置</Link>的「口味偏好」调整。
+            </p>
+          </div>
+        )}
+
+        {step !== 'main' && (
+          <div className="border-t border-border p-3 bg-card">
             <button
-              key={o.reason}
-              onClick={() => onPick(o.reason)}
-              className="w-full flex items-center gap-3 px-4 py-3 hover:bg-background transition text-left"
+              onClick={handleConfirmSpecifics}
+              disabled={
+                ((step === 'ingredients' || step === 'inconvenient') && selectedIngs.length === 0) ||
+                (step === 'flavors' && selectedFlavors.length === 0)
+              }
+              className="w-full py-2.5 bg-primary text-white rounded-lg text-sm font-medium disabled:opacity-40 transition"
             >
-              <span className="text-xl">{o.icon}</span>
-              <div className="flex-1">
-                <p className="text-sm font-medium">{o.label}</p>
-                <p className="text-xs text-muted">{o.desc}</p>
-              </div>
+              确认换菜
             </button>
-          ))}
-        </div>
-        <button onClick={onClose} className="w-full py-3 text-sm text-muted border-t border-border hover:bg-background transition">
-          取消
-        </button>
+          </div>
+        )}
       </div>
     </div>
   );

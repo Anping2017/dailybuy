@@ -8,7 +8,7 @@ import type {
   UserProfile, WeeklyPlan, ShoppingList, ShoppingItem,
   FamilyMember, MealSlot, CuisineType, MealType,
   Recipe, Ingredient, RecipeAction, RecipePreference, RecentAction,
-  SwapReason, UserFeedback,
+  SwapReason, UserFeedback, SavedPlan,
 } from '@/types';
 
 interface AppState {
@@ -57,6 +57,12 @@ interface AppState {
   upsertCustomRecipe: (recipe: Recipe) => void;
   removeCustomRecipe: (id: string) => void;
   toggleFavorite: (recipeId: string) => void;
+
+  // --- 保存的规划方案 ---
+  savedPlans: SavedPlan[];
+  saveCurrentPlan: (name: string, note?: string) => void;
+  loadSavedPlan: (id: string) => void;
+  deleteSavedPlan: (id: string) => void;
 
   // --- 引导状态 ---
   onboardingComplete: boolean;
@@ -112,6 +118,7 @@ export const useAppStore = create<AppState>()(
     (set) => ({
       profile: defaultProfile,
       ownedIngredients: [],
+      savedPlans: [],
       recipePreferences: {},
       recentActions: [],
       userFeedback: {
@@ -498,6 +505,34 @@ export const useAppStore = create<AppState>()(
             : [...list, recipeId];
           return { profile: { ...s.profile, favoriteRecipes: next } };
         }),
+
+      // --- 保存的规划方案 ---
+      saveCurrentPlan: (name, note) =>
+        set((s) => {
+          if (!s.weeklyPlan) return s;
+          const saved: SavedPlan = {
+            id: `saved_${Date.now()}_${Math.random().toString(36).slice(2, 6)}`,
+            name: name.trim() || `方案 ${new Date().toLocaleDateString('zh-CN')}`,
+            createdAt: new Date().toISOString(),
+            weeklyPlan: s.weeklyPlan,
+            shoppingList: s.shoppingList || undefined,
+            note,
+          };
+          return { savedPlans: [saved, ...s.savedPlans] };
+        }),
+
+      loadSavedPlan: (id) =>
+        set((s) => {
+          const saved = s.savedPlans.find(p => p.id === id);
+          if (!saved) return s;
+          return {
+            weeklyPlan: saved.weeklyPlan,
+            shoppingList: saved.shoppingList || s.shoppingList,
+          };
+        }),
+
+      deleteSavedPlan: (id) =>
+        set((s) => ({ savedPlans: s.savedPlans.filter(p => p.id !== id) })),
 
       setOnboardingComplete: (v) => set({ onboardingComplete: v }),
     }),

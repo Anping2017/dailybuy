@@ -408,25 +408,23 @@ function scoreRecipe(
   // 季节性食材评分（不当季 → 扣分）
   score += scoreSeasonality(recipe);
 
-  // 热量预算控制 (需求1)
-  // remainingCal = 本餐剩余可用热量, dishCal = 本菜预计热量
-  if (remainingCal !== undefined && remainingCal > 0) {
-    const dishCal = calcRecipeCalForFamily(recipe, profile.familySize);
-    // 超预算 → 扣分
-    if (dishCal > remainingCal * 1.5) score -= 15;             // 超预算 50% → -15
-    else if (dishCal > remainingCal * 1.2) score -= 8;         // 超预算 20% → -8
-    else if (dishCal > remainingCal) score -= 3;                // 刚好超 → -3
-    // 预算大 → 偏好大菜(对抗"全是小菜堆热量"的问题)
-    else if (remainingCal > 800 && dishCal > remainingCal * 0.6) score += 4;
-    else if (remainingCal > 500 && dishCal > remainingCal * 0.5) score += 2;
-    else if (dishCal <= remainingCal) score += 1;              // 刚好在预算内 → +1
-  } else if (remainingCal !== undefined && remainingCal <= 0) {
-    // 预算已用完, 强烈惩罚任何菜
-    const dishCal = calcRecipeCalForFamily(recipe, profile.familySize);
-    score -= Math.min(25, dishCal / 50);
+  // 热量预算控制 (需求1) - 仅在用户启用卡路里计算时参与
+  if (profile.calorieEnabled !== false) {
+    if (remainingCal !== undefined && remainingCal > 0) {
+      const dishCal = calcRecipeCalForFamily(recipe, profile.familySize);
+      if (dishCal > remainingCal * 1.5) score -= 15;
+      else if (dishCal > remainingCal * 1.2) score -= 8;
+      else if (dishCal > remainingCal) score -= 3;
+      else if (remainingCal > 800 && dishCal > remainingCal * 0.6) score += 4;
+      else if (remainingCal > 500 && dishCal > remainingCal * 0.5) score += 2;
+      else if (dishCal <= remainingCal) score += 1;
+    } else if (remainingCal !== undefined && remainingCal <= 0) {
+      const dishCal = calcRecipeCalForFamily(recipe, profile.familySize);
+      score -= Math.min(25, dishCal / 50);
+    }
   }
 
-  // 加随机扰动 (0-3) 保证多样性 — 加大扰动避免"反复推那几个"
+  // 加随机扰动 (0-3) 保证多样性
   score += Math.random() * 3;
 
   return score;
@@ -646,7 +644,8 @@ function composeMeal(
   }
 
   // 缺口补菜: 如果缺口 > 40% 预算且 > 400 kcal, 补一道大菜(最多补 1 道)
-  if (mealBudget > 0) {
+  // 仅在用户启用卡路里计算时执行
+  if (profile.calorieEnabled !== false && mealBudget > 0) {
     const deficit = mealBudget - accumulatedCal;
     if (deficit > mealBudget * 0.4 && deficit > 400) {
       const fillPool = allCandidates.filter(r => !usedIds.has(r.id));
@@ -789,19 +788,20 @@ function smartPick(
     // 季节性
     score += scoreSeasonality(r);
 
-    // 热量预算 (需求1)
-    if (remainingCal !== undefined && remainingCal > 0) {
-      const dishCal = calcRecipeCalForFamily(r, profile.familySize);
-      if (dishCal > remainingCal * 1.5) score -= 15;
-      else if (dishCal > remainingCal * 1.2) score -= 8;
-      else if (dishCal > remainingCal) score -= 3;
-      // 预算大 → 偏好大菜
-      else if (remainingCal > 800 && dishCal > remainingCal * 0.6) score += 4;
-      else if (remainingCal > 500 && dishCal > remainingCal * 0.5) score += 2;
-      else if (dishCal <= remainingCal) score += 1;
-    } else if (remainingCal !== undefined && remainingCal <= 0) {
-      const dishCal = calcRecipeCalForFamily(r, profile.familySize);
-      score -= Math.min(25, dishCal / 50);
+    // 热量预算 (仅在启用卡路里计算时参与)
+    if (profile.calorieEnabled !== false) {
+      if (remainingCal !== undefined && remainingCal > 0) {
+        const dishCal = calcRecipeCalForFamily(r, profile.familySize);
+        if (dishCal > remainingCal * 1.5) score -= 15;
+        else if (dishCal > remainingCal * 1.2) score -= 8;
+        else if (dishCal > remainingCal) score -= 3;
+        else if (remainingCal > 800 && dishCal > remainingCal * 0.6) score += 4;
+        else if (remainingCal > 500 && dishCal > remainingCal * 0.5) score += 2;
+        else if (dishCal <= remainingCal) score += 1;
+      } else if (remainingCal !== undefined && remainingCal <= 0) {
+        const dishCal = calcRecipeCalForFamily(r, profile.familySize);
+        score -= Math.min(25, dishCal / 50);
+      }
     }
 
     // 随机扰动 — 加大保证多样性
