@@ -6,7 +6,13 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "recipes:enrich": "node scripts/enrich-recipes.js",
+    "recipes:merge": "node scripts/merge-recipes.js",
+    "recipes:audit": "node scripts/audit-recipes.js",
+    "recipes:audit:strict": "node scripts/audit-recipes.js --strict",
+    "recipes:check": "npm run recipes:enrich && npm run recipes:merge && npm run recipes:audit:strict",
+    "recipes:validate": "node scripts/validate-recipe.js"
   },
   "dependencies": {
     "@supabase/ssr": "^0.10.2",

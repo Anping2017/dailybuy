@@ -1,0 +1,953 @@
+{
+  "generatedAt": "2026-04-19T10:19:39.455Z",
+  "durationMs": 423,
+  "workerCount": 8,
+  "scanned": 1862,
+  "totals": {
+    "ERROR": 0,
+    "WARN": 77,
+    "INFO": 1
+  },
+  "byCode": {
+    "W1": 1,
+    "W7": 5,
+    "W3": 1,
+    "W6": 66,
+    "W8": 4,
+    "I3": 1
+  },
+  "recipesWithErrors": 0,
+  "recipesWithWarnings": 76,
+  "recipesClean": 1785,
+  "items": [
+    {
+      "id": "drink_suanmeitang",
+      "nameZh": "酸梅汤",
+      "source": "desserts-drinks",
+      "issues": [
+        {
+          "level": "WARN",
+          "code": "W1",
+          "msg": "汤/羹应为 soup/stew/simmer，实为 boil"
+        }
+      ]
+    },
+    {
+      "id": "snack_egg_tart",
+      "nameZh": "港式蛋挞",
+      "source": "desserts-drinks",
+      "issues": [
+        {
+          "level": "WARN",
+          "code": "W7",
+          "msg": "hard 难度不宜标为早餐"
+        }
+      ]
+    },
+    {
+      "id": "snack_pineapple_bun",
+      "nameZh": "菠萝包",
+      "source": "desserts-drinks",
+      "issues": [
+        {
+          "level": "WARN",
+          "code": "W7",
+          "msg": "hard 难度不宜标为早餐"
+        }
+      ]
+    },
+    {
+      "id": "snack_custard_lava_bun",
+      "nameZh": "流沙包",
+      "source": "desserts-drinks",
+      "issues": [
+        {
+          "level": "WARN",
+          "code": "W7",
+          "msg": "hard 难度不宜标为早餐"
+        }
+      ]
+    },
+    {
+      "id": "dessert_cinnamon_roll",
+      "nameZh": "肉桂卷",
+      "source": "desserts-drinks",
+      "issues": [
+        {
+          "level": "WARN",
+          "code": "W7",
+          "msg": "hard 难度不宜标为早餐"
+        }
+      ]
+    },
+    {
+      "id": "staple_pork_lettuce_wrap",
+      "nameZh": "生菜肉末包",
+      "source": "mega-3",
+      "issues": [
+        {
+          "level": "WARN",
+          "code": "W3",
+          "msg": "staple 菜谱缺 stapleCategory"
+        }
+      ]
+    },
+    {
+      "id": "cold_shredded_cabbage_vinegar",
+      "nameZh": "醋拌包菜丝",
+      "source": "legacy",
+      "issues": [
+        {
+          "level": "WARN",
+          "code": "W6",
+          "msg": "步骤过少 (2)"
+        }
+      ]
+    },
+    {
+      "id": "breakfast_fried_dough_stick",
+      "nameZh": "酸奶燕麦杯",
+      "source": "legacy",
+      "issues": [
+        {
+          "level": "WARN",
+          "code": "W6",
+          "msg": "绝大多数步骤过短（5/5）"
+        }
+      ]
+    },
+    {
+      "id": "home_scramble_tomato_eggplant",
+      "nameZh": "茄子炒蛋",
+      "source": "legacy",
+      "issues": [
+        {
+          "level": "WARN",
+          "code": "W6",
+          "msg": "绝大多数步骤过短（6/6）"
+        }
+      ]
+    },
+    {
+      "id": "duck_roast_cantonese",
+      "nameZh": "广式烧鸭",
+      "source": "legacy",
+      "issues": [
+        {
+          "level": "WARN",
+          "code": "W8",
+          "msg": "hard 难度但步骤<5"
+        }
+      ]
+    },
+    {
+      "id": "duck_jiangsu_eight_treasure",
+      "nameZh": "八宝鸭",
+      "source": "legacy",
+      "issues": [
+        {
+          "level": "WARN",
+          "code": "W8",
+          "msg": "hard 难度但步骤<5"
+        }
+      ]
+    },
+    {
+      "id": "bf_acai_bowl",
+      "nameZh": "莓果谷物碗",
+      "source": "legacy",
+      "issues": [
+        {
+          "level": "WARN",
+          "code": "W6",
+          "msg": "绝大多数步骤过短（5/5）"
+        }
+      ]
+    },
+    {
+      "id": "bf_soup_dumpling_xlb",
+      "nameZh": "小笼汤包",
+      "source": "legacy",
+      "issues": [
+        {
+          "level": "WARN",
+          "code": "W7",
+          "msg": "hard 难度不宜标为早餐"
+        },
+        {
+          "level": "WARN",
+          "code": "W8",
+          "msg": "hard 难度但步骤<5"
+        }
+      ]
+    },
+    {
+      "id": "staple_2p_egg_pancake",
+      "nameZh": "鸡蛋葱花饼(2人份)",
+      "source": "legacy",
+      "issues": [
+        {
+          "level": "WARN",
+          "code": "W6",
+          "msg": "步骤过少 (2)"
+        }
+      ]
+    },
+    {
+      "id": "staple_2p_xiaolongbao",
+      "nameZh": "小笼包(2人份)",
+      "source": "legacy",
+      "issues": [
+        {
+          "level": "WARN",
+          "code": "W8",
+          "msg": "hard 难度但步骤<5"
+        }
+      ]
+    },
+    {
+      "id": "cold_veg_white_radish",
+      "nameZh": "糖醋萝卜丝",
+      "source": "legacy",
+      "issues": [
+        {
+          "level": "WARN",
+          "code": "W6",
+          "msg": "步骤过少 (2)"
+        }
+      ]
+    },
+    {
+      "id": "bulk450_es_145",
+      "nameZh": "蒸米饭(1人)",
+      "source": "legacy",
+      "issues": [
+        {
+          "level": "WARN",
+          "code": "W6",
+          "msg": "绝大多数步骤过短（3/3）"
+        }
+      ]
+    },
+    {
+      "id": "bulk450_es_146",
+      "nameZh": "蒸米饭(2人)",
+      "source": "legacy",
+      "issues": [
+        {
+          "level": "WARN",
+          "code": "W6",
+          "msg": "绝大多数步骤过短（3/3）"
+        }
+      ]
+    },
+    {
+      "id": "bulk450_es_147",
+      "nameZh": "蒸米饭(3人)",
+      "source": "legacy",
+      "issues": [
+        {
+          "level": "WARN",
+          "code": "W6",
+          "msg": "绝大多数步骤过短（3/3）"
+        }
+      ]
+    },
+    {
+      "id": "bulk450_es_148",
+      "nameZh": "蒸米饭(4人)",
+      "source": "legacy",
+      "issues": [
+        {
+          "level": "WARN",
+          "code": "W6",
+          "msg": "绝大多数步骤过短（3/3）"
+        }
+      ]
+    },
+    {
+      "id": "bulk450_es_151",
+      "nameZh": "南瓜饭",
+      "source": "legacy",
+      "issues": [
+        {
+          "level": "WARN",
+          "code": "W6",
+          "msg": "绝大多数步骤过短（3/3）"
+        }
+      ]
+    },
+    {
+      "id": "bulk450_es_152",
+      "nameZh": "玉米饭",
+      "source": "legacy",
+      "issues": [
+        {
+          "level": "WARN",
+          "code": "W6",
+          "msg": "绝大多数步骤过短（3/3）"
+        }
+      ]
+    },
+    {
+      "id": "bulk450_es_153",
+      "nameZh": "山药饭",
+      "source": "legacy",
+      "issues": [
+        {
+          "level": "WARN",
+          "code": "W6",
+          "msg": "绝大多数步骤过短（3/3）"
+        }
+      ]
+    },
+    {
+      "id": "bulk450_es_154",
+      "nameZh": "紫薯饭",
+      "source": "legacy",
+      "issues": [
+        {
+          "level": "WARN",
+          "code": "W6",
+          "msg": "绝大多数步骤过短（3/3）"
+        }
+      ]
+    },
+    {
+      "id": "bulk450_es_155",
+      "nameZh": "红薯饭",
+      "source": "legacy",
+      "issues": [
+        {
+          "level": "WARN",
+          "code": "W6",
+          "msg": "绝大多数步骤过短（3/3）"
+        }
+      ]
+    },
+    {
+      "id": "bulk450_es_156",
+      "nameZh": "藜麦饭",
+      "source": "legacy",
+      "issues": [
+        {
+          "level": "WARN",
+          "code": "W6",
+          "msg": "绝大多数步骤过短（3/3）"
+        }
+      ]
+    },
+    {
+      "id": "bulk450_es_161",
+      "nameZh": "红枣粥",
+      "source": "legacy",
+      "issues": [
+        {
+          "level": "WARN",
+          "code": "W6",
+          "msg": "绝大多数步骤过短（3/3）"
+        }
+      ]
+    },
+    {
+      "id": "bulk450_es_162",
+      "nameZh": "蒸馒头(2人)",
+      "source": "legacy",
+      "issues": [
+        {
+          "level": "WARN",
+          "code": "W6",
+          "msg": "绝大多数步骤过短（3/3）"
+        }
+      ]
+    },
+    {
+      "id": "bulk450_es_163",
+      "nameZh": "蒸馒头(4人)",
+      "source": "legacy",
+      "issues": [
+        {
+          "level": "WARN",
+          "code": "W6",
+          "msg": "绝大多数步骤过短（3/3）"
+        }
+      ]
+    },
+    {
+      "id": "bulk450_es_164",
+      "nameZh": "蒸花卷(2人)",
+      "source": "legacy",
+      "issues": [
+        {
+          "level": "WARN",
+          "code": "W6",
+          "msg": "绝大多数步骤过短（3/3）"
+        }
+      ]
+    },
+    {
+      "id": "bulk450_es_165",
+      "nameZh": "南瓜馒头",
+      "source": "legacy",
+      "issues": [
+        {
+          "level": "WARN",
+          "code": "W6",
+          "msg": "绝大多数步骤过短（3/3）"
+        }
+      ]
+    },
+    {
+      "id": "bulk450_es_166",
+      "nameZh": "紫薯馒头",
+      "source": "legacy",
+      "issues": [
+        {
+          "level": "WARN",
+          "code": "W6",
+          "msg": "绝大多数步骤过短（3/3）"
+        }
+      ]
+    },
+    {
+      "id": "bulk450_es_168",
+      "nameZh": "烤紫薯",
+      "source": "legacy",
+      "issues": [
+        {
+          "level": "WARN",
+          "code": "W6",
+          "msg": "绝大多数步骤过短（3/3）"
+        }
+      ]
+    },
+    {
+      "id": "bulk450_es_171",
+      "nameZh": "蒸土豆",
+      "source": "legacy",
+      "issues": [
+        {
+          "level": "WARN",
+          "code": "W6",
+          "msg": "绝大多数步骤过短（3/3）"
+        }
+      ]
+    },
+    {
+      "id": "bulk450_es_172",
+      "nameZh": "简易凉面",
+      "source": "legacy",
+      "issues": [
+        {
+          "level": "WARN",
+          "code": "W6",
+          "msg": "绝大多数步骤过短（3/3）"
+        }
+      ]
+    },
+    {
+      "id": "bulk450_es_174",
+      "nameZh": "素炒饭",
+      "source": "legacy",
+      "issues": [
+        {
+          "level": "WARN",
+          "code": "W6",
+          "msg": "绝大多数步骤过短（3/3）"
+        }
+      ]
+    },
+    {
+      "id": "bulk450_ms_257",
+      "nameZh": "番茄牛肉面(无辣)",
+      "source": "legacy",
+      "issues": [
+        {
+          "level": "WARN",
+          "code": "W6",
+          "msg": "绝大多数步骤过短（4/4）"
+        }
+      ]
+    },
+    {
+      "id": "bulk450_ms_258",
+      "nameZh": "排骨汤面",
+      "source": "legacy",
+      "issues": [
+        {
+          "level": "WARN",
+          "code": "W6",
+          "msg": "绝大多数步骤过短（4/4）"
+        }
+      ]
+    },
+    {
+      "id": "bulk450_ms_259",
+      "nameZh": "炒河粉(无辣)",
+      "source": "legacy",
+      "issues": [
+        {
+          "level": "WARN",
+          "code": "W6",
+          "msg": "绝大多数步骤过短（4/4）"
+        }
+      ]
+    },
+    {
+      "id": "bulk450_ms_261",
+      "nameZh": "韭菜盒子(无蛋)",
+      "source": "legacy",
+      "issues": [
+        {
+          "level": "WARN",
+          "code": "W6",
+          "msg": "绝大多数步骤过短（4/4）"
+        }
+      ]
+    },
+    {
+      "id": "bulk450_ms_262",
+      "nameZh": "猪肉馄饨",
+      "source": "legacy",
+      "issues": [
+        {
+          "level": "WARN",
+          "code": "W6",
+          "msg": "绝大多数步骤过短（4/4）"
+        }
+      ]
+    },
+    {
+      "id": "bulk450_ms_264",
+      "nameZh": "南瓜饼",
+      "source": "legacy",
+      "issues": [
+        {
+          "level": "WARN",
+          "code": "W6",
+          "msg": "绝大多数步骤过短（4/4）"
+        }
+      ]
+    },
+    {
+      "id": "bulk450_ms_265",
+      "nameZh": "红薯饼",
+      "source": "legacy",
+      "issues": [
+        {
+          "level": "WARN",
+          "code": "W6",
+          "msg": "绝大多数步骤过短（4/4）"
+        }
+      ]
+    },
+    {
+      "id": "bulk450_ms_266",
+      "nameZh": "土豆饼",
+      "source": "legacy",
+      "issues": [
+        {
+          "level": "WARN",
+          "code": "W6",
+          "msg": "绝大多数步骤过短（4/4）"
+        }
+      ]
+    },
+    {
+      "id": "bulk450_ms_267",
+      "nameZh": "猪肉白菜包子",
+      "source": "legacy",
+      "issues": [
+        {
+          "level": "WARN",
+          "code": "W6",
+          "msg": "绝大多数步骤过短（4/4）"
+        }
+      ]
+    },
+    {
+      "id": "bulk450_ms_268",
+      "nameZh": "芋头西米露(椰浆替代奶)",
+      "source": "legacy",
+      "issues": [
+        {
+          "level": "WARN",
+          "code": "W6",
+          "msg": "绝大多数步骤过短（4/4）"
+        }
+      ]
+    },
+    {
+      "id": "bulk450_ms_269",
+      "nameZh": "红枣银耳羹",
+      "source": "legacy",
+      "issues": [
+        {
+          "level": "WARN",
+          "code": "W6",
+          "msg": "绝大多数步骤过短（4/4）"
+        }
+      ]
+    },
+    {
+      "id": "bulk450_h_289",
+      "nameZh": "广式白斩鸡",
+      "source": "legacy",
+      "issues": [
+        {
+          "level": "INFO",
+          "code": "I3",
+          "msg": "应使用具体部位鸡肉（期望 chicken_breast/chicken_thigh/chicken_leg）"
+        }
+      ]
+    },
+    {
+      "id": "extra130_cold_051",
+      "nameZh": "冷山药段",
+      "source": "legacy",
+      "issues": [
+        {
+          "level": "WARN",
+          "code": "W6",
+          "msg": "绝大多数步骤过短（3/3）"
+        }
+      ]
+    },
+    {
+      "id": "extra130_bf_062",
+      "nameZh": "糙米粥",
+      "source": "legacy",
+      "issues": [
+        {
+          "level": "WARN",
+          "code": "W6",
+          "msg": "绝大多数步骤过短（3/3）"
+        }
+      ]
+    },
+    {
+      "id": "extra130_bf_063",
+      "nameZh": "燕麦糊",
+      "source": "legacy",
+      "issues": [
+        {
+          "level": "WARN",
+          "code": "W6",
+          "msg": "绝大多数步骤过短（3/3）"
+        }
+      ]
+    },
+    {
+      "id": "extra130_bf_064",
+      "nameZh": "红枣燕麦粥",
+      "source": "legacy",
+      "issues": [
+        {
+          "level": "WARN",
+          "code": "W6",
+          "msg": "绝大多数步骤过短（3/3）"
+        }
+      ]
+    },
+    {
+      "id": "extra130_bf_065",
+      "nameZh": "桂圆红枣粥",
+      "source": "legacy",
+      "issues": [
+        {
+          "level": "WARN",
+          "code": "W6",
+          "msg": "绝大多数步骤过短（3/3）"
+        }
+      ]
+    },
+    {
+      "id": "extra130_bf_066",
+      "nameZh": "核桃米粥",
+      "source": "legacy",
+      "issues": [
+        {
+          "level": "WARN",
+          "code": "W6",
+          "msg": "绝大多数步骤过短（3/3）"
+        }
+      ]
+    },
+    {
+      "id": "extra130_bf_068",
+      "nameZh": "山药小米粥",
+      "source": "legacy",
+      "issues": [
+        {
+          "level": "WARN",
+          "code": "W6",
+          "msg": "绝大多数步骤过短（3/3）"
+        }
+      ]
+    },
+    {
+      "id": "extra130_bf_069",
+      "nameZh": "红薯小米粥",
+      "source": "legacy",
+      "issues": [
+        {
+          "level": "WARN",
+          "code": "W6",
+          "msg": "绝大多数步骤过短（3/3）"
+        }
+      ]
+    },
+    {
+      "id": "extra130_bf_070",
+      "nameZh": "紫薯燕麦粥",
+      "source": "legacy",
+      "issues": [
+        {
+          "level": "WARN",
+          "code": "W6",
+          "msg": "绝大多数步骤过短（3/3）"
+        }
+      ]
+    },
+    {
+      "id": "extra130_bf_071",
+      "nameZh": "南瓜燕麦粥",
+      "source": "legacy",
+      "issues": [
+        {
+          "level": "WARN",
+          "code": "W6",
+          "msg": "绝大多数步骤过短（3/3）"
+        }
+      ]
+    },
+    {
+      "id": "extra130_bf_072",
+      "nameZh": "藜麦粥",
+      "source": "legacy",
+      "issues": [
+        {
+          "level": "WARN",
+          "code": "W6",
+          "msg": "绝大多数步骤过短（3/3）"
+        }
+      ]
+    },
+    {
+      "id": "extra130_bf_073",
+      "nameZh": "玉米藜麦粥",
+      "source": "legacy",
+      "issues": [
+        {
+          "level": "WARN",
+          "code": "W6",
+          "msg": "绝大多数步骤过短（3/3）"
+        }
+      ]
+    },
+    {
+      "id": "extra130_bf_074",
+      "nameZh": "糙米饭团",
+      "source": "legacy",
+      "issues": [
+        {
+          "level": "WARN",
+          "code": "W6",
+          "msg": "绝大多数步骤过短（3/3）"
+        }
+      ]
+    },
+    {
+      "id": "extra130_bf_075",
+      "nameZh": "米饭团(原味)",
+      "source": "legacy",
+      "issues": [
+        {
+          "level": "WARN",
+          "code": "W6",
+          "msg": "绝大多数步骤过短（3/3）"
+        }
+      ]
+    },
+    {
+      "id": "extra130_bf_076",
+      "nameZh": "南瓜糯米饼",
+      "source": "legacy",
+      "issues": [
+        {
+          "level": "WARN",
+          "code": "W6",
+          "msg": "绝大多数步骤过短（3/3）"
+        }
+      ]
+    },
+    {
+      "id": "extra130_bf_077",
+      "nameZh": "红薯糯米饼",
+      "source": "legacy",
+      "issues": [
+        {
+          "level": "WARN",
+          "code": "W6",
+          "msg": "绝大多数步骤过短（3/3）"
+        }
+      ]
+    },
+    {
+      "id": "extra130_bf_078",
+      "nameZh": "紫薯糯米饼",
+      "source": "legacy",
+      "issues": [
+        {
+          "level": "WARN",
+          "code": "W6",
+          "msg": "绝大多数步骤过短（3/3）"
+        }
+      ]
+    },
+    {
+      "id": "extra130_bf_079",
+      "nameZh": "山药糯米球",
+      "source": "legacy",
+      "issues": [
+        {
+          "level": "WARN",
+          "code": "W6",
+          "msg": "绝大多数步骤过短（3/3）"
+        }
+      ]
+    },
+    {
+      "id": "extra130_bf_080",
+      "nameZh": "葱花卷",
+      "source": "legacy",
+      "issues": [
+        {
+          "level": "WARN",
+          "code": "W6",
+          "msg": "绝大多数步骤过短（3/3）"
+        }
+      ]
+    },
+    {
+      "id": "extra130_bf_081",
+      "nameZh": "白吐司(无奶版)",
+      "source": "legacy",
+      "issues": [
+        {
+          "level": "WARN",
+          "code": "W6",
+          "msg": "绝大多数步骤过短（3/3）"
+        }
+      ]
+    },
+    {
+      "id": "extra130_bf_082",
+      "nameZh": "素菜包",
+      "source": "legacy",
+      "issues": [
+        {
+          "level": "WARN",
+          "code": "W6",
+          "msg": "绝大多数步骤过短（3/3）"
+        }
+      ]
+    },
+    {
+      "id": "extra130_bf_083",
+      "nameZh": "香菇菜包",
+      "source": "legacy",
+      "issues": [
+        {
+          "level": "WARN",
+          "code": "W6",
+          "msg": "绝大多数步骤过短（3/3）"
+        }
+      ]
+    },
+    {
+      "id": "extra130_bf_084",
+      "nameZh": "南瓜包子",
+      "source": "legacy",
+      "issues": [
+        {
+          "level": "WARN",
+          "code": "W6",
+          "msg": "绝大多数步骤过短（3/3）"
+        }
+      ]
+    },
+    {
+      "id": "extra130_bf_085",
+      "nameZh": "红薯包子",
+      "source": "legacy",
+      "issues": [
+        {
+          "level": "WARN",
+          "code": "W6",
+          "msg": "绝大多数步骤过短（3/3）"
+        }
+      ]
+    },
+    {
+      "id": "extra130_bf_086",
+      "nameZh": "蒸糙米饭",
+      "source": "legacy",
+      "issues": [
+        {
+          "level": "WARN",
+          "code": "W6",
+          "msg": "绝大多数步骤过短（3/3）"
+        }
+      ]
+    },
+    {
+      "id": "extra130_bf_087",
+      "nameZh": "蒸藜麦",
+      "source": "legacy",
+      "issues": [
+        {
+          "level": "WARN",
+          "code": "W6",
+          "msg": "绝大多数步骤过短（3/3）"
+        }
+      ]
+    },
+    {
+      "id": "extra130_bf_088",
+      "nameZh": "烤紫薯片",
+      "source": "legacy",
+      "issues": [
+        {
+          "level": "WARN",
+          "code": "W6",
+          "msg": "绝大多数步骤过短（3/3）"
+        }
+      ]
+    },
+    {
+      "id": "extra130_bf_089",
+      "nameZh": "烤南瓜片",
+      "source": "legacy",
+      "issues": [
+        {
+          "level": "WARN",
+          "code": "W6",
+          "msg": "绝大多数步骤过短（3/3）"
+        }
+      ]
+    },
+    {
+      "id": "extra130_bf_090",
+      "nameZh": "烤芋头条",
+      "source": "legacy",
+      "issues": [
+        {
+          "level": "WARN",
+          "code": "W6",
+          "msg": "绝大多数步骤过短（3/3）"
+        }
+      ]
+    }
+  ]
+}

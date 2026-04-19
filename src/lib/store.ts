@@ -6,7 +6,7 @@ import { create } from 'zustand';
 import { persist } from 'zustand/middleware';
 import type {
   UserProfile, WeeklyPlan, ShoppingList, ShoppingItem,
-  FamilyMember, MealSlot, CuisineType, MealType,
+  FamilyMember, MealSlot, CuisineType, MealType, DayOfWeek, DishRole,
   Recipe, Ingredient, RecipeAction, RecipePreference, RecentAction,
   SwapReason, UserFeedback, SavedPlan,
 } from '@/types';
@@ -30,6 +30,8 @@ interface AppState {
   replaceSingleRecipe: (day: string, mealType: MealType, oldRecipeId: string, newRecipeId: string, role: string) => void;
   addRecipeToMeal: (day: string, mealType: MealType, recipeId: string, role: string) => void;
   removeMealSlot: (day: string, mealType: MealType) => void;
+  toggleRecipeCompleted: (day: string, mealType: MealType, recipeId: string) => void;
+  moveRecipeToDay: (fromDay: string, mealType: MealType, recipeId: string, toDay: string) => void;
 
   // --- 采购清单 ---
   shoppingList: ShoppingList | null;
@@ -219,6 +221,56 @@ export const useAppStore = create<AppState>()(
           const slots = s.weeklyPlan.slots.filter(
             (slot) => !(slot.day === day && slot.mealType === mealType)
           );
+          return { weeklyPlan: { ...s.weeklyPlan, slots } };
+        }),
+
+      toggleRecipeCompleted: (day, mealType, recipeId) =>
+        set((s) => {
+          if (!s.weeklyPlan) return s;
+          const slots = s.weeklyPlan.slots.map(slot => {
+            if (slot.day !== day || slot.mealType !== mealType) return slot;
+            const recipes = (slot.recipes || []).map(mr => {
+              if (mr.recipeId !== recipeId) return mr;
+              return mr.completed
+                ? { ...mr, completed: false, completedAt: undefined }
+                : { ...mr, completed: true, completedAt: new Date().toISOString() };
+            });
+            return { ...slot, recipes };
+          });
+          return { weeklyPlan: { ...s.weeklyPlan, slots } };
+        }),
+
+      /** 把某餐的菜谱移到另一天的同餐次; 需求: 用户指定目标日 */
+      moveRecipeToDay: (fromDay, mealType, recipeId, toDay) =>
+        set((s) => {
+          if (!s.weeklyPlan || fromDay === toDay) return s;
+          let moved: { recipeId: string; role: DishRole } | null = null;
+          // 从源 slot 移除
+          let slots = s.weeklyPlan.slots.map(slot => {
+            if (slot.day !== fromDay || slot.mealType !== mealType) return slot;
+            const hit = (slot.recipes || []).find(mr => mr.recipeId === recipeId);
+            if (hit) moved = { recipeId: hit.recipeId, role: hit.role };
+            const recipes = (slot.recipes || []).filter(mr => mr.recipeId !== recipeId);
+            return { ...slot, recipes };
+          });
+          if (!moved) return s;
+          // 目标日同餐次添加; 没有 slot 则创建
+          const toSlotExists = slots.some(slot => slot.day === toDay && slot.mealType === mealType);
+          if (toSlotExists) {
+            slots = slots.map(slot => {
+              if (slot.day !== toDay || slot.mealType !== mealType) return slot;
+              // 若目标日已有相同 recipeId(重复), 跳过
+              if ((slot.recipes || []).some(mr => mr.recipeId === recipeId)) return slot;
+              return { ...slot, recipes: [...(slot.recipes || []), moved!] };
+            });
+          } else {
+            slots = [...slots, {
+              day: toDay as DayOfWeek,
+              mealType,
+              recipes: [moved!],
+              servings: s.profile.familySize || 2,
+            }];
+          }
           return { weeklyPlan: { ...s.weeklyPlan, slots } };
         }),
 

@@ -1,0 +1,41 @@
+#!/bin/sh
+# DailyBuy 菜谱数据 pre-commit 钩子
+#
+# 用法（一次性安装）:
+#   Windows: copy scripts\hooks\pre-commit .git\hooks\pre-commit
+#   Unix:    cp scripts/hooks/pre-commit .git/hooks/pre-commit && chmod +x .git/hooks/pre-commit
+#
+# 只要本次提交涉及 src/data/recipes-*.json 或 src/data/ingredients.json 就会触发审计。
+# 有 ERROR 时阻止提交。只发 WARN/INFO 放行。
+
+CHANGED=$(git diff --cached --name-only | grep -E "src/data/(recipes-.*\.json|ingredients\.json)")
+if [ -z "$CHANGED" ]; then
+  exit 0
+fi
+
+echo "🔍 检测到菜谱/食材数据变更，正在运行审计..."
+echo "$CHANGED" | sed 's/^/  /'
+echo ""
+
+node scripts/enrich-recipes.js >/dev/null 2>&1 || {
+  echo "❌ enrich-recipes 执行失败，取消提交"
+  exit 1
+}
+node scripts/merge-recipes.js >/dev/null 2>&1 || {
+  echo "❌ merge-recipes 执行失败，取消提交"
+  exit 1
+}
+node scripts/audit-recipes.js --strict
+AUDIT_EXIT=$?
+
+if [ $AUDIT_EXIT -ne 0 ]; then
+  echo ""
+  echo "❌ 审计发现 ERROR，阻止本次提交"
+  echo "   修复后重新 git add + commit，或临时跳过: git commit --no-verify"
+  exit 1
+fi
+
+# 自动把 enrich 产生的字段变更和 recipes-all.json 一起纳入本次提交
+git add src/data/recipes-*.json src/data/recipes-all.json 2>/dev/null
+
+exit 0

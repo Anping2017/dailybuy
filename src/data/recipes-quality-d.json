@@ -7,23 +7,66 @@
     "cuisine": "western",
     "regionalCuisine": "italian",
     "cookingMethod": "staple",
-    "flavors": ["creamy", "smoky", "rich"],
-    "mealTypes": ["lunch", "dinner"],
+    "flavors": [
+      "creamy",
+      "smoky",
+      "rich"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
     "difficulty": "easy",
     "minCookingLevel": "beginner",
     "prepTime": 5,
     "cookTime": 15,
-    "servings": 2,
+    "servings": 3,
     "ingredients": [
-      { "ingredientId": "pasta", "amount": 200, "unit": "g" },
-      { "ingredientId": "smoked_salmon", "amount": 150, "unit": "g" },
-      { "ingredientId": "cream", "amount": 200, "unit": "ml" },
-      { "ingredientId": "dill", "amount": 10, "unit": "g" },
-      { "ingredientId": "garlic", "amount": 2, "unit": "piece" },
-      { "ingredientId": "butter", "amount": 20, "unit": "g" },
-      { "ingredientId": "black_pepper", "amount": 1, "unit": "tsp" },
-      { "ingredientId": "salt", "amount": 1, "unit": "tsp" },
-      { "ingredientId": "lemon", "amount": 0.5, "unit": "piece" }
+      {
+        "ingredientId": "pasta",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "smoked_salmon",
+        "amount": 150,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cream",
+        "amount": 200,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "dill",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "butter",
+        "amount": 20,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "black_pepper",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "ingredientId": "lemon",
+        "amount": 0.5,
+        "unit": "piece"
+      }
     ],
     "steps": [
       "沸水加盐煮意面至 al dente，约 8 分钟，捞出保留半碗煮面水",
@@ -33,7 +76,40 @@
       "意面入锅翻拌，太干加少许煮面水调整",
       "撒莳萝碎、挤柠檬汁提香，出锅即食"
     ],
-    "tags": ["意式", "奶油系", "快手", "晚餐"]
+    "tags": [
+      "意式",
+      "奶油系",
+      "快手",
+      "晚餐"
+    ],
+    "dishRole": "staple",
+    "isVegetarian": false,
+    "dishStyle": "meat",
+    "stapleCategory": "noodles",
+    "perServing": {
+      "calories": 598,
+      "protein": 19.8,
+      "fat": 32.7,
+      "carbs": 56.7,
+      "fiber": 3.4,
+      "sodium": 1069,
+      "sugar": 4.5
+    },
+    "nutritionWarnings": [
+      "high_sodium"
+    ],
+    "nutritionHighlights": [
+      "high_fiber",
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_dairy",
+      "allergen_gluten",
+      "allergen_seafood"
+    ],
+    "dietaryFlags": [
+      "processed"
+    ]
   },
   {
     "id": "american_kale_caesar",
@@ -43,24 +119,71 @@
     "cuisine": "western",
     "regionalCuisine": "american",
     "cookingMethod": "cold_dish",
-    "flavors": ["refreshing", "cheesy", "tangy"],
-    "mealTypes": ["lunch", "dinner"],
+    "flavors": [
+      "refreshing",
+      "cheesy",
+      "tangy"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
     "difficulty": "easy",
     "minCookingLevel": "beginner",
     "prepTime": 15,
     "cookTime": 5,
     "servings": 2,
     "ingredients": [
-      { "ingredientId": "kale", "amount": 200, "unit": "g" },
-      { "ingredientId": "parmesan", "amount": 30, "unit": "g" },
-      { "ingredientId": "bread", "amount": 50, "unit": "g" },
-      { "ingredientId": "mayonnaise", "amount": 3, "unit": "tbsp" },
-      { "ingredientId": "dijon_mustard", "amount": 1, "unit": "tsp" },
-      { "ingredientId": "lemon", "amount": 0.5, "unit": "piece" },
-      { "ingredientId": "garlic", "amount": 1, "unit": "piece" },
-      { "ingredientId": "olive_oil", "amount": 2, "unit": "tbsp" },
-      { "ingredientId": "salt", "amount": 0.5, "unit": "tsp" },
-      { "ingredientId": "black_pepper", "amount": 0.5, "unit": "tsp" }
+      {
+        "ingredientId": "kale",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "parmesan",
+        "amount": 30,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "bread",
+        "amount": 50,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "mayonnaise",
+        "amount": 3,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "dijon_mustard",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "ingredientId": "lemon",
+        "amount": 0.5,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "olive_oil",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 0.5,
+        "unit": "tsp"
+      },
+      {
+        "ingredientId": "black_pepper",
+        "amount": 0.5,
+        "unit": "tsp"
+      }
     ],
     "steps": [
       "羽衣甘蓝去粗茎撕成小片，加少许橄榄油和盐用手揉 1 分钟至变软",
@@ -68,7 +191,41 @@
       "蛋黄酱、第戎芥末、柠檬汁、蒜泥、黑胡椒拌匀成凯撒酱",
       "甘蓝淋酱拌匀，撒帕玛森奶酪刨花和烤面包丁即可"
     ],
-    "tags": ["沙拉", "轻食", "高纤维", "素食可选"]
+    "tags": [
+      "沙拉",
+      "轻食",
+      "高纤维",
+      "素食可选"
+    ],
+    "dishRole": "cold",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": null,
+    "perServing": {
+      "calories": 485,
+      "protein": 13.3,
+      "fat": 38.2,
+      "carbs": 27.1,
+      "fiber": 5.8,
+      "sodium": 1045,
+      "sugar": 4.8
+    },
+    "nutritionWarnings": [
+      "high_sodium",
+      "high_fat"
+    ],
+    "nutritionHighlights": [
+      "high_fiber",
+      "high_iron",
+      "high_protein",
+      "high_vitamin",
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_dairy",
+      "allergen_gluten"
+    ],
+    "dietaryFlags": []
   },
   {
     "id": "greek_feta_salad",
@@ -78,24 +235,71 @@
     "cuisine": "western",
     "regionalCuisine": "mediterranean",
     "cookingMethod": "cold_dish",
-    "flavors": ["refreshing", "briny", "tangy"],
-    "mealTypes": ["lunch", "dinner"],
+    "flavors": [
+      "refreshing",
+      "briny",
+      "tangy"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
     "difficulty": "easy",
     "minCookingLevel": "basic",
     "prepTime": 10,
     "cookTime": 0,
     "servings": 2,
     "ingredients": [
-      { "ingredientId": "tomato", "amount": 2, "unit": "piece" },
-      { "ingredientId": "cucumber", "amount": 1, "unit": "piece" },
-      { "ingredientId": "red_shallot", "amount": 1, "unit": "piece" },
-      { "ingredientId": "feta", "amount": 150, "unit": "g" },
-      { "ingredientId": "capsicum", "amount": 1, "unit": "piece" },
-      { "ingredientId": "olive_oil", "amount": 3, "unit": "tbsp" },
-      { "ingredientId": "balsamic_vinegar", "amount": 1, "unit": "tbsp" },
-      { "ingredientId": "oregano", "amount": 1, "unit": "tsp" },
-      { "ingredientId": "salt", "amount": 0.5, "unit": "tsp" },
-      { "ingredientId": "black_pepper", "amount": 0.5, "unit": "tsp" }
+      {
+        "ingredientId": "tomato",
+        "amount": 2,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "cucumber",
+        "amount": 1,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "red_shallot",
+        "amount": 1,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "feta",
+        "amount": 150,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "capsicum",
+        "amount": 1,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "olive_oil",
+        "amount": 3,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "balsamic_vinegar",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "oregano",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 0.5,
+        "unit": "tsp"
+      },
+      {
+        "ingredientId": "black_pepper",
+        "amount": 0.5,
+        "unit": "tsp"
+      }
     ],
     "steps": [
       "番茄切块，黄瓜滚刀切，彩椒去籽切条",
@@ -103,7 +307,38 @@
       "所有蔬菜放大碗，菲达奶酪掰成块铺面",
       "淋橄榄油和黑醋，撒牛至碎、盐和黑胡椒拌匀静置 5 分钟入味"
     ],
-    "tags": ["沙拉", "地中海", "快手", "无需开火"]
+    "tags": [
+      "沙拉",
+      "地中海",
+      "快手",
+      "无需开火"
+    ],
+    "dishRole": "cold",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": null,
+    "perServing": {
+      "calories": 568,
+      "protein": 16.9,
+      "fat": 39.3,
+      "carbs": 41.2,
+      "fiber": 9.6,
+      "sodium": 1353,
+      "sugar": 23.2
+    },
+    "nutritionWarnings": [
+      "high_sodium",
+      "high_sugar",
+      "high_fat"
+    ],
+    "nutritionHighlights": [
+      "high_fiber",
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_dairy"
+    ],
+    "dietaryFlags": []
   },
   {
     "id": "italian_mushroom_risotto",
@@ -112,27 +347,82 @@
     "description": "意大利北方冬季暖胃料理。用米饭不断吸汁的手法，搭配褐菇、鲜香菇与帕玛森奶酪，逼出菌菇的鲜甜与奶香。",
     "cuisine": "western",
     "regionalCuisine": "italian",
-    "cookingMethod": "simmer",
-    "flavors": ["creamy", "umami", "rich"],
-    "mealTypes": ["lunch", "dinner"],
+    "cookingMethod": "staple",
+    "flavors": [
+      "creamy",
+      "umami",
+      "rich"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
     "difficulty": "medium",
     "minCookingLevel": "intermediate",
     "prepTime": 15,
     "cookTime": 30,
     "servings": 3,
     "ingredients": [
-      { "ingredientId": "rice", "amount": 250, "unit": "g" },
-      { "ingredientId": "portobello", "amount": 150, "unit": "g" },
-      { "ingredientId": "shiitake_fresh", "amount": 100, "unit": "g" },
-      { "ingredientId": "onion", "amount": 1, "unit": "piece" },
-      { "ingredientId": "garlic", "amount": 3, "unit": "piece" },
-      { "ingredientId": "butter", "amount": 40, "unit": "g" },
-      { "ingredientId": "parmesan", "amount": 50, "unit": "g" },
-      { "ingredientId": "chicken_stock", "amount": 800, "unit": "ml" },
-      { "ingredientId": "olive_oil", "amount": 2, "unit": "tbsp" },
-      { "ingredientId": "salt", "amount": 1, "unit": "tsp" },
-      { "ingredientId": "black_pepper", "amount": 0.5, "unit": "tsp" },
-      { "ingredientId": "thyme", "amount": 1, "unit": "tsp" }
+      {
+        "ingredientId": "rice",
+        "amount": 250,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "portobello",
+        "amount": 150,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "shiitake_fresh",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "onion",
+        "amount": 1,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "butter",
+        "amount": 40,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "parmesan",
+        "amount": 50,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "chicken_stock",
+        "amount": 800,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "olive_oil",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "ingredientId": "black_pepper",
+        "amount": 0.5,
+        "unit": "tsp"
+      },
+      {
+        "ingredientId": "thyme",
+        "amount": 1,
+        "unit": "tsp"
+      }
     ],
     "steps": [
       "鸡汤保持微沸状态备用",
@@ -143,7 +433,37 @@
       "约 18 分钟后米粒软糯带芯时倒入菌菇拌匀",
       "关火加入冷黄油和帕玛森奶酪碎，盖盖焖 2 分钟，调入盐和黑胡椒出锅"
     ],
-    "tags": ["意式", "菌菇", "主食", "下酒"]
+    "tags": [
+      "意式",
+      "菌菇",
+      "主食",
+      "下酒"
+    ],
+    "dishRole": "staple",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": "rice",
+    "perServing": {
+      "calories": 428,
+      "protein": 17.8,
+      "fat": 22.9,
+      "carbs": 40,
+      "fiber": 3.5,
+      "sodium": 1829,
+      "sugar": 5.9
+    },
+    "nutritionWarnings": [
+      "high_sodium"
+    ],
+    "nutritionHighlights": [
+      "high_fiber",
+      "high_protein",
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_dairy"
+    ],
+    "dietaryFlags": []
   },
   {
     "id": "french_lamb_rosemary",
@@ -153,23 +473,65 @@
     "cuisine": "western",
     "regionalCuisine": "french",
     "cookingMethod": "roast",
-    "flavors": ["herby", "rich", "aromatic"],
-    "mealTypes": ["dinner"],
+    "flavors": [
+      "herby",
+      "rich",
+      "aromatic"
+    ],
+    "mealTypes": [
+      "dinner"
+    ],
     "difficulty": "medium",
     "minCookingLevel": "intermediate",
     "prepTime": 20,
     "cookTime": 20,
-    "servings": 2,
+    "servings": 5,
     "ingredients": [
-      { "ingredientId": "lamb_chop", "amount": 500, "unit": "g" },
-      { "ingredientId": "rosemary", "amount": 2, "unit": "tbsp" },
-      { "ingredientId": "garlic", "amount": 5, "unit": "piece" },
-      { "ingredientId": "dijon_mustard", "amount": 1, "unit": "tbsp" },
-      { "ingredientId": "olive_oil", "amount": 3, "unit": "tbsp" },
-      { "ingredientId": "butter", "amount": 20, "unit": "g" },
-      { "ingredientId": "salt", "amount": 1, "unit": "tsp" },
-      { "ingredientId": "black_pepper", "amount": 1, "unit": "tsp" },
-      { "ingredientId": "lemon", "amount": 0.5, "unit": "piece" }
+      {
+        "ingredientId": "lamb_chop",
+        "amount": 500,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "rosemary",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 25,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "dijon_mustard",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "olive_oil",
+        "amount": 3,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "butter",
+        "amount": 20,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "ingredientId": "black_pepper",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "ingredientId": "lemon",
+        "amount": 0.5,
+        "unit": "piece"
+      }
     ],
     "steps": [
       "羊排室温回温 20 分钟，两面均匀抹盐和黑胡椒",
@@ -179,7 +541,35 @@
       "取出静置 5 分钟让肉汁回流",
       "表面薄涂第戎芥末，挤柠檬汁即可"
     ],
-    "tags": ["法式", "烤箱菜", "西餐主菜", "宴客"]
+    "tags": [
+      "法式",
+      "烤箱菜",
+      "西餐主菜",
+      "宴客"
+    ],
+    "dishRole": "main_meat",
+    "isVegetarian": false,
+    "dishStyle": "meat",
+    "stapleCategory": null,
+    "perServing": {
+      "calories": 387,
+      "protein": 26,
+      "fat": 29.3,
+      "carbs": 5.1,
+      "fiber": 1.7,
+      "sodium": 497,
+      "sugar": 0.5
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "high_protein",
+      "high_fiber",
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_dairy"
+    ],
+    "dietaryFlags": []
   },
   {
     "id": "american_brussels_bacon",
@@ -189,22 +579,61 @@
     "cuisine": "western",
     "regionalCuisine": "american",
     "cookingMethod": "roast",
-    "flavors": ["smoky", "crispy", "savory"],
-    "mealTypes": ["lunch", "dinner"],
+    "flavors": [
+      "smoky",
+      "crispy",
+      "savory"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
     "difficulty": "easy",
     "minCookingLevel": "beginner",
     "prepTime": 10,
     "cookTime": 25,
     "servings": 3,
     "ingredients": [
-      { "ingredientId": "brussels_sprouts", "amount": 500, "unit": "g" },
-      { "ingredientId": "bacon", "amount": 100, "unit": "g" },
-      { "ingredientId": "olive_oil", "amount": 2, "unit": "tbsp" },
-      { "ingredientId": "honey", "amount": 1, "unit": "tbsp" },
-      { "ingredientId": "balsamic_vinegar", "amount": 1, "unit": "tbsp" },
-      { "ingredientId": "salt", "amount": 0.5, "unit": "tsp" },
-      { "ingredientId": "black_pepper", "amount": 0.5, "unit": "tsp" },
-      { "ingredientId": "garlic", "amount": 3, "unit": "piece" }
+      {
+        "ingredientId": "brussels_sprouts",
+        "amount": 500,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "bacon",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "olive_oil",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "honey",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "balsamic_vinegar",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 0.5,
+        "unit": "tsp"
+      },
+      {
+        "ingredientId": "black_pepper",
+        "amount": 0.5,
+        "unit": "tsp"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 15,
+        "unit": "g"
+      }
     ],
     "steps": [
       "抱子甘蓝切半，烤盘铺油纸",
@@ -212,7 +641,36 @@
       "烤箱 220℃ 预热，切面朝下铺平，烤 20 分钟",
       "取出淋蜂蜜和黑醋，拌匀后再回烤 5 分钟至焦边"
     ],
-    "tags": ["西式配菜", "烤箱菜", "节日菜", "低碳水"]
+    "tags": [
+      "西式配菜",
+      "烤箱菜",
+      "节日菜",
+      "低碳水"
+    ],
+    "dishRole": "main_meat",
+    "isVegetarian": false,
+    "dishStyle": "meat",
+    "stapleCategory": null,
+    "perServing": {
+      "calories": 325,
+      "protein": 18.4,
+      "fat": 19.6,
+      "carbs": 22.5,
+      "fiber": 6.7,
+      "sodium": 939,
+      "sugar": 8.6
+    },
+    "nutritionWarnings": [
+      "high_sodium"
+    ],
+    "nutritionHighlights": [
+      "high_fiber",
+      "high_protein"
+    ],
+    "allergens": [],
+    "dietaryFlags": [
+      "processed"
+    ]
   },
   {
     "id": "french_salmon_dill",
@@ -222,22 +680,60 @@
     "cuisine": "western",
     "regionalCuisine": "french",
     "cookingMethod": "bake",
-    "flavors": ["herby", "refreshing", "buttery"],
-    "mealTypes": ["dinner"],
+    "flavors": [
+      "herby",
+      "refreshing",
+      "buttery"
+    ],
+    "mealTypes": [
+      "dinner"
+    ],
     "difficulty": "easy",
     "minCookingLevel": "beginner",
     "prepTime": 5,
     "cookTime": 15,
-    "servings": 2,
+    "servings": 3,
     "ingredients": [
-      { "ingredientId": "salmon_fillet", "amount": 400, "unit": "g" },
-      { "ingredientId": "dill", "amount": 20, "unit": "g" },
-      { "ingredientId": "lemon", "amount": 1, "unit": "piece" },
-      { "ingredientId": "butter", "amount": 30, "unit": "g" },
-      { "ingredientId": "garlic", "amount": 2, "unit": "piece" },
-      { "ingredientId": "olive_oil", "amount": 1, "unit": "tbsp" },
-      { "ingredientId": "salt", "amount": 0.5, "unit": "tsp" },
-      { "ingredientId": "black_pepper", "amount": 0.5, "unit": "tsp" }
+      {
+        "ingredientId": "salmon_fillet",
+        "amount": 400,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "dill",
+        "amount": 20,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "lemon",
+        "amount": 1,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "butter",
+        "amount": 30,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "olive_oil",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 0.5,
+        "unit": "tsp"
+      },
+      {
+        "ingredientId": "black_pepper",
+        "amount": 0.5,
+        "unit": "tsp"
+      }
     ],
     "steps": [
       "三文鱼两面撒盐和黑胡椒",
@@ -246,7 +742,36 @@
       "柠檬切片铺鱼身，挤半个柠檬汁淋橄榄油",
       "烤箱 200℃ 烤 12-15 分钟至鱼肉刚好不透明即可"
     ],
-    "tags": ["法式", "烤箱菜", "高蛋白", "低碳水"]
+    "tags": [
+      "法式",
+      "烤箱菜",
+      "高蛋白",
+      "低碳水"
+    ],
+    "dishRole": "main_meat",
+    "isVegetarian": false,
+    "dishStyle": "meat",
+    "stapleCategory": null,
+    "perServing": {
+      "calories": 418,
+      "protein": 27.8,
+      "fat": 30.7,
+      "carbs": 6.6,
+      "fiber": 1.8,
+      "sodium": 409,
+      "sugar": 1.3
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "high_protein",
+      "high_fiber",
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_dairy",
+      "allergen_seafood"
+    ],
+    "dietaryFlags": []
   },
   {
     "id": "italian_zucchini_frittata",
@@ -256,23 +781,66 @@
     "cuisine": "western",
     "regionalCuisine": "italian",
     "cookingMethod": "bake",
-    "flavors": ["cheesy", "light", "herby"],
-    "mealTypes": ["breakfast", "lunch"],
+    "flavors": [
+      "cheesy",
+      "light",
+      "herby"
+    ],
+    "mealTypes": [
+      "breakfast",
+      "lunch"
+    ],
     "difficulty": "easy",
     "minCookingLevel": "beginner",
     "prepTime": 10,
     "cookTime": 20,
     "servings": 3,
     "ingredients": [
-      { "ingredientId": "egg", "amount": 6, "unit": "piece" },
-      { "ingredientId": "zucchini", "amount": 1, "unit": "piece" },
-      { "ingredientId": "parmesan", "amount": 40, "unit": "g" },
-      { "ingredientId": "onion", "amount": 0.5, "unit": "piece" },
-      { "ingredientId": "milk", "amount": 50, "unit": "ml" },
-      { "ingredientId": "olive_oil", "amount": 2, "unit": "tbsp" },
-      { "ingredientId": "salt", "amount": 0.5, "unit": "tsp" },
-      { "ingredientId": "black_pepper", "amount": 0.5, "unit": "tsp" },
-      { "ingredientId": "basil", "amount": 5, "unit": "g" }
+      {
+        "ingredientId": "egg",
+        "amount": 6,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "zucchini",
+        "amount": 1,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "parmesan",
+        "amount": 40,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "onion",
+        "amount": 0.5,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "milk",
+        "amount": 50,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "olive_oil",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 0.5,
+        "unit": "tsp"
+      },
+      {
+        "ingredientId": "black_pepper",
+        "amount": 0.5,
+        "unit": "tsp"
+      },
+      {
+        "ingredientId": "basil",
+        "amount": 5,
+        "unit": "g"
+      }
     ],
     "steps": [
       "西葫芦切薄片，洋葱切丁",
@@ -282,7 +850,36 @@
       "连锅送入 180℃ 烤箱烤 10 分钟至中心凝固",
       "取出静置 3 分钟，撒罗勒叶切块食用"
     ],
-    "tags": ["意式", "早餐", "便当", "素食"]
+    "tags": [
+      "意式",
+      "早餐",
+      "便当",
+      "素食"
+    ],
+    "dishRole": "staple",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": "bread",
+    "perServing": {
+      "calories": 335,
+      "protein": 19.9,
+      "fat": 25.3,
+      "carbs": 8.2,
+      "fiber": 1.5,
+      "sodium": 665,
+      "sugar": 5.1
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "high_fiber",
+      "high_protein",
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_dairy",
+      "allergen_egg"
+    ],
+    "dietaryFlags": []
   },
   {
     "id": "american_sour_cream_mash",
@@ -292,22 +889,61 @@
     "cuisine": "western",
     "regionalCuisine": "american",
     "cookingMethod": "boil",
-    "flavors": ["creamy", "tangy", "comforting"],
-    "mealTypes": ["lunch", "dinner"],
+    "flavors": [
+      "creamy",
+      "tangy",
+      "comforting"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
     "difficulty": "easy",
     "minCookingLevel": "basic",
     "prepTime": 10,
     "cookTime": 20,
     "servings": 3,
     "ingredients": [
-      { "ingredientId": "potato", "amount": 600, "unit": "g" },
-      { "ingredientId": "sour_cream", "amount": 100, "unit": "g" },
-      { "ingredientId": "butter", "amount": 40, "unit": "g" },
-      { "ingredientId": "milk", "amount": 80, "unit": "ml" },
-      { "ingredientId": "garlic", "amount": 2, "unit": "piece" },
-      { "ingredientId": "salt", "amount": 1, "unit": "tsp" },
-      { "ingredientId": "black_pepper", "amount": 0.5, "unit": "tsp" },
-      { "ingredientId": "spring_onion", "amount": 1, "unit": "piece" }
+      {
+        "ingredientId": "potato",
+        "amount": 600,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sour_cream",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "butter",
+        "amount": 40,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "milk",
+        "amount": 80,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "ingredientId": "black_pepper",
+        "amount": 0.5,
+        "unit": "tsp"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 15,
+        "unit": "g"
+      }
     ],
     "steps": [
       "土豆去皮切大块，加盐水煮 15 分钟至筷子轻松扎透",
@@ -316,7 +952,33 @@
       "拌入酸奶油和蒜泥，撒盐和黑胡椒调味",
       "撒葱花装盘"
     ],
-    "tags": ["西式配菜", "土豆料理", "家庭菜"]
+    "tags": [
+      "西式配菜",
+      "土豆料理",
+      "家庭菜"
+    ],
+    "dishRole": "main_veg",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": null,
+    "perServing": {
+      "calories": 334,
+      "protein": 6.2,
+      "fat": 17.7,
+      "carbs": 38.9,
+      "fiber": 4.8,
+      "sodium": 690,
+      "sugar": 4.3
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "high_fiber",
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_dairy"
+    ],
+    "dietaryFlags": []
   },
   {
     "id": "italian_ricotta_spinach",
@@ -326,25 +988,76 @@
     "cuisine": "western",
     "regionalCuisine": "italian",
     "cookingMethod": "bake",
-    "flavors": ["creamy", "cheesy", "herby"],
-    "mealTypes": ["lunch", "dinner"],
+    "flavors": [
+      "creamy",
+      "cheesy",
+      "herby"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
     "difficulty": "medium",
     "minCookingLevel": "intermediate",
     "prepTime": 20,
     "cookTime": 25,
-    "servings": 3,
+    "servings": 4,
     "ingredients": [
-      { "ingredientId": "spinach", "amount": 300, "unit": "g" },
-      { "ingredientId": "ricotta", "amount": 250, "unit": "g" },
-      { "ingredientId": "mozzarella", "amount": 100, "unit": "g" },
-      { "ingredientId": "tortilla", "amount": 4, "unit": "piece" },
-      { "ingredientId": "egg", "amount": 1, "unit": "piece" },
-      { "ingredientId": "garlic", "amount": 3, "unit": "piece" },
-      { "ingredientId": "nutmeg", "amount": 0.25, "unit": "tsp" },
-      { "ingredientId": "tomato_paste", "amount": 100, "unit": "g" },
-      { "ingredientId": "olive_oil", "amount": 2, "unit": "tbsp" },
-      { "ingredientId": "salt", "amount": 1, "unit": "tsp" },
-      { "ingredientId": "black_pepper", "amount": 0.5, "unit": "tsp" }
+      {
+        "ingredientId": "spinach",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ricotta",
+        "amount": 250,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "mozzarella",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "tortilla",
+        "amount": 4,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "egg",
+        "amount": 1,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "nutmeg",
+        "amount": 0.3,
+        "unit": "tsp"
+      },
+      {
+        "ingredientId": "tomato_paste",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "olive_oil",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "ingredientId": "black_pepper",
+        "amount": 0.5,
+        "unit": "tsp"
+      }
     ],
     "steps": [
       "菠菜焯水 30 秒，挤干水分切碎",
@@ -354,7 +1067,40 @@
       "淋番茄酱，铺马苏里拉碎，撒黑胡椒",
       "烤箱 200℃ 烤 20 分钟至顶部金黄"
     ],
-    "tags": ["意式", "素食", "烤箱菜", "宴客"]
+    "tags": [
+      "意式",
+      "素食",
+      "烤箱菜",
+      "宴客"
+    ],
+    "dishRole": "main_veg",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": null,
+    "perServing": {
+      "calories": 537,
+      "protein": 24,
+      "fat": 24.6,
+      "carbs": 58.8,
+      "fiber": 5.2,
+      "sodium": 1373,
+      "sugar": 8.1
+    },
+    "nutritionWarnings": [
+      "high_sodium"
+    ],
+    "nutritionHighlights": [
+      "high_fiber",
+      "high_protein",
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_dairy",
+      "allergen_egg"
+    ],
+    "dietaryFlags": [
+      "high_purine"
+    ]
   },
   {
     "id": "french_chicken_liver_pate",
@@ -364,25 +1110,76 @@
     "cuisine": "western",
     "regionalCuisine": "french",
     "cookingMethod": "pan_fry",
-    "flavors": ["rich", "buttery", "aromatic"],
-    "mealTypes": ["lunch", "dinner"],
+    "flavors": [
+      "rich",
+      "buttery",
+      "aromatic"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
     "difficulty": "medium",
     "minCookingLevel": "intermediate",
     "prepTime": 15,
     "cookTime": 15,
     "servings": 4,
     "ingredients": [
-      { "ingredientId": "chicken_liver", "amount": 300, "unit": "g" },
-      { "ingredientId": "butter", "amount": 100, "unit": "g" },
-      { "ingredientId": "onion", "amount": 0.5, "unit": "piece" },
-      { "ingredientId": "garlic", "amount": 2, "unit": "piece" },
-      { "ingredientId": "thyme", "amount": 1, "unit": "tsp" },
-      { "ingredientId": "bay_leaf", "amount": 2, "unit": "piece" },
-      { "ingredientId": "cooking_wine", "amount": 3, "unit": "tbsp" },
-      { "ingredientId": "cream", "amount": 50, "unit": "ml" },
-      { "ingredientId": "bread", "amount": 200, "unit": "g" },
-      { "ingredientId": "salt", "amount": 1, "unit": "tsp" },
-      { "ingredientId": "black_pepper", "amount": 0.5, "unit": "tsp" }
+      {
+        "ingredientId": "chicken_liver",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "butter",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "onion",
+        "amount": 0.5,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "thyme",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "ingredientId": "bay_leaf",
+        "amount": 0.2,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 3,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "cream",
+        "amount": 50,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "bread",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "ingredientId": "black_pepper",
+        "amount": 0.5,
+        "unit": "tsp"
+      }
     ],
     "steps": [
       "鸡肝去筋膜和脂肪块，冰牛奶浸泡 20 分钟去腥",
@@ -393,7 +1190,35 @@
       "滤网过筛一遍使口感更顺滑，装罐冷藏 4 小时",
       "搭配烤脆的法棍片食用"
     ],
-    "tags": ["法式", "开胃", "抹酱", "宴客"]
+    "tags": [
+      "法式",
+      "开胃",
+      "抹酱",
+      "宴客"
+    ],
+    "dishRole": "main_meat",
+    "isVegetarian": false,
+    "dishStyle": "meat",
+    "stapleCategory": null,
+    "perServing": {
+      "calories": 470,
+      "protein": 18.4,
+      "fat": 30.2,
+      "carbs": 29.9,
+      "fiber": 2.2,
+      "sodium": 796,
+      "sugar": 4.2
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "high_fiber",
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_dairy",
+      "allergen_gluten"
+    ],
+    "dietaryFlags": []
   },
   {
     "id": "italian_fig_ricotta_toast",
@@ -403,21 +1228,55 @@
     "cuisine": "western",
     "regionalCuisine": "italian",
     "cookingMethod": "bake",
-    "flavors": ["sweet", "creamy", "fruity"],
-    "mealTypes": ["breakfast"],
+    "flavors": [
+      "sweet",
+      "creamy",
+      "fruity"
+    ],
+    "mealTypes": [
+      "breakfast"
+    ],
     "difficulty": "easy",
     "minCookingLevel": "basic",
     "prepTime": 5,
     "cookTime": 5,
-    "servings": 2,
+    "servings": 3,
     "ingredients": [
-      { "ingredientId": "bread", "amount": 4, "unit": "piece" },
-      { "ingredientId": "ricotta", "amount": 150, "unit": "g" },
-      { "ingredientId": "fig", "amount": 4, "unit": "piece" },
-      { "ingredientId": "honey", "amount": 2, "unit": "tbsp" },
-      { "ingredientId": "walnut", "amount": 20, "unit": "g" },
-      { "ingredientId": "mint", "amount": 5, "unit": "g" },
-      { "ingredientId": "black_pepper", "amount": 0.25, "unit": "tsp" }
+      {
+        "ingredientId": "bread",
+        "amount": 4,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "ricotta",
+        "amount": 150,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "fig",
+        "amount": 4,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "honey",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "walnut",
+        "amount": 20,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "mint",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "black_pepper",
+        "amount": 0.3,
+        "unit": "tsp"
+      }
     ],
     "steps": [
       "吐司烤至两面金黄",
@@ -425,7 +1284,38 @@
       "无花果切瓣铺面，淋蜂蜜",
       "撒核桃碎和薄荷叶装饰"
     ],
-    "tags": ["早餐", "快手", "轻食", "甜咸结合"]
+    "tags": [
+      "早餐",
+      "快手",
+      "轻食",
+      "甜咸结合"
+    ],
+    "dishRole": "staple",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": "bread",
+    "perServing": {
+      "calories": 665,
+      "protein": 20.2,
+      "fat": 15.7,
+      "carbs": 114.5,
+      "fiber": 10.1,
+      "sodium": 700,
+      "sugar": 47.2
+    },
+    "nutritionWarnings": [
+      "high_sugar",
+      "high_carb"
+    ],
+    "nutritionHighlights": [
+      "high_fiber"
+    ],
+    "allergens": [
+      "allergen_dairy",
+      "allergen_gluten",
+      "allergen_nut"
+    ],
+    "dietaryFlags": []
   },
   {
     "id": "japanese_miso_salmon",
@@ -435,22 +1325,60 @@
     "cuisine": "asian_other",
     "regionalCuisine": "japanese",
     "cookingMethod": "bake",
-    "flavors": ["umami", "sweet", "savory"],
-    "mealTypes": ["dinner"],
+    "flavors": [
+      "umami",
+      "sweet",
+      "savory"
+    ],
+    "mealTypes": [
+      "dinner"
+    ],
     "difficulty": "easy",
     "minCookingLevel": "beginner",
     "prepTime": 30,
     "cookTime": 12,
     "servings": 2,
     "ingredients": [
-      { "ingredientId": "salmon_fillet", "amount": 400, "unit": "g" },
-      { "ingredientId": "miso_paste", "amount": 3, "unit": "tbsp" },
-      { "ingredientId": "sake", "amount": 2, "unit": "tbsp" },
-      { "ingredientId": "mirin", "amount": 2, "unit": "tbsp" },
-      { "ingredientId": "honey", "amount": 1, "unit": "tbsp" },
-      { "ingredientId": "ginger", "amount": 10, "unit": "g" },
-      { "ingredientId": "sesame_seed", "amount": 1, "unit": "tsp" },
-      { "ingredientId": "spring_onion", "amount": 1, "unit": "piece" }
+      {
+        "ingredientId": "salmon_fillet",
+        "amount": 400,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "miso",
+        "amount": 3,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "sake",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "mirin",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "honey",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sesame_seed",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 15,
+        "unit": "g"
+      }
     ],
     "steps": [
       "味噌、清酒、味醂、蜂蜜、姜蓉拌匀成腌料",
@@ -459,7 +1387,41 @@
       "烤箱 220℃ 烤 10 分钟，表面喷枪或上层加热档再烤 2 分钟出焦糖色",
       "撒白芝麻和葱花即可"
     ],
-    "tags": ["日式", "高蛋白", "烤箱菜", "居酒屋风"]
+    "tags": [
+      "日式",
+      "高蛋白",
+      "烤箱菜",
+      "居酒屋风"
+    ],
+    "dishRole": "soup",
+    "isVegetarian": false,
+    "dishStyle": "meat",
+    "stapleCategory": null,
+    "perServing": {
+      "calories": 558,
+      "protein": 43.5,
+      "fat": 28.7,
+      "carbs": 21.2,
+      "fiber": 1.8,
+      "sodium": 960,
+      "sugar": 11.7
+    },
+    "nutritionWarnings": [
+      "high_sodium"
+    ],
+    "nutritionHighlights": [
+      "high_protein",
+      "high_fiber",
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_seafood",
+      "allergen_sesame",
+      "allergen_soy"
+    ],
+    "dietaryFlags": [
+      "contains_alcohol"
+    ]
   },
   {
     "id": "japanese_sake_clams",
@@ -469,22 +1431,61 @@
     "cuisine": "asian_other",
     "regionalCuisine": "japanese",
     "cookingMethod": "steam",
-    "flavors": ["briny", "umami", "fresh"],
-    "mealTypes": ["lunch", "dinner"],
+    "flavors": [
+      "briny",
+      "umami",
+      "fresh"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
     "difficulty": "easy",
     "minCookingLevel": "beginner",
     "prepTime": 30,
     "cookTime": 8,
-    "servings": 2,
+    "servings": 3,
     "ingredients": [
-      { "ingredientId": "clam", "amount": 500, "unit": "g" },
-      { "ingredientId": "sake", "amount": 100, "unit": "ml" },
-      { "ingredientId": "ginger", "amount": 15, "unit": "g" },
-      { "ingredientId": "garlic", "amount": 3, "unit": "piece" },
-      { "ingredientId": "butter", "amount": 20, "unit": "g" },
-      { "ingredientId": "light_soy", "amount": 1, "unit": "tbsp" },
-      { "ingredientId": "spring_onion", "amount": 2, "unit": "piece" },
-      { "ingredientId": "chili_pepper", "amount": 1, "unit": "piece" }
+      {
+        "ingredientId": "clam",
+        "amount": 500,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sake",
+        "amount": 100,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "butter",
+        "amount": 20,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "light_soy",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 30,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "chili_pepper",
+        "amount": 5,
+        "unit": "g"
+      }
     ],
     "steps": [
       "蛤蜊加盐水浸泡 30 分钟吐沙",
@@ -493,7 +1494,39 @@
       "倒入清酒大火烧开，立即下蛤蜊盖盖闷 4-5 分钟",
       "蛤蜊全部张口后淋生抽，撒葱花即可出锅"
     ],
-    "tags": ["日式", "下酒菜", "贝类", "快手"]
+    "tags": [
+      "日式",
+      "下酒菜",
+      "贝类",
+      "快手"
+    ],
+    "dishRole": "main_meat",
+    "isVegetarian": false,
+    "dishStyle": "meat",
+    "stapleCategory": null,
+    "perServing": {
+      "calories": 254,
+      "protein": 25.8,
+      "fat": 7.2,
+      "carbs": 10.3,
+      "fiber": 0.5,
+      "sodium": 380,
+      "sugar": 0.5
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "high_protein",
+      "low_fat",
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_dairy",
+      "allergen_seafood",
+      "allergen_soy"
+    ],
+    "dietaryFlags": [
+      "contains_alcohol"
+    ]
   },
   {
     "id": "japanese_natto_rice",
@@ -503,21 +1536,55 @@
     "cuisine": "asian_other",
     "regionalCuisine": "japanese",
     "cookingMethod": "staple",
-    "flavors": ["umami", "savory", "plain"],
-    "mealTypes": ["breakfast"],
+    "flavors": [
+      "umami",
+      "savory",
+      "plain"
+    ],
+    "mealTypes": [
+      "breakfast"
+    ],
     "difficulty": "easy",
     "minCookingLevel": "basic",
     "prepTime": 3,
     "cookTime": 0,
     "servings": 1,
     "ingredients": [
-      { "ingredientId": "natto", "amount": 1, "unit": "piece" },
-      { "ingredientId": "rice", "amount": 150, "unit": "g" },
-      { "ingredientId": "egg", "amount": 1, "unit": "piece" },
-      { "ingredientId": "light_soy", "amount": 1, "unit": "tsp" },
-      { "ingredientId": "spring_onion", "amount": 1, "unit": "piece" },
-      { "ingredientId": "nori", "amount": 1, "unit": "piece" },
-      { "ingredientId": "sesame_seed", "amount": 0.5, "unit": "tsp" }
+      {
+        "ingredientId": "natto",
+        "amount": 1,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "rice",
+        "amount": 150,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "egg",
+        "amount": 1,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "light_soy",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "nori",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sesame_seed",
+        "amount": 0.5,
+        "unit": "tsp"
+      }
     ],
     "steps": [
       "热饭盛碗",
@@ -525,7 +1592,38 @@
       "纳豆盖饭上，中间打一个生蛋黄",
       "撒葱花、白芝麻、碎海苔拌匀食用"
     ],
-    "tags": ["日式", "早餐", "快手", "高蛋白", "发酵食品"]
+    "tags": [
+      "日式",
+      "早餐",
+      "快手",
+      "高蛋白",
+      "发酵食品"
+    ],
+    "dishRole": "staple",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": "rice",
+    "perServing": {
+      "calories": 508,
+      "protein": 30,
+      "fat": 18.3,
+      "carbs": 58.7,
+      "fiber": 6.7,
+      "sodium": 357,
+      "sugar": 5.8
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "high_protein",
+      "high_fiber",
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_egg",
+      "allergen_sesame",
+      "allergen_soy"
+    ],
+    "dietaryFlags": []
   },
   {
     "id": "japanese_beef_udon",
@@ -534,25 +1632,72 @@
     "description": "日式关西风乌冬。昆布鲣鱼高汤配甜咸汤底，肥牛片烫熟后铺面，Q 弹乌冬吸饱汤汁，寒夜暖胃。",
     "cuisine": "asian_other",
     "regionalCuisine": "japanese",
-    "cookingMethod": "soup",
-    "flavors": ["umami", "savory", "warm"],
-    "mealTypes": ["lunch", "dinner"],
+    "cookingMethod": "staple",
+    "flavors": [
+      "umami",
+      "savory",
+      "warm"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
     "difficulty": "easy",
     "minCookingLevel": "beginner",
     "prepTime": 10,
     "cookTime": 15,
     "servings": 2,
     "ingredients": [
-      { "ingredientId": "udon_noodles", "amount": 400, "unit": "g" },
-      { "ingredientId": "beef_sirloin", "amount": 200, "unit": "g" },
-      { "ingredientId": "kelp", "amount": 10, "unit": "g" },
-      { "ingredientId": "light_soy", "amount": 3, "unit": "tbsp" },
-      { "ingredientId": "mirin", "amount": 2, "unit": "tbsp" },
-      { "ingredientId": "sake", "amount": 2, "unit": "tbsp" },
-      { "ingredientId": "sugar", "amount": 1, "unit": "tsp" },
-      { "ingredientId": "onion", "amount": 0.5, "unit": "piece" },
-      { "ingredientId": "spring_onion", "amount": 2, "unit": "piece" },
-      { "ingredientId": "nori", "amount": 1, "unit": "piece" }
+      {
+        "ingredientId": "udon_noodles",
+        "amount": 400,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "beef_sirloin",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "kelp",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "light_soy",
+        "amount": 3,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "mirin",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "sake",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "ingredientId": "onion",
+        "amount": 0.5,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 30,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "nori",
+        "amount": 5,
+        "unit": "g"
+      }
     ],
     "steps": [
       "昆布加 800ml 冷水浸泡 30 分钟后小火加热至快沸腾时捞出",
@@ -562,7 +1707,40 @@
       "汤底重新煮开，放洋葱和牛肉烫 1 分钟至变色",
       "面条入碗，浇汤铺牛肉和洋葱，撒葱花和海苔丝"
     ],
-    "tags": ["日式", "面食", "汤面", "暖胃"]
+    "tags": [
+      "日式",
+      "面食",
+      "汤面",
+      "暖胃"
+    ],
+    "dishRole": "staple",
+    "isVegetarian": false,
+    "dishStyle": "meat",
+    "stapleCategory": "noodles",
+    "perServing": {
+      "calories": 629,
+      "protein": 36.8,
+      "fat": 19.3,
+      "carbs": 71.2,
+      "fiber": 3.9,
+      "sodium": 1830,
+      "sugar": 9.9
+    },
+    "nutritionWarnings": [
+      "high_sodium"
+    ],
+    "nutritionHighlights": [
+      "high_protein",
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_gluten",
+      "allergen_soy"
+    ],
+    "dietaryFlags": [
+      "contains_alcohol",
+      "high_purine"
+    ]
   },
   {
     "id": "japanese_chashu_ramen",
@@ -571,28 +1749,87 @@
     "description": "日式拉面的王道。猪肉卷绑紧低温卤制，切厚片铺在豉油豚骨汤底拉面上，配溏心蛋和笋干，层次丰富。",
     "cuisine": "asian_other",
     "regionalCuisine": "japanese",
-    "cookingMethod": "soup",
-    "flavors": ["umami", "rich", "savory"],
-    "mealTypes": ["lunch", "dinner"],
+    "cookingMethod": "staple",
+    "flavors": [
+      "umami",
+      "rich",
+      "savory"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
     "difficulty": "hard",
     "minCookingLevel": "advanced",
     "prepTime": 30,
     "cookTime": 120,
-    "servings": 3,
+    "servings": 7,
     "ingredients": [
-      { "ingredientId": "pork_belly", "amount": 500, "unit": "g" },
-      { "ingredientId": "ramen_noodles", "amount": 300, "unit": "g" },
-      { "ingredientId": "egg", "amount": 3, "unit": "piece" },
-      { "ingredientId": "bamboo_shoot", "amount": 100, "unit": "g" },
-      { "ingredientId": "chicken_stock", "amount": 1000, "unit": "ml" },
-      { "ingredientId": "light_soy", "amount": 100, "unit": "ml" },
-      { "ingredientId": "sake", "amount": 100, "unit": "ml" },
-      { "ingredientId": "mirin", "amount": 50, "unit": "ml" },
-      { "ingredientId": "sugar", "amount": 2, "unit": "tbsp" },
-      { "ingredientId": "ginger", "amount": 20, "unit": "g" },
-      { "ingredientId": "garlic", "amount": 5, "unit": "piece" },
-      { "ingredientId": "spring_onion", "amount": 3, "unit": "piece" },
-      { "ingredientId": "nori", "amount": 3, "unit": "piece" }
+      {
+        "ingredientId": "pork_belly",
+        "amount": 500,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ramen_noodles",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "egg",
+        "amount": 3,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "bamboo_shoot",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "chicken_stock",
+        "amount": 1000,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "light_soy",
+        "amount": 100,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "sake",
+        "amount": 100,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "mirin",
+        "amount": 50,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 20,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 25,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 45,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "nori",
+        "amount": 15,
+        "unit": "g"
+      }
     ],
     "steps": [
       "五花肉卷成圆柱用棉绳捆紧，煎至四面金黄",
@@ -603,7 +1840,40 @@
       "鸡汤加 3 勺肉卤汁调味作汤底",
       "汤底浇面，铺叉烧切厚片、半个溏心蛋、笋干、葱花、海苔片"
     ],
-    "tags": ["日式", "面食", "叉烧", "周末"]
+    "tags": [
+      "日式",
+      "面食",
+      "叉烧",
+      "周末"
+    ],
+    "dishRole": "staple",
+    "isVegetarian": false,
+    "dishStyle": "meat",
+    "stapleCategory": "noodles",
+    "perServing": {
+      "calories": 654,
+      "protein": 19,
+      "fat": 42,
+      "carbs": 46.6,
+      "fiber": 1.5,
+      "sodium": 1416,
+      "sugar": 8.8
+    },
+    "nutritionWarnings": [
+      "high_sodium",
+      "high_fat"
+    ],
+    "nutritionHighlights": [
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_egg",
+      "allergen_gluten",
+      "allergen_soy"
+    ],
+    "dietaryFlags": [
+      "contains_alcohol"
+    ]
   },
   {
     "id": "thai_tom_yum_prawn",
@@ -613,26 +1883,81 @@
     "cuisine": "asian_other",
     "regionalCuisine": "southeast_asian",
     "cookingMethod": "soup",
-    "flavors": ["sour", "spicy", "umami"],
-    "mealTypes": ["lunch", "dinner"],
+    "flavors": [
+      "sour",
+      "spicy",
+      "umami"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
     "difficulty": "medium",
     "minCookingLevel": "intermediate",
     "prepTime": 15,
     "cookTime": 20,
     "servings": 3,
     "ingredients": [
-      { "ingredientId": "prawn_whole", "amount": 400, "unit": "g" },
-      { "ingredientId": "lemongrass", "amount": 2, "unit": "piece" },
-      { "ingredientId": "galangal", "amount": 30, "unit": "g" },
-      { "ingredientId": "kaffir_lime_leaf", "amount": 5, "unit": "piece" },
-      { "ingredientId": "mushroom", "amount": 150, "unit": "g" },
-      { "ingredientId": "tomato", "amount": 2, "unit": "piece" },
-      { "ingredientId": "chili_pepper", "amount": 3, "unit": "piece" },
-      { "ingredientId": "coconut_milk", "amount": 100, "unit": "ml" },
-      { "ingredientId": "fish_sauce", "amount": 2, "unit": "tbsp" },
-      { "ingredientId": "lemon", "amount": 1, "unit": "piece" },
-      { "ingredientId": "sugar", "amount": 1, "unit": "tsp" },
-      { "ingredientId": "cilantro", "amount": 10, "unit": "g" }
+      {
+        "ingredientId": "prawn_whole",
+        "amount": 400,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "lemongrass",
+        "amount": 30,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "galangal",
+        "amount": 30,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "kaffir_lime_leaf",
+        "amount": 2.5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "mushroom",
+        "amount": 150,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "tomato",
+        "amount": 2,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "chili_pepper",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "coconut_milk",
+        "amount": 100,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "fish_sauce",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "lemon",
+        "amount": 1,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "ingredientId": "cilantro",
+        "amount": 10,
+        "unit": "g"
+      }
     ],
     "steps": [
       "大虾去须开背留壳，虾头单独留用",
@@ -644,7 +1969,37 @@
       "淋椰奶、鱼露、糖调味，关火挤入柠檬汁",
       "撒香菜碎即可"
     ],
-    "tags": ["泰式", "酸辣汤", "海鲜", "开胃"]
+    "tags": [
+      "泰式",
+      "酸辣汤",
+      "海鲜",
+      "开胃"
+    ],
+    "dishRole": "soup",
+    "isVegetarian": false,
+    "dishStyle": "meat",
+    "stapleCategory": null,
+    "perServing": {
+      "calories": 287,
+      "protein": 37,
+      "fat": 9.1,
+      "carbs": 20.1,
+      "fiber": 4.6,
+      "sodium": 716,
+      "sugar": 9
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "high_protein",
+      "low_fat",
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_seafood"
+    ],
+    "dietaryFlags": [
+      "high_purine"
+    ]
   },
   {
     "id": "thai_papaya_salad",
@@ -654,24 +2009,71 @@
     "cuisine": "asian_other",
     "regionalCuisine": "southeast_asian",
     "cookingMethod": "cold_dish",
-    "flavors": ["sour", "spicy", "refreshing"],
-    "mealTypes": ["lunch", "dinner"],
+    "flavors": [
+      "sour",
+      "spicy",
+      "refreshing"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
     "difficulty": "easy",
     "minCookingLevel": "beginner",
     "prepTime": 15,
     "cookTime": 0,
     "servings": 2,
     "ingredients": [
-      { "ingredientId": "papaya", "amount": 400, "unit": "g" },
-      { "ingredientId": "tomato", "amount": 2, "unit": "piece" },
-      { "ingredientId": "green_bean", "amount": 50, "unit": "g" },
-      { "ingredientId": "peanut", "amount": 30, "unit": "g" },
-      { "ingredientId": "dried_shrimp", "amount": 10, "unit": "g" },
-      { "ingredientId": "garlic", "amount": 3, "unit": "piece" },
-      { "ingredientId": "chili_pepper", "amount": 2, "unit": "piece" },
-      { "ingredientId": "fish_sauce", "amount": 2, "unit": "tbsp" },
-      { "ingredientId": "lemon", "amount": 1, "unit": "piece" },
-      { "ingredientId": "sugar", "amount": 1, "unit": "tbsp" }
+      {
+        "ingredientId": "papaya",
+        "amount": 400,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "tomato",
+        "amount": 2,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "green_bean",
+        "amount": 50,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "peanut",
+        "amount": 30,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "dried_shrimp",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "chili_pepper",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "fish_sauce",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "lemon",
+        "amount": 1,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 1,
+        "unit": "tbsp"
+      }
     ],
     "steps": [
       "青木瓜去皮去籽刨成细丝",
@@ -681,7 +2083,42 @@
       "放入木瓜丝、豆角段、番茄块稍微捣压让酱汁入味",
       "撒烤花生碎和小虾米拌匀装盘"
     ],
-    "tags": ["泰式", "凉菜", "清爽", "夏日"]
+    "tags": [
+      "泰式",
+      "凉菜",
+      "清爽",
+      "夏日"
+    ],
+    "dishRole": "cold",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": null,
+    "perServing": {
+      "calories": 299,
+      "protein": 12.1,
+      "fat": 8.8,
+      "carbs": 52,
+      "fiber": 10.3,
+      "sodium": 1464,
+      "sugar": 32.1
+    },
+    "nutritionWarnings": [
+      "high_sodium",
+      "high_sugar"
+    ],
+    "nutritionHighlights": [
+      "high_fiber",
+      "low_fat",
+      "high_protein",
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_nut",
+      "allergen_seafood"
+    ],
+    "dietaryFlags": [
+      "high_purine"
+    ]
   },
   {
     "id": "thai_basil_chicken",
@@ -691,25 +2128,76 @@
     "cuisine": "asian_other",
     "regionalCuisine": "southeast_asian",
     "cookingMethod": "stir_fry",
-    "flavors": ["spicy", "umami", "herby"],
-    "mealTypes": ["lunch", "dinner"],
+    "flavors": [
+      "spicy",
+      "umami",
+      "herby"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
     "difficulty": "easy",
     "minCookingLevel": "beginner",
     "prepTime": 10,
     "cookTime": 8,
-    "servings": 2,
+    "servings": 5,
     "ingredients": [
-      { "ingredientId": "chicken_thigh", "amount": 300, "unit": "g" },
-      { "ingredientId": "basil", "amount": 30, "unit": "g" },
-      { "ingredientId": "chili_pepper", "amount": 3, "unit": "piece" },
-      { "ingredientId": "garlic", "amount": 5, "unit": "piece" },
-      { "ingredientId": "fish_sauce", "amount": 2, "unit": "tbsp" },
-      { "ingredientId": "oyster_sauce", "amount": 1, "unit": "tbsp" },
-      { "ingredientId": "dark_soy", "amount": 1, "unit": "tsp" },
-      { "ingredientId": "sugar", "amount": 1, "unit": "tsp" },
-      { "ingredientId": "cooking_oil", "amount": 2, "unit": "tbsp" },
-      { "ingredientId": "egg", "amount": 2, "unit": "piece" },
-      { "ingredientId": "rice", "amount": 300, "unit": "g" }
+      {
+        "ingredientId": "chicken_thigh",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "basil",
+        "amount": 30,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "chili_pepper",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 25,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "fish_sauce",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "oyster_sauce",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "dark_soy",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "egg",
+        "amount": 2,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "rice",
+        "amount": 300,
+        "unit": "g"
+      }
     ],
     "steps": [
       "鸡腿肉剁成粗粒（不要用太细的肉末）",
@@ -721,7 +2209,36 @@
       "关火前放入罗勒叶拌匀 10 秒即起锅",
       "盖在白饭上配太阳蛋即成"
     ],
-    "tags": ["泰式", "下饭菜", "快手", "工作餐"]
+    "tags": [
+      "泰式",
+      "下饭菜",
+      "快手",
+      "工作餐"
+    ],
+    "dishRole": "main_meat",
+    "isVegetarian": false,
+    "dishStyle": "meat",
+    "stapleCategory": null,
+    "perServing": {
+      "calories": 306,
+      "protein": 20.8,
+      "fat": 15,
+      "carbs": 20.7,
+      "fiber": 0.5,
+      "sodium": 682,
+      "sugar": 1.8
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "high_protein",
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_egg",
+      "allergen_seafood",
+      "allergen_soy"
+    ],
+    "dietaryFlags": []
   },
   {
     "id": "thai_green_curry_tempeh",
@@ -731,25 +2248,76 @@
     "cuisine": "asian_other",
     "regionalCuisine": "southeast_asian",
     "cookingMethod": "stew",
-    "flavors": ["spicy", "creamy", "aromatic"],
-    "mealTypes": ["lunch", "dinner"],
+    "flavors": [
+      "spicy",
+      "creamy",
+      "aromatic"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
     "difficulty": "medium",
     "minCookingLevel": "intermediate",
     "prepTime": 15,
     "cookTime": 20,
     "servings": 3,
     "ingredients": [
-      { "ingredientId": "tempeh", "amount": 300, "unit": "g" },
-      { "ingredientId": "coconut_milk", "amount": 400, "unit": "ml" },
-      { "ingredientId": "curry_powder", "amount": 2, "unit": "tbsp" },
-      { "ingredientId": "lemongrass", "amount": 2, "unit": "piece" },
-      { "ingredientId": "kaffir_lime_leaf", "amount": 4, "unit": "piece" },
-      { "ingredientId": "eggplant", "amount": 1, "unit": "piece" },
-      { "ingredientId": "capsicum", "amount": 1, "unit": "piece" },
-      { "ingredientId": "basil", "amount": 20, "unit": "g" },
-      { "ingredientId": "fish_sauce", "amount": 2, "unit": "tbsp" },
-      { "ingredientId": "sugar", "amount": 1, "unit": "tbsp" },
-      { "ingredientId": "cooking_oil", "amount": 2, "unit": "tbsp" }
+      {
+        "ingredientId": "tempeh",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "coconut_milk",
+        "amount": 400,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "curry_powder",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "lemongrass",
+        "amount": 30,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "kaffir_lime_leaf",
+        "amount": 2,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "eggplant",
+        "amount": 1,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "capsicum",
+        "amount": 1,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "basil",
+        "amount": 20,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "fish_sauce",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 2,
+        "unit": "tbsp"
+      }
     ],
     "steps": [
       "天贝切 2cm 方块，煎至两面金黄备用",
@@ -761,7 +2329,37 @@
       "用鱼露和糖调味，关火撒罗勒叶",
       "静置 2 分钟让香气融合"
     ],
-    "tags": ["泰式", "素食", "咖喱", "下饭"]
+    "tags": [
+      "泰式",
+      "素食",
+      "咖喱",
+      "下饭"
+    ],
+    "dishRole": "main_veg",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": null,
+    "perServing": {
+      "calories": 690,
+      "protein": 26.5,
+      "fat": 54.8,
+      "carbs": 36.4,
+      "fiber": 11.2,
+      "sodium": 432,
+      "sugar": 15
+    },
+    "nutritionWarnings": [
+      "high_fat"
+    ],
+    "nutritionHighlights": [
+      "high_protein",
+      "high_fiber",
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_soy"
+    ],
+    "dietaryFlags": []
   },
   {
     "id": "vietnamese_pho_beef",
@@ -770,31 +2368,102 @@
     "description": "越南国菜，澄清的牛骨汤是灵魂。香料与牛肉熬足数小时，河粉上烫薄牛片，淋热汤令其刚好变色，配青柠、豆芽和薄荷即食。",
     "cuisine": "asian_other",
     "regionalCuisine": "vietnamese",
-    "cookingMethod": "soup",
-    "flavors": ["savory", "aromatic", "refreshing"],
-    "mealTypes": ["lunch", "dinner"],
+    "cookingMethod": "staple",
+    "flavors": [
+      "savory",
+      "aromatic",
+      "refreshing"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
     "difficulty": "hard",
     "minCookingLevel": "advanced",
     "prepTime": 30,
     "cookTime": 180,
-    "servings": 4,
+    "servings": 6,
     "ingredients": [
-      { "ingredientId": "beef_brisket", "amount": 500, "unit": "g" },
-      { "ingredientId": "beef_sirloin", "amount": 300, "unit": "g" },
-      { "ingredientId": "rice_noodles", "amount": 400, "unit": "g" },
-      { "ingredientId": "star_anise", "amount": 4, "unit": "piece" },
-      { "ingredientId": "cinnamon", "amount": 1, "unit": "piece" },
-      { "ingredientId": "cloves", "amount": 5, "unit": "piece" },
-      { "ingredientId": "onion", "amount": 1, "unit": "piece" },
-      { "ingredientId": "ginger", "amount": 50, "unit": "g" },
-      { "ingredientId": "fish_sauce", "amount": 3, "unit": "tbsp" },
-      { "ingredientId": "bean_sprouts", "amount": 200, "unit": "g" },
-      { "ingredientId": "basil", "amount": 20, "unit": "g" },
-      { "ingredientId": "mint", "amount": 20, "unit": "g" },
-      { "ingredientId": "lemon", "amount": 2, "unit": "piece" },
-      { "ingredientId": "chili_pepper", "amount": 2, "unit": "piece" },
-      { "ingredientId": "salt", "amount": 2, "unit": "tsp" },
-      { "ingredientId": "sugar", "amount": 1, "unit": "tbsp" }
+      {
+        "ingredientId": "beef_brisket",
+        "amount": 500,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "beef_sirloin",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "rice_noodles",
+        "amount": 400,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "star_anise",
+        "amount": 1.2,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cinnamon",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cloves",
+        "amount": 0.3,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "onion",
+        "amount": 1,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 50,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "fish_sauce",
+        "amount": 3,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "bean_sprouts",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "basil",
+        "amount": 20,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "mint",
+        "amount": 20,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "lemon",
+        "amount": 2,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "chili_pepper",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 2,
+        "unit": "tsp"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 1,
+        "unit": "tbsp"
+      }
     ],
     "steps": [
       "牛腩冷水下锅焯水捞出冲净",
@@ -807,7 +2476,37 @@
       "铺上生牛肉片、熟牛腩切片，浇滚烫汤底令生肉变色",
       "配豆芽、罗勒、薄荷、青柠和辣椒圈上桌自调"
     ],
-    "tags": ["越南", "汤粉", "慢炖", "周末"]
+    "tags": [
+      "越南",
+      "汤粉",
+      "慢炖",
+      "周末"
+    ],
+    "dishRole": "staple",
+    "isVegetarian": false,
+    "dishStyle": "meat",
+    "stapleCategory": "noodles",
+    "perServing": {
+      "calories": 675,
+      "protein": 35.6,
+      "fat": 28.2,
+      "carbs": 70,
+      "fiber": 4.6,
+      "sodium": 1436,
+      "sugar": 6.4
+    },
+    "nutritionWarnings": [
+      "high_sodium"
+    ],
+    "nutritionHighlights": [
+      "high_protein",
+      "high_fiber",
+      "low_calorie"
+    ],
+    "allergens": [],
+    "dietaryFlags": [
+      "high_purine"
+    ]
   },
   {
     "id": "korean_kimchi_jjigae",
@@ -816,27 +2515,82 @@
     "description": "韩国家庭国民锅料理。酸香发酵的陈泡菜与肥瘦相间的五花肉是关键，嫩豆腐与豆芽滚煮入味，暖胃又下饭。",
     "cuisine": "asian_other",
     "regionalCuisine": "korean",
-    "cookingMethod": "stew",
-    "flavors": ["sour", "spicy", "warm"],
-    "mealTypes": ["lunch", "dinner"],
+    "cookingMethod": "soup",
+    "flavors": [
+      "sour",
+      "spicy",
+      "warm"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
     "difficulty": "easy",
     "minCookingLevel": "beginner",
     "prepTime": 10,
     "cookTime": 25,
-    "servings": 3,
+    "servings": 4,
     "ingredients": [
-      { "ingredientId": "pork_belly", "amount": 200, "unit": "g" },
-      { "ingredientId": "tofu", "amount": 300, "unit": "g" },
-      { "ingredientId": "gochujang", "amount": 1, "unit": "tbsp" },
-      { "ingredientId": "chili_flakes", "amount": 1, "unit": "tbsp" },
-      { "ingredientId": "garlic", "amount": 4, "unit": "piece" },
-      { "ingredientId": "onion", "amount": 0.5, "unit": "piece" },
-      { "ingredientId": "spring_onion", "amount": 2, "unit": "piece" },
-      { "ingredientId": "light_soy", "amount": 1, "unit": "tbsp" },
-      { "ingredientId": "sesame_oil", "amount": 1, "unit": "tbsp" },
-      { "ingredientId": "sugar", "amount": 1, "unit": "tsp" },
-      { "ingredientId": "chicken_stock", "amount": 600, "unit": "ml" },
-      { "ingredientId": "bean_sprouts", "amount": 100, "unit": "g" }
+      {
+        "ingredientId": "pork_belly",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "tofu",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "gochujang",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "chili_flakes",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 20,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "onion",
+        "amount": 0.5,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 30,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "light_soy",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "sesame_oil",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "ingredientId": "chicken_stock",
+        "amount": 600,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "bean_sprouts",
+        "amount": 100,
+        "unit": "g"
+      }
     ],
     "steps": [
       "五花肉切片，下砂锅煸至微焦出油",
@@ -847,7 +2601,37 @@
       "下豆腐块和豆芽煮 5 分钟",
       "用酱油、糖调味，淋麻油撒葱花即可"
     ],
-    "tags": ["韩式", "汤锅", "暖胃", "下饭"]
+    "tags": [
+      "韩式",
+      "汤锅",
+      "暖胃",
+      "下饭"
+    ],
+    "dishRole": "soup",
+    "isVegetarian": false,
+    "dishStyle": "meat",
+    "stapleCategory": null,
+    "perServing": {
+      "calories": 421,
+      "protein": 15.3,
+      "fat": 35.2,
+      "carbs": 13.1,
+      "fiber": 2.6,
+      "sodium": 611,
+      "sugar": 5.8
+    },
+    "nutritionWarnings": [
+      "high_fat"
+    ],
+    "nutritionHighlights": [
+      "high_fiber",
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_sesame",
+      "allergen_soy"
+    ],
+    "dietaryFlags": []
   },
   {
     "id": "korean_tempeh_bibimbap",
@@ -857,28 +2641,91 @@
     "cuisine": "asian_other",
     "regionalCuisine": "korean",
     "cookingMethod": "staple",
-    "flavors": ["savory", "spicy", "crunchy"],
-    "mealTypes": ["lunch", "dinner"],
+    "flavors": [
+      "savory",
+      "spicy",
+      "crunchy"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
     "difficulty": "medium",
     "minCookingLevel": "intermediate",
     "prepTime": 20,
     "cookTime": 20,
-    "servings": 2,
+    "servings": 4,
     "ingredients": [
-      { "ingredientId": "rice", "amount": 400, "unit": "g" },
-      { "ingredientId": "tempeh", "amount": 200, "unit": "g" },
-      { "ingredientId": "carrot", "amount": 1, "unit": "piece" },
-      { "ingredientId": "spinach", "amount": 150, "unit": "g" },
-      { "ingredientId": "bean_sprouts", "amount": 150, "unit": "g" },
-      { "ingredientId": "mushroom", "amount": 100, "unit": "g" },
-      { "ingredientId": "egg", "amount": 2, "unit": "piece" },
-      { "ingredientId": "gochujang", "amount": 3, "unit": "tbsp" },
-      { "ingredientId": "sesame_oil", "amount": 3, "unit": "tbsp" },
-      { "ingredientId": "light_soy", "amount": 2, "unit": "tbsp" },
-      { "ingredientId": "garlic", "amount": 3, "unit": "piece" },
-      { "ingredientId": "sugar", "amount": 1, "unit": "tbsp" },
-      { "ingredientId": "sesame_seed", "amount": 1, "unit": "tbsp" },
-      { "ingredientId": "cooking_oil", "amount": 2, "unit": "tbsp" }
+      {
+        "ingredientId": "rice",
+        "amount": 400,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "tempeh",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "carrot",
+        "amount": 1,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "spinach",
+        "amount": 150,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "bean_sprouts",
+        "amount": 150,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "mushroom",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "egg",
+        "amount": 2,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "gochujang",
+        "amount": 3,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "sesame_oil",
+        "amount": 3,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "light_soy",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "sesame_seed",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 2,
+        "unit": "tbsp"
+      }
     ],
     "steps": [
       "天贝切条，用酱油和糖腌 5 分钟后煎至两面金黄",
@@ -890,7 +2737,39 @@
       "五彩配料分区铺在饭上，中间打一个煎蛋",
       "淋酱汁撒白芝麻，拌匀食用"
     ],
-    "tags": ["韩式", "拌饭", "素食", "便当"]
+    "tags": [
+      "韩式",
+      "拌饭",
+      "素食",
+      "便当"
+    ],
+    "dishRole": "staple",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": "rice",
+    "perServing": {
+      "calories": 467,
+      "protein": 21.5,
+      "fat": 20.4,
+      "carbs": 53.8,
+      "fiber": 5.4,
+      "sodium": 757,
+      "sugar": 11.7
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "high_fiber",
+      "high_protein",
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_egg",
+      "allergen_sesame",
+      "allergen_soy"
+    ],
+    "dietaryFlags": [
+      "high_purine"
+    ]
   },
   {
     "id": "korean_fried_chicken_wings",
@@ -900,28 +2779,90 @@
     "cuisine": "asian_other",
     "regionalCuisine": "korean",
     "cookingMethod": "deep_fry",
-    "flavors": ["crispy", "sweet", "spicy"],
-    "mealTypes": ["dinner"],
+    "flavors": [
+      "crispy",
+      "sweet",
+      "spicy"
+    ],
+    "mealTypes": [
+      "dinner"
+    ],
     "difficulty": "medium",
     "minCookingLevel": "intermediate",
     "prepTime": 20,
     "cookTime": 20,
-    "servings": 3,
+    "servings": 6,
     "ingredients": [
-      { "ingredientId": "chicken_wing", "amount": 600, "unit": "g" },
-      { "ingredientId": "starch", "amount": 100, "unit": "g" },
-      { "ingredientId": "flour", "amount": 50, "unit": "g" },
-      { "ingredientId": "gochujang", "amount": 2, "unit": "tbsp" },
-      { "ingredientId": "ketchup", "amount": 2, "unit": "tbsp" },
-      { "ingredientId": "honey", "amount": 2, "unit": "tbsp" },
-      { "ingredientId": "light_soy", "amount": 1, "unit": "tbsp" },
-      { "ingredientId": "garlic", "amount": 5, "unit": "piece" },
-      { "ingredientId": "ginger", "amount": 10, "unit": "g" },
-      { "ingredientId": "cooking_oil", "amount": 1000, "unit": "ml" },
-      { "ingredientId": "sesame_seed", "amount": 1, "unit": "tbsp" },
-      { "ingredientId": "spring_onion", "amount": 1, "unit": "piece" },
-      { "ingredientId": "salt", "amount": 1, "unit": "tsp" },
-      { "ingredientId": "black_pepper", "amount": 1, "unit": "tsp" }
+      {
+        "ingredientId": "chicken_wing",
+        "amount": 600,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "flour",
+        "amount": 50,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "gochujang",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "tomato_paste",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "honey",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "light_soy",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 25,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 1000,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "sesame_seed",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "ingredientId": "black_pepper",
+        "amount": 1,
+        "unit": "tsp"
+      }
     ],
     "steps": [
       "鸡翅加盐、黑胡椒、姜蓉腌 15 分钟",
@@ -932,7 +2873,38 @@
       "热鸡翅倒入酱锅翻拌均匀",
       "装盘撒白芝麻和葱花"
     ],
-    "tags": ["韩式", "炸物", "下酒", "聚会"]
+    "tags": [
+      "韩式",
+      "炸物",
+      "下酒",
+      "聚会"
+    ],
+    "dishRole": "main_meat",
+    "isVegetarian": false,
+    "dishStyle": "meat",
+    "stapleCategory": null,
+    "perServing": {
+      "calories": 533,
+      "protein": 20.3,
+      "fat": 35.5,
+      "carbs": 32.7,
+      "fiber": 1.4,
+      "sodium": 692,
+      "sugar": 7.1
+    },
+    "nutritionWarnings": [
+      "high_fat"
+    ],
+    "nutritionHighlights": [
+      "high_fiber",
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_gluten",
+      "allergen_sesame",
+      "allergen_soy"
+    ],
+    "dietaryFlags": []
   },
   {
     "id": "cantonese_xo_stir_noodle",
@@ -941,26 +2913,77 @@
     "description": "茶餐厅经典进阶版。XO 酱中的干贝和虾米为河粉添了一层海味鲜香，火候关键是镬气，大火快炒才能不结块。",
     "cuisine": "chinese",
     "regionalCuisine": "cantonese",
-    "cookingMethod": "stir_fry",
-    "flavors": ["umami", "savory", "smoky"],
-    "mealTypes": ["lunch", "dinner"],
+    "cookingMethod": "staple",
+    "flavors": [
+      "umami",
+      "savory",
+      "smoky"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
     "difficulty": "medium",
     "minCookingLevel": "intermediate",
     "prepTime": 15,
     "cookTime": 10,
-    "servings": 2,
+    "servings": 4,
     "ingredients": [
-      { "ingredientId": "rice_noodles", "amount": 400, "unit": "g" },
-      { "ingredientId": "beef_sirloin", "amount": 150, "unit": "g" },
-      { "ingredientId": "xo_sauce", "amount": 2, "unit": "tbsp" },
-      { "ingredientId": "bean_sprouts", "amount": 150, "unit": "g" },
-      { "ingredientId": "spring_onion", "amount": 3, "unit": "piece" },
-      { "ingredientId": "light_soy", "amount": 1, "unit": "tbsp" },
-      { "ingredientId": "dark_soy", "amount": 1, "unit": "tsp" },
-      { "ingredientId": "oyster_sauce", "amount": 1, "unit": "tbsp" },
-      { "ingredientId": "starch", "amount": 1, "unit": "tsp" },
-      { "ingredientId": "cooking_oil", "amount": 3, "unit": "tbsp" },
-      { "ingredientId": "sugar", "amount": 0.5, "unit": "tsp" }
+      {
+        "ingredientId": "rice_noodles",
+        "amount": 400,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "beef_sirloin",
+        "amount": 150,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "xo_sauce",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "bean_sprouts",
+        "amount": 150,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 45,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "light_soy",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "dark_soy",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "ingredientId": "oyster_sauce",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 3,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 0.5,
+        "unit": "tsp"
+      }
     ],
     "steps": [
       "牛肉切薄片加淀粉、1 勺生抽抓匀腌 10 分钟",
@@ -971,7 +2994,39 @@
       "加入豆芽、葱段和牛肉翻炒 30 秒",
       "起锅前沿锅边淋少许油出镬气"
     ],
-    "tags": ["粤式", "快手主食", "镬气", "下饭"]
+    "tags": [
+      "粤式",
+      "快手主食",
+      "镬气",
+      "下饭"
+    ],
+    "dishRole": "staple",
+    "isVegetarian": false,
+    "dishStyle": "meat",
+    "stapleCategory": "noodles",
+    "perServing": {
+      "calories": 569,
+      "protein": 18.6,
+      "fat": 15.2,
+      "carbs": 88.4,
+      "fiber": 2.7,
+      "sodium": 796,
+      "sugar": 2.6
+    },
+    "nutritionWarnings": [
+      "high_carb"
+    ],
+    "nutritionHighlights": [
+      "high_protein",
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_seafood",
+      "allergen_soy"
+    ],
+    "dietaryFlags": [
+      "high_purine"
+    ]
   },
   {
     "id": "fujian_shacha_beef",
@@ -981,25 +3036,76 @@
     "cuisine": "chinese",
     "regionalCuisine": "fujian",
     "cookingMethod": "stir_fry",
-    "flavors": ["rich", "savory", "nutty"],
-    "mealTypes": ["lunch", "dinner"],
+    "flavors": [
+      "rich",
+      "savory",
+      "nutty"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
     "difficulty": "easy",
     "minCookingLevel": "beginner",
     "prepTime": 15,
     "cookTime": 8,
-    "servings": 3,
+    "servings": 4,
     "ingredients": [
-      { "ingredientId": "beef_sirloin", "amount": 300, "unit": "g" },
-      { "ingredientId": "shacha_sauce", "amount": 3, "unit": "tbsp" },
-      { "ingredientId": "onion", "amount": 1, "unit": "piece" },
-      { "ingredientId": "capsicum", "amount": 1, "unit": "piece" },
-      { "ingredientId": "spring_onion", "amount": 2, "unit": "piece" },
-      { "ingredientId": "garlic", "amount": 4, "unit": "piece" },
-      { "ingredientId": "cooking_wine", "amount": 1, "unit": "tbsp" },
-      { "ingredientId": "light_soy", "amount": 1, "unit": "tbsp" },
-      { "ingredientId": "sugar", "amount": 1, "unit": "tsp" },
-      { "ingredientId": "starch", "amount": 1, "unit": "tbsp" },
-      { "ingredientId": "cooking_oil", "amount": 2, "unit": "tbsp" }
+      {
+        "ingredientId": "beef_sirloin",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "shacha_sauce",
+        "amount": 3,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "onion",
+        "amount": 1,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "capsicum",
+        "amount": 1,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 30,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 20,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "light_soy",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 2,
+        "unit": "tbsp"
+      }
     ],
     "steps": [
       "牛肉逆纹切薄片，加沙茶 1 勺、料酒、淀粉抓匀腌 15 分钟",
@@ -1010,7 +3116,36 @@
       "牛肉回锅，加剩余沙茶酱、生抽、糖翻炒均匀",
       "撒葱段出锅"
     ],
-    "tags": ["闽南", "下饭菜", "沙茶", "快手"]
+    "tags": [
+      "闽南",
+      "下饭菜",
+      "沙茶",
+      "快手"
+    ],
+    "dishRole": "main_meat",
+    "isVegetarian": false,
+    "dishStyle": "meat",
+    "stapleCategory": null,
+    "perServing": {
+      "calories": 391,
+      "protein": 22.3,
+      "fat": 26,
+      "carbs": 16.6,
+      "fiber": 2.5,
+      "sodium": 541,
+      "sugar": 6.8
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "high_protein",
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_soy"
+    ],
+    "dietaryFlags": [
+      "high_purine"
+    ]
   },
   {
     "id": "cantonese_sausage_claypot_rice",
@@ -1020,26 +3155,81 @@
     "cuisine": "chinese",
     "regionalCuisine": "cantonese",
     "cookingMethod": "staple",
-    "flavors": ["savory", "smoky", "rich"],
-    "mealTypes": ["lunch", "dinner"],
+    "flavors": [
+      "savory",
+      "smoky",
+      "rich"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
     "difficulty": "medium",
     "minCookingLevel": "intermediate",
     "prepTime": 10,
     "cookTime": 25,
-    "servings": 2,
+    "servings": 3,
     "ingredients": [
-      { "ingredientId": "rice", "amount": 300, "unit": "g" },
-      { "ingredientId": "chinese_sausage", "amount": 150, "unit": "g" },
-      { "ingredientId": "bacon", "amount": 100, "unit": "g" },
-      { "ingredientId": "bok_choy", "amount": 200, "unit": "g" },
-      { "ingredientId": "egg", "amount": 1, "unit": "piece" },
-      { "ingredientId": "light_soy", "amount": 2, "unit": "tbsp" },
-      { "ingredientId": "dark_soy", "amount": 1, "unit": "tbsp" },
-      { "ingredientId": "sugar", "amount": 1, "unit": "tbsp" },
-      { "ingredientId": "sesame_oil", "amount": 1, "unit": "tbsp" },
-      { "ingredientId": "spring_onion", "amount": 2, "unit": "piece" },
-      { "ingredientId": "cooking_oil", "amount": 1, "unit": "tbsp" },
-      { "ingredientId": "ginger", "amount": 10, "unit": "g" }
+      {
+        "ingredientId": "rice",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "chinese_sausage",
+        "amount": 150,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "bacon",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "bok_choy",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "egg",
+        "amount": 1,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "light_soy",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "dark_soy",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "sesame_oil",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 30,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 10,
+        "unit": "g"
+      }
     ],
     "steps": [
       "大米洗净浸泡 30 分钟后沥干",
@@ -1051,7 +3241,41 @@
       "生抽、老抽、糖、麻油、热水拌成豉油",
       "砂锅开盖淋豉油，撒葱姜丝，拌匀连饭带锅巴享用"
     ],
-    "tags": ["粤式", "煲仔饭", "冬季", "锅巴"]
+    "tags": [
+      "粤式",
+      "煲仔饭",
+      "冬季",
+      "锅巴"
+    ],
+    "dishRole": "staple",
+    "isVegetarian": false,
+    "dishStyle": "meat",
+    "stapleCategory": "rice",
+    "perServing": {
+      "calories": 648,
+      "protein": 30.5,
+      "fat": 39.8,
+      "carbs": 43.3,
+      "fiber": 1.4,
+      "sodium": 2364,
+      "sugar": 11.5
+    },
+    "nutritionWarnings": [
+      "high_sodium",
+      "high_fat"
+    ],
+    "nutritionHighlights": [
+      "high_protein",
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_egg",
+      "allergen_sesame",
+      "allergen_soy"
+    ],
+    "dietaryFlags": [
+      "processed"
+    ]
   },
   {
     "id": "northern_jiucai_box",
@@ -1061,24 +3285,71 @@
     "cuisine": "chinese",
     "regionalCuisine": "northern",
     "cookingMethod": "pan_fry",
-    "flavors": ["savory", "crispy", "umami"],
-    "mealTypes": ["breakfast", "lunch"],
+    "flavors": [
+      "savory",
+      "crispy",
+      "umami"
+    ],
+    "mealTypes": [
+      "breakfast",
+      "lunch"
+    ],
     "difficulty": "medium",
     "minCookingLevel": "intermediate",
     "prepTime": 30,
     "cookTime": 15,
     "servings": 3,
     "ingredients": [
-      { "ingredientId": "flour", "amount": 300, "unit": "g" },
-      { "ingredientId": "garlic_chives", "amount": 200, "unit": "g" },
-      { "ingredientId": "egg", "amount": 3, "unit": "piece" },
-      { "ingredientId": "dried_shrimp", "amount": 15, "unit": "g" },
-      { "ingredientId": "vermicelli", "amount": 30, "unit": "g" },
-      { "ingredientId": "salt", "amount": 1, "unit": "tsp" },
-      { "ingredientId": "sesame_oil", "amount": 1, "unit": "tbsp" },
-      { "ingredientId": "light_soy", "amount": 1, "unit": "tbsp" },
-      { "ingredientId": "five_spice", "amount": 0.5, "unit": "tsp" },
-      { "ingredientId": "cooking_oil", "amount": 3, "unit": "tbsp" }
+      {
+        "ingredientId": "flour",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic_chives",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "egg",
+        "amount": 3,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "dried_shrimp",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "vermicelli",
+        "amount": 30,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "ingredientId": "sesame_oil",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "light_soy",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "five_spice",
+        "amount": 0.5,
+        "unit": "tsp"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 3,
+        "unit": "tbsp"
+      }
     ],
     "steps": [
       "面粉加 160ml 温水和少许盐揉成软面团，松弛 20 分钟",
@@ -1089,7 +3360,44 @@
       "面团分成 6 份擀成薄圆片，包入馅料捏边成半圆",
       "平底锅少油中小火煎 5 分钟一面，翻面再煎 5 分钟至两面金黄"
     ],
-    "tags": ["北方", "早餐", "面食", "素馅"]
+    "tags": [
+      "北方",
+      "早餐",
+      "面食",
+      "素馅"
+    ],
+    "dishRole": "main_veg",
+    "isVegetarian": true,
+    "dishStyle": "egg",
+    "stapleCategory": null,
+    "perServing": {
+      "calories": 693,
+      "protein": 22,
+      "fat": 27.3,
+      "carbs": 89,
+      "fiber": 4.6,
+      "sodium": 1250,
+      "sugar": 2.1
+    },
+    "nutritionWarnings": [
+      "high_sodium",
+      "high_carb"
+    ],
+    "nutritionHighlights": [
+      "high_fiber",
+      "high_protein",
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_egg",
+      "allergen_gluten",
+      "allergen_seafood",
+      "allergen_sesame",
+      "allergen_soy"
+    ],
+    "dietaryFlags": [
+      "high_purine"
+    ]
   },
   {
     "id": "sichuan_shuizhu_seabass",
@@ -1099,29 +3407,95 @@
     "cuisine": "chinese",
     "regionalCuisine": "sichuan",
     "cookingMethod": "boil",
-    "flavors": ["spicy", "numbing", "umami"],
-    "mealTypes": ["dinner"],
+    "flavors": [
+      "spicy",
+      "numbing",
+      "umami"
+    ],
+    "mealTypes": [
+      "dinner"
+    ],
     "difficulty": "medium",
     "minCookingLevel": "intermediate",
     "prepTime": 20,
     "cookTime": 15,
-    "servings": 3,
+    "servings": 7,
     "ingredients": [
-      { "ingredientId": "sea_bass", "amount": 700, "unit": "g" },
-      { "ingredientId": "bean_sprouts", "amount": 250, "unit": "g" },
-      { "ingredientId": "doubanjiang", "amount": 2, "unit": "tbsp" },
-      { "ingredientId": "dried_chili", "amount": 15, "unit": "g" },
-      { "ingredientId": "sichuan_pepper", "amount": 2, "unit": "tbsp" },
-      { "ingredientId": "garlic", "amount": 8, "unit": "piece" },
-      { "ingredientId": "ginger", "amount": 20, "unit": "g" },
-      { "ingredientId": "spring_onion", "amount": 3, "unit": "piece" },
-      { "ingredientId": "cooking_wine", "amount": 2, "unit": "tbsp" },
-      { "ingredientId": "starch", "amount": 2, "unit": "tbsp" },
-      { "ingredientId": "egg", "amount": 1, "unit": "piece" },
-      { "ingredientId": "cooking_oil", "amount": 150, "unit": "ml" },
-      { "ingredientId": "chicken_stock", "amount": 500, "unit": "ml" },
-      { "ingredientId": "salt", "amount": 1, "unit": "tsp" },
-      { "ingredientId": "cilantro", "amount": 10, "unit": "g" }
+      {
+        "ingredientId": "sea_bass",
+        "amount": 700,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "bean_sprouts",
+        "amount": 250,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "doubanjiang",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "dried_chili",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sichuan_pepper",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 40,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 20,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 45,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "egg",
+        "amount": 1,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 150,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "chicken_stock",
+        "amount": 500,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "ingredientId": "cilantro",
+        "amount": 10,
+        "unit": "g"
+      }
     ],
     "steps": [
       "鲈鱼去鳞去鳃洗净，片出净鱼片，鱼骨鱼头另切块",
@@ -1134,7 +3508,37 @@
       "另起锅烧热 150ml 油至冒烟，浇在辣椒花椒上激出香",
       "撒香菜即可"
     ],
-    "tags": ["川菜", "麻辣", "鱼料理", "宴客"]
+    "tags": [
+      "川菜",
+      "麻辣",
+      "鱼料理",
+      "宴客"
+    ],
+    "dishRole": "main_meat",
+    "isVegetarian": false,
+    "dishStyle": "meat",
+    "stapleCategory": null,
+    "perServing": {
+      "calories": 375,
+      "protein": 23,
+      "fat": 25.3,
+      "carbs": 13.7,
+      "fiber": 2.5,
+      "sodium": 788,
+      "sugar": 1.7
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "high_fiber",
+      "low_calorie",
+      "low_fat"
+    ],
+    "allergens": [
+      "allergen_egg",
+      "allergen_seafood",
+      "allergen_soy"
+    ],
+    "dietaryFlags": []
   },
   {
     "id": "homestyle_loofah_egg_soup",
@@ -1144,22 +3548,61 @@
     "cuisine": "chinese",
     "regionalCuisine": "homestyle",
     "cookingMethod": "soup",
-    "flavors": ["light", "fresh", "umami"],
-    "mealTypes": ["lunch", "dinner"],
+    "flavors": [
+      "light",
+      "fresh",
+      "umami"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
     "difficulty": "easy",
     "minCookingLevel": "basic",
     "prepTime": 5,
     "cookTime": 10,
     "servings": 3,
     "ingredients": [
-      { "ingredientId": "loofah", "amount": 400, "unit": "g" },
-      { "ingredientId": "egg", "amount": 2, "unit": "piece" },
-      { "ingredientId": "ginger", "amount": 5, "unit": "g" },
-      { "ingredientId": "spring_onion", "amount": 1, "unit": "piece" },
-      { "ingredientId": "salt", "amount": 1, "unit": "tsp" },
-      { "ingredientId": "sesame_oil", "amount": 0.5, "unit": "tsp" },
-      { "ingredientId": "cooking_oil", "amount": 1, "unit": "tbsp" },
-      { "ingredientId": "white_pepper", "amount": 0.25, "unit": "tsp" }
+      {
+        "ingredientId": "loofah",
+        "amount": 400,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "egg",
+        "amount": 2,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "ingredientId": "sesame_oil",
+        "amount": 0.5,
+        "unit": "tsp"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "white_pepper",
+        "amount": 0.3,
+        "unit": "tsp"
+      }
     ],
     "steps": [
       "丝瓜去皮滚刀切块",
@@ -1171,7 +3614,36 @@
       "调入盐和白胡椒，缓缓倒蛋液用筷子推散",
       "淋麻油撒葱花即可"
     ],
-    "tags": ["家常", "夏日", "清淡", "快手汤"]
+    "tags": [
+      "家常",
+      "夏日",
+      "清淡",
+      "快手汤"
+    ],
+    "dishRole": "soup",
+    "isVegetarian": true,
+    "dishStyle": "egg",
+    "stapleCategory": null,
+    "perServing": {
+      "calories": 134,
+      "protein": 6.1,
+      "fat": 9.8,
+      "carbs": 7.2,
+      "fiber": 1,
+      "sodium": 692,
+      "sugar": 2.8
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "low_fat",
+      "low_calorie",
+      "high_fiber"
+    ],
+    "allergens": [
+      "allergen_egg",
+      "allergen_sesame"
+    ],
+    "dietaryFlags": []
   },
   {
     "id": "homestyle_chayote_pork",
@@ -1181,23 +3653,66 @@
     "cuisine": "chinese",
     "regionalCuisine": "homestyle",
     "cookingMethod": "stir_fry",
-    "flavors": ["light", "fresh", "savory"],
-    "mealTypes": ["lunch", "dinner"],
+    "flavors": [
+      "light",
+      "fresh",
+      "savory"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
     "difficulty": "easy",
     "minCookingLevel": "beginner",
     "prepTime": 10,
     "cookTime": 8,
     "servings": 2,
     "ingredients": [
-      { "ingredientId": "chayote", "amount": 300, "unit": "g" },
-      { "ingredientId": "pork_loin", "amount": 150, "unit": "g" },
-      { "ingredientId": "chili_pepper", "amount": 1, "unit": "piece" },
-      { "ingredientId": "garlic", "amount": 3, "unit": "piece" },
-      { "ingredientId": "light_soy", "amount": 1, "unit": "tbsp" },
-      { "ingredientId": "cooking_wine", "amount": 1, "unit": "tbsp" },
-      { "ingredientId": "starch", "amount": 1, "unit": "tsp" },
-      { "ingredientId": "salt", "amount": 0.5, "unit": "tsp" },
-      { "ingredientId": "cooking_oil", "amount": 2, "unit": "tbsp" }
+      {
+        "ingredientId": "chayote",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "pork_loin",
+        "amount": 150,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "chili_pepper",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "light_soy",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 0.5,
+        "unit": "tsp"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 2,
+        "unit": "tbsp"
+      }
     ],
     "steps": [
       "佛手瓜去皮去核切薄片",
@@ -1207,7 +3722,36 @@
       "下佛手瓜大火炒 2 分钟至半透明",
       "肉片回锅翻炒均匀，调盐出锅"
     ],
-    "tags": ["家常", "快手", "清爽", "下饭"]
+    "tags": [
+      "家常",
+      "快手",
+      "清爽",
+      "下饭"
+    ],
+    "dishRole": "main_meat",
+    "isVegetarian": false,
+    "dishStyle": "meat",
+    "stapleCategory": null,
+    "perServing": {
+      "calories": 301,
+      "protein": 18.2,
+      "fat": 19.7,
+      "carbs": 12.5,
+      "fiber": 2.8,
+      "sodium": 955,
+      "sugar": 2.9
+    },
+    "nutritionWarnings": [
+      "high_sodium"
+    ],
+    "nutritionHighlights": [
+      "high_protein",
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_soy"
+    ],
+    "dietaryFlags": []
   },
   {
     "id": "homestyle_tonghao_tofu_soup",
@@ -1217,22 +3761,61 @@
     "cuisine": "chinese",
     "regionalCuisine": "homestyle",
     "cookingMethod": "soup",
-    "flavors": ["light", "fresh", "aromatic"],
-    "mealTypes": ["lunch", "dinner"],
+    "flavors": [
+      "light",
+      "fresh",
+      "aromatic"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
     "difficulty": "easy",
     "minCookingLevel": "basic",
     "prepTime": 5,
     "cookTime": 10,
     "servings": 3,
     "ingredients": [
-      { "ingredientId": "chrysanthemum_greens", "amount": 300, "unit": "g" },
-      { "ingredientId": "tofu", "amount": 300, "unit": "g" },
-      { "ingredientId": "dried_shrimp", "amount": 10, "unit": "g" },
-      { "ingredientId": "ginger", "amount": 5, "unit": "g" },
-      { "ingredientId": "salt", "amount": 1, "unit": "tsp" },
-      { "ingredientId": "white_pepper", "amount": 0.25, "unit": "tsp" },
-      { "ingredientId": "sesame_oil", "amount": 0.5, "unit": "tsp" },
-      { "ingredientId": "cooking_oil", "amount": 1, "unit": "tbsp" }
+      {
+        "ingredientId": "chrysanthemum_greens",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "tofu",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "dried_shrimp",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "ingredientId": "white_pepper",
+        "amount": 0.3,
+        "unit": "tsp"
+      },
+      {
+        "ingredientId": "sesame_oil",
+        "amount": 0.5,
+        "unit": "tsp"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 1,
+        "unit": "tbsp"
+      }
     ],
     "steps": [
       "茼蒿洗净切段，豆腐切方块",
@@ -1243,7 +3826,41 @@
       "放入茼蒿煮 1 分钟立即关火",
       "调盐、白胡椒，淋麻油"
     ],
-    "tags": ["家常", "养生", "低脂", "清淡"]
+    "tags": [
+      "家常",
+      "养生",
+      "低脂",
+      "清淡"
+    ],
+    "dishRole": "soup",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": null,
+    "perServing": {
+      "calories": 164,
+      "protein": 13.3,
+      "fat": 11.4,
+      "carbs": 6.6,
+      "fiber": 3.5,
+      "sodium": 940,
+      "sugar": 1.1
+    },
+    "nutritionWarnings": [
+      "high_sodium"
+    ],
+    "nutritionHighlights": [
+      "low_calorie",
+      "high_fiber",
+      "high_protein"
+    ],
+    "allergens": [
+      "allergen_seafood",
+      "allergen_sesame",
+      "allergen_soy"
+    ],
+    "dietaryFlags": [
+      "high_purine"
+    ]
   },
   {
     "id": "cantonese_pea_shoot_shrimp",
@@ -1253,23 +3870,66 @@
     "cuisine": "chinese",
     "regionalCuisine": "cantonese",
     "cookingMethod": "stir_fry",
-    "flavors": ["fresh", "light", "umami"],
-    "mealTypes": ["lunch", "dinner"],
+    "flavors": [
+      "fresh",
+      "light",
+      "umami"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
     "difficulty": "easy",
     "minCookingLevel": "beginner",
     "prepTime": 15,
     "cookTime": 5,
-    "servings": 2,
+    "servings": 3,
     "ingredients": [
-      { "ingredientId": "pea_shoots", "amount": 300, "unit": "g" },
-      { "ingredientId": "shrimp", "amount": 200, "unit": "g" },
-      { "ingredientId": "garlic", "amount": 5, "unit": "piece" },
-      { "ingredientId": "cooking_wine", "amount": 1, "unit": "tbsp" },
-      { "ingredientId": "salt", "amount": 0.5, "unit": "tsp" },
-      { "ingredientId": "sugar", "amount": 0.25, "unit": "tsp" },
-      { "ingredientId": "starch", "amount": 1, "unit": "tsp" },
-      { "ingredientId": "egg", "amount": 1, "unit": "piece" },
-      { "ingredientId": "cooking_oil", "amount": 2, "unit": "tbsp" }
+      {
+        "ingredientId": "pea_shoots",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "shrimp",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 25,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 0.5,
+        "unit": "tsp"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 0.3,
+        "unit": "tsp"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "ingredientId": "egg",
+        "amount": 1,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 2,
+        "unit": "tbsp"
+      }
     ],
     "steps": [
       "虾仁挑去虾线，加蛋清、盐、淀粉、料酒抓匀腌 10 分钟",
@@ -1279,7 +3939,38 @@
       "大火下豆苗翻炒 30 秒",
       "虾仁回锅，加盐和糖快速翻匀即起锅"
     ],
-    "tags": ["粤式", "春季", "清雅", "宴客"]
+    "tags": [
+      "粤式",
+      "春季",
+      "清雅",
+      "宴客"
+    ],
+    "dishRole": "main_meat",
+    "isVegetarian": false,
+    "dishStyle": "meat",
+    "stapleCategory": null,
+    "perServing": {
+      "calories": 237,
+      "protein": 19.1,
+      "fat": 12.4,
+      "carbs": 12.7,
+      "fiber": 3.2,
+      "sodium": 444,
+      "sugar": 4.9
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "low_calorie",
+      "high_protein",
+      "low_fat"
+    ],
+    "allergens": [
+      "allergen_egg",
+      "allergen_seafood"
+    ],
+    "dietaryFlags": [
+      "high_purine"
+    ]
   },
   {
     "id": "cantonese_lotus_lily_congee",
@@ -1288,22 +3979,57 @@
     "description": "粤式传统糖水粥。莲子清心、百合润肺、红枣补气，慢熬三小时出米油浓稠，夏日清心冬日暖胃皆宜。",
     "cuisine": "chinese",
     "regionalCuisine": "cantonese",
-    "cookingMethod": "simmer",
-    "flavors": ["sweet", "light", "nourishing"],
-    "mealTypes": ["breakfast", "dinner"],
+    "cookingMethod": "staple",
+    "flavors": [
+      "sweet",
+      "light",
+      "nourishing"
+    ],
+    "mealTypes": [
+      "breakfast",
+      "dinner"
+    ],
     "difficulty": "easy",
     "minCookingLevel": "basic",
     "prepTime": 15,
     "cookTime": 90,
     "servings": 4,
     "ingredients": [
-      { "ingredientId": "rice", "amount": 150, "unit": "g" },
-      { "ingredientId": "lotus_seed", "amount": 50, "unit": "g" },
-      { "ingredientId": "dried_lily_bud", "amount": 30, "unit": "g" },
-      { "ingredientId": "red_date", "amount": 30, "unit": "g" },
-      { "ingredientId": "goji_berry", "amount": 10, "unit": "g" },
-      { "ingredientId": "rock_sugar", "amount": 50, "unit": "g" },
-      { "ingredientId": "sugar", "amount": 30, "unit": "g" }
+      {
+        "ingredientId": "rice",
+        "amount": 150,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "lotus_seed",
+        "amount": 50,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "dried_lily_bud",
+        "amount": 30,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "red_date",
+        "amount": 30,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "goji_berry",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "rock_sugar",
+        "amount": 50,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 30,
+        "unit": "g"
+      }
     ],
     "steps": [
       "莲子去芯温水泡 2 小时",
@@ -1313,7 +4039,35 @@
       "加入百合再煮 30 分钟至粥体浓稠",
       "关火前 5 分钟加枸杞和糖"
     ],
-    "tags": ["粤式", "养生", "糖水粥", "养颜"]
+    "tags": [
+      "粤式",
+      "养生",
+      "糖水粥",
+      "养颜"
+    ],
+    "dishRole": "staple",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": "congee",
+    "perServing": {
+      "calories": 182,
+      "protein": 3.1,
+      "fat": 0.2,
+      "carbs": 44.7,
+      "fiber": 2.2,
+      "sodium": 13,
+      "sugar": 26.1
+    },
+    "nutritionWarnings": [
+      "high_sugar"
+    ],
+    "nutritionHighlights": [
+      "low_fat",
+      "low_calorie",
+      "high_fiber"
+    ],
+    "allergens": [],
+    "dietaryFlags": []
   },
   {
     "id": "homestyle_fuzhu_braised_pork",
@@ -1323,27 +4077,86 @@
     "cuisine": "chinese",
     "regionalCuisine": "homestyle",
     "cookingMethod": "braise",
-    "flavors": ["savory", "rich", "umami"],
-    "mealTypes": ["lunch", "dinner"],
+    "flavors": [
+      "savory",
+      "rich",
+      "umami"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
     "difficulty": "medium",
     "minCookingLevel": "intermediate",
     "prepTime": 60,
     "cookTime": 40,
-    "servings": 3,
+    "servings": 6,
     "ingredients": [
-      { "ingredientId": "pork_belly", "amount": 500, "unit": "g" },
-      { "ingredientId": "dried_bean_curd_stick", "amount": 80, "unit": "g" },
-      { "ingredientId": "star_anise", "amount": 2, "unit": "piece" },
-      { "ingredientId": "cinnamon", "amount": 1, "unit": "piece" },
-      { "ingredientId": "bay_leaf", "amount": 2, "unit": "piece" },
-      { "ingredientId": "ginger", "amount": 15, "unit": "g" },
-      { "ingredientId": "garlic", "amount": 4, "unit": "piece" },
-      { "ingredientId": "spring_onion", "amount": 2, "unit": "piece" },
-      { "ingredientId": "dark_soy", "amount": 2, "unit": "tbsp" },
-      { "ingredientId": "light_soy", "amount": 3, "unit": "tbsp" },
-      { "ingredientId": "cooking_wine", "amount": 2, "unit": "tbsp" },
-      { "ingredientId": "rock_sugar", "amount": 30, "unit": "g" },
-      { "ingredientId": "cooking_oil", "amount": 1, "unit": "tbsp" }
+      {
+        "ingredientId": "pork_belly",
+        "amount": 500,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "dried_bean_curd_stick",
+        "amount": 80,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "star_anise",
+        "amount": 0.6,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cinnamon",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "bay_leaf",
+        "amount": 0.2,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 20,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 30,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "dark_soy",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "light_soy",
+        "amount": 3,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "rock_sugar",
+        "amount": 30,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 1,
+        "unit": "tbsp"
+      }
     ],
     "steps": [
       "腐竹温水泡 1 小时至完全软化切段",
@@ -1355,7 +4168,37 @@
       "大火烧开转小火炖 30 分钟",
       "加入腐竹再炖 10 分钟收汁撒葱花"
     ],
-    "tags": ["家常", "红烧", "下饭", "冬季"]
+    "tags": [
+      "家常",
+      "红烧",
+      "下饭",
+      "冬季"
+    ],
+    "dishRole": "main_meat",
+    "isVegetarian": false,
+    "dishStyle": "meat",
+    "stapleCategory": null,
+    "perServing": {
+      "calories": 551,
+      "protein": 14.5,
+      "fat": 49.9,
+      "carbs": 10.5,
+      "fiber": 1,
+      "sodium": 375,
+      "sugar": 5.4
+    },
+    "nutritionWarnings": [
+      "high_fat"
+    ],
+    "nutritionHighlights": [
+      "high_fiber",
+      "high_protein",
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_soy"
+    ],
+    "dietaryFlags": []
   },
   {
     "id": "cantonese_braised_abalone",
@@ -1365,27 +4208,85 @@
     "cuisine": "chinese",
     "regionalCuisine": "cantonese",
     "cookingMethod": "braise",
-    "flavors": ["umami", "rich", "savory"],
-    "mealTypes": ["dinner"],
+    "flavors": [
+      "umami",
+      "rich",
+      "savory"
+    ],
+    "mealTypes": [
+      "dinner"
+    ],
     "difficulty": "hard",
     "minCookingLevel": "advanced",
     "prepTime": 30,
     "cookTime": 60,
     "servings": 4,
     "ingredients": [
-      { "ingredientId": "abalone", "amount": 8, "unit": "piece" },
-      { "ingredientId": "chicken_stock", "amount": 500, "unit": "ml" },
-      { "ingredientId": "oyster_sauce", "amount": 3, "unit": "tbsp" },
-      { "ingredientId": "dark_soy", "amount": 1, "unit": "tbsp" },
-      { "ingredientId": "rock_sugar", "amount": 20, "unit": "g" },
-      { "ingredientId": "ginger", "amount": 20, "unit": "g" },
-      { "ingredientId": "spring_onion", "amount": 3, "unit": "piece" },
-      { "ingredientId": "dried_scallop", "amount": 20, "unit": "g" },
-      { "ingredientId": "cooking_wine", "amount": 2, "unit": "tbsp" },
-      { "ingredientId": "broccoli", "amount": 300, "unit": "g" },
-      { "ingredientId": "starch", "amount": 1, "unit": "tbsp" },
-      { "ingredientId": "cooking_oil", "amount": 2, "unit": "tbsp" },
-      { "ingredientId": "salt", "amount": 0.5, "unit": "tsp" }
+      {
+        "ingredientId": "abalone",
+        "amount": 8,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "chicken_stock",
+        "amount": 500,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "oyster_sauce",
+        "amount": 3,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "dark_soy",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "rock_sugar",
+        "amount": 20,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 20,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 45,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "dried_scallop",
+        "amount": 20,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "broccoli",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 0.5,
+        "unit": "tsp"
+      }
     ],
     "steps": [
       "活鲍鱼用刷子清洁外壳，刀沿壳内壁起出鲍鱼肉",
@@ -1398,7 +4299,38 @@
       "鲍鱼捞出摆中央，汤汁淋水淀粉勾芡浇上",
       "鲍鱼壳刷净垫底装盘"
     ],
-    "tags": ["粤式", "宴客", "鲍鱼", "高档"]
+    "tags": [
+      "粤式",
+      "宴客",
+      "鲍鱼",
+      "高档"
+    ],
+    "dishRole": "main_meat",
+    "isVegetarian": false,
+    "dishStyle": "meat",
+    "stapleCategory": null,
+    "perServing": {
+      "calories": 375,
+      "protein": 41.3,
+      "fat": 10,
+      "carbs": 29.2,
+      "fiber": 2.4,
+      "sodium": 1303,
+      "sugar": 7.4
+    },
+    "nutritionWarnings": [
+      "high_sodium"
+    ],
+    "nutritionHighlights": [
+      "high_protein",
+      "low_fat",
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_seafood",
+      "allergen_soy"
+    ],
+    "dietaryFlags": []
   },
   {
     "id": "cantonese_cold_octopus",
@@ -1408,25 +4340,76 @@
     "cuisine": "chinese",
     "regionalCuisine": "cantonese",
     "cookingMethod": "cold_dish",
-    "flavors": ["refreshing", "tangy", "chewy"],
-    "mealTypes": ["lunch", "dinner"],
+    "flavors": [
+      "refreshing",
+      "tangy",
+      "chewy"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
     "difficulty": "medium",
     "minCookingLevel": "intermediate",
     "prepTime": 20,
     "cookTime": 10,
     "servings": 2,
     "ingredients": [
-      { "ingredientId": "octopus", "amount": 400, "unit": "g" },
-      { "ingredientId": "cucumber", "amount": 1, "unit": "piece" },
-      { "ingredientId": "onion", "amount": 0.5, "unit": "piece" },
-      { "ingredientId": "light_soy", "amount": 2, "unit": "tbsp" },
-      { "ingredientId": "rice_vinegar", "amount": 1, "unit": "tbsp" },
-      { "ingredientId": "wasabi", "amount": 1, "unit": "tsp" },
-      { "ingredientId": "sesame_oil", "amount": 1, "unit": "tsp" },
-      { "ingredientId": "sugar", "amount": 0.5, "unit": "tsp" },
-      { "ingredientId": "ginger", "amount": 10, "unit": "g" },
-      { "ingredientId": "spring_onion", "amount": 2, "unit": "piece" },
-      { "ingredientId": "sesame_seed", "amount": 1, "unit": "tsp" }
+      {
+        "ingredientId": "octopus",
+        "amount": 400,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cucumber",
+        "amount": 1,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "onion",
+        "amount": 0.5,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "light_soy",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "rice_vinegar",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "wasabi",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "ingredientId": "sesame_oil",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 0.5,
+        "unit": "tsp"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 30,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sesame_seed",
+        "amount": 1,
+        "unit": "tsp"
+      }
     ],
     "steps": [
       "章鱼用盐揉搓去除黏液洗净",
@@ -1437,7 +4420,40 @@
       "生抽、米醋、芥末、糖、麻油调成蘸酱",
       "食材拌匀装盘，撒葱丝和白芝麻"
     ],
-    "tags": ["粤式", "凉菜", "海鲜", "夏日"]
+    "tags": [
+      "粤式",
+      "凉菜",
+      "海鲜",
+      "夏日"
+    ],
+    "dishRole": "cold",
+    "isVegetarian": false,
+    "dishStyle": "meat",
+    "stapleCategory": null,
+    "perServing": {
+      "calories": 262,
+      "protein": 33.4,
+      "fat": 6,
+      "carbs": 17.4,
+      "fiber": 2.3,
+      "sodium": 1314,
+      "sugar": 5.5
+    },
+    "nutritionWarnings": [
+      "high_sodium"
+    ],
+    "nutritionHighlights": [
+      "high_protein",
+      "low_fat",
+      "high_fiber",
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_seafood",
+      "allergen_sesame",
+      "allergen_soy"
+    ],
+    "dietaryFlags": []
   },
   {
     "id": "homestyle_pan_fry_hairtail",
@@ -1447,22 +4463,61 @@
     "cuisine": "chinese",
     "regionalCuisine": "homestyle",
     "cookingMethod": "pan_fry",
-    "flavors": ["crispy", "savory", "umami"],
-    "mealTypes": ["lunch", "dinner"],
+    "flavors": [
+      "crispy",
+      "savory",
+      "umami"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
     "difficulty": "easy",
     "minCookingLevel": "beginner",
     "prepTime": 15,
     "cookTime": 10,
     "servings": 3,
     "ingredients": [
-      { "ingredientId": "hairtail", "amount": 500, "unit": "g" },
-      { "ingredientId": "flour", "amount": 30, "unit": "g" },
-      { "ingredientId": "ginger", "amount": 15, "unit": "g" },
-      { "ingredientId": "spring_onion", "amount": 2, "unit": "piece" },
-      { "ingredientId": "cooking_wine", "amount": 2, "unit": "tbsp" },
-      { "ingredientId": "salt", "amount": 1, "unit": "tsp" },
-      { "ingredientId": "white_pepper", "amount": 0.5, "unit": "tsp" },
-      { "ingredientId": "cooking_oil", "amount": 3, "unit": "tbsp" }
+      {
+        "ingredientId": "hairtail",
+        "amount": 500,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "flour",
+        "amount": 30,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 30,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "ingredientId": "white_pepper",
+        "amount": 0.5,
+        "unit": "tsp"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 3,
+        "unit": "tbsp"
+      }
     ],
     "steps": [
       "带鱼刮去表面银鳞切段，用盐、料酒、姜片和葱段腌 15 分钟",
@@ -1472,7 +4527,38 @@
       "煎 3 分钟定型后翻面再煎 3 分钟",
       "撒白胡椒出锅装盘"
     ],
-    "tags": ["家常", "快手", "煎鱼", "下饭"]
+    "tags": [
+      "家常",
+      "快手",
+      "煎鱼",
+      "下饭"
+    ],
+    "dishRole": "main_meat",
+    "isVegetarian": false,
+    "dishStyle": "meat",
+    "stapleCategory": null,
+    "perServing": {
+      "calories": 399,
+      "protein": 29.8,
+      "fat": 23.3,
+      "carbs": 10.3,
+      "fiber": 0.8,
+      "sodium": 902,
+      "sugar": 0.5
+    },
+    "nutritionWarnings": [
+      "high_sodium"
+    ],
+    "nutritionHighlights": [
+      "high_protein",
+      "high_fiber",
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_gluten",
+      "allergen_seafood"
+    ],
+    "dietaryFlags": []
   },
   {
     "id": "cantonese_steamed_sea_bass",
@@ -1482,23 +4568,65 @@
     "cuisine": "chinese",
     "regionalCuisine": "cantonese",
     "cookingMethod": "steam",
-    "flavors": ["fresh", "light", "umami"],
-    "mealTypes": ["dinner"],
+    "flavors": [
+      "fresh",
+      "light",
+      "umami"
+    ],
+    "mealTypes": [
+      "dinner"
+    ],
     "difficulty": "easy",
     "minCookingLevel": "beginner",
     "prepTime": 10,
     "cookTime": 10,
     "servings": 3,
     "ingredients": [
-      { "ingredientId": "sea_bass", "amount": 600, "unit": "g" },
-      { "ingredientId": "ginger", "amount": 30, "unit": "g" },
-      { "ingredientId": "spring_onion", "amount": 3, "unit": "piece" },
-      { "ingredientId": "cilantro", "amount": 10, "unit": "g" },
-      { "ingredientId": "light_soy", "amount": 3, "unit": "tbsp" },
-      { "ingredientId": "cooking_wine", "amount": 1, "unit": "tbsp" },
-      { "ingredientId": "sugar", "amount": 1, "unit": "tsp" },
-      { "ingredientId": "cooking_oil", "amount": 2, "unit": "tbsp" },
-      { "ingredientId": "chili_pepper", "amount": 1, "unit": "piece" }
+      {
+        "ingredientId": "sea_bass",
+        "amount": 600,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 30,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 45,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cilantro",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "light_soy",
+        "amount": 3,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "chili_pepper",
+        "amount": 5,
+        "unit": "g"
+      }
     ],
     "steps": [
       "鲈鱼处理干净，两面划斜刀以便入味",
@@ -1509,7 +4637,38 @@
       "铺在鱼身上，淋蒸鱼豉油",
       "另锅烧热食用油至冒烟，浇在葱丝上激出香"
     ],
-    "tags": ["粤式", "清蒸", "宴客", "本味"]
+    "tags": [
+      "粤式",
+      "清蒸",
+      "宴客",
+      "本味"
+    ],
+    "dishRole": "main_meat",
+    "isVegetarian": false,
+    "dishStyle": "meat",
+    "stapleCategory": null,
+    "perServing": {
+      "calories": 315,
+      "protein": 37.8,
+      "fat": 14.1,
+      "carbs": 5.8,
+      "fiber": 0.7,
+      "sodium": 989,
+      "sugar": 2.4
+    },
+    "nutritionWarnings": [
+      "high_sodium"
+    ],
+    "nutritionHighlights": [
+      "high_protein",
+      "low_calorie",
+      "low_fat"
+    ],
+    "allergens": [
+      "allergen_seafood",
+      "allergen_soy"
+    ],
+    "dietaryFlags": []
   },
   {
     "id": "homestyle_yellow_croaker_tofu",
@@ -1519,23 +4678,66 @@
     "cuisine": "chinese",
     "regionalCuisine": "homestyle",
     "cookingMethod": "soup",
-    "flavors": ["fresh", "umami", "milky"],
-    "mealTypes": ["lunch", "dinner"],
+    "flavors": [
+      "fresh",
+      "umami",
+      "milky"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
     "difficulty": "medium",
     "minCookingLevel": "intermediate",
     "prepTime": 10,
     "cookTime": 20,
     "servings": 3,
     "ingredients": [
-      { "ingredientId": "yellow_croaker", "amount": 500, "unit": "g" },
-      { "ingredientId": "tofu", "amount": 300, "unit": "g" },
-      { "ingredientId": "ginger", "amount": 20, "unit": "g" },
-      { "ingredientId": "spring_onion", "amount": 2, "unit": "piece" },
-      { "ingredientId": "cooking_wine", "amount": 2, "unit": "tbsp" },
-      { "ingredientId": "salt", "amount": 1, "unit": "tsp" },
-      { "ingredientId": "white_pepper", "amount": 0.5, "unit": "tsp" },
-      { "ingredientId": "cooking_oil", "amount": 2, "unit": "tbsp" },
-      { "ingredientId": "cilantro", "amount": 10, "unit": "g" }
+      {
+        "ingredientId": "yellow_croaker",
+        "amount": 500,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "tofu",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 20,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 30,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "ingredientId": "white_pepper",
+        "amount": 0.5,
+        "unit": "tsp"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "cilantro",
+        "amount": 10,
+        "unit": "g"
+      }
     ],
     "steps": [
       "黄花鱼洗净擦干，两面撒少许盐",
@@ -1547,7 +4749,39 @@
       "下豆腐煮 5 分钟",
       "调盐和白胡椒，撒葱花香菜"
     ],
-    "tags": ["家常", "养生", "海鱼汤", "月子餐"]
+    "tags": [
+      "家常",
+      "养生",
+      "海鱼汤",
+      "月子餐"
+    ],
+    "dishRole": "soup",
+    "isVegetarian": false,
+    "dishStyle": "meat",
+    "stapleCategory": null,
+    "perServing": {
+      "calories": 347,
+      "protein": 38.5,
+      "fat": 19.1,
+      "carbs": 4.8,
+      "fiber": 1,
+      "sodium": 860,
+      "sugar": 1.1
+    },
+    "nutritionWarnings": [
+      "high_sodium"
+    ],
+    "nutritionHighlights": [
+      "high_protein",
+      "high_fiber",
+      "low_calorie",
+      "low_fat"
+    ],
+    "allergens": [
+      "allergen_seafood",
+      "allergen_soy"
+    ],
+    "dietaryFlags": []
   },
   {
     "id": "cantonese_douchi_chicken_feet",
@@ -1557,27 +4791,85 @@
     "cuisine": "chinese",
     "regionalCuisine": "cantonese",
     "cookingMethod": "steam",
-    "flavors": ["savory", "umami", "chewy"],
-    "mealTypes": ["lunch"],
+    "flavors": [
+      "savory",
+      "umami",
+      "chewy"
+    ],
+    "mealTypes": [
+      "lunch"
+    ],
     "difficulty": "hard",
     "minCookingLevel": "advanced",
     "prepTime": 60,
     "cookTime": 90,
-    "servings": 3,
+    "servings": 7,
     "ingredients": [
-      { "ingredientId": "chicken_feet", "amount": 500, "unit": "g" },
-      { "ingredientId": "fermented_black_bean", "amount": 30, "unit": "g" },
-      { "ingredientId": "garlic", "amount": 6, "unit": "piece" },
-      { "ingredientId": "chili_pepper", "amount": 2, "unit": "piece" },
-      { "ingredientId": "oyster_sauce", "amount": 2, "unit": "tbsp" },
-      { "ingredientId": "light_soy", "amount": 2, "unit": "tbsp" },
-      { "ingredientId": "dark_soy", "amount": 1, "unit": "tsp" },
-      { "ingredientId": "sugar", "amount": 1, "unit": "tbsp" },
-      { "ingredientId": "cooking_wine", "amount": 2, "unit": "tbsp" },
-      { "ingredientId": "starch", "amount": 1, "unit": "tbsp" },
-      { "ingredientId": "vinegar", "amount": 2, "unit": "tbsp" },
-      { "ingredientId": "cooking_oil", "amount": 500, "unit": "ml" },
-      { "ingredientId": "spring_onion", "amount": 2, "unit": "piece" }
+      {
+        "ingredientId": "chicken_feet",
+        "amount": 500,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "fermented_black_bean",
+        "amount": 30,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 30,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "chili_pepper",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "oyster_sauce",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "light_soy",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "dark_soy",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "starch",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "vinegar",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 500,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 30,
+        "unit": "g"
+      }
     ],
     "steps": [
       "凤爪剪去指甲冲洗干净，加醋和水煮 10 分钟",
@@ -1589,7 +4881,40 @@
       "凤爪倒入拌匀，装盘大火蒸 40 分钟至骨肉分离",
       "出锅前撒葱花"
     ],
-    "tags": ["粤式", "早茶", "豉汁", "宴客"]
+    "tags": [
+      "粤式",
+      "早茶",
+      "豉汁",
+      "宴客"
+    ],
+    "dishRole": "main_meat",
+    "isVegetarian": false,
+    "dishStyle": "meat",
+    "stapleCategory": null,
+    "dataIssues": [
+      "cal_too_high_per_serving"
+    ],
+    "perServing": {
+      "calories": 826,
+      "protein": 14.9,
+      "fat": 82.4,
+      "carbs": 7.6,
+      "fiber": 0.4,
+      "sodium": 536,
+      "sugar": 2.7
+    },
+    "nutritionWarnings": [
+      "high_calorie",
+      "high_fat"
+    ],
+    "nutritionHighlights": [
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_seafood",
+      "allergen_soy"
+    ],
+    "dietaryFlags": []
   },
   {
     "id": "homestyle_garlic_amaranth",
@@ -1599,19 +4924,46 @@
     "cuisine": "chinese",
     "regionalCuisine": "homestyle",
     "cookingMethod": "stir_fry",
-    "flavors": ["garlicky", "light", "fresh"],
-    "mealTypes": ["lunch", "dinner"],
+    "flavors": [
+      "garlicky",
+      "light",
+      "fresh"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
     "difficulty": "easy",
     "minCookingLevel": "basic",
     "prepTime": 5,
     "cookTime": 5,
-    "servings": 2,
+    "servings": 3,
     "ingredients": [
-      { "ingredientId": "amaranth_greens", "amount": 400, "unit": "g" },
-      { "ingredientId": "garlic", "amount": 6, "unit": "piece" },
-      { "ingredientId": "salt", "amount": 0.5, "unit": "tsp" },
-      { "ingredientId": "sugar", "amount": 0.25, "unit": "tsp" },
-      { "ingredientId": "cooking_oil", "amount": 2, "unit": "tbsp" }
+      {
+        "ingredientId": "amaranth_greens",
+        "amount": 400,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 30,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 0.5,
+        "unit": "tsp"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 0.3,
+        "unit": "tsp"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 2,
+        "unit": "tbsp"
+      }
     ],
     "steps": [
       "苋菜掐去老根洗净",
@@ -1621,7 +4973,31 @@
       "加盐和糖，继续炒 30 秒至出紫红汁水",
       "关火拌入剩余生蒜末提香"
     ],
-    "tags": ["家常", "夏秋", "快手", "素菜"]
+    "tags": [
+      "家常",
+      "夏秋",
+      "快手",
+      "素菜"
+    ],
+    "dishRole": "main_veg",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": null,
+    "perServing": {
+      "calories": 136,
+      "protein": 4,
+      "fat": 10.5,
+      "carbs": 9.1,
+      "fiber": 1.9,
+      "sodium": 351,
+      "sugar": 0.6
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "low_calorie"
+    ],
+    "allergens": [],
+    "dietaryFlags": []
   },
   {
     "id": "cantonese_ginger_fish_head",
@@ -1631,26 +5007,80 @@
     "cuisine": "chinese",
     "regionalCuisine": "cantonese",
     "cookingMethod": "braise",
-    "flavors": ["ginger", "warm", "umami"],
-    "mealTypes": ["dinner"],
+    "flavors": [
+      "ginger",
+      "warm",
+      "umami"
+    ],
+    "mealTypes": [
+      "dinner"
+    ],
     "difficulty": "medium",
     "minCookingLevel": "intermediate",
     "prepTime": 15,
     "cookTime": 25,
-    "servings": 3,
+    "servings": 4,
     "ingredients": [
-      { "ingredientId": "fish_head", "amount": 700, "unit": "g" },
-      { "ingredientId": "ginger", "amount": 50, "unit": "g" },
-      { "ingredientId": "spring_onion", "amount": 4, "unit": "piece" },
-      { "ingredientId": "garlic", "amount": 5, "unit": "piece" },
-      { "ingredientId": "oyster_sauce", "amount": 2, "unit": "tbsp" },
-      { "ingredientId": "light_soy", "amount": 2, "unit": "tbsp" },
-      { "ingredientId": "dark_soy", "amount": 1, "unit": "tsp" },
-      { "ingredientId": "cooking_wine", "amount": 3, "unit": "tbsp" },
-      { "ingredientId": "sugar", "amount": 1, "unit": "tsp" },
-      { "ingredientId": "sesame_oil", "amount": 1, "unit": "tsp" },
-      { "ingredientId": "cooking_oil", "amount": 3, "unit": "tbsp" },
-      { "ingredientId": "chicken_stock", "amount": 300, "unit": "ml" }
+      {
+        "ingredientId": "fish_head",
+        "amount": 700,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 50,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 60,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 25,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "oyster_sauce",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "light_soy",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "dark_soy",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "ingredientId": "cooking_wine",
+        "amount": 3,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "ingredientId": "sesame_oil",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 3,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "chicken_stock",
+        "amount": 300,
+        "unit": "ml"
+      }
     ],
     "steps": [
       "鱼头对半劈开洗净，擦干后薄薄拍一层淀粉",
@@ -1663,7 +5093,36 @@
       "加盖中小火焖 15 分钟",
       "出锅前淋麻油撒葱花"
     ],
-    "tags": ["粤式", "砂锅", "冬季", "驱寒"]
+    "tags": [
+      "粤式",
+      "砂锅",
+      "冬季",
+      "驱寒"
+    ],
+    "dishRole": "main_meat",
+    "isVegetarian": false,
+    "dishStyle": "meat",
+    "stapleCategory": null,
+    "perServing": {
+      "calories": 356,
+      "protein": 31.9,
+      "fat": 21.7,
+      "carbs": 8,
+      "fiber": 0.8,
+      "sodium": 587,
+      "sugar": 2.4
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "high_protein",
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_seafood",
+      "allergen_sesame",
+      "allergen_soy"
+    ],
+    "dietaryFlags": []
   },
   {
     "id": "cantonese_longan_red_date_tea",
@@ -1673,19 +5132,46 @@
     "cuisine": "chinese",
     "regionalCuisine": "cantonese",
     "cookingMethod": "simmer",
-    "flavors": ["sweet", "nourishing", "warm"],
-    "mealTypes": ["breakfast", "dinner"],
+    "flavors": [
+      "sweet",
+      "nourishing",
+      "warm"
+    ],
+    "mealTypes": [
+      "breakfast",
+      "dinner"
+    ],
     "difficulty": "easy",
     "minCookingLevel": "basic",
     "prepTime": 5,
     "cookTime": 30,
     "servings": 3,
     "ingredients": [
-      { "ingredientId": "dried_longan", "amount": 30, "unit": "g" },
-      { "ingredientId": "red_date", "amount": 50, "unit": "g" },
-      { "ingredientId": "goji_berry", "amount": 10, "unit": "g" },
-      { "ingredientId": "ginger", "amount": 10, "unit": "g" },
-      { "ingredientId": "rock_sugar", "amount": 30, "unit": "g" }
+      {
+        "ingredientId": "dried_longan",
+        "amount": 30,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "red_date",
+        "amount": 50,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "goji_berry",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "rock_sugar",
+        "amount": 30,
+        "unit": "g"
+      }
     ],
     "steps": [
       "红枣去核撕开更易出味",
@@ -1695,7 +5181,35 @@
       "转小火慢炖 25 分钟",
       "加冰糖和枸杞再煮 5 分钟"
     ],
-    "tags": ["养生", "茶饮", "暖身", "女性"]
+    "tags": [
+      "养生",
+      "茶饮",
+      "暖身",
+      "女性"
+    ],
+    "dishRole": "drink",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": null,
+    "perServing": {
+      "calories": 128,
+      "protein": 1.3,
+      "fat": 0.1,
+      "carbs": 33.1,
+      "fiber": 1.6,
+      "sodium": 16,
+      "sugar": 28.6
+    },
+    "nutritionWarnings": [
+      "high_sugar"
+    ],
+    "nutritionHighlights": [
+      "low_fat",
+      "low_calorie",
+      "high_fiber"
+    ],
+    "allergens": [],
+    "dietaryFlags": []
   },
   {
     "id": "american_chia_berry_pudding",
@@ -1705,21 +5219,55 @@
     "cuisine": "western",
     "regionalCuisine": "american",
     "cookingMethod": "cold_dish",
-    "flavors": ["creamy", "sweet", "fruity"],
-    "mealTypes": ["breakfast"],
+    "flavors": [
+      "creamy",
+      "sweet",
+      "fruity"
+    ],
+    "mealTypes": [
+      "breakfast"
+    ],
     "difficulty": "easy",
     "minCookingLevel": "basic",
     "prepTime": 10,
     "cookTime": 0,
     "servings": 2,
     "ingredients": [
-      { "ingredientId": "chia_seed", "amount": 40, "unit": "g" },
-      { "ingredientId": "coconut_milk", "amount": 300, "unit": "ml" },
-      { "ingredientId": "honey", "amount": 2, "unit": "tbsp" },
-      { "ingredientId": "raspberry", "amount": 80, "unit": "g" },
-      { "ingredientId": "blueberry", "amount": 80, "unit": "g" },
-      { "ingredientId": "almond", "amount": 20, "unit": "g" },
-      { "ingredientId": "oats", "amount": 20, "unit": "g" }
+      {
+        "ingredientId": "chia_seed",
+        "amount": 40,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "coconut_milk",
+        "amount": 300,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "honey",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "raspberry",
+        "amount": 80,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "blueberry",
+        "amount": 80,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "almond",
+        "amount": 20,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "oats",
+        "amount": 20,
+        "unit": "g"
+      }
     ],
     "steps": [
       "椰奶、奇亚籽、蜂蜜放入玻璃瓶摇匀",
@@ -1727,7 +5275,38 @@
       "冷藏 4 小时或过夜",
       "食用前表面铺覆盆子、蓝莓、燕麦脆片和切碎杏仁"
     ],
-    "tags": ["健身", "早餐", "快手", "无需烹饪"]
+    "tags": [
+      "健身",
+      "早餐",
+      "快手",
+      "无需烹饪"
+    ],
+    "dishRole": "snack",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": null,
+    "perServing": {
+      "calories": 628,
+      "protein": 11.5,
+      "fat": 48.3,
+      "carbs": 48.2,
+      "fiber": 16.1,
+      "sodium": 27,
+      "sugar": 23.6
+    },
+    "nutritionWarnings": [
+      "high_sugar",
+      "high_fat"
+    ],
+    "nutritionHighlights": [
+      "high_fiber",
+      "high_protein"
+    ],
+    "allergens": [
+      "allergen_gluten",
+      "allergen_nut"
+    ],
+    "dietaryFlags": []
   },
   {
     "id": "asian_papaya_milk",
@@ -1737,18 +5316,40 @@
     "cuisine": "asian_other",
     "regionalCuisine": "taiwanese",
     "cookingMethod": "cold_dish",
-    "flavors": ["sweet", "smooth", "milky"],
-    "mealTypes": ["breakfast"],
+    "flavors": [
+      "sweet",
+      "smooth",
+      "milky"
+    ],
+    "mealTypes": [
+      "breakfast"
+    ],
     "difficulty": "easy",
     "minCookingLevel": "basic",
     "prepTime": 5,
     "cookTime": 0,
     "servings": 2,
     "ingredients": [
-      { "ingredientId": "papaya", "amount": 300, "unit": "g" },
-      { "ingredientId": "milk", "amount": 400, "unit": "ml" },
-      { "ingredientId": "honey", "amount": 1, "unit": "tbsp" },
-      { "ingredientId": "lemon", "amount": 0.25, "unit": "piece" }
+      {
+        "ingredientId": "papaya",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "milk",
+        "amount": 400,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "honey",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "lemon",
+        "amount": 0.3,
+        "unit": "piece"
+      }
     ],
     "steps": [
       "木瓜对半切开挖籽切块",
@@ -1756,7 +5357,36 @@
       "高速打 30 秒至顺滑",
       "挤几滴柠檬汁防止牛奶与木瓜反应变苦"
     ],
-    "tags": ["台式", "早餐", "果昔", "快手"]
+    "tags": [
+      "台式",
+      "早餐",
+      "果昔",
+      "快手"
+    ],
+    "dishRole": "drink",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": null,
+    "perServing": {
+      "calories": 178,
+      "protein": 7.8,
+      "fat": 2.5,
+      "carbs": 34.7,
+      "fiber": 3.2,
+      "sodium": 101,
+      "sugar": 28.4
+    },
+    "nutritionWarnings": [
+      "high_sugar"
+    ],
+    "nutritionHighlights": [
+      "low_fat",
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_dairy"
+    ],
+    "dietaryFlags": []
   },
   {
     "id": "cantonese_dried_scallop_congee",
@@ -1765,24 +5395,67 @@
     "description": "粤式宵夜招牌。干贝提前泡发撕丝再慢煮，米粥浓稠奶白，海鲜的鲜甜沁入每一粒米心，胃暖到心。",
     "cuisine": "chinese",
     "regionalCuisine": "cantonese",
-    "cookingMethod": "simmer",
-    "flavors": ["umami", "smooth", "nourishing"],
-    "mealTypes": ["breakfast", "dinner"],
+    "cookingMethod": "staple",
+    "flavors": [
+      "umami",
+      "smooth",
+      "nourishing"
+    ],
+    "mealTypes": [
+      "breakfast",
+      "dinner"
+    ],
     "difficulty": "easy",
     "minCookingLevel": "beginner",
     "prepTime": 30,
     "cookTime": 60,
     "servings": 3,
     "ingredients": [
-      { "ingredientId": "rice", "amount": 150, "unit": "g" },
-      { "ingredientId": "dried_scallop", "amount": 30, "unit": "g" },
-      { "ingredientId": "chicken_breast", "amount": 150, "unit": "g" },
-      { "ingredientId": "ginger", "amount": 20, "unit": "g" },
-      { "ingredientId": "spring_onion", "amount": 2, "unit": "piece" },
-      { "ingredientId": "salt", "amount": 1, "unit": "tsp" },
-      { "ingredientId": "white_pepper", "amount": 0.5, "unit": "tsp" },
-      { "ingredientId": "sesame_oil", "amount": 1, "unit": "tsp" },
-      { "ingredientId": "cilantro", "amount": 10, "unit": "g" }
+      {
+        "ingredientId": "rice",
+        "amount": 150,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "dried_scallop",
+        "amount": 30,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "chicken_breast",
+        "amount": 150,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 20,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "spring_onion",
+        "amount": 30,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "ingredientId": "white_pepper",
+        "amount": 0.5,
+        "unit": "tsp"
+      },
+      {
+        "ingredientId": "sesame_oil",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "ingredientId": "cilantro",
+        "amount": 10,
+        "unit": "g"
+      }
     ],
     "steps": [
       "干贝温水泡 30 分钟撕丝，泡贝水留用",
@@ -1794,7 +5467,39 @@
       "调盐和白胡椒，淋麻油",
       "出锅撒葱花香菜"
     ],
-    "tags": ["粤式", "粥", "养生", "宵夜"]
+    "tags": [
+      "粤式",
+      "粥",
+      "养生",
+      "宵夜"
+    ],
+    "dishRole": "staple",
+    "isVegetarian": false,
+    "dishStyle": "meat",
+    "stapleCategory": "congee",
+    "perServing": {
+      "calories": 196,
+      "protein": 23.9,
+      "fat": 3.2,
+      "carbs": 16.9,
+      "fiber": 0.9,
+      "sodium": 858,
+      "sugar": 0.4
+    },
+    "nutritionWarnings": [
+      "high_sodium"
+    ],
+    "nutritionHighlights": [
+      "low_fat",
+      "low_calorie",
+      "high_fiber",
+      "high_protein"
+    ],
+    "allergens": [
+      "allergen_seafood",
+      "allergen_sesame"
+    ],
+    "dietaryFlags": []
   },
   {
     "id": "italian_spaghetti_aglio_olio",
@@ -1804,22 +5509,61 @@
     "cuisine": "western",
     "regionalCuisine": "italian",
     "cookingMethod": "staple",
-    "flavors": ["garlicky", "light", "spicy"],
-    "mealTypes": ["lunch", "dinner"],
+    "flavors": [
+      "garlicky",
+      "light",
+      "spicy"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
     "difficulty": "easy",
     "minCookingLevel": "beginner",
     "prepTime": 5,
     "cookTime": 12,
-    "servings": 2,
+    "servings": 5,
     "ingredients": [
-      { "ingredientId": "pasta", "amount": 200, "unit": "g" },
-      { "ingredientId": "garlic", "amount": 8, "unit": "piece" },
-      { "ingredientId": "dried_chili", "amount": 5, "unit": "g" },
-      { "ingredientId": "parsley", "amount": 15, "unit": "g" },
-      { "ingredientId": "olive_oil", "amount": 60, "unit": "ml" },
-      { "ingredientId": "parmesan", "amount": 30, "unit": "g" },
-      { "ingredientId": "salt", "amount": 1, "unit": "tbsp" },
-      { "ingredientId": "black_pepper", "amount": 0.5, "unit": "tsp" }
+      {
+        "ingredientId": "pasta",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "garlic",
+        "amount": 40,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "dried_chili",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "parsley",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "olive_oil",
+        "amount": 60,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "parmesan",
+        "amount": 30,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredientId": "black_pepper",
+        "amount": 0.5,
+        "unit": "tsp"
+      }
     ],
     "steps": [
       "大锅水烧开加一大勺盐，下意面煮 8 分钟",
@@ -1830,7 +5574,39 @@
       "意面入蒜油锅，加 3 勺煮面水大火乳化 1 分钟",
       "关火撒欧芹碎、黑胡椒和帕玛森奶酪碎拌匀"
     ],
-    "tags": ["意式", "快手", "极简", "深夜食堂"]
+    "tags": [
+      "意式",
+      "快手",
+      "极简",
+      "深夜食堂"
+    ],
+    "dishRole": "staple",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": "noodles",
+    "perServing": {
+      "calories": 245,
+      "protein": 8.2,
+      "fat": 8.6,
+      "carbs": 34,
+      "fiber": 2,
+      "sodium": 1261,
+      "sugar": 1.2
+    },
+    "nutritionWarnings": [
+      "high_sodium"
+    ],
+    "nutritionHighlights": [
+      "low_fat",
+      "low_calorie",
+      "high_fiber",
+      "high_protein"
+    ],
+    "allergens": [
+      "allergen_dairy",
+      "allergen_gluten"
+    ],
+    "dietaryFlags": []
   },
   {
     "id": "mexican_avocado_toast",
@@ -1840,23 +5616,65 @@
     "cuisine": "western",
     "regionalCuisine": "american",
     "cookingMethod": "pan_fry",
-    "flavors": ["creamy", "refreshing", "smooth"],
-    "mealTypes": ["breakfast"],
+    "flavors": [
+      "creamy",
+      "refreshing",
+      "smooth"
+    ],
+    "mealTypes": [
+      "breakfast"
+    ],
     "difficulty": "easy",
     "minCookingLevel": "basic",
     "prepTime": 5,
     "cookTime": 5,
-    "servings": 1,
+    "servings": 2,
     "ingredients": [
-      { "ingredientId": "bread", "amount": 2, "unit": "piece" },
-      { "ingredientId": "avocado", "amount": 1, "unit": "piece" },
-      { "ingredientId": "egg", "amount": 1, "unit": "piece" },
-      { "ingredientId": "lemon", "amount": 0.25, "unit": "piece" },
-      { "ingredientId": "chili_flakes", "amount": 0.5, "unit": "tsp" },
-      { "ingredientId": "olive_oil", "amount": 1, "unit": "tsp" },
-      { "ingredientId": "salt", "amount": 0.25, "unit": "tsp" },
-      { "ingredientId": "black_pepper", "amount": 0.25, "unit": "tsp" },
-      { "ingredientId": "sesame_seed", "amount": 0.5, "unit": "tsp" }
+      {
+        "ingredientId": "bread",
+        "amount": 2,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "avocado",
+        "amount": 1,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "egg",
+        "amount": 1,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "lemon",
+        "amount": 0.3,
+        "unit": "piece"
+      },
+      {
+        "ingredientId": "chili_flakes",
+        "amount": 0.5,
+        "unit": "tsp"
+      },
+      {
+        "ingredientId": "olive_oil",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 0.3,
+        "unit": "tsp"
+      },
+      {
+        "ingredientId": "black_pepper",
+        "amount": 0.3,
+        "unit": "tsp"
+      },
+      {
+        "ingredientId": "sesame_seed",
+        "amount": 0.5,
+        "unit": "tsp"
+      }
     ],
     "steps": [
       "吐司烤至两面金黄",
@@ -1865,6 +5683,37 @@
       "牛油果泥厚涂吐司，放上煎蛋",
       "撒辣椒片、芝麻，淋橄榄油"
     ],
-    "tags": ["美式", "早餐", "快手", "健康"]
+    "tags": [
+      "美式",
+      "早餐",
+      "快手",
+      "健康"
+    ],
+    "dishRole": "staple",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": "bread",
+    "perServing": {
+      "calories": 465,
+      "protein": 14.5,
+      "fat": 20.6,
+      "carbs": 59.2,
+      "fiber": 9.3,
+      "sodium": 819,
+      "sugar": 6.5
+    },
+    "nutritionWarnings": [
+      "high_sodium"
+    ],
+    "nutritionHighlights": [
+      "high_fiber",
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_egg",
+      "allergen_gluten",
+      "allergen_sesame"
+    ],
+    "dietaryFlags": []
   }
 ]

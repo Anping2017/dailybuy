@@ -1,0 +1,5303 @@
+{
+  "A": {
+    "stats": {
+      "total": 366,
+      "atwaterOff": 4,
+      "extremeValues": 1,
+      "missingFields": 0,
+      "suspiciousZero": 0
+    },
+    "issues": [
+      {
+        "id": "cooking_wine",
+        "name": "料酒",
+        "type": "atwater_off",
+        "stated": 87,
+        "calc": 25,
+        "dev": "71%"
+      },
+      {
+        "id": "lard",
+        "name": "猪油",
+        "type": "cal_too_high",
+        "value": 902
+      },
+      {
+        "id": "dried_lily_bud",
+        "name": "黄花菜/金针",
+        "type": "atwater_off",
+        "stated": 200,
+        "calc": 300,
+        "dev": "50%"
+      },
+      {
+        "id": "vanilla",
+        "name": "香草精",
+        "type": "atwater_off",
+        "stated": 288,
+        "calc": 52,
+        "dev": "82%"
+      },
+      {
+        "id": "dried_lily",
+        "name": "干黄花菜",
+        "type": "atwater_off",
+        "stated": 199,
+        "calc": 309,
+        "dev": "55%"
+      }
+    ]
+  },
+  "B": {
+    "stats": {
+      "total": 1933,
+      "missingIngs": 0,
+      "badAmount": 80,
+      "dupeIds": 0,
+      "badServings": 0,
+      "emptyFields": 0,
+      "unitMismatch": 0
+    },
+    "issues": [
+      {
+        "id": "homestyle_plain_congee",
+        "name": "白粥配油条",
+        "type": "seasoning_too_much",
+        "ing": "cooking_oil",
+        "grams": 500
+      },
+      {
+        "id": "jiangsu_songshu_mandarin_fish",
+        "name": "松鼠鳜鱼",
+        "type": "seasoning_too_much",
+        "ing": "cooking_oil",
+        "grams": 1000
+      },
+      {
+        "id": "jiangsu_crab_lion_head",
+        "name": "清炖蟹粉狮子头",
+        "type": "seasoning_too_much",
+        "ing": "chicken_stock",
+        "grams": 1000
+      },
+      {
+        "id": "jiangsu_wensi_tofu_soup",
+        "name": "文思豆腐羹",
+        "type": "seasoning_too_much",
+        "ing": "chicken_stock",
+        "grams": 800
+      },
+      {
+        "id": "anhui_stinky_mandarin_fish",
+        "name": "徽州臭鳜鱼",
+        "type": "seasoning_too_much",
+        "ing": "chicken_stock",
+        "grams": 500
+      },
+      {
+        "id": "anhui_wenzheng_bamboo",
+        "name": "问政山笋",
+        "type": "seasoning_too_much",
+        "ing": "chicken_stock",
+        "grams": 800
+      },
+      {
+        "id": "anhui_li_hongzhang_hotpot",
+        "name": "李鸿章杂烩",
+        "type": "seasoning_too_much",
+        "ing": "chicken_stock",
+        "grams": 1000
+      },
+      {
+        "id": "fujian_buddha_jumps_wall",
+        "name": "佛跳墙",
+        "type": "seasoning_too_much",
+        "ing": "chicken_stock",
+        "grams": 1500
+      },
+      {
+        "id": "fujian_red_rice_pork",
+        "name": "福州红糟肉",
+        "type": "seasoning_too_much",
+        "ing": "cooking_oil",
+        "grams": 800
+      },
+      {
+        "id": "shandong_nine_turn_intestine",
+        "name": "九转大肠",
+        "type": "seasoning_too_much",
+        "ing": "cooking_oil",
+        "grams": 500
+      },
+      {
+        "id": "shandong_scallion_sea_cucumber",
+        "name": "葱烧海参",
+        "type": "seasoning_too_much",
+        "ing": "chicken_stock",
+        "grams": 400
+      },
+      {
+        "id": "shandong_sweet_sour_yellow_river_fish",
+        "name": "糖醋黄河鲤鱼",
+        "type": "seasoning_too_much",
+        "ing": "cooking_oil",
+        "grams": 1000
+      },
+      {
+        "id": "shandong_guota_tofu",
+        "name": "锅塌豆腐",
+        "type": "seasoning_too_much",
+        "ing": "chicken_stock",
+        "grams": 300
+      },
+      {
+        "id": "shanghai_oil_explode_shrimp",
+        "name": "上海油爆虾",
+        "type": "seasoning_too_much",
+        "ing": "cooking_oil",
+        "grams": 300
+      },
+      {
+        "id": "shanghai_scallion_baked_tilapia",
+        "name": "葱烤鲫鱼",
+        "type": "seasoning_too_much",
+        "ing": "cooking_oil",
+        "grams": 500
+      },
+      {
+        "id": "shanghai_four_joy_wheat_gluten",
+        "name": "四喜烤麸",
+        "type": "seasoning_too_much",
+        "ing": "cooking_oil",
+        "grams": 500
+      },
+      {
+        "id": "italian_mushroom_risotto",
+        "name": "意式蘑菇烩饭",
+        "type": "seasoning_too_much",
+        "ing": "chicken_stock",
+        "grams": 800
+      },
+      {
+        "id": "japanese_chashu_ramen",
+        "name": "叉烧拉面",
+        "type": "seasoning_too_much",
+        "ing": "chicken_stock",
+        "grams": 1000
+      },
+      {
+        "id": "thai_green_curry_tempeh",
+        "name": "泰式青咖喱天贝",
+        "type": "seasoning_too_much",
+        "ing": "coconut_milk",
+        "grams": 400
+      },
+      {
+        "id": "korean_kimchi_jjigae",
+        "name": "韩式泡菜豆腐汤",
+        "type": "seasoning_too_much",
+        "ing": "chicken_stock",
+        "grams": 600
+      },
+      {
+        "id": "korean_fried_chicken_wings",
+        "name": "韩式炸鸡翅",
+        "type": "seasoning_too_much",
+        "ing": "cooking_oil",
+        "grams": 1000
+      },
+      {
+        "id": "sichuan_shuizhu_seabass",
+        "name": "水煮鲈鱼",
+        "type": "seasoning_too_much",
+        "ing": "chicken_stock",
+        "grams": 500
+      },
+      {
+        "id": "cantonese_braised_abalone",
+        "name": "红烧鲍鱼",
+        "type": "seasoning_too_much",
+        "ing": "chicken_stock",
+        "grams": 500
+      },
+      {
+        "id": "cantonese_douchi_chicken_feet",
+        "name": "豉汁蒸凤爪",
+        "type": "seasoning_too_much",
+        "ing": "cooking_oil",
+        "grams": 500
+      },
+      {
+        "id": "cantonese_ginger_fish_head",
+        "name": "姜葱煲鱼头",
+        "type": "seasoning_too_much",
+        "ing": "chicken_stock",
+        "grams": 300
+      },
+      {
+        "id": "american_chia_berry_pudding",
+        "name": "奇亚籽莓果布丁",
+        "type": "seasoning_too_much",
+        "ing": "coconut_milk",
+        "grams": 300
+      },
+      {
+        "id": "salt_pepper_squid",
+        "name": "椒盐鱿鱼",
+        "type": "seasoning_too_much",
+        "ing": "cooking_oil",
+        "grams": 500
+      },
+      {
+        "id": "sweet_sour_fish_fillet",
+        "name": "糖醋鱼片",
+        "type": "seasoning_too_much",
+        "ing": "cooking_oil",
+        "grams": 400
+      },
+      {
+        "id": "dried_tofu_skin_roll",
+        "name": "腐皮肉卷",
+        "type": "seasoning_too_much",
+        "ing": "cooking_oil",
+        "grams": 300
+      },
+      {
+        "id": "shandong_fried_tofu_balls",
+        "name": "鲁式炸豆腐丸子",
+        "type": "seasoning_too_much",
+        "ing": "cooking_oil",
+        "grams": 400
+      },
+      {
+        "id": "cantonese_sweet_sour_pork",
+        "name": "菠萝咕噜肉",
+        "type": "seasoning_too_much",
+        "ing": "cooking_oil",
+        "grams": 400
+      },
+      {
+        "id": "homestyle_spicy_squid_ring",
+        "name": "炸鱿鱼圈",
+        "type": "seasoning_too_much",
+        "ing": "cooking_oil",
+        "grams": 500
+      },
+      {
+        "id": "taiwanese_salt_chicken",
+        "name": "台式盐酥鸡",
+        "type": "seasoning_too_much",
+        "ing": "cooking_oil",
+        "grams": 500
+      },
+      {
+        "id": "dongbei-fried-egg-sauce-noodle",
+        "name": "锅包肉",
+        "type": "seasoning_too_much",
+        "ing": "cooking_oil",
+        "grams": 600
+      },
+      {
+        "id": "deep_fried_chicken_nuggets",
+        "name": "炸鸡块",
+        "type": "seasoning_too_much",
+        "ing": "cooking_oil",
+        "grams": 300
+      },
+      {
+        "id": "deep_fried_sweet_potato_strips",
+        "name": "炸红薯条",
+        "type": "seasoning_too_much",
+        "ing": "cooking_oil",
+        "grams": 250
+      },
+      {
+        "id": "deep_fried_spring_rolls",
+        "name": "炸春卷",
+        "type": "seasoning_too_much",
+        "ing": "cooking_oil",
+        "grams": 250
+      },
+      {
+        "id": "sweet_sour_pork",
+        "name": "糖醋里脊",
+        "type": "seasoning_too_much",
+        "ing": "cooking_oil",
+        "grams": 600
+      },
+      {
+        "id": "jiangsu_lion_head",
+        "name": "红烧狮子头",
+        "type": "seasoning_too_much",
+        "ing": "cooking_oil",
+        "grams": 500
+      },
+      {
+        "id": "honey_glazed_sweet_potato",
+        "name": "拔丝红薯",
+        "type": "seasoning_too_much",
+        "ing": "cooking_oil",
+        "grams": 300
+      },
+      {
+        "id": "jiangsu_squirrel_fish",
+        "name": "松鼠鱼",
+        "type": "seasoning_too_much",
+        "ing": "cooking_oil",
+        "grams": 300
+      },
+      {
+        "id": "shandong_sweet_sour_carp",
+        "name": "糖醋鲤鱼",
+        "type": "seasoning_too_much",
+        "ing": "cooking_oil",
+        "grams": 300
+      },
+      {
+        "id": "homestyle_jiaozi_xian",
+        "name": "猪肉白菜饺子",
+        "type": "seasoning_too_much",
+        "ing": "starch",
+        "grams": 300
+      },
+      {
+        "id": "homestyle_jiucai_jiaozi",
+        "name": "韭菜鸡蛋饺子",
+        "type": "seasoning_too_much",
+        "ing": "starch",
+        "grams": 300
+      },
+      {
+        "id": "japanese_curry_rice",
+        "name": "日式咖喱饭",
+        "type": "seasoning_too_much",
+        "ing": "chicken_stock",
+        "grams": 500
+      },
+      {
+        "id": "japanese_tonkatsu",
+        "name": "日式炸猪排",
+        "type": "seasoning_too_much",
+        "ing": "cooking_oil",
+        "grams": 500
+      },
+      {
+        "id": "japanese_shrimp_tempura",
+        "name": "日式天妇罗虾",
+        "type": "seasoning_too_much",
+        "ing": "cooking_oil",
+        "grams": 300
+      },
+      {
+        "id": "korean_tteokbokki",
+        "name": "韩式辣炒年糕",
+        "type": "seasoning_too_much",
+        "ing": "chicken_stock",
+        "grams": 500
+      },
+      {
+        "id": "korean_doenjang_stew",
+        "name": "韩式大酱汤",
+        "type": "seasoning_too_much",
+        "ing": "chicken_stock",
+        "grams": 700
+      },
+      {
+        "id": "korean_army_stew",
+        "name": "韩式部队锅",
+        "type": "seasoning_too_much",
+        "ing": "chicken_stock",
+        "grams": 800
+      },
+      {
+        "id": "korean_beef_soup",
+        "name": "韩式牛肉萝卜汤",
+        "type": "seasoning_too_much",
+        "ing": "beef_stock",
+        "grams": 1200
+      },
+      {
+        "id": "chicken_katsu",
+        "name": "日式炸鸡排",
+        "type": "seasoning_too_much",
+        "ing": "cooking_oil",
+        "grams": 500
+      },
+      {
+        "id": "tempura_shrimp",
+        "name": "天妇罗虾",
+        "type": "seasoning_too_much",
+        "ing": "cooking_oil",
+        "grams": 500
+      },
+      {
+        "id": "tempura_vegetables",
+        "name": "蔬菜天妇罗",
+        "type": "seasoning_too_much",
+        "ing": "cooking_oil",
+        "grams": 500
+      },
+      {
+        "id": "japanese_curry_pork",
+        "name": "日式咖喱猪排饭",
+        "type": "seasoning_too_much",
+        "ing": "cooking_oil",
+        "grams": 500
+      },
+      {
+        "id": "katsudon",
+        "name": "猪排丼",
+        "type": "seasoning_too_much",
+        "ing": "cooking_oil",
+        "grams": 400
+      },
+      {
+        "id": "japanese_fried_tofu",
+        "name": "日式炸豆腐",
+        "type": "seasoning_too_much",
+        "ing": "cooking_oil",
+        "grams": 400
+      },
+      {
+        "id": "japanese_croquette",
+        "name": "日式可乐饼",
+        "type": "seasoning_too_much",
+        "ing": "cooking_oil",
+        "grams": 500
+      },
+      {
+        "id": "karaage",
+        "name": "日式唐扬鸡",
+        "type": "seasoning_too_much",
+        "ing": "cooking_oil",
+        "grams": 500
+      },
+      {
+        "id": "chicken_nanban",
+        "name": "日式南蛮鸡",
+        "type": "seasoning_too_much",
+        "ing": "cooking_oil",
+        "grams": 400
+      },
+      {
+        "id": "ebi_fry",
+        "name": "日式炸虾",
+        "type": "seasoning_too_much",
+        "ing": "cooking_oil",
+        "grams": 500
+      },
+      {
+        "id": "korean_fried_chicken",
+        "name": "韩式炸鸡",
+        "type": "seasoning_too_much",
+        "ing": "cooking_oil",
+        "grams": 500
+      },
+      {
+        "id": "donkatsu",
+        "name": "韩式炸猪排",
+        "type": "seasoning_too_much",
+        "ing": "cooking_oil",
+        "grams": 500
+      },
+      {
+        "id": "korean_mayo_chicken",
+        "name": "韩式蛋黄酱炸鸡",
+        "type": "seasoning_too_much",
+        "ing": "cooking_oil",
+        "grams": 500
+      },
+      {
+        "id": "thai_fish_cake",
+        "name": "泰式鱼饼",
+        "type": "seasoning_too_much",
+        "ing": "cooking_oil",
+        "grams": 300
+      },
+      {
+        "id": "thai_shrimp_cake",
+        "name": "泰式虾饼",
+        "type": "seasoning_too_much",
+        "ing": "cooking_oil",
+        "grams": 400
+      },
+      {
+        "id": "thai_fried_fish",
+        "name": "泰式炸鱼配酸辣酱",
+        "type": "seasoning_too_much",
+        "ing": "cooking_oil",
+        "grams": 400
+      },
+      {
+        "id": "buffalo_chicken",
+        "name": "美式水牛城鸡翅",
+        "type": "seasoning_too_much",
+        "ing": "cooking_oil",
+        "grams": 500
+      },
+      {
+        "id": "american_bacon_cheese_fries",
+        "name": "芝士培根薯条",
+        "type": "seasoning_too_much",
+        "ing": "cooking_oil",
+        "grams": 500
+      },
+      {
+        "id": "french_chicken_cordon_bleu",
+        "name": "法式蓝带鸡排",
+        "type": "seasoning_too_much",
+        "ing": "cooking_oil",
+        "grams": 400
+      },
+      {
+        "id": "cn_soy_milk_fried_dough",
+        "name": "豆浆油条",
+        "type": "seasoning_too_much",
+        "ing": "cooking_oil",
+        "grams": 500
+      },
+      {
+        "id": "cn_fried_dough_twist",
+        "name": "麻花",
+        "type": "seasoning_too_much",
+        "ing": "cooking_oil",
+        "grams": 500
+      },
+      {
+        "id": "staple_fried_wonton",
+        "name": "炸馄饨",
+        "type": "seasoning_too_much",
+        "ing": "cooking_oil",
+        "grams": 500
+      },
+      {
+        "id": "bulk450_es_150",
+        "name": "小米粥",
+        "type": "seasoning_too_much",
+        "ing": "water",
+        "grams": 600
+      },
+      {
+        "id": "bulk450_es_157",
+        "name": "燕麦粥",
+        "type": "seasoning_too_much",
+        "ing": "water",
+        "grams": 600
+      },
+      {
+        "id": "bulk450_es_158",
+        "name": "玉米粥",
+        "type": "seasoning_too_much",
+        "ing": "water",
+        "grams": 600
+      },
+      {
+        "id": "bulk450_es_159",
+        "name": "南瓜粥",
+        "type": "seasoning_too_much",
+        "ing": "water",
+        "grams": 600
+      },
+      {
+        "id": "bulk450_es_160",
+        "name": "红薯粥",
+        "type": "seasoning_too_much",
+        "ing": "water",
+        "grams": 600
+      },
+      {
+        "id": "bulk450_es_161",
+        "name": "红枣粥",
+        "type": "seasoning_too_much",
+        "ing": "water",
+        "grams": 600
+      },
+      {
+        "id": "tonkatsu",
+        "name": "日式炸猪排",
+        "type": "seasoning_too_much",
+        "ing": "cooking_oil",
+        "grams": 500
+      }
+    ],
+    "dupeIds": []
+  },
+  "C": {
+    "stats": {
+      "total": 1933,
+      "calLow": 33,
+      "calHigh": 3,
+      "naHigh": 43,
+      "fatHigh": 128,
+      "proteinExtreme": 0,
+      "macroImbalanced": 518
+    },
+    "summary": {
+      "perServingCal": {
+        "n": 1933,
+        "min": "9",
+        "p10": "90",
+        "p50": "342",
+        "p90": "640",
+        "max": "2217",
+        "mean": "355"
+      },
+      "perServingNa": {
+        "n": 1933,
+        "min": "0",
+        "p10": "162",
+        "p50": "488",
+        "p90": "967",
+        "max": "5668",
+        "mean": "554"
+      },
+      "perServingFat": {
+        "n": 1933,
+        "min": "0",
+        "p10": "3",
+        "p50": "15",
+        "p90": "40",
+        "max": "210",
+        "mean": "19"
+      },
+      "perServingProtein": {
+        "n": 1933,
+        "min": "0",
+        "p10": "3",
+        "p50": "17",
+        "p90": "37",
+        "max": "67",
+        "mean": "20"
+      }
+    },
+    "issues": [
+      {
+        "id": "tomato_egg",
+        "name": "番茄炒蛋",
+        "type": "fat_dominated",
+        "fatPercent": "69%"
+      },
+      {
+        "id": "mapo_tofu",
+        "name": "麻婆豆腐",
+        "type": "fat_dominated",
+        "fatPercent": "66%"
+      },
+      {
+        "id": "braised_pork_belly",
+        "name": "红烧肉",
+        "type": "fat_high",
+        "perServing": "68.8g",
+        "percentOfCal": "88%"
+      },
+      {
+        "id": "braised_pork_belly",
+        "name": "红烧肉",
+        "type": "fat_dominated",
+        "fatPercent": "88%"
+      },
+      {
+        "id": "steamed_fish",
+        "name": "清蒸三文鱼",
+        "type": "fat_dominated",
+        "fatPercent": "63%"
+      },
+      {
+        "id": "stir_fry_eggplant",
+        "name": "鱼香茄子",
+        "type": "fat_dominated",
+        "fatPercent": "64%"
+      },
+      {
+        "id": "green_bean_pork",
+        "name": "四季豆炒肉",
+        "type": "fat_dominated",
+        "fatPercent": "66%"
+      },
+      {
+        "id": "homestyle_tea_egg",
+        "name": "五香茶叶蛋",
+        "type": "sodium_high",
+        "perServing": 1666,
+        "dailyPercent": "83%"
+      },
+      {
+        "id": "homestyle_plain_congee",
+        "name": "白粥配油条",
+        "type": "fat_high",
+        "perServing": "73.1g",
+        "percentOfCal": "79%"
+      },
+      {
+        "id": "homestyle_plain_congee",
+        "name": "白粥配油条",
+        "type": "fat_dominated",
+        "fatPercent": "79%"
+      },
+      {
+        "id": "jiangsu_yanshui_duck",
+        "name": "南京盐水鸭",
+        "type": "sodium_high",
+        "perServing": 5668,
+        "dailyPercent": "283%"
+      },
+      {
+        "id": "jiangsu_yanshui_duck",
+        "name": "南京盐水鸭",
+        "type": "fat_high",
+        "perServing": "60.2g",
+        "percentOfCal": "73%"
+      },
+      {
+        "id": "jiangsu_yanshui_duck",
+        "name": "南京盐水鸭",
+        "type": "fat_dominated",
+        "fatPercent": "73%"
+      },
+      {
+        "id": "jiangsu_crab_lion_head",
+        "name": "清炖蟹粉狮子头",
+        "type": "fat_high",
+        "perServing": "69.4g",
+        "percentOfCal": "79%"
+      },
+      {
+        "id": "jiangsu_crab_lion_head",
+        "name": "清炖蟹粉狮子头",
+        "type": "fat_dominated",
+        "fatPercent": "79%"
+      },
+      {
+        "id": "jiangsu_wensi_tofu_soup",
+        "name": "文思豆腐羹",
+        "type": "sodium_high",
+        "perServing": 1543,
+        "dailyPercent": "77%"
+      },
+      {
+        "id": "zhejiang_dongpo_pork",
+        "name": "东坡肉",
+        "type": "fat_high",
+        "perServing": "60.7g",
+        "percentOfCal": "84%"
+      },
+      {
+        "id": "zhejiang_dongpo_pork",
+        "name": "东坡肉",
+        "type": "fat_dominated",
+        "fatPercent": "84%"
+      },
+      {
+        "id": "fujian_red_rice_pork",
+        "name": "福州红糟肉",
+        "type": "fat_high",
+        "perServing": "51.7g",
+        "percentOfCal": "83%"
+      },
+      {
+        "id": "fujian_red_rice_pork",
+        "name": "福州红糟肉",
+        "type": "fat_dominated",
+        "fatPercent": "83%"
+      },
+      {
+        "id": "shandong_nine_turn_intestine",
+        "name": "九转大肠",
+        "type": "fat_high",
+        "perServing": "65.4g",
+        "percentOfCal": "85%"
+      },
+      {
+        "id": "shandong_nine_turn_intestine",
+        "name": "九转大肠",
+        "type": "fat_dominated",
+        "fatPercent": "85%"
+      },
+      {
+        "id": "shandong_scallion_sea_cucumber",
+        "name": "葱烧海参",
+        "type": "fat_high",
+        "perServing": "52.1g",
+        "percentOfCal": "82%"
+      },
+      {
+        "id": "shandong_scallion_sea_cucumber",
+        "name": "葱烧海参",
+        "type": "fat_dominated",
+        "fatPercent": "82%"
+      },
+      {
+        "id": "shandong_guota_tofu",
+        "name": "锅塌豆腐",
+        "type": "fat_dominated",
+        "fatPercent": "67%"
+      },
+      {
+        "id": "shanghai_oil_explode_shrimp",
+        "name": "上海油爆虾",
+        "type": "fat_high",
+        "perServing": "50.5g",
+        "percentOfCal": "83%"
+      },
+      {
+        "id": "shanghai_oil_explode_shrimp",
+        "name": "上海油爆虾",
+        "type": "fat_dominated",
+        "fatPercent": "83%"
+      },
+      {
+        "id": "shanghai_scallion_baked_tilapia",
+        "name": "葱烤鲫鱼",
+        "type": "fat_high",
+        "perServing": "66.2g",
+        "percentOfCal": "84%"
+      },
+      {
+        "id": "shanghai_scallion_baked_tilapia",
+        "name": "葱烤鲫鱼",
+        "type": "fat_dominated",
+        "fatPercent": "84%"
+      },
+      {
+        "id": "shanghai_four_joy_wheat_gluten",
+        "name": "四喜烤麸",
+        "type": "fat_high",
+        "perServing": "70.1g",
+        "percentOfCal": "77%"
+      },
+      {
+        "id": "shanghai_four_joy_wheat_gluten",
+        "name": "四喜烤麸",
+        "type": "fat_dominated",
+        "fatPercent": "77%"
+      },
+      {
+        "id": "shanghai_xiangyou_eel",
+        "name": "响油鳝糊",
+        "type": "fat_dominated",
+        "fatPercent": "65%"
+      },
+      {
+        "id": "shanghai_yan_du_xian",
+        "name": "腌笃鲜",
+        "type": "fat_high",
+        "perServing": "57.9g",
+        "percentOfCal": "78%"
+      },
+      {
+        "id": "shanghai_yan_du_xian",
+        "name": "腌笃鲜",
+        "type": "fat_dominated",
+        "fatPercent": "78%"
+      },
+      {
+        "id": "american_kale_caesar",
+        "name": "羽衣甘蓝凯撒沙拉",
+        "type": "fat_dominated",
+        "fatPercent": "71%"
+      },
+      {
+        "id": "greek_feta_salad",
+        "name": "希腊菲达奶酪沙拉",
+        "type": "fat_dominated",
+        "fatPercent": "62%"
+      },
+      {
+        "id": "italian_mushroom_risotto",
+        "name": "意式蘑菇烩饭",
+        "type": "sodium_high",
+        "perServing": 1829,
+        "dailyPercent": "91%"
+      },
+      {
+        "id": "french_lamb_rosemary",
+        "name": "迷迭香烤羊排",
+        "type": "fat_dominated",
+        "fatPercent": "68%"
+      },
+      {
+        "id": "french_salmon_dill",
+        "name": "莳萝柠檬烤三文鱼",
+        "type": "fat_dominated",
+        "fatPercent": "66%"
+      },
+      {
+        "id": "italian_zucchini_frittata",
+        "name": "西葫芦意式蛋饼",
+        "type": "fat_dominated",
+        "fatPercent": "68%"
+      },
+      {
+        "id": "japanese_beef_udon",
+        "name": "肥牛乌冬面",
+        "type": "sodium_high",
+        "perServing": 1830,
+        "dailyPercent": "92%"
+      },
+      {
+        "id": "thai_green_curry_tempeh",
+        "name": "泰式青咖喱天贝",
+        "type": "fat_high",
+        "perServing": "54.8g",
+        "percentOfCal": "72%"
+      },
+      {
+        "id": "thai_green_curry_tempeh",
+        "name": "泰式青咖喱天贝",
+        "type": "fat_dominated",
+        "fatPercent": "72%"
+      },
+      {
+        "id": "korean_kimchi_jjigae",
+        "name": "韩式泡菜豆腐汤",
+        "type": "fat_dominated",
+        "fatPercent": "75%"
+      },
+      {
+        "id": "cantonese_sausage_claypot_rice",
+        "name": "腊味煲仔饭",
+        "type": "sodium_high",
+        "perServing": 2364,
+        "dailyPercent": "118%"
+      },
+      {
+        "id": "sichuan_shuizhu_seabass",
+        "name": "水煮鲈鱼",
+        "type": "fat_dominated",
+        "fatPercent": "61%"
+      },
+      {
+        "id": "homestyle_loofah_egg_soup",
+        "name": "丝瓜蛋花汤",
+        "type": "fat_dominated",
+        "fatPercent": "66%"
+      },
+      {
+        "id": "homestyle_tonghao_tofu_soup",
+        "name": "茼蒿豆腐汤",
+        "type": "fat_dominated",
+        "fatPercent": "62%"
+      },
+      {
+        "id": "homestyle_fuzhu_braised_pork",
+        "name": "腐竹烧肉",
+        "type": "fat_dominated",
+        "fatPercent": "82%"
+      },
+      {
+        "id": "cantonese_douchi_chicken_feet",
+        "name": "豉汁蒸凤爪",
+        "type": "fat_high",
+        "perServing": "82.4g",
+        "percentOfCal": "90%"
+      },
+      {
+        "id": "cantonese_douchi_chicken_feet",
+        "name": "豉汁蒸凤爪",
+        "type": "fat_dominated",
+        "fatPercent": "90%"
+      },
+      {
+        "id": "homestyle_garlic_amaranth",
+        "name": "蒜蓉炒苋菜",
+        "type": "fat_dominated",
+        "fatPercent": "69%"
+      },
+      {
+        "id": "american_chia_berry_pudding",
+        "name": "奇亚籽莓果布丁",
+        "type": "fat_dominated",
+        "fatPercent": "69%"
+      },
+      {
+        "id": "suan-ni-bai-rou",
+        "name": "蒜泥白肉",
+        "type": "fat_dominated",
+        "fatPercent": "84%"
+      },
+      {
+        "id": "dong-po-rou",
+        "name": "东坡红烧肉",
+        "type": "fat_high",
+        "perServing": "53.1g",
+        "percentOfCal": "84%"
+      },
+      {
+        "id": "dong-po-rou",
+        "name": "东坡红烧肉",
+        "type": "fat_dominated",
+        "fatPercent": "84%"
+      },
+      {
+        "id": "tie-ban-niu-liu",
+        "name": "铁板牛柳",
+        "type": "fat_dominated",
+        "fatPercent": "63%"
+      },
+      {
+        "id": "qing-zheng-hua-dan-geng",
+        "name": "滑蛋虾仁",
+        "type": "sodium_high",
+        "perServing": 1702,
+        "dailyPercent": "85%"
+      },
+      {
+        "id": "qing-zheng-hua-dan-geng",
+        "name": "滑蛋虾仁",
+        "type": "fat_dominated",
+        "fatPercent": "65%"
+      },
+      {
+        "id": "mei-cai-kou-rou",
+        "name": "梅菜扣肉",
+        "type": "fat_high",
+        "perServing": "51.9g",
+        "percentOfCal": "87%"
+      },
+      {
+        "id": "mei-cai-kou-rou",
+        "name": "梅菜扣肉",
+        "type": "fat_dominated",
+        "fatPercent": "87%"
+      },
+      {
+        "id": "tang-cu-pai-gu",
+        "name": "糖醋排骨",
+        "type": "fat_dominated",
+        "fatPercent": "62%"
+      },
+      {
+        "id": "xiao-chao-niu-rou",
+        "name": "小炒黄牛肉",
+        "type": "fat_dominated",
+        "fatPercent": "67%"
+      },
+      {
+        "id": "hui-guo-rou",
+        "name": "回锅肉",
+        "type": "fat_dominated",
+        "fatPercent": "85%"
+      },
+      {
+        "id": "bitter_melon_egg_stirfry",
+        "name": "苦瓜炒蛋",
+        "type": "fat_dominated",
+        "fatPercent": "69%"
+      },
+      {
+        "id": "bitter_melon_pork_ribs",
+        "name": "苦瓜排骨煲",
+        "type": "fat_dominated",
+        "fatPercent": "65%"
+      },
+      {
+        "id": "winter_melon_shrimp_soup",
+        "name": "冬瓜虾仁汤",
+        "type": "sodium_high",
+        "perServing": 1790,
+        "dailyPercent": "89%"
+      },
+      {
+        "id": "wood_ear_scrambled_egg",
+        "name": "木耳炒蛋",
+        "type": "fat_dominated",
+        "fatPercent": "64%"
+      },
+      {
+        "id": "tofu_puff_braised_cabbage",
+        "name": "油豆腐烧白菜",
+        "type": "fat_dominated",
+        "fatPercent": "62%"
+      },
+      {
+        "id": "stuffed_tofu_puff",
+        "name": "酿油豆腐",
+        "type": "fat_dominated",
+        "fatPercent": "70%"
+      },
+      {
+        "id": "vermicelli_cabbage_stirfry",
+        "name": "白菜炒粉丝",
+        "type": "protein_too_low",
+        "perServing": "3.0g",
+        "cal": 253
+      },
+      {
+        "id": "asparagus_bacon_roll",
+        "name": "培根芦笋卷",
+        "type": "fat_dominated",
+        "fatPercent": "67%"
+      },
+      {
+        "id": "asparagus_beef_stirfry",
+        "name": "芦笋炒牛肉",
+        "type": "fat_dominated",
+        "fatPercent": "61%"
+      },
+      {
+        "id": "leek_egg_stirfry",
+        "name": "韭黄炒蛋",
+        "type": "fat_dominated",
+        "fatPercent": "71%"
+      },
+      {
+        "id": "cauliflower_pork_stirfry",
+        "name": "花菜炒肉片",
+        "type": "fat_dominated",
+        "fatPercent": "83%"
+      },
+      {
+        "id": "dry_pot_cauliflower",
+        "name": "干锅花菜五花肉",
+        "type": "fat_dominated",
+        "fatPercent": "81%"
+      },
+      {
+        "id": "dried_tofu_skin_roll",
+        "name": "腐皮肉卷",
+        "type": "fat_dominated",
+        "fatPercent": "66%"
+      },
+      {
+        "id": "dried_tofu_stirfry",
+        "name": "香干回锅肉",
+        "type": "fat_high",
+        "perServing": "53.0g",
+        "percentOfCal": "82%"
+      },
+      {
+        "id": "dried_tofu_stirfry",
+        "name": "香干回锅肉",
+        "type": "fat_dominated",
+        "fatPercent": "82%"
+      },
+      {
+        "id": "taiwanese_lurou_fan",
+        "name": "台式卤肉饭",
+        "type": "fat_high",
+        "perServing": "66.6g",
+        "percentOfCal": "76%"
+      },
+      {
+        "id": "taiwanese_lurou_fan",
+        "name": "台式卤肉饭",
+        "type": "fat_dominated",
+        "fatPercent": "76%"
+      },
+      {
+        "id": "fujian_braised_pork_trotter",
+        "name": "闽式姜醋猪蹄",
+        "type": "fat_dominated",
+        "fatPercent": "62%"
+      },
+      {
+        "id": "anhui_braised_pork_belly",
+        "name": "徽州红烧肉",
+        "type": "fat_high",
+        "perServing": "79.6g",
+        "percentOfCal": "88%"
+      },
+      {
+        "id": "anhui_braised_pork_belly",
+        "name": "徽州红烧肉",
+        "type": "fat_dominated",
+        "fatPercent": "88%"
+      },
+      {
+        "id": "sichuan_mapo_eggplant",
+        "name": "麻婆茄子",
+        "type": "fat_dominated",
+        "fatPercent": "70%"
+      },
+      {
+        "id": "sichuan_dry_fried_green_beans",
+        "name": "川味干煸豆角",
+        "type": "fat_dominated",
+        "fatPercent": "74%"
+      },
+      {
+        "id": "sichuan_braised_tofu",
+        "name": "川味烧豆腐",
+        "type": "fat_dominated",
+        "fatPercent": "66%"
+      },
+      {
+        "id": "hunan_smoked_pork_stirfry",
+        "name": "湘西腊肉炒蒜薹",
+        "type": "fat_dominated",
+        "fatPercent": "66%"
+      },
+      {
+        "id": "hunan_steamed_pork_with_chili",
+        "name": "湘味辣椒蒸肉",
+        "type": "fat_high",
+        "perServing": "53.3g",
+        "percentOfCal": "86%"
+      },
+      {
+        "id": "hunan_steamed_pork_with_chili",
+        "name": "湘味辣椒蒸肉",
+        "type": "fat_dominated",
+        "fatPercent": "86%"
+      },
+      {
+        "id": "dongbei_braised_pork_vermicelli",
+        "name": "东北大烩菜",
+        "type": "fat_dominated",
+        "fatPercent": "72%"
+      },
+      {
+        "id": "shandong_braised_pork_belly_vermicelli",
+        "name": "鲁式五花肉炖粉条",
+        "type": "fat_high",
+        "perServing": "55.7g",
+        "percentOfCal": "78%"
+      },
+      {
+        "id": "shandong_braised_pork_belly_vermicelli",
+        "name": "鲁式五花肉炖粉条",
+        "type": "fat_dominated",
+        "fatPercent": "78%"
+      },
+      {
+        "id": "shandong_fried_tofu_balls",
+        "name": "鲁式炸豆腐丸子",
+        "type": "fat_dominated",
+        "fatPercent": "69%"
+      },
+      {
+        "id": "jiangsu_sweet_vinegar_ribs",
+        "name": "苏式糖醋小排",
+        "type": "fat_dominated",
+        "fatPercent": "63%"
+      },
+      {
+        "id": "zhejiang_steamed_pork_lotus",
+        "name": "浙式荷叶蒸肉",
+        "type": "fat_high",
+        "perServing": "62.1g",
+        "percentOfCal": "86%"
+      },
+      {
+        "id": "zhejiang_steamed_pork_lotus",
+        "name": "浙式荷叶蒸肉",
+        "type": "fat_dominated",
+        "fatPercent": "86%"
+      },
+      {
+        "id": "homestyle_egg_tofu",
+        "name": "鸡蛋豆腐煲",
+        "type": "fat_dominated",
+        "fatPercent": "65%"
+      },
+      {
+        "id": "homestyle_braised_winter_melon_pork",
+        "name": "冬瓜烧肉",
+        "type": "fat_dominated",
+        "fatPercent": "86%"
+      },
+      {
+        "id": "homestyle_dry_pot_tofu",
+        "name": "干锅千叶豆腐",
+        "type": "fat_dominated",
+        "fatPercent": "77%"
+      },
+      {
+        "id": "homestyle_dry_pot_lotus_root",
+        "name": "干锅藕片",
+        "type": "fat_dominated",
+        "fatPercent": "70%"
+      },
+      {
+        "id": "homestyle_roast_pork_belly",
+        "name": "烤五花肉",
+        "type": "fat_high",
+        "perServing": "72.1g",
+        "percentOfCal": "89%"
+      },
+      {
+        "id": "homestyle_roast_pork_belly",
+        "name": "烤五花肉",
+        "type": "fat_dominated",
+        "fatPercent": "89%"
+      },
+      {
+        "id": "homestyle_steamed_tofu_with_pork",
+        "name": "肉末蒸豆腐",
+        "type": "fat_dominated",
+        "fatPercent": "65%"
+      },
+      {
+        "id": "cold_vermicelli_salad",
+        "name": "凉拌粉丝",
+        "type": "protein_too_low",
+        "perServing": "1.6g",
+        "cal": 205
+      },
+      {
+        "id": "homestyle_scrambled_egg_chive",
+        "name": "韭菜炒豆干",
+        "type": "fat_dominated",
+        "fatPercent": "61%"
+      },
+      {
+        "id": "homestyle_eggplant_tofu_pot",
+        "name": "茄子豆腐煲",
+        "type": "fat_dominated",
+        "fatPercent": "69%"
+      },
+      {
+        "id": "homestyle_mushroom_tofu_stir_fry",
+        "name": "蘑菇烧豆腐",
+        "type": "fat_dominated",
+        "fatPercent": "60%"
+      },
+      {
+        "id": "homestyle_steamed_egg_tofu",
+        "name": "日式蒸蛋豆腐",
+        "type": "fat_dominated",
+        "fatPercent": "62%"
+      },
+      {
+        "id": "homestyle_braised_pork_tofu",
+        "name": "五花肉烧豆腐",
+        "type": "fat_dominated",
+        "fatPercent": "84%"
+      },
+      {
+        "id": "homestyle_roast_tofu_skewers",
+        "name": "烤豆腐串",
+        "type": "fat_dominated",
+        "fatPercent": "63%"
+      },
+      {
+        "id": "homestyle_beef_mince_tofu",
+        "name": "牛肉末烧豆腐",
+        "type": "fat_dominated",
+        "fatPercent": "66%"
+      },
+      {
+        "id": "homestyle_winter_melon_meatball",
+        "name": "冬瓜丸子汤",
+        "type": "fat_dominated",
+        "fatPercent": "64%"
+      },
+      {
+        "id": "homestyle_steamed_pork_with_radish",
+        "name": "萝卜蒸肉饼",
+        "type": "fat_dominated",
+        "fatPercent": "68%"
+      },
+      {
+        "id": "homestyle_braised_pork_egg",
+        "name": "卤蛋红烧肉",
+        "type": "fat_high",
+        "perServing": "71.8g",
+        "percentOfCal": "85%"
+      },
+      {
+        "id": "homestyle_braised_pork_egg",
+        "name": "卤蛋红烧肉",
+        "type": "fat_dominated",
+        "fatPercent": "85%"
+      },
+      {
+        "id": "homestyle_pork_belly_green_bean",
+        "name": "五花肉焖豆角",
+        "type": "fat_dominated",
+        "fatPercent": "84%"
+      },
+      {
+        "id": "homestyle_braised_tofu_puff_meat",
+        "name": "肉酿油豆腐",
+        "type": "fat_dominated",
+        "fatPercent": "68%"
+      },
+      {
+        "id": "homestyle_dry_pot_chicken_wing",
+        "name": "干锅鸡翅",
+        "type": "fat_dominated",
+        "fatPercent": "60%"
+      },
+      {
+        "id": "homestyle_braised_sausage_veg",
+        "name": "腊肠炒荷兰豆",
+        "type": "fat_dominated",
+        "fatPercent": "71%"
+      },
+      {
+        "id": "homestyle_stir_fry_lettuce_oyster",
+        "name": "蚝油生菜包",
+        "type": "fat_dominated",
+        "fatPercent": "63%"
+      },
+      {
+        "id": "homestyle_steamed_lotus_root_pork",
+        "name": "莲藕蒸肉饼",
+        "type": "fat_dominated",
+        "fatPercent": "61%"
+      },
+      {
+        "id": "homestyle_dry_pot_eggplant",
+        "name": "干锅茄子",
+        "type": "fat_dominated",
+        "fatPercent": "84%"
+      },
+      {
+        "id": "homestyle_stir_fry_tofu_leek",
+        "name": "韭菜炒豆腐",
+        "type": "fat_dominated",
+        "fatPercent": "66%"
+      },
+      {
+        "id": "shandong_braised_chicken_wing_potato",
+        "name": "鲁式黄焖排骨",
+        "type": "fat_dominated",
+        "fatPercent": "61%"
+      },
+      {
+        "id": "double-cooked-pork-belly",
+        "name": "蒜苗回锅肉",
+        "type": "fat_high",
+        "perServing": "56.6g",
+        "percentOfCal": "88%"
+      },
+      {
+        "id": "double-cooked-pork-belly",
+        "name": "蒜苗回锅肉",
+        "type": "fat_dominated",
+        "fatPercent": "88%"
+      },
+      {
+        "id": "sichuan-boiled-beef-slices",
+        "name": "毛血旺牛肉",
+        "type": "fat_dominated",
+        "fatPercent": "65%"
+      },
+      {
+        "id": "sichuan-dry-pot-potato",
+        "name": "干锅土豆片",
+        "type": "fat_dominated",
+        "fatPercent": "65%"
+      },
+      {
+        "id": "sichuan-braised-tofu-with-mince",
+        "name": "肉末烧豆腐",
+        "type": "fat_dominated",
+        "fatPercent": "68%"
+      },
+      {
+        "id": "sichuan-steamed-pork-with-rice",
+        "name": "川味蒸排骨",
+        "type": "fat_high",
+        "perServing": "62.0g",
+        "percentOfCal": "82%"
+      },
+      {
+        "id": "sichuan-steamed-pork-with-rice",
+        "name": "川味蒸排骨",
+        "type": "fat_dominated",
+        "fatPercent": "82%"
+      },
+      {
+        "id": "sichuan-stir-fried-celery-pork",
+        "name": "芹菜炒肉片",
+        "type": "fat_dominated",
+        "fatPercent": "89%"
+      },
+      {
+        "id": "sichuan-stew-pork-belly-potato",
+        "name": "五花肉炖土豆",
+        "type": "fat_high",
+        "perServing": "65.3g",
+        "percentOfCal": "82%"
+      },
+      {
+        "id": "sichuan-stew-pork-belly-potato",
+        "name": "五花肉炖土豆",
+        "type": "fat_dominated",
+        "fatPercent": "82%"
+      },
+      {
+        "id": "cantonese-steamed-tofu",
+        "name": "豉汁蒸豆腐",
+        "type": "fat_dominated",
+        "fatPercent": "69%"
+      },
+      {
+        "id": "cantonese-broccoli-beef",
+        "name": "蚝油牛肉",
+        "type": "fat_dominated",
+        "fatPercent": "61%"
+      },
+      {
+        "id": "cantonese-sweet-sour-pork",
+        "name": "咕噜肉",
+        "type": "fat_high",
+        "perServing": "61.1g",
+        "percentOfCal": "81%"
+      },
+      {
+        "id": "cantonese-sweet-sour-pork",
+        "name": "咕噜肉",
+        "type": "fat_dominated",
+        "fatPercent": "81%"
+      },
+      {
+        "id": "cantonese-braised-pork-ribs",
+        "name": "排骨焖饭底排骨",
+        "type": "fat_high",
+        "perServing": "73.2g",
+        "percentOfCal": "88%"
+      },
+      {
+        "id": "cantonese-braised-pork-ribs",
+        "name": "排骨焖饭底排骨",
+        "type": "fat_dominated",
+        "fatPercent": "88%"
+      },
+      {
+        "id": "cantonese-roast-pork-belly",
+        "name": "脆皮烧肉",
+        "type": "fat_high",
+        "perServing": "79.5g",
+        "percentOfCal": "91%"
+      },
+      {
+        "id": "cantonese-roast-pork-belly",
+        "name": "脆皮烧肉",
+        "type": "fat_dominated",
+        "fatPercent": "91%"
+      },
+      {
+        "id": "shandong-braised-pork-meatballs",
+        "name": "炸肉丸子",
+        "type": "fat_dominated",
+        "fatPercent": "71%"
+      },
+      {
+        "id": "shandong-braised-eggplant",
+        "name": "酱烧茄子",
+        "type": "fat_dominated",
+        "fatPercent": "68%"
+      },
+      {
+        "id": "shandong-stir-fried-pork-liver",
+        "name": "溜肉段",
+        "type": "fat_high",
+        "perServing": "60.9g",
+        "percentOfCal": "82%"
+      },
+      {
+        "id": "shandong-stir-fried-pork-liver",
+        "name": "溜肉段",
+        "type": "fat_dominated",
+        "fatPercent": "82%"
+      },
+      {
+        "id": "shandong-scallion-braised-tofu",
+        "name": "葱烧豆腐",
+        "type": "fat_dominated",
+        "fatPercent": "68%"
+      },
+      {
+        "id": "shandong-steamed-egg-custard",
+        "name": "肉末蒸蛋",
+        "type": "fat_dominated",
+        "fatPercent": "67%"
+      },
+      {
+        "id": "homestyle-braised-tofu-pork",
+        "name": "红烧肉末豆腐",
+        "type": "fat_dominated",
+        "fatPercent": "69%"
+      },
+      {
+        "id": "homestyle-stir-fried-mushroom-bok-choy",
+        "name": "蘑菇炒青菜",
+        "type": "fat_dominated",
+        "fatPercent": "69%"
+      },
+      {
+        "id": "homestyle-stir-fried-carrot-egg",
+        "name": "胡萝卜炒肉丝",
+        "type": "fat_dominated",
+        "fatPercent": "84%"
+      },
+      {
+        "id": "homestyle-corn-stir-fry",
+        "name": "玉米炒肉丁",
+        "type": "fat_dominated",
+        "fatPercent": "76%"
+      },
+      {
+        "id": "homestyle-stew-cabbage-tofu",
+        "name": "白菜豆腐煲",
+        "type": "fat_dominated",
+        "fatPercent": "67%"
+      },
+      {
+        "id": "homestyle-stir-fried-spinach",
+        "name": "蒜炒菠菜",
+        "type": "fat_dominated",
+        "fatPercent": "65%"
+      },
+      {
+        "id": "homestyle-zucchini-egg",
+        "name": "西葫芦炒肉片",
+        "type": "fat_dominated",
+        "fatPercent": "88%"
+      },
+      {
+        "id": "homestyle-stir-fried-green-bean-mince",
+        "name": "肉末炒豆角",
+        "type": "fat_dominated",
+        "fatPercent": "69%"
+      },
+      {
+        "id": "dongbei-braised-pork-belly-cabbage",
+        "name": "白肉炖酸菜",
+        "type": "fat_high",
+        "perServing": "53.3g",
+        "percentOfCal": "79%"
+      },
+      {
+        "id": "dongbei-braised-pork-belly-cabbage",
+        "name": "白肉炖酸菜",
+        "type": "fat_dominated",
+        "fatPercent": "79%"
+      },
+      {
+        "id": "dongbei-stir-fried-potato-eggplant-pepper",
+        "name": "尖椒干豆腐",
+        "type": "fat_dominated",
+        "fatPercent": "72%"
+      },
+      {
+        "id": "dongbei-braised-beef-potato",
+        "name": "东北乱炖",
+        "type": "fat_dominated",
+        "fatPercent": "77%"
+      },
+      {
+        "id": "dongbei-stir-fried-shredded-potato",
+        "name": "拔丝地瓜",
+        "type": "protein_too_low",
+        "perServing": "2.1g",
+        "cal": 290
+      },
+      {
+        "id": "dongbei-stew-pork-potato",
+        "name": "排骨炖土豆",
+        "type": "fat_high",
+        "perServing": "74.1g",
+        "percentOfCal": "84%"
+      },
+      {
+        "id": "dongbei-stew-pork-potato",
+        "name": "排骨炖土豆",
+        "type": "fat_dominated",
+        "fatPercent": "84%"
+      },
+      {
+        "id": "hunan-stir-fried-smoked-pork",
+        "name": "辣椒炒肉",
+        "type": "fat_high",
+        "perServing": "60.8g",
+        "percentOfCal": "88%"
+      },
+      {
+        "id": "hunan-stir-fried-smoked-pork",
+        "name": "辣椒炒肉",
+        "type": "fat_dominated",
+        "fatPercent": "88%"
+      },
+      {
+        "id": "hunan-dry-pot-beef",
+        "name": "干锅牛肉",
+        "type": "fat_dominated",
+        "fatPercent": "63%"
+      },
+      {
+        "id": "hunan-stir-fried-pork-with-garlic",
+        "name": "蒜薹炒肉",
+        "type": "fat_high",
+        "perServing": "55.3g",
+        "percentOfCal": "87%"
+      },
+      {
+        "id": "hunan-stir-fried-pork-with-garlic",
+        "name": "蒜薹炒肉",
+        "type": "fat_dominated",
+        "fatPercent": "87%"
+      },
+      {
+        "id": "hunan-stir-fried-beef-capsicum",
+        "name": "青椒牛肉丝",
+        "type": "fat_dominated",
+        "fatPercent": "63%"
+      },
+      {
+        "id": "hunan-spicy-tofu",
+        "name": "湘味辣豆腐",
+        "type": "fat_dominated",
+        "fatPercent": "70%"
+      },
+      {
+        "id": "hunan-braised-eggplant-mince",
+        "name": "湘味烧茄子",
+        "type": "fat_dominated",
+        "fatPercent": "72%"
+      },
+      {
+        "id": "hunan-stir-fried-egg-spinach",
+        "name": "湘味炒菠菜",
+        "type": "fat_dominated",
+        "fatPercent": "67%"
+      },
+      {
+        "id": "jiangsu-steamed-lion-head",
+        "name": "清蒸狮子头",
+        "type": "fat_dominated",
+        "fatPercent": "66%"
+      },
+      {
+        "id": "jiangsu-braised-pork-meatball",
+        "name": "红烧丸子",
+        "type": "fat_high",
+        "perServing": "56.2g",
+        "percentOfCal": "82%"
+      },
+      {
+        "id": "jiangsu-braised-pork-meatball",
+        "name": "红烧丸子",
+        "type": "fat_dominated",
+        "fatPercent": "82%"
+      },
+      {
+        "id": "jiangsu-stew-tofu-mushroom",
+        "name": "蘑菇豆腐煲",
+        "type": "fat_dominated",
+        "fatPercent": "67%"
+      },
+      {
+        "id": "zhejiang-braised-bamboo-pork",
+        "name": "油焖笋丝",
+        "type": "fat_dominated",
+        "fatPercent": "63%"
+      },
+      {
+        "id": "fujian-braised-pork-ribs-taro",
+        "name": "芋头烧肉",
+        "type": "fat_high",
+        "perServing": "58.1g",
+        "percentOfCal": "80%"
+      },
+      {
+        "id": "fujian-braised-pork-ribs-taro",
+        "name": "芋头烧肉",
+        "type": "fat_dominated",
+        "fatPercent": "80%"
+      },
+      {
+        "id": "anhui-braised-pork-bamboo",
+        "name": "毛豆烧肉",
+        "type": "fat_high",
+        "perServing": "56.4g",
+        "percentOfCal": "88%"
+      },
+      {
+        "id": "anhui-braised-pork-bamboo",
+        "name": "毛豆烧肉",
+        "type": "fat_dominated",
+        "fatPercent": "88%"
+      },
+      {
+        "id": "yunnan-stir-fried-mushroom-mix",
+        "name": "云南炒杂菌",
+        "type": "fat_dominated",
+        "fatPercent": "67%"
+      },
+      {
+        "id": "homestyle-stir-fried-onion-egg",
+        "name": "洋葱炒蛋",
+        "type": "fat_dominated",
+        "fatPercent": "64%"
+      },
+      {
+        "id": "homestyle-steamed-minced-pork",
+        "name": "蒸肉饼",
+        "type": "fat_dominated",
+        "fatPercent": "66%"
+      },
+      {
+        "id": "homestyle-dry-pot-cabbage",
+        "name": "干锅包菜",
+        "type": "fat_dominated",
+        "fatPercent": "84%"
+      },
+      {
+        "id": "homestyle-stew-pork-corn",
+        "name": "玉米排骨煲",
+        "type": "fat_high",
+        "perServing": "62.7g",
+        "percentOfCal": "83%"
+      },
+      {
+        "id": "homestyle-stew-pork-corn",
+        "name": "玉米排骨煲",
+        "type": "fat_dominated",
+        "fatPercent": "83%"
+      },
+      {
+        "id": "beef_celery_stirfry",
+        "name": "芹菜炒牛肉",
+        "type": "fat_dominated",
+        "fatPercent": "61%"
+      },
+      {
+        "id": "steamed_egg_with_mushroom",
+        "name": "香菇蒸蛋",
+        "type": "fat_dominated",
+        "fatPercent": "65%"
+      },
+      {
+        "id": "sichuan_spicy_eggplant_mince",
+        "name": "肉末烧茄条",
+        "type": "fat_dominated",
+        "fatPercent": "65%"
+      },
+      {
+        "id": "sweet_sour_tofu",
+        "name": "糖醋豆腐",
+        "type": "fat_dominated",
+        "fatPercent": "61%"
+      },
+      {
+        "id": "dongbei_braised_pork_corn",
+        "name": "玉米炖排骨",
+        "type": "fat_high",
+        "perServing": "53.9g",
+        "percentOfCal": "81%"
+      },
+      {
+        "id": "dongbei_braised_pork_corn",
+        "name": "玉米炖排骨",
+        "type": "fat_dominated",
+        "fatPercent": "81%"
+      },
+      {
+        "id": "hunan_stir_fry_pork_beans",
+        "name": "湘味豆角炒肉",
+        "type": "fat_dominated",
+        "fatPercent": "84%"
+      },
+      {
+        "id": "cantonese_oyster_sauce_mushroom",
+        "name": "蚝油香菇",
+        "type": "fat_dominated",
+        "fatPercent": "61%"
+      },
+      {
+        "id": "cantonese_steamed_pork_with_egg",
+        "name": "肉饼蒸蛋",
+        "type": "fat_dominated",
+        "fatPercent": "69%"
+      },
+      {
+        "id": "beef_mince_tofu_stir_fry",
+        "name": "牛肉末炒豆腐",
+        "type": "fat_dominated",
+        "fatPercent": "68%"
+      },
+      {
+        "id": "dongbei_pork_stew_potato",
+        "name": "东北猪肉炖土豆",
+        "type": "fat_dominated",
+        "fatPercent": "79%"
+      },
+      {
+        "id": "steamed_salmon_ginger_scallion",
+        "name": "姜葱蒸三文鱼",
+        "type": "fat_dominated",
+        "fatPercent": "62%"
+      },
+      {
+        "id": "egg_tomato_stew",
+        "name": "番茄炖蛋",
+        "type": "fat_dominated",
+        "fatPercent": "61%"
+      },
+      {
+        "id": "hunan_stir_fry_lamb_cumin",
+        "name": "湘式孜然羊肉",
+        "type": "fat_dominated",
+        "fatPercent": "61%"
+      },
+      {
+        "id": "zhejiang_braised_pork_bamboo",
+        "name": "腌笃鲜风味肉",
+        "type": "fat_high",
+        "perServing": "57.9g",
+        "percentOfCal": "88%"
+      },
+      {
+        "id": "zhejiang_braised_pork_bamboo",
+        "name": "腌笃鲜风味肉",
+        "type": "fat_dominated",
+        "fatPercent": "88%"
+      },
+      {
+        "id": "shandong_braised_cabbage_pork",
+        "name": "白菜炖肉",
+        "type": "fat_dominated",
+        "fatPercent": "86%"
+      },
+      {
+        "id": "sichuan_garlic_pork_slices",
+        "name": "蒜泥白肉新做",
+        "type": "fat_high",
+        "perServing": "84.7g",
+        "percentOfCal": "88%"
+      },
+      {
+        "id": "sichuan_garlic_pork_slices",
+        "name": "蒜泥白肉新做",
+        "type": "fat_dominated",
+        "fatPercent": "88%"
+      },
+      {
+        "id": "hunan_smoked_pork_capsicum",
+        "name": "湘味青椒炒肉",
+        "type": "fat_high",
+        "perServing": "58.4g",
+        "percentOfCal": "87%"
+      },
+      {
+        "id": "hunan_smoked_pork_capsicum",
+        "name": "湘味青椒炒肉",
+        "type": "fat_dominated",
+        "fatPercent": "87%"
+      },
+      {
+        "id": "dongbei_braised_bean_sprouts_pork",
+        "name": "东北豆芽炖粉条",
+        "type": "fat_dominated",
+        "fatPercent": "61%"
+      },
+      {
+        "id": "sichuan_spicy_broccoli_pork",
+        "name": "川味西兰花炒肉",
+        "type": "fat_dominated",
+        "fatPercent": "82%"
+      },
+      {
+        "id": "dongbei_stir_fry_cabbage_egg",
+        "name": "东北白菜炒鸡蛋",
+        "type": "fat_dominated",
+        "fatPercent": "69%"
+      },
+      {
+        "id": "fujian_braised_pork_egg",
+        "name": "闽式卤肉蛋",
+        "type": "fat_high",
+        "perServing": "60.4g",
+        "percentOfCal": "84%"
+      },
+      {
+        "id": "fujian_braised_pork_egg",
+        "name": "闽式卤肉蛋",
+        "type": "fat_dominated",
+        "fatPercent": "84%"
+      },
+      {
+        "id": "jiangsu_braised_tofu_pork",
+        "name": "苏式红烧肉豆腐",
+        "type": "fat_high",
+        "perServing": "56.2g",
+        "percentOfCal": "85%"
+      },
+      {
+        "id": "jiangsu_braised_tofu_pork",
+        "name": "苏式红烧肉豆腐",
+        "type": "fat_dominated",
+        "fatPercent": "85%"
+      },
+      {
+        "id": "jiangsu_steamed_egg_with_tofu",
+        "name": "苏式豆腐蒸蛋",
+        "type": "fat_dominated",
+        "fatPercent": "65%"
+      },
+      {
+        "id": "cantonese_steamed_salmon_tofu",
+        "name": "粤式豆腐蒸鱼",
+        "type": "fat_dominated",
+        "fatPercent": "61%"
+      },
+      {
+        "id": "sichuan_mapo_spinach",
+        "name": "麻婆菠菜",
+        "type": "fat_dominated",
+        "fatPercent": "63%"
+      },
+      {
+        "id": "deep_fried_pork_chop",
+        "name": "炸猪排",
+        "type": "fat_high",
+        "perServing": "74.8g",
+        "percentOfCal": "83%"
+      },
+      {
+        "id": "deep_fried_pork_chop",
+        "name": "炸猪排",
+        "type": "fat_dominated",
+        "fatPercent": "83%"
+      },
+      {
+        "id": "sichuan_spicy_tofu_soup",
+        "name": "麻辣豆腐汤",
+        "type": "fat_dominated",
+        "fatPercent": "71%"
+      },
+      {
+        "id": "taiwanese_braised_pork_rice_style",
+        "name": "台式卤肉",
+        "type": "fat_high",
+        "perServing": "58.5g",
+        "percentOfCal": "84%"
+      },
+      {
+        "id": "taiwanese_braised_pork_rice_style",
+        "name": "台式卤肉",
+        "type": "fat_dominated",
+        "fatPercent": "84%"
+      },
+      {
+        "id": "stir_fry_green_bean_egg",
+        "name": "豆角炒鸡蛋",
+        "type": "fat_dominated",
+        "fatPercent": "62%"
+      },
+      {
+        "id": "dongbei_stir_fry_pork_celery",
+        "name": "东北芹菜炒肉丝",
+        "type": "fat_dominated",
+        "fatPercent": "89%"
+      },
+      {
+        "id": "hunan_stir_fry_beef_capsicum",
+        "name": "湘味牛肉炒椒",
+        "type": "fat_dominated",
+        "fatPercent": "61%"
+      },
+      {
+        "id": "steamed_pork_with_sweet_potato",
+        "name": "红薯蒸肉",
+        "type": "fat_dominated",
+        "fatPercent": "76%"
+      },
+      {
+        "id": "sichuan_stir_fry_lamb_scallion",
+        "name": "葱爆羊肉川味",
+        "type": "fat_dominated",
+        "fatPercent": "63%"
+      },
+      {
+        "id": "fujian_stewed_egg_mushroom",
+        "name": "闽式蘑菇蛋汤",
+        "type": "fat_dominated",
+        "fatPercent": "69%"
+      },
+      {
+        "id": "homestyle_braised_salmon",
+        "name": "红烧三文鱼",
+        "type": "fat_dominated",
+        "fatPercent": "61%"
+      },
+      {
+        "id": "dongbei_braised_tofu_pork",
+        "name": "东北炖豆腐",
+        "type": "fat_dominated",
+        "fatPercent": "66%"
+      },
+      {
+        "id": "steamed_egg_pork_mince_corn",
+        "name": "玉米肉末蒸蛋",
+        "type": "fat_dominated",
+        "fatPercent": "62%"
+      },
+      {
+        "id": "stir_fry_tomato_tofu",
+        "name": "番茄炒豆腐",
+        "type": "fat_dominated",
+        "fatPercent": "63%"
+      },
+      {
+        "id": "shandong_scallion_egg",
+        "name": "大葱炒蛋",
+        "type": "fat_dominated",
+        "fatPercent": "72%"
+      },
+      {
+        "id": "sichuan_stir_fry_potato_pork",
+        "name": "川味土豆炒肉",
+        "type": "fat_dominated",
+        "fatPercent": "71%"
+      },
+      {
+        "id": "jiangsu_braised_egg_tofu",
+        "name": "苏式蛋烧豆腐",
+        "type": "fat_dominated",
+        "fatPercent": "66%"
+      },
+      {
+        "id": "hunan_stir_fry_eggplant",
+        "name": "湘味炒茄子",
+        "type": "fat_dominated",
+        "fatPercent": "72%"
+      },
+      {
+        "id": "boiled_beef_bean_sprouts",
+        "name": "水煮牛肉片",
+        "type": "fat_dominated",
+        "fatPercent": "62%"
+      },
+      {
+        "id": "bean_sprout_pork_stirfry",
+        "name": "豆芽炒肉片",
+        "type": "fat_dominated",
+        "fatPercent": "83%"
+      },
+      {
+        "id": "bean_sprout_egg_stirfry",
+        "name": "豆芽炒蛋",
+        "type": "fat_dominated",
+        "fatPercent": "64%"
+      },
+      {
+        "id": "bean_sprout_tofu_skin_stirfry",
+        "name": "豆芽炒豆腐",
+        "type": "fat_dominated",
+        "fatPercent": "66%"
+      },
+      {
+        "id": "dongbei_bean_sprout_pork_stew",
+        "name": "东北豆芽炖肉",
+        "type": "fat_dominated",
+        "fatPercent": "84%"
+      },
+      {
+        "id": "steamed_spare_ribs_douchi",
+        "name": "豉汁蒸排骨",
+        "type": "fat_high",
+        "perServing": "74.1g",
+        "percentOfCal": "89%"
+      },
+      {
+        "id": "steamed_spare_ribs_douchi",
+        "name": "豉汁蒸排骨",
+        "type": "fat_dominated",
+        "fatPercent": "89%"
+      },
+      {
+        "id": "steamed_egg_with_tofu",
+        "name": "豆腐蒸蛋",
+        "type": "fat_dominated",
+        "fatPercent": "65%"
+      },
+      {
+        "id": "foil_roast_tofu",
+        "name": "锡纸烤豆腐",
+        "type": "fat_dominated",
+        "fatPercent": "62%"
+      },
+      {
+        "id": "dry_pot_bean_sprout",
+        "name": "干锅豆芽",
+        "type": "fat_dominated",
+        "fatPercent": "79%"
+      },
+      {
+        "id": "braised_pork_with_corn",
+        "name": "玉米烧排骨",
+        "type": "fat_high",
+        "perServing": "66.0g",
+        "percentOfCal": "84%"
+      },
+      {
+        "id": "braised_pork_with_corn",
+        "name": "玉米烧排骨",
+        "type": "fat_dominated",
+        "fatPercent": "84%"
+      },
+      {
+        "id": "braised_eggplant_mince",
+        "name": "酱烧肉末茄子",
+        "type": "fat_dominated",
+        "fatPercent": "68%"
+      },
+      {
+        "id": "shandong_braised_pork_green_bean",
+        "name": "排骨烧豆角",
+        "type": "fat_high",
+        "perServing": "58.1g",
+        "percentOfCal": "88%"
+      },
+      {
+        "id": "shandong_braised_pork_green_bean",
+        "name": "排骨烧豆角",
+        "type": "fat_dominated",
+        "fatPercent": "88%"
+      },
+      {
+        "id": "dongbei_braised_pork_cabbage",
+        "name": "东北猪肉炖白菜",
+        "type": "fat_dominated",
+        "fatPercent": "88%"
+      },
+      {
+        "id": "dongbei_tofu_cabbage_stew",
+        "name": "东北冻豆腐炖白菜",
+        "type": "fat_dominated",
+        "fatPercent": "60%"
+      },
+      {
+        "id": "stew_pork_sweet_potato",
+        "name": "红薯炖肉",
+        "type": "fat_dominated",
+        "fatPercent": "78%"
+      },
+      {
+        "id": "stew_egg_tofu_mushroom",
+        "name": "蘑菇豆腐蛋花汤",
+        "type": "fat_dominated",
+        "fatPercent": "62%"
+      },
+      {
+        "id": "stew_tomato_egg_tofu",
+        "name": "番茄鸡蛋炖豆腐",
+        "type": "fat_dominated",
+        "fatPercent": "64%"
+      },
+      {
+        "id": "stir_fry_capsicum_beef",
+        "name": "彩椒炒牛肉",
+        "type": "fat_dominated",
+        "fatPercent": "61%"
+      },
+      {
+        "id": "stir_fry_onion_lamb",
+        "name": "洋葱炒羊肉",
+        "type": "fat_dominated",
+        "fatPercent": "61%"
+      },
+      {
+        "id": "sichuan_garlic_sprout_pork",
+        "name": "川味蒜苗回锅肉",
+        "type": "fat_high",
+        "perServing": "53.2g",
+        "percentOfCal": "89%"
+      },
+      {
+        "id": "sichuan_garlic_sprout_pork",
+        "name": "川味蒜苗回锅肉",
+        "type": "fat_dominated",
+        "fatPercent": "89%"
+      },
+      {
+        "id": "sichuan_mapo_mushroom",
+        "name": "麻婆蘑菇",
+        "type": "fat_dominated",
+        "fatPercent": "65%"
+      },
+      {
+        "id": "sichuan_spicy_eggplant_strips",
+        "name": "鱼香茄条",
+        "type": "fat_dominated",
+        "fatPercent": "64%"
+      },
+      {
+        "id": "hunan_spicy_pork_celery",
+        "name": "湘味芹菜炒肉",
+        "type": "fat_high",
+        "perServing": "60.9g",
+        "percentOfCal": "88%"
+      },
+      {
+        "id": "hunan_spicy_pork_celery",
+        "name": "湘味芹菜炒肉",
+        "type": "fat_dominated",
+        "fatPercent": "88%"
+      },
+      {
+        "id": "hunan_spicy_egg_pepper",
+        "name": "湘味辣椒炒蛋",
+        "type": "fat_dominated",
+        "fatPercent": "73%"
+      },
+      {
+        "id": "hunan_smoked_beef_capsicum",
+        "name": "湘味青椒牛肉",
+        "type": "fat_dominated",
+        "fatPercent": "61%"
+      },
+      {
+        "id": "cantonese_steamed_minced_pork",
+        "name": "咸蛋蒸肉饼",
+        "type": "fat_dominated",
+        "fatPercent": "68%"
+      },
+      {
+        "id": "deep_fried_tofu_braised",
+        "name": "油豆腐烧肉",
+        "type": "fat_dominated",
+        "fatPercent": "86%"
+      },
+      {
+        "id": "deep_fried_sweet_potato_strips",
+        "name": "炸红薯条",
+        "type": "protein_too_low",
+        "perServing": "2.4g",
+        "cal": 300
+      },
+      {
+        "id": "deep_fried_egg_tofu",
+        "name": "炸鸡蛋豆腐",
+        "type": "fat_dominated",
+        "fatPercent": "66%"
+      },
+      {
+        "id": "deep_fried_spring_rolls",
+        "name": "炸春卷",
+        "type": "fat_dominated",
+        "fatPercent": "70%"
+      },
+      {
+        "id": "jiangsu_braised_pork_egg",
+        "name": "红烧肉卤蛋",
+        "type": "fat_high",
+        "perServing": "61.0g",
+        "percentOfCal": "85%"
+      },
+      {
+        "id": "jiangsu_braised_pork_egg",
+        "name": "红烧肉卤蛋",
+        "type": "fat_dominated",
+        "fatPercent": "85%"
+      },
+      {
+        "id": "shandong_scallion_pork",
+        "name": "葱烧肉片",
+        "type": "fat_high",
+        "perServing": "71.3g",
+        "percentOfCal": "88%"
+      },
+      {
+        "id": "shandong_scallion_pork",
+        "name": "葱烧肉片",
+        "type": "fat_dominated",
+        "fatPercent": "88%"
+      },
+      {
+        "id": "fujian_egg_oyster_sauce",
+        "name": "闽式蚝油蒸蛋",
+        "type": "fat_dominated",
+        "fatPercent": "74%"
+      },
+      {
+        "id": "anhui_braised_pork_tofu",
+        "name": "徽州毛豆腐烧肉",
+        "type": "fat_high",
+        "perServing": "55.7g",
+        "percentOfCal": "87%"
+      },
+      {
+        "id": "anhui_braised_pork_tofu",
+        "name": "徽州毛豆腐烧肉",
+        "type": "fat_dominated",
+        "fatPercent": "87%"
+      },
+      {
+        "id": "hunan_spicy_tofu_mince",
+        "name": "湘味肉末豆腐",
+        "type": "fat_dominated",
+        "fatPercent": "70%"
+      },
+      {
+        "id": "dongbei_pork_green_bean_stew",
+        "name": "东北豆角炖肉",
+        "type": "fat_dominated",
+        "fatPercent": "85%"
+      },
+      {
+        "id": "sweet_sour_pork",
+        "name": "糖醋里脊",
+        "type": "cal_too_high",
+        "perServing": 2217,
+        "servings": 3
+      },
+      {
+        "id": "sweet_sour_pork",
+        "name": "糖醋里脊",
+        "type": "fat_high",
+        "perServing": "210.0g",
+        "percentOfCal": "85%"
+      },
+      {
+        "id": "sweet_sour_pork",
+        "name": "糖醋里脊",
+        "type": "fat_dominated",
+        "fatPercent": "85%"
+      },
+      {
+        "id": "steamed_egg",
+        "name": "蒸蛋羹",
+        "type": "fat_dominated",
+        "fatPercent": "67%"
+      },
+      {
+        "id": "scrambled_eggs_chives",
+        "name": "韭菜炒蛋",
+        "type": "fat_dominated",
+        "fatPercent": "71%"
+      },
+      {
+        "id": "braised_eggplant",
+        "name": "烧茄子",
+        "type": "protein_too_low",
+        "perServing": "2.6g",
+        "cal": 211
+      },
+      {
+        "id": "braised_eggplant",
+        "name": "烧茄子",
+        "type": "fat_dominated",
+        "fatPercent": "66%"
+      },
+      {
+        "id": "spinach_egg_soup",
+        "name": "菠菜鸡蛋汤",
+        "type": "fat_dominated",
+        "fatPercent": "67%"
+      },
+      {
+        "id": "dongbei_braised_beans",
+        "name": "东北炖豆角",
+        "type": "fat_dominated",
+        "fatPercent": "80%"
+      },
+      {
+        "id": "pork_stir_fry_capsicum",
+        "name": "青椒炒肉丝",
+        "type": "fat_high",
+        "perServing": "57.1g",
+        "percentOfCal": "86%"
+      },
+      {
+        "id": "pork_stir_fry_capsicum",
+        "name": "青椒炒肉丝",
+        "type": "fat_dominated",
+        "fatPercent": "86%"
+      },
+      {
+        "id": "sichuan_boiled_fish",
+        "name": "水煮鱼",
+        "type": "fat_dominated",
+        "fatPercent": "64%"
+      },
+      {
+        "id": "egg_drop_soup",
+        "name": "紫菜蛋花汤",
+        "type": "fat_dominated",
+        "fatPercent": "77%"
+      },
+      {
+        "id": "carrot_corn_rib_soup",
+        "name": "玉米胡萝卜排骨汤",
+        "type": "fat_dominated",
+        "fatPercent": "81%"
+      },
+      {
+        "id": "jiangsu_lion_head",
+        "name": "红烧狮子头",
+        "type": "cal_too_high",
+        "perServing": 1872,
+        "servings": 4
+      },
+      {
+        "id": "jiangsu_lion_head",
+        "name": "红烧狮子头",
+        "type": "fat_high",
+        "perServing": "192.9g",
+        "percentOfCal": "93%"
+      },
+      {
+        "id": "jiangsu_lion_head",
+        "name": "红烧狮子头",
+        "type": "fat_dominated",
+        "fatPercent": "93%"
+      },
+      {
+        "id": "celery_tofu_stir_fry",
+        "name": "芹菜炒豆干",
+        "type": "fat_dominated",
+        "fatPercent": "64%"
+      },
+      {
+        "id": "steamed_pork_rice_flour",
+        "name": "粉蒸肉",
+        "type": "fat_high",
+        "perServing": "53.2g",
+        "percentOfCal": "80%"
+      },
+      {
+        "id": "steamed_pork_rice_flour",
+        "name": "粉蒸肉",
+        "type": "fat_dominated",
+        "fatPercent": "80%"
+      },
+      {
+        "id": "dongbei_pork_stew_vermicelli",
+        "name": "猪肉炖粉条",
+        "type": "fat_dominated",
+        "fatPercent": "75%"
+      },
+      {
+        "id": "vinegar_peanuts",
+        "name": "老醋花生",
+        "type": "fat_dominated",
+        "fatPercent": "82%"
+      },
+      {
+        "id": "sichuan_twice_cooked_tofu",
+        "name": "麻辣豆腐煲",
+        "type": "fat_dominated",
+        "fatPercent": "66%"
+      },
+      {
+        "id": "honey_glazed_sweet_potato",
+        "name": "拔丝红薯",
+        "type": "protein_too_low",
+        "perServing": "2.1g",
+        "cal": 350
+      },
+      {
+        "id": "onion_pork_stir_fry",
+        "name": "洋葱炒肉",
+        "type": "fat_high",
+        "perServing": "58.1g",
+        "percentOfCal": "86%"
+      },
+      {
+        "id": "onion_pork_stir_fry",
+        "name": "洋葱炒肉",
+        "type": "fat_dominated",
+        "fatPercent": "86%"
+      },
+      {
+        "id": "stir_fried_zucchini_egg",
+        "name": "西葫芦炒蛋",
+        "type": "fat_dominated",
+        "fatPercent": "65%"
+      },
+      {
+        "id": "dongbei_pickled_cabbage_pork",
+        "name": "酸菜炒肉",
+        "type": "fat_dominated",
+        "fatPercent": "88%"
+      },
+      {
+        "id": "hunan_steamed_pork",
+        "name": "湘味小炒肉",
+        "type": "fat_high",
+        "perServing": "71.6g",
+        "percentOfCal": "88%"
+      },
+      {
+        "id": "hunan_steamed_pork",
+        "name": "湘味小炒肉",
+        "type": "fat_dominated",
+        "fatPercent": "88%"
+      },
+      {
+        "id": "mince_pork_eggplant",
+        "name": "肉末茄子",
+        "type": "fat_dominated",
+        "fatPercent": "69%"
+      },
+      {
+        "id": "sichuan_boiled_beef",
+        "name": "水煮牛肉",
+        "type": "fat_dominated",
+        "fatPercent": "66%"
+      },
+      {
+        "id": "jiangsu_braised_meatball",
+        "name": "四喜丸子",
+        "type": "fat_dominated",
+        "fatPercent": "71%"
+      },
+      {
+        "id": "shandong_sweet_sour_carp",
+        "name": "糖醋鲤鱼",
+        "type": "fat_high",
+        "perServing": "60.9g",
+        "percentOfCal": "81%"
+      },
+      {
+        "id": "shandong_sweet_sour_carp",
+        "name": "糖醋鲤鱼",
+        "type": "fat_dominated",
+        "fatPercent": "81%"
+      },
+      {
+        "id": "hunan_smoked_pork_beans",
+        "name": "腊肉炒豆角",
+        "type": "fat_dominated",
+        "fatPercent": "83%"
+      },
+      {
+        "id": "jiangsu_braised_pork_ball_soup",
+        "name": "清汤狮子头",
+        "type": "fat_dominated",
+        "fatPercent": "66%"
+      },
+      {
+        "id": "homestyle_suancai_fen",
+        "name": "酸菜粉条",
+        "type": "fat_dominated",
+        "fatPercent": "63%"
+      },
+      {
+        "id": "cantonese_zhengdan",
+        "name": "蒸水蛋",
+        "type": "fat_dominated",
+        "fatPercent": "67%"
+      },
+      {
+        "id": "homestyle_xihu_niurou_geng",
+        "name": "西湖牛肉羹",
+        "type": "fat_dominated",
+        "fatPercent": "61%"
+      },
+      {
+        "id": "cantonese_chashao_rou",
+        "name": "叉烧肉",
+        "type": "fat_high",
+        "perServing": "66.3g",
+        "percentOfCal": "87%"
+      },
+      {
+        "id": "cantonese_chashao_rou",
+        "name": "叉烧肉",
+        "type": "fat_dominated",
+        "fatPercent": "87%"
+      },
+      {
+        "id": "homestyle_qiezi_roushi",
+        "name": "肉末烧茄子",
+        "type": "fat_dominated",
+        "fatPercent": "68%"
+      },
+      {
+        "id": "hunan_larou_chao_suncai",
+        "name": "腊肉炒蒜薹",
+        "type": "fat_dominated",
+        "fatPercent": "87%"
+      },
+      {
+        "id": "homestyle_rou_chao_xiancai",
+        "name": "雪菜肉丝",
+        "type": "fat_high",
+        "perServing": "55.8g",
+        "percentOfCal": "87%"
+      },
+      {
+        "id": "homestyle_rou_chao_xiancai",
+        "name": "雪菜肉丝",
+        "type": "fat_dominated",
+        "fatPercent": "87%"
+      },
+      {
+        "id": "homestyle_xianggan_chao_rou",
+        "name": "香干炒肉",
+        "type": "fat_high",
+        "perServing": "62.9g",
+        "percentOfCal": "86%"
+      },
+      {
+        "id": "homestyle_xianggan_chao_rou",
+        "name": "香干炒肉",
+        "type": "fat_dominated",
+        "fatPercent": "86%"
+      },
+      {
+        "id": "homestyle_hongshao_doufu",
+        "name": "红烧豆腐",
+        "type": "fat_dominated",
+        "fatPercent": "63%"
+      },
+      {
+        "id": "homestyle_suantang_fei_niu",
+        "name": "酸汤肥牛",
+        "type": "fat_dominated",
+        "fatPercent": "61%"
+      },
+      {
+        "id": "homestyle_lurou_fan",
+        "name": "卤肉饭",
+        "type": "fat_high",
+        "perServing": "60.5g",
+        "percentOfCal": "70%"
+      },
+      {
+        "id": "homestyle_lurou_fan",
+        "name": "卤肉饭",
+        "type": "fat_dominated",
+        "fatPercent": "70%"
+      },
+      {
+        "id": "dongbei_zhu_gu_tang",
+        "name": "猪骨玉米汤",
+        "type": "fat_dominated",
+        "fatPercent": "82%"
+      },
+      {
+        "id": "homestyle_jiu_cai_chao_dan",
+        "name": "韭菜炒鸡蛋",
+        "type": "fat_dominated",
+        "fatPercent": "67%"
+      },
+      {
+        "id": "hunan_xiao_chao_rou",
+        "name": "湘菜小炒肉",
+        "type": "fat_high",
+        "perServing": "58.3g",
+        "percentOfCal": "88%"
+      },
+      {
+        "id": "hunan_xiao_chao_rou",
+        "name": "湘菜小炒肉",
+        "type": "fat_dominated",
+        "fatPercent": "88%"
+      },
+      {
+        "id": "homestyle_yumi_paigu_tang",
+        "name": "排骨玉米汤",
+        "type": "fat_dominated",
+        "fatPercent": "83%"
+      },
+      {
+        "id": "homestyle_tiepan_doufu",
+        "name": "铁板豆腐",
+        "type": "fat_dominated",
+        "fatPercent": "61%"
+      },
+      {
+        "id": "homestyle_paigu_dun_luobo",
+        "name": "排骨炖萝卜",
+        "type": "fat_high",
+        "perServing": "70.9g",
+        "percentOfCal": "86%"
+      },
+      {
+        "id": "homestyle_paigu_dun_luobo",
+        "name": "排骨炖萝卜",
+        "type": "fat_dominated",
+        "fatPercent": "86%"
+      },
+      {
+        "id": "homestyle_doujiao_chao_rou",
+        "name": "豆角炒肉",
+        "type": "fat_dominated",
+        "fatPercent": "84%"
+      },
+      {
+        "id": "homestyle_doufu_tang",
+        "name": "豆腐蛋花汤",
+        "type": "fat_dominated",
+        "fatPercent": "63%"
+      },
+      {
+        "id": "homestyle_dofu_niang",
+        "name": "酿豆腐",
+        "type": "fat_dominated",
+        "fatPercent": "67%"
+      },
+      {
+        "id": "homestyle_shucai_wotou",
+        "name": "蔬菜蛋卷",
+        "type": "fat_dominated",
+        "fatPercent": "61%"
+      },
+      {
+        "id": "dongbei_dabancai",
+        "name": "东北大拌菜",
+        "type": "cal_too_low",
+        "perServing": 46,
+        "servings": 3
+      },
+      {
+        "id": "homestyle_yangcong_chao_dan",
+        "name": "洋葱炒鸡蛋",
+        "type": "fat_dominated",
+        "fatPercent": "64%"
+      },
+      {
+        "id": "homestyle_jiang_ban_doufu",
+        "name": "皮蛋豆腐",
+        "type": "fat_dominated",
+        "fatPercent": "61%"
+      },
+      {
+        "id": "homestyle_luobo_si_bing",
+        "name": "萝卜丝饼",
+        "type": "protein_too_low",
+        "perServing": "0.8g",
+        "cal": 278
+      },
+      {
+        "id": "italian_tomato_soup",
+        "name": "意式番茄浓汤",
+        "type": "fat_dominated",
+        "fatPercent": "67%"
+      },
+      {
+        "id": "italian_cheese_omelette",
+        "name": "意式芝士煎蛋卷",
+        "type": "fat_dominated",
+        "fatPercent": "64%"
+      },
+      {
+        "id": "american_caesar_salad",
+        "name": "凯撒沙拉",
+        "type": "fat_dominated",
+        "fatPercent": "68%"
+      },
+      {
+        "id": "french_onion_soup",
+        "name": "法式洋葱汤",
+        "type": "sodium_high",
+        "perServing": 1724,
+        "dailyPercent": "86%"
+      },
+      {
+        "id": "french_quiche",
+        "name": "法式咸派",
+        "type": "fat_high",
+        "perServing": "52.8g",
+        "percentOfCal": "63%"
+      },
+      {
+        "id": "french_quiche",
+        "name": "法式咸派",
+        "type": "fat_dominated",
+        "fatPercent": "63%"
+      },
+      {
+        "id": "french_potato_gratin",
+        "name": "法式焗土豆",
+        "type": "fat_dominated",
+        "fatPercent": "65%"
+      },
+      {
+        "id": "french_croque_monsieur",
+        "name": "法式火腿芝士三明治",
+        "type": "sodium_high",
+        "perServing": 1593,
+        "dailyPercent": "80%"
+      },
+      {
+        "id": "japanese_shrimp_tempura",
+        "name": "日式天妇罗虾",
+        "type": "fat_high",
+        "perServing": "61.4g",
+        "percentOfCal": "85%"
+      },
+      {
+        "id": "japanese_shrimp_tempura",
+        "name": "日式天妇罗虾",
+        "type": "fat_dominated",
+        "fatPercent": "85%"
+      },
+      {
+        "id": "japanese_katsudon",
+        "name": "日式猪排饭",
+        "type": "fat_dominated",
+        "fatPercent": "75%"
+      },
+      {
+        "id": "korean_egg_roll",
+        "name": "韩式鸡蛋卷",
+        "type": "fat_dominated",
+        "fatPercent": "62%"
+      },
+      {
+        "id": "korean_doenjang_stew",
+        "name": "韩式大酱汤",
+        "type": "sodium_high",
+        "perServing": 2184,
+        "dailyPercent": "109%"
+      },
+      {
+        "id": "korean_army_stew",
+        "name": "韩式部队锅",
+        "type": "sodium_high",
+        "perServing": 3255,
+        "dailyPercent": "163%"
+      },
+      {
+        "id": "korean_beef_soup",
+        "name": "韩式牛肉萝卜汤",
+        "type": "sodium_high",
+        "perServing": 2370,
+        "dailyPercent": "118%"
+      },
+      {
+        "id": "thai_green_curry",
+        "name": "泰式绿咖喱鸡",
+        "type": "fat_high",
+        "perServing": "60.5g",
+        "percentOfCal": "68%"
+      },
+      {
+        "id": "thai_green_curry",
+        "name": "泰式绿咖喱鸡",
+        "type": "fat_dominated",
+        "fatPercent": "68%"
+      },
+      {
+        "id": "thai_stir_fry_pork",
+        "name": "泰式蒜香猪肉",
+        "type": "fat_dominated",
+        "fatPercent": "66%"
+      },
+      {
+        "id": "southeast_asian_nasi_goreng",
+        "name": "印尼炒饭",
+        "type": "sodium_high",
+        "perServing": 1657,
+        "dailyPercent": "83%"
+      },
+      {
+        "id": "american_bbq_pork_ribs",
+        "name": "美式烤排骨",
+        "type": "fat_dominated",
+        "fatPercent": "61%"
+      },
+      {
+        "id": "italian_frittata",
+        "name": "意式烤蛋饼",
+        "type": "fat_dominated",
+        "fatPercent": "60%"
+      },
+      {
+        "id": "french_mushroom_soup",
+        "name": "法式蘑菇浓汤",
+        "type": "fat_dominated",
+        "fatPercent": "75%"
+      },
+      {
+        "id": "thai_red_curry_shrimp",
+        "name": "泰式红咖喱虾",
+        "type": "fat_dominated",
+        "fatPercent": "67%"
+      },
+      {
+        "id": "korean_kimchi_stew",
+        "name": "韩式泡菜豆腐锅",
+        "type": "fat_dominated",
+        "fatPercent": "75%"
+      },
+      {
+        "id": "japanese_hamburg_steak",
+        "name": "日式汉堡肉排",
+        "type": "fat_dominated",
+        "fatPercent": "61%"
+      },
+      {
+        "id": "french_pan_fried_pork",
+        "name": "法式香煎猪排",
+        "type": "fat_dominated",
+        "fatPercent": "89%"
+      },
+      {
+        "id": "japanese_curry_pork",
+        "name": "日式咖喱猪排饭",
+        "type": "cal_too_high",
+        "perServing": 1270,
+        "servings": 3
+      },
+      {
+        "id": "japanese_curry_pork",
+        "name": "日式咖喱猪排饭",
+        "type": "fat_high",
+        "perServing": "94.5g",
+        "percentOfCal": "67%"
+      },
+      {
+        "id": "japanese_curry_pork",
+        "name": "日式咖喱猪排饭",
+        "type": "fat_dominated",
+        "fatPercent": "67%"
+      },
+      {
+        "id": "japanese_hamburg",
+        "name": "日式汉堡肉",
+        "type": "fat_dominated",
+        "fatPercent": "65%"
+      },
+      {
+        "id": "japanese_egg_roll",
+        "name": "日式玉子烧",
+        "type": "fat_dominated",
+        "fatPercent": "65%"
+      },
+      {
+        "id": "japanese_fried_tofu",
+        "name": "日式炸豆腐",
+        "type": "fat_dominated",
+        "fatPercent": "66%"
+      },
+      {
+        "id": "karaage",
+        "name": "日式唐扬鸡",
+        "type": "fat_high",
+        "perServing": "52.1g",
+        "percentOfCal": "57%"
+      },
+      {
+        "id": "japanese_braised_pork",
+        "name": "日式角煮",
+        "type": "fat_high",
+        "perServing": "70.4g",
+        "percentOfCal": "86%"
+      },
+      {
+        "id": "japanese_braised_pork",
+        "name": "日式角煮",
+        "type": "fat_dominated",
+        "fatPercent": "86%"
+      },
+      {
+        "id": "chicken_nanban",
+        "name": "日式南蛮鸡",
+        "type": "fat_high",
+        "perServing": "51.6g",
+        "percentOfCal": "55%"
+      },
+      {
+        "id": "japanese_edamame",
+        "name": "盐煮毛豆",
+        "type": "sodium_high",
+        "perServing": 1948,
+        "dailyPercent": "97%"
+      },
+      {
+        "id": "miso_pork_belly",
+        "name": "味噌五花肉",
+        "type": "fat_high",
+        "perServing": "66.4g",
+        "percentOfCal": "86%"
+      },
+      {
+        "id": "miso_pork_belly",
+        "name": "味噌五花肉",
+        "type": "fat_dominated",
+        "fatPercent": "86%"
+      },
+      {
+        "id": "kimchi_jjigae",
+        "name": "泡菜豆腐汤",
+        "type": "fat_dominated",
+        "fatPercent": "79%"
+      },
+      {
+        "id": "korean_bbq_pork",
+        "name": "韩式烤五花肉",
+        "type": "fat_high",
+        "perServing": "74.2g",
+        "percentOfCal": "89%"
+      },
+      {
+        "id": "korean_bbq_pork",
+        "name": "韩式烤五花肉",
+        "type": "fat_dominated",
+        "fatPercent": "89%"
+      },
+      {
+        "id": "korean_radish_rib_soup",
+        "name": "韩式萝卜排骨汤",
+        "type": "fat_dominated",
+        "fatPercent": "64%"
+      },
+      {
+        "id": "korean_cheese_corn",
+        "name": "韩式芝士玉米",
+        "type": "fat_dominated",
+        "fatPercent": "62%"
+      },
+      {
+        "id": "kimchi_pork_stir_fry",
+        "name": "泡菜炒五花肉",
+        "type": "fat_high",
+        "perServing": "82.4g",
+        "percentOfCal": "87%"
+      },
+      {
+        "id": "kimchi_pork_stir_fry",
+        "name": "泡菜炒五花肉",
+        "type": "fat_dominated",
+        "fatPercent": "87%"
+      },
+      {
+        "id": "gyeran_jjim",
+        "name": "韩式蒸蛋",
+        "type": "fat_dominated",
+        "fatPercent": "61%"
+      },
+      {
+        "id": "larb_pork",
+        "name": "泰式猪肉沙拉",
+        "type": "fat_dominated",
+        "fatPercent": "61%"
+      },
+      {
+        "id": "massaman_curry",
+        "name": "泰式马沙曼咖喱",
+        "type": "fat_dominated",
+        "fatPercent": "64%"
+      },
+      {
+        "id": "chicken_parm",
+        "name": "意式鸡排配番茄芝士",
+        "type": "fat_high",
+        "perServing": "64.4g",
+        "percentOfCal": "73%"
+      },
+      {
+        "id": "chicken_parm",
+        "name": "意式鸡排配番茄芝士",
+        "type": "fat_dominated",
+        "fatPercent": "73%"
+      },
+      {
+        "id": "caprese_salad",
+        "name": "意式番茄芝士沙拉",
+        "type": "fat_dominated",
+        "fatPercent": "75%"
+      },
+      {
+        "id": "italian_cream_salmon",
+        "name": "意式奶油三文鱼",
+        "type": "fat_dominated",
+        "fatPercent": "68%"
+      },
+      {
+        "id": "buffalo_chicken",
+        "name": "美式水牛城鸡翅",
+        "type": "fat_high",
+        "perServing": "52.0g",
+        "percentOfCal": "71%"
+      },
+      {
+        "id": "buffalo_chicken",
+        "name": "美式水牛城鸡翅",
+        "type": "fat_dominated",
+        "fatPercent": "71%"
+      },
+      {
+        "id": "steak_with_pepper",
+        "name": "美式黑椒牛排",
+        "type": "fat_high",
+        "perServing": "51.8g",
+        "percentOfCal": "61%"
+      },
+      {
+        "id": "steak_with_pepper",
+        "name": "美式黑椒牛排",
+        "type": "fat_dominated",
+        "fatPercent": "61%"
+      },
+      {
+        "id": "american_meatloaf",
+        "name": "美式肉糕",
+        "type": "fat_dominated",
+        "fatPercent": "60%"
+      },
+      {
+        "id": "american_cobb_salad",
+        "name": "科布沙拉",
+        "type": "fat_dominated",
+        "fatPercent": "61%"
+      },
+      {
+        "id": "american_bacon_cheese_fries",
+        "name": "芝士培根薯条",
+        "type": "sodium_high",
+        "perServing": 1536,
+        "dailyPercent": "77%"
+      },
+      {
+        "id": "american_bacon_cheese_fries",
+        "name": "芝士培根薯条",
+        "type": "fat_high",
+        "perServing": "60.7g",
+        "percentOfCal": "68%"
+      },
+      {
+        "id": "american_bacon_cheese_fries",
+        "name": "芝士培根薯条",
+        "type": "fat_dominated",
+        "fatPercent": "68%"
+      },
+      {
+        "id": "french_pork_chop_dijon",
+        "name": "法式第戎猪排",
+        "type": "fat_dominated",
+        "fatPercent": "63%"
+      },
+      {
+        "id": "french_egg_cocotte",
+        "name": "法式烤蛋",
+        "type": "fat_dominated",
+        "fatPercent": "76%"
+      },
+      {
+        "id": "french_potato_soup",
+        "name": "法式奶油南瓜浓汤",
+        "type": "fat_dominated",
+        "fatPercent": "73%"
+      },
+      {
+        "id": "french_omelette",
+        "name": "法式欧姆蛋",
+        "type": "fat_dominated",
+        "fatPercent": "75%"
+      },
+      {
+        "id": "french_asparagus_soup",
+        "name": "法式芦笋浓汤",
+        "type": "fat_dominated",
+        "fatPercent": "67%"
+      },
+      {
+        "id": "cn_breakfast_noodle_beef",
+        "name": "牛肉面",
+        "type": "sodium_high",
+        "perServing": 1590,
+        "dailyPercent": "80%"
+      },
+      {
+        "id": "western_eggs_benedict",
+        "name": "班尼迪克蛋",
+        "type": "sodium_high",
+        "perServing": 1694,
+        "dailyPercent": "85%"
+      },
+      {
+        "id": "western_eggs_benedict",
+        "name": "班尼迪克蛋",
+        "type": "fat_high",
+        "perServing": "51.5g",
+        "percentOfCal": "55%"
+      },
+      {
+        "id": "western_omelette_ham",
+        "name": "火腿芝士煎蛋卷",
+        "type": "sodium_high",
+        "perServing": 1836,
+        "dailyPercent": "92%"
+      },
+      {
+        "id": "western_omelette_ham",
+        "name": "火腿芝士煎蛋卷",
+        "type": "fat_high",
+        "perServing": "51.3g",
+        "percentOfCal": "72%"
+      },
+      {
+        "id": "western_omelette_ham",
+        "name": "火腿芝士煎蛋卷",
+        "type": "fat_dominated",
+        "fatPercent": "72%"
+      },
+      {
+        "id": "western_breakfast_sandwich",
+        "name": "培根蛋三明治",
+        "type": "sodium_high",
+        "perServing": 2076,
+        "dailyPercent": "104%"
+      },
+      {
+        "id": "western_mushroom_omelette",
+        "name": "蘑菇煎蛋",
+        "type": "fat_dominated",
+        "fatPercent": "72%"
+      },
+      {
+        "id": "western_egg_muffin",
+        "name": "鸡蛋松饼杯",
+        "type": "fat_dominated",
+        "fatPercent": "68%"
+      },
+      {
+        "id": "western_spinach_omelette",
+        "name": "菠菜煎蛋卷",
+        "type": "fat_dominated",
+        "fatPercent": "70%"
+      },
+      {
+        "id": "western_sausage_egg_plate",
+        "name": "全套英式早餐",
+        "type": "sodium_high",
+        "perServing": 2172,
+        "dailyPercent": "109%"
+      },
+      {
+        "id": "cn_winter_melon_rib_soup",
+        "name": "冬瓜排骨汤",
+        "type": "fat_dominated",
+        "fatPercent": "65%"
+      },
+      {
+        "id": "cn_cabbage_meatball_soup",
+        "name": "白菜肉丸汤",
+        "type": "fat_dominated",
+        "fatPercent": "66%"
+      },
+      {
+        "id": "cn_kelp_rib_soup",
+        "name": "海带排骨汤",
+        "type": "fat_dominated",
+        "fatPercent": "64%"
+      },
+      {
+        "id": "cn_watercress_pork_soup",
+        "name": "西洋菜猪骨汤",
+        "type": "fat_dominated",
+        "fatPercent": "63%"
+      },
+      {
+        "id": "cn_bitter_melon_rib_soup",
+        "name": "苦瓜排骨汤",
+        "type": "fat_dominated",
+        "fatPercent": "65%"
+      },
+      {
+        "id": "cn_pork_lotus_seed_soup",
+        "name": "猪肚莲子汤",
+        "type": "fat_high",
+        "perServing": "53.1g",
+        "percentOfCal": "86%"
+      },
+      {
+        "id": "cn_pork_lotus_seed_soup",
+        "name": "猪肚莲子汤",
+        "type": "fat_dominated",
+        "fatPercent": "86%"
+      },
+      {
+        "id": "cn_bok_choy_meatball_soup",
+        "name": "青菜肉圆汤",
+        "type": "fat_dominated",
+        "fatPercent": "64%"
+      },
+      {
+        "id": "cn_congee_radish",
+        "name": "萝卜粥",
+        "type": "cal_too_low",
+        "perServing": 50,
+        "servings": 3
+      },
+      {
+        "id": "intl_pumpkin_cream_soup",
+        "name": "奶油南瓜浓汤",
+        "type": "fat_dominated",
+        "fatPercent": "72%"
+      },
+      {
+        "id": "intl_clam_chowder",
+        "name": "蛤蜊浓汤",
+        "type": "fat_dominated",
+        "fatPercent": "61%"
+      },
+      {
+        "id": "intl_korean_tofu_soup",
+        "name": "韩式辣豆腐汤",
+        "type": "fat_dominated",
+        "fatPercent": "75%"
+      },
+      {
+        "id": "intl_cream_mushroom_soup",
+        "name": "西式奶油蘑菇汤",
+        "type": "fat_dominated",
+        "fatPercent": "76%"
+      },
+      {
+        "id": "intl_asparagus_soup",
+        "name": "西式芦笋浓汤",
+        "type": "fat_dominated",
+        "fatPercent": "67%"
+      },
+      {
+        "id": "intl_tomato_basil_soup",
+        "name": "西式番茄浓汤",
+        "type": "fat_dominated",
+        "fatPercent": "67%"
+      },
+      {
+        "id": "staple_fried_wonton",
+        "name": "炸馄饨",
+        "type": "fat_high",
+        "perServing": "58.8g",
+        "percentOfCal": "79%"
+      },
+      {
+        "id": "staple_fried_wonton",
+        "name": "炸馄饨",
+        "type": "fat_dominated",
+        "fatPercent": "79%"
+      },
+      {
+        "id": "staple_ham_cheese_sandwich",
+        "name": "火腿芝士吐司",
+        "type": "sodium_high",
+        "perServing": 1688,
+        "dailyPercent": "84%"
+      },
+      {
+        "id": "western_veggie_omelette",
+        "name": "蔬菜煎蛋饼",
+        "type": "fat_dominated",
+        "fatPercent": "68%"
+      },
+      {
+        "id": "intl_cauliflower_soup",
+        "name": "花椰菜浓汤",
+        "type": "fat_dominated",
+        "fatPercent": "72%"
+      },
+      {
+        "id": "staple_chicken_sandwich",
+        "name": "鸡肉三明治",
+        "type": "sodium_high",
+        "perServing": 1548,
+        "dailyPercent": "77%"
+      },
+      {
+        "id": "staple_egg_sandwich",
+        "name": "鸡蛋三明治",
+        "type": "sodium_high",
+        "perServing": 1505,
+        "dailyPercent": "75%"
+      },
+      {
+        "id": "cn_egg_tofu_soup",
+        "name": "鸡蛋豆腐羹",
+        "type": "fat_dominated",
+        "fatPercent": "60%"
+      },
+      {
+        "id": "staple_pork_rice_claypot",
+        "name": "煲仔饭",
+        "type": "fat_high",
+        "perServing": "50.7g",
+        "percentOfCal": "70%"
+      },
+      {
+        "id": "staple_pork_rice_claypot",
+        "name": "煲仔饭",
+        "type": "fat_dominated",
+        "fatPercent": "70%"
+      },
+      {
+        "id": "cn_preserved_egg_tofu_soup",
+        "name": "皮蛋豆腐汤",
+        "type": "fat_dominated",
+        "fatPercent": "62%"
+      },
+      {
+        "id": "western_sausage_omelette",
+        "name": "香肠煎蛋卷",
+        "type": "sodium_high",
+        "perServing": 1628,
+        "dailyPercent": "81%"
+      },
+      {
+        "id": "western_sausage_omelette",
+        "name": "香肠煎蛋卷",
+        "type": "fat_dominated",
+        "fatPercent": "74%"
+      },
+      {
+        "id": "cn_pork_bone_white_soup",
+        "name": "猪骨浓白汤",
+        "type": "fat_dominated",
+        "fatPercent": "66%"
+      },
+      {
+        "id": "cn_mushroom_rib_soup",
+        "name": "蘑菇排骨汤",
+        "type": "fat_dominated",
+        "fatPercent": "65%"
+      },
+      {
+        "id": "cn_tomato_rib_soup",
+        "name": "番茄排骨汤",
+        "type": "fat_dominated",
+        "fatPercent": "65%"
+      },
+      {
+        "id": "staple_pork_lettuce_wrap",
+        "name": "生菜肉末包",
+        "type": "fat_dominated",
+        "fatPercent": "66%"
+      },
+      {
+        "id": "cn_egg_leek_soup",
+        "name": "韭菜蛋花汤",
+        "type": "fat_dominated",
+        "fatPercent": "63%"
+      },
+      {
+        "id": "staple_pork_belly_rice",
+        "name": "红烧肉盖饭",
+        "type": "fat_high",
+        "perServing": "53.4g",
+        "percentOfCal": "71%"
+      },
+      {
+        "id": "staple_pork_belly_rice",
+        "name": "红烧肉盖饭",
+        "type": "fat_dominated",
+        "fatPercent": "71%"
+      },
+      {
+        "id": "cn_rib_mushroom_soup",
+        "name": "排骨香菇汤",
+        "type": "fat_dominated",
+        "fatPercent": "63%"
+      },
+      {
+        "id": "cn_squash_pork_soup",
+        "name": "南瓜排骨汤",
+        "type": "fat_dominated",
+        "fatPercent": "63%"
+      },
+      {
+        "id": "staple_plain_porridge",
+        "name": "白粥",
+        "type": "cal_too_low",
+        "perServing": 43,
+        "servings": 3
+      },
+      {
+        "id": "veg_stirfry_celery_drytofu",
+        "name": "芹菜炒香干",
+        "type": "fat_dominated",
+        "fatPercent": "62%"
+      },
+      {
+        "id": "veg_stirfry_greenbean",
+        "name": "干煸四季豆",
+        "type": "fat_dominated",
+        "fatPercent": "60%"
+      },
+      {
+        "id": "veg_steamed_egg_custard",
+        "name": "水蒸蛋",
+        "type": "fat_dominated",
+        "fatPercent": "67%"
+      },
+      {
+        "id": "veg_tomato_egg_simple",
+        "name": "番茄炒蛋(简版)",
+        "type": "fat_dominated",
+        "fatPercent": "67%"
+      },
+      {
+        "id": "cold_tofu_century_egg",
+        "name": "皮蛋豆腐",
+        "type": "fat_dominated",
+        "fatPercent": "62%"
+      },
+      {
+        "id": "cold_celery_peanut",
+        "name": "芹菜花生米",
+        "type": "fat_dominated",
+        "fatPercent": "72%"
+      },
+      {
+        "id": "yunnan_rubing_cheese",
+        "name": "煎乳饼",
+        "type": "fat_dominated",
+        "fatPercent": "75%"
+      },
+      {
+        "id": "anhui_bamboo_shoot_stew",
+        "name": "腌鲜冬笋",
+        "type": "fat_dominated",
+        "fatPercent": "84%"
+      },
+      {
+        "id": "zhejiang_pickled_bamboo_soup",
+        "name": "腌笃鲜新版",
+        "type": "fat_dominated",
+        "fatPercent": "79%"
+      },
+      {
+        "id": "fujian_peanut_soup",
+        "name": "福建花生汤",
+        "type": "fat_dominated",
+        "fatPercent": "68%"
+      },
+      {
+        "id": "cold_tofu_salad_chinese",
+        "name": "葱油拌豆腐",
+        "type": "fat_dominated",
+        "fatPercent": "74%"
+      },
+      {
+        "id": "cold_boiled_peanuts",
+        "name": "五香煮花生",
+        "type": "fat_dominated",
+        "fatPercent": "77%"
+      },
+      {
+        "id": "soup_tomato_egg",
+        "name": "番茄鸡蛋汤",
+        "type": "fat_dominated",
+        "fatPercent": "68%"
+      },
+      {
+        "id": "fitness_beef_salad",
+        "name": "牛肉蔬菜沙拉",
+        "type": "fat_dominated",
+        "fatPercent": "60%"
+      },
+      {
+        "id": "fitness_tofu_egg_scramble",
+        "name": "豆腐炒鸡蛋",
+        "type": "fat_dominated",
+        "fatPercent": "67%"
+      },
+      {
+        "id": "soup_seaweed_egg_v2",
+        "name": "紫菜蛋花汤",
+        "type": "sodium_high",
+        "perServing": 1801,
+        "dailyPercent": "90%"
+      },
+      {
+        "id": "soup_seaweed_egg_v2",
+        "name": "紫菜蛋花汤",
+        "type": "fat_dominated",
+        "fatPercent": "62%"
+      },
+      {
+        "id": "soup_daikon_rib_v2",
+        "name": "白萝卜排骨汤",
+        "type": "fat_dominated",
+        "fatPercent": "63%"
+      },
+      {
+        "id": "soup_winter_melon_meatball_v2",
+        "name": "冬瓜丸子汤",
+        "type": "fat_dominated",
+        "fatPercent": "62%"
+      },
+      {
+        "id": "breakfast_tomato_egg_noodle_v2",
+        "name": "番茄鸡蛋面",
+        "type": "sodium_high",
+        "perServing": 1854,
+        "dailyPercent": "93%"
+      },
+      {
+        "id": "home_egg_cucumber",
+        "name": "黄瓜炒蛋",
+        "type": "fat_dominated",
+        "fatPercent": "69%"
+      },
+      {
+        "id": "home_stirfry_pork_chinese_cabbage",
+        "name": "白菜猪肉",
+        "type": "fat_dominated",
+        "fatPercent": "74%"
+      },
+      {
+        "id": "home_egg_carrot_stir",
+        "name": "胡萝卜炒蛋",
+        "type": "fat_dominated",
+        "fatPercent": "61%"
+      },
+      {
+        "id": "home_mapo_tofu_mild",
+        "name": "家常麻婆豆腐(微辣)",
+        "type": "fat_dominated",
+        "fatPercent": "64%"
+      },
+      {
+        "id": "home_sweet_sour_pork_ribs",
+        "name": "糖醋排骨",
+        "type": "fat_dominated",
+        "fatPercent": "66%"
+      },
+      {
+        "id": "home_braised_chicken_wing",
+        "name": "可乐鸡翅",
+        "type": "fat_dominated",
+        "fatPercent": "65%"
+      },
+      {
+        "id": "home_scramble_tomato_eggplant",
+        "name": "茄子炒蛋",
+        "type": "fat_dominated",
+        "fatPercent": "63%"
+      },
+      {
+        "id": "home_cold_egg_tofu",
+        "name": "蛋皮拌豆腐",
+        "type": "fat_dominated",
+        "fatPercent": "62%"
+      },
+      {
+        "id": "duck_roast_cantonese",
+        "name": "广式烧鸭",
+        "type": "fat_high",
+        "perServing": "70.2g",
+        "percentOfCal": "73%"
+      },
+      {
+        "id": "duck_roast_cantonese",
+        "name": "广式烧鸭",
+        "type": "fat_dominated",
+        "fatPercent": "73%"
+      },
+      {
+        "id": "duck_radish_soup",
+        "name": "鸭肉萝卜汤",
+        "type": "fat_dominated",
+        "fatPercent": "72%"
+      },
+      {
+        "id": "duck_jiangsu_eight_treasure",
+        "name": "八宝鸭",
+        "type": "fat_high",
+        "perServing": "60.7g",
+        "percentOfCal": "70%"
+      },
+      {
+        "id": "duck_jiangsu_eight_treasure",
+        "name": "八宝鸭",
+        "type": "fat_dominated",
+        "fatPercent": "70%"
+      },
+      {
+        "id": "bean_dried_curd_stick",
+        "name": "腐竹烧肉",
+        "type": "fat_high",
+        "perServing": "57.2g",
+        "percentOfCal": "80%"
+      },
+      {
+        "id": "bean_dried_curd_stick",
+        "name": "腐竹烧肉",
+        "type": "fat_dominated",
+        "fatPercent": "80%"
+      },
+      {
+        "id": "home_red_braised_pork_classic",
+        "name": "经典红烧肉",
+        "type": "fat_high",
+        "perServing": "79.6g",
+        "percentOfCal": "88%"
+      },
+      {
+        "id": "home_red_braised_pork_classic",
+        "name": "经典红烧肉",
+        "type": "fat_dominated",
+        "fatPercent": "88%"
+      },
+      {
+        "id": "bf_bacon_eggs",
+        "name": "培根煎蛋",
+        "type": "sodium_high",
+        "perServing": 1542,
+        "dailyPercent": "77%"
+      },
+      {
+        "id": "bf_bacon_eggs",
+        "name": "培根煎蛋",
+        "type": "fat_dominated",
+        "fatPercent": "68%"
+      },
+      {
+        "id": "bf_pan_fried_eggs",
+        "name": "家常煎蛋",
+        "type": "fat_dominated",
+        "fatPercent": "64%"
+      },
+      {
+        "id": "bf_omelette_simple",
+        "name": "芝士蛋卷",
+        "type": "fat_dominated",
+        "fatPercent": "72%"
+      },
+      {
+        "id": "soup_2p_winter_melon",
+        "name": "冬瓜清汤(2人份)",
+        "type": "cal_too_low",
+        "perServing": 42,
+        "servings": 2
+      },
+      {
+        "id": "soup_2p_radish_seaweed",
+        "name": "萝卜紫菜汤(2人份)",
+        "type": "cal_too_low",
+        "perServing": 40,
+        "servings": 2
+      },
+      {
+        "id": "porridge_2p_plain",
+        "name": "白粥(2人份)",
+        "type": "cal_too_low",
+        "perServing": 39,
+        "servings": 2
+      },
+      {
+        "id": "soup_veg_mushroom_clear",
+        "name": "清水菌菇汤",
+        "type": "cal_too_low",
+        "perServing": 40,
+        "servings": 2
+      },
+      {
+        "id": "soup_veg_winter_melon_pure",
+        "name": "冬瓜素汤",
+        "type": "cal_too_low",
+        "perServing": 17,
+        "servings": 3
+      },
+      {
+        "id": "cold_meat_chinese_sausage",
+        "name": "腊肠拼盘",
+        "type": "sodium_high",
+        "perServing": 1684,
+        "dailyPercent": "84%"
+      },
+      {
+        "id": "cold_meat_chinese_sausage",
+        "name": "腊肠拼盘",
+        "type": "fat_dominated",
+        "fatPercent": "73%"
+      },
+      {
+        "id": "cold_meat_salami_platter",
+        "name": "萨拉米奶酪拼盘",
+        "type": "fat_dominated",
+        "fatPercent": "61%"
+      },
+      {
+        "id": "soup_egg_tomato",
+        "name": "番茄鸡蛋汤",
+        "type": "fat_dominated",
+        "fatPercent": "66%"
+      },
+      {
+        "id": "soup_egg_loofah",
+        "name": "丝瓜鸡蛋汤",
+        "type": "fat_dominated",
+        "fatPercent": "63%"
+      },
+      {
+        "id": "soup_egg_spinach",
+        "name": "菠菜鸡蛋汤",
+        "type": "fat_dominated",
+        "fatPercent": "65%"
+      },
+      {
+        "id": "soup_egg_winter_melon",
+        "name": "冬瓜鸡蛋汤",
+        "type": "sodium_high",
+        "perServing": 1621,
+        "dailyPercent": "81%"
+      },
+      {
+        "id": "soup_egg_winter_melon",
+        "name": "冬瓜鸡蛋汤",
+        "type": "fat_dominated",
+        "fatPercent": "62%"
+      },
+      {
+        "id": "soup_egg_chrysanthemum",
+        "name": "茼蒿鸡蛋汤",
+        "type": "fat_dominated",
+        "fatPercent": "66%"
+      },
+      {
+        "id": "soup_egg_lettuce",
+        "name": "生菜鸡蛋汤",
+        "type": "fat_dominated",
+        "fatPercent": "67%"
+      },
+      {
+        "id": "bulk450_em_008",
+        "name": "炒五花肉炒包菜",
+        "type": "fat_high",
+        "perServing": "71.4g",
+        "percentOfCal": "89%"
+      },
+      {
+        "id": "bulk450_em_008",
+        "name": "炒五花肉炒包菜",
+        "type": "fat_dominated",
+        "fatPercent": "89%"
+      },
+      {
+        "id": "bulk450_em_009",
+        "name": "炒五花肉炒四季豆",
+        "type": "fat_high",
+        "perServing": "71.4g",
+        "percentOfCal": "88%"
+      },
+      {
+        "id": "bulk450_em_009",
+        "name": "炒五花肉炒四季豆",
+        "type": "fat_dominated",
+        "fatPercent": "88%"
+      },
+      {
+        "id": "bulk450_em_010",
+        "name": "炒五花肉炒韭菜",
+        "type": "fat_high",
+        "perServing": "72.0g",
+        "percentOfCal": "89%"
+      },
+      {
+        "id": "bulk450_em_010",
+        "name": "炒五花肉炒韭菜",
+        "type": "fat_dominated",
+        "fatPercent": "89%"
+      },
+      {
+        "id": "bulk450_em_011",
+        "name": "炒五花肉炒土豆",
+        "type": "fat_high",
+        "perServing": "71.4g",
+        "percentOfCal": "83%"
+      },
+      {
+        "id": "bulk450_em_011",
+        "name": "炒五花肉炒土豆",
+        "type": "fat_dominated",
+        "fatPercent": "83%"
+      },
+      {
+        "id": "bulk450_em_012",
+        "name": "炒五花肉炒蒜薹",
+        "type": "fat_high",
+        "perServing": "71.5g",
+        "percentOfCal": "88%"
+      },
+      {
+        "id": "bulk450_em_012",
+        "name": "炒五花肉炒蒜薹",
+        "type": "fat_dominated",
+        "fatPercent": "88%"
+      },
+      {
+        "id": "bulk450_em_013",
+        "name": "炒五花肉炒雪菜",
+        "type": "sodium_high",
+        "perServing": 2003,
+        "dailyPercent": "100%"
+      },
+      {
+        "id": "bulk450_em_013",
+        "name": "炒五花肉炒雪菜",
+        "type": "fat_high",
+        "perServing": "71.7g",
+        "percentOfCal": "89%"
+      },
+      {
+        "id": "bulk450_em_013",
+        "name": "炒五花肉炒雪菜",
+        "type": "fat_dominated",
+        "fatPercent": "89%"
+      },
+      {
+        "id": "bulk450_em_014",
+        "name": "炒猪肉末炒茄子",
+        "type": "fat_dominated",
+        "fatPercent": "70%"
+      },
+      {
+        "id": "bulk450_em_015",
+        "name": "干煸猪肉末炒四季豆",
+        "type": "fat_dominated",
+        "fatPercent": "69%"
+      },
+      {
+        "id": "bulk450_em_016",
+        "name": "炒猪肉末炒芹菜",
+        "type": "fat_dominated",
+        "fatPercent": "71%"
+      },
+      {
+        "id": "bulk450_em_017",
+        "name": "炒猪肉末炒包菜",
+        "type": "fat_dominated",
+        "fatPercent": "70%"
+      },
+      {
+        "id": "bulk450_em_018",
+        "name": "炒猪肉末炒南瓜",
+        "type": "fat_dominated",
+        "fatPercent": "69%"
+      },
+      {
+        "id": "bulk450_em_019",
+        "name": "炒猪肉末炒西葫芦",
+        "type": "fat_dominated",
+        "fatPercent": "71%"
+      },
+      {
+        "id": "bulk450_em_020",
+        "name": "焖排骨炒玉米",
+        "type": "fat_dominated",
+        "fatPercent": "61%"
+      },
+      {
+        "id": "bulk450_em_021",
+        "name": "炖排骨炒莲藕",
+        "type": "fat_dominated",
+        "fatPercent": "60%"
+      },
+      {
+        "id": "bulk450_em_022",
+        "name": "焖排骨炒土豆",
+        "type": "fat_dominated",
+        "fatPercent": "60%"
+      },
+      {
+        "id": "bulk450_em_025",
+        "name": "炒牛里脊炒芦笋",
+        "type": "fat_dominated",
+        "fatPercent": "60%"
+      },
+      {
+        "id": "bulk450_em_028",
+        "name": "炒牛肉末炒土豆",
+        "type": "fat_dominated",
+        "fatPercent": "61%"
+      },
+      {
+        "id": "bulk450_em_029",
+        "name": "炒牛肉末炒包菜",
+        "type": "fat_dominated",
+        "fatPercent": "69%"
+      },
+      {
+        "id": "bulk450_em_038",
+        "name": "炒鸡腿肉炒腰果",
+        "type": "fat_high",
+        "perServing": "62.7g",
+        "percentOfCal": "65%"
+      },
+      {
+        "id": "bulk450_em_038",
+        "name": "炒鸡腿肉炒腰果",
+        "type": "fat_dominated",
+        "fatPercent": "65%"
+      },
+      {
+        "id": "bulk450_em_041",
+        "name": "可乐鸡翅",
+        "type": "fat_dominated",
+        "fatPercent": "62%"
+      },
+      {
+        "id": "bulk450_em_043",
+        "name": "炒羊腿肉炒芹菜",
+        "type": "fat_dominated",
+        "fatPercent": "61%"
+      },
+      {
+        "id": "bulk450_em_045",
+        "name": "焖鸭肉炒芋头",
+        "type": "fat_high",
+        "perServing": "54.2g",
+        "percentOfCal": "64%"
+      },
+      {
+        "id": "bulk450_em_045",
+        "name": "焖鸭肉炒芋头",
+        "type": "fat_dominated",
+        "fatPercent": "64%"
+      },
+      {
+        "id": "bulk450_em_046",
+        "name": "炒鸭肉炒榨菜",
+        "type": "sodium_high",
+        "perServing": 2087,
+        "dailyPercent": "104%"
+      },
+      {
+        "id": "bulk450_em_046",
+        "name": "炒鸭肉炒榨菜",
+        "type": "fat_dominated",
+        "fatPercent": "72%"
+      },
+      {
+        "id": "bulk450_em_047",
+        "name": "炒香肠炒包菜",
+        "type": "sodium_high",
+        "perServing": 1806,
+        "dailyPercent": "90%"
+      },
+      {
+        "id": "bulk450_em_047",
+        "name": "炒香肠炒包菜",
+        "type": "fat_dominated",
+        "fatPercent": "77%"
+      },
+      {
+        "id": "bulk450_em_048",
+        "name": "炒香肠炒青椒",
+        "type": "sodium_high",
+        "perServing": 1792,
+        "dailyPercent": "90%"
+      },
+      {
+        "id": "bulk450_em_048",
+        "name": "炒香肠炒青椒",
+        "type": "fat_dominated",
+        "fatPercent": "77%"
+      },
+      {
+        "id": "bulk450_em_049",
+        "name": "炒培根炒包菜",
+        "type": "sodium_high",
+        "perServing": 2827,
+        "dailyPercent": "141%"
+      },
+      {
+        "id": "bulk450_em_049",
+        "name": "炒培根炒包菜",
+        "type": "fat_high",
+        "perServing": "57.6g",
+        "percentOfCal": "69%"
+      },
+      {
+        "id": "bulk450_em_049",
+        "name": "炒培根炒包菜",
+        "type": "fat_dominated",
+        "fatPercent": "69%"
+      },
+      {
+        "id": "bulk450_em_050",
+        "name": "炒培根炒芦笋",
+        "type": "sodium_high",
+        "perServing": 2811,
+        "dailyPercent": "141%"
+      },
+      {
+        "id": "bulk450_em_050",
+        "name": "炒培根炒芦笋",
+        "type": "fat_high",
+        "perServing": "57.6g",
+        "percentOfCal": "69%"
+      },
+      {
+        "id": "bulk450_em_050",
+        "name": "炒培根炒芦笋",
+        "type": "fat_dominated",
+        "fatPercent": "69%"
+      },
+      {
+        "id": "bulk450_em_051",
+        "name": "炒火腿炒四季豆",
+        "type": "sodium_high",
+        "perServing": 2169,
+        "dailyPercent": "108%"
+      },
+      {
+        "id": "bulk450_em_052",
+        "name": "炒腊肠炒包菜",
+        "type": "sodium_high",
+        "perServing": 2931,
+        "dailyPercent": "147%"
+      },
+      {
+        "id": "bulk450_em_052",
+        "name": "炒腊肠炒包菜",
+        "type": "fat_high",
+        "perServing": "51.4g",
+        "percentOfCal": "72%"
+      },
+      {
+        "id": "bulk450_em_052",
+        "name": "炒腊肠炒包菜",
+        "type": "fat_dominated",
+        "fatPercent": "72%"
+      },
+      {
+        "id": "bulk450_ev_121",
+        "name": "蓝莓山药",
+        "type": "protein_too_low",
+        "perServing": "2.4g",
+        "cal": 215
+      },
+      {
+        "id": "bulk450_ev_124",
+        "name": "炒雪菜",
+        "type": "sodium_high",
+        "perServing": 2015,
+        "dailyPercent": "101%"
+      },
+      {
+        "id": "bulk450_ev_140",
+        "name": "烤芦笋",
+        "type": "cal_too_low",
+        "perServing": 46,
+        "servings": 2
+      },
+      {
+        "id": "bulk450_ev_142",
+        "name": "烤蘑菇",
+        "type": "cal_too_low",
+        "perServing": 49,
+        "servings": 2
+      },
+      {
+        "id": "bulk450_es_151",
+        "name": "南瓜饭",
+        "type": "cal_too_low",
+        "perServing": 21,
+        "servings": 2
+      },
+      {
+        "id": "bulk450_es_159",
+        "name": "南瓜粥",
+        "type": "cal_too_low",
+        "perServing": 21,
+        "servings": 2
+      },
+      {
+        "id": "bulk450_es_165",
+        "name": "南瓜馒头",
+        "type": "cal_too_low",
+        "perServing": 30,
+        "servings": 2
+      },
+      {
+        "id": "bulk450_eu_176",
+        "name": "冬瓜排骨汤",
+        "type": "fat_dominated",
+        "fatPercent": "66%"
+      },
+      {
+        "id": "bulk450_eu_180",
+        "name": "白萝卜排骨汤",
+        "type": "fat_dominated",
+        "fatPercent": "64%"
+      },
+      {
+        "id": "bulk450_eu_186",
+        "name": "番茄素汤",
+        "type": "cal_too_low",
+        "perServing": 13,
+        "servings": 3
+      },
+      {
+        "id": "bulk450_eu_187",
+        "name": "菌菇素汤",
+        "type": "cal_too_low",
+        "perServing": 16,
+        "servings": 3
+      },
+      {
+        "id": "bulk450_eu_188",
+        "name": "冬瓜素汤",
+        "type": "cal_too_low",
+        "perServing": 9,
+        "servings": 3
+      },
+      {
+        "id": "bulk450_eu_189",
+        "name": "南瓜浓汤",
+        "type": "cal_too_low",
+        "perServing": 19,
+        "servings": 3
+      },
+      {
+        "id": "bulk450_eu_190",
+        "name": "菠菜清汤",
+        "type": "cal_too_low",
+        "perServing": 17,
+        "servings": 3
+      },
+      {
+        "id": "bulk450_eu_192",
+        "name": "胡萝卜牛腩汤",
+        "type": "fat_dominated",
+        "fatPercent": "62%"
+      },
+      {
+        "id": "bulk450_eu_193",
+        "name": "芹菜素汤",
+        "type": "cal_too_low",
+        "perServing": 12,
+        "servings": 3
+      },
+      {
+        "id": "bulk450_m_195",
+        "name": "红烧五花肉",
+        "type": "fat_high",
+        "perServing": "75.8g",
+        "percentOfCal": "90%"
+      },
+      {
+        "id": "bulk450_m_195",
+        "name": "红烧五花肉",
+        "type": "fat_dominated",
+        "fatPercent": "90%"
+      },
+      {
+        "id": "bulk450_m_196",
+        "name": "糖醋小排",
+        "type": "fat_dominated",
+        "fatPercent": "69%"
+      },
+      {
+        "id": "bulk450_m_197",
+        "name": "红烧排骨",
+        "type": "fat_dominated",
+        "fatPercent": "69%"
+      },
+      {
+        "id": "bulk450_m_198",
+        "name": "梅菜蒸排骨",
+        "type": "fat_dominated",
+        "fatPercent": "66%"
+      },
+      {
+        "id": "bulk450_m_199",
+        "name": "红烧牛腩",
+        "type": "fat_dominated",
+        "fatPercent": "70%"
+      },
+      {
+        "id": "bulk450_m_200",
+        "name": "番茄炖牛腩",
+        "type": "fat_dominated",
+        "fatPercent": "70%"
+      },
+      {
+        "id": "bulk450_m_202",
+        "name": "烤羊排",
+        "type": "fat_dominated",
+        "fatPercent": "63%"
+      },
+      {
+        "id": "bulk450_m_204",
+        "name": "茭白烧鸭",
+        "type": "fat_dominated",
+        "fatPercent": "73%"
+      },
+      {
+        "id": "bulk450_m_205",
+        "name": "香煎鸭腿",
+        "type": "fat_dominated",
+        "fatPercent": "62%"
+      },
+      {
+        "id": "bulk450_m_206",
+        "name": "盐焗鸡",
+        "type": "fat_dominated",
+        "fatPercent": "64%"
+      },
+      {
+        "id": "bulk450_m_207",
+        "name": "白切鸡",
+        "type": "fat_dominated",
+        "fatPercent": "64%"
+      },
+      {
+        "id": "bulk450_m_211",
+        "name": "梅菜扣肉(简化版)",
+        "type": "fat_high",
+        "perServing": "75.9g",
+        "percentOfCal": "88%"
+      },
+      {
+        "id": "bulk450_m_211",
+        "name": "梅菜扣肉(简化版)",
+        "type": "fat_dominated",
+        "fatPercent": "88%"
+      },
+      {
+        "id": "bulk450_m_212",
+        "name": "简易回锅肉(不放辣)",
+        "type": "fat_high",
+        "perServing": "75.8g",
+        "percentOfCal": "89%"
+      },
+      {
+        "id": "bulk450_m_212",
+        "name": "简易回锅肉(不放辣)",
+        "type": "fat_dominated",
+        "fatPercent": "89%"
+      },
+      {
+        "id": "bulk450_m_213",
+        "name": "蒜香排骨",
+        "type": "fat_dominated",
+        "fatPercent": "69%"
+      },
+      {
+        "id": "bulk450_m_214",
+        "name": "盐烤排骨",
+        "type": "fat_dominated",
+        "fatPercent": "66%"
+      },
+      {
+        "id": "bulk450_m_216",
+        "name": "番茄牛肉",
+        "type": "fat_dominated",
+        "fatPercent": "60%"
+      },
+      {
+        "id": "bulk450_m_217",
+        "name": "牛肉土豆泥",
+        "type": "fat_dominated",
+        "fatPercent": "65%"
+      },
+      {
+        "id": "bulk450_m_221",
+        "name": "啤酒鸭",
+        "type": "fat_dominated",
+        "fatPercent": "74%"
+      },
+      {
+        "id": "bulk450_m_225",
+        "name": "红烧猪蹄",
+        "type": "fat_dominated",
+        "fatPercent": "67%"
+      },
+      {
+        "id": "bulk450_m_227",
+        "name": "可乐鸡翅(经典)",
+        "type": "fat_dominated",
+        "fatPercent": "60%"
+      },
+      {
+        "id": "bulk450_m_228",
+        "name": "蒜香鸡翅",
+        "type": "fat_dominated",
+        "fatPercent": "64%"
+      },
+      {
+        "id": "bulk450_m_230",
+        "name": "红烧鸡翅",
+        "type": "fat_dominated",
+        "fatPercent": "63%"
+      },
+      {
+        "id": "bulk450_m_231",
+        "name": "可乐姜葱翅",
+        "type": "fat_dominated",
+        "fatPercent": "60%"
+      },
+      {
+        "id": "bulk450_m_232",
+        "name": "土豆烧五花",
+        "type": "fat_high",
+        "perServing": "75.8g",
+        "percentOfCal": "86%"
+      },
+      {
+        "id": "bulk450_m_232",
+        "name": "土豆烧五花",
+        "type": "fat_dominated",
+        "fatPercent": "86%"
+      },
+      {
+        "id": "bulk450_m_233",
+        "name": "白菜烧五花",
+        "type": "fat_high",
+        "perServing": "75.8g",
+        "percentOfCal": "89%"
+      },
+      {
+        "id": "bulk450_m_233",
+        "name": "白菜烧五花",
+        "type": "fat_dominated",
+        "fatPercent": "89%"
+      },
+      {
+        "id": "bulk450_m_234",
+        "name": "酸菜白肉",
+        "type": "fat_high",
+        "perServing": "75.8g",
+        "percentOfCal": "89%"
+      },
+      {
+        "id": "bulk450_m_234",
+        "name": "酸菜白肉",
+        "type": "fat_dominated",
+        "fatPercent": "89%"
+      },
+      {
+        "id": "bulk450_m_240",
+        "name": "五花土豆胡萝卜烧",
+        "type": "fat_high",
+        "perServing": "75.9g",
+        "percentOfCal": "84%"
+      },
+      {
+        "id": "bulk450_m_240",
+        "name": "五花土豆胡萝卜烧",
+        "type": "fat_dominated",
+        "fatPercent": "84%"
+      },
+      {
+        "id": "bulk450_m_242",
+        "name": "玉米焖排骨",
+        "type": "fat_dominated",
+        "fatPercent": "63%"
+      },
+      {
+        "id": "bulk450_m_243",
+        "name": "香煎羊小排",
+        "type": "fat_dominated",
+        "fatPercent": "63%"
+      },
+      {
+        "id": "bulk450_m_244",
+        "name": "腐乳排骨(腐乳调味, 不算豆腐主菜)",
+        "type": "sodium_high",
+        "perServing": 1854,
+        "dailyPercent": "93%"
+      },
+      {
+        "id": "bulk450_m_244",
+        "name": "腐乳排骨(腐乳调味, 不算豆腐主菜)",
+        "type": "fat_dominated",
+        "fatPercent": "68%"
+      },
+      {
+        "id": "bulk450_mv_254",
+        "name": "红烧芋头",
+        "type": "protein_too_low",
+        "perServing": "2.7g",
+        "cal": 238
+      },
+      {
+        "id": "bulk450_ms_268",
+        "name": "芋头西米露(椰浆替代奶)",
+        "type": "protein_too_low",
+        "perServing": "2.3g",
+        "cal": 217
+      },
+      {
+        "id": "bulk450_h_271",
+        "name": "东坡肉",
+        "type": "fat_high",
+        "perServing": "71.4g",
+        "percentOfCal": "90%"
+      },
+      {
+        "id": "bulk450_h_271",
+        "name": "东坡肉",
+        "type": "fat_dominated",
+        "fatPercent": "90%"
+      },
+      {
+        "id": "bulk450_h_272",
+        "name": "正宗梅菜扣肉",
+        "type": "fat_high",
+        "perServing": "71.5g",
+        "percentOfCal": "88%"
+      },
+      {
+        "id": "bulk450_h_272",
+        "name": "正宗梅菜扣肉",
+        "type": "fat_dominated",
+        "fatPercent": "88%"
+      },
+      {
+        "id": "bulk450_h_273",
+        "name": "本帮红烧肉",
+        "type": "fat_high",
+        "perServing": "71.4g",
+        "percentOfCal": "90%"
+      },
+      {
+        "id": "bulk450_h_273",
+        "name": "本帮红烧肉",
+        "type": "fat_dominated",
+        "fatPercent": "90%"
+      },
+      {
+        "id": "bulk450_h_274",
+        "name": "红烧蹄髈",
+        "type": "fat_dominated",
+        "fatPercent": "67%"
+      },
+      {
+        "id": "bulk450_h_277",
+        "name": "番茄牛腩煲",
+        "type": "fat_dominated",
+        "fatPercent": "65%"
+      },
+      {
+        "id": "bulk450_h_278",
+        "name": "萝卜炖牛腩",
+        "type": "fat_dominated",
+        "fatPercent": "69%"
+      },
+      {
+        "id": "bulk450_h_281",
+        "name": "葱烧羊肉",
+        "type": "fat_dominated",
+        "fatPercent": "61%"
+      },
+      {
+        "id": "bulk450_h_283",
+        "name": "红烧羊小排",
+        "type": "fat_dominated",
+        "fatPercent": "65%"
+      },
+      {
+        "id": "bulk450_h_284",
+        "name": "啤酒鸭",
+        "type": "fat_dominated",
+        "fatPercent": "74%"
+      },
+      {
+        "id": "bulk450_h_285",
+        "name": "酸萝卜老鸭汤",
+        "type": "fat_dominated",
+        "fatPercent": "73%"
+      },
+      {
+        "id": "bulk450_h_286",
+        "name": "香酥鸭",
+        "type": "fat_dominated",
+        "fatPercent": "74%"
+      },
+      {
+        "id": "bulk450_h_287",
+        "name": "叫花鸡",
+        "type": "fat_dominated",
+        "fatPercent": "64%"
+      },
+      {
+        "id": "bulk450_h_288",
+        "name": "正宗盐焗鸡",
+        "type": "fat_dominated",
+        "fatPercent": "64%"
+      },
+      {
+        "id": "bulk450_h_289",
+        "name": "广式白斩鸡",
+        "type": "fat_dominated",
+        "fatPercent": "64%"
+      },
+      {
+        "id": "bulk450_h_291",
+        "name": "糖醋小排. ",
+        "type": "fat_dominated",
+        "fatPercent": "69%"
+      },
+      {
+        "id": "bulk450_h_292",
+        "name": "梅菜蒸排骨",
+        "type": "fat_dominated",
+        "fatPercent": "66%"
+      },
+      {
+        "id": "bulk450_h_293",
+        "name": "柠檬蒸排骨",
+        "type": "fat_dominated",
+        "fatPercent": "67%"
+      },
+      {
+        "id": "bulk450_h_300",
+        "name": "清炖狮子头",
+        "type": "fat_dominated",
+        "fatPercent": "70%"
+      },
+      {
+        "id": "bulk450_h_301",
+        "name": "蒜泥白肉",
+        "type": "fat_high",
+        "perServing": "71.4g",
+        "percentOfCal": "90%"
+      },
+      {
+        "id": "bulk450_h_301",
+        "name": "蒜泥白肉",
+        "type": "fat_dominated",
+        "fatPercent": "90%"
+      },
+      {
+        "id": "bulk450_h_302",
+        "name": "无锡排骨",
+        "type": "fat_dominated",
+        "fatPercent": "69%"
+      },
+      {
+        "id": "bulk450_h_303",
+        "name": "萝卜炖鸭腿",
+        "type": "fat_dominated",
+        "fatPercent": "64%"
+      },
+      {
+        "id": "bulk450_h_304",
+        "name": "红酒炖牛肉",
+        "type": "fat_dominated",
+        "fatPercent": "66%"
+      },
+      {
+        "id": "bulk450_h_305",
+        "name": "上海糖醋小排",
+        "type": "fat_high",
+        "perServing": "71.4g",
+        "percentOfCal": "90%"
+      },
+      {
+        "id": "bulk450_h_305",
+        "name": "上海糖醋小排",
+        "type": "fat_dominated",
+        "fatPercent": "90%"
+      },
+      {
+        "id": "bulk450_h_307",
+        "name": "正宗罗宋汤",
+        "type": "fat_dominated",
+        "fatPercent": "60%"
+      },
+      {
+        "id": "bulk450_h_308",
+        "name": "可乐酱烧翅",
+        "type": "fat_dominated",
+        "fatPercent": "61%"
+      },
+      {
+        "id": "bulk450_h_310",
+        "name": "咸肉烧笋干",
+        "type": "fat_high",
+        "perServing": "71.5g",
+        "percentOfCal": "89%"
+      },
+      {
+        "id": "bulk450_h_310",
+        "name": "咸肉烧笋干",
+        "type": "fat_dominated",
+        "fatPercent": "89%"
+      },
+      {
+        "id": "bulk450_h_312",
+        "name": "南乳排骨",
+        "type": "fat_dominated",
+        "fatPercent": "68%"
+      },
+      {
+        "id": "bulk450_h_317",
+        "name": "简化惠灵顿牛排",
+        "type": "fat_dominated",
+        "fatPercent": "60%"
+      },
+      {
+        "id": "bulk450_h_318",
+        "name": "南瓜扣肉",
+        "type": "fat_high",
+        "perServing": "71.4g",
+        "percentOfCal": "89%"
+      },
+      {
+        "id": "bulk450_h_318",
+        "name": "南瓜扣肉",
+        "type": "fat_dominated",
+        "fatPercent": "89%"
+      },
+      {
+        "id": "bulk450_h_319",
+        "name": "冬瓜陈皮排骨汤",
+        "type": "fat_dominated",
+        "fatPercent": "68%"
+      },
+      {
+        "id": "bulk450_h_320",
+        "name": "玉米莲藕排骨汤",
+        "type": "fat_dominated",
+        "fatPercent": "60%"
+      },
+      {
+        "id": "extra130_cold_000",
+        "name": "蒜蓉拍黄瓜",
+        "type": "cal_too_low",
+        "perServing": 44,
+        "servings": 2
+      },
+      {
+        "id": "extra130_cold_002",
+        "name": "香醋黄瓜片",
+        "type": "cal_too_low",
+        "perServing": 44,
+        "servings": 2
+      },
+      {
+        "id": "extra130_cold_009",
+        "name": "凉拌白萝卜丝",
+        "type": "cal_too_low",
+        "perServing": 46,
+        "servings": 2
+      },
+      {
+        "id": "extra130_cold_010",
+        "name": "凉拌芹菜",
+        "type": "cal_too_low",
+        "perServing": 44,
+        "servings": 2
+      },
+      {
+        "id": "extra130_cold_011",
+        "name": "芹菜花生",
+        "type": "fat_dominated",
+        "fatPercent": "73%"
+      },
+      {
+        "id": "extra130_cold_015",
+        "name": "凉拌莴笋丝",
+        "type": "cal_too_low",
+        "perServing": 46,
+        "servings": 2
+      },
+      {
+        "id": "extra130_cold_017",
+        "name": "秋葵拌花生",
+        "type": "fat_dominated",
+        "fatPercent": "68%"
+      },
+      {
+        "id": "extra130_cold_018",
+        "name": "凉拌芦笋",
+        "type": "cal_too_low",
+        "perServing": 48,
+        "servings": 2
+      },
+      {
+        "id": "extra130_cold_020",
+        "name": "菠菜拌花生",
+        "type": "fat_dominated",
+        "fatPercent": "72%"
+      },
+      {
+        "id": "extra130_cold_028",
+        "name": "凉拌西洋菜",
+        "type": "cal_too_low",
+        "perServing": 39,
+        "servings": 2
+      },
+      {
+        "id": "extra130_cold_035",
+        "name": "凉拌西葫芦丝",
+        "type": "cal_too_low",
+        "perServing": 45,
+        "servings": 2
+      },
+      {
+        "id": "extra130_cold_036",
+        "name": "凉拌蘑菇",
+        "type": "cal_too_low",
+        "perServing": 50,
+        "servings": 2
+      },
+      {
+        "id": "extra130_cold_040",
+        "name": "凉拌芥蓝",
+        "type": "cal_too_low",
+        "perServing": 50,
+        "servings": 2
+      },
+      {
+        "id": "extra130_cold_049",
+        "name": "凉拌空心菜梗",
+        "type": "cal_too_low",
+        "perServing": 47,
+        "servings": 2
+      },
+      {
+        "id": "extra130_cold_054",
+        "name": "雪菜笋丝凉拌",
+        "type": "sodium_high",
+        "perServing": 1827,
+        "dailyPercent": "91%"
+      },
+      {
+        "id": "extra130_cold_055",
+        "name": "榨菜丝凉拌",
+        "type": "sodium_high",
+        "perServing": 1875,
+        "dailyPercent": "94%"
+      },
+      {
+        "id": "extra130_cold_056",
+        "name": "味噌黄瓜",
+        "type": "sodium_high",
+        "perServing": 1646,
+        "dailyPercent": "82%"
+      },
+      {
+        "id": "extra130_cold_059",
+        "name": "蚝油生菜凉拌",
+        "type": "cal_too_low",
+        "perServing": 43,
+        "servings": 2
+      },
+      {
+        "id": "extra130_bf_066",
+        "name": "核桃米粥",
+        "type": "fat_dominated",
+        "fatPercent": "66%"
+      },
+      {
+        "id": "extra130_bf_089",
+        "name": "烤南瓜片",
+        "type": "cal_too_low",
+        "perServing": 35,
+        "servings": 2
+      },
+      {
+        "id": "extra130_em_095",
+        "name": "莴笋牛肉丝",
+        "type": "fat_dominated",
+        "fatPercent": "61%"
+      },
+      {
+        "id": "extra130_em_096",
+        "name": "茭白炒牛肉",
+        "type": "fat_dominated",
+        "fatPercent": "60%"
+      },
+      {
+        "id": "extra130_em_097",
+        "name": "茭白五花",
+        "type": "fat_high",
+        "perServing": "71.5g",
+        "percentOfCal": "89%"
+      },
+      {
+        "id": "extra130_em_097",
+        "name": "茭白五花",
+        "type": "fat_dominated",
+        "fatPercent": "89%"
+      },
+      {
+        "id": "extra130_em_102",
+        "name": "芋头烧五花",
+        "type": "fat_high",
+        "perServing": "71.5g",
+        "percentOfCal": "79%"
+      },
+      {
+        "id": "extra130_em_102",
+        "name": "芋头烧五花",
+        "type": "fat_dominated",
+        "fatPercent": "79%"
+      },
+      {
+        "id": "extra130_em_104",
+        "name": "毛豆鸭丁",
+        "type": "fat_dominated",
+        "fatPercent": "68%"
+      },
+      {
+        "id": "extra130_m_106",
+        "name": "山药烧五花",
+        "type": "fat_high",
+        "perServing": "75.8g",
+        "percentOfCal": "84%"
+      },
+      {
+        "id": "extra130_m_106",
+        "name": "山药烧五花",
+        "type": "fat_dominated",
+        "fatPercent": "84%"
+      },
+      {
+        "id": "extra130_m_107",
+        "name": "冬瓜烧五花",
+        "type": "fat_high",
+        "perServing": "75.8g",
+        "percentOfCal": "90%"
+      },
+      {
+        "id": "extra130_m_107",
+        "name": "冬瓜烧五花",
+        "type": "fat_dominated",
+        "fatPercent": "90%"
+      },
+      {
+        "id": "extra130_m_110",
+        "name": "啤酒咖喱鸭",
+        "type": "fat_dominated",
+        "fatPercent": "66%"
+      },
+      {
+        "id": "extra130_m_111",
+        "name": "土豆胡萝卜炖牛腩",
+        "type": "fat_dominated",
+        "fatPercent": "63%"
+      },
+      {
+        "id": "extra130_m_113",
+        "name": "冬瓜炖排骨",
+        "type": "fat_dominated",
+        "fatPercent": "68%"
+      },
+      {
+        "id": "extra130_m_114",
+        "name": "萝卜炖排骨",
+        "type": "fat_dominated",
+        "fatPercent": "67%"
+      },
+      {
+        "id": "extra130_m_115",
+        "name": "葡萄酒洋葱炖排骨",
+        "type": "fat_dominated",
+        "fatPercent": "66%"
+      },
+      {
+        "id": "extra130_m_116",
+        "name": "笋干焖鸭腿",
+        "type": "fat_dominated",
+        "fatPercent": "63%"
+      },
+      {
+        "id": "extra130_m_117",
+        "name": "笋干烧五花",
+        "type": "fat_high",
+        "perServing": "75.9g",
+        "percentOfCal": "89%"
+      },
+      {
+        "id": "extra130_m_117",
+        "name": "笋干烧五花",
+        "type": "fat_dominated",
+        "fatPercent": "89%"
+      },
+      {
+        "id": "extra130_m_119",
+        "name": "马蹄煎肉饼",
+        "type": "fat_dominated",
+        "fatPercent": "64%"
+      },
+      {
+        "id": "extra130_m_120",
+        "name": "酿茄子",
+        "type": "fat_dominated",
+        "fatPercent": "70%"
+      },
+      {
+        "id": "extra130_m_121",
+        "name": "酿青椒",
+        "type": "fat_dominated",
+        "fatPercent": "70%"
+      },
+      {
+        "id": "extra130_m_122",
+        "name": "酿冬瓜",
+        "type": "fat_dominated",
+        "fatPercent": "71%"
+      },
+      {
+        "id": "extra130_m_126",
+        "name": "柠檬蒸排骨",
+        "type": "fat_dominated",
+        "fatPercent": "66%"
+      },
+      {
+        "id": "extra130_m_127",
+        "name": "迷迭香烤羊排",
+        "type": "fat_dominated",
+        "fatPercent": "60%"
+      },
+      {
+        "id": "extra130_m_128",
+        "name": "罗勒煎牛肉",
+        "type": "fat_dominated",
+        "fatPercent": "61%"
+      },
+      {
+        "id": "extra130_m_130",
+        "name": "红枣烧五花",
+        "type": "fat_high",
+        "perServing": "76.0g",
+        "percentOfCal": "76%"
+      },
+      {
+        "id": "extra130_m_130",
+        "name": "红枣烧五花",
+        "type": "fat_dominated",
+        "fatPercent": "76%"
+      },
+      {
+        "id": "ma-po-dou-fu",
+        "name": "麻婆豆腐",
+        "type": "fat_dominated",
+        "fatPercent": "65%"
+      },
+      {
+        "id": "homestyle_steamed_salmon",
+        "name": "清蒸三文鱼",
+        "type": "fat_dominated",
+        "fatPercent": "62%"
+      },
+      {
+        "id": "sichuan_yuxiang_rousi",
+        "name": "鱼香肉丝",
+        "type": "fat_high",
+        "perServing": "51.2g",
+        "percentOfCal": "82%"
+      },
+      {
+        "id": "sichuan_yuxiang_rousi",
+        "name": "鱼香肉丝",
+        "type": "fat_dominated",
+        "fatPercent": "82%"
+      },
+      {
+        "id": "homestyle_jiachangdoufu",
+        "name": "家常豆腐",
+        "type": "fat_dominated",
+        "fatPercent": "64%"
+      },
+      {
+        "id": "shandong_tangcu_liji",
+        "name": "糖醋里脊",
+        "type": "fat_high",
+        "perServing": "62.9g",
+        "percentOfCal": "77%"
+      },
+      {
+        "id": "shandong_tangcu_liji",
+        "name": "糖醋里脊",
+        "type": "fat_dominated",
+        "fatPercent": "77%"
+      },
+      {
+        "id": "sichuan_shuizhu_niurou",
+        "name": "水煮牛肉",
+        "type": "fat_dominated",
+        "fatPercent": "65%"
+      },
+      {
+        "id": "dongbei_guobao_rou",
+        "name": "锅包肉",
+        "type": "fat_high",
+        "perServing": "61.1g",
+        "percentOfCal": "76%"
+      },
+      {
+        "id": "dongbei_guobao_rou",
+        "name": "锅包肉",
+        "type": "fat_dominated",
+        "fatPercent": "76%"
+      },
+      {
+        "id": "dongbei_chao_shougancai",
+        "name": "尖椒干豆腐",
+        "type": "fat_dominated",
+        "fatPercent": "62%"
+      },
+      {
+        "id": "cantonese_haoyu_shengcai",
+        "name": "蚝油生菜",
+        "type": "cal_too_low",
+        "perServing": 47,
+        "servings": 2
+      },
+      {
+        "id": "homestyle_rou_mo_zheng_dan",
+        "name": "肉末蒸蛋",
+        "type": "fat_dominated",
+        "fatPercent": "68%"
+      },
+      {
+        "id": "cantonese_zheng_rou_bing",
+        "name": "蒸肉饼",
+        "type": "fat_dominated",
+        "fatPercent": "68%"
+      },
+      {
+        "id": "shandong_cong_shao_haishen",
+        "name": "葱烧豆腐",
+        "type": "fat_dominated",
+        "fatPercent": "62%"
+      },
+      {
+        "id": "cantonese_guzao_rou",
+        "name": "咕噜肉",
+        "type": "fat_high",
+        "perServing": "63.0g",
+        "percentOfCal": "78%"
+      },
+      {
+        "id": "cantonese_guzao_rou",
+        "name": "咕噜肉",
+        "type": "fat_dominated",
+        "fatPercent": "78%"
+      },
+      {
+        "id": "jiangsu_hongshao_shizi_tou",
+        "name": "红烧狮子头",
+        "type": "fat_dominated",
+        "fatPercent": "71%"
+      },
+      {
+        "id": "gyeran_mari",
+        "name": "韩式鸡蛋卷",
+        "type": "fat_dominated",
+        "fatPercent": "70%"
+      },
+      {
+        "id": "eggplant_parm",
+        "name": "意式焗茄子",
+        "type": "fat_high",
+        "perServing": "63.1g",
+        "percentOfCal": "84%"
+      },
+      {
+        "id": "eggplant_parm",
+        "name": "意式焗茄子",
+        "type": "fat_dominated",
+        "fatPercent": "84%"
+      },
+      {
+        "id": "french_gratin_potato",
+        "name": "法式焗土豆",
+        "type": "fat_dominated",
+        "fatPercent": "65%"
+      },
+      {
+        "id": "tomato_egg_stirfry",
+        "name": "番茄炒蛋",
+        "type": "fat_dominated",
+        "fatPercent": "65%"
+      },
+      {
+        "id": "stir_fried_beef_mince_tofu",
+        "name": "牛肉末炒豆腐",
+        "type": "fat_dominated",
+        "fatPercent": "69%"
+      }
+    ]
+  }
+}

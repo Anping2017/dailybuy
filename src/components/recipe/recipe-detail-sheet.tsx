@@ -5,6 +5,7 @@ import { getIngredient } from '@/lib/data/recipe-repository';
 import { calcRecipeNutrition } from '@/lib/nutrition/calculator';
 // useAppStore for calorieEnabled flag
 import { Star, X, CalendarPlus, Edit, Trash2, Clock, Users, ChefHat } from 'lucide-react';
+import { NutritionBadges, PerServingPanel } from '@/components/recipe/nutrition-badges';
 import type { Recipe } from '@/types';
 import Link from 'next/link';
 
@@ -68,8 +69,18 @@ export function RecipeDetailSheet({ recipe, isFavorite, onClose, onToggleFav, on
             <span className="flex items-center gap-1"><Users className="w-3 h-3" /> {recipe.servings} 人份</span>
             <span>{METHOD_LABELS[recipe.cookingMethod] || recipe.cookingMethod}</span>
             <span>{DIFF_LABELS[recipe.difficulty]}</span>
-            {calorieOn && <span className="text-accent">共 {Math.round(nutrition.totalCalories)} kcal · {perServing} kcal/份</span>}
+            {calorieOn && !recipe.perServing && (
+              <span className="text-accent">共 {Math.round(nutrition.totalCalories)} kcal · {perServing} kcal/份</span>
+            )}
           </div>
+
+          {/* 健康徽章 */}
+          <NutritionBadges recipe={recipe} />
+
+          {/* 每份营养面板(预计算优先) */}
+          {calorieOn && recipe.perServing && (
+            <PerServingPanel recipe={recipe} />
+          )}
 
           {/* 食材 */}
           <div>

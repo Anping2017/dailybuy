@@ -3,6 +3,7 @@
 import { useEffect, useState, useCallback } from 'react';
 import Link from 'next/link';
 import { Search, ChevronLeft, ChevronRight, CheckCircle, Clock, XCircle, AlertTriangle, Eye } from 'lucide-react';
+import { NutritionBadges } from '@/components/recipe/nutrition-badges';
 import type { Recipe, RecipeStatus } from '@/types';
 
 interface QueryResult {
@@ -118,6 +119,8 @@ export default function RecipeListPage() {
                     <input type="checkbox" checked={selected.size === data.recipes.length && data.recipes.length > 0} onChange={toggleAll} />
                   </th>
                   <th className="p-3 text-left">菜名</th>
+                  <th className="p-3 text-right w-20">每份 kcal</th>
+                  <th className="p-3 text-left w-48">健康标签</th>
                   <th className="p-3 text-left w-16">做法</th>
                   <th className="p-3 text-left w-16">难度</th>
                   <th className="p-3 text-left w-16">餐次</th>
@@ -136,6 +139,16 @@ export default function RecipeListPage() {
                       <td className="p-3">
                         <p className="font-medium">{r.nameZh}</p>
                         <p className="text-xs text-muted">{r.nameEn}</p>
+                      </td>
+                      <td className="p-3 text-right text-sm">
+                        {r.perServing ? (
+                          <span className={r.perServing.calories > 800 ? 'text-red-600 font-medium' : ''}>
+                            {r.perServing.calories}
+                          </span>
+                        ) : <span className="text-muted">—</span>}
+                      </td>
+                      <td className="p-3">
+                        <NutritionBadges recipe={r} compact showAllergens={false} />
                       </td>
                       <td className="p-3 text-xs">{METHOD_LABELS[r.cookingMethod] || r.cookingMethod}</td>
                       <td className="p-3 text-xs">{DIFF_LABELS[r.difficulty]}</td>

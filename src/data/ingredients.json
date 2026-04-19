@@ -1135,7 +1135,7 @@
   {
     "id": "dried_noodles_rice",
     "nameZh": "米粉",
-    "nameEn": "Rice Noodles",
+    "nameEn": "Rice Vermicelli",
     "category": "grain",
     "nutrition": {
       "calories": 360,
@@ -1444,7 +1444,7 @@
   },
   {
     "id": "sausage",
-    "nameZh": "香肠/腊肠",
+    "nameZh": "香肠",
     "nameEn": "Sausage",
     "category": "meat",
     "nutrition": {
@@ -1720,8 +1720,8 @@
   },
   {
     "id": "leek",
-    "nameZh": "韭菜",
-    "nameEn": "Chinese Leek / Garlic Chives",
+    "nameZh": "韭葱",
+    "nameEn": "Leek",
     "category": "vegetable",
     "nutrition": {
       "calories": 30,
@@ -2226,7 +2226,7 @@
   {
     "id": "tomato_paste",
     "nameZh": "番茄酱",
-    "nameEn": "Tomato Paste / Ketchup",
+    "nameEn": "Ketchup / Tomato Sauce",
     "category": "seasoning",
     "nutrition": {
       "calories": 112,
@@ -2237,7 +2237,7 @@
       "sodium": 907,
       "sugar": 22
     },
-    "priceNZD": 3.9,
+    "priceNZD": 4,
     "unit": "bottle",
     "allergens": [],
     "warnings": [
@@ -3278,7 +3278,7 @@
       "sodium": 4,
       "sugar": 0.3
     },
-    "priceNZD": 4.65,
+    "priceNZD": 4.5,
     "unit": "bunch",
     "allergens": [],
     "warnings": [],
@@ -3623,7 +3623,7 @@
       "sodium": 55,
       "sugar": 0
     },
-    "priceNZD": 21.9,
+    "priceNZD": 19.9,
     "unit": "kg",
     "allergens": [],
     "warnings": [
@@ -3759,7 +3759,7 @@
       "sodium": 54,
       "sugar": 0
     },
-    "priceNZD": 28.57,
+    "priceNZD": 37.8,
     "unit": "kg",
     "allergens": [
       "allergen_seafood"
@@ -3986,7 +3986,7 @@
       "sodium": 543,
       "sugar": 1
     },
-    "priceNZD": 1.02,
+    "priceNZD": 0.63,
     "unit": "piece",
     "allergens": [
       "allergen_egg"
@@ -4042,7 +4042,7 @@
       "sodium": 1529,
       "sugar": 0.9
     },
-    "priceNZD": 29.99,
+    "priceNZD": 31.6,
     "unit": "kg",
     "allergens": [
       "allergen_dairy"
@@ -4340,7 +4340,7 @@
       "sodium": 5,
       "sugar": 0
     },
-    "priceNZD": 13.4,
+    "priceNZD": 15.4,
     "unit": "kg",
     "allergens": [],
     "warnings": [],
@@ -4946,34 +4946,6 @@
     "season": []
   },
   {
-    "id": "miso_paste",
-    "nameZh": "味噌",
-    "nameEn": "Miso Paste",
-    "category": "seasoning",
-    "nutrition": {
-      "calories": 199,
-      "protein": 12,
-      "fat": 6,
-      "carbs": 26,
-      "fiber": 5.4,
-      "sodium": 3728,
-      "sugar": 6.2
-    },
-    "priceNZD": 7.49,
-    "unit": "pack",
-    "allergens": [
-      "allergen_soy"
-    ],
-    "warnings": [
-      "high_sodium"
-    ],
-    "highlights": [],
-    "supermarkets": [
-      "countdown"
-    ],
-    "season": []
-  },
-  {
     "id": "gochujang",
     "nameZh": "韩式辣酱",
     "nameEn": "Gochujang",
@@ -5543,34 +5515,6 @@
     "highlights": [
       "high_fiber"
     ],
-    "supermarkets": [
-      "countdown"
-    ],
-    "season": []
-  },
-  {
-    "id": "cashew",
-    "nameZh": "腰果",
-    "nameEn": "Cashew",
-    "category": "dried",
-    "nutrition": {
-      "calories": 553,
-      "protein": 18,
-      "fat": 44,
-      "carbs": 30,
-      "fiber": 3.3,
-      "sodium": 12,
-      "sugar": 5.9
-    },
-    "priceNZD": 25.3,
-    "unit": "kg",
-    "allergens": [
-      "allergen_nut"
-    ],
-    "warnings": [
-      "high_fat"
-    ],
-    "highlights": [],
     "supermarkets": [
       "countdown"
     ],
@@ -6245,7 +6189,7 @@
       "sodium": 1116,
       "sugar": 4
     },
-    "priceNZD": 5.9,
+    "priceNZD": 5.35,
     "unit": "200g",
     "allergens": [
       "allergen_dairy"
@@ -6497,7 +6441,7 @@
       "sodium": 7,
       "sugar": 0.9
     },
-    "priceNZD": 5,
+    "priceNZD": 4,
     "unit": "kg",
     "allergens": [],
     "warnings": [],
@@ -7369,33 +7313,6 @@
     "season": []
   },
   {
-    "id": "ketchup",
-    "nameZh": "番茄酱",
-    "nameEn": "Ketchup",
-    "category": "seasoning",
-    "nutrition": {
-      "calories": 101,
-      "protein": 1.7,
-      "fat": 0.4,
-      "carbs": 25,
-      "fiber": 0.3,
-      "sodium": 907,
-      "sugar": 22
-    },
-    "priceNZD": 4,
-    "unit": "500g",
-    "allergens": [],
-    "warnings": [
-      "high_sodium",
-      "high_sugar"
-    ],
-    "highlights": [],
-    "supermarkets": [
-      "countdown"
-    ],
-    "season": []
-  },
-  {
     "id": "mayonnaise",
     "nameZh": "蛋黄酱",
     "nameEn": "Mayonnaise",
@@ -7562,7 +7479,7 @@
       "sodium": 5,
       "sugar": 0
     },
-    "priceNZD": 4.65,
+    "priceNZD": 5.95,
     "unit": "10g",
     "allergens": [],
     "warnings": [],
@@ -7871,7 +7788,7 @@
       "sodium": 0,
       "sugar": 0
     },
-    "priceNZD": 21.16,
+    "priceNZD": 17.5,
     "unit": "500ml",
     "allergens": [],
     "warnings": [
@@ -8175,7 +8092,7 @@
       "sodium": 0,
       "sugar": 7
     },
-    "priceNZD": 6.98,
+    "priceNZD": 6.48,
     "unit": "kg",
     "allergens": [],
     "warnings": [],
@@ -8599,7 +8516,7 @@
       "sodium": 2,
       "sugar": 14
     },
-    "priceNZD": 36.36,
+    "priceNZD": 21.9,
     "unit": "kg",
     "allergens": [],
     "warnings": [],
@@ -8623,7 +8540,7 @@
       "sodium": 2,
       "sugar": 0.5
     },
-    "priceNZD": 36.36,
+    "priceNZD": 21.9,
     "unit": "kg",
     "allergens": [],
     "warnings": [],
@@ -8677,7 +8594,7 @@
       "sodium": 1,
       "sugar": 100
     },
-    "priceNZD": 8,
+    "priceNZD": 4.6,
     "unit": "kg",
     "allergens": [],
     "warnings": [
@@ -8703,7 +8620,7 @@
       "sodium": 50,
       "sugar": 3.9
     },
-    "priceNZD": 4,
+    "priceNZD": 3.39,
     "unit": "1L",
     "healthTags": [
       "allergen_soy"
@@ -8797,7 +8714,7 @@
       "sodium": 28,
       "sugar": 97
     },
-    "priceNZD": 4,
+    "priceNZD": 2.4,
     "unit": "kg",
     "healthTags": [
       "high_sugar"
@@ -8822,7 +8739,7 @@
       "sodium": 2,
       "sugar": 0.04
     },
-    "priceNZD": 3,
+    "priceNZD": 3.95,
     "unit": "500ml",
     "healthTags": [],
     "supermarkets": [
@@ -8845,7 +8762,7 @@
       "sodium": 680,
       "sugar": 0
     },
-    "priceNZD": 22,
+    "priceNZD": 24.33,
     "unit": "kg",
     "healthTags": [
       "high_fat",
@@ -8893,7 +8810,7 @@
       "sodium": 23,
       "sugar": 0
     },
-    "priceNZD": 6,
+    "priceNZD": 3.4,
     "unit": "400g",
     "healthTags": [
       "gluten_free"
@@ -8939,7 +8856,9 @@
       "protein": 26.4,
       "fat": 28,
       "carbs": 0,
-      "fiber": 0
+      "fiber": 0,
+      "sodium": 20,
+      "sugar": 0
     },
     "priceNZD": 4.5,
     "unit": "kg",
@@ -8955,33 +8874,6 @@
     ]
   },
   {
-    "id": "tuna",
-    "nameZh": "金枪鱼罐头",
-    "nameEn": "Canned Tuna",
-    "category": "seafood",
-    "nutrition": {
-      "calories": 116,
-      "protein": 26,
-      "fat": 1,
-      "carbs": 0,
-      "fiber": 0
-    },
-    "priceNZD": 2.5,
-    "unit": "罐",
-    "healthTags": [
-      "high_protein",
-      "low_fat"
-    ],
-    "supermarkets": [
-      "countdown",
-      "new_world",
-      "pak_n_save"
-    ],
-    "season": [
-      "all"
-    ]
-  },
-  {
     "id": "pita",
     "nameZh": "口袋面包",
     "nameEn": "Pita Bread",
@@ -8991,7 +8883,9 @@
       "protein": 9,
       "fat": 1.2,
       "carbs": 55,
-      "fiber": 2.2
+      "fiber": 2.2,
+      "sodium": 536,
+      "sugar": 0.8
     },
     "priceNZD": 5,
     "unit": "包",
@@ -9014,9 +8908,11 @@
       "protein": 9,
       "fat": 6,
       "carbs": 54,
-      "fiber": 2
+      "fiber": 2,
+      "sodium": 500,
+      "sugar": 4
     },
-    "priceNZD": 6,
+    "priceNZD": 3,
     "unit": "包",
     "healthTags": [],
     "supermarkets": [
@@ -9037,9 +8933,11 @@
       "protein": 0.8,
       "fat": 11,
       "carbs": 6,
-      "fiber": 3.2
+      "fiber": 3.2,
+      "sodium": 735,
+      "sugar": 0
     },
-    "priceNZD": 4,
+    "priceNZD": 6,
     "unit": "罐",
     "healthTags": [
       "heart_healthy"
@@ -9062,9 +8960,11 @@
       "protein": 0,
       "fat": 0,
       "carbs": 13,
-      "fiber": 0
+      "fiber": 0,
+      "sodium": 9,
+      "sugar": 13
     },
-    "priceNZD": 8,
+    "priceNZD": 4.3,
     "unit": "瓶",
     "healthTags": [],
     "supermarkets": [
@@ -9084,9 +8984,11 @@
       "protein": 0,
       "fat": 0,
       "carbs": 96,
-      "fiber": 0
+      "fiber": 0,
+      "sodium": 60,
+      "sugar": 94
     },
-    "priceNZD": 6,
+    "priceNZD": 5.39,
     "unit": "包",
     "healthTags": [],
     "supermarkets": [
@@ -9106,9 +9008,11 @@
       "protein": 2.8,
       "fat": 0.6,
       "carbs": 63,
-      "fiber": 5.1
+      "fiber": 5.1,
+      "sodium": 28,
+      "sugar": 38
     },
-    "priceNZD": 5,
+    "priceNZD": 5.09,
     "unit": "瓶",
     "healthTags": [],
     "supermarkets": [
@@ -9128,7 +9032,9 @@
       "protein": 1,
       "fat": 0.2,
       "carbs": 7.6,
-      "fiber": 4
+      "fiber": 4,
+      "sodium": 3,
+      "sugar": 1
     },
     "priceNZD": 3,
     "unit": "把",
@@ -9154,7 +9060,7 @@
       "sodium": 1850,
       "sugar": 2
     },
-    "priceNZD": 5.99,
+    "priceNZD": 8.39,
     "unit": "bottle",
     "allergens": [],
     "warnings": [
@@ -9247,7 +9153,7 @@
       "sodium": 3728,
       "sugar": 6.2
     },
-    "priceNZD": 8.99,
+    "priceNZD": 7.49,
     "unit": "bottle",
     "allergens": [
       "allergen_soy"
@@ -9280,7 +9186,7 @@
       "sodium": 0,
       "sugar": 0.1
     },
-    "priceNZD": 3.49,
+    "priceNZD": 3.95,
     "unit": "pack",
     "allergens": [],
     "warnings": [
@@ -9310,7 +9216,7 @@
       "sodium": 2,
       "sugar": 0
     },
-    "priceNZD": 3.99,
+    "priceNZD": 2.25,
     "unit": "pack",
     "allergens": [
       "allergen_gluten"
@@ -9413,7 +9319,7 @@
       "sodium": 9,
       "sugar": 55
     },
-    "priceNZD": 25,
+    "priceNZD": 21.9,
     "unit": "kg",
     "allergens": [],
     "warnings": [],
@@ -9466,7 +9372,7 @@
       "sodium": 4,
       "sugar": 3
     },
-    "priceNZD": 9,
+    "priceNZD": 8.4,
     "unit": "kg",
     "allergens": [],
     "warnings": [],
@@ -9494,7 +9400,7 @@
       "sodium": 1300,
       "sugar": 1
     },
-    "priceNZD": 14,
+    "priceNZD": 19.93,
     "unit": "kg",
     "allergens": [],
     "warnings": [
@@ -9520,7 +9426,7 @@
       "sodium": 1100,
       "sugar": 2
     },
-    "priceNZD": 12,
+    "priceNZD": 8.6,
     "unit": "kg",
     "allergens": [],
     "warnings": [
@@ -9546,7 +9452,7 @@
       "sodium": 5,
       "sugar": 2
     },
-    "priceNZD": 25,
+    "priceNZD": 30,
     "unit": "kg",
     "allergens": [],
     "warnings": [],
@@ -9631,7 +9537,7 @@
       "sodium": 5,
       "sugar": 2
     },
-    "priceNZD": 8,
+    "priceNZD": 4.99,
     "unit": "kg",
     "allergens": [],
     "warnings": [],
@@ -9686,10 +9592,10 @@
       "sodium": 12,
       "sugar": 6
     },
-    "priceNZD": 35,
+    "priceNZD": 25.3,
     "unit": "kg",
     "allergens": [
-      "nuts"
+      "allergen_nut"
     ],
     "warnings": [],
     "highlights": [
@@ -9714,7 +9620,7 @@
       "sodium": 4,
       "sugar": 11
     },
-    "priceNZD": 3,
+    "priceNZD": 1.6,
     "unit": "L",
     "allergens": [],
     "warnings": [
@@ -9769,7 +9675,7 @@
       "sodium": 0,
       "sugar": 0
     },
-    "priceNZD": 0,
+    "priceNZD": 0.54,
     "unit": "L",
     "allergens": [],
     "warnings": [],
@@ -9791,10 +9697,10 @@
       "sodium": 50,
       "sugar": 4
     },
-    "priceNZD": 5,
+    "priceNZD": 3,
     "unit": "L",
     "allergens": [
-      "oat"
+      "allergen_gluten"
     ],
     "warnings": [],
     "highlights": [],
@@ -9802,5 +9708,1096 @@
       "countdown"
     ],
     "season": []
+  },
+  {
+    "id": "beef_slice",
+    "nameZh": "肥牛片",
+    "nameEn": "Fatty Beef Slice",
+    "category": "meat",
+    "nutrition": {
+      "calories": 260,
+      "protein": 17,
+      "fat": 21,
+      "carbs": 0,
+      "fiber": 0,
+      "sodium": 70,
+      "sugar": 0
+    },
+    "priceNZD": 27,
+    "unit": "kg",
+    "allergens": [],
+    "warnings": [
+      "high_fat"
+    ],
+    "highlights": [
+      "high_protein"
+    ],
+    "supermarkets": [
+      "countdown"
+    ],
+    "season": []
+  },
+  {
+    "id": "cured_pork",
+    "nameZh": "腊肉",
+    "nameEn": "Chinese Cured Pork",
+    "category": "meat",
+    "nutrition": {
+      "calories": 470,
+      "protein": 20,
+      "fat": 43,
+      "carbs": 2,
+      "fiber": 0,
+      "sodium": 2000,
+      "sugar": 1
+    },
+    "priceNZD": 32,
+    "unit": "kg",
+    "allergens": [],
+    "warnings": [
+      "high_fat",
+      "high_sodium",
+      "processed"
+    ],
+    "highlights": [
+      "high_protein"
+    ],
+    "supermarkets": [
+      "countdown"
+    ],
+    "season": []
+  },
+  {
+    "id": "crucian_carp",
+    "nameZh": "鲫鱼",
+    "nameEn": "Crucian Carp",
+    "category": "seafood",
+    "nutrition": {
+      "calories": 108,
+      "protein": 17.1,
+      "fat": 2.7,
+      "carbs": 0,
+      "fiber": 0,
+      "sodium": 41,
+      "sugar": 0
+    },
+    "priceNZD": 16,
+    "unit": "kg",
+    "allergens": [
+      "allergen_seafood"
+    ],
+    "warnings": [],
+    "highlights": [
+      "high_protein",
+      "low_fat"
+    ],
+    "supermarkets": [
+      "countdown"
+    ],
+    "season": []
+  },
+  {
+    "id": "carp",
+    "nameZh": "鲤鱼",
+    "nameEn": "Carp",
+    "category": "seafood",
+    "nutrition": {
+      "calories": 127,
+      "protein": 17.8,
+      "fat": 5.6,
+      "carbs": 0,
+      "fiber": 0,
+      "sodium": 49,
+      "sugar": 0
+    },
+    "priceNZD": 14,
+    "unit": "kg",
+    "allergens": [
+      "allergen_seafood"
+    ],
+    "warnings": [],
+    "highlights": [
+      "high_protein"
+    ],
+    "supermarkets": [
+      "countdown"
+    ],
+    "season": []
+  },
+  {
+    "id": "grass_carp",
+    "nameZh": "草鱼",
+    "nameEn": "Grass Carp",
+    "category": "seafood",
+    "nutrition": {
+      "calories": 113,
+      "protein": 16.6,
+      "fat": 5.2,
+      "carbs": 0,
+      "fiber": 0,
+      "sodium": 46,
+      "sugar": 0
+    },
+    "priceNZD": 14,
+    "unit": "kg",
+    "allergens": [
+      "allergen_seafood"
+    ],
+    "warnings": [],
+    "highlights": [
+      "high_protein"
+    ],
+    "supermarkets": [
+      "countdown"
+    ],
+    "season": []
+  },
+  {
+    "id": "lime",
+    "nameZh": "青柠",
+    "nameEn": "Lime",
+    "category": "fruit",
+    "nutrition": {
+      "calories": 30,
+      "protein": 0.7,
+      "fat": 0.2,
+      "carbs": 10.5,
+      "fiber": 2.8,
+      "sodium": 2,
+      "sugar": 1.7
+    },
+    "priceNZD": 1.5,
+    "unit": "piece",
+    "allergens": [],
+    "warnings": [],
+    "highlights": [
+      "low_calorie"
+    ],
+    "supermarkets": [
+      "countdown"
+    ],
+    "season": []
+  },
+  {
+    "id": "frozen_tofu",
+    "nameZh": "冻豆腐",
+    "nameEn": "Frozen Tofu",
+    "category": "bean",
+    "nutrition": {
+      "calories": 80,
+      "protein": 9,
+      "fat": 5,
+      "carbs": 2,
+      "fiber": 0.5,
+      "sodium": 10,
+      "sugar": 0.5
+    },
+    "priceNZD": 6,
+    "unit": "pack",
+    "allergens": [
+      "allergen_soy"
+    ],
+    "warnings": [],
+    "highlights": [
+      "high_protein"
+    ],
+    "supermarkets": [
+      "countdown"
+    ],
+    "season": []
+  },
+  {
+    "id": "coffee_beans",
+    "nameZh": "咖啡豆",
+    "nameEn": "Coffee Beans",
+    "category": "dried",
+    "nutrition": {
+      "calories": 200,
+      "protein": 13,
+      "fat": 15,
+      "carbs": 35,
+      "fiber": 25
+    },
+    "priceNZD": 20,
+    "unit": "kg",
+    "allergens": [],
+    "warnings": [],
+    "highlights": [],
+    "season": [
+      "all"
+    ]
+  },
+  {
+    "id": "espresso",
+    "nameZh": "浓缩咖啡",
+    "nameEn": "Espresso Shot",
+    "category": "seasoning",
+    "nutrition": {
+      "calories": 2,
+      "protein": 0.1,
+      "fat": 0,
+      "carbs": 0.4,
+      "fiber": 0
+    },
+    "priceNZD": 3,
+    "unit": "份",
+    "allergens": [],
+    "warnings": [],
+    "highlights": [],
+    "season": [
+      "all"
+    ]
+  },
+  {
+    "id": "instant_coffee",
+    "nameZh": "速溶咖啡粉",
+    "nameEn": "Instant Coffee",
+    "category": "dried",
+    "nutrition": {
+      "calories": 7,
+      "protein": 0.3,
+      "fat": 0,
+      "carbs": 1.2,
+      "fiber": 0
+    },
+    "priceNZD": 12,
+    "unit": "瓶",
+    "allergens": [],
+    "warnings": [],
+    "highlights": [],
+    "season": [
+      "all"
+    ]
+  },
+  {
+    "id": "matcha_powder",
+    "nameZh": "抹茶粉",
+    "nameEn": "Matcha Powder",
+    "category": "dried",
+    "nutrition": {
+      "calories": 324,
+      "protein": 31,
+      "fat": 5,
+      "carbs": 39,
+      "fiber": 38
+    },
+    "priceNZD": 25,
+    "unit": "罐",
+    "allergens": [],
+    "warnings": [],
+    "highlights": [
+      "high_fiber"
+    ],
+    "season": [
+      "all"
+    ]
+  },
+  {
+    "id": "tea_black",
+    "nameZh": "红茶",
+    "nameEn": "Black Tea",
+    "category": "dried",
+    "nutrition": {
+      "calories": 1,
+      "protein": 0,
+      "fat": 0,
+      "carbs": 0.3,
+      "fiber": 0
+    },
+    "priceNZD": 10,
+    "unit": "包",
+    "allergens": [],
+    "warnings": [],
+    "highlights": [],
+    "season": [
+      "all"
+    ]
+  },
+  {
+    "id": "tea_green",
+    "nameZh": "绿茶",
+    "nameEn": "Green Tea",
+    "category": "dried",
+    "nutrition": {
+      "calories": 1,
+      "protein": 0,
+      "fat": 0,
+      "carbs": 0.2,
+      "fiber": 0
+    },
+    "priceNZD": 10,
+    "unit": "包",
+    "allergens": [],
+    "warnings": [],
+    "highlights": [],
+    "season": [
+      "all"
+    ]
+  },
+  {
+    "id": "tea_oolong",
+    "nameZh": "乌龙茶",
+    "nameEn": "Oolong Tea",
+    "category": "dried",
+    "nutrition": {
+      "calories": 1,
+      "protein": 0,
+      "fat": 0,
+      "carbs": 0.2,
+      "fiber": 0
+    },
+    "priceNZD": 12,
+    "unit": "包",
+    "allergens": [],
+    "warnings": [],
+    "highlights": [],
+    "season": [
+      "all"
+    ]
+  },
+  {
+    "id": "tea_jasmine",
+    "nameZh": "茉莉花茶",
+    "nameEn": "Jasmine Tea",
+    "category": "dried",
+    "nutrition": {
+      "calories": 1,
+      "protein": 0,
+      "fat": 0,
+      "carbs": 0.2,
+      "fiber": 0
+    },
+    "priceNZD": 12,
+    "unit": "包",
+    "allergens": [],
+    "warnings": [],
+    "highlights": [],
+    "season": [
+      "all"
+    ]
+  },
+  {
+    "id": "tea_puer",
+    "nameZh": "普洱茶",
+    "nameEn": "Pu-erh Tea",
+    "category": "dried",
+    "nutrition": {
+      "calories": 1,
+      "protein": 0,
+      "fat": 0,
+      "carbs": 0.2,
+      "fiber": 0
+    },
+    "priceNZD": 15,
+    "unit": "饼",
+    "allergens": [],
+    "warnings": [],
+    "highlights": [],
+    "season": [
+      "all"
+    ]
+  },
+  {
+    "id": "tea_earl_grey",
+    "nameZh": "伯爵茶",
+    "nameEn": "Earl Grey Tea",
+    "category": "dried",
+    "nutrition": {
+      "calories": 1,
+      "protein": 0,
+      "fat": 0,
+      "carbs": 0.3,
+      "fiber": 0
+    },
+    "priceNZD": 12,
+    "unit": "包",
+    "allergens": [],
+    "warnings": [],
+    "highlights": [],
+    "season": [
+      "all"
+    ]
+  },
+  {
+    "id": "tea_tieguanyin",
+    "nameZh": "铁观音",
+    "nameEn": "Tieguanyin Oolong",
+    "category": "dried",
+    "nutrition": {
+      "calories": 1,
+      "protein": 0,
+      "fat": 0,
+      "carbs": 0.2,
+      "fiber": 0
+    },
+    "priceNZD": 18,
+    "unit": "包",
+    "allergens": [],
+    "warnings": [],
+    "highlights": [],
+    "season": [
+      "all"
+    ]
+  },
+  {
+    "id": "tea_longjing",
+    "nameZh": "龙井茶",
+    "nameEn": "Longjing Green Tea",
+    "category": "dried",
+    "nutrition": {
+      "calories": 1,
+      "protein": 0,
+      "fat": 0,
+      "carbs": 0.2,
+      "fiber": 0
+    },
+    "priceNZD": 20,
+    "unit": "罐",
+    "allergens": [],
+    "warnings": [],
+    "highlights": [],
+    "season": [
+      "all"
+    ]
+  },
+  {
+    "id": "chamomile",
+    "nameZh": "甘菊",
+    "nameEn": "Chamomile",
+    "category": "dried",
+    "nutrition": {
+      "calories": 1,
+      "protein": 0,
+      "fat": 0,
+      "carbs": 0.3,
+      "fiber": 0
+    },
+    "priceNZD": 8,
+    "unit": "包",
+    "allergens": [],
+    "warnings": [],
+    "highlights": [],
+    "season": [
+      "all"
+    ]
+  },
+  {
+    "id": "chrysanthemum",
+    "nameZh": "菊花",
+    "nameEn": "Chrysanthemum Flower",
+    "category": "dried",
+    "nutrition": {
+      "calories": 25,
+      "protein": 2.5,
+      "fat": 0.5,
+      "carbs": 4,
+      "fiber": 3
+    },
+    "priceNZD": 8,
+    "unit": "包",
+    "allergens": [],
+    "warnings": [],
+    "highlights": [],
+    "season": [
+      "all"
+    ]
+  },
+  {
+    "id": "osmanthus",
+    "nameZh": "桂花",
+    "nameEn": "Osmanthus Flower",
+    "category": "dried",
+    "nutrition": {
+      "calories": 15,
+      "protein": 1,
+      "fat": 0.2,
+      "carbs": 3,
+      "fiber": 2
+    },
+    "priceNZD": 15,
+    "unit": "瓶",
+    "allergens": [],
+    "warnings": [],
+    "highlights": [],
+    "season": [
+      "3",
+      "4",
+      "9",
+      "10"
+    ]
+  },
+  {
+    "id": "chocolate_dark",
+    "nameZh": "黑巧克力",
+    "nameEn": "Dark Chocolate",
+    "category": "dried",
+    "nutrition": {
+      "calories": 598,
+      "protein": 7.8,
+      "fat": 43,
+      "carbs": 46,
+      "fiber": 11
+    },
+    "priceNZD": 15,
+    "unit": "kg",
+    "allergens": [],
+    "warnings": [
+      "high_sugar",
+      "high_fat"
+    ],
+    "highlights": [],
+    "season": [
+      "all"
+    ]
+  },
+  {
+    "id": "chocolate_white",
+    "nameZh": "白巧克力",
+    "nameEn": "White Chocolate",
+    "category": "dried",
+    "nutrition": {
+      "calories": 539,
+      "protein": 5.9,
+      "fat": 32,
+      "carbs": 59,
+      "fiber": 0
+    },
+    "priceNZD": 12,
+    "unit": "kg",
+    "allergens": [
+      "allergen_dairy"
+    ],
+    "warnings": [
+      "high_sugar",
+      "high_fat"
+    ],
+    "highlights": [],
+    "season": [
+      "all"
+    ]
+  },
+  {
+    "id": "cocoa_powder",
+    "nameZh": "可可粉",
+    "nameEn": "Cocoa Powder",
+    "category": "seasoning",
+    "nutrition": {
+      "calories": 228,
+      "protein": 19.6,
+      "fat": 14,
+      "carbs": 58,
+      "fiber": 33
+    },
+    "priceNZD": 8,
+    "unit": "罐",
+    "allergens": [],
+    "warnings": [],
+    "highlights": [
+      "high_fiber"
+    ],
+    "season": [
+      "all"
+    ]
+  },
+  {
+    "id": "baking_powder",
+    "nameZh": "泡打粉",
+    "nameEn": "Baking Powder",
+    "category": "seasoning",
+    "nutrition": {
+      "calories": 53,
+      "protein": 0,
+      "fat": 0,
+      "carbs": 28,
+      "fiber": 0
+    },
+    "priceNZD": 5,
+    "unit": "罐",
+    "allergens": [],
+    "warnings": [
+      "high_sodium"
+    ],
+    "highlights": [],
+    "season": [
+      "all"
+    ]
+  },
+  {
+    "id": "baking_soda",
+    "nameZh": "小苏打",
+    "nameEn": "Baking Soda",
+    "category": "seasoning",
+    "nutrition": {
+      "calories": 0,
+      "protein": 0,
+      "fat": 0,
+      "carbs": 0,
+      "fiber": 0
+    },
+    "priceNZD": 3,
+    "unit": "包",
+    "allergens": [],
+    "warnings": [
+      "high_sodium"
+    ],
+    "highlights": [],
+    "season": [
+      "all"
+    ]
+  },
+  {
+    "id": "yeast",
+    "nameZh": "酵母",
+    "nameEn": "Yeast",
+    "category": "seasoning",
+    "nutrition": {
+      "calories": 325,
+      "protein": 40,
+      "fat": 7.6,
+      "carbs": 41,
+      "fiber": 27
+    },
+    "priceNZD": 6,
+    "unit": "包",
+    "allergens": [],
+    "warnings": [],
+    "highlights": [
+      "high_protein"
+    ],
+    "season": [
+      "all"
+    ]
+  },
+  {
+    "id": "gelatin",
+    "nameZh": "明胶/吉利丁",
+    "nameEn": "Gelatin",
+    "category": "dried",
+    "nutrition": {
+      "calories": 335,
+      "protein": 86,
+      "fat": 0.1,
+      "carbs": 0,
+      "fiber": 0
+    },
+    "priceNZD": 8,
+    "unit": "包",
+    "allergens": [],
+    "warnings": [],
+    "highlights": [
+      "high_protein"
+    ],
+    "season": [
+      "all"
+    ]
+  },
+  {
+    "id": "heavy_cream",
+    "nameZh": "重奶油",
+    "nameEn": "Heavy Cream",
+    "category": "egg_dairy",
+    "nutrition": {
+      "calories": 340,
+      "protein": 2.8,
+      "fat": 36,
+      "carbs": 2.8,
+      "fiber": 0
+    },
+    "priceNZD": 6,
+    "unit": "盒",
+    "allergens": [
+      "allergen_dairy"
+    ],
+    "warnings": [
+      "high_fat"
+    ],
+    "highlights": [],
+    "season": [
+      "all"
+    ]
+  },
+  {
+    "id": "cake_flour",
+    "nameZh": "低筋面粉",
+    "nameEn": "Cake Flour",
+    "category": "grain",
+    "nutrition": {
+      "calories": 362,
+      "protein": 8.5,
+      "fat": 0.8,
+      "carbs": 78,
+      "fiber": 2.5
+    },
+    "priceNZD": 5,
+    "unit": "包",
+    "allergens": [
+      "allergen_gluten"
+    ],
+    "warnings": [],
+    "highlights": [],
+    "season": [
+      "all"
+    ]
+  },
+  {
+    "id": "bread_flour",
+    "nameZh": "高筋面粉",
+    "nameEn": "Bread Flour",
+    "category": "grain",
+    "nutrition": {
+      "calories": 361,
+      "protein": 13,
+      "fat": 1.2,
+      "carbs": 73,
+      "fiber": 2.7
+    },
+    "priceNZD": 5,
+    "unit": "包",
+    "allergens": [
+      "allergen_gluten"
+    ],
+    "warnings": [],
+    "highlights": [],
+    "season": [
+      "all"
+    ]
+  },
+  {
+    "id": "custard_powder",
+    "nameZh": "卡士达粉",
+    "nameEn": "Custard Powder",
+    "category": "seasoning",
+    "nutrition": {
+      "calories": 380,
+      "protein": 1,
+      "fat": 0.5,
+      "carbs": 94,
+      "fiber": 0
+    },
+    "priceNZD": 6,
+    "unit": "罐",
+    "allergens": [
+      "allergen_gluten"
+    ],
+    "warnings": [],
+    "highlights": [],
+    "season": [
+      "all"
+    ]
+  },
+  {
+    "id": "sago",
+    "nameZh": "西米",
+    "nameEn": "Sago",
+    "category": "grain",
+    "nutrition": {
+      "calories": 355,
+      "protein": 0.2,
+      "fat": 0,
+      "carbs": 88,
+      "fiber": 0.5
+    },
+    "priceNZD": 6,
+    "unit": "包",
+    "allergens": [],
+    "warnings": [],
+    "highlights": [],
+    "season": [
+      "all"
+    ]
+  },
+  {
+    "id": "tapioca_pearl",
+    "nameZh": "珍珠粉圆",
+    "nameEn": "Tapioca Pearls",
+    "category": "grain",
+    "nutrition": {
+      "calories": 358,
+      "protein": 0.2,
+      "fat": 0,
+      "carbs": 89,
+      "fiber": 0.9
+    },
+    "priceNZD": 8,
+    "unit": "包",
+    "allergens": [],
+    "warnings": [],
+    "highlights": [],
+    "season": [
+      "all"
+    ]
+  },
+  {
+    "id": "grass_jelly",
+    "nameZh": "仙草冻",
+    "nameEn": "Grass Jelly",
+    "category": "dried",
+    "nutrition": {
+      "calories": 23,
+      "protein": 0.2,
+      "fat": 0,
+      "carbs": 5.6,
+      "fiber": 0.2
+    },
+    "priceNZD": 5,
+    "unit": "罐",
+    "allergens": [],
+    "warnings": [],
+    "highlights": [],
+    "season": [
+      "all"
+    ]
+  },
+  {
+    "id": "snow_pear",
+    "nameZh": "雪梨",
+    "nameEn": "Snow Pear",
+    "category": "fruit",
+    "nutrition": {
+      "calories": 57,
+      "protein": 0.4,
+      "fat": 0.1,
+      "carbs": 15,
+      "fiber": 3.1
+    },
+    "priceNZD": 4,
+    "unit": "kg",
+    "allergens": [],
+    "warnings": [],
+    "highlights": [
+      "high_fiber"
+    ],
+    "season": [
+      "9",
+      "10",
+      "11",
+      "12"
+    ]
+  },
+  {
+    "id": "black_sesame",
+    "nameZh": "黑芝麻",
+    "nameEn": "Black Sesame",
+    "category": "dried",
+    "nutrition": {
+      "calories": 573,
+      "protein": 18,
+      "fat": 50,
+      "carbs": 23,
+      "fiber": 12
+    },
+    "priceNZD": 12,
+    "unit": "kg",
+    "allergens": [
+      "allergen_sesame"
+    ],
+    "warnings": [],
+    "highlights": [
+      "high_fiber"
+    ],
+    "season": [
+      "all"
+    ]
+  },
+  {
+    "id": "purple_sweet_potato",
+    "nameZh": "紫薯",
+    "nameEn": "Purple Sweet Potato",
+    "category": "vegetable",
+    "nutrition": {
+      "calories": 86,
+      "protein": 1.6,
+      "fat": 0.1,
+      "carbs": 20,
+      "fiber": 3
+    },
+    "priceNZD": 5,
+    "unit": "kg",
+    "allergens": [],
+    "warnings": [],
+    "highlights": [
+      "high_fiber"
+    ],
+    "season": [
+      "all"
+    ]
+  },
+  {
+    "id": "passion_fruit",
+    "nameZh": "百香果",
+    "nameEn": "Passion Fruit",
+    "category": "fruit",
+    "nutrition": {
+      "calories": 97,
+      "protein": 2.2,
+      "fat": 0.7,
+      "carbs": 23,
+      "fiber": 10
+    },
+    "priceNZD": 15,
+    "unit": "kg",
+    "allergens": [],
+    "warnings": [],
+    "highlights": [
+      "high_fiber"
+    ],
+    "season": [
+      "3",
+      "4",
+      "5"
+    ]
+  },
+  {
+    "id": "yuzu",
+    "nameZh": "柚子/香橙",
+    "nameEn": "Yuzu",
+    "category": "fruit",
+    "nutrition": {
+      "calories": 50,
+      "protein": 0.8,
+      "fat": 0.3,
+      "carbs": 13,
+      "fiber": 1.9
+    },
+    "priceNZD": 8,
+    "unit": "kg",
+    "allergens": [],
+    "warnings": [],
+    "highlights": [],
+    "season": [
+      "10",
+      "11",
+      "12"
+    ]
+  },
+  {
+    "id": "sparkling_water",
+    "nameZh": "气泡水",
+    "nameEn": "Sparkling Water",
+    "category": "seasoning",
+    "nutrition": {
+      "calories": 0,
+      "protein": 0,
+      "fat": 0,
+      "carbs": 0,
+      "fiber": 0
+    },
+    "priceNZD": 3,
+    "unit": "瓶",
+    "allergens": [],
+    "warnings": [],
+    "highlights": [],
+    "season": [
+      "all"
+    ]
+  },
+  {
+    "id": "cornstarch",
+    "nameZh": "玉米淀粉",
+    "nameEn": "Cornstarch",
+    "category": "grain",
+    "nutrition": {
+      "calories": 381,
+      "protein": 0.3,
+      "fat": 0,
+      "carbs": 91,
+      "fiber": 0.9
+    },
+    "priceNZD": 4,
+    "unit": "包",
+    "allergens": [],
+    "warnings": [],
+    "highlights": [],
+    "season": [
+      "all"
+    ]
+  },
+  {
+    "id": "pork_shoulder",
+    "nameZh": "猪肩肉",
+    "nameEn": "Pork Shoulder",
+    "category": "meat",
+    "nutrition": {
+      "calories": 242,
+      "protein": 20,
+      "fat": 17,
+      "carbs": 0,
+      "fiber": 0
+    },
+    "priceNZD": 14,
+    "unit": "kg",
+    "allergens": [],
+    "warnings": [],
+    "highlights": [
+      "high_protein"
+    ],
+    "season": [
+      "all"
+    ]
+  },
+  {
+    "id": "maltose",
+    "nameZh": "麦芽糖",
+    "nameEn": "Maltose",
+    "category": "seasoning",
+    "nutrition": {
+      "calories": 318,
+      "protein": 0,
+      "fat": 0,
+      "carbs": 79,
+      "fiber": 0
+    },
+    "priceNZD": 6,
+    "unit": "瓶",
+    "allergens": [],
+    "warnings": [
+      "high_sugar"
+    ],
+    "highlights": [],
+    "season": [
+      "all"
+    ]
+  },
+  {
+    "id": "dried_tangerine_peel",
+    "nameZh": "陈皮",
+    "nameEn": "Dried Tangerine Peel",
+    "category": "dried",
+    "nutrition": {
+      "calories": 200,
+      "protein": 4,
+      "fat": 1,
+      "carbs": 48,
+      "fiber": 14
+    },
+    "priceNZD": 15,
+    "unit": "包",
+    "allergens": [],
+    "warnings": [],
+    "highlights": [],
+    "season": [
+      "all"
+    ]
+  },
+  {
+    "id": "lily_bulb",
+    "nameZh": "百合",
+    "nameEn": "Lily Bulb",
+    "category": "dried",
+    "nutrition": {
+      "calories": 166,
+      "protein": 3.2,
+      "fat": 0.1,
+      "carbs": 39,
+      "fiber": 1.7
+    },
+    "priceNZD": 12,
+    "unit": "包",
+    "allergens": [],
+    "warnings": [],
+    "highlights": [],
+    "season": [
+      "all"
+    ]
   }
 ]

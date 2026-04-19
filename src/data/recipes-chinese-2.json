@@ -67,7 +67,29 @@
       "家常菜",
       "下饭菜"
     ],
-    "description": "东北风味家常好味。精心烹饪，口感咸香、鲜美，新手友好，快手完成。"
+    "description": "东北菜里的下饭好手。以土豆配茄子为主料，翻炒收汁，爽脆入味，口味咸香、鲜美，家常操作、零失败。",
+    "dishRole": "main_veg",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": null,
+    "perServing": {
+      "calories": 187,
+      "protein": 3,
+      "fat": 10.3,
+      "carbs": 21.7,
+      "fiber": 4.3,
+      "sodium": 282,
+      "sugar": 4.3
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_gluten",
+      "allergen_soy"
+    ],
+    "dietaryFlags": []
   },
   {
     "id": "homestyle_huiguo_rou",
@@ -143,7 +165,31 @@
       "下饭菜",
       "便当菜"
     ],
-    "description": "川菜家常好味。精心烹饪，口感香辣、咸香、鲜美，适合午餐/晚餐享用。"
+    "description": "川菜里的下饭好手。以五花肉配豆瓣酱为主料，翻炒收汁，爽脆入味，口味香辣、咸香、鲜美，家常做法、人人可学。",
+    "dishRole": "main_meat",
+    "isVegetarian": false,
+    "dishStyle": "meat",
+    "stapleCategory": null,
+    "perServing": {
+      "calories": 574,
+      "protein": 10.5,
+      "fat": 56.6,
+      "carbs": 4.6,
+      "fiber": 0.9,
+      "sodium": 499,
+      "sugar": 1.7
+    },
+    "nutritionWarnings": [
+      "high_fat"
+    ],
+    "nutritionHighlights": [
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_gluten",
+      "allergen_soy"
+    ],
+    "dietaryFlags": []
   },
   {
     "id": "sichuan_yuxiang_rousi",
@@ -241,7 +287,34 @@
       "下饭菜",
       "便当菜"
     ],
-    "description": "川菜家常好味。精心烹饪，口感甘甜、酸爽、香辣，适合午餐/晚餐享用。"
+    "description": "川菜经典家常做法。以五花肉配胡萝卜为主料，旺火快炒，爽脆入味，口味甘甜、酸爽、香辣，一次成功的家常菜。",
+    "dishRole": "main_meat",
+    "isVegetarian": false,
+    "dishStyle": "meat",
+    "stapleCategory": null,
+    "cookingMethod": "stir_fry",
+    "perServing": {
+      "calories": 560,
+      "protein": 9.8,
+      "fat": 51.2,
+      "carbs": 15.2,
+      "fiber": 1.8,
+      "sodium": 442,
+      "sugar": 8.1
+    },
+    "nutritionWarnings": [
+      "high_fat"
+    ],
+    "nutritionHighlights": [
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_gluten",
+      "allergen_soy"
+    ],
+    "dietaryFlags": [
+      "high_purine"
+    ]
   },
   {
     "id": "homestyle_jiachangdoufu",
@@ -321,7 +394,30 @@
       "下饭菜",
       "便当菜"
     ],
-    "description": "家常家常好味。精心烹饪，口感咸香、鲜美，新手友好，快手完成。"
+    "description": "家常菜家庭餐桌常客。以豆腐配猪肉末为主料，翻炒收汁，锅气十足，口味咸香、鲜美，快手就能端上桌。",
+    "dishRole": "main_meat",
+    "isVegetarian": false,
+    "dishStyle": "meat",
+    "stapleCategory": null,
+    "perServing": {
+      "calories": 365,
+      "protein": 24.3,
+      "fat": 25.7,
+      "carbs": 12.6,
+      "fiber": 2,
+      "sodium": 608,
+      "sugar": 3.7
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_gluten",
+      "allergen_seafood",
+      "allergen_soy"
+    ],
+    "dietaryFlags": []
   },
   {
     "id": "homestyle_suancai_fen",
@@ -392,7 +488,29 @@
       "炖菜",
       "暖胃"
     ],
-    "description": "东北风味家常好味。精心烹饪，口感酸爽、咸香，新手友好，快手完成。"
+    "description": "东北菜经典家常做法。以大白菜配五花肉为主料，翻炒收汁，爽脆入味，口味酸爽、咸香，做法简单、新手友好。",
+    "dishRole": "main_meat",
+    "isVegetarian": false,
+    "dishStyle": "meat",
+    "stapleCategory": null,
+    "perServing": {
+      "calories": 429,
+      "protein": 7.3,
+      "fat": 30.3,
+      "carbs": 31.4,
+      "fiber": 1.8,
+      "sodium": 212,
+      "sugar": 1.5
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_gluten",
+      "allergen_soy"
+    ],
+    "dietaryFlags": []
   },
   {
     "id": "cantonese_zhengdan",
@@ -447,7 +565,33 @@
       "嫩滑",
       "便当菜"
     ],
-    "description": "粤式家常好味。精心烹饪，口感清淡、鲜美，新手友好，快手完成。"
+    "description": "粤菜经典家常做法。以鸡蛋为主料，蒸汽蒸制，原汁原味，口味清淡、鲜美，无需厨艺基础。",
+    "dishRole": "main_veg",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": null,
+    "cookingMethod": "steam",
+    "perServing": {
+      "calories": 132,
+      "protein": 10,
+      "fat": 9.8,
+      "carbs": 1.1,
+      "fiber": 0.1,
+      "sodium": 231,
+      "sugar": 0.9
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "low_fat",
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_egg",
+      "allergen_gluten",
+      "allergen_sesame",
+      "allergen_soy"
+    ],
+    "dietaryFlags": []
   },
   {
     "id": "hunan_xiaochao_huanggua",
@@ -507,7 +651,29 @@
       "快手菜",
       "开胃"
     ],
-    "description": "湘菜家常好味。精心烹饪，口感香辣、酸爽、清淡，操作简便，零失败。"
+    "description": "湘菜里的下饭好手。以黄瓜为主料，翻炒收汁，锅气十足，口味香辣、酸爽、清淡，家常操作、零失败。",
+    "dishRole": "main_veg",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": null,
+    "perServing": {
+      "calories": 68,
+      "protein": 1.5,
+      "fat": 2.7,
+      "carbs": 10.4,
+      "fiber": 0.9,
+      "sodium": 4,
+      "sugar": 5.2
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "low_fat",
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_sesame"
+    ],
+    "dietaryFlags": []
   },
   {
     "id": "shandong_tangcu_liji",
@@ -527,7 +693,7 @@
     "minCookingLevel": "advanced",
     "prepTime": 20,
     "cookTime": 15,
-    "servings": 3,
+    "servings": 5,
     "ingredients": [
       {
         "ingredientId": "pork_belly",
@@ -577,7 +743,31 @@
       "宴客菜",
       "酸甜"
     ],
-    "description": "鲁菜宴客名菜。精心烹饪，口感甘甜、酸爽，工序讲究，宴请体面。"
+    "description": "鲁菜里的传统味道。以五花肉配鸡蛋为主料，大火爆炒，锅气十足，口味甘甜、酸爽，适合周末慢做。",
+    "dishRole": "main_meat",
+    "isVegetarian": false,
+    "dishStyle": "meat",
+    "stapleCategory": null,
+    "cookingMethod": "stir_fry",
+    "perServing": {
+      "calories": 751,
+      "protein": 7.1,
+      "fat": 72.9,
+      "carbs": 17.3,
+      "fiber": 0.1,
+      "sodium": 143,
+      "sugar": 8.1
+    },
+    "nutritionWarnings": [
+      "high_fat"
+    ],
+    "nutritionHighlights": [],
+    "allergens": [
+      "allergen_egg",
+      "allergen_gluten",
+      "allergen_soy"
+    ],
+    "dietaryFlags": []
   },
   {
     "id": "cantonese_baiqie_ji",
@@ -642,7 +832,31 @@
       "宴客菜",
       "低脂"
     ],
-    "description": "粤式家常好味。精心烹饪，口感清淡、鲜美，适合午餐/晚餐享用。"
+    "description": "深受欢迎的粤菜代表作。以鸡腿肉为主料，翻炒收汁，爽脆入味，口味清淡、鲜美，家常做法、人人可学。",
+    "dishRole": "main_meat",
+    "isVegetarian": false,
+    "dishStyle": "meat",
+    "stapleCategory": null,
+    "perServing": {
+      "calories": 285,
+      "protein": 33.1,
+      "fat": 14.9,
+      "carbs": 2.1,
+      "fiber": 0.3,
+      "sodium": 314,
+      "sugar": 0.3
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "high_protein",
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_gluten",
+      "allergen_sesame",
+      "allergen_soy"
+    ],
+    "dietaryFlags": []
   },
   {
     "id": "homestyle_chaohefen",
@@ -707,7 +921,35 @@
       "主食",
       "快手菜"
     ],
-    "description": "粤式家常好味。精心烹饪，口感咸香、鲜美，适合午餐/晚餐享用。"
+    "description": "粤菜特色主食。以牛里脊配豆芽为主料，翻炒收汁，锅气十足，口味咸香、鲜美，吃了就停不下来。",
+    "dishRole": "staple",
+    "isVegetarian": false,
+    "dishStyle": "meat",
+    "stapleCategory": "noodles",
+    "cookingMethod": "staple",
+    "perServing": {
+      "calories": 631,
+      "protein": 25.4,
+      "fat": 19.2,
+      "carbs": 87.2,
+      "fiber": 2.8,
+      "sodium": 604,
+      "sugar": 1.3
+    },
+    "nutritionWarnings": [
+      "high_carb"
+    ],
+    "nutritionHighlights": [
+      "high_protein",
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_gluten",
+      "allergen_soy"
+    ],
+    "dietaryFlags": [
+      "high_purine"
+    ]
   },
   {
     "id": "homestyle_chao_ou_pian",
@@ -761,7 +1003,28 @@
       "清淡",
       "便当菜"
     ],
-    "description": "家常家常好味。精心烹饪，口感清淡、酸爽，新手友好，快手完成。"
+    "description": "家常菜家庭餐桌常客。以土豆配食用油为主料，翻炒收汁，爽脆入味，口味清淡、酸爽，家常操作、零失败。",
+    "dishRole": "main_veg",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": null,
+    "cookingMethod": "stir_fry",
+    "perServing": {
+      "calories": 164,
+      "protein": 3.2,
+      "fat": 5.2,
+      "carbs": 26.4,
+      "fiber": 3.4,
+      "sodium": 10,
+      "sugar": 1.2
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "low_fat",
+      "low_calorie"
+    ],
+    "allergens": [],
+    "dietaryFlags": []
   },
   {
     "id": "sichuan_shuizhu_niurou",
@@ -847,7 +1110,34 @@
       "硬菜",
       "宴客菜"
     ],
-    "description": "川菜宴客名菜。精心烹饪，口感香辣、咸香、鲜美，工序讲究，宴请体面。"
+    "description": "深受欢迎的川菜代表作。以牛里脊配小白菜为主料，旺火快炒，火候恰到好处，口味香辣、咸香、鲜美，工艺讲究，宴客撑场。",
+    "dishRole": "main_meat",
+    "isVegetarian": false,
+    "dishStyle": "meat",
+    "stapleCategory": null,
+    "cookingMethod": "boil",
+    "perServing": {
+      "calories": 463,
+      "protein": 30.3,
+      "fat": 33.5,
+      "carbs": 9.6,
+      "fiber": 1,
+      "sodium": 724,
+      "sugar": 1.4
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "high_protein",
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_egg",
+      "allergen_gluten",
+      "allergen_soy"
+    ],
+    "dietaryFlags": [
+      "high_purine"
+    ]
   },
   {
     "id": "homestyle_xihu_niurou_geng",
@@ -913,7 +1203,32 @@
       "清淡",
       "暖胃"
     ],
-    "description": "苏菜家常好味。精心烹饪，口感清淡、鲜美，新手友好，快手完成。"
+    "description": "苏菜餐桌上的暖心汤。以牛肉末配鸡蛋为主料，文火慢煨，鲜美滋补，口味清淡、鲜美，与主食搭配相得益彰。",
+    "dishRole": "soup",
+    "isVegetarian": false,
+    "dishStyle": "meat",
+    "stapleCategory": null,
+    "cookingMethod": "soup",
+    "perServing": {
+      "calories": 167,
+      "protein": 10.1,
+      "fat": 11.4,
+      "carbs": 5.3,
+      "fiber": 0.1,
+      "sodium": 64,
+      "sugar": 0.4
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_egg",
+      "allergen_sesame"
+    ],
+    "dietaryFlags": [
+      "high_purine"
+    ]
   },
   {
     "id": "dongbei_guobao_rou",
@@ -933,7 +1248,7 @@
     "minCookingLevel": "advanced",
     "prepTime": 20,
     "cookTime": 15,
-    "servings": 3,
+    "servings": 5,
     "ingredients": [
       {
         "ingredientId": "pork_belly",
@@ -989,7 +1304,28 @@
       "宴客菜",
       "酥脆"
     ],
-    "description": "东北风味宴客名菜。精心烹饪，口感甘甜、酸爽，工序讲究，宴请体面。"
+    "description": "东北菜里的下饭好手。以五花肉配胡萝卜为主料，大火爆炒，锅气十足，口味甘甜、酸爽，耐心成就美味。",
+    "dishRole": "main_meat",
+    "isVegetarian": false,
+    "dishStyle": "meat",
+    "stapleCategory": null,
+    "perServing": {
+      "calories": 746,
+      "protein": 5.7,
+      "fat": 71.8,
+      "carbs": 19.9,
+      "fiber": 0.3,
+      "sodium": 25,
+      "sugar": 8.4
+    },
+    "nutritionWarnings": [
+      "high_fat"
+    ],
+    "nutritionHighlights": [
+      "low_calorie"
+    ],
+    "allergens": [],
+    "dietaryFlags": []
   },
   {
     "id": "cantonese_chashao_rou",
@@ -1054,7 +1390,30 @@
       "卤味",
       "便当菜"
     ],
-    "description": "粤式宴客名菜。精心烹饪，口感甘甜、鲜美，工序讲究，宴请体面。"
+    "description": "粤菜里的下饭好手。以五花肉为主料，翻炒收汁，锅气十足，口味甘甜、鲜美，耐心成就美味。",
+    "dishRole": "main_meat",
+    "isVegetarian": false,
+    "dishStyle": "meat",
+    "stapleCategory": null,
+    "perServing": {
+      "calories": 690,
+      "protein": 12.5,
+      "fat": 66.3,
+      "carbs": 9.4,
+      "fiber": 0.1,
+      "sodium": 591,
+      "sugar": 7.8
+    },
+    "nutritionWarnings": [
+      "high_fat"
+    ],
+    "nutritionHighlights": [],
+    "allergens": [
+      "allergen_gluten",
+      "allergen_seafood",
+      "allergen_soy"
+    ],
+    "dietaryFlags": []
   },
   {
     "id": "homestyle_qingchao_xilanhua",
@@ -1109,7 +1468,29 @@
       "便当菜",
       "低脂"
     ],
-    "description": "家常家常好味。精心烹饪，口感清淡、鲜美，新手友好，快手完成。"
+    "description": "深受欢迎的家常菜代表作。以西兰花配食用油为主料，旺火快炒，爽脆入味，口味清淡、鲜美，家常操作、零失败。",
+    "dishRole": "main_veg",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": null,
+    "perServing": {
+      "calories": 109,
+      "protein": 4.8,
+      "fat": 5.7,
+      "carbs": 13.5,
+      "fiber": 4.1,
+      "sodium": 187,
+      "sugar": 2.8
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "low_fat",
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_seafood"
+    ],
+    "dietaryFlags": []
   },
   {
     "id": "homestyle_chao_douya",
@@ -1163,7 +1544,27 @@
       "清淡",
       "素菜"
     ],
-    "description": "家常家常好味。精心烹饪，口感酸爽、清淡，新手友好，快手完成。"
+    "description": "家常菜里的传统味道。以小白菜配食用油为主料，旺火快炒，爽脆入味，口味酸爽、清淡，做法简单、新手友好。",
+    "dishRole": "main_veg",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": null,
+    "perServing": {
+      "calories": 69,
+      "protein": 2.4,
+      "fat": 5.3,
+      "carbs": 4.2,
+      "fiber": 1.6,
+      "sodium": 98,
+      "sugar": 1.9
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "low_fat",
+      "low_calorie"
+    ],
+    "allergens": [],
+    "dietaryFlags": []
   },
   {
     "id": "sichuan_suanni_bairou",
@@ -1238,7 +1639,32 @@
       "凉菜",
       "便当菜"
     ],
-    "description": "川菜家常好味。精心烹饪，口感香辣、咸香、鲜美，适合午餐/晚餐享用。"
+    "description": "深受欢迎的川菜代表作。以五花肉为主料，旺火快炒，爽脆入味，口味香辣、咸香、鲜美，一次成功的家常菜。",
+    "dishRole": "main_meat",
+    "isVegetarian": false,
+    "dishStyle": "meat",
+    "stapleCategory": null,
+    "perServing": {
+      "calories": 730,
+      "protein": 13.5,
+      "fat": 72.4,
+      "carbs": 5.1,
+      "fiber": 0.3,
+      "sodium": 411,
+      "sugar": 1.9
+    },
+    "nutritionWarnings": [
+      "high_fat"
+    ],
+    "nutritionHighlights": [
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_gluten",
+      "allergen_sesame",
+      "allergen_soy"
+    ],
+    "dietaryFlags": []
   },
   {
     "id": "homestyle_chao_tudousi",
@@ -1297,7 +1723,27 @@
       "快手菜",
       "便当菜"
     ],
-    "description": "家常家常好味。精心烹饪，口感酸爽、香辣，新手友好，快手完成。"
+    "description": "深受欢迎的家常菜代表作。以土豆配食用油为主料，旺火快炒，火候恰到好处，口味酸爽、香辣，家常操作、零失败。",
+    "dishRole": "main_veg",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": null,
+    "perServing": {
+      "calories": 192,
+      "protein": 3.3,
+      "fat": 7.7,
+      "carbs": 27.3,
+      "fiber": 3.7,
+      "sodium": 10,
+      "sugar": 1.9
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "low_fat",
+      "low_calorie"
+    ],
+    "allergens": [],
+    "dietaryFlags": []
   },
   {
     "id": "homestyle_jianjiao",
@@ -1361,7 +1807,30 @@
       "素菜",
       "下酒菜"
     ],
-    "description": "家常家常好味。精心烹饪，口感香辣、咸香，新手友好，快手完成。"
+    "description": "家常菜里的传统味道。以食用油为主料，旺火快炒，爽脆入味，口味香辣、咸香，家常操作、零失败。",
+    "dishRole": "main_veg",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": null,
+    "perServing": {
+      "calories": 107,
+      "protein": 2.2,
+      "fat": 5.5,
+      "carbs": 12.4,
+      "fiber": 3.3,
+      "sodium": 282,
+      "sugar": 7.9
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "low_fat",
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_gluten",
+      "allergen_soy"
+    ],
+    "dietaryFlags": []
   },
   {
     "id": "dongbei_chao_shougancai",
@@ -1420,7 +1889,29 @@
       "快手菜",
       "便当菜"
     ],
-    "description": "东北风味家常好味。精心烹饪，口感咸香、鲜美，新手友好，快手完成。"
+    "description": "深受欢迎的东北菜代表作。以豆腐配食用油为主料，旺火快炒，爽脆入味，口味咸香、鲜美，快手就能端上桌。",
+    "dishRole": "main_veg",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": null,
+    "perServing": {
+      "calories": 180,
+      "protein": 13.1,
+      "fat": 12.4,
+      "carbs": 6.9,
+      "fiber": 1.6,
+      "sodium": 288,
+      "sugar": 3
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_gluten",
+      "allergen_soy"
+    ],
+    "dietaryFlags": []
   },
   {
     "id": "homestyle_chao_bocai",
@@ -1470,7 +1961,29 @@
       "素菜",
       "便当菜"
     ],
-    "description": "家常家常好味。精心烹饪，口感清淡、鲜美，新手友好，快手完成。"
+    "description": "家常菜家庭餐桌常客。以菠菜配食用油为主料，旺火快炒，爽脆入味，口味清淡、鲜美，做法简单、新手友好。",
+    "dishRole": "main_veg",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": null,
+    "perServing": {
+      "calories": 86,
+      "protein": 4.7,
+      "fat": 5.6,
+      "carbs": 7.1,
+      "fiber": 3.4,
+      "sodium": 119,
+      "sugar": 0.7
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "low_fat",
+      "low_calorie"
+    ],
+    "allergens": [],
+    "dietaryFlags": [
+      "high_purine"
+    ]
   },
   {
     "id": "sichuan_ganguoji",
@@ -1556,7 +2069,30 @@
       "川菜",
       "硬菜"
     ],
-    "description": "川菜家常好味。精心烹饪，口感香辣、咸香、鲜美，适合晚餐享用。"
+    "description": "川菜里的传统味道。以鸡腿肉配土豆为主料，翻炒收汁，锅气十足，口味香辣、咸香、鲜美，步骤清晰、易上手。",
+    "dishRole": "main_meat",
+    "isVegetarian": false,
+    "dishStyle": "meat",
+    "stapleCategory": null,
+    "perServing": {
+      "calories": 412,
+      "protein": 37.2,
+      "fat": 21.5,
+      "carbs": 15.2,
+      "fiber": 2.4,
+      "sodium": 674,
+      "sugar": 2.9
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "high_protein",
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_gluten",
+      "allergen_soy"
+    ],
+    "dietaryFlags": []
   },
   {
     "id": "sichuan_ganguo_xiaren",
@@ -1636,7 +2172,33 @@
       "川菜",
       "宴客菜"
     ],
-    "description": "川菜家常好味。精心烹饪，口感香辣、咸香，适合晚餐享用。"
+    "description": "川菜经典家常做法。以虾配土豆为主料，翻炒收汁，爽脆入味，口味香辣、咸香，家常做法、人人可学。",
+    "dishRole": "main_meat",
+    "isVegetarian": false,
+    "dishStyle": "meat",
+    "stapleCategory": null,
+    "perServing": {
+      "calories": 201,
+      "protein": 21.7,
+      "fat": 7.4,
+      "carbs": 11.9,
+      "fiber": 1.9,
+      "sodium": 335,
+      "sugar": 2.7
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "low_fat",
+      "low_calorie",
+      "high_protein"
+    ],
+    "allergens": [
+      "allergen_seafood",
+      "allergen_soy"
+    ],
+    "dietaryFlags": [
+      "high_purine"
+    ]
   },
   {
     "id": "homestyle_xianggu_jisi",
@@ -1706,7 +2268,34 @@
       "便当菜",
       "低脂"
     ],
-    "description": "家常家常好味。精心烹饪，口感鲜美、清淡，新手友好，快手完成。"
+    "description": "家常菜经典家常做法。以鸡胸肉配蘑菇为主料，翻炒收汁，爽脆入味，口味鲜美、清淡，无需厨艺基础。",
+    "dishRole": "main_meat",
+    "isVegetarian": false,
+    "dishStyle": "meat",
+    "stapleCategory": null,
+    "perServing": {
+      "calories": 243,
+      "protein": 33.9,
+      "fat": 8.9,
+      "carbs": 6.1,
+      "fiber": 1,
+      "sodium": 490,
+      "sugar": 1.9
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "high_protein",
+      "low_fat",
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_gluten",
+      "allergen_seafood",
+      "allergen_soy"
+    ],
+    "dietaryFlags": [
+      "high_purine"
+    ]
   },
   {
     "id": "homestyle_qiezi_roushi",
@@ -1776,7 +2365,30 @@
       "下饭菜",
       "便当菜"
     ],
-    "description": "家常家常好味。精心烹饪，口感咸香、鲜美，新手友好，快手完成。"
+    "description": "家常菜里的传统味道。以茄子配猪肉末为主料，翻炒收汁，爽脆入味，口味咸香、鲜美，家常操作、零失败。",
+    "dishRole": "main_meat",
+    "isVegetarian": false,
+    "dishStyle": "meat",
+    "stapleCategory": null,
+    "perServing": {
+      "calories": 187,
+      "protein": 7.3,
+      "fat": 13.9,
+      "carbs": 9.2,
+      "fiber": 3.1,
+      "sodium": 390,
+      "sugar": 3.7
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_gluten",
+      "allergen_seafood",
+      "allergen_soy"
+    ],
+    "dietaryFlags": []
   },
   {
     "id": "hunan_larou_chao_suncai",
@@ -1846,7 +2458,31 @@
       "家常菜",
       "便当菜"
     ],
-    "description": "湘菜家常好味。精心烹饪，口感咸香、鲜美，新手友好，快手完成。"
+    "description": "湘菜经典家常做法。以五花肉配芹菜为主料，大火爆炒，锅气十足，口味咸香、鲜美，无需厨艺基础。",
+    "dishRole": "main_meat",
+    "isVegetarian": false,
+    "dishStyle": "meat",
+    "stapleCategory": null,
+    "perServing": {
+      "calories": 465,
+      "protein": 8.5,
+      "fat": 45,
+      "carbs": 5.7,
+      "fiber": 2.2,
+      "sodium": 381,
+      "sugar": 2.4
+    },
+    "nutritionWarnings": [
+      "high_fat"
+    ],
+    "nutritionHighlights": [
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_gluten",
+      "allergen_soy"
+    ],
+    "dietaryFlags": []
   },
   {
     "id": "cantonese_haoyu_shengcai",
@@ -1900,7 +2536,29 @@
       "快手菜",
       "清淡"
     ],
-    "description": "粤式家常好味。精心烹饪，口感鲜美、清淡，新手友好，快手完成。"
+    "description": "粤菜里的下饭好手。以小白菜配食用油为主料，大火爆炒，锅气十足，口味鲜美、清淡，无需厨艺基础。",
+    "dishRole": "main_veg",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": null,
+    "perServing": {
+      "calories": 49,
+      "protein": 2.5,
+      "fat": 2.8,
+      "carbs": 5,
+      "fiber": 1.6,
+      "sodium": 303,
+      "sugar": 2.1
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "low_fat",
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_seafood"
+    ],
+    "dietaryFlags": []
   },
   {
     "id": "homestyle_rou_chao_xiancai",
@@ -1970,7 +2628,31 @@
       "下饭菜",
       "便当菜"
     ],
-    "description": "苏菜家常好味。精心烹饪，口感咸香、鲜美，新手友好，快手完成。"
+    "description": "苏菜经典家常做法。以五花肉配大白菜为主料，翻炒收汁，锅气十足，口味咸香、鲜美，快手就能端上桌。",
+    "dishRole": "main_meat",
+    "isVegetarian": false,
+    "dishStyle": "meat",
+    "stapleCategory": null,
+    "perServing": {
+      "calories": 600,
+      "protein": 11.2,
+      "fat": 58.3,
+      "carbs": 7.3,
+      "fiber": 1.8,
+      "sodium": 318,
+      "sugar": 2.5
+    },
+    "nutritionWarnings": [
+      "high_fat"
+    ],
+    "nutritionHighlights": [
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_gluten",
+      "allergen_soy"
+    ],
+    "dietaryFlags": []
   },
   {
     "id": "homestyle_xianggan_chao_rou",
@@ -2039,7 +2721,32 @@
       "快手菜",
       "便当菜"
     ],
-    "description": "湘菜家常好味。精心烹饪，口感咸香、香辣，新手友好，快手完成。"
+    "description": "深受欢迎的湘菜代表作。以五花肉配豆腐为主料，大火爆炒，火候恰到好处，口味咸香、香辣，做法简单、新手友好。",
+    "dishRole": "main_meat",
+    "isVegetarian": false,
+    "dishStyle": "meat",
+    "stapleCategory": null,
+    "perServing": {
+      "calories": 655,
+      "protein": 18.3,
+      "fat": 62.9,
+      "carbs": 4.9,
+      "fiber": 0.9,
+      "sodium": 521,
+      "sugar": 1.8
+    },
+    "nutritionWarnings": [
+      "high_fat"
+    ],
+    "nutritionHighlights": [
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_gluten",
+      "allergen_seafood",
+      "allergen_soy"
+    ],
+    "dietaryFlags": []
   },
   {
     "id": "homestyle_fan_qie_niu_nan",
@@ -2121,7 +2828,33 @@
       "硬菜",
       "暖胃"
     ],
-    "description": "家常家常好味。精心烹饪，口感酸爽、鲜美，适合午餐/晚餐享用。"
+    "description": "家常菜里的下饭好手。以牛里脊配番茄为主料，旺火快炒，火候恰到好处，口味酸爽、鲜美，步骤清晰、易上手。",
+    "dishRole": "main_meat",
+    "isVegetarian": false,
+    "dishStyle": "meat",
+    "stapleCategory": null,
+    "cookingMethod": "stew",
+    "perServing": {
+      "calories": 454,
+      "protein": 35.1,
+      "fat": 26.6,
+      "carbs": 18.1,
+      "fiber": 3.5,
+      "sodium": 198,
+      "sugar": 5.3
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "high_protein",
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_gluten",
+      "allergen_soy"
+    ],
+    "dietaryFlags": [
+      "high_purine"
+    ]
   },
   {
     "id": "homestyle_rou_mo_zheng_dan",
@@ -2186,7 +2919,32 @@
       "嫩滑",
       "便当菜"
     ],
-    "description": "家常家常好味。精心烹饪，口感鲜美、清淡，新手友好，快手完成。"
+    "description": "家常菜里的传统味道。以鸡蛋配猪肉末为主料，蒸汽蒸制，鲜嫩清甜，口味鲜美、清淡，快手就能端上桌。",
+    "dishRole": "main_meat",
+    "isVegetarian": false,
+    "dishStyle": "meat",
+    "stapleCategory": null,
+    "cookingMethod": "steam",
+    "perServing": {
+      "calories": 240,
+      "protein": 17,
+      "fat": 18.2,
+      "carbs": 1.4,
+      "fiber": 0.1,
+      "sodium": 395,
+      "sugar": 1
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_egg",
+      "allergen_gluten",
+      "allergen_sesame",
+      "allergen_soy"
+    ],
+    "dietaryFlags": []
   },
   {
     "id": "sichuan_maocai",
@@ -2272,7 +3030,33 @@
       "一锅菜",
       "暖胃"
     ],
-    "description": "川菜家常好味。精心烹饪，口感香辣、咸香、鲜美，适合午餐/晚餐享用。"
+    "description": "川菜家庭餐桌常客。以豆腐配土豆为主料，翻炒收汁，锅气十足，口味香辣、咸香、鲜美，步骤清晰、易上手。",
+    "dishRole": "main_veg",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": null,
+    "perServing": {
+      "calories": 267,
+      "protein": 11.3,
+      "fat": 10.8,
+      "carbs": 33.7,
+      "fiber": 3.3,
+      "sodium": 843,
+      "sugar": 3
+    },
+    "nutritionWarnings": [
+      "high_sodium"
+    ],
+    "nutritionHighlights": [
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_gluten",
+      "allergen_soy"
+    ],
+    "dietaryFlags": [
+      "high_purine"
+    ]
   },
   {
     "id": "homestyle_tangcu_paigua",
@@ -2350,7 +3134,32 @@
       "硬菜",
       "便当菜"
     ],
-    "description": "苏菜家常好味。精心烹饪，口感甘甜、酸爽、鲜美，适合午餐/晚餐享用。"
+    "description": "苏菜经典家常做法。以五花肉配食用油为主料，旺火快炒，火候恰到好处，口味甘甜、酸爽、鲜美，步骤清晰、易上手。",
+    "dishRole": "main_meat",
+    "isVegetarian": false,
+    "dishStyle": "meat",
+    "stapleCategory": null,
+    "cookingMethod": "stir_fry",
+    "perServing": {
+      "calories": 772,
+      "protein": 13.1,
+      "fat": 74,
+      "carbs": 11.5,
+      "fiber": 0.2,
+      "sodium": 412,
+      "sugar": 10.3
+    },
+    "nutritionWarnings": [
+      "high_fat"
+    ],
+    "nutritionHighlights": [
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_gluten",
+      "allergen_soy"
+    ],
+    "dietaryFlags": []
   },
   {
     "id": "homestyle_cong_bao_yang_rou",
@@ -2419,7 +3228,32 @@
       "快手菜",
       "冬季暖身"
     ],
-    "description": "鲁菜家常好味。精心烹饪，口感咸香、鲜美，适合晚餐享用。"
+    "description": "鲁菜家庭餐桌常客。以羊腿肉配食用油为主料，翻炒收汁，锅气十足，口味咸香、鲜美，步骤清晰、易上手。",
+    "dishRole": "main_meat",
+    "isVegetarian": false,
+    "dishStyle": "meat",
+    "stapleCategory": null,
+    "perServing": {
+      "calories": 325,
+      "protein": 26,
+      "fat": 22.1,
+      "carbs": 4.4,
+      "fiber": 0.9,
+      "sodium": 341,
+      "sugar": 0.9
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "high_protein",
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_gluten",
+      "allergen_soy"
+    ],
+    "dietaryFlags": [
+      "high_purine"
+    ]
   },
   {
     "id": "homestyle_hong_shao_ji_chi",
@@ -2491,7 +3325,30 @@
       "便当菜",
       "下饭菜"
     ],
-    "description": "家常家常好味。精心烹饪，口感甘甜、咸香、鲜美，操作简便，零失败。"
+    "description": "家常菜里的传统味道。以鸡腿肉配食用油为主料，旺火快炒，爽脆入味，口味甘甜、咸香、鲜美，家常操作、零失败。",
+    "dishRole": "main_meat",
+    "isVegetarian": false,
+    "dishStyle": "meat",
+    "stapleCategory": null,
+    "cookingMethod": "braise",
+    "perServing": {
+      "calories": 336,
+      "protein": 35.1,
+      "fat": 17.9,
+      "carbs": 6.4,
+      "fiber": 0.1,
+      "sodium": 297,
+      "sugar": 5.1
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "high_protein"
+    ],
+    "allergens": [
+      "allergen_gluten",
+      "allergen_soy"
+    ],
+    "dietaryFlags": []
   },
   {
     "id": "cantonese_zheng_rou_bing",
@@ -2556,7 +3413,32 @@
       "蒸菜",
       "便当菜"
     ],
-    "description": "粤式家常好味。精心烹饪，口感鲜美、咸香，新手友好，快手完成。"
+    "description": "粤菜经典家常做法。以猪肉末为主料，隔水蒸透，原汁原味，口味鲜美、咸香，快手就能端上桌。",
+    "dishRole": "main_meat",
+    "isVegetarian": false,
+    "dishStyle": "meat",
+    "stapleCategory": null,
+    "cookingMethod": "steam",
+    "perServing": {
+      "calories": 368,
+      "protein": 21.8,
+      "fat": 27.8,
+      "carbs": 5.7,
+      "fiber": 0.2,
+      "sodium": 495,
+      "sugar": 0.3
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_gluten",
+      "allergen_seafood",
+      "allergen_sesame",
+      "allergen_soy"
+    ],
+    "dietaryFlags": []
   },
   {
     "id": "homestyle_hongshao_doufu",
@@ -2631,7 +3513,31 @@
       "素菜",
       "便当菜"
     ],
-    "description": "家常家常好味。精心烹饪，口感咸香、鲜美，新手友好，快手完成。"
+    "description": "家常菜里的下饭好手。以豆腐配食用油为主料，大火爆炒，锅气十足，口味咸香、鲜美，无需厨艺基础。",
+    "dishRole": "main_veg",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": null,
+    "cookingMethod": "braise",
+    "perServing": {
+      "calories": 246,
+      "protein": 16.6,
+      "fat": 17.1,
+      "carbs": 10.2,
+      "fiber": 0.8,
+      "sodium": 290,
+      "sugar": 4
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_gluten",
+      "allergen_seafood",
+      "allergen_soy"
+    ],
+    "dietaryFlags": []
   },
   {
     "id": "sichuan_laziji",
@@ -2716,7 +3622,30 @@
       "下酒菜",
       "下饭菜"
     ],
-    "description": "川菜家常好味。精心烹饪，口感香辣、咸香，适合晚餐享用。"
+    "description": "川菜家庭餐桌常客。以鸡腿肉配豆瓣酱为主料，旺火快炒，爽脆入味，口味香辣、咸香，一次成功的家常菜。",
+    "dishRole": "main_meat",
+    "isVegetarian": false,
+    "dishStyle": "meat",
+    "stapleCategory": null,
+    "perServing": {
+      "calories": 439,
+      "protein": 35.6,
+      "fat": 28,
+      "carbs": 9,
+      "fiber": 0.4,
+      "sodium": 509,
+      "sugar": 2.1
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "high_protein",
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_gluten",
+      "allergen_soy"
+    ],
+    "dietaryFlags": []
   },
   {
     "id": "homestyle_ludan",
@@ -2772,7 +3701,32 @@
       "便当菜",
       "零食"
     ],
-    "description": "家常风味的经典早餐。精心烹饪，口感咸香、鲜美，操作简便，零失败。"
+    "description": "家常菜里的下饭好手。以鸡蛋为主料，翻炒收汁，锅气十足，口味咸香、鲜美，做法简单、新手友好。",
+    "dishRole": "main_veg",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": null,
+    "cookingMethod": "braise",
+    "perServing": {
+      "calories": 130,
+      "protein": 10.1,
+      "fat": 8.3,
+      "carbs": 4,
+      "fiber": 0.1,
+      "sodium": 299,
+      "sugar": 3.4
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "low_fat",
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_egg",
+      "allergen_gluten",
+      "allergen_soy"
+    ],
+    "dietaryFlags": []
   },
   {
     "id": "homestyle_suantang_fei_niu",
@@ -2848,7 +3802,31 @@
       "汤菜",
       "酸辣"
     ],
-    "description": "川菜家常好味。精心烹饪，口感酸爽、香辣、鲜美，适合晚餐享用。"
+    "description": "深受欢迎的川菜代表作。以牛里脊配番茄为主料，翻炒收汁，爽脆入味，口味酸爽、香辣、鲜美，家常做法、人人可学。",
+    "dishRole": "main_meat",
+    "isVegetarian": false,
+    "dishStyle": "meat",
+    "stapleCategory": null,
+    "perServing": {
+      "calories": 342,
+      "protein": 27.1,
+      "fat": 23.3,
+      "carbs": 5.3,
+      "fiber": 1.3,
+      "sodium": 199,
+      "sugar": 2.6
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "high_protein",
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_soy"
+    ],
+    "dietaryFlags": [
+      "high_purine"
+    ]
   },
   {
     "id": "shandong_cong_shao_haishen",
@@ -2918,7 +3896,31 @@
       "素菜",
       "下饭菜"
     ],
-    "description": "鲁菜家常好味。精心烹饪，口感鲜美、咸香，新手友好，快手完成。"
+    "description": "鲁菜里的下饭好手。以豆腐配食用油为主料，大火爆炒，锅气十足，口味鲜美、咸香，做法简单、新手友好。",
+    "dishRole": "main_veg",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": null,
+    "cookingMethod": "braise",
+    "perServing": {
+      "calories": 249,
+      "protein": 16.8,
+      "fat": 17.2,
+      "carbs": 10.9,
+      "fiber": 1.3,
+      "sodium": 293,
+      "sugar": 4.4
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_gluten",
+      "allergen_seafood",
+      "allergen_soy"
+    ],
+    "dietaryFlags": []
   },
   {
     "id": "homestyle_zha_jiang_mian",
@@ -2999,7 +4001,33 @@
       "面条",
       "便当菜"
     ],
-    "description": "家常家常好味。精心烹饪，口感咸香、鲜美，适合午餐/晚餐享用。"
+    "description": "家常菜特色主食。以挂面配猪肉末为主料，旺火快炒，爽脆入味，口味咸香、鲜美，吃了就停不下来。",
+    "dishRole": "staple",
+    "isVegetarian": false,
+    "dishStyle": "meat",
+    "stapleCategory": "noodles",
+    "cookingMethod": "staple",
+    "perServing": {
+      "calories": 622,
+      "protein": 26.1,
+      "fat": 21.4,
+      "carbs": 81,
+      "fiber": 4.3,
+      "sodium": 704,
+      "sugar": 7
+    },
+    "nutritionWarnings": [
+      "high_carb"
+    ],
+    "nutritionHighlights": [
+      "high_protein",
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_gluten",
+      "allergen_soy"
+    ],
+    "dietaryFlags": []
   },
   {
     "id": "homestyle_dan_chao_fan",
@@ -3059,7 +4087,32 @@
       "快手菜",
       "便当菜"
     ],
-    "description": "家常家常好味。精心烹饪，口感咸香、鲜美，新手友好，快手完成。"
+    "description": "家常菜特色主食。以大米配鸡蛋为主料，层次铺陈，饱腹实在，口味咸香、鲜美，吃了就停不下来。",
+    "dishRole": "staple",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": "rice",
+    "cookingMethod": "staple",
+    "perServing": {
+      "calories": 312,
+      "protein": 11.3,
+      "fat": 9.7,
+      "carbs": 43.5,
+      "fiber": 0.9,
+      "sodium": 477,
+      "sugar": 0.8
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "low_fat",
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_egg",
+      "allergen_gluten",
+      "allergen_soy"
+    ],
+    "dietaryFlags": []
   },
   {
     "id": "homestyle_jidantang",
@@ -3109,7 +4162,31 @@
       "快手菜",
       "清淡"
     ],
-    "description": "家常家常好味。精心烹饪，口感清淡、鲜美，新手友好，快手完成。"
+    "description": "一道滋润的家常菜汤品。以鸡蛋为主料，文火慢煨，暖胃润喉，口味清淡、鲜美，暖胃又养生。",
+    "dishRole": "soup",
+    "isVegetarian": true,
+    "dishStyle": "egg",
+    "stapleCategory": null,
+    "cookingMethod": "soup",
+    "perServing": {
+      "calories": 61,
+      "protein": 4.4,
+      "fat": 4.7,
+      "carbs": 0.5,
+      "fiber": 0,
+      "sodium": 42,
+      "sugar": 0.4
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "low_fat",
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_egg",
+      "allergen_sesame"
+    ],
+    "dietaryFlags": []
   },
   {
     "id": "breakfast_jianbing",
@@ -3162,7 +4239,29 @@
       "主食",
       "快手菜"
     ],
-    "description": "家常风味的经典早餐。精心烹饪，口感咸香、鲜美，新手友好，快手完成。"
+    "description": "家常菜特色主食。以鸡蛋配食用油为主料，大火爆炒，锅气十足，口味咸香、鲜美，吃了就停不下来。",
+    "dishRole": "staple",
+    "isVegetarian": true,
+    "dishStyle": "egg",
+    "stapleCategory": "bread",
+    "cookingMethod": "pan_fry",
+    "perServing": {
+      "calories": 180,
+      "protein": 6.6,
+      "fat": 10.5,
+      "carbs": 14.6,
+      "fiber": 0.3,
+      "sodium": 64,
+      "sugar": 0.7
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_egg"
+    ],
+    "dietaryFlags": []
   },
   {
     "id": "breakfast_conghua_danbing",
@@ -3214,7 +4313,28 @@
       "早餐",
       "快手菜"
     ],
-    "description": "家常风味的经典早餐。精心烹饪，口感咸香、清淡，新手友好，快手完成。"
+    "description": "一碗能吃饱的家常菜主食。以鸡蛋配食用油为主料，翻炒收汁，爽脆入味，口味咸香、清淡，工作日快手午餐首选。",
+    "dishRole": "staple",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": "bread",
+    "perServing": {
+      "calories": 192,
+      "protein": 10,
+      "fat": 13.3,
+      "carbs": 8.4,
+      "fiber": 0.3,
+      "sodium": 95,
+      "sugar": 1.1
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_egg"
+    ],
+    "dietaryFlags": []
   },
   {
     "id": "breakfast_xihongshi_mian",
@@ -3275,7 +4395,31 @@
       "面条",
       "快手菜"
     ],
-    "description": "家常风味的经典早餐。精心烹饪，口感酸爽、鲜美，新手友好，快手完成。"
+    "description": "一碗能吃饱的家常菜主食。以挂面配番茄为主料，旺火快炒，火候恰到好处，口味酸爽、鲜美，工作日快手午餐首选。",
+    "dishRole": "staple",
+    "isVegetarian": true,
+    "dishStyle": "egg",
+    "stapleCategory": "noodles",
+    "cookingMethod": "staple",
+    "perServing": {
+      "calories": 381,
+      "protein": 16.4,
+      "fat": 9.3,
+      "carbs": 58.6,
+      "fiber": 3.5,
+      "sodium": 71,
+      "sugar": 4.7
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "low_fat",
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_egg",
+      "allergen_gluten"
+    ],
+    "dietaryFlags": []
   },
   {
     "id": "breakfast_rou_jia_mo",
@@ -3345,7 +4489,30 @@
       "主食",
       "面点"
     ],
-    "description": "家常风味的经典早餐。精心烹饪，口感咸香、鲜美，适合早餐/午餐享用。"
+    "description": "家常菜家庭餐桌常客。以猪肉末配食用油为主料，翻炒收汁，爽脆入味，口味咸香、鲜美，家常做法、人人可学。",
+    "dishRole": "staple",
+    "isVegetarian": false,
+    "dishStyle": "meat",
+    "stapleCategory": "bread",
+    "perServing": {
+      "calories": 431,
+      "protein": 12,
+      "fat": 20.8,
+      "carbs": 46.7,
+      "fiber": 0.8,
+      "sodium": 233,
+      "sugar": 0.3
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_gluten",
+      "allergen_sesame",
+      "allergen_soy"
+    ],
+    "dietaryFlags": []
   },
   {
     "id": "breakfast_dan_chao_mifan",
@@ -3410,7 +4577,32 @@
       "主食",
       "快手菜"
     ],
-    "description": "粤式风味的经典早餐。精心烹饪，口感咸香、鲜美，新手友好，快手完成。"
+    "description": "一碗能吃饱的粤菜主食。以鸡蛋配小白菜为主料，翻炒收汁，爽脆入味，口味咸香、鲜美，工作日快手午餐首选。",
+    "dishRole": "staple",
+    "isVegetarian": true,
+    "dishStyle": "egg",
+    "stapleCategory": "noodles",
+    "cookingMethod": "staple",
+    "perServing": {
+      "calories": 393,
+      "protein": 10.5,
+      "fat": 9.8,
+      "carbs": 64.6,
+      "fiber": 1.9,
+      "sodium": 515,
+      "sugar": 1.3
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "low_fat",
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_egg",
+      "allergen_gluten",
+      "allergen_soy"
+    ],
+    "dietaryFlags": []
   },
   {
     "id": "breakfast_niurou_mian",
@@ -3481,7 +4673,35 @@
       "面条",
       "暖胃"
     ],
-    "description": "家常风味的经典早餐。精心烹饪，口感鲜美、咸香，适合早餐/午餐享用。"
+    "description": "家常菜特色主食。以挂面配牛里脊为主料，讲究配料，口感丰富，口味鲜美、咸香，吃了就停不下来。",
+    "dishRole": "staple",
+    "isVegetarian": false,
+    "dishStyle": "meat",
+    "stapleCategory": "noodles",
+    "cookingMethod": "staple",
+    "perServing": {
+      "calories": 641,
+      "protein": 39.4,
+      "fat": 19.7,
+      "carbs": 75,
+      "fiber": 3.8,
+      "sodium": 370,
+      "sugar": 3
+    },
+    "nutritionWarnings": [
+      "high_carb"
+    ],
+    "nutritionHighlights": [
+      "high_protein",
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_gluten",
+      "allergen_soy"
+    ],
+    "dietaryFlags": [
+      "high_purine"
+    ]
   },
   {
     "id": "breakfast_tudou_si_bing",
@@ -3539,7 +4759,28 @@
       "主食",
       "便当菜"
     ],
-    "description": "家常风味的经典早餐。精心烹饪，口感咸香、清淡，新手友好，快手完成。"
+    "description": "家常菜里的传统味道。以土豆配鸡蛋为主料，大火爆炒，锅气十足，口味咸香、清淡，做法简单、新手友好。",
+    "dishRole": "staple",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": "bread",
+    "perServing": {
+      "calories": 260,
+      "protein": 6.4,
+      "fat": 10.4,
+      "carbs": 35.2,
+      "fiber": 3.5,
+      "sodium": 42,
+      "sugar": 1.6
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_egg"
+    ],
+    "dietaryFlags": []
   },
   {
     "id": "breakfast_shou_zhua_bing",
@@ -3592,7 +4833,28 @@
       "早餐",
       "主食"
     ],
-    "description": "家常风味的经典早餐。精心烹饪，口感咸香、鲜美，新手友好，快手完成。"
+    "description": "一碗能吃饱的家常菜主食。以鸡蛋配食用油为主料，翻炒收汁，锅气十足，口味咸香、鲜美，工作日快手午餐首选。",
+    "dishRole": "staple",
+    "isVegetarian": true,
+    "dishStyle": "egg",
+    "stapleCategory": "bread",
+    "perServing": {
+      "calories": 336,
+      "protein": 6.7,
+      "fat": 13.1,
+      "carbs": 46.4,
+      "fiber": 0.6,
+      "sodium": 67,
+      "sugar": 0.7
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_egg"
+    ],
+    "dietaryFlags": []
   },
   {
     "id": "breakfast_zhou_rou_song",
@@ -3656,7 +4918,32 @@
       "粥",
       "暖胃"
     ],
-    "description": "粤式风味的经典早餐。精心烹饪，口感鲜美、清淡，操作简便，零失败。"
+    "description": "粤菜里的饱腹主食。以大米配猪肉末为主料，大火爆炒，锅气十足，口味鲜美、清淡，一碗顶饱。",
+    "dishRole": "staple",
+    "isVegetarian": false,
+    "dishStyle": "meat",
+    "stapleCategory": "congee",
+    "cookingMethod": "staple",
+    "perServing": {
+      "calories": 121,
+      "protein": 5.7,
+      "fat": 6.2,
+      "carbs": 10,
+      "fiber": 0.3,
+      "sodium": 110,
+      "sugar": 0.1
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "low_fat",
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_gluten",
+      "allergen_sesame",
+      "allergen_soy"
+    ],
+    "dietaryFlags": []
   },
   {
     "id": "homestyle_lurou_fan",
@@ -3738,7 +5025,33 @@
       "主食",
       "便当菜"
     ],
-    "description": "闽菜家常好味。精心烹饪，口感甘甜、咸香、鲜美，适合午餐/晚餐享用。"
+    "description": "闽菜特色主食。以五花肉配大米为主料，精心烹制，主食丰足，口味甘甜、咸香、鲜美，吃了就停不下来。",
+    "dishRole": "staple",
+    "isVegetarian": false,
+    "dishStyle": "meat",
+    "stapleCategory": "rice",
+    "cookingMethod": "staple",
+    "perServing": {
+      "calories": 773,
+      "protein": 19.7,
+      "fat": 60.5,
+      "carbs": 35.3,
+      "fiber": 1,
+      "sodium": 647,
+      "sugar": 5.1
+    },
+    "nutritionWarnings": [
+      "high_fat"
+    ],
+    "nutritionHighlights": [
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_egg",
+      "allergen_gluten",
+      "allergen_soy"
+    ],
+    "dietaryFlags": []
   },
   {
     "id": "homestyle_shaokao_jinzhengu",
@@ -3797,7 +5110,34 @@
       "小食",
       "下酒菜"
     ],
-    "description": "家常家常好味。精心烹饪，口感咸香、香辣，新手友好，快手完成。"
+    "description": "家常菜家庭餐桌常客。以蘑菇配食用油为主料，翻炒收汁，锅气十足，口味咸香、香辣，家常操作、零失败。",
+    "dishRole": "main_veg",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": null,
+    "cookingMethod": "pan_fry",
+    "perServing": {
+      "calories": 98,
+      "protein": 3.8,
+      "fat": 7.8,
+      "carbs": 5.2,
+      "fiber": 1.1,
+      "sodium": 281,
+      "sugar": 2.1
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "low_fat",
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_gluten",
+      "allergen_sesame",
+      "allergen_soy"
+    ],
+    "dietaryFlags": [
+      "high_purine"
+    ]
   },
   {
     "id": "dongbei_zhu_gu_tang",
@@ -3859,7 +5199,29 @@
       "暖胃",
       "养生"
     ],
-    "description": "东北风味家常好味。精心烹饪，口感清淡、甘甜、鲜美，操作简便，零失败。"
+    "description": "东北菜餐桌上的暖心汤。以五花肉配玉米为主料，高汤吊味，汤色清亮，口味清淡、甘甜、鲜美，与主食搭配相得益彰。",
+    "dishRole": "soup",
+    "isVegetarian": false,
+    "dishStyle": "meat",
+    "stapleCategory": null,
+    "cookingMethod": "soup",
+    "perServing": {
+      "calories": 446,
+      "protein": 8.9,
+      "fat": 40.4,
+      "carbs": 12.9,
+      "fiber": 2.2,
+      "sodium": 50,
+      "sugar": 2.9
+    },
+    "nutritionWarnings": [
+      "high_fat"
+    ],
+    "nutritionHighlights": [
+      "low_calorie"
+    ],
+    "allergens": [],
+    "dietaryFlags": []
   },
   {
     "id": "homestyle_chao_san_ding",
@@ -3929,7 +5291,32 @@
       "便当菜",
       "快手菜"
     ],
-    "description": "家常家常好味。精心烹饪，口感咸香、鲜美，新手友好，快手完成。"
+    "description": "家常菜餐桌必备主食。以大米配鸡胸肉为主料，讲究配料，口感丰富，口味咸香、鲜美，简单一顿就满足。",
+    "dishRole": "staple",
+    "isVegetarian": false,
+    "dishStyle": "meat",
+    "stapleCategory": "rice",
+    "cookingMethod": "staple",
+    "perServing": {
+      "calories": 384,
+      "protein": 24.2,
+      "fat": 9.1,
+      "carbs": 49.8,
+      "fiber": 2,
+      "sodium": 365,
+      "sugar": 2.3
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "low_fat",
+      "high_protein"
+    ],
+    "allergens": [
+      "allergen_egg",
+      "allergen_gluten",
+      "allergen_soy"
+    ],
+    "dietaryFlags": []
   },
   {
     "id": "cantonese_guzao_rou",
@@ -3949,7 +5336,7 @@
     "minCookingLevel": "advanced",
     "prepTime": 20,
     "cookTime": 15,
-    "servings": 3,
+    "servings": 5,
     "ingredients": [
       {
         "ingredientId": "pork_belly",
@@ -4009,7 +5396,32 @@
       "宴客菜",
       "酸甜"
     ],
-    "description": "粤式宴客名菜。精心烹饪，口感甘甜、酸爽，工序讲究，宴请体面。"
+    "description": "深受欢迎的粤菜代表作。以五花肉配鸡蛋为主料，旺火快炒，火候恰到好处，口味甘甜、酸爽，细节到位，味道地道。",
+    "dishRole": "main_meat",
+    "isVegetarian": false,
+    "dishStyle": "meat",
+    "stapleCategory": null,
+    "perServing": {
+      "calories": 747,
+      "protein": 7.4,
+      "fat": 73,
+      "carbs": 16,
+      "fiber": 0.7,
+      "sodium": 144,
+      "sugar": 7.5
+    },
+    "nutritionWarnings": [
+      "high_fat"
+    ],
+    "nutritionHighlights": [
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_egg",
+      "allergen_gluten",
+      "allergen_soy"
+    ],
+    "dietaryFlags": []
   },
   {
     "id": "homestyle_jiu_cai_chao_dan",
@@ -4058,7 +5470,28 @@
       "家常菜",
       "便当菜"
     ],
-    "description": "家常家常好味。精心烹饪，口感鲜美、清淡，新手友好，快手完成。"
+    "description": "家常菜经典家常做法。以鸡蛋配食用油为主料，翻炒收汁，爽脆入味，口味鲜美、清淡，做法简单、新手友好。",
+    "dishRole": "main_veg",
+    "isVegetarian": true,
+    "dishStyle": "egg",
+    "stapleCategory": null,
+    "perServing": {
+      "calories": 215,
+      "protein": 11.6,
+      "fat": 16,
+      "carbs": 8.1,
+      "fiber": 2.6,
+      "sodium": 109,
+      "sugar": 3.1
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_egg"
+    ],
+    "dietaryFlags": []
   },
   {
     "id": "sichuan_suan_la_fen",
@@ -4139,7 +5572,30 @@
       "面条",
       "小吃"
     ],
-    "description": "川菜家常好味。精心烹饪，口感酸爽、香辣、鲜美，适合午餐/晚餐享用。"
+    "description": "川菜里的下饭好手。以猪肉末配豆瓣酱为主料，旺火快炒，爽脆入味，口味酸爽、香辣、鲜美，一次成功的家常菜。",
+    "dishRole": "main_meat",
+    "isVegetarian": false,
+    "dishStyle": "meat",
+    "stapleCategory": null,
+    "perServing": {
+      "calories": 416,
+      "protein": 7.9,
+      "fat": 13.3,
+      "carbs": 64.3,
+      "fiber": 1.5,
+      "sodium": 647,
+      "sugar": 0.3
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_gluten",
+      "allergen_sesame",
+      "allergen_soy"
+    ],
+    "dietaryFlags": []
   },
   {
     "id": "homestyle_mala_xiangguo",
@@ -4225,7 +5681,34 @@
       "干锅",
       "一锅菜"
     ],
-    "description": "川菜家常好味。精心烹饪，口感香辣、咸香、鲜美，适合晚餐享用。"
+    "description": "川菜里的传统味道。以虾配土豆为主料，旺火快炒，爽脆入味，口味香辣、咸香、鲜美，一次成功的家常菜。",
+    "dishRole": "main_meat",
+    "isVegetarian": false,
+    "dishStyle": "meat",
+    "stapleCategory": null,
+    "perServing": {
+      "calories": 207,
+      "protein": 11.9,
+      "fat": 13.8,
+      "carbs": 10.8,
+      "fiber": 1.6,
+      "sodium": 414,
+      "sugar": 1.6
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "low_calorie",
+      "high_protein",
+      "low_fat"
+    ],
+    "allergens": [
+      "allergen_seafood",
+      "allergen_sesame",
+      "allergen_soy"
+    ],
+    "dietaryFlags": [
+      "high_purine"
+    ]
   },
   {
     "id": "homestyle_xia_ren_hua_dan",
@@ -4290,7 +5773,33 @@
       "快手菜",
       "嫩滑"
     ],
-    "description": "粤式家常好味。精心烹饪，口感清淡、鲜美，新手友好，快手完成。"
+    "description": "粤菜家庭餐桌常客。以虾配鸡蛋为主料，大火爆炒，火候恰到好处，口味清淡、鲜美，家常操作、零失败。",
+    "dishRole": "main_meat",
+    "isVegetarian": false,
+    "dishStyle": "meat",
+    "stapleCategory": null,
+    "perServing": {
+      "calories": 260,
+      "protein": 24.9,
+      "fat": 16.1,
+      "carbs": 3.7,
+      "fiber": 0.2,
+      "sodium": 184,
+      "sugar": 1
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "high_protein",
+      "low_calorie",
+      "low_fat"
+    ],
+    "allergens": [
+      "allergen_egg",
+      "allergen_seafood"
+    ],
+    "dietaryFlags": [
+      "high_purine"
+    ]
   },
   {
     "id": "homestyle_jisi_liang_mian",
@@ -4365,7 +5874,35 @@
       "便当菜",
       "夏日"
     ],
-    "description": "川菜家常好味。精心烹饪，口感酸爽、香辣、鲜美，新手友好，快手完成。"
+    "description": "川菜特色主食。以挂面配鸡胸肉为主料，大火爆炒，锅气十足，口味酸爽、香辣、鲜美，吃了就停不下来。",
+    "dishRole": "staple",
+    "isVegetarian": false,
+    "dishStyle": "meat",
+    "stapleCategory": "noodles",
+    "cookingMethod": "staple",
+    "perServing": {
+      "calories": 512,
+      "protein": 36.4,
+      "fat": 5.5,
+      "carbs": 77.5,
+      "fiber": 3.4,
+      "sodium": 474,
+      "sugar": 5.4
+    },
+    "nutritionWarnings": [
+      "high_carb"
+    ],
+    "nutritionHighlights": [
+      "high_protein",
+      "low_fat",
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_gluten",
+      "allergen_sesame",
+      "allergen_soy"
+    ],
+    "dietaryFlags": []
   },
   {
     "id": "hunan_xiao_chao_rou",
@@ -4431,7 +5968,32 @@
       "下饭菜",
       "快手菜"
     ],
-    "description": "湘菜家常好味。精心烹饪，口感香辣、咸香、鲜美，新手友好，快手完成。"
+    "description": "湘菜经典家常做法。以五花肉配豆瓣酱为主料，翻炒收汁，爽脆入味，口味香辣、咸香、鲜美，做法简单、新手友好。",
+    "dishRole": "main_meat",
+    "isVegetarian": false,
+    "dishStyle": "meat",
+    "stapleCategory": null,
+    "cookingMethod": "stir_fry",
+    "perServing": {
+      "calories": 595,
+      "protein": 10.8,
+      "fat": 58.3,
+      "carbs": 6,
+      "fiber": 1.7,
+      "sodium": 520,
+      "sugar": 3.3
+    },
+    "nutritionWarnings": [
+      "high_fat"
+    ],
+    "nutritionHighlights": [
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_gluten",
+      "allergen_soy"
+    ],
+    "dietaryFlags": []
   },
   {
     "id": "homestyle_yumi_paigu_tang",
@@ -4492,7 +6054,29 @@
       "粤菜",
       "养生"
     ],
-    "description": "粤式家常好味。精心烹饪，口感清淡、甘甜、鲜美，操作简便，零失败。"
+    "description": "家常喝汤首选。以五花肉配玉米为主料，高汤吊味，暖胃润喉，口味清淡、甘甜、鲜美，一碗下肚，四季皆宜。",
+    "dishRole": "soup",
+    "isVegetarian": false,
+    "dishStyle": "meat",
+    "stapleCategory": null,
+    "cookingMethod": "soup",
+    "perServing": {
+      "calories": 509,
+      "protein": 10,
+      "fat": 47,
+      "carbs": 12.5,
+      "fiber": 2.1,
+      "sodium": 53,
+      "sugar": 2.8
+    },
+    "nutritionWarnings": [
+      "high_fat"
+    ],
+    "nutritionHighlights": [
+      "low_calorie"
+    ],
+    "allergens": [],
+    "dietaryFlags": []
   },
   {
     "id": "homestyle_chaomian",
@@ -4562,7 +6146,34 @@
       "快手菜",
       "便当菜"
     ],
-    "description": "家常家常好味。精心烹饪，口感咸香、鲜美，新手友好，快手完成。"
+    "description": "一碗能吃饱的家常菜主食。以挂面配胡萝卜为主料，大火爆炒，锅气十足，口味咸香、鲜美，工作日快手午餐首选。",
+    "dishRole": "staple",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": "noodles",
+    "cookingMethod": "staple",
+    "perServing": {
+      "calories": 418,
+      "protein": 14,
+      "fat": 5.5,
+      "carbs": 78.7,
+      "fiber": 5,
+      "sodium": 739,
+      "sugar": 5.4
+    },
+    "nutritionWarnings": [
+      "high_carb"
+    ],
+    "nutritionHighlights": [
+      "low_fat",
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_gluten",
+      "allergen_seafood",
+      "allergen_soy"
+    ],
+    "dietaryFlags": []
   },
   {
     "id": "homestyle_jidan_guanbing",
@@ -4616,7 +6227,28 @@
       "面点",
       "主食"
     ],
-    "description": "家常风味的经典早餐。精心烹饪，口感咸香、鲜美。"
+    "description": "深受欢迎的家常菜代表作。以鸡蛋配食用油为主料，大火爆炒，火候恰到好处，口味咸香、鲜美，家常做法、人人可学。",
+    "dishRole": "staple",
+    "isVegetarian": true,
+    "dishStyle": "egg",
+    "stapleCategory": "bread",
+    "perServing": {
+      "calories": 431,
+      "protein": 6.8,
+      "fat": 13.1,
+      "carbs": 69.2,
+      "fiber": 0.8,
+      "sodium": 70,
+      "sugar": 0.7
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_egg"
+    ],
+    "dietaryFlags": []
   },
   {
     "id": "hunan_duojiao_zhengyu",
@@ -4686,7 +6318,30 @@
       "蒸菜",
       "鱼"
     ],
-    "description": "湘菜家常好味。精心烹饪，口感香辣、鲜美，适合午餐/晚餐享用。"
+    "description": "湘菜里的传统味道。以三文鱼配豆瓣酱为主料，翻炒收汁，锅气十足，口味香辣、鲜美，步骤清晰、易上手。",
+    "dishRole": "main_meat",
+    "isVegetarian": false,
+    "dishStyle": "meat",
+    "stapleCategory": null,
+    "perServing": {
+      "calories": 255,
+      "protein": 20.7,
+      "fat": 16.5,
+      "carbs": 2.9,
+      "fiber": 0.4,
+      "sodium": 412,
+      "sugar": 0.4
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "high_protein",
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_seafood",
+      "allergen_soy"
+    ],
+    "dietaryFlags": []
   },
   {
     "id": "homestyle_tiepan_doufu",
@@ -4755,7 +6410,30 @@
       "素菜",
       "小吃"
     ],
-    "description": "家常家常好味。精心烹饪，口感咸香、香辣，新手友好，快手完成。"
+    "description": "家常菜经典家常做法。以豆腐配食用油为主料，大火爆炒，火候恰到好处，口味咸香、香辣，无需厨艺基础。",
+    "dishRole": "main_veg",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": null,
+    "perServing": {
+      "calories": 256,
+      "protein": 17.7,
+      "fat": 17.3,
+      "carbs": 11.6,
+      "fiber": 2,
+      "sodium": 566,
+      "sugar": 4.2
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_gluten",
+      "allergen_seafood",
+      "allergen_soy"
+    ],
+    "dietaryFlags": []
   },
   {
     "id": "jiangsu_hongshao_shizi_tou",
@@ -4831,7 +6509,31 @@
       "硬菜",
       "宴客菜"
     ],
-    "description": "苏菜宴客名菜。精心烹饪，口感咸香、鲜美，工序讲究，宴请体面。"
+    "description": "苏菜里的下饭好手。以猪肉末配鸡蛋为主料，大火爆炒，锅气十足，口味咸香、鲜美，细节到位，味道地道。",
+    "dishRole": "main_meat",
+    "isVegetarian": false,
+    "dishStyle": "meat",
+    "stapleCategory": null,
+    "cookingMethod": "braise",
+    "perServing": {
+      "calories": 379,
+      "protein": 19.7,
+      "fat": 30,
+      "carbs": 6.6,
+      "fiber": 0.7,
+      "sodium": 253,
+      "sugar": 0.9
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_egg",
+      "allergen_gluten",
+      "allergen_soy"
+    ],
+    "dietaryFlags": []
   },
   {
     "id": "homestyle_qingzheng_jidan",
@@ -4885,7 +6587,31 @@
       "甜点",
       "早餐"
     ],
-    "description": "家常风味的经典早餐。精心烹饪，口感甘甜、清淡。"
+    "description": "深受欢迎的家常菜代表作。以鸡蛋配牛奶为主料，清蒸锁鲜，鲜嫩清甜，口味甘甜、清淡，一次成功的家常菜。",
+    "dishRole": "staple",
+    "isVegetarian": true,
+    "dishStyle": "egg",
+    "stapleCategory": "bread",
+    "cookingMethod": "steam",
+    "perServing": {
+      "calories": 167,
+      "protein": 6.8,
+      "fat": 5.6,
+      "carbs": 22.3,
+      "fiber": 0.1,
+      "sodium": 67,
+      "sugar": 10.9
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "low_fat",
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_dairy",
+      "allergen_egg"
+    ],
+    "dietaryFlags": []
   },
   {
     "id": "homestyle_jiaozi_xian",
@@ -4956,7 +6682,31 @@
       "东北菜",
       "主食"
     ],
-    "description": "东北风味宴客名菜。精心烹饪，口感鲜美、咸香，工序讲究，宴请体面。"
+    "description": "东北菜特色主食。以猪肉末配大白菜为主料，翻炒收汁，爽脆入味，口味鲜美、咸香，吃了就停不下来。",
+    "dishRole": "staple",
+    "isVegetarian": false,
+    "dishStyle": "meat",
+    "stapleCategory": "mantou",
+    "cookingMethod": "staple",
+    "perServing": {
+      "calories": 512,
+      "protein": 14.3,
+      "fat": 17.3,
+      "carbs": 71.6,
+      "fiber": 1.8,
+      "sodium": 270,
+      "sugar": 1.2
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_gluten",
+      "allergen_sesame",
+      "allergen_soy"
+    ],
+    "dietaryFlags": []
   },
   {
     "id": "homestyle_paigu_dun_luobo",
@@ -5022,7 +6772,32 @@
       "暖胃",
       "家常菜"
     ],
-    "description": "家常家常好味。精心烹饪，口感清淡、鲜美，适合午餐/晚餐享用。"
+    "description": "家常菜里的传统味道。以五花肉配胡萝卜为主料，翻炒收汁，爽脆入味，口味清淡、鲜美，家常做法、人人可学。",
+    "dishRole": "main_meat",
+    "isVegetarian": false,
+    "dishStyle": "meat",
+    "stapleCategory": null,
+    "cookingMethod": "stew",
+    "perServing": {
+      "calories": 738,
+      "protein": 13.6,
+      "fat": 70.9,
+      "carbs": 11,
+      "fiber": 3,
+      "sodium": 205,
+      "sugar": 4.9
+    },
+    "nutritionWarnings": [
+      "high_fat"
+    ],
+    "nutritionHighlights": [
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_gluten",
+      "allergen_soy"
+    ],
+    "dietaryFlags": []
   },
   {
     "id": "sichuan_dandan_mian",
@@ -5103,7 +6878,31 @@
       "面条",
       "小吃"
     ],
-    "description": "川菜家常好味。精心烹饪，口感香辣、鲜美、咸香，适合午餐/晚餐享用。"
+    "description": "川菜特色主食。以挂面配猪肉末为主料，大火爆炒，锅气十足，口味香辣、鲜美、咸香，吃了就停不下来。",
+    "dishRole": "staple",
+    "isVegetarian": false,
+    "dishStyle": "meat",
+    "stapleCategory": "noodles",
+    "cookingMethod": "staple",
+    "perServing": {
+      "calories": 529,
+      "protein": 21.7,
+      "fat": 15.9,
+      "carbs": 74.2,
+      "fiber": 3.3,
+      "sodium": 766,
+      "sugar": 2.3
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_gluten",
+      "allergen_sesame",
+      "allergen_soy"
+    ],
+    "dietaryFlags": []
   },
   {
     "id": "homestyle_shaguo_doufu",
@@ -5183,7 +6982,33 @@
       "煲仔",
       "暖胃"
     ],
-    "description": "粤式家常好味。精心烹饪，口感鲜美、咸香，适合晚餐享用。"
+    "description": "粤菜餐桌上的暖心汤。以豆腐配猪肉末为主料，大火爆炒，火候恰到好处，口味鲜美、咸香，一碗下肚，四季皆宜。",
+    "dishRole": "soup",
+    "isVegetarian": false,
+    "dishStyle": "meat",
+    "stapleCategory": null,
+    "cookingMethod": "stew",
+    "perServing": {
+      "calories": 242,
+      "protein": 18,
+      "fat": 16.9,
+      "carbs": 7.1,
+      "fiber": 1.1,
+      "sodium": 215,
+      "sugar": 1.9
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_gluten",
+      "allergen_seafood",
+      "allergen_soy"
+    ],
+    "dietaryFlags": [
+      "high_purine"
+    ]
   },
   {
     "id": "homestyle_doujiao_chao_rou",
@@ -5243,7 +7068,29 @@
       "下饭菜",
       "便当菜"
     ],
-    "description": "家常家常好味。精心烹饪，口感咸香、鲜美，新手友好，快手完成。"
+    "description": "家常菜里的下饭好手。以四季豆配五花肉为主料，旺火快炒，爽脆入味，口味咸香、鲜美，快手就能端上桌。",
+    "dishRole": "main_meat",
+    "isVegetarian": false,
+    "dishStyle": "meat",
+    "stapleCategory": null,
+    "perServing": {
+      "calories": 341,
+      "protein": 6.9,
+      "fat": 31.6,
+      "carbs": 8.3,
+      "fiber": 3.5,
+      "sodium": 206,
+      "sugar": 1.4
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_gluten",
+      "allergen_soy"
+    ],
+    "dietaryFlags": []
   },
   {
     "id": "shandong_jiaoyanbai",
@@ -5307,7 +7154,33 @@
       "下酒菜",
       "宴客菜"
     ],
-    "description": "粤式家常好味。精心烹饪，口感咸香、香辣，适合晚餐享用。"
+    "description": "深受欢迎的粤菜代表作。以虾配食用油为主料，旺火快炒，爽脆入味，口味咸香、香辣，一次成功的家常菜。",
+    "dishRole": "main_meat",
+    "isVegetarian": false,
+    "dishStyle": "meat",
+    "stapleCategory": null,
+    "cookingMethod": "stir_fry",
+    "perServing": {
+      "calories": 208,
+      "protein": 20.4,
+      "fat": 10.6,
+      "carbs": 8.2,
+      "fiber": 0.4,
+      "sodium": 121,
+      "sugar": 0.5
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "low_calorie",
+      "high_protein",
+      "low_fat"
+    ],
+    "allergens": [
+      "allergen_seafood"
+    ],
+    "dietaryFlags": [
+      "high_purine"
+    ]
   },
   {
     "id": "homestyle_hua_dan_niurou_fan",
@@ -5383,7 +7256,35 @@
       "盖饭",
       "便当菜"
     ],
-    "description": "粤式家常好味。精心烹饪，口感鲜美、咸香，新手友好，快手完成。"
+    "description": "粤菜餐桌必备主食。以大米配牛里脊为主料，旺火快炒，爽脆入味，口味鲜美、咸香，简单一顿就满足。",
+    "dishRole": "staple",
+    "isVegetarian": false,
+    "dishStyle": "meat",
+    "stapleCategory": "rice",
+    "cookingMethod": "staple",
+    "perServing": {
+      "calories": 640,
+      "protein": 40.6,
+      "fat": 30.5,
+      "carbs": 48.2,
+      "fiber": 1.1,
+      "sodium": 561,
+      "sugar": 2.1
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "high_protein",
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_egg",
+      "allergen_gluten",
+      "allergen_seafood",
+      "allergen_soy"
+    ],
+    "dietaryFlags": [
+      "high_purine"
+    ]
   },
   {
     "id": "homestyle_luji_tui",
@@ -5450,7 +7351,32 @@
       "粤菜",
       "便当菜"
     ],
-    "description": "粤式家常好味。精心烹饪，口感甘甜、咸香、鲜美，操作简便，零失败。"
+    "description": "粤菜经典家常做法。以鸡腿肉为主料，旺火快炒，火候恰到好处，口味甘甜、咸香、鲜美，无需厨艺基础。",
+    "dishRole": "main_meat",
+    "isVegetarian": false,
+    "dishStyle": "meat",
+    "stapleCategory": null,
+    "perServing": {
+      "calories": 383,
+      "protein": 44.6,
+      "fat": 18.2,
+      "carbs": 7,
+      "fiber": 0.3,
+      "sodium": 875,
+      "sugar": 5.3
+    },
+    "nutritionWarnings": [
+      "high_sodium"
+    ],
+    "nutritionHighlights": [
+      "high_protein",
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_gluten",
+      "allergen_soy"
+    ],
+    "dietaryFlags": []
   },
   {
     "id": "homestyle_chao_yumi_li",
@@ -5509,7 +7435,27 @@
       "素菜",
       "便当菜"
     ],
-    "description": "东北风味家常好味。精心烹饪，口感甘甜、清淡，新手友好，快手完成。"
+    "description": "东北菜里的传统味道。以玉米配胡萝卜为主料，翻炒收汁，爽脆入味，口味甘甜、清淡，快手就能端上桌。",
+    "dishRole": "main_veg",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": null,
+    "perServing": {
+      "calories": 154,
+      "protein": 3.6,
+      "fat": 6.3,
+      "carbs": 24.9,
+      "fiber": 3.5,
+      "sodium": 33,
+      "sugar": 7.3
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "low_fat",
+      "low_calorie"
+    ],
+    "allergens": [],
+    "dietaryFlags": []
   },
   {
     "id": "fujian_honggu_zhengji",
@@ -5584,7 +7530,34 @@
       "粤菜",
       "便当菜"
     ],
-    "description": "粤式家常好味。精心烹饪，口感鲜美、咸香，新手友好，快手完成。"
+    "description": "粤菜里的下饭好手。以鸡腿肉配蘑菇为主料，翻炒收汁，爽脆入味，口味鲜美、咸香，无需厨艺基础。",
+    "dishRole": "main_meat",
+    "isVegetarian": false,
+    "dishStyle": "meat",
+    "stapleCategory": null,
+    "perServing": {
+      "calories": 317,
+      "protein": 36.3,
+      "fat": 15.7,
+      "carbs": 5.5,
+      "fiber": 0.5,
+      "sodium": 481,
+      "sugar": 0.9
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "high_protein",
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_gluten",
+      "allergen_seafood",
+      "allergen_sesame",
+      "allergen_soy"
+    ],
+    "dietaryFlags": [
+      "high_purine"
+    ]
   },
   {
     "id": "homestyle_doufu_tang",
@@ -5604,7 +7577,7 @@
     "minCookingLevel": "beginner",
     "prepTime": 5,
     "cookTime": 8,
-    "servings": 3,
+    "servings": 1,
     "ingredients": [
       {
         "ingredientId": "tofu",
@@ -5639,7 +7612,31 @@
       "快手菜",
       "清淡"
     ],
-    "description": "家常家常好味。精心烹饪，口感清淡、鲜美，新手友好，快手完成。"
+    "description": "家常喝汤首选。以豆腐配鸡蛋为主料，高汤吊味，汤色清亮，口味清淡、鲜美，与主食搭配相得益彰。",
+    "dishRole": "soup",
+    "isVegetarian": true,
+    "dishStyle": "egg",
+    "stapleCategory": null,
+    "cookingMethod": "soup",
+    "perServing": {
+      "calories": 258,
+      "protein": 22.6,
+      "fat": 18.1,
+      "carbs": 4.7,
+      "fiber": 0.7,
+      "sodium": 77,
+      "sugar": 1.9
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_egg",
+      "allergen_sesame",
+      "allergen_soy"
+    ],
+    "dietaryFlags": []
   },
   {
     "id": "homestyle_heiye_chao_rou",
@@ -5710,7 +7707,33 @@
       "便当菜",
       "下饭菜"
     ],
-    "description": "粤式家常好味。精心烹饪，口感香辣、鲜美、咸香，适合午餐/晚餐享用。"
+    "description": "粤菜里的下饭好手。以牛里脊配食用油为主料，大火爆炒，锅气十足，口味香辣、鲜美、咸香，一次成功的家常菜。",
+    "dishRole": "main_meat",
+    "isVegetarian": false,
+    "dishStyle": "meat",
+    "stapleCategory": null,
+    "perServing": {
+      "calories": 371,
+      "protein": 27.2,
+      "fat": 24.8,
+      "carbs": 8.7,
+      "fiber": 1.3,
+      "sodium": 423,
+      "sugar": 3
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "high_protein",
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_gluten",
+      "allergen_seafood",
+      "allergen_soy"
+    ],
+    "dietaryFlags": [
+      "high_purine"
+    ]
   },
   {
     "id": "homestyle_cai_xin_chao_dan",
@@ -5764,7 +7787,28 @@
       "家常菜",
       "清热"
     ],
-    "description": "粤式家常好味。精心烹饪，口感微苦、鲜美，新手友好，快手完成。"
+    "description": "粤菜家庭餐桌常客。以西葫芦配鸡蛋为主料，大火爆炒，火候恰到好处，口味微苦、鲜美，无需厨艺基础。",
+    "dishRole": "main_veg",
+    "isVegetarian": true,
+    "dishStyle": "egg",
+    "stapleCategory": null,
+    "perServing": {
+      "calories": 203,
+      "protein": 11.1,
+      "fat": 16.1,
+      "carbs": 4.8,
+      "fiber": 1.1,
+      "sodium": 101,
+      "sugar": 3.4
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_egg"
+    ],
+    "dietaryFlags": []
   },
   {
     "id": "sichuan_koushui_ji",
@@ -5849,7 +7893,31 @@
       "凉菜",
       "宴客菜"
     ],
-    "description": "川菜家常好味。精心烹饪，口感香辣、酸爽、鲜美，适合晚餐享用。"
+    "description": "川菜经典家常做法。以鸡腿肉配豆瓣酱为主料，大火爆炒，锅气十足，口味香辣、酸爽、鲜美，一次成功的家常菜。",
+    "dishRole": "main_meat",
+    "isVegetarian": false,
+    "dishStyle": "meat",
+    "stapleCategory": null,
+    "perServing": {
+      "calories": 337,
+      "protein": 35.9,
+      "fat": 18,
+      "carbs": 5.4,
+      "fiber": 0.4,
+      "sodium": 622,
+      "sugar": 2.1
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "high_protein",
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_gluten",
+      "allergen_sesame",
+      "allergen_soy"
+    ],
+    "dietaryFlags": []
   },
   {
     "id": "homestyle_jiucai_jiaozi",
@@ -5909,7 +7977,31 @@
       "素菜",
       "东北菜"
     ],
-    "description": "东北风味宴客名菜。精心烹饪，口感鲜美、清淡，工序讲究，宴请体面。"
+    "description": "一碗能吃饱的东北菜主食。以鸡蛋配食用油为主料，翻炒收汁，锅气十足，口味鲜美、清淡，工作日快手午餐首选。",
+    "dishRole": "staple",
+    "isVegetarian": true,
+    "dishStyle": "egg",
+    "stapleCategory": "mantou",
+    "cookingMethod": "staple",
+    "perServing": {
+      "calories": 388,
+      "protein": 6,
+      "fat": 7.4,
+      "carbs": 72.3,
+      "fiber": 2,
+      "sodium": 61,
+      "sugar": 1.6
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "low_fat",
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_egg",
+      "allergen_sesame"
+    ],
+    "dietaryFlags": []
   },
   {
     "id": "homestyle_hefen_chao_niurou",
@@ -5980,7 +8072,35 @@
       "主食",
       "镬气"
     ],
-    "description": "粤式宴客名菜。精心烹饪，口感咸香、鲜美，工序讲究，宴请体面。"
+    "description": "粤菜里的传统味道。以牛里脊配小白菜为主料，旺火快炒，火候恰到好处，口味咸香、鲜美，细节到位，味道地道。",
+    "dishRole": "main_meat",
+    "isVegetarian": false,
+    "dishStyle": "meat",
+    "stapleCategory": null,
+    "perServing": {
+      "calories": 857,
+      "protein": 32.2,
+      "fat": 31.4,
+      "carbs": 108.5,
+      "fiber": 2.9,
+      "sodium": 787,
+      "sugar": 0.9
+    },
+    "nutritionWarnings": [
+      "high_calorie",
+      "high_carb"
+    ],
+    "nutritionHighlights": [
+      "high_protein",
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_gluten",
+      "allergen_soy"
+    ],
+    "dietaryFlags": [
+      "high_purine"
+    ]
   },
   {
     "id": "homestyle_tang_you_ji",
@@ -6050,7 +8170,29 @@
       "便当菜",
       "下饭菜"
     ],
-    "description": "家常家常好味。精心烹饪，口感甘甜、咸香，适合午餐/晚餐享用。"
+    "description": "家常菜里的传统味道。以鸡腿肉配食用油为主料，翻炒收汁，爽脆入味，口味甘甜、咸香，家常做法、人人可学。",
+    "dishRole": "main_meat",
+    "isVegetarian": false,
+    "dishStyle": "meat",
+    "stapleCategory": null,
+    "perServing": {
+      "calories": 391,
+      "protein": 35.2,
+      "fat": 21.2,
+      "carbs": 12.2,
+      "fiber": 0.2,
+      "sodium": 389,
+      "sugar": 6.8
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "high_protein"
+    ],
+    "allergens": [
+      "allergen_gluten",
+      "allergen_soy"
+    ],
+    "dietaryFlags": []
   },
   {
     "id": "homestyle_liangban_qiezi",
@@ -6116,7 +8258,32 @@
       "素菜",
       "夏日"
     ],
-    "description": "家常家常好味。精心烹饪，口感酸爽、鲜美、香辣，新手友好，快手完成。"
+    "description": "夏日开胃必备。以茄子为主料，腌渍入味，清凉解腻，口味酸爽、鲜美、香辣，搭配白酒/啤酒绝配。",
+    "dishRole": "cold",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": null,
+    "cookingMethod": "cold_dish",
+    "perServing": {
+      "calories": 76,
+      "protein": 2.6,
+      "fat": 2.9,
+      "carbs": 12.1,
+      "fiber": 4.8,
+      "sodium": 417,
+      "sugar": 5.4
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "low_fat",
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_gluten",
+      "allergen_sesame",
+      "allergen_soy"
+    ],
+    "dietaryFlags": []
   },
   {
     "id": "homestyle_hongshao_niurou_mian",
@@ -6204,7 +8371,35 @@
       "硬菜",
       "暖胃"
     ],
-    "description": "家常宴客名菜。精心烹饪，口感咸香、鲜美、香辣，工序讲究，宴请体面。"
+    "description": "家常菜里的饱腹主食。以牛里脊配挂面为主料，层次铺陈，饱腹实在，口味咸香、鲜美、香辣，一碗顶饱。",
+    "dishRole": "staple",
+    "isVegetarian": false,
+    "dishStyle": "meat",
+    "stapleCategory": "noodles",
+    "cookingMethod": "staple",
+    "perServing": {
+      "calories": 768,
+      "protein": 48.8,
+      "fat": 28.3,
+      "carbs": 77.8,
+      "fiber": 4.2,
+      "sodium": 751,
+      "sugar": 4.1
+    },
+    "nutritionWarnings": [
+      "high_carb"
+    ],
+    "nutritionHighlights": [
+      "high_protein",
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_gluten",
+      "allergen_soy"
+    ],
+    "dietaryFlags": [
+      "high_purine"
+    ]
   },
   {
     "id": "homestyle_gali_jikuai",
@@ -6266,7 +8461,27 @@
       "便当菜",
       "一锅菜"
     ],
-    "description": "家常家常好味。精心烹饪，口感香辣、甘甜、鲜美，适合午餐/晚餐享用。"
+    "description": "家常菜经典家常做法。以鸡腿肉配土豆为主料，大火爆炒，火候恰到好处，口味香辣、甘甜、鲜美，家常做法、人人可学。",
+    "dishRole": "main_meat",
+    "isVegetarian": false,
+    "dishStyle": "meat",
+    "stapleCategory": null,
+    "perServing": {
+      "calories": 401,
+      "protein": 36.7,
+      "fat": 19.7,
+      "carbs": 17.8,
+      "fiber": 3,
+      "sodium": 140,
+      "sugar": 3.5
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "high_protein",
+      "low_calorie"
+    ],
+    "allergens": [],
+    "dietaryFlags": []
   },
   {
     "id": "homestyle_qingzha_xia",
@@ -6336,7 +8551,35 @@
       "宴客菜",
       "硬菜"
     ],
-    "description": "鲁菜家常好味。精心烹饪，口感甘甜、咸香、鲜美，适合晚餐享用。"
+    "description": "鲁菜里的传统味道。以虾配食用油为主料，旺火快炒，火候恰到好处，口味甘甜、咸香、鲜美，步骤清晰、易上手。",
+    "dishRole": "main_meat",
+    "isVegetarian": false,
+    "dishStyle": "meat",
+    "stapleCategory": null,
+    "cookingMethod": "braise",
+    "perServing": {
+      "calories": 192,
+      "protein": 27,
+      "fat": 7.4,
+      "carbs": 4.8,
+      "fiber": 0.2,
+      "sodium": 298,
+      "sugar": 3.5
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "high_protein",
+      "low_fat",
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_gluten",
+      "allergen_seafood",
+      "allergen_soy"
+    ],
+    "dietaryFlags": [
+      "high_purine"
+    ]
   },
   {
     "id": "homestyle_shaguo_mifen",
@@ -6412,7 +8655,32 @@
       "面条",
       "暖胃"
     ],
-    "description": "家常家常好味。精心烹饪，口感鲜美、咸香，新手友好，快手完成。"
+    "description": "家常菜特色主食。以猪肉末配蘑菇为主料，翻炒收汁，锅气十足，口味鲜美、咸香，吃了就停不下来。",
+    "dishRole": "staple",
+    "isVegetarian": false,
+    "dishStyle": "meat",
+    "stapleCategory": "noodles",
+    "cookingMethod": "staple",
+    "perServing": {
+      "calories": 443,
+      "protein": 14.4,
+      "fat": 13.5,
+      "carbs": 65.4,
+      "fiber": 2.1,
+      "sodium": 339,
+      "sugar": 1.3
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_gluten",
+      "allergen_soy"
+    ],
+    "dietaryFlags": [
+      "high_purine"
+    ]
   },
   {
     "id": "homestyle_dofu_niang",
@@ -6483,7 +8751,30 @@
       "蒸菜",
       "宴客菜"
     ],
-    "description": "粤式家常好味。精心烹饪，口感鲜美、咸香，适合午餐/晚餐享用。"
+    "description": "深受欢迎的粤菜代表作。以豆腐配猪肉末为主料，旺火快炒，火候恰到好处，口味鲜美、咸香，步骤清晰、易上手。",
+    "dishRole": "main_meat",
+    "isVegetarian": false,
+    "dishStyle": "meat",
+    "stapleCategory": null,
+    "perServing": {
+      "calories": 294,
+      "protein": 19.6,
+      "fat": 21.9,
+      "carbs": 6.3,
+      "fiber": 0.5,
+      "sodium": 317,
+      "sugar": 1
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_gluten",
+      "allergen_seafood",
+      "allergen_soy"
+    ],
+    "dietaryFlags": []
   },
   {
     "id": "homestyle_shucai_wotou",
@@ -6542,7 +8833,28 @@
       "便当菜",
       "低脂"
     ],
-    "description": "家常风味的经典早餐。精心烹饪，口感清淡、鲜美，新手友好，快手完成。"
+    "description": "家常菜里的传统味道。以鸡蛋配胡萝卜为主料，旺火快炒，爽脆入味，口味清淡、鲜美，做法简单、新手友好。",
+    "dishRole": "main_veg",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": null,
+    "perServing": {
+      "calories": 185,
+      "protein": 10.5,
+      "fat": 13.5,
+      "carbs": 6.5,
+      "fiber": 1.2,
+      "sodium": 113,
+      "sugar": 2.6
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_egg"
+    ],
+    "dietaryFlags": []
   },
   {
     "id": "sichuan_chao_ershang",
@@ -6608,7 +8920,29 @@
       "下饭菜",
       "便当菜"
     ],
-    "description": "川菜家常好味。精心烹饪，口感香辣、咸香、鲜美，适合午餐/晚餐享用。"
+    "description": "川菜家庭餐桌常客。以四季豆配猪肉末为主料，大火爆炒，锅气十足，口味香辣、咸香、鲜美，一次成功的家常菜。",
+    "dishRole": "main_meat",
+    "isVegetarian": false,
+    "dishStyle": "meat",
+    "stapleCategory": null,
+    "perServing": {
+      "calories": 193,
+      "protein": 7.4,
+      "fat": 14.1,
+      "carbs": 10.9,
+      "fiber": 4.7,
+      "sodium": 209,
+      "sugar": 1.9
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_gluten",
+      "allergen_soy"
+    ],
+    "dietaryFlags": []
   },
   {
     "id": "homestyle_jiwei_xia",
@@ -6669,7 +9003,35 @@
       "低脂",
       "快手菜"
     ],
-    "description": "粤式家常好味。精心烹饪，口感清淡、鲜美，新手友好，快手完成。"
+    "description": "深受欢迎的粤菜代表作。以虾为主料，大火爆炒，火候恰到好处，口味清淡、鲜美，无需厨艺基础。",
+    "dishRole": "main_meat",
+    "isVegetarian": false,
+    "dishStyle": "meat",
+    "stapleCategory": null,
+    "perServing": {
+      "calories": 129,
+      "protein": 27.1,
+      "fat": 1.7,
+      "carbs": 1.6,
+      "fiber": 0.2,
+      "sodium": 343,
+      "sugar": 0.2
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "high_protein",
+      "low_fat",
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_gluten",
+      "allergen_seafood",
+      "allergen_sesame",
+      "allergen_soy"
+    ],
+    "dietaryFlags": [
+      "high_purine"
+    ]
   },
   {
     "id": "homestyle_digua_fan",
@@ -6714,7 +9076,28 @@
       "养生",
       "粗粮"
     ],
-    "description": "家常家常好味。精心烹饪，口感甘甜、清淡，操作简便，零失败。"
+    "description": "一碗能吃饱的家常菜主食。以大米配红薯为主料，大火爆炒，火候恰到好处，口味甘甜、清淡，工作日快手午餐首选。",
+    "dishRole": "staple",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": "rice",
+    "cookingMethod": "staple",
+    "perServing": {
+      "calories": 144,
+      "protein": 2.9,
+      "fat": 0.3,
+      "carbs": 32,
+      "fiber": 2.3,
+      "sodium": 37,
+      "sugar": 2.8
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "low_fat",
+      "low_calorie"
+    ],
+    "allergens": [],
+    "dietaryFlags": []
   },
   {
     "id": "homestyle_yumi_luobo_tang",
@@ -6734,7 +9117,7 @@
     "minCookingLevel": "beginner",
     "prepTime": 5,
     "cookTime": 20,
-    "servings": 3,
+    "servings": 1,
     "ingredients": [
       {
         "ingredientId": "corn",
@@ -6764,7 +9147,29 @@
       "清淡",
       "养生"
     ],
-    "description": "粤式家常好味。精心烹饪，口感甘甜、清淡，新手友好，快手完成。"
+    "description": "粤菜餐桌上的暖心汤。以玉米配胡萝卜为主料，高汤吊味，暖胃润喉，口味甘甜、清淡，一碗下肚，四季皆宜。",
+    "dishRole": "soup",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": null,
+    "cookingMethod": "soup",
+    "perServing": {
+      "calories": 238,
+      "protein": 7.8,
+      "fat": 2.7,
+      "carbs": 53.9,
+      "fiber": 9.7,
+      "sodium": 134,
+      "sugar": 13.5
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "high_fiber",
+      "low_fat",
+      "low_calorie"
+    ],
+    "allergens": [],
+    "dietaryFlags": []
   },
   {
     "id": "homestyle_niurou_shao_tudou",
@@ -6841,7 +9246,32 @@
       "硬菜",
       "便当菜"
     ],
-    "description": "家常家常好味。精心烹饪，口感咸香、鲜美，适合午餐/晚餐享用。"
+    "description": "家常菜家庭餐桌常客。以牛里脊配土豆为主料，大火爆炒，火候恰到好处，口味咸香、鲜美，家常做法、人人可学。",
+    "dishRole": "main_meat",
+    "isVegetarian": false,
+    "dishStyle": "meat",
+    "stapleCategory": null,
+    "perServing": {
+      "calories": 505,
+      "protein": 37.7,
+      "fat": 29.2,
+      "carbs": 21.1,
+      "fiber": 2.8,
+      "sodium": 447,
+      "sugar": 2.1
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "high_protein",
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_gluten",
+      "allergen_soy"
+    ],
+    "dietaryFlags": [
+      "high_purine"
+    ]
   },
   {
     "id": "homestyle_xihulu_chao_xia",
@@ -6900,7 +9330,32 @@
       "低脂",
       "便当菜"
     ],
-    "description": "家常家常好味。精心烹饪，口感清淡、鲜美，新手友好，快手完成。"
+    "description": "家常菜里的下饭好手。以西葫芦配虾为主料，翻炒收汁，锅气十足，口味清淡、鲜美，做法简单、新手友好。",
+    "dishRole": "main_meat",
+    "isVegetarian": false,
+    "dishStyle": "meat",
+    "stapleCategory": null,
+    "perServing": {
+      "calories": 135,
+      "protein": 16.7,
+      "fat": 5.8,
+      "carbs": 5,
+      "fiber": 1.3,
+      "sodium": 101,
+      "sugar": 3.2
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "low_fat",
+      "low_calorie",
+      "high_protein"
+    ],
+    "allergens": [
+      "allergen_seafood"
+    ],
+    "dietaryFlags": [
+      "high_purine"
+    ]
   },
   {
     "id": "homestyle_liangban_muer",
@@ -6964,7 +9419,34 @@
       "素菜",
       "开胃"
     ],
-    "description": "家常家常好味。精心烹饪，口感酸爽、清淡，新手友好，快手完成。"
+    "description": "家常菜凉拌代表作。以蘑菇配胡萝卜为主料，腌渍入味，爽口开胃，口味酸爽、清淡，夏日餐桌常客。",
+    "dishRole": "cold",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": null,
+    "cookingMethod": "cold_dish",
+    "perServing": {
+      "calories": 60,
+      "protein": 3.3,
+      "fat": 2.8,
+      "carbs": 6.9,
+      "fiber": 1.6,
+      "sodium": 297,
+      "sugar": 2.8
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "low_fat",
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_gluten",
+      "allergen_sesame",
+      "allergen_soy"
+    ],
+    "dietaryFlags": [
+      "high_purine"
+    ]
   },
   {
     "id": "dongbei_dabancai",
@@ -7034,7 +9516,30 @@
       "素菜",
       "开胃"
     ],
-    "description": "东北风味家常好味。精心烹饪，口感酸爽、清淡，操作简便，零失败。"
+    "description": "夏日开胃必备。以黄瓜配番茄为主料，旺火快炒，爽脆入味，口味酸爽、清淡，开胃又解腻。",
+    "dishRole": "cold",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": null,
+    "cookingMethod": "cold_dish",
+    "perServing": {
+      "calories": 46,
+      "protein": 1.2,
+      "fat": 1.9,
+      "carbs": 6.8,
+      "fiber": 1.4,
+      "sodium": 5,
+      "sugar": 3.2
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "low_fat",
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_sesame"
+    ],
+    "dietaryFlags": []
   },
   {
     "id": "homestyle_ji_dan_mian",
@@ -7100,7 +9605,30 @@
       "面条",
       "快手菜"
     ],
-    "description": "家常风味的经典早餐。精心烹饪，口感鲜美、清淡，新手友好，快手完成。"
+    "description": "家常菜特色主食。以挂面配鸡蛋为主料，旺火快炒，爽脆入味，口味鲜美、清淡，吃了就停不下来。",
+    "dishRole": "staple",
+    "isVegetarian": true,
+    "dishStyle": "egg",
+    "stapleCategory": "noodles",
+    "perServing": {
+      "calories": 393,
+      "protein": 16.5,
+      "fat": 11.7,
+      "carbs": 55.9,
+      "fiber": 2.8,
+      "sodium": 367,
+      "sugar": 2.6
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_egg",
+      "allergen_gluten",
+      "allergen_soy"
+    ],
+    "dietaryFlags": []
   },
   {
     "id": "hunan_chao_lamian",
@@ -7165,7 +9693,32 @@
       "主食",
       "面条"
     ],
-    "description": "湘菜家常好味。精心烹饪，口感香辣、咸香，新手友好，快手完成。"
+    "description": "一碗能吃饱的湘菜主食。以挂面配五花肉为主料，大火爆炒，火候恰到好处，口味香辣、咸香，工作日快手午餐首选。",
+    "dishRole": "staple",
+    "isVegetarian": false,
+    "dishStyle": "meat",
+    "stapleCategory": "noodles",
+    "cookingMethod": "staple",
+    "perServing": {
+      "calories": 651,
+      "protein": 17.8,
+      "fat": 30.6,
+      "carbs": 75.6,
+      "fiber": 4,
+      "sodium": 435,
+      "sugar": 3.7
+    },
+    "nutritionWarnings": [
+      "high_carb"
+    ],
+    "nutritionHighlights": [
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_gluten",
+      "allergen_soy"
+    ],
+    "dietaryFlags": []
   },
   {
     "id": "homestyle_zheng_nangua",
@@ -7205,7 +9758,28 @@
       "养生",
       "低脂"
     ],
-    "description": "家常家常好味。精心烹饪，口感甘甜、清淡，新手友好，快手完成。"
+    "description": "家常菜里的传统味道。以红薯为主料，清蒸锁鲜，鲜嫩清甜，口味甘甜、清淡，无需厨艺基础。",
+    "dishRole": "main_veg",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": null,
+    "cookingMethod": "steam",
+    "perServing": {
+      "calories": 115,
+      "protein": 2.1,
+      "fat": 0.1,
+      "carbs": 26.7,
+      "fiber": 4,
+      "sodium": 73,
+      "sugar": 5.6
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "low_fat",
+      "low_calorie"
+    ],
+    "allergens": [],
+    "dietaryFlags": []
   },
   {
     "id": "homestyle_yangcong_chao_dan",
@@ -7254,7 +9828,28 @@
       "家常菜",
       "便当菜"
     ],
-    "description": "家常家常好味。精心烹饪，口感甘甜、鲜美，新手友好，快手完成。"
+    "description": "家常菜经典家常做法。以鸡蛋配食用油为主料，大火爆炒，锅气十足，口味甘甜、鲜美，快手就能端上桌。",
+    "dishRole": "main_veg",
+    "isVegetarian": true,
+    "dishStyle": "egg",
+    "stapleCategory": null,
+    "perServing": {
+      "calories": 223,
+      "protein": 10.9,
+      "fat": 15.9,
+      "carbs": 10.1,
+      "fiber": 1.7,
+      "sodium": 97,
+      "sugar": 5
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_egg"
+    ],
+    "dietaryFlags": []
   },
   {
     "id": "homestyle_jiang_ban_doufu",
@@ -7313,7 +9908,31 @@
       "素菜",
       "快手菜"
     ],
-    "description": "家常家常好味。精心烹饪，口感清淡、鲜美，操作简便，零失败。"
+    "description": "家常菜经典家常做法。以豆腐为主料，大火爆炒，锅气十足，口味清淡、鲜美，家常操作、零失败。",
+    "dishRole": "main_veg",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": null,
+    "perServing": {
+      "calories": 143,
+      "protein": 12.6,
+      "fat": 9.7,
+      "carbs": 4.1,
+      "fiber": 0.6,
+      "sodium": 286,
+      "sugar": 1
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "low_fat",
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_gluten",
+      "allergen_sesame",
+      "allergen_soy"
+    ],
+    "dietaryFlags": []
   },
   {
     "id": "homestyle_tudou_men_ji",
@@ -7389,7 +10008,30 @@
       "一锅菜",
       "便当菜"
     ],
-    "description": "家常家常好味。精心烹饪，口感咸香、鲜美，适合午餐/晚餐享用。"
+    "description": "家常菜里的下饭好手。以鸡腿肉配土豆为主料，翻炒收汁，锅气十足，口味咸香、鲜美，步骤清晰、易上手。",
+    "dishRole": "main_meat",
+    "isVegetarian": false,
+    "dishStyle": "meat",
+    "stapleCategory": null,
+    "cookingMethod": "braise",
+    "perServing": {
+      "calories": 390,
+      "protein": 36.9,
+      "fat": 18,
+      "carbs": 17.8,
+      "fiber": 2,
+      "sodium": 302,
+      "sugar": 2.5
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "high_protein"
+    ],
+    "allergens": [
+      "allergen_gluten",
+      "allergen_soy"
+    ],
+    "dietaryFlags": []
   },
   {
     "id": "shandong_pa_baicai",
@@ -7449,7 +10091,27 @@
       "快手菜",
       "素菜"
     ],
-    "description": "鲁菜家常好味。精心烹饪，口感酸爽、清淡，新手友好，快手完成。"
+    "description": "鲁菜家庭餐桌常客。以大白菜配食用油为主料，大火爆炒，火候恰到好处，口味酸爽、清淡，家常操作、零失败。",
+    "dishRole": "main_veg",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": null,
+    "perServing": {
+      "calories": 87,
+      "protein": 2.6,
+      "fat": 5.4,
+      "carbs": 8.8,
+      "fiber": 2.5,
+      "sodium": 19,
+      "sugar": 4.4
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "low_fat",
+      "low_calorie"
+    ],
+    "allergens": [],
+    "dietaryFlags": []
   },
   {
     "id": "homestyle_luobo_si_bing",
@@ -7509,7 +10171,29 @@
       "早餐",
       "小吃"
     ],
-    "description": "苏菜风味的经典早餐。精心烹饪，口感咸香、鲜美，适合早餐/午餐享用。"
+    "description": "苏菜里的下饭好手。以胡萝卜配食用油为主料，翻炒收汁，爽脆入味，口味咸香、鲜美，家常做法、人人可学。",
+    "dishRole": "staple",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": "bread",
+    "perServing": {
+      "calories": 278,
+      "protein": 0.8,
+      "fat": 6.9,
+      "carbs": 52.5,
+      "fiber": 2.4,
+      "sodium": 51,
+      "sugar": 3.2
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "low_fat",
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_sesame"
+    ],
+    "dietaryFlags": []
   },
   {
     "id": "homestyle_fanshu_tang",
@@ -7556,7 +10240,27 @@
       "粤菜",
       "暖胃"
     ],
-    "description": "粤式家常好味。精心烹饪，口感甘甜，新手友好，快手完成。"
+    "description": "粤菜经典家常做法。以红薯为主料，大火爆炒，锅气十足，口味甘甜，做法简单、新手友好。",
+    "dishRole": "snack",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": null,
+    "perServing": {
+      "calories": 127,
+      "protein": 1.7,
+      "fat": 0.1,
+      "carbs": 30.6,
+      "fiber": 3.1,
+      "sodium": 56,
+      "sugar": 14.3
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "low_fat",
+      "low_calorie"
+    ],
+    "allergens": [],
+    "dietaryFlags": []
   },
   {
     "id": "homestyle_suanni_zhengji",
@@ -7620,6 +10324,29 @@
       "粤菜",
       "便当菜"
     ],
-    "description": "粤式家常好味。精心烹饪，口感鲜美、咸香，新手友好，快手完成。"
+    "description": "深受欢迎的粤菜代表作。以鸡腿肉配食用油为主料，大火爆炒，火候恰到好处，口味鲜美、咸香，做法简单、新手友好。",
+    "dishRole": "main_meat",
+    "isVegetarian": false,
+    "dishStyle": "meat",
+    "stapleCategory": null,
+    "perServing": {
+      "calories": 365,
+      "protein": 40.1,
+      "fat": 18.9,
+      "carbs": 6.4,
+      "fiber": 0.3,
+      "sodium": 539,
+      "sugar": 0.3
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "high_protein"
+    ],
+    "allergens": [
+      "allergen_gluten",
+      "allergen_seafood",
+      "allergen_soy"
+    ],
+    "dietaryFlags": []
   }
 ]

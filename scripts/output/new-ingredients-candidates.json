@@ -1,0 +1,199 @@
+[
+  {
+    "id": "beef_slice",
+    "nameZh": "肥牛片",
+    "nameEn": "Fatty Beef Slice",
+    "category": "meat",
+    "nutrition": {
+      "calories": 260,
+      "protein": 17,
+      "fat": 21,
+      "carbs": 0,
+      "fiber": 0,
+      "sodium": 70,
+      "sugar": 0
+    },
+    "priceNZD": 27,
+    "unit": "kg",
+    "allergens": [],
+    "warnings": [
+      "high_fat"
+    ],
+    "highlights": [
+      "high_protein"
+    ],
+    "supermarkets": [
+      "countdown"
+    ],
+    "season": []
+  },
+  {
+    "id": "cured_pork",
+    "nameZh": "腊肉",
+    "nameEn": "Chinese Cured Pork",
+    "category": "meat",
+    "nutrition": {
+      "calories": 470,
+      "protein": 20,
+      "fat": 43,
+      "carbs": 2,
+      "fiber": 0,
+      "sodium": 2000,
+      "sugar": 1
+    },
+    "priceNZD": 32,
+    "unit": "kg",
+    "allergens": [],
+    "warnings": [
+      "high_fat",
+      "high_sodium",
+      "processed"
+    ],
+    "highlights": [
+      "high_protein"
+    ],
+    "supermarkets": [
+      "countdown"
+    ],
+    "season": []
+  },
+  {
+    "id": "crucian_carp",
+    "nameZh": "鲫鱼",
+    "nameEn": "Crucian Carp",
+    "category": "seafood",
+    "nutrition": {
+      "calories": 108,
+      "protein": 17.1,
+      "fat": 2.7,
+      "carbs": 0,
+      "fiber": 0,
+      "sodium": 41,
+      "sugar": 0
+    },
+    "priceNZD": 16,
+    "unit": "kg",
+    "allergens": [
+      "allergen_seafood"
+    ],
+    "warnings": [],
+    "highlights": [
+      "high_protein",
+      "low_fat"
+    ],
+    "supermarkets": [
+      "countdown"
+    ],
+    "season": []
+  },
+  {
+    "id": "carp",
+    "nameZh": "鲤鱼",
+    "nameEn": "Carp",
+    "category": "seafood",
+    "nutrition": {
+      "calories": 127,
+      "protein": 17.8,
+      "fat": 5.6,
+      "carbs": 0,
+      "fiber": 0,
+      "sodium": 49,
+      "sugar": 0
+    },
+    "priceNZD": 14,
+    "unit": "kg",
+    "allergens": [
+      "allergen_seafood"
+    ],
+    "warnings": [],
+    "highlights": [
+      "high_protein"
+    ],
+    "supermarkets": [
+      "countdown"
+    ],
+    "season": []
+  },
+  {
+    "id": "grass_carp",
+    "nameZh": "草鱼",
+    "nameEn": "Grass Carp",
+    "category": "seafood",
+    "nutrition": {
+      "calories": 113,
+      "protein": 16.6,
+      "fat": 5.2,
+      "carbs": 0,
+      "fiber": 0,
+      "sodium": 46,
+      "sugar": 0
+    },
+    "priceNZD": 14,
+    "unit": "kg",
+    "allergens": [
+      "allergen_seafood"
+    ],
+    "warnings": [],
+    "highlights": [
+      "high_protein"
+    ],
+    "supermarkets": [
+      "countdown"
+    ],
+    "season": []
+  },
+  {
+    "id": "lime",
+    "nameZh": "青柠",
+    "nameEn": "Lime",
+    "category": "fruit",
+    "nutrition": {
+      "calories": 30,
+      "protein": 0.7,
+      "fat": 0.2,
+      "carbs": 10.5,
+      "fiber": 2.8,
+      "sodium": 2,
+      "sugar": 1.7
+    },
+    "priceNZD": 1.5,
+    "unit": "piece",
+    "allergens": [],
+    "warnings": [],
+    "highlights": [
+      "low_calorie"
+    ],
+    "supermarkets": [
+      "countdown"
+    ],
+    "season": []
+  },
+  {
+    "id": "frozen_tofu",
+    "nameZh": "冻豆腐",
+    "nameEn": "Frozen Tofu",
+    "category": "bean",
+    "nutrition": {
+      "calories": 80,
+      "protein": 9,
+      "fat": 5,
+      "carbs": 2,
+      "fiber": 0.5,
+      "sodium": 10,
+      "sugar": 0.5
+    },
+    "priceNZD": 6,
+    "unit": "pack",
+    "allergens": [
+      "allergen_soy"
+    ],
+    "warnings": [],
+    "highlights": [
+      "high_protein"
+    ],
+    "supermarkets": [
+      "countdown"
+    ],
+    "season": []
+  }
+]

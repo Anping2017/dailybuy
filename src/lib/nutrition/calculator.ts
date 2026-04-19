@@ -34,8 +34,9 @@ export function calcIngredientNutrition(
 function toGrams(ri: RecipeIngredient): number {
   if (ri.unit === 'g' || ri.unit === 'ml') return ri.amount;
   if (ri.unit === 'piece') {
-    // 粗略估算: 蛋约50g, 蔬菜约200g
+    // 粗略估算: 调料/油默认 1g(八角、香叶等小颗粒), 蛋 50g, 蔬果 150-200g
     const ing = getIngredient(ri.ingredientId);
+    if (ing?.category === 'seasoning' || ing?.category === 'oil') return ri.amount * 1;
     if (ing?.category === 'egg_dairy') return ri.amount * 50;
     if (ing?.category === 'vegetable') return ri.amount * 200;
     if (ing?.category === 'fruit') return ri.amount * 150;
@@ -50,7 +51,34 @@ function toGrams(ri: RecipeIngredient): number {
   return ri.amount;
 }
 
-/** 计算一道菜的总营养 */
+/**
+ * 烹饪方式对营养摄入的修正系数
+ * 解决:菜谱标注的是"烹饪用量",而非"实际摄入量"
+ *  - 油炸: 食材只吸附 5-15% 的油(其余留在锅里)
+ *  - 红烧/卤: 卤水里的盐和酱油不会全部摄入(取约 50%)
+ *  - 炖/煲: 调味液体类似(取约 60%)
+ */
+function consumedRatio(recipe: Recipe, ingredient: Ingredient | undefined): number {
+  if (!ingredient) return 1;
+  const m = recipe.cookingMethod;
+
+  // 油类: 仅在油炸/煎炸时打折; 炒菜的油用量本来就是真实摄入
+  if (ingredient.category === 'oil') {
+    if (m === 'deep_fry') return 0.12;        // 油炸: 12% 吸油率(USDA 平均值)
+    if (m === 'roast' || m === 'staple') return 0.5; // 烤/烙饼: 部分油残留
+  }
+  // 卤水/汤底类调味液体: 红烧、卤、炖、煲、汤
+  if (ingredient.category === 'seasoning' && /soy|sauce|stock|wine|vinegar|broth|酱|抽|高汤|料酒|醋/i.test(ingredient.id + ingredient.nameEn)) {
+    if (m === 'braise' || m === 'stew') return 0.5;
+    if (m === 'soup') return 0.7;
+  }
+  // 盐: 卤水时不会全摄入
+  if (ingredient.id === 'salt' && (m === 'braise' || m === 'stew')) return 0.5;
+
+  return 1;
+}
+
+/** 计算一道菜的总营养(应用烹饪方式修正系数) */
 export function calcRecipeNutrition(recipe: Recipe): NutritionPer100g & { totalCalories: number } {
   const totals: NutritionPer100g = {
     calories: 0, protein: 0, fat: 0, carbs: 0, fiber: 0, sodium: 0, sugar: 0,
@@ -58,7 +86,10 @@ export function calcRecipeNutrition(recipe: Recipe): NutritionPer100g & { totalC
 
   for (const ri of recipe.ingredients) {
     const grams = toGrams(ri);
-    const nutr = calcIngredientNutrition(ri.ingredientId, grams);
+    const ing = getIngredient(ri.ingredientId);
+    const ratio = consumedRatio(recipe, ing);
+    const effectiveGrams = grams * ratio;
+    const nutr = calcIngredientNutrition(ri.ingredientId, effectiveGrams);
     if (nutr) {
       totals.calories += nutr.calories;
       totals.protein += nutr.protein;

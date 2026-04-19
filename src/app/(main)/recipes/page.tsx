@@ -9,6 +9,7 @@ import type { Recipe, CuisineType, MealType, DifficultyLevel, CookingMethod, Fla
 import { RecipeDetailSheet } from '@/components/recipe/recipe-detail-sheet';
 import { AddToPlanSheet } from '@/components/recipe/add-to-plan-sheet';
 import { RecipeEditSheet } from '@/components/recipe/recipe-edit-sheet';
+import { NutritionBadges, PerServingMini } from '@/components/recipe/nutrition-badges';
 
 const CUISINE_LABELS: Record<CuisineType, string> = {
   chinese: '中餐', western: '西餐', asian_other: '亚洲', fusion: '混合',
@@ -329,6 +330,15 @@ function RecipeCard({ recipe, isFavorite, onToggleFav, onClick }: {
           <span>{METHOD_LABELS[recipe.cookingMethod] || recipe.cookingMethod}</span>
           <span>{DIFF_LABELS[recipe.difficulty]}</span>
           <span>{recipe.flavors.slice(0,2).map(f => FLAVOR_LABELS[f]).join('/')}</span>
+        </div>
+        {/* 营养摘要 + 健康徽章 */}
+        {recipe.perServing && (
+          <div className="mt-1.5">
+            <PerServingMini recipe={recipe} />
+          </div>
+        )}
+        <div className="mt-1.5">
+          <NutritionBadges recipe={recipe} compact showAllergens={false} />
         </div>
       </button>
       <div className="flex flex-col items-end gap-2 flex-shrink-0">

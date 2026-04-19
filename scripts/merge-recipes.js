@@ -25,6 +25,7 @@ const validIngredientIds = new Set(ingredients.map(i => i.id));
 
 // 按优先级排列（先加载的优先）
 const FILES = [
+  { file: 'recipes-desserts-drinks.json', source: 'desserts-drinks' },
   { file: 'recipes-quality-e.json', source: 'quality-e' },
   { file: 'recipes-quality-d.json', source: 'quality-d' },
   { file: 'recipes-quality-c.json', source: 'quality-c' },
@@ -37,6 +38,7 @@ const FILES = [
   { file: 'recipes-hot-2.json', source: 'hot-2' },
   { file: 'recipes-hot-3.json', source: 'hot-3' },
   { file: 'recipes.json', source: 'original' },
+  { file: 'recipes-legacy.json', source: 'legacy' },  // 老脚本产生的孤儿菜谱（最低优先级）
 ];
 
 // regionalCuisine 归一化：中文 / 俗称 → 英文 slug
@@ -169,6 +171,30 @@ function merge() {
   }
 
   const outPath = path.join(DATA_DIR, 'recipes-all.json');
+
+  // 先检查现有 recipes-all.json 是否有"孤儿"（写 before 覆盖前）
+  if (fs.existsSync(outPath)) {
+    try {
+      const current = JSON.parse(fs.readFileSync(outPath, 'utf8'));
+      const currentIds = new Set(current.map(r => r.id));
+      const mergedIds = new Set(allRecipes.map(r => r.id));
+      const orphans = [...currentIds].filter(id => !mergedIds.has(id));
+      if (orphans.length > 0) {
+        console.log(`\n⚠ 本次合并将丢失 ${orphans.length} 条 recipes-all.json 里存在但不在源文件中的菜谱:`);
+        for (const id of orphans.slice(0, 5)) {
+          const r = current.find(x => x.id === id);
+          console.log(`  - ${id} / ${r ? r.nameZh : '?'}`);
+        }
+        if (orphans.length > 5) console.log(`  ... 共 ${orphans.length} 条`);
+        console.log('💡 如这些是重要数据，请先运行 node scripts/extract-legacy-recipes.js 抽到 recipes-legacy.json');
+        if (process.argv.includes('--strict')) {
+          console.error('\n❌ strict 模式下拒绝覆盖（请先抽离孤儿）');
+          process.exit(1);
+        }
+      }
+    } catch { /* 旧文件损坏则忽略 */ }
+  }
+
   fs.writeFileSync(outPath, JSON.stringify(allRecipes, null, 2));
 
   console.log('\n========== 合并结果 ==========');

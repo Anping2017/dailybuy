@@ -8,6 +8,7 @@ import { AddToPlanSheet } from '@/components/recipe/add-to-plan-sheet';
 import { getRecipe, calcRecipeNutrition, calcRecipeCost } from '@/lib/nutrition/calculator';
 import { getIngredient } from '@/lib/data/recipe-repository';
 import { useAppStore, getPreferenceScore } from '@/lib/store';
+import { NutritionBadges, PerServingPanel } from '@/components/recipe/nutrition-badges';
 import type { DifficultyLevel, CookingMethod } from '@/types';
 
 const DIFF_LABELS: Record<DifficultyLevel, string> = { easy: '简单', medium: '中等', hard: '困难' };
@@ -71,41 +72,56 @@ export default function RecipeDetailPage() {
         {recipe.tags?.map(t => <Tag key={t} label={t} />)}
       </div>
 
+      {/* 健康标签 — 警告(红) + 标记(橙) + 亮点(绿) + 过敏原(琥珀) */}
+      <NutritionBadges recipe={recipe} />
+
       {/* 营养概览 - calorieEnabled=false 时整块隐藏 */}
       {profile.calorieEnabled !== false && (
-        <div className="bg-card border border-border rounded-lg p-4">
-          <div className="grid grid-cols-4 gap-2 text-center mb-3">
-            <div>
-              <p className="text-xl font-bold text-accent">{Math.round(nutr.totalCalories)}</p>
-              <p className="text-xs text-muted">kcal/总</p>
+        <>
+          {/* 优先用预计算的 perServing 数据,显示更详细的"每份"营养面板 */}
+          {recipe.perServing ? (
+            <>
+              <PerServingPanel recipe={recipe} />
+              <div className="grid grid-cols-2 gap-2 text-xs text-muted">
+                <span>原配方 {recipe.servings} 人份 · 总 {Math.round(nutr.totalCalories)} kcal</span>
+                <span className="text-right">预估成本 ${cost.toFixed(2)} · {recipe.prepTime + recipe.cookTime} 分钟</span>
+              </div>
+            </>
+          ) : (
+            // 回退到 runtime 计算(老菜谱 / 自定义未跑过 enrich)
+            <div className="bg-card border border-border rounded-lg p-4">
+              <div className="grid grid-cols-4 gap-2 text-center mb-3">
+                <div>
+                  <p className="text-xl font-bold text-accent">{Math.round(nutr.totalCalories)}</p>
+                  <p className="text-xs text-muted">kcal/总</p>
+                </div>
+                <div>
+                  <p className="text-xl font-bold text-accent">{perServing}</p>
+                  <p className="text-xs text-muted">kcal/人</p>
+                </div>
+                <div>
+                  <p className="text-xl font-bold text-primary">${cost.toFixed(2)}</p>
+                  <p className="text-xs text-muted">预估成本</p>
+                </div>
+                <div>
+                  <p className="text-xl font-bold">{recipe.prepTime + recipe.cookTime}</p>
+                  <p className="text-xs text-muted">分钟</p>
+                </div>
+              </div>
+              <div className="flex h-3 rounded-full overflow-hidden mb-2">
+                <div className="bg-blue-400" style={{ width: `${pP}%` }} />
+                <div className="bg-yellow-400" style={{ width: `${fP}%` }} />
+                <div className="bg-green-400" style={{ width: `${cP}%` }} />
+              </div>
+              <div className="flex justify-between text-xs text-muted">
+                <span>蛋白 {nutr.protein.toFixed(1)}g ({pP}%)</span>
+                <span>脂肪 {nutr.fat.toFixed(1)}g ({fP}%)</span>
+                <span>碳水 {nutr.carbs.toFixed(1)}g ({cP}%)</span>
+              </div>
+              <p className="text-[10px] text-muted mt-1.5">原配方 {recipe.servings} 人份共 {Math.round(nutr.totalCalories)} kcal · 每人 {perServing} kcal</p>
             </div>
-            <div>
-              <p className="text-xl font-bold text-accent">{perServing}</p>
-              <p className="text-xs text-muted">kcal/人</p>
-            </div>
-            <div>
-              <p className="text-xl font-bold text-primary">${cost.toFixed(2)}</p>
-              <p className="text-xs text-muted">预估成本</p>
-            </div>
-            <div>
-              <p className="text-xl font-bold">{recipe.prepTime + recipe.cookTime}</p>
-              <p className="text-xs text-muted">分钟</p>
-            </div>
-          </div>
-
-          {/* 三大营养素 */}
-          <div className="flex h-3 rounded-full overflow-hidden mb-2">
-            <div className="bg-blue-400" style={{ width: `${pP}%` }} />
-            <div className="bg-yellow-400" style={{ width: `${fP}%` }} />
-            <div className="bg-green-400" style={{ width: `${cP}%` }} />
-          </div>
-          <div className="flex justify-between text-xs text-muted">
-            <span>蛋白 {nutr.protein.toFixed(1)}g ({pP}%)</span>
-            <span>脂肪 {nutr.fat.toFixed(1)}g ({fP}%)</span>
-            <span>碳水 {nutr.carbs.toFixed(1)}g ({cP}%)</span>
-          </div>
-          <p className="text-[10px] text-muted mt-1.5">原配方 {recipe.servings} 人份共 {Math.round(nutr.totalCalories)} kcal · 每人 {perServing} kcal</p>
-        </div>
+          )}
+        </>
       )}
 
       {/* 食材 */}

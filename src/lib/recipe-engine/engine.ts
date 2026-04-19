@@ -20,8 +20,13 @@ const DAYS: DayOfWeek[] = ['monday', 'tuesday', 'wednesday', 'thursday', 'friday
 // 健康过滤 (保留原有逻辑)
 // ============================================================
 
-interface ConditionRule { blockedTags: HealthTag[]; preferredHighlights?: NutritionHighlight[]; }
-interface RestrictionRule { blockedCategories?: IngredientCategory[]; blockedIngredients?: string[]; blockedTags?: HealthTag[]; }
+interface ConditionRule {
+  blockedTags?: HealthTag[];
+  blockedDietaryFlags?: string[];   // 屏蔽聚合到菜谱的 dietaryFlags(processed/contains_alcohol/high_purine/high_cholesterol)
+  preferredHighlights?: NutritionHighlight[];
+  perMealLimits?: Partial<Record<'sodium'|'sugar'|'fat'|'carbs'|'protein'|'calories', number>>;
+}
+interface RestrictionRule { blockedCategories?: IngredientCategory[]; blockedIngredients?: string[]; blockedTags?: HealthTag[]; blockedDietaryFlags?: string[]; }
 
 // 幼儿/儿童自动屏蔽酒精(无需显式配置)
 const CHILD_AGE_GROUPS = new Set(['toddler', 'child']);
@@ -52,6 +57,44 @@ function getBlockedTags(members: FamilyMember[]): Set<HealthTag> {
     }
   }
   return tags;
+}
+
+/** 收集需要屏蔽的菜谱级 dietaryFlags(processed/high_purine/contains_alcohol/high_cholesterol) */
+function getBlockedDietaryFlags(members: FamilyMember[]): Set<string> {
+  const flags = new Set<string>();
+  for (const m of members) {
+    if (m.enabled === false) continue;
+    for (const c of m.healthConditions) {
+      if (c === 'none') continue;
+      const rule = (healthRulesData.conditions as Record<string, ConditionRule>)[c];
+      (rule?.blockedDietaryFlags || []).forEach(f => flags.add(f));
+    }
+    for (const r of m.dietaryRestrictions) {
+      const rule = (healthRulesData.restrictions as Record<string, RestrictionRule>)[r];
+      (rule?.blockedDietaryFlags || []).forEach(f => flags.add(f));
+    }
+    if (CHILD_AGE_GROUPS.has(m.ageGroup)) flags.add('contains_alcohol');
+  }
+  return flags;
+}
+
+/** 收集每餐营养上限(取所有 active 成员中最严格的) */
+function getPerMealLimits(members: FamilyMember[]): Partial<Record<string, number>> {
+  const limits: Record<string, number> = {};
+  for (const m of members) {
+    if (m.enabled === false) continue;
+    for (const c of m.healthConditions) {
+      if (c === 'none') continue;
+      const rule = (healthRulesData.conditions as Record<string, ConditionRule>)[c];
+      if (!rule?.perMealLimits) continue;
+      for (const [k, v] of Object.entries(rule.perMealLimits)) {
+        if (typeof v !== 'number') continue;
+        // 取每个营养素最严格(最低)的限制
+        limits[k] = limits[k] !== undefined ? Math.min(limits[k], v) : v;
+      }
+    }
+  }
+  return limits;
 }
 
 /** 按用户健康状况收集"偏好的营养亮点",用于正向加权评分 */
@@ -170,8 +213,10 @@ function getBlockedIngredientIds(members: FamilyMember[]): Set<string> {
 
 export function isRecipeSafe(recipe: Recipe, profile: UserProfile): boolean {
   const blockedTags = getBlockedTags(profile.members);
+  const blockedFlags = getBlockedDietaryFlags(profile.members);
   const blockedCats = getBlockedCategories(profile.members);
   const blockedIds = getBlockedIngredientIds(profile.members);
+  const perMealLimits = getPerMealLimits(profile.members);
   // 长期排除食材：profile 全局 + 每个启用的成员的排除
   const userExcluded = new Set<string>(profile.excludeIngredients || []);
   for (const m of profile.members) {
@@ -179,13 +224,13 @@ export function isRecipeSafe(recipe: Recipe, profile: UserProfile): boolean {
     for (const id of (m.excludeIngredients || [])) userExcluded.add(id);
   }
 
+  // === 食材级硬过滤 ===
   for (const ri of recipe.ingredients) {
     if (blockedIds.has(ri.ingredientId)) return false;
     if (userExcluded.has(ri.ingredientId)) return false;
     const ingredient = getIngredientById(ri.ingredientId);
     if (!ingredient) continue;
     if (blockedCats.has(ingredient.category)) return false;
-    // 过敏原+警告标签都可能被 blockedTags 命中(例如糖尿病屏蔽 high_gi, 无乳糖屏蔽 allergen_dairy)
     for (const tag of (ingredient.allergens || [])) {
       if (blockedTags.has(tag)) return false;
     }
@@ -193,6 +238,31 @@ export function isRecipeSafe(recipe: Recipe, profile: UserProfile): boolean {
       if (blockedTags.has(tag)) return false;
     }
   }
+
+  // === 菜谱级硬过滤(基于预计算字段) ===
+  // 菜谱聚合的 dietaryFlags(processed/high_purine/contains_alcohol/high_cholesterol)
+  if (blockedFlags.size > 0 && recipe.dietaryFlags) {
+    for (const f of recipe.dietaryFlags) {
+      if (blockedFlags.has(f)) return false;
+    }
+  }
+  // 同时聚合菜谱的 allergens(食材级 allergens 已在上面查过,这里覆盖菜谱级 allergens 字段)
+  if (recipe.allergens) {
+    for (const a of recipe.allergens) {
+      if (blockedTags.has(a)) return false;
+    }
+  }
+
+  // === 每份营养硬过滤(对应病症的每餐上限) ===
+  if (recipe.perServing && Object.keys(perMealLimits).length > 0) {
+    const ps = recipe.perServing;
+    for (const [k, lim] of Object.entries(perMealLimits)) {
+      if (typeof lim !== 'number') continue;
+      const v = (ps as Record<string, number>)[k];
+      if (typeof v === 'number' && v > lim) return false;
+    }
+  }
+
   return true;
 }
 
@@ -214,8 +284,13 @@ function canCook(userLevel: CookingLevel, recipeLevel: CookingLevel): boolean {
 
 const MEAT_CATEGORIES: Set<IngredientCategory> = new Set(['meat', 'seafood']);
 
-/** 判断菜是否为荤菜 */
+/**
+ * 判断菜是否为荤菜
+ * 优先读显式字段 recipe.isVegetarian（由 scripts/enrich-recipes.js 预计算）
+ * 只在字段缺失时回退到 ingredients 遍历
+ */
 function isMeatDish(recipe: Recipe): boolean {
+  if (typeof recipe.isVegetarian === 'boolean') return !recipe.isVegetarian;
   return recipe.ingredients.some(ri => {
     const ing = getIngredientById(ri.ingredientId);
     return ing && MEAT_CATEGORIES.has(ing.category);
@@ -228,13 +303,45 @@ function isMeatDish(recipe: Recipe): boolean {
  */
 function isStapleByName(recipe: Recipe): boolean {
   const name = recipe.nameZh || '';
+  const en = (recipe.nameEn || '').toLowerCase();
   // 排除明显不是主食的(凉拌/沙拉等)
   if (/凉拌|凉菜|沙拉|拌(?!面|粉|饭)|蘸料|包菜|包心菜|大白菜|小白菜|菜花/.test(name)) return false;
-  return /粥|饭$|米饭|蛋炒饭|盖饭|烩饭|炒饭|寿司|意面|意大利面|乌冬|拉面|肠粉|河粉|米线|米粉|面条|面$|凉面|拌面|炒面|烩面|擀面|碱面|面包|烤面包|三明治|汉堡|薯条|吐司|馒头|花卷|馕|烧饼|大饼|烙饼|煎饼|月饼|蛋饼|手抓饼|烤饼|包子|生煎|小笼|烧麦|饺子|馄饨|抄手|凉皮|凉粉|粽子|韭菜盒子|意式饺|烤红薯|蒸红薯|蒸玉米|汤圆|元宵|汤包|汤饭/.test(name);
+  // 排除明确的甜点饼类
+  if (/月饼|蛋挞|蛋黄酥|凤梨酥|奶黄包|流沙包|甜甜圈|donut/.test(name+en)) return false;
+  if (/粥|饭$|米饭|蛋炒饭|盖饭|烩饭|炒饭|寿司|意面|意大利面|乌冬|拉面|肠粉|河粉|米线|米粉|面条|面$|凉面|拌面|炒面|烩面|擀面|碱面|面包|烤面包|三明治|汉堡|薯条|吐司|馒头|花卷|馕|烧饼|大饼|烙饼|煎饼|蛋饼|手抓饼|烤饼|包子|生煎|小笼|烧麦|饺子|馄饨|抄手|凉皮|凉粉|粽子|韭菜盒子|意式饺|烤红薯|蒸红薯|蒸玉米|汤圆|元宵|汤包|汤饭/.test(name)) return true;
+  // 通用"X饼/X糕" — 含蔬菜/谷物名的饼/糕(中式咸味早餐),按主食处理
+  if (/(?:萝卜|玉米|土豆|红薯|地瓜|韭菜|胡萝卜|卷心菜|包菜|香葱|葱油|香菜|海带|紫菜|海鲜|鸡蛋|猪肉|牛肉|虾).*?饼|(?:萝卜|玉米|土豆|红薯|地瓜|韩式).*?糕|年糕|大阪烧|韩式煎饼|韩式海鲜煎饼|海鲜煎饼|蛋抓饼|抓饼/.test(name)) return true;
+  // 豆腐脑(中式早餐主食)
+  if (/豆腐脑/.test(name)) return true;
+  // 西式 pancake/waffle/crepe(默认主食)
+  if (/松饼|华夫饼|可丽饼|班戟|墨西哥饼|tortilla|pita|naan|pancake|waffle|crepe/.test(name+en)) return true;
+  // 蒸蛋糕(咸口)
+  if (/蒸鸡蛋糕|蒸蛋糕|咸蛋糕/.test(name)) return true;
+  return false;
 }
 
-/** 主食子类型推断: 粥/饭/面/饼/馒头/包子/饺子 */
+/**
+ * 主食子类型推断: 粥/饭/面/饼/馒头/包子/饺子
+ * 优先读显式字段 recipe.stapleCategory（对齐 UserProfile.StaplePreference）
+ * 字段缺失时回退到 nameZh 关键词匹配
+ *
+ * stapleCategory → subtype 映射（保持原评分语义）:
+ *   congee  → porridge
+ *   rice    → rice
+ *   noodles → noodle
+ *   bread   → pancake  (烤物/饼类统一归 pancake 评分)
+ *   mantou  → bun      (馒头/包子/饺子统一归 bun 评分)
+ */
 function stapleSubtype(recipe: Recipe): string {
+  if (recipe.stapleCategory) {
+    switch (recipe.stapleCategory) {
+      case 'congee': return 'porridge';
+      case 'rice': return 'rice';
+      case 'noodles': return 'noodle';
+      case 'bread': return 'pancake';
+      case 'mantou': return 'bun';
+    }
+  }
   const n = recipe.nameZh || '';
   if (/粥/.test(n)) return 'porridge';
   if (/饭|寿司/.test(n)) return 'rice';
@@ -258,34 +365,58 @@ function isSoupByName(recipe: Recipe): boolean {
 
 /**
  * 蛋汤判断: 介于荤汤和素汤之间的特殊汤类
- * 条件: 是汤 + 名字或食材含蛋, 且不含红肉/海鲜
- *   - 紫菜蛋花汤、番茄蛋汤、丝瓜蛋汤 → 蛋汤
- *   - 排骨蛋汤、虾蛋汤 → 归荤汤(含红肉/海鲜)
- *   - 番茄豆腐汤 → 归素汤(无蛋)
+ * 优先读显式字段 recipe.dishStyle === 'egg' + dishRole === 'soup'
+ * 字段缺失时回退到原推断逻辑
  */
 function isEggSoup(recipe: Recipe): boolean {
+  if (recipe.dishRole === 'soup' && recipe.dishStyle === 'egg') return true;
+  if (recipe.dishRole && recipe.dishRole !== 'soup') return false;  // 显式非汤 → 跳过
   if (!isSoupByName(recipe) && recipe.cookingMethod !== 'soup') return false;
   const name = recipe.nameZh || '';
   const hasEggInName = /蛋花|蛋羹|鸡蛋|蛋汤/.test(name);
   const hasEggIngredient = recipe.ingredients.some(ri => ri.ingredientId === 'egg');
   if (!hasEggInName && !hasEggIngredient) return false;
-  // 含红肉/海鲜的就归荤汤(MEAT_CATEGORIES = {meat, seafood}, egg 是 egg_dairy 不在内)
   return !isMeatDish(recipe);
 }
 
-/** 名字含饮品关键词 → 算饮品(不参与正餐推荐) */
+/** 名字含饮品关键词 → 算饮品(不参与正餐推荐) — 严格,排除"可乐鸡翅/豆浆油条"等 */
 function isBeverage(recipe: Recipe): boolean {
   const name = recipe.nameZh || '';
-  // 茶/咖啡/果汁/奶昔/果茶/奶茶/汽水/可乐, 但排除"汤"和"羹"
   if (/汤|羹/.test(name)) return false;
-  // 豆浆/豆奶虽是液体但按中式早餐习惯归主食, 不当饮品
-  return /茶$|奶茶|果汁|果汁$|柠檬水|咖啡|拿铁|卡布奇诺|摩卡|奶昔|思慕雪|smoothie|气泡水|苏打|可乐|柚子蜜|蜂蜜水|姜茶|柠水|椰汁|椰奶|米酒/.test(name);
+  if (/鸡翅|鸡块|鸡腿|鸡肉|猪肉|牛肉|羊肉|鱼|虾|油条|包|碗|饼|意面|沙拉|烩|焖/.test(name)) return false;
+  return /茶$|奶茶$|果汁$|柠檬水$|咖啡$|拿铁$|卡布奇诺|摩卡$|奶昔$|思慕雪|smoothie$|气泡水|苏打水|柚子蜜$|蜂蜜水|姜茶|柠水$|椰汁$|椰奶$|米酒$|豆浆$|豆奶$|杏仁奶$|燕麦奶$|牛奶$|酸奶$|热可可|热巧克力|hot chocolate|matcha latte|拉茶$|奶昔碗$/.test(name);
+}
+
+/** 点心/零食识别(甜点 + 油炸小食 + 糕饼类) — 不参与正餐推荐 */
+function isSnack(recipe: Recipe): boolean {
+  const name = recipe.nameZh || '';
+  const en = (recipe.nameEn || '').toLowerCase();
+  if (/猪肉|牛肉|羊肉|鸡肉|鸡翅|鸡腿|鸡块|鸡丁|鸭肉|鱼肉|鱼饼|虾饼|蒸蛋|蒸水蛋|蛋羹|肉饼|肉松|蟹/.test(name)) return false;
+  if (/炸鸡|炒鸡|烤鸡|焖鸡|卤鸡/.test(name)) return false;
+  if (recipe.cookingMethod === 'staple' || isStapleByName(recipe)) return false;
+  if (/拔丝|糖葫芦|糖渍|蜜饯|糖霜|焦糖/.test(name)) return true;
+  if (/月饼|绿豆糕|桃酥|麻花|麻团|麻球|豆沙包|凤梨酥|蛋黄酥|蛋挞$|蛋挞|奶黄包|流沙包|糯米糍|双皮奶|龟苓膏|凉糕|绿豆汤|红豆汤|银耳羹|布丁|果冻|杏仁豆腐/.test(name)) return true;
+  if (/^(?!.*咸).*蛋糕|cake|曲奇|cookie|饼干|biscuit|布朗尼|brownie|cupcake|马卡龙|macaron|tiramisu|提拉米苏|cheesecake|芝士蛋糕|甜挞|甜派|tart|派$|pie|甜甜圈|donut|doughnut|司康|scone|甜可丽饼|sweet crepe|华夫$|waffle|pudding|布丁|mousse|慕斯|gelato|ice cream|冰淇淋|sorbet|sundae|圣代/.test(name + en)) return true;
+  if (/蒸蛋|蒸鸡蛋|咸蛋糕/.test(name)) return false;
+  if (/^(?!.*肉)(.*丸子)$|^炸丸子|薯片|爆米花|popcorn|chips$|nuggets/.test(name + en)) return true;
+  return false;
+}
+
+/** 是否参与正餐规划(饮品/点心不参与) */
+function isPlannable(recipe: Recipe): boolean {
+  // 优先读显式字段
+  if (recipe.dishRole) return recipe.dishRole !== 'drink' && recipe.dishRole !== 'snack';
+  return !isBeverage(recipe) && !isSnack(recipe);
 }
 
 /**
  * 推断菜在一餐中的角色
- * 新分类体系:
+ * 优先读显式字段 recipe.dishRole（由 scripts/enrich-recipes.js 预计算）
+ * 字段缺失时回退到 regex + ingredient 遍历（向后兼容用户自定义菜谱）
+ *
+ * 分类体系:
  * - drink: 饮品(茶/咖啡等), 不参与规划
+ * - snack: 点心零食, 不参与规划
  * - staple: 主食(粥/饭/面/饼等)
  * - soup: 汤
  * - cold: 凉菜(含荤凉菜和素凉菜, 不按荤素分)
@@ -293,12 +424,14 @@ function isBeverage(recipe: Recipe): boolean {
  * - main_veg: 热的素菜
  */
 function inferRole(recipe: Recipe): DishRole {
+  if (recipe.dishRole) return recipe.dishRole;
   if (isBeverage(recipe)) return 'drink';
+  if (isSnack(recipe)) return 'snack';
   if (recipe.cookingMethod === 'staple' || isStapleByName(recipe)) return 'staple';
   if (recipe.cookingMethod === 'soup' || isSoupByName(recipe)) return 'soup';
-  if (recipe.cookingMethod === 'cold_dish') return 'cold';  // 凉菜独立(含荤凉菜)
-  if (isMeatDish(recipe)) return 'main_meat';  // 热荤菜
-  return 'main_veg';  // 热素菜
+  if (recipe.cookingMethod === 'cold_dish') return 'cold';
+  if (isMeatDish(recipe)) return 'main_meat';
+  return 'main_veg';
 }
 
 // ============================================================
@@ -309,7 +442,7 @@ function inferRole(recipe: Recipe): DishRole {
 export function getFilteredRecipes(profile: UserProfile, mealType?: MealType): Recipe[] {
   // 合并: 内置审核菜谱 + 用户自定义菜谱
   const customRecipes = profile.customRecipes || [];
-  const all = [...getReviewedRecipes(), ...customRecipes].filter(r => !isBeverage(r)); // 饮品不参与规划
+  const all = [...getReviewedRecipes(), ...customRecipes].filter(isPlannable); // 饮品/点心不参与规划
 
   const strict = all.filter(r => {
     if (mealType && !r.mealTypes.includes(mealType)) return false;
@@ -584,8 +717,27 @@ const STAPLE_KEYWORDS: Record<string, string[]> = {
  * - 水果: 不在此处推荐，由 generateWeeklyPlan 单独生成每日水果方案
  */
 /**
+ * 自由模式: 可选品类(汤/凉菜/主食) 按 "人数/2 ~ 人数" 原则随机数量
+ * 实际上限设 2 (一餐 3 个汤没意义), 主食固定 1 (多规格由 staple 变体处理)
+ */
+function randomOptionalCount(familySize: number, cap = 2): number {
+  const min = Math.max(1, Math.floor(familySize / 2));
+  const max = Math.min(cap, Math.max(min, familySize));
+  if (max <= min) return min;
+  return min + Math.floor(Math.random() * (max - min + 1));
+}
+
+/**
  * 获取每餐菜品数量配置
  * 优先级: 用户自定义 > 按人数自动
+ *
+ * 自由模式(默认):
+ *   - 热菜(荤+素): 按人数标准化, 刚性保证
+ *   - 汤/凉菜: 开启则按 "人数/2 ~ 人数" 随机数量(最多2道)
+ *   - 主食: 开启则固定 1 道(大份由 servings 变体处理)
+ *   - 后续 composeMeal 按当前热量缺口自动加菜/减菜, 不严格按此数量标准
+ * 手动模式(customMealComposition.enabled):
+ *   - 严格按用户指定数量; 热量缺口通过 UI 提示"建议 ×N 量"补足
  */
 function getMealPlan(profile: UserProfile, mealType: MealType) {
   // 用户启用了自定义
@@ -600,15 +752,16 @@ function getMealPlan(profile: UserProfile, mealType: MealType) {
     };
   }
 
-  // 默认：按人数自动推算 + 开关控制
+  // 自由模式: 按人数自动推算 + 开关控制 (汤/凉菜按"人数/2~人数"随机)
   const hot = getHotDishComposition(profile.familySize, mealType);
   const isLunchOrDinner = mealType === 'lunch' || mealType === 'dinner';
+  const fs = profile.familySize || 2;
   return {
     meatCount: hot.meatCount,
     vegCount: hot.vegCount,
-    soupCount: (profile.includeSoup && isLunchOrDinner) ? 1 : 0,
+    soupCount: (profile.includeSoup && isLunchOrDinner) ? randomOptionalCount(fs, 2) : 0,
     stapleCount: ((profile.stapleMode || 'off') !== 'off' && (mealType === 'breakfast' || isLunchOrDinner)) ? 1 : 0,
-    coldDishCount: (profile.includeColdDish && isLunchOrDinner) ? 1 : 0, // 自定义模式不做间隔推荐
+    coldDishCount: (profile.includeColdDish && isLunchOrDinner) ? randomOptionalCount(fs, 2) : 0,
   };
 }
 
@@ -1045,8 +1198,12 @@ function generateSmartPlan(
         if (r) { recipes.push({ recipeId: r.id, role: isMeatDish(r) ? 'main_meat' : 'main_veg' }); usedIds.add(r.id); track(r); }
       }
 
-      // 注: servings 仍为 profile.familySize(实际就餐人数), effectiveProfile 仅用于规划
-      slots.push({ day, mealType, recipes, servings: profile.familySize });
+      // 带饭模式晚餐: servings 设为 2×familySize, 让采购清单/热量显示自动按双倍计算
+      // 普通情况: servings = profile.familySize
+      const slotServings = (profile.lunchboxMode && mealType === 'dinner')
+        ? Math.max(1, profile.familySize) * 2
+        : profile.familySize;
+      slots.push({ day, mealType, recipes, servings: slotServings });
       mealIndex++;
     }
   }
@@ -1087,7 +1244,11 @@ export function generateWeeklyPlan(
       for (const mealType of profile.mealsPerDay) {
         const { recipes, reducedDishes } = composeMeal(profile, mealType, usedIds, ownedIngredients, mealIndex, getPreference, getFeedback);
         mealIndex++;
-        slots.push({ day, mealType, recipes, servings: profile.familySize, reducedDishes: reducedDishes > 0 ? reducedDishes : undefined });
+        // 带饭模式晚餐: servings ×2 让热量/采购量自动按双倍计算
+        const slotServings = (profile.lunchboxMode && mealType === 'dinner')
+          ? Math.max(1, profile.familySize) * 2
+          : profile.familySize;
+        slots.push({ day, mealType, recipes, servings: slotServings, reducedDishes: reducedDishes > 0 ? reducedDishes : undefined });
       }
     }
   }

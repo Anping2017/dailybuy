@@ -19,11 +19,13 @@ const INGREDIENT_NAME = Object.fromEntries(ingredients.map(i => [i.id, i.nameZh]
 
 // 源文件列表（跳过 recipes-all.json — 它是生成文件）
 const FILES = [
+  'recipes-desserts-drinks.json',
   'recipes-quality-e.json', 'recipes-quality-d.json', 'recipes-quality-c.json',
   'recipes-quality-b.json', 'recipes-chinese-2.json', 'recipes-mega-3.json',
   'recipes-international.json', 'recipes-chinese-1.json',
   'recipes-hot-1.json', 'recipes-hot-2.json', 'recipes-hot-3.json',
   'recipes.json',
+  'recipes-legacy.json',
 ];
 
 // 做法 → 中文 + 风格描述

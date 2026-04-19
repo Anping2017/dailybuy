@@ -19,18 +19,20 @@ const DAY_LABELS: Record<string, string> = {
 const MEAL_LABELS: Record<string, string> = { breakfast: '早餐', lunch: '午餐', dinner: '晚餐' };
 const MEAL_ORDER: MealType[] = ['breakfast', 'lunch', 'dinner'];
 const ROLE_LABELS: Record<DishRole, string> = {
-  main_meat: '荤菜', main_veg: '素菜', soup: '汤', staple: '主食', side: '配菜', cold: '凉菜', drink: '饮品',
+  main_meat: '荤菜', main_veg: '素菜', soup: '汤', staple: '主食', side: '配菜', cold: '凉菜',
+  drink: '饮品', snack: '点心',
 };
 const ROLE_COLORS: Record<DishRole, string> = {
   main_meat: 'bg-red-100 text-red-700', main_veg: 'bg-green-100 text-green-700',
   soup: 'bg-blue-100 text-blue-700', staple: 'bg-yellow-100 text-yellow-700',
   side: 'bg-gray-100 text-gray-600', cold: 'bg-cyan-100 text-cyan-700',
-  drink: 'bg-purple-100 text-purple-700',
+  drink: 'bg-purple-100 text-purple-700', snack: 'bg-pink-100 text-pink-700',
 };
 
 export default function PlanPage() {
   const router = useRouter();
-  const { profile, setProfile, weeklyPlan, shoppingList, setWeeklyPlan, setShoppingList, removeMealSlot, replaceSingleRecipe, ownedIngredients, addOwnedIngredient, removeOwnedIngredient, addRecipeToShoppingList, removeRecipeFromShoppingList, recordAction, recordSwapReason, savedPlans, saveCurrentPlan, loadSavedPlan, deleteSavedPlan } = useAppStore();
+  const { profile, setProfile, weeklyPlan, shoppingList, setWeeklyPlan, setShoppingList, removeMealSlot, replaceSingleRecipe, ownedIngredients, addOwnedIngredient, removeOwnedIngredient, addRecipeToShoppingList, removeRecipeFromShoppingList, recordAction, recordSwapReason, savedPlans, saveCurrentPlan, loadSavedPlan, deleteSavedPlan, toggleRecipeCompleted, moveRecipeToDay, togglePurchased } = useAppStore();
+  const [moveTarget, setMoveTarget] = useState<{ recipeId: string; fromDay: DayOfWeek; mealType: MealType } | null>(null);
   const [mounted, setMounted] = useState(false);
   const [showWeekShare, setShowWeekShare] = useState(false);
   const [weekShareCopied, setWeekShareCopied] = useState(false);
@@ -184,16 +186,22 @@ export default function PlanPage() {
   // 今日合计 (家庭总 + 人均) - 跨所有餐次
   // 食材不缩放: 按原配方做整份, 总热量 = 配方总热量
   // 人均 = 总热量 / familySize (家里几个人分这道菜)
+  // 带饭模式晚餐: slot.servings = 2 × familySize, 热量按 ×2 计 (做2份量留午餐)
   const familySize = Math.max(1, profile.familySize);
+  const getSlotCalMultiplier = (slot: typeof daySlots[number]) => {
+    // 当 slot.servings > familySize 时, 按 slot.servings / familySize 倍率计算(一般=2)
+    return Math.max(1, (slot.servings || familySize) / familySize);
+  };
   let dayTotalCal = 0;
   let dayTotalCost = 0;
   for (const slot of daySlots) {
+    const mult = getSlotCalMultiplier(slot);
     for (const mr of (slot.recipes || [])) {
       const r = getRecipe(mr.recipeId);
       if (r) {
         const n = calcRecipeNutrition(r);
-        dayTotalCal += Math.round(n.totalCalories);
-        dayTotalCost += calcRecipeCost(r);
+        dayTotalCal += Math.round(n.totalCalories * mult);
+        dayTotalCost += calcRecipeCost(r) * mult;
       }
     }
   }
@@ -363,10 +371,11 @@ export default function PlanPage() {
               // 按家庭每日总目标 × 营养学建议比例估算缺口
               // 早/午/晚 25%/40%/35%; 主食/水果/汤 在总热量中各自的占比(不独立加)
               // 主食 约 30% 日热量, 水果 5%, 汤 3%
+              // 带饭模式: 午餐由晚餐×2 留下的补足, 不视为"未规划缺口"
               const target = Math.round(householdTarget);
               const items: { label: string; cal: number }[] = [];
               if (!profile.mealsPerDay.includes('breakfast')) items.push({ label: '早餐', cal: Math.round(target * 0.25) });
-              if (!profile.mealsPerDay.includes('lunch')) items.push({ label: '午餐', cal: Math.round(target * 0.40) });
+              if (!profile.mealsPerDay.includes('lunch') && !profile.lunchboxMode) items.push({ label: '午餐', cal: Math.round(target * 0.40) });
               if (!profile.mealsPerDay.includes('dinner')) items.push({ label: '晚餐', cal: Math.round(target * 0.35) });
               // 主食/水果/汤 是每餐的补充, 不重复算(已经扣在每餐目标里)
               const sideItems: string[] = [];
@@ -405,18 +414,32 @@ export default function PlanPage() {
           }
 
           // 餐次总热量 = 各菜原配方总热量之和 (做整份)
-          // 人均 = 总和 / familySize
+          // 带饭模式晚餐: slot.servings = 2×familySize → 整餐按 ×2 算(做双倍留午餐)
+          const slotMult = Math.max(1, (slot.servings || familySize) / familySize);
+          const isLunchboxDinner = profile.lunchboxMode && mealType === 'dinner' && slotMult > 1;
           let mealCalories = 0;
           let mealCost = 0;
           for (const mr of (slot.recipes || [])) {
             const r = getRecipe(mr.recipeId);
             if (r) {
               const n = calcRecipeNutrition(r);
-              mealCalories += Math.round(n.totalCalories);
-              mealCost += calcRecipeCost(r);
+              mealCalories += Math.round(n.totalCalories * slotMult);
+              mealCost += calcRecipeCost(r) * slotMult;
             }
           }
           const perPersonCal = Math.round(mealCalories / familySize);
+          // 手动模式(customMealComposition.enabled) + 热量不足时建议 ×N 量
+          // 目标: 本餐占日目标的比例 × 倍率(带饭晚餐×2); 实际 < 70% 时给出建议
+          const manualMode = profile.customMealComposition?.enabled;
+          const mealTargetRatio = mealType === 'breakfast' ? 0.25 : mealType === 'lunch' ? 0.40 : 0.35;
+          const mealTargetCal = Math.round(householdTarget * mealTargetRatio * slotMult);
+          const mealRatio = mealTargetCal > 0 ? mealCalories / mealTargetCal : 1;
+          // 推荐倍率: 让 mealCalories × N ≈ mealTargetCal; 向 0.5 取整(如 1.5x/2x/2.5x)
+          let suggestMultiplier = 1;
+          if (manualMode && profile.calorieEnabled !== false && mealRatio < 0.7 && mealCalories > 0) {
+            suggestMultiplier = Math.max(1.5, Math.round((mealTargetCal / mealCalories) * 2) / 2);
+            if (suggestMultiplier > 3) suggestMultiplier = 3;  // 最多建议 ×3
+          }
 
           return (
             <div key={mealType} className="bg-card border border-border rounded-lg p-4">
@@ -425,6 +448,11 @@ export default function PlanPage() {
                 <div className="flex items-center justify-between flex-wrap gap-1">
                   <div className="flex items-center gap-2">
                     <span className="text-sm font-semibold text-primary">{MEAL_LABELS[mealType]}</span>
+                    {isLunchboxDinner && (
+                      <span className="text-[10px] px-1.5 py-0.5 rounded bg-amber-100 text-amber-700 border border-amber-300">
+                        带饭 ×{Math.round(slotMult)}
+                      </span>
+                    )}
                     {(profile.calorieEnabled !== false || profile.budgetEnabled !== false) && (
                       <span className="text-xs text-muted flex items-center gap-1">
                         {profile.calorieEnabled !== false && (
@@ -440,6 +468,16 @@ export default function PlanPage() {
                     )}
                   </div>
                 </div>
+                {isLunchboxDinner && (
+                  <p className="text-[11px] text-amber-700 mt-1">
+                    💡 带饭模式: 本餐所有菜谱按 ×{Math.round(slotMult)} 的量烹制, 调料按原比例适度增加; 多的部分装饭盒作明日午餐。热量/采购量已自动×{Math.round(slotMult)}。
+                  </p>
+                )}
+                {suggestMultiplier > 1 && !isLunchboxDinner && (
+                  <p className="text-[11px] text-blue-700 mt-1">
+                    💡 热量偏低: 建议本餐所有菜谱按 ×{suggestMultiplier} 的量烹制(调料按比例适度增加), 即可达到本餐目标 ~{mealTargetCal} kcal。
+                  </p>
+                )}
                 {slot.reducedDishes && slot.reducedDishes > 0 && (
                   <p className="text-[10px] text-amber-600 mt-1">
                     ⚖️ 为控制热量, 自动减了 {slot.reducedDishes} 道菜
@@ -454,10 +492,11 @@ export default function PlanPage() {
                   if (!recipe) return null;
                   const nutr = calcRecipeNutrition(recipe);
                   // 食材不缩放: 这道菜做出来就是配方总热量
-                  // 人均 = 总 / familySize (家里几个人分这道菜)
-                  const dishTotal = Math.round(nutr.totalCalories);
+                  // 带饭模式晚餐: 本菜按 slotMult(=2)倍计; 显示 ×2 标识
+                  const dishTotal = Math.round(nutr.totalCalories * slotMult);
                   const perPerson = Math.round(dishTotal / familySize);
-                  const servingMismatch = recipe.servings !== familySize;
+                  // 带饭模式下不提示 servings 不匹配(已经双倍了, 无需再提醒)
+                  const servingMismatch = !isLunchboxDinner && recipe.servings !== familySize;
                   const isInList = shoppingList?.items.some(i => i.fromRecipes.includes(recipe.nameZh));
 
                   return (
@@ -474,19 +513,49 @@ export default function PlanPage() {
                             <span className={`text-[10px] px-1.5 py-0.5 rounded ${ROLE_COLORS[mr.role]}`}>
                               {ROLE_LABELS[mr.role]}
                             </span>
-                            <Link href={`/recipe/${mr.recipeId}`} className="font-medium text-sm group-hover:text-primary transition">
+                            <Link href={`/recipe/${mr.recipeId}`} className={`font-medium text-sm group-hover:text-primary transition ${mr.completed ? 'line-through text-muted' : ''}`}>
                               {recipe.nameZh}
                             </Link>
+                            {mr.completed && (
+                              <span className="text-[10px] px-1 py-0 rounded bg-green-100 text-green-700 border border-green-300">已完成</span>
+                            )}
+                            {isLunchboxDinner && (
+                              <span className="text-[10px] px-1 py-0 rounded bg-amber-100 text-amber-700 border border-amber-300 font-bold" title={`带饭模式: 本菜按 ×${Math.round(slotMult)} 量烹制, 多做的部分作明日午餐`}>
+                                ×{Math.round(slotMult)}
+                              </span>
+                            )}
                             <ChevronRight className="w-3.5 h-3.5 text-muted opacity-50 group-hover:opacity-100 group-hover:text-primary transition" />
                           </div>
                           <p className="text-xs text-muted mt-0.5">{recipe.nameEn}</p>
                         </div>
                         <div className="flex items-center gap-2 flex-shrink-0">
                           {profile.calorieEnabled !== false && (
-                            <span className="text-xs text-accent font-medium" title={`${familySize} 人分 = 人均 ${perPerson}`}>
+                            <span className={`text-xs font-medium ${mr.completed ? 'text-muted line-through' : 'text-accent'}`} title={`${familySize} 人分 = 人均 ${perPerson}${isLunchboxDinner ? ` (含明日午餐, 按 ×${Math.round(slotMult)} 计)` : ''}`}>
                               共 {dishTotal} kcal · 人均 {perPerson}
                             </span>
                           )}
+                          <button
+                            onClick={() => {
+                              // 切换完成状态; 标记完成时把这道菜食材标记为已购 + 从清单划掉
+                              const nowCompleted = !mr.completed;
+                              toggleRecipeCompleted(selectedDay, mealType, mr.recipeId);
+                              if (nowCompleted) {
+                                // 把这道菜对应的食材在清单中标记"已购"(划掉)
+                                for (const ri of recipe.ingredients) {
+                                  const item = shoppingList?.items.find(it => it.ingredientId === ri.ingredientId && it.fromRecipes.includes(recipe.nameZh));
+                                  if (item && !item.isPurchased) togglePurchased(ri.ingredientId);
+                                }
+                              }
+                            }}
+                            className={`transition ${mr.completed ? 'text-green-600' : 'text-muted hover:text-green-600'}`}
+                            title={mr.completed ? '已完成 (点击撤销)' : '标记已完成'}>
+                            <CheckCheck className="w-4 h-4" />
+                          </button>
+                          <button
+                            onClick={() => setMoveTarget({ recipeId: mr.recipeId, fromDay: selectedDay, mealType })}
+                            className="text-muted hover:text-primary transition" title="换到另一天做">
+                            <CalendarDays className="w-3.5 h-3.5" />
+                          </button>
                           <button
                             onClick={() => setSwapTarget({ recipeId: mr.recipeId, mealType, role: mr.role, day: selectedDay })}
                             className="text-muted hover:text-primary transition" title="换一道">
@@ -496,12 +565,12 @@ export default function PlanPage() {
                       </div>
 
                       {/* 食材标签 */}
-                      <div className="flex flex-wrap gap-1 mt-2">
+                      <div className={`flex flex-wrap gap-1 mt-2 ${mr.completed ? 'opacity-50' : ''}`}>
                         {recipe.ingredients.slice(0, 5).map(ri => {
                           const ing = getIngredient(ri.ingredientId);
                           return ing ? (
                             <Link key={ri.ingredientId} href={`/ingredient/${ri.ingredientId}`}
-                              className="text-[11px] bg-card px-1.5 py-0.5 rounded hover:bg-primary-light transition">
+                              className={`text-[11px] bg-card px-1.5 py-0.5 rounded hover:bg-primary-light transition ${mr.completed ? 'line-through text-muted' : ''}`}>
                               {ing.nameZh}
                             </Link>
                           ) : null;
@@ -666,6 +735,44 @@ export default function PlanPage() {
               setProfile({ excludeIngredients: Array.from(current) });
             }}
           />
+        );
+      })()}
+
+      {/* 换日弹窗: 选择菜谱要移动到的目标日 */}
+      {moveTarget && (() => {
+        const targetRecipe = getRecipe(moveTarget.recipeId);
+        if (!targetRecipe) return null;
+        const planDays = weeklyPlan?.slots.map(s => s.day) || [];
+        const uniqueDays = Array.from(new Set(planDays));
+        // 按周序排列
+        const orderedDays = DAYS.filter(d => uniqueDays.includes(d));
+        return (
+          <div className="fixed inset-0 z-[60] bg-black/50 flex items-end sm:items-center justify-center p-4" onClick={() => setMoveTarget(null)}>
+            <div className="bg-card rounded-2xl border border-border w-full max-w-sm p-5" onClick={e => e.stopPropagation()}>
+              <h3 className="font-semibold mb-1">换到哪一天做</h3>
+              <p className="text-xs text-muted mb-3">把「{targetRecipe.nameZh}」({MEAL_LABELS[moveTarget.mealType]})移到另一天的同餐次</p>
+              <div className="space-y-2 max-h-80 overflow-y-auto">
+                {orderedDays.filter(d => d !== moveTarget.fromDay).map(d => (
+                  <button
+                    key={d}
+                    onClick={() => {
+                      moveRecipeToDay(moveTarget.fromDay, moveTarget.mealType, moveTarget.recipeId, d);
+                      // 自动跳到目标日查看
+                      setSelectedDay(d);
+                      setMoveTarget(null);
+                    }}
+                    className="w-full text-left px-3 py-2.5 border border-border rounded-lg hover:border-primary hover:bg-primary/5 transition"
+                  >
+                    <div className="text-sm font-medium">{DAY_LABELS[d]}</div>
+                    <div className="text-[11px] text-muted mt-0.5">
+                      {(weeklyPlan?.slots.find(s => s.day === d && s.mealType === moveTarget.mealType)?.recipes.length || 0)} 道菜 (移动后会加到这里)
+                    </div>
+                  </button>
+                ))}
+              </div>
+              <button onClick={() => setMoveTarget(null)} className="w-full mt-3 py-2.5 border border-border rounded-lg text-sm">取消</button>
+            </div>
+          </div>
         );
       })()}
 

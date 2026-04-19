@@ -1,0 +1,6176 @@
+[
+  {
+    "id": "drink_americano",
+    "nameZh": "美式咖啡",
+    "nameEn": "Americano",
+    "description": "咖啡基础款。以浓缩咖啡兑热水稀释，保留咖啡豆的醇厚与焦香，苦味温和不刺激，是清晨提神和下午消除倦意的经典选择。",
+    "cuisine": "western",
+    "regionalCuisine": "american",
+    "cookingMethod": "boil",
+    "flavors": [
+      "bitter"
+    ],
+    "mealTypes": [
+      "breakfast",
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "easy",
+    "minCookingLevel": "beginner",
+    "prepTime": 2,
+    "cookTime": 3,
+    "servings": 1,
+    "ingredients": [
+      {
+        "ingredientId": "espresso",
+        "amount": 1,
+        "unit": "份"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 5,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "萃取 1 份浓缩咖啡约 30ml",
+      "杯中先倒入 200ml 热水",
+      "缓慢倒入浓缩咖啡制造分层",
+      "按喜好加糖调味即可"
+    ],
+    "tags": [
+      "咖啡",
+      "提神",
+      "快手",
+      "经典"
+    ],
+    "dishRole": "drink",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": null
+  },
+  {
+    "id": "drink_latte",
+    "nameZh": "拿铁咖啡",
+    "nameEn": "Caffe Latte",
+    "description": "以浓缩咖啡打底，加入大量蒸奶与一层薄薄奶泡，奶味浓郁顺滑、咖啡味温和。可拉花的经典款，新手最易上手的咖啡馆人气之选。",
+    "cuisine": "western",
+    "regionalCuisine": "italian",
+    "cookingMethod": "boil",
+    "flavors": [
+      "bitter",
+      "sweet"
+    ],
+    "mealTypes": [
+      "breakfast",
+      "lunch"
+    ],
+    "difficulty": "easy",
+    "minCookingLevel": "beginner",
+    "prepTime": 3,
+    "cookTime": 4,
+    "servings": 1,
+    "ingredients": [
+      {
+        "ingredientId": "espresso",
+        "amount": 1,
+        "unit": "份"
+      },
+      {
+        "ingredientId": "milk",
+        "amount": 200,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "将 200ml 全脂牛奶加热至 65℃",
+      "用蒸汽棒或奶泡器打出细腻奶泡",
+      "杯中先倒入 1 份浓缩咖啡",
+      "缓慢倒入蒸奶，最后浮上薄奶泡",
+      "可尝试倒出心形或叶子拉花"
+    ],
+    "tags": [
+      "咖啡",
+      "奶香",
+      "拉花",
+      "人气"
+    ],
+    "dishRole": "drink",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": null
+  },
+  {
+    "id": "drink_cappuccino",
+    "nameZh": "卡布奇诺",
+    "nameEn": "Cappuccino",
+    "description": "意式咖啡经典三分法：1/3 浓缩 + 1/3 蒸奶 + 1/3 奶泡。奶泡丰盈厚实，咖啡味突出而不苦涩，一杯入魂的早餐搭档。",
+    "cuisine": "western",
+    "regionalCuisine": "italian",
+    "cookingMethod": "boil",
+    "flavors": [
+      "bitter",
+      "sweet"
+    ],
+    "mealTypes": [
+      "breakfast"
+    ],
+    "difficulty": "medium",
+    "minCookingLevel": "basic",
+    "prepTime": 3,
+    "cookTime": 5,
+    "servings": 1,
+    "ingredients": [
+      {
+        "ingredientId": "espresso",
+        "amount": 1,
+        "unit": "份"
+      },
+      {
+        "ingredientId": "milk",
+        "amount": 150,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cocoa_powder",
+        "amount": 1,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "萃取 1 份浓缩咖啡倒入杯中",
+      "将牛奶加热至 60-65℃",
+      "蒸汽打发奶泡，奶泡与液体各约一半",
+      "先倒入 80ml 蒸奶",
+      "再覆盖厚厚一层奶泡至杯口",
+      "顶部筛少许可可粉装饰"
+    ],
+    "tags": [
+      "咖啡",
+      "奶泡",
+      "经典",
+      "意式"
+    ],
+    "dishRole": "drink",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": null
+  },
+  {
+    "id": "drink_mocha",
+    "nameZh": "摩卡咖啡",
+    "nameEn": "Caffe Mocha",
+    "description": "咖啡与巧克力的甜蜜相遇。浓缩咖啡打底，加入巧克力酱与蒸奶，顶部挤上奶油与可可粉，苦甜交融像极了大人的热巧克力。",
+    "cuisine": "western",
+    "regionalCuisine": "american",
+    "cookingMethod": "boil",
+    "flavors": [
+      "bitter",
+      "sweet"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "easy",
+    "minCookingLevel": "beginner",
+    "prepTime": 3,
+    "cookTime": 5,
+    "servings": 1,
+    "ingredients": [
+      {
+        "ingredientId": "espresso",
+        "amount": 1,
+        "unit": "份"
+      },
+      {
+        "ingredientId": "milk",
+        "amount": 180,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "chocolate_dark",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cream",
+        "amount": 20,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cocoa_powder",
+        "amount": 1,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "15g 黑巧克力切碎放杯底",
+      "加入 1 份浓缩咖啡搅拌融化",
+      "牛奶加热打发奶泡",
+      "倒入热牛奶 150ml",
+      "顶部挤上打发奶油",
+      "撒可可粉装饰"
+    ],
+    "tags": [
+      "咖啡",
+      "巧克力",
+      "甜香",
+      "下午茶"
+    ],
+    "dishRole": "drink",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": null
+  },
+  {
+    "id": "drink_macchiato",
+    "nameZh": "玛奇朵咖啡",
+    "nameEn": "Espresso Macchiato",
+    "description": "浓缩咖啡顶部点上一小勺奶泡，意大利语 macchiato 即'染上印记'之意。口感浓烈，奶香画龙点睛，适合喜欢咖啡浓度的朋友。",
+    "cuisine": "western",
+    "regionalCuisine": "italian",
+    "cookingMethod": "boil",
+    "flavors": [
+      "bitter"
+    ],
+    "mealTypes": [
+      "breakfast",
+      "lunch"
+    ],
+    "difficulty": "easy",
+    "minCookingLevel": "beginner",
+    "prepTime": 2,
+    "cookTime": 3,
+    "servings": 1,
+    "ingredients": [
+      {
+        "ingredientId": "espresso",
+        "amount": 1,
+        "unit": "份"
+      },
+      {
+        "ingredientId": "milk",
+        "amount": 30,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "萃取 1 份浓缩咖啡",
+      "30ml 牛奶打出奶泡",
+      "咖啡顶部点一勺奶泡即可"
+    ],
+    "tags": [
+      "咖啡",
+      "浓郁",
+      "意式",
+      "快手"
+    ],
+    "dishRole": "drink",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": null
+  },
+  {
+    "id": "drink_iced_americano",
+    "nameZh": "冰美式",
+    "nameEn": "Iced Americano",
+    "description": "夏日救星。浓缩咖啡冲冰水瞬间锁味，入口清爽带焦香，咖啡因扑面而来却不会像热咖啡那么苦。省事清爽的日常选择。",
+    "cuisine": "western",
+    "regionalCuisine": "american",
+    "cookingMethod": "cold_dish",
+    "flavors": [
+      "bitter"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "easy",
+    "minCookingLevel": "beginner",
+    "prepTime": 2,
+    "cookTime": 2,
+    "servings": 1,
+    "ingredients": [
+      {
+        "ingredientId": "espresso",
+        "amount": 2,
+        "unit": "份"
+      },
+      {
+        "ingredientId": "sparkling_water",
+        "amount": 200,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "杯子装满冰块",
+      "倒入 200ml 冰水",
+      "萃取 2 份浓缩咖啡直接浇到冰上",
+      "搅拌即饮，可加糖浆"
+    ],
+    "tags": [
+      "咖啡",
+      "冰饮",
+      "夏季",
+      "解暑"
+    ],
+    "dishRole": "cold",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": null
+  },
+  {
+    "id": "drink_caramel_macchiato",
+    "nameZh": "焦糖玛奇朵",
+    "nameEn": "Caramel Macchiato",
+    "description": "香草糖浆打底的人气咖啡。蒸奶倒入后萃取咖啡制造分层，顶部挤焦糖酱画格。甜度高、颜值高，初次喝咖啡的朋友爱不释手。",
+    "cuisine": "western",
+    "regionalCuisine": "american",
+    "cookingMethod": "boil",
+    "flavors": [
+      "sweet",
+      "bitter"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "easy",
+    "minCookingLevel": "basic",
+    "prepTime": 3,
+    "cookTime": 5,
+    "servings": 1,
+    "ingredients": [
+      {
+        "ingredientId": "espresso",
+        "amount": 1,
+        "unit": "份"
+      },
+      {
+        "ingredientId": "milk",
+        "amount": 200,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "vanilla",
+        "amount": 2,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 15,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "杯中加入香草糖浆与糖",
+      "倒入蒸奶打发奶泡",
+      "缓慢浇入浓缩咖啡形成分层",
+      "顶部画上焦糖格子图案"
+    ],
+    "tags": [
+      "咖啡",
+      "甜香",
+      "人气",
+      "拍照"
+    ],
+    "dishRole": "snack",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": null
+  },
+  {
+    "id": "drink_matcha_latte",
+    "nameZh": "抹茶拿铁",
+    "nameEn": "Matcha Latte",
+    "description": "日式风味的咖啡替代品。抹茶粉打匀后与蒸奶融合，茶香清新回甘，颜色翠绿悦目，对咖啡敏感的朋友可用抹茶替代，口感更温和。",
+    "cuisine": "asian_other",
+    "regionalCuisine": "japanese",
+    "cookingMethod": "boil",
+    "flavors": [
+      "bitter",
+      "sweet"
+    ],
+    "mealTypes": [
+      "breakfast",
+      "lunch"
+    ],
+    "difficulty": "easy",
+    "minCookingLevel": "beginner",
+    "prepTime": 3,
+    "cookTime": 4,
+    "servings": 1,
+    "ingredients": [
+      {
+        "ingredientId": "matcha_powder",
+        "amount": 3,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "milk",
+        "amount": 200,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 10,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "3g 抹茶粉筛入杯中",
+      "加 30ml 温水打成无颗粒抹茶液",
+      "加糖调味",
+      "倒入打发好的热牛奶",
+      "可撒抹茶粉装饰"
+    ],
+    "tags": [
+      "抹茶",
+      "日式",
+      "无咖啡因替代",
+      "网红"
+    ],
+    "dishRole": "drink",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": null
+  },
+  {
+    "id": "drink_oat_latte",
+    "nameZh": "燕麦奶拿铁",
+    "nameEn": "Oat Milk Latte",
+    "description": "乳糖不耐友好版拿铁。燕麦奶的坚果香与咖啡意外合拍，口感浓稠丝滑，比全脂牛奶更顺口，近年咖啡馆超人气的替代款。",
+    "cuisine": "western",
+    "regionalCuisine": "american",
+    "cookingMethod": "boil",
+    "flavors": [
+      "bitter",
+      "sweet"
+    ],
+    "mealTypes": [
+      "breakfast",
+      "lunch"
+    ],
+    "difficulty": "easy",
+    "minCookingLevel": "beginner",
+    "prepTime": 3,
+    "cookTime": 4,
+    "servings": 1,
+    "ingredients": [
+      {
+        "ingredientId": "espresso",
+        "amount": 1,
+        "unit": "份"
+      },
+      {
+        "ingredientId": "oat_milk",
+        "amount": 200,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "200ml 燕麦奶加热至 60℃",
+      "用奶泡器打发出薄奶泡",
+      "杯中倒入浓缩咖啡",
+      "慢慢注入燕麦奶"
+    ],
+    "tags": [
+      "咖啡",
+      "燕麦奶",
+      "无乳糖",
+      "健康"
+    ],
+    "dishRole": "drink",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": null
+  },
+  {
+    "id": "drink_espresso",
+    "nameZh": "意式浓缩咖啡",
+    "nameEn": "Espresso",
+    "description": "咖啡世界的原点。高压萃取 25-30ml 浓缩液，油脂金黄、香气集中，纯饮 2 口下肚，直击咖啡因。苦味直接但余韵甘甜。",
+    "cuisine": "western",
+    "regionalCuisine": "italian",
+    "cookingMethod": "boil",
+    "flavors": [
+      "bitter"
+    ],
+    "mealTypes": [
+      "breakfast",
+      "lunch"
+    ],
+    "difficulty": "medium",
+    "minCookingLevel": "basic",
+    "prepTime": 2,
+    "cookTime": 1,
+    "servings": 1,
+    "ingredients": [
+      {
+        "ingredientId": "coffee_beans",
+        "amount": 18,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "18g 咖啡豆研磨至细砂糖粗细",
+      "咖啡粉填入手柄压平夯实",
+      "上机萃取 25 秒出 30ml",
+      "表面金黄油脂为合格信号"
+    ],
+    "tags": [
+      "咖啡",
+      "纯饮",
+      "浓烈",
+      "意式"
+    ],
+    "dishRole": "drink",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": null
+  },
+  {
+    "id": "drink_cold_brew",
+    "nameZh": "冷萃咖啡",
+    "nameEn": "Cold Brew Coffee",
+    "description": "低温长时间浸泡的咖啡。咖啡粉与冷水在冰箱中浸泡 12-24 小时，萃取温和，成品甘甜顺口，酸涩感极低，是夏季最清爽的咖啡形式。",
+    "cuisine": "western",
+    "regionalCuisine": "american",
+    "cookingMethod": "cold_dish",
+    "flavors": [
+      "bitter",
+      "sweet"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "easy",
+    "minCookingLevel": "beginner",
+    "prepTime": 5,
+    "cookTime": 720,
+    "servings": 4,
+    "ingredients": [
+      {
+        "ingredientId": "coffee_beans",
+        "amount": 80,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "80g 咖啡豆粗研磨",
+      "放入容器加 800ml 冷水浸泡",
+      "冰箱冷藏 12-24 小时",
+      "用滤纸过滤得到冷萃原液",
+      "饮用时按 1:1 兑水或牛奶"
+    ],
+    "tags": [
+      "咖啡",
+      "冷萃",
+      "夏季",
+      "温和"
+    ],
+    "dishRole": "drink",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": null
+  },
+  {
+    "id": "drink_vietnamese_coffee",
+    "nameZh": "越南咖啡",
+    "nameEn": "Vietnamese Coffee",
+    "description": "越南国民饮品。滴漏式咖啡浇在厚厚一层炼乳上，慢慢搅匀入口，焦糖甜与咖啡苦完美平衡。冰块加冰饮版本更是热带必备。",
+    "cuisine": "asian_other",
+    "regionalCuisine": "vietnamese",
+    "cookingMethod": "boil",
+    "flavors": [
+      "bitter",
+      "sweet"
+    ],
+    "mealTypes": [
+      "breakfast",
+      "lunch"
+    ],
+    "difficulty": "easy",
+    "minCookingLevel": "beginner",
+    "prepTime": 3,
+    "cookTime": 5,
+    "servings": 1,
+    "ingredients": [
+      {
+        "ingredientId": "coffee_beans",
+        "amount": 20,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "condensed_milk",
+        "amount": 30,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "玻璃杯底放入 30ml 炼乳",
+      "越南滴漏壶填入研磨咖啡粉",
+      "缓慢注入沸水滴漏到杯中",
+      "饮前搅匀，夏天可加冰"
+    ],
+    "tags": [
+      "咖啡",
+      "越南",
+      "炼乳",
+      "甜香"
+    ],
+    "dishRole": "drink",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": null
+  },
+  {
+    "id": "drink_dirty_coffee",
+    "nameZh": "脏咖啡",
+    "nameEn": "Dirty Coffee",
+    "description": "网红反差美学。冰牛奶先铺底，萃取时浓缩咖啡倾泻而下砸出浑浊飞溅的画面，入口先冰后热、先甜后苦，喝的是层次感和视觉冲击。",
+    "cuisine": "western",
+    "regionalCuisine": "american",
+    "cookingMethod": "boil",
+    "flavors": [
+      "bitter",
+      "sweet"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "easy",
+    "minCookingLevel": "basic",
+    "prepTime": 3,
+    "cookTime": 3,
+    "servings": 1,
+    "ingredients": [
+      {
+        "ingredientId": "espresso",
+        "amount": 2,
+        "unit": "份"
+      },
+      {
+        "ingredientId": "milk",
+        "amount": 150,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "宽口玻璃杯倒入冰牛奶至 7 分满",
+      "用力快速萃取 2 份浓缩",
+      "高处浇入咖啡，制造飞溅脏污效果",
+      "不搅拌，直接饮用感受层次"
+    ],
+    "tags": [
+      "咖啡",
+      "网红",
+      "视觉系",
+      "分层"
+    ],
+    "dishRole": "drink",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": null
+  },
+  {
+    "id": "drink_flat_white",
+    "nameZh": "澳白咖啡",
+    "nameEn": "Flat White",
+    "description": "澳洲/新西兰的标志性咖啡。浓缩咖啡配薄薄一层微泡牛奶，奶泡极细腻像丝绸，咖啡味比拿铁重、比美式柔，平衡感绝佳。",
+    "cuisine": "western",
+    "regionalCuisine": "american",
+    "cookingMethod": "boil",
+    "flavors": [
+      "bitter",
+      "sweet"
+    ],
+    "mealTypes": [
+      "breakfast",
+      "lunch"
+    ],
+    "difficulty": "medium",
+    "minCookingLevel": "basic",
+    "prepTime": 3,
+    "cookTime": 4,
+    "servings": 1,
+    "ingredients": [
+      {
+        "ingredientId": "espresso",
+        "amount": 2,
+        "unit": "份"
+      },
+      {
+        "ingredientId": "milk",
+        "amount": 150,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "萃取双份浓缩咖啡",
+      "牛奶打至微泡状态（泡沫极薄）",
+      "从高处缓慢倒入奶，让奶融入咖啡",
+      "表面留一层薄奶泡"
+    ],
+    "tags": [
+      "咖啡",
+      "新西兰",
+      "丝滑",
+      "经典"
+    ],
+    "dishRole": "drink",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": null
+  },
+  {
+    "id": "drink_sea_salt_latte",
+    "nameZh": "海盐焦糖拿铁",
+    "nameEn": "Sea Salt Caramel Latte",
+    "description": "咸甜反差拿铁。在拿铁基础上挤一层海盐奶盖，喝下去先舌头碰到咸、再到咖啡的苦、最后是奶的甜，味觉层次丰富的人气特调。",
+    "cuisine": "western",
+    "regionalCuisine": "american",
+    "cookingMethod": "boil",
+    "flavors": [
+      "bitter",
+      "sweet",
+      "salty"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "medium",
+    "minCookingLevel": "basic",
+    "prepTime": 5,
+    "cookTime": 5,
+    "servings": 1,
+    "ingredients": [
+      {
+        "ingredientId": "espresso",
+        "amount": 1,
+        "unit": "份"
+      },
+      {
+        "ingredientId": "milk",
+        "amount": 200,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "heavy_cream",
+        "amount": 30,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "salt",
+        "amount": 1,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 10,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "先做好基础拿铁",
+      "淡奶油加少许盐和糖打至 6 分发",
+      "咖啡表面轻柔浇上咸奶盖",
+      "可撒海盐粒点缀"
+    ],
+    "tags": [
+      "咖啡",
+      "海盐",
+      "网红",
+      "特调"
+    ],
+    "dishRole": "drink",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": null
+  },
+  {
+    "id": "drink_longjing_tea",
+    "nameZh": "龙井茶",
+    "nameEn": "Longjing Green Tea",
+    "description": "西湖龙井是中国十大名茶之首。扁平翠绿的茶叶在开水中舒展飘舞，一芽一叶优雅沉浮。豆香与栗香交织，清口回甘，饮后唇齿留芳。",
+    "cuisine": "chinese",
+    "regionalCuisine": "zhejiang",
+    "cookingMethod": "boil",
+    "flavors": [
+      "bitter",
+      "light"
+    ],
+    "mealTypes": [
+      "breakfast",
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "easy",
+    "minCookingLevel": "beginner",
+    "prepTime": 2,
+    "cookTime": 5,
+    "servings": 1,
+    "ingredients": [
+      {
+        "ingredientId": "tea_longjing",
+        "amount": 3,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "水烧至 80-85℃（不可沸腾）",
+      "玻璃杯放入 3g 龙井",
+      "沿杯壁缓慢注水 1/3",
+      "摇香后再续水至 7 分满",
+      "静候 1 分钟后品饮"
+    ],
+    "tags": [
+      "茶",
+      "绿茶",
+      "西湖",
+      "清饮"
+    ],
+    "dishRole": "drink",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": null
+  },
+  {
+    "id": "drink_tieguanyin",
+    "nameZh": "铁观音",
+    "nameEn": "Tieguanyin Oolong Tea",
+    "description": "闽南乌龙茶代表。半发酵工艺成就浓郁的兰花香与观音韵，汤色金黄明亮，入口浓烈、回甘绵长。耐泡度高，一包茶叶可冲 7-8 泡不减风味。",
+    "cuisine": "chinese",
+    "regionalCuisine": "fujian",
+    "cookingMethod": "boil",
+    "flavors": [
+      "bitter",
+      "light"
+    ],
+    "mealTypes": [
+      "breakfast",
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "easy",
+    "minCookingLevel": "beginner",
+    "prepTime": 3,
+    "cookTime": 5,
+    "servings": 2,
+    "ingredients": [
+      {
+        "ingredientId": "tea_tieguanyin",
+        "amount": 7,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "烧水至 100℃沸腾",
+      "紫砂壶先温杯",
+      "投入 7g 茶叶润茶后弃水",
+      "再次冲水浸泡 30 秒出汤",
+      "可续泡 6-8 次"
+    ],
+    "tags": [
+      "茶",
+      "乌龙",
+      "闽南",
+      "工夫茶"
+    ],
+    "dishRole": "main_veg",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": null
+  },
+  {
+    "id": "drink_puer_tea",
+    "nameZh": "普洱茶",
+    "nameEn": "Pu-erh Tea",
+    "description": "云南大叶种后发酵茶。熟普汤色红浓、口感醇厚，有陈年木质香；生普越陈越香。解腻消食，配油腻餐食最佳，饭后一杯尤其舒畅。",
+    "cuisine": "chinese",
+    "regionalCuisine": "yunnan",
+    "cookingMethod": "boil",
+    "flavors": [
+      "bitter",
+      "light"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "easy",
+    "minCookingLevel": "beginner",
+    "prepTime": 3,
+    "cookTime": 5,
+    "servings": 2,
+    "ingredients": [
+      {
+        "ingredientId": "tea_puer",
+        "amount": 8,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "撬 8g 茶叶放入盖碗",
+      "沸水冲洗润茶 2 次",
+      "重新冲水浸泡 15-30 秒",
+      "出汤入公道杯分饮",
+      "可续泡 10 次以上"
+    ],
+    "tags": [
+      "茶",
+      "普洱",
+      "云南",
+      "饭后消食"
+    ],
+    "dishRole": "drink",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": null
+  },
+  {
+    "id": "drink_jasmine_tea",
+    "nameZh": "茉莉花茶",
+    "nameEn": "Jasmine Tea",
+    "description": "北方经典窨制花茶。茶胚反复吸附茉莉花香后成就花果清香与绿茶底韵，一泡下肚香气扑鼻，是北方茶馆下午的最熟悉味道。",
+    "cuisine": "chinese",
+    "regionalCuisine": "northern",
+    "cookingMethod": "boil",
+    "flavors": [
+      "light",
+      "sweet"
+    ],
+    "mealTypes": [
+      "breakfast",
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "easy",
+    "minCookingLevel": "beginner",
+    "prepTime": 2,
+    "cookTime": 4,
+    "servings": 1,
+    "ingredients": [
+      {
+        "ingredientId": "tea_jasmine",
+        "amount": 3,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "水温 85-90℃",
+      "玻璃杯投入 3g 茶叶",
+      "注水至 2/3 处",
+      "静置 2 分钟闻香再饮"
+    ],
+    "tags": [
+      "茶",
+      "花茶",
+      "北方",
+      "日常"
+    ],
+    "dishRole": "drink",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": null
+  },
+  {
+    "id": "drink_english_tea",
+    "nameZh": "英式红茶",
+    "nameEn": "English Breakfast Tea",
+    "description": "英国国民早餐茶。阿萨姆与锡兰红茶的拼配浓烈有力，配奶加糖成为早餐标配。喝起来麦香浓郁，一杯下肚暖胃提神。",
+    "cuisine": "western",
+    "regionalCuisine": "french",
+    "cookingMethod": "boil",
+    "flavors": [
+      "bitter",
+      "sweet"
+    ],
+    "mealTypes": [
+      "breakfast"
+    ],
+    "difficulty": "easy",
+    "minCookingLevel": "beginner",
+    "prepTime": 2,
+    "cookTime": 5,
+    "servings": 1,
+    "ingredients": [
+      {
+        "ingredientId": "tea_black",
+        "amount": 1,
+        "unit": "包"
+      },
+      {
+        "ingredientId": "milk",
+        "amount": 30,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 5,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "煮沸纯净水",
+      "茶杯放入茶包",
+      "注入沸水浸泡 3-4 分钟",
+      "加入牛奶与糖搅匀"
+    ],
+    "tags": [
+      "茶",
+      "红茶",
+      "英式",
+      "早餐"
+    ],
+    "dishRole": "drink",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": null
+  },
+  {
+    "id": "drink_earl_grey",
+    "nameZh": "伯爵红茶",
+    "nameEn": "Earl Grey Tea",
+    "description": "以佛手柑油调香的红茶。标志性的柑橘花香与红茶醇厚交织，热饮冰饮皆宜。加奶后奶味与柑橘香奇妙融合，是下午茶时光的宠儿。",
+    "cuisine": "western",
+    "regionalCuisine": "french",
+    "cookingMethod": "boil",
+    "flavors": [
+      "bitter",
+      "sweet"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "easy",
+    "minCookingLevel": "beginner",
+    "prepTime": 2,
+    "cookTime": 4,
+    "servings": 1,
+    "ingredients": [
+      {
+        "ingredientId": "tea_earl_grey",
+        "amount": 1,
+        "unit": "包"
+      },
+      {
+        "ingredientId": "lemon",
+        "amount": 1,
+        "unit": "片"
+      }
+    ],
+    "steps": [
+      "煮沸开水",
+      "茶包放入杯中",
+      "冲泡 3 分钟",
+      "加入一片柠檬提香"
+    ],
+    "tags": [
+      "茶",
+      "红茶",
+      "伯爵",
+      "下午茶"
+    ],
+    "dishRole": "drink",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": null
+  },
+  {
+    "id": "drink_matcha",
+    "nameZh": "日式抹茶",
+    "nameEn": "Japanese Matcha",
+    "description": "日本茶道的灵魂。石磨磨成的绿色茶粉用 80℃热水点茶，茶筅快速搅打出绵密奶泡。入口鲜苦回甘，一碗抹茶配和果子即是一场仪式。",
+    "cuisine": "asian_other",
+    "regionalCuisine": "japanese",
+    "cookingMethod": "boil",
+    "flavors": [
+      "bitter"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "medium",
+    "minCookingLevel": "basic",
+    "prepTime": 3,
+    "cookTime": 3,
+    "servings": 1,
+    "ingredients": [
+      {
+        "ingredientId": "matcha_powder",
+        "amount": 2,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "水烧至 80℃",
+      "茶碗中筛入 2g 抹茶粉",
+      "加 60ml 水",
+      "用茶筅 M 字形快速搅打 30 秒",
+      "表面浮起绵密奶泡即可"
+    ],
+    "tags": [
+      "茶",
+      "抹茶",
+      "日式",
+      "茶道"
+    ],
+    "dishRole": "drink",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": null
+  },
+  {
+    "id": "drink_hk_milk_tea",
+    "nameZh": "港式丝袜奶茶",
+    "nameEn": "Hong Kong Milk Tea",
+    "description": "茶走天涯的港式茶餐厅招牌。多种红茶拼配用丝袜滤布反复拉茶，茶味浓烈醇厚，加炼乳后丝滑浓香，是港人早茶午茶的灵魂标配。",
+    "cuisine": "chinese",
+    "regionalCuisine": "cantonese",
+    "cookingMethod": "boil",
+    "flavors": [
+      "bitter",
+      "sweet"
+    ],
+    "mealTypes": [
+      "breakfast",
+      "lunch"
+    ],
+    "difficulty": "medium",
+    "minCookingLevel": "basic",
+    "prepTime": 5,
+    "cookTime": 10,
+    "servings": 2,
+    "ingredients": [
+      {
+        "ingredientId": "tea_black",
+        "amount": 20,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "evaporated_milk",
+        "amount": 100,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 30,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "20g 红茶拼配",
+      "沸水煮茶 3 分钟",
+      "用丝袜滤布来回拉茶 10 次",
+      "茶中加入淡奶",
+      "加糖调匀"
+    ],
+    "tags": [
+      "茶",
+      "港式",
+      "丝袜",
+      "经典"
+    ],
+    "dishRole": "drink",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": null
+  },
+  {
+    "id": "drink_thai_milk_tea",
+    "nameZh": "泰式奶茶",
+    "nameEn": "Thai Iced Tea",
+    "description": "橘红色泽迷人的泰国国民饮品。茶叶染橘红色素，煮浓加炼乳与淡奶，甜度极高。冰块打底倒入，表面挤奶油云朵，消暑解辣一绝。",
+    "cuisine": "asian_other",
+    "regionalCuisine": "southeast_asian",
+    "cookingMethod": "boil",
+    "flavors": [
+      "sweet"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "easy",
+    "minCookingLevel": "beginner",
+    "prepTime": 5,
+    "cookTime": 10,
+    "servings": 1,
+    "ingredients": [
+      {
+        "ingredientId": "tea_black",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "condensed_milk",
+        "amount": 30,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "evaporated_milk",
+        "amount": 50,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "10g 泰式红茶用沸水煮 5 分钟",
+      "滤出茶汤",
+      "杯中加入炼乳",
+      "倒入茶汤并加冰",
+      "顶部浇淡奶形成分层"
+    ],
+    "tags": [
+      "茶",
+      "泰式",
+      "奶茶",
+      "冰饮"
+    ],
+    "dishRole": "drink",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": null
+  },
+  {
+    "id": "drink_bubble_tea",
+    "nameZh": "珍珠奶茶",
+    "nameEn": "Bubble Milk Tea",
+    "description": "台湾发明的全球爆款。红茶配奶与糖浆，底部铺上黑糖珍珠，粗吸管嘬一口奶茶嚼一粒 Q 弹珍珠，满足感爆棚。饭后或逛街必入手。",
+    "cuisine": "asian_other",
+    "regionalCuisine": "taiwanese",
+    "cookingMethod": "boil",
+    "flavors": [
+      "sweet"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "medium",
+    "minCookingLevel": "basic",
+    "prepTime": 10,
+    "cookTime": 30,
+    "servings": 1,
+    "ingredients": [
+      {
+        "ingredientId": "tea_black",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "milk",
+        "amount": 200,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "tapioca_pearl",
+        "amount": 50,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "brown_sugar",
+        "amount": 30,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "珍珠沸水煮 25 分钟",
+      "捞出用冷水浸泡",
+      "加红糖糖浆浸泡 10 分钟",
+      "红茶煮出茶汤晾凉",
+      "杯底铺珍珠加冰",
+      "倒入茶汤与牛奶"
+    ],
+    "tags": [
+      "茶",
+      "珍珠",
+      "台湾",
+      "网红"
+    ],
+    "dishRole": "drink",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": null
+  },
+  {
+    "id": "drink_yuanyang",
+    "nameZh": "鸳鸯奶茶",
+    "nameEn": "Yuanyang (Coffee + Milk Tea)",
+    "description": "港式茶餐厅独创。7 分港式奶茶配 3 分咖啡，茶香与咖啡香各占半边天。喝起来先是茶的甘醇，回味是咖啡的余韵，是纠结症患者的福音。",
+    "cuisine": "chinese",
+    "regionalCuisine": "cantonese",
+    "cookingMethod": "boil",
+    "flavors": [
+      "bitter",
+      "sweet"
+    ],
+    "mealTypes": [
+      "breakfast",
+      "lunch"
+    ],
+    "difficulty": "medium",
+    "minCookingLevel": "basic",
+    "prepTime": 5,
+    "cookTime": 10,
+    "servings": 1,
+    "ingredients": [
+      {
+        "ingredientId": "tea_black",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "espresso",
+        "amount": 1,
+        "unit": "份"
+      },
+      {
+        "ingredientId": "evaporated_milk",
+        "amount": 50,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 15,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "红茶煮浓",
+      "冲好 1 份浓缩咖啡",
+      "杯中按 7:3 兑入奶茶与咖啡",
+      "加入炼乳与糖搅匀"
+    ],
+    "tags": [
+      "茶",
+      "咖啡",
+      "港式",
+      "鸳鸯"
+    ],
+    "dishRole": "drink",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": null
+  },
+  {
+    "id": "drink_chamomile_tea",
+    "nameZh": "甘菊茶",
+    "nameEn": "Chamomile Tea",
+    "description": "西方舒眠花草茶代表。甘菊花晒干泡水，汤色淡黄，有淡淡苹果香，入口柔和带甘。睡前一杯助眠，缓解焦虑，无咖啡因老少皆宜。",
+    "cuisine": "western",
+    "regionalCuisine": "french",
+    "cookingMethod": "boil",
+    "flavors": [
+      "light",
+      "sweet"
+    ],
+    "mealTypes": [
+      "dinner"
+    ],
+    "difficulty": "easy",
+    "minCookingLevel": "beginner",
+    "prepTime": 1,
+    "cookTime": 5,
+    "servings": 1,
+    "ingredients": [
+      {
+        "ingredientId": "chamomile",
+        "amount": 2,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "honey",
+        "amount": 5,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "水煮沸",
+      "杯中放入 2g 甘菊",
+      "倒入热水浸泡 5 分钟",
+      "加蜂蜜调味"
+    ],
+    "tags": [
+      "茶",
+      "花草",
+      "助眠",
+      "无咖啡因"
+    ],
+    "dishRole": "drink",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": null
+  },
+  {
+    "id": "drink_ginger_tea",
+    "nameZh": "姜茶",
+    "nameEn": "Ginger Tea",
+    "description": "驱寒暖胃国民汤饮。新鲜姜切片或磨汁煮水，加红糖与红枣，辛辣回甘。冬天受凉、经期不适或淋雨后必喝一杯，从脚心暖到头顶。",
+    "cuisine": "chinese",
+    "regionalCuisine": "homestyle",
+    "cookingMethod": "boil",
+    "flavors": [
+      "spicy",
+      "sweet"
+    ],
+    "mealTypes": [
+      "breakfast",
+      "dinner"
+    ],
+    "difficulty": "easy",
+    "minCookingLevel": "beginner",
+    "prepTime": 3,
+    "cookTime": 10,
+    "servings": 1,
+    "ingredients": [
+      {
+        "ingredientId": "ginger",
+        "amount": 20,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "brown_sugar",
+        "amount": 20,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "red_date",
+        "amount": 3,
+        "unit": "枚"
+      }
+    ],
+    "steps": [
+      "姜洗净切薄片",
+      "红枣去核",
+      "锅中加 400ml 水放姜与红枣",
+      "煮沸后小火煮 10 分钟",
+      "加红糖搅化出锅"
+    ],
+    "tags": [
+      "茶",
+      "姜",
+      "驱寒",
+      "经期"
+    ],
+    "dishRole": "drink",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": null
+  },
+  {
+    "id": "drink_red_date_goji",
+    "nameZh": "红枣枸杞茶",
+    "nameEn": "Red Date Goji Tea",
+    "description": "养生代表茶饮。红枣补血益气、枸杞护肝明目，煮水简单省事。汤色枣红透亮，入口清甜，女性经期或熬夜后一杯补气血，长饮气色好。",
+    "cuisine": "chinese",
+    "regionalCuisine": "homestyle",
+    "cookingMethod": "boil",
+    "flavors": [
+      "sweet"
+    ],
+    "mealTypes": [
+      "breakfast",
+      "dinner"
+    ],
+    "difficulty": "easy",
+    "minCookingLevel": "beginner",
+    "prepTime": 2,
+    "cookTime": 15,
+    "servings": 1,
+    "ingredients": [
+      {
+        "ingredientId": "red_date",
+        "amount": 5,
+        "unit": "枚"
+      },
+      {
+        "ingredientId": "goji_berry",
+        "amount": 10,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "红枣洗净去核切片",
+      "枸杞冲洗",
+      "锅中加 500ml 水入红枣",
+      "煮沸转小火 10 分钟",
+      "加枸杞再煮 2 分钟即可"
+    ],
+    "tags": [
+      "茶",
+      "养生",
+      "气血",
+      "女性"
+    ],
+    "dishRole": "drink",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": null
+  },
+  {
+    "id": "drink_chrysanthemum_tea",
+    "nameZh": "菊花茶",
+    "nameEn": "Chrysanthemum Tea",
+    "description": "清热降火的经典凉茶。杭白菊或胎菊用开水冲泡，汤色淡黄芬芳。夏季上火、眼睛干涩时一杯消暑，搭配枸杞更是养肝明目的绝配。",
+    "cuisine": "chinese",
+    "regionalCuisine": "homestyle",
+    "cookingMethod": "boil",
+    "flavors": [
+      "light",
+      "bitter"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "easy",
+    "minCookingLevel": "beginner",
+    "prepTime": 1,
+    "cookTime": 3,
+    "servings": 1,
+    "ingredients": [
+      {
+        "ingredientId": "chrysanthemum",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "goji_berry",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "rock_sugar",
+        "amount": 5,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "菊花与枸杞冲洗",
+      "杯中放入茶材",
+      "加入 80℃水冲泡",
+      "浸泡 3 分钟加冰糖调甜"
+    ],
+    "tags": [
+      "茶",
+      "降火",
+      "养眼",
+      "夏季"
+    ],
+    "dishRole": "drink",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": null
+  },
+  {
+    "id": "drink_lemon_honey_tea",
+    "nameZh": "柠檬蜂蜜茶",
+    "nameEn": "Lemon Honey Tea",
+    "description": "感冒初期的家庭良方。柠檬富含维 C，蜂蜜润肺止咳，热水冲调后酸甜可口。喉咙不适或咳嗽时一杯，舒缓温暖，还能给身体补水。",
+    "cuisine": "western",
+    "regionalCuisine": "french",
+    "cookingMethod": "boil",
+    "flavors": [
+      "sweet",
+      "sour"
+    ],
+    "mealTypes": [
+      "breakfast",
+      "dinner"
+    ],
+    "difficulty": "easy",
+    "minCookingLevel": "beginner",
+    "prepTime": 2,
+    "cookTime": 2,
+    "servings": 1,
+    "ingredients": [
+      {
+        "ingredientId": "lemon",
+        "amount": 3,
+        "unit": "片"
+      },
+      {
+        "ingredientId": "honey",
+        "amount": 15,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "柠檬切薄片",
+      "杯中放 3 片柠檬",
+      "加入 80℃温水",
+      "待凉至 60℃加蜂蜜搅匀"
+    ],
+    "tags": [
+      "茶",
+      "柠檬",
+      "蜂蜜",
+      "润肺"
+    ],
+    "dishRole": "drink",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": null
+  },
+  {
+    "id": "drink_osmanthus_oolong",
+    "nameZh": "桂花乌龙茶",
+    "nameEn": "Osmanthus Oolong Tea",
+    "description": "秋日限定风雅。桂花与乌龙茶一起冲泡，乌龙的兰花香撞上桂花的蜜甜香，层次丰富。汤色金黄闪亮，一口下去满屋都是秋天的味道。",
+    "cuisine": "chinese",
+    "regionalCuisine": "homestyle",
+    "cookingMethod": "boil",
+    "flavors": [
+      "light",
+      "sweet"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "easy",
+    "minCookingLevel": "beginner",
+    "prepTime": 2,
+    "cookTime": 4,
+    "servings": 1,
+    "ingredients": [
+      {
+        "ingredientId": "tea_oolong",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "osmanthus",
+        "amount": 1,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "乌龙茶 5g 放入盖碗",
+      "桂花 1g 一起放入",
+      "沸水冲泡 30 秒出第一泡",
+      "可续泡 5-6 次"
+    ],
+    "tags": [
+      "茶",
+      "桂花",
+      "秋季",
+      "清香"
+    ],
+    "dishRole": "drink",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": null
+  },
+  {
+    "id": "drink_mint_tea",
+    "nameZh": "薄荷茶",
+    "nameEn": "Mint Tea",
+    "description": "中东与北非人的日常饮品。新鲜薄荷叶配绿茶滚水冲泡，清凉沁人。夏日解暑、饭后消食最宜，摩洛哥风格会加大量薄荷叶和糖。",
+    "cuisine": "western",
+    "regionalCuisine": "mediterranean",
+    "cookingMethod": "boil",
+    "flavors": [
+      "light",
+      "sweet"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "easy",
+    "minCookingLevel": "beginner",
+    "prepTime": 2,
+    "cookTime": 3,
+    "servings": 1,
+    "ingredients": [
+      {
+        "ingredientId": "mint",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "tea_green",
+        "amount": 2,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 10,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "新鲜薄荷叶洗净",
+      "茶壶放入绿茶与薄荷",
+      "注入 90℃热水",
+      "浸泡 3 分钟加糖"
+    ],
+    "tags": [
+      "茶",
+      "薄荷",
+      "中东",
+      "消暑"
+    ],
+    "dishRole": "drink",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": null
+  },
+  {
+    "id": "drink_orange_juice",
+    "nameZh": "鲜榨橙汁",
+    "nameEn": "Fresh Orange Juice",
+    "description": "最简单的元气早餐饮品。橙子对半切开榨汁或原汁机压榨，现榨现饮维C 最高。一杯橙黄色泽鲜亮，酸甜可口，是西式早餐桌上最百搭的饮品。",
+    "cuisine": "western",
+    "regionalCuisine": "american",
+    "cookingMethod": "cold_dish",
+    "flavors": [
+      "sweet",
+      "sour"
+    ],
+    "mealTypes": [
+      "breakfast"
+    ],
+    "difficulty": "easy",
+    "minCookingLevel": "beginner",
+    "prepTime": 3,
+    "cookTime": 0,
+    "servings": 1,
+    "ingredients": [
+      {
+        "ingredientId": "orange",
+        "amount": 3,
+        "unit": "个"
+      }
+    ],
+    "steps": [
+      "橙子洗净对半切开",
+      "用榨汁器压榨出汁",
+      "过滤果渣",
+      "加冰块即饮"
+    ],
+    "tags": [
+      "果汁",
+      "橙",
+      "鲜榨",
+      "早餐"
+    ],
+    "dishRole": "cold",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": null
+  },
+  {
+    "id": "drink_watermelon_juice",
+    "nameZh": "西瓜汁",
+    "nameEn": "Watermelon Juice",
+    "description": "夏日解暑一绝。西瓜切块入料理机打汁，自带甘甜无需加糖。冰凉下肚瞬间降温，水分高且热量低，运动后补水也很理想。",
+    "cuisine": "chinese",
+    "regionalCuisine": "homestyle",
+    "cookingMethod": "cold_dish",
+    "flavors": [
+      "sweet"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "easy",
+    "minCookingLevel": "beginner",
+    "prepTime": 5,
+    "cookTime": 0,
+    "servings": 2,
+    "ingredients": [
+      {
+        "ingredientId": "watermelon",
+        "amount": 500,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "lemon",
+        "amount": 1,
+        "unit": "片"
+      }
+    ],
+    "steps": [
+      "西瓜去皮去籽切块",
+      "放入料理机加少许冰块",
+      "打至顺滑",
+      "挤几滴柠檬汁提味"
+    ],
+    "tags": [
+      "果汁",
+      "西瓜",
+      "夏季",
+      "消暑"
+    ],
+    "dishRole": "cold",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": null
+  },
+  {
+    "id": "drink_mango_smoothie",
+    "nameZh": "芒果奶昔",
+    "nameEn": "Mango Smoothie",
+    "description": "热带水果奶昔。熟透芒果果肉与酸奶、牛奶一起打制，口感绵密浓郁。芒果的甜腻被酸奶的乳酸中和，加冰块搅打更凉爽，夏日甜品饮品两用。",
+    "cuisine": "asian_other",
+    "regionalCuisine": "southeast_asian",
+    "cookingMethod": "cold_dish",
+    "flavors": [
+      "sweet"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "easy",
+    "minCookingLevel": "beginner",
+    "prepTime": 5,
+    "cookTime": 0,
+    "servings": 1,
+    "ingredients": [
+      {
+        "ingredientId": "mango",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "yogurt",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "milk",
+        "amount": 80,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "芒果去核切小块",
+      "入料理机加酸奶与牛奶",
+      "放几块冰一起打",
+      "打至顺滑倒入杯中"
+    ],
+    "tags": [
+      "奶昔",
+      "芒果",
+      "热带",
+      "甜品"
+    ],
+    "dishRole": "drink",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": null
+  },
+  {
+    "id": "drink_blueberry_smoothie",
+    "nameZh": "蓝莓思慕雪",
+    "nameEn": "Blueberry Smoothie",
+    "description": "超级食物蓝莓的华丽呈现。冷冻蓝莓与香蕉、酸奶一起打制，浓稠如雪，颜色紫罗兰般浪漫。花青素满满，早餐代餐或健身补给都适合。",
+    "cuisine": "western",
+    "regionalCuisine": "american",
+    "cookingMethod": "cold_dish",
+    "flavors": [
+      "sweet",
+      "sour"
+    ],
+    "mealTypes": [
+      "breakfast"
+    ],
+    "difficulty": "easy",
+    "minCookingLevel": "beginner",
+    "prepTime": 5,
+    "cookTime": 0,
+    "servings": 1,
+    "ingredients": [
+      {
+        "ingredientId": "blueberry",
+        "amount": 150,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "banana",
+        "amount": 1,
+        "unit": "根"
+      },
+      {
+        "ingredientId": "yogurt",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "honey",
+        "amount": 10,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "蓝莓提前冷冻",
+      "香蕉切段",
+      "全部食材入料理机",
+      "加蜂蜜打至浓稠",
+      "倒入杯中可撒燕麦片装饰"
+    ],
+    "tags": [
+      "思慕雪",
+      "蓝莓",
+      "早餐",
+      "健身"
+    ],
+    "dishRole": "drink",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": null
+  },
+  {
+    "id": "drink_lemonade",
+    "nameZh": "柠檬水",
+    "nameEn": "Lemonade",
+    "description": "最解暑的夏日饮品。黄柠檬切片挤汁，加冷水和糖浆拌匀。可加新鲜薄荷叶提味，加气泡水变气泡柠檬水，好看好喝又不贵。",
+    "cuisine": "western",
+    "regionalCuisine": "american",
+    "cookingMethod": "cold_dish",
+    "flavors": [
+      "sour",
+      "sweet"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "easy",
+    "minCookingLevel": "beginner",
+    "prepTime": 3,
+    "cookTime": 0,
+    "servings": 1,
+    "ingredients": [
+      {
+        "ingredientId": "lemon",
+        "amount": 1,
+        "unit": "个"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 20,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sparkling_water",
+        "amount": 300,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "柠檬切片留 2 片，其余挤汁",
+      "糖加 30ml 热水化开做糖浆",
+      "杯中加柠檬片与糖浆",
+      "倒入气泡水与冰块",
+      "可加薄荷叶装饰"
+    ],
+    "tags": [
+      "饮品",
+      "柠檬",
+      "夏季",
+      "消暑"
+    ],
+    "dishRole": "drink",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": null
+  },
+  {
+    "id": "drink_suanmeitang",
+    "nameZh": "酸梅汤",
+    "nameEn": "Sour Plum Soup",
+    "description": "北京老字号消夏饮品。乌梅、山楂、陈皮等熬煮，加冰糖与桂花调味。汤色深褐晶亮，酸甜开胃解油腻，搭配烤肉烤鸭绝配，一口回到老北京。",
+    "cuisine": "chinese",
+    "regionalCuisine": "northern",
+    "cookingMethod": "boil",
+    "flavors": [
+      "sour",
+      "sweet"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "medium",
+    "minCookingLevel": "basic",
+    "prepTime": 10,
+    "cookTime": 40,
+    "servings": 4,
+    "ingredients": [
+      {
+        "ingredientId": "jujube",
+        "amount": 20,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "rock_sugar",
+        "amount": 60,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "osmanthus",
+        "amount": 2,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "乌梅、山楂、陈皮用冷水浸泡 30 分钟",
+      "连水倒入锅中加 2L 水",
+      "大火煮沸转小火 30 分钟",
+      "加冰糖煮化",
+      "关火撒入桂花",
+      "放凉冷藏后饮用"
+    ],
+    "tags": [
+      "饮品",
+      "酸梅",
+      "老北京",
+      "解腻"
+    ],
+    "dishRole": "soup",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": null
+  },
+  {
+    "id": "drink_soy_milk_sweet",
+    "nameZh": "甜豆浆",
+    "nameEn": "Sweet Soy Milk",
+    "description": "中式早餐的固定搭档。黄豆泡发后磨浆煮沸，加少许白糖调甜。温热一杯下肚暖胃又饱腹，配油条、烧饼、包子都百搭，朴实却从不失场。",
+    "cuisine": "chinese",
+    "regionalCuisine": "homestyle",
+    "cookingMethod": "boil",
+    "flavors": [
+      "sweet"
+    ],
+    "mealTypes": [
+      "breakfast"
+    ],
+    "difficulty": "easy",
+    "minCookingLevel": "beginner",
+    "prepTime": 10,
+    "cookTime": 20,
+    "servings": 2,
+    "ingredients": [
+      {
+        "ingredientId": "soy_milk",
+        "amount": 400,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 15,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "豆浆倒入锅中",
+      "小火加热至微沸",
+      "加糖搅至融化",
+      "趁热饮用"
+    ],
+    "tags": [
+      "饮品",
+      "豆浆",
+      "早餐",
+      "中式"
+    ],
+    "dishRole": "drink",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": null
+  },
+  {
+    "id": "drink_avocado_smoothie",
+    "nameZh": "牛油果奶昔",
+    "nameEn": "Avocado Smoothie",
+    "description": "越南街头网红饮品。熟透牛油果配炼乳与牛奶打制，口感绵密如冰淇淋，带着天然的 creamy 质感。热量不低但营养极好，减脂代餐或下午茶加分款。",
+    "cuisine": "asian_other",
+    "regionalCuisine": "vietnamese",
+    "cookingMethod": "cold_dish",
+    "flavors": [
+      "sweet"
+    ],
+    "mealTypes": [
+      "lunch"
+    ],
+    "difficulty": "easy",
+    "minCookingLevel": "beginner",
+    "prepTime": 5,
+    "cookTime": 0,
+    "servings": 1,
+    "ingredients": [
+      {
+        "ingredientId": "avocado",
+        "amount": 1,
+        "unit": "个"
+      },
+      {
+        "ingredientId": "condensed_milk",
+        "amount": 30,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "milk",
+        "amount": 150,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "牛油果对半切开去核",
+      "果肉挖入料理机",
+      "加炼乳与牛奶",
+      "加冰打至顺滑"
+    ],
+    "tags": [
+      "奶昔",
+      "牛油果",
+      "越南",
+      "网红"
+    ],
+    "dishRole": "drink",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": null
+  },
+  {
+    "id": "drink_coconut_water",
+    "nameZh": "椰子水",
+    "nameEn": "Fresh Coconut Water",
+    "description": "热带电解质补给饮。新鲜椰子敲开取原浆，清甜微咸、自带电解质。冰镇后运动完或解暑下火都 1 分钟搞定，比运动饮料天然健康。",
+    "cuisine": "asian_other",
+    "regionalCuisine": "southeast_asian",
+    "cookingMethod": "cold_dish",
+    "flavors": [
+      "light",
+      "sweet"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "easy",
+    "minCookingLevel": "beginner",
+    "prepTime": 3,
+    "cookTime": 0,
+    "servings": 1,
+    "ingredients": [
+      {
+        "ingredientId": "coconut_fresh",
+        "amount": 1,
+        "unit": "个"
+      }
+    ],
+    "steps": [
+      "椰子在顶端钻 2 个孔",
+      "插入吸管直接饮用",
+      "或倒入玻璃杯加冰",
+      "椰肉可挖出一起吃"
+    ],
+    "tags": [
+      "饮品",
+      "椰子",
+      "解暑",
+      "电解质"
+    ],
+    "dishRole": "cold",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": null
+  },
+  {
+    "id": "drink_peach_iced_tea",
+    "nameZh": "水蜜桃冰茶",
+    "nameEn": "Peach Iced Tea",
+    "description": "夏日冰饮新宠。红茶冰镇后加水蜜桃果肉和糖浆，清爽甜美。茶香与桃香的结合像是桃花盛开的下午，热搜饮品自家轻松复刻。",
+    "cuisine": "western",
+    "regionalCuisine": "american",
+    "cookingMethod": "cold_dish",
+    "flavors": [
+      "sweet",
+      "bitter"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "easy",
+    "minCookingLevel": "beginner",
+    "prepTime": 10,
+    "cookTime": 5,
+    "servings": 1,
+    "ingredients": [
+      {
+        "ingredientId": "tea_black",
+        "amount": 3,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "peach",
+        "amount": 1,
+        "unit": "个"
+      },
+      {
+        "ingredientId": "honey",
+        "amount": 15,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "红茶用 300ml 沸水泡 4 分钟",
+      "茶汤放凉",
+      "水蜜桃去皮切块",
+      "杯中加桃块与蜂蜜",
+      "倒入冷茶与冰块"
+    ],
+    "tags": [
+      "茶",
+      "水蜜桃",
+      "冰饮",
+      "夏季"
+    ],
+    "dishRole": "drink",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": null
+  },
+  {
+    "id": "drink_ginger_lemonade",
+    "nameZh": "姜汁柠檬水",
+    "nameEn": "Ginger Lemonade",
+    "description": "东西合璧的健康饮。生姜片与柠檬片煮水后加蜂蜜，辛辣与果酸交织，暖身又提神。感冒咽痛或晨起空腹一杯，促进循环全天清爽。",
+    "cuisine": "western",
+    "regionalCuisine": "american",
+    "cookingMethod": "boil",
+    "flavors": [
+      "sour",
+      "spicy"
+    ],
+    "mealTypes": [
+      "breakfast"
+    ],
+    "difficulty": "easy",
+    "minCookingLevel": "beginner",
+    "prepTime": 3,
+    "cookTime": 8,
+    "servings": 1,
+    "ingredients": [
+      {
+        "ingredientId": "ginger",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "lemon",
+        "amount": 3,
+        "unit": "片"
+      },
+      {
+        "ingredientId": "honey",
+        "amount": 15,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "姜切薄片",
+      "水煮沸加姜煮 5 分钟",
+      "倒入杯中加柠檬片",
+      "待凉至 60℃加蜂蜜"
+    ],
+    "tags": [
+      "饮品",
+      "姜",
+      "柠檬",
+      "养生"
+    ],
+    "dishRole": "drink",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": null
+  },
+  {
+    "id": "drink_yuzu_honey",
+    "nameZh": "蜂蜜柚子茶",
+    "nameEn": "Yuzu Honey Tea",
+    "description": "韩式养颜名饮。柚子连皮切丝用糖和蜂蜜腌制成酱，热水或冷水冲调。柚皮的苦涩与蜂蜜的甜完美中和，维C 爆棚，冬天养肤必备。",
+    "cuisine": "asian_other",
+    "regionalCuisine": "korean",
+    "cookingMethod": "cold_dish",
+    "flavors": [
+      "sweet",
+      "bitter"
+    ],
+    "mealTypes": [
+      "breakfast",
+      "dinner"
+    ],
+    "difficulty": "easy",
+    "minCookingLevel": "beginner",
+    "prepTime": 3,
+    "cookTime": 0,
+    "servings": 1,
+    "ingredients": [
+      {
+        "ingredientId": "yuzu",
+        "amount": 30,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "honey",
+        "amount": 20,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "杯中放入 2 勺柚子茶酱",
+      "冲入 80℃温水",
+      "加蜂蜜调匀",
+      "可加冰块变成冰饮"
+    ],
+    "tags": [
+      "茶",
+      "柚子",
+      "韩式",
+      "养颜"
+    ],
+    "dishRole": "drink",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": null
+  },
+  {
+    "id": "drink_passion_fruit_soda",
+    "nameZh": "百香果气泡水",
+    "nameEn": "Passion Fruit Soda",
+    "description": "颜值与风味并存的夏日特调。百香果果肉连籽与蜂蜜打底，倒入气泡水瞬间起泡，金黄果肉悬浮其间，咬开果籽爆浆，酸甜刺激无敌消暑。",
+    "cuisine": "western",
+    "regionalCuisine": "american",
+    "cookingMethod": "cold_dish",
+    "flavors": [
+      "sour",
+      "sweet"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "easy",
+    "minCookingLevel": "beginner",
+    "prepTime": 3,
+    "cookTime": 0,
+    "servings": 1,
+    "ingredients": [
+      {
+        "ingredientId": "passion_fruit",
+        "amount": 2,
+        "unit": "个"
+      },
+      {
+        "ingredientId": "honey",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sparkling_water",
+        "amount": 300,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "百香果对半切开挖出果肉",
+      "杯中加果肉与蜂蜜",
+      "加入冰块",
+      "缓慢倒入气泡水"
+    ],
+    "tags": [
+      "饮品",
+      "百香果",
+      "气泡",
+      "网红"
+    ],
+    "dishRole": "drink",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": null
+  },
+  {
+    "id": "snack_egg_tart",
+    "nameZh": "港式蛋挞",
+    "nameEn": "Hong Kong Egg Tart",
+    "description": "茶餐厅经典小点。酥皮层次分明，内馅是丝滑蛋奶浆烘烤成的嫩黄卡仕达，一口咬下油酥剥落、蛋香溢出。下午茶首选，刚出炉最香。",
+    "cuisine": "chinese",
+    "regionalCuisine": "cantonese",
+    "cookingMethod": "bake",
+    "flavors": [
+      "sweet"
+    ],
+    "mealTypes": [
+      "breakfast",
+      "lunch"
+    ],
+    "difficulty": "hard",
+    "minCookingLevel": "advanced",
+    "prepTime": 60,
+    "cookTime": 25,
+    "servings": 8,
+    "ingredients": [
+      {
+        "ingredientId": "cake_flour",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "butter",
+        "amount": 120,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "egg",
+        "amount": 3,
+        "unit": "个"
+      },
+      {
+        "ingredientId": "milk",
+        "amount": 150,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 50,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "evaporated_milk",
+        "amount": 50,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "面粉与黄油揉成油酥皮，折叠冷藏 3 次",
+      "酥皮擀成 3mm 薄片",
+      "用模具切圆片压入蛋挞模",
+      "鸡蛋打散加糖、牛奶、淡奶过筛",
+      "蛋液倒入蛋挞模 8 分满",
+      "220℃烤 15 分钟至表面起泡略焦"
+    ],
+    "tags": [
+      "点心",
+      "港式",
+      "蛋挞",
+      "茶餐厅"
+    ],
+    "dishRole": "snack",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": null
+  },
+  {
+    "id": "snack_pineapple_bun",
+    "nameZh": "菠萝包",
+    "nameEn": "Pineapple Bun",
+    "description": "港式冰火菠萝油的主角。面包顶部铺一层酥皮烤后裂开像菠萝，底下是松软面包，对切塞一块冰黄油即成冰火菠萝油。一口咬下冷热交融、甜咸碰撞。",
+    "cuisine": "chinese",
+    "regionalCuisine": "cantonese",
+    "cookingMethod": "bake",
+    "flavors": [
+      "sweet"
+    ],
+    "mealTypes": [
+      "breakfast",
+      "lunch"
+    ],
+    "difficulty": "hard",
+    "minCookingLevel": "advanced",
+    "prepTime": 90,
+    "cookTime": 20,
+    "servings": 6,
+    "ingredients": [
+      {
+        "ingredientId": "bread_flour",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "milk",
+        "amount": 150,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "yeast",
+        "amount": 4,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 40,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "butter",
+        "amount": 30,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "egg",
+        "amount": 1,
+        "unit": "个"
+      },
+      {
+        "ingredientId": "cake_flour",
+        "amount": 80,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "面包面团揉至出膜发酵 1 小时",
+      "分割滚圆二次发酵 30 分钟",
+      "酥皮：黄油、糖、蛋、低粉揉成面团",
+      "酥皮擀薄盖在面包上划网格",
+      "刷蛋液烤 180℃ 15 分钟"
+    ],
+    "tags": [
+      "点心",
+      "港式",
+      "菠萝包",
+      "面包"
+    ],
+    "dishRole": "snack",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": null
+  },
+  {
+    "id": "snack_custard_bun",
+    "nameZh": "奶黄包",
+    "nameEn": "Custard Bun",
+    "description": "粤式早茶明星。发面馒头内包咸蛋黄与黄油熬制的奶黄馅，蒸熟后皮软馅浓，咬开满屋金黄奶黄流溢。茶楼点心必点，甜而不腻。",
+    "cuisine": "chinese",
+    "regionalCuisine": "cantonese",
+    "cookingMethod": "steam",
+    "flavors": [
+      "sweet"
+    ],
+    "mealTypes": [
+      "breakfast",
+      "lunch"
+    ],
+    "difficulty": "medium",
+    "minCookingLevel": "intermediate",
+    "prepTime": 60,
+    "cookTime": 15,
+    "servings": 8,
+    "ingredients": [
+      {
+        "ingredientId": "flour",
+        "amount": 250,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "yeast",
+        "amount": 3,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "milk",
+        "amount": 120,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "egg",
+        "amount": 2,
+        "unit": "个"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 60,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "butter",
+        "amount": 40,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "custard_powder",
+        "amount": 20,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "salted_egg",
+        "amount": 2,
+        "unit": "个"
+      }
+    ],
+    "steps": [
+      "面皮：面粉酵母牛奶糖揉成团发酵",
+      "奶黄馅：咸蛋黄蒸熟压碎",
+      "黄油加糖蛋液卡仕达粉炒至浓稠",
+      "放凉搓成馅球冷藏",
+      "面团包入馅料捏合",
+      "醒 15 分钟蒸 12 分钟"
+    ],
+    "tags": [
+      "点心",
+      "粤式",
+      "早茶",
+      "奶黄"
+    ],
+    "dishRole": "snack",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": null
+  },
+  {
+    "id": "snack_custard_lava_bun",
+    "nameZh": "流沙包",
+    "nameEn": "Salted Egg Custard Lava Bun",
+    "description": "粤式点心王者。奶黄馅混入咸蛋黄与黄油，蒸熟后内馅呈流动沙状，掰开即可见金黄奶浆汩汩流出。口感咸甜交错，比奶黄包更有戏剧性。",
+    "cuisine": "chinese",
+    "regionalCuisine": "cantonese",
+    "cookingMethod": "steam",
+    "flavors": [
+      "sweet",
+      "salty"
+    ],
+    "mealTypes": [
+      "breakfast",
+      "lunch"
+    ],
+    "difficulty": "hard",
+    "minCookingLevel": "advanced",
+    "prepTime": 90,
+    "cookTime": 15,
+    "servings": 8,
+    "ingredients": [
+      {
+        "ingredientId": "flour",
+        "amount": 250,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "yeast",
+        "amount": 3,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "milk",
+        "amount": 130,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "salted_egg",
+        "amount": 4,
+        "unit": "个"
+      },
+      {
+        "ingredientId": "butter",
+        "amount": 50,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 50,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "custard_powder",
+        "amount": 25,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "condensed_milk",
+        "amount": 20,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "咸蛋黄蒸熟压碎过筛",
+      "黄油室温软化加糖打发",
+      "加咸蛋黄碎、卡仕达粉、炼乳搅匀",
+      "冷冻 2 小时成硬馅",
+      "面团包入硬馅捏合",
+      "沸水上锅蒸 10 分钟立即趁热掰开"
+    ],
+    "tags": [
+      "点心",
+      "流沙",
+      "咸蛋",
+      "粤式"
+    ],
+    "dishRole": "snack",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": null
+  },
+  {
+    "id": "snack_char_siu_bao",
+    "nameZh": "叉烧包",
+    "nameEn": "Char Siu Bao",
+    "description": "粤式早茶头牌包点。雪白松软包子内是蜜汁叉烧粒，蒸熟后开口露出红亮肉馅。甜中带咸、肉香与面香交织，一笼 4 个根本不够分。",
+    "cuisine": "chinese",
+    "regionalCuisine": "cantonese",
+    "cookingMethod": "steam",
+    "flavors": [
+      "sweet",
+      "salty"
+    ],
+    "mealTypes": [
+      "breakfast",
+      "lunch"
+    ],
+    "difficulty": "medium",
+    "minCookingLevel": "intermediate",
+    "prepTime": 60,
+    "cookTime": 15,
+    "servings": 6,
+    "ingredients": [
+      {
+        "ingredientId": "flour",
+        "amount": 250,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "yeast",
+        "amount": 3,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 30,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "pork_shoulder",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "hoisin_sauce",
+        "amount": 20,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "honey",
+        "amount": 20,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "叉烧肉切小粒",
+      "加海鲜酱、生抽、蜂蜜腌 30 分钟",
+      "炒锅翻炒至浓稠",
+      "面团发酵后分割",
+      "包入叉烧粒捏 18 褶",
+      "蒸屉醒 15 分钟蒸 12 分钟"
+    ],
+    "tags": [
+      "点心",
+      "叉烧",
+      "早茶",
+      "包子"
+    ],
+    "dishRole": "main_meat",
+    "isVegetarian": false,
+    "dishStyle": "meat",
+    "stapleCategory": null
+  },
+  {
+    "id": "snack_glutinous_rice_chicken",
+    "nameZh": "糯米鸡",
+    "nameEn": "Lotus Leaf Glutinous Rice Chicken",
+    "description": "粤式早茶霸气点心。荷叶包裹糯米与鸡肉、腊肠、香菇蒸熟，拆开荷叶扑面荷香，糯米油润入味。一个就是一顿，管饱又香口。",
+    "cuisine": "chinese",
+    "regionalCuisine": "cantonese",
+    "cookingMethod": "steam",
+    "flavors": [
+      "salty",
+      "sweet"
+    ],
+    "mealTypes": [
+      "breakfast",
+      "lunch"
+    ],
+    "difficulty": "medium",
+    "minCookingLevel": "intermediate",
+    "prepTime": 120,
+    "cookTime": 30,
+    "servings": 4,
+    "ingredients": [
+      {
+        "ingredientId": "glutinous_rice",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "chicken_thigh",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "dried_mushroom",
+        "amount": 4,
+        "unit": "朵"
+      },
+      {
+        "ingredientId": "lotus_leaf",
+        "amount": 2,
+        "unit": "片"
+      },
+      {
+        "ingredientId": "soy_sauce",
+        "amount": 15,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "oyster_sauce",
+        "amount": 10,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "糯米提前泡 4 小时",
+      "鸡肉切块加酱腌 20 分钟",
+      "香菇泡发切丁",
+      "糯米拌调料蒸 20 分钟",
+      "荷叶铺开先铺糯米再铺鸡肉",
+      "包成长方体再蒸 25 分钟"
+    ],
+    "tags": [
+      "点心",
+      "糯米鸡",
+      "粤式",
+      "荷叶"
+    ],
+    "dishRole": "snack",
+    "isVegetarian": false,
+    "dishStyle": "meat",
+    "stapleCategory": null
+  },
+  {
+    "id": "snack_pineapple_cake",
+    "nameZh": "凤梨酥",
+    "nameEn": "Pineapple Cake",
+    "description": "台湾伴手礼代表。奶油曲奇外皮包裹金黄凤梨馅，烤至焦香。外皮酥松入口即化，凤梨馅微酸微甜带果粒感。配一壶乌龙茶是最地道的台式下午茶。",
+    "cuisine": "chinese",
+    "regionalCuisine": "taiwanese",
+    "cookingMethod": "bake",
+    "flavors": [
+      "sweet",
+      "sour"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "hard",
+    "minCookingLevel": "advanced",
+    "prepTime": 90,
+    "cookTime": 25,
+    "servings": 10,
+    "ingredients": [
+      {
+        "ingredientId": "cake_flour",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "butter",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "egg",
+        "amount": 1,
+        "unit": "个"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 40,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "pineapple",
+        "amount": 500,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "maltose",
+        "amount": 40,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "菠萝切碎熬成稠酱（约 1 小时）",
+      "凉后搓成 15g 圆球冷藏",
+      "黄油加糖打发",
+      "加蛋与低粉揉成面团",
+      "面皮 20g 包入凤梨馅",
+      "压入模具 180℃烤 20 分钟"
+    ],
+    "tags": [
+      "点心",
+      "台式",
+      "凤梨",
+      "伴手礼"
+    ],
+    "dishRole": "snack",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": null
+  },
+  {
+    "id": "snack_mung_bean_cake",
+    "nameZh": "绿豆糕",
+    "nameEn": "Mung Bean Cake",
+    "description": "端午时令的清爽糕点。蒸熟绿豆去皮磨细后与糖、油拌匀压模成型。颜色淡绿、入口即化，清凉解暑、健脾利湿，夏季最惹人喜欢的小甜点。",
+    "cuisine": "chinese",
+    "regionalCuisine": "jiangsu",
+    "cookingMethod": "cold_dish",
+    "flavors": [
+      "sweet"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "medium",
+    "minCookingLevel": "basic",
+    "prepTime": 30,
+    "cookTime": 30,
+    "servings": 12,
+    "ingredients": [
+      {
+        "ingredientId": "mung_bean",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 80,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "coconut_oil",
+        "amount": 30,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "绿豆泡 4 小时后去皮",
+      "上锅蒸 30 分钟",
+      "趁热压碎过筛成细泥",
+      "加糖与椰子油拌匀",
+      "压入模具定型",
+      "冷藏 2 小时脱模"
+    ],
+    "tags": [
+      "点心",
+      "绿豆",
+      "端午",
+      "清爽"
+    ],
+    "dishRole": "snack",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": null
+  },
+  {
+    "id": "snack_taosu",
+    "nameZh": "桃酥",
+    "nameEn": "Chinese Walnut Shortbread",
+    "description": "中式曲奇鼻祖。面粉加猪油与糖混合出酥松面团，压扁烤制。每口咬下满嘴油酥碎裂的咔嚓声，甜而不腻。配茶吃完一片接一片。",
+    "cuisine": "chinese",
+    "regionalCuisine": "northern",
+    "cookingMethod": "bake",
+    "flavors": [
+      "sweet"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "medium",
+    "minCookingLevel": "basic",
+    "prepTime": 20,
+    "cookTime": 20,
+    "servings": 12,
+    "ingredients": [
+      {
+        "ingredientId": "flour",
+        "amount": 250,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "lard",
+        "amount": 80,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 80,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "egg",
+        "amount": 1,
+        "unit": "个"
+      },
+      {
+        "ingredientId": "walnut",
+        "amount": 30,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "猪油室温软化加糖搅匀",
+      "加入鸡蛋液拌匀",
+      "面粉与核桃碎加入拌成团",
+      "分小剂子压扁",
+      "170℃烤 18 分钟至金黄"
+    ],
+    "tags": [
+      "点心",
+      "桃酥",
+      "中式",
+      "酥脆"
+    ],
+    "dishRole": "snack",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": null
+  },
+  {
+    "id": "snack_water_chestnut_cake",
+    "nameZh": "马蹄糕",
+    "nameEn": "Water Chestnut Cake",
+    "description": "粤式早茶清爽糕点。马蹄粉与马蹄粒加糖水蒸熟，凝固成黄褐色半透明冻状糕体。冷吃 Q 弹带脆、清甜不腻，是夏日糖水之外最受欢迎的消暑点心。",
+    "cuisine": "chinese",
+    "regionalCuisine": "cantonese",
+    "cookingMethod": "steam",
+    "flavors": [
+      "sweet"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "medium",
+    "minCookingLevel": "basic",
+    "prepTime": 15,
+    "cookTime": 40,
+    "servings": 8,
+    "ingredients": [
+      {
+        "ingredientId": "water_chestnut",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "brown_sugar",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cornstarch",
+        "amount": 100,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "马蹄去皮拍碎",
+      "红糖加 500ml 水熬成糖水",
+      "马蹄粉加 200ml 水调成浆",
+      "热糖水冲入粉浆搅成半熟糊",
+      "拌入马蹄碎",
+      "倒入模具蒸 30 分钟",
+      "放凉冷藏后切块"
+    ],
+    "tags": [
+      "点心",
+      "马蹄",
+      "粤式",
+      "消暑"
+    ],
+    "dishRole": "snack",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": null
+  },
+  {
+    "id": "snack_red_bean_paste_cake",
+    "nameZh": "红豆糕",
+    "nameEn": "Red Bean Rice Cake",
+    "description": "中式传统糕点。糯米粉与红豆沙层层蒸制，切块后粉白夹紫红条纹。软糯带弹、豆沙清甜，无添加的自然甜度，女性经期补血小零食。",
+    "cuisine": "chinese",
+    "regionalCuisine": "homestyle",
+    "cookingMethod": "steam",
+    "flavors": [
+      "sweet"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "medium",
+    "minCookingLevel": "basic",
+    "prepTime": 20,
+    "cookTime": 35,
+    "servings": 8,
+    "ingredients": [
+      {
+        "ingredientId": "glutinous_rice_flour",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "red_bean",
+        "amount": 150,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 80,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "红豆提前泡 4 小时煮烂",
+      "加糖炒成豆沙",
+      "糯米粉加水搅成粉浆",
+      "模具先铺一层粉浆蒸 10 分钟",
+      "铺豆沙再铺粉浆",
+      "蒸 20 分钟切块"
+    ],
+    "tags": [
+      "点心",
+      "红豆",
+      "糯米",
+      "中式"
+    ],
+    "dishRole": "snack",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": null
+  },
+  {
+    "id": "snack_qingtuan",
+    "nameZh": "艾草青团",
+    "nameEn": "Qingtuan (Mugwort Rice Ball)",
+    "description": "江南清明时令点心。艾草汁揉入糯米粉变翠绿，内包红豆沙或咸蛋黄肉松。蒸熟后油润光亮、软糯清香。传递春天气息的节令美食。",
+    "cuisine": "chinese",
+    "regionalCuisine": "zhejiang",
+    "cookingMethod": "steam",
+    "flavors": [
+      "sweet",
+      "light"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "medium",
+    "minCookingLevel": "intermediate",
+    "prepTime": 30,
+    "cookTime": 20,
+    "servings": 6,
+    "ingredients": [
+      {
+        "ingredientId": "glutinous_rice_flour",
+        "amount": 250,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "red_bean",
+        "amount": 150,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 50,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "艾草焯水打成汁",
+      "艾草汁加糯米粉揉成翠绿团",
+      "红豆沙搓 15g 圆球",
+      "面团包入豆沙球",
+      "蒸 15 分钟"
+    ],
+    "tags": [
+      "点心",
+      "青团",
+      "清明",
+      "江南"
+    ],
+    "dishRole": "snack",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": null
+  },
+  {
+    "id": "snack_sesame_ball",
+    "nameZh": "麻团",
+    "nameEn": "Sesame Ball",
+    "description": "油炸小吃经典。糯米粉团包豆沙裹芝麻入锅油炸，浮起膨胀成金黄小球。外层芝麻酥脆，内层糯米 Q 弹，内馅豆沙绵甜。一口咬下层次丰富。",
+    "cuisine": "chinese",
+    "regionalCuisine": "homestyle",
+    "cookingMethod": "deep_fry",
+    "flavors": [
+      "sweet"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "medium",
+    "minCookingLevel": "intermediate",
+    "prepTime": 30,
+    "cookTime": 15,
+    "servings": 8,
+    "ingredients": [
+      {
+        "ingredientId": "glutinous_rice_flour",
+        "amount": 250,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "red_bean",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sesame_seed",
+        "amount": 50,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 50,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 500,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "糯米粉加温水揉成面团",
+      "分 15g 剂子包入豆沙球",
+      "滚上一层芝麻",
+      "油温 120℃下锅",
+      "慢炸至浮起转金黄",
+      "捞出沥油"
+    ],
+    "tags": [
+      "点心",
+      "麻团",
+      "油炸",
+      "芝麻"
+    ],
+    "dishRole": "snack",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": null
+  },
+  {
+    "id": "snack_sesame_paste",
+    "nameZh": "黑芝麻糊",
+    "nameEn": "Black Sesame Paste",
+    "description": "南方经典暖身甜品。黑芝麻炒香磨粉加糯米粉煮成糊，浓稠滑顺，颜色深黑发亮。芝麻的坚果香配糯米的米香，冬季捧一碗补血护发。",
+    "cuisine": "chinese",
+    "regionalCuisine": "cantonese",
+    "cookingMethod": "boil",
+    "flavors": [
+      "sweet"
+    ],
+    "mealTypes": [
+      "breakfast",
+      "dinner"
+    ],
+    "difficulty": "easy",
+    "minCookingLevel": "beginner",
+    "prepTime": 10,
+    "cookTime": 15,
+    "servings": 2,
+    "ingredients": [
+      {
+        "ingredientId": "black_sesame",
+        "amount": 80,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "glutinous_rice_flour",
+        "amount": 30,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "rock_sugar",
+        "amount": 40,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "黑芝麻小火炒香",
+      "料理机打成粉末",
+      "糯米粉小火炒香",
+      "两粉混合加冰糖",
+      "加 400ml 水小火搅煮 10 分钟"
+    ],
+    "tags": [
+      "甜品",
+      "芝麻",
+      "养生",
+      "暖冬"
+    ],
+    "dishRole": "snack",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": null
+  },
+  {
+    "id": "snack_walnut_biscuit",
+    "nameZh": "核桃酥",
+    "nameEn": "Walnut Cookie",
+    "description": "中式小酥饼。面粉与油糖揉成酥性面团，表面压上一颗核桃仁烤制。酥松易碎、核桃香浓，老式糕点铺里最受欢迎的小茶点，简朴却回味无穷。",
+    "cuisine": "chinese",
+    "regionalCuisine": "northern",
+    "cookingMethod": "bake",
+    "flavors": [
+      "sweet"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "easy",
+    "minCookingLevel": "basic",
+    "prepTime": 20,
+    "cookTime": 20,
+    "servings": 10,
+    "ingredients": [
+      {
+        "ingredientId": "flour",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "lard",
+        "amount": 80,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 60,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "egg",
+        "amount": 1,
+        "unit": "个"
+      },
+      {
+        "ingredientId": "walnut",
+        "amount": 50,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "猪油与糖打发",
+      "加蛋液打匀",
+      "筛入面粉揉团",
+      "搓 30g 圆球压扁",
+      "顶部按一颗核桃",
+      "170℃烤 18 分钟"
+    ],
+    "tags": [
+      "点心",
+      "核桃",
+      "中式",
+      "茶点"
+    ],
+    "dishRole": "snack",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": null
+  },
+  {
+    "id": "snack_yolk_pastry",
+    "nameZh": "蛋黄酥",
+    "nameEn": "Salted Yolk Pastry",
+    "description": "中式精致酥点。层层油酥皮包裹红豆沙与咸蛋黄，烤至外皮金黄层次分明。咬下时油酥簌簌飘落，豆沙甜糯、蛋黄咸沙，咸甜相抵堪称绝妙。",
+    "cuisine": "chinese",
+    "regionalCuisine": "taiwanese",
+    "cookingMethod": "bake",
+    "flavors": [
+      "sweet",
+      "salty"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "hard",
+    "minCookingLevel": "advanced",
+    "prepTime": 120,
+    "cookTime": 30,
+    "servings": 8,
+    "ingredients": [
+      {
+        "ingredientId": "flour",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "butter",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "lard",
+        "amount": 40,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 40,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "red_bean",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "salted_egg",
+        "amount": 8,
+        "unit": "个"
+      },
+      {
+        "ingredientId": "sesame_seed",
+        "amount": 10,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "做油皮与油酥面团",
+      "油皮包油酥擀卷 2 次",
+      "咸蛋黄喷酒烤 5 分钟",
+      "豆沙包裹蛋黄",
+      "酥皮包馅收口",
+      "刷蛋液撒芝麻烤 180℃ 25 分钟"
+    ],
+    "tags": [
+      "点心",
+      "蛋黄",
+      "酥皮",
+      "精致"
+    ],
+    "dishRole": "snack",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": null
+  },
+  {
+    "id": "snack_tangyuan",
+    "nameZh": "芝麻汤圆",
+    "nameEn": "Black Sesame Tangyuan",
+    "description": "元宵节必食甜品。糯米粉团包入黑芝麻糖馅，水煮浮起即熟。咬破糯皮瞬间流出滚烫的芝麻糖浆，烫嘴又上瘾。象征团圆的温暖甜品。",
+    "cuisine": "chinese",
+    "regionalCuisine": "homestyle",
+    "cookingMethod": "boil",
+    "flavors": [
+      "sweet"
+    ],
+    "mealTypes": [
+      "breakfast",
+      "dinner"
+    ],
+    "difficulty": "easy",
+    "minCookingLevel": "basic",
+    "prepTime": 30,
+    "cookTime": 10,
+    "servings": 4,
+    "ingredients": [
+      {
+        "ingredientId": "glutinous_rice_flour",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "black_sesame",
+        "amount": 60,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 40,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "lard",
+        "amount": 30,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "黑芝麻炒香打粉",
+      "加糖与猪油拌匀冷冻成馅块",
+      "糯米粉加温水揉团",
+      "分剂包入芝麻馅搓圆",
+      "水开下锅煮至浮起"
+    ],
+    "tags": [
+      "甜品",
+      "汤圆",
+      "元宵",
+      "团圆"
+    ],
+    "dishRole": "staple",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": "rice"
+  },
+  {
+    "id": "snack_shaqima",
+    "nameZh": "沙琪玛",
+    "nameEn": "Saqima (Crispy Honey Cake)",
+    "description": "北方经典糕点。鸡蛋面条炸至金黄后用蜜糖浆拌和压制切块。入口松脆中带柔韧，蜜香扑鼻。满洲贵族传下的老派甜食，老少都爱。",
+    "cuisine": "chinese",
+    "regionalCuisine": "northern",
+    "cookingMethod": "deep_fry",
+    "flavors": [
+      "sweet"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "hard",
+    "minCookingLevel": "advanced",
+    "prepTime": 60,
+    "cookTime": 30,
+    "servings": 10,
+    "ingredients": [
+      {
+        "ingredientId": "flour",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "egg",
+        "amount": 4,
+        "unit": "个"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 150,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "honey",
+        "amount": 60,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 500,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "鸡蛋打散加面粉揉团",
+      "擀薄切细条",
+      "油温 160℃炸面条至金黄",
+      "糖加蜂蜜熬至 110℃",
+      "炸好的面与糖浆拌匀",
+      "模具压实切块"
+    ],
+    "tags": [
+      "点心",
+      "沙琪玛",
+      "北方",
+      "蜜糖"
+    ],
+    "dishRole": "snack",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": null
+  },
+  {
+    "id": "snack_donkey_roll",
+    "nameZh": "驴打滚",
+    "nameEn": "Lvdagun (Rolled Bean Cake)",
+    "description": "老北京特色小吃。糯米团摊开包豆沙卷起，在炒熟黄豆粉里滚一圈。软糯带豆香，外层粉黄像驴在土里打滚得名。便宜又接地气的经典小食。",
+    "cuisine": "chinese",
+    "regionalCuisine": "northern",
+    "cookingMethod": "steam",
+    "flavors": [
+      "sweet"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "medium",
+    "minCookingLevel": "basic",
+    "prepTime": 20,
+    "cookTime": 25,
+    "servings": 4,
+    "ingredients": [
+      {
+        "ingredientId": "glutinous_rice_flour",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "soybean",
+        "amount": 80,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "red_bean",
+        "amount": 150,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 50,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "黄豆炒香磨粉",
+      "糯米粉加水蒸 20 分钟",
+      "红豆煮烂加糖炒豆沙",
+      "糯米团擀薄",
+      "抹豆沙卷起",
+      "切段在豆粉中滚一圈"
+    ],
+    "tags": [
+      "点心",
+      "老北京",
+      "糯米",
+      "驴打滚"
+    ],
+    "dishRole": "snack",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": null
+  },
+  {
+    "id": "snack_osmanthus_cake",
+    "nameZh": "桂花糕",
+    "nameEn": "Osmanthus Cake",
+    "description": "江南时令甜品。糯米粉与糖蒸制糕体，表面撒糖渍桂花点缀。雪白方糕带金黄桂花，入口松软清甜，桂花香悠扬。秋天最具诗意的一道小点心。",
+    "cuisine": "chinese",
+    "regionalCuisine": "jiangsu",
+    "cookingMethod": "steam",
+    "flavors": [
+      "sweet"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "easy",
+    "minCookingLevel": "basic",
+    "prepTime": 15,
+    "cookTime": 25,
+    "servings": 6,
+    "ingredients": [
+      {
+        "ingredientId": "glutinous_rice_flour",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "rice_flour",
+        "amount": 50,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "osmanthus",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 60,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "两种米粉与糖混合",
+      "加温水搓成湿润颗粒",
+      "过筛压入模具",
+      "顶部铺桂花",
+      "蒸 20 分钟切块"
+    ],
+    "tags": [
+      "点心",
+      "桂花",
+      "江南",
+      "秋日"
+    ],
+    "dishRole": "snack",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": null
+  },
+  {
+    "id": "snack_sweet_potato_ball",
+    "nameZh": "炸地瓜球",
+    "nameEn": "Sweet Potato Ball",
+    "description": "台湾夜市人气小吃。蒸熟地瓜加糯米粉搓圆油炸，边炸边压使之膨胀中空。外酥内嫩有嚼劲，趁热吃地瓜香扑鼻，最佳零食。",
+    "cuisine": "chinese",
+    "regionalCuisine": "taiwanese",
+    "cookingMethod": "deep_fry",
+    "flavors": [
+      "sweet"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "easy",
+    "minCookingLevel": "basic",
+    "prepTime": 15,
+    "cookTime": 20,
+    "servings": 3,
+    "ingredients": [
+      {
+        "ingredientId": "sweet_potato",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "glutinous_rice_flour",
+        "amount": 120,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 40,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 500,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "地瓜蒸熟压泥",
+      "加糯米粉与糖揉团",
+      "搓成小圆球",
+      "油温 140℃下锅",
+      "浮起后用漏勺轻压让球膨胀",
+      "转中火炸至金黄"
+    ],
+    "tags": [
+      "点心",
+      "地瓜",
+      "台湾",
+      "夜市"
+    ],
+    "dishRole": "snack",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": null
+  },
+  {
+    "id": "dessert_tiramisu",
+    "nameZh": "提拉米苏",
+    "nameEn": "Tiramisu",
+    "description": "意式甜品女王。咖啡浸泡手指饼干与马斯卡彭芝士蛋奶霜交替铺叠，表面筛满可可粉。一口下去咖啡苦、奶油甜、酒香微醺，层次丰富的经典之作。",
+    "cuisine": "western",
+    "regionalCuisine": "italian",
+    "cookingMethod": "cold_dish",
+    "flavors": [
+      "sweet",
+      "bitter"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "medium",
+    "minCookingLevel": "intermediate",
+    "prepTime": 30,
+    "cookTime": 0,
+    "servings": 6,
+    "ingredients": [
+      {
+        "ingredientId": "cream_cheese",
+        "amount": 250,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "heavy_cream",
+        "amount": 200,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "egg",
+        "amount": 3,
+        "unit": "个"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 80,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "espresso",
+        "amount": 150,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cocoa_powder",
+        "amount": 20,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "蛋黄加糖打至乳白",
+      "拌入马斯卡彭奶酪",
+      "淡奶油打发拌入",
+      "手指饼干蘸咖啡铺容器底",
+      "倒一层奶霜再铺一层饼干",
+      "冷藏 6 小时后筛可可粉"
+    ],
+    "tags": [
+      "甜品",
+      "意式",
+      "咖啡",
+      "经典"
+    ],
+    "dishRole": "snack",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": null
+  },
+  {
+    "id": "dessert_cheesecake",
+    "nameZh": "经典纽约芝士蛋糕",
+    "nameEn": "Classic New York Cheesecake",
+    "description": "美式甜点标杆。奶油奶酪加糖蛋烤制成紧实浓郁的蛋糕，底层是消化饼干屑。一刀切下芝士的浓香扑鼻，冷藏后口感更细腻，配鲜果酱绝配。",
+    "cuisine": "western",
+    "regionalCuisine": "american",
+    "cookingMethod": "bake",
+    "flavors": [
+      "sweet"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "medium",
+    "minCookingLevel": "intermediate",
+    "prepTime": 30,
+    "cookTime": 70,
+    "servings": 8,
+    "ingredients": [
+      {
+        "ingredientId": "cream_cheese",
+        "amount": 500,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 120,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "egg",
+        "amount": 3,
+        "unit": "个"
+      },
+      {
+        "ingredientId": "sour_cream",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "vanilla",
+        "amount": 5,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "butter",
+        "amount": 60,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "flour",
+        "amount": 150,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "饼干打碎与黄油拌成饼底压入模具",
+      "奶酪室温软化加糖打匀",
+      "逐个加入鸡蛋",
+      "加酸奶油与香草",
+      "倒入模具水浴烤 160℃ 60 分钟",
+      "冷藏过夜风味最佳"
+    ],
+    "tags": [
+      "甜品",
+      "芝士蛋糕",
+      "美式",
+      "经典"
+    ],
+    "dishRole": "snack",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": null
+  },
+  {
+    "id": "dessert_brownie",
+    "nameZh": "巧克力布朗尼",
+    "nameEn": "Chocolate Brownie",
+    "description": "嗜巧克力党的终极甜品。黑巧克力融化进面糊，烤至外层结壳内里半熟。切开后湿润浓稠，巧克力香爆棚，搭一球香草冰淇淋即是冰火两重天。",
+    "cuisine": "western",
+    "regionalCuisine": "american",
+    "cookingMethod": "bake",
+    "flavors": [
+      "sweet",
+      "bitter"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "easy",
+    "minCookingLevel": "basic",
+    "prepTime": 15,
+    "cookTime": 30,
+    "servings": 9,
+    "ingredients": [
+      {
+        "ingredientId": "chocolate_dark",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "butter",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "egg",
+        "amount": 3,
+        "unit": "个"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "flour",
+        "amount": 80,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cocoa_powder",
+        "amount": 20,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "walnut",
+        "amount": 50,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "巧克力与黄油隔水融化",
+      "加糖与鸡蛋搅匀",
+      "筛入面粉和可可粉",
+      "拌入核桃碎",
+      "倒入模具抹平",
+      "180℃烤 25 分钟"
+    ],
+    "tags": [
+      "甜品",
+      "巧克力",
+      "美式",
+      "浓郁"
+    ],
+    "dishRole": "snack",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": null
+  },
+  {
+    "id": "dessert_apple_pie",
+    "nameZh": "苹果派",
+    "nameEn": "Apple Pie",
+    "description": "美国国民甜品。酥皮下包裹炖煮过的肉桂苹果馅，烤至金黄油亮。切开苹果汁液流出，甜中带酸、肉桂香温暖，搭配香草冰淇淋是美式家庭最完美的饭后甜点。",
+    "cuisine": "western",
+    "regionalCuisine": "american",
+    "cookingMethod": "bake",
+    "flavors": [
+      "sweet",
+      "sour"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "medium",
+    "minCookingLevel": "intermediate",
+    "prepTime": 60,
+    "cookTime": 50,
+    "servings": 8,
+    "ingredients": [
+      {
+        "ingredientId": "flour",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "butter",
+        "amount": 180,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "apple",
+        "amount": 6,
+        "unit": "个"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cinnamon",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "egg",
+        "amount": 1,
+        "unit": "个"
+      }
+    ],
+    "steps": [
+      "面粉加黄油与冰水揉成派皮",
+      "冷藏 1 小时",
+      "苹果切块加糖、肉桂炒软",
+      "擀 2 片派皮",
+      "下层铺苹果上层盖皮",
+      "刷蛋液划排气口",
+      "190℃烤 45 分钟"
+    ],
+    "tags": [
+      "甜品",
+      "美式",
+      "苹果",
+      "肉桂"
+    ],
+    "dishRole": "snack",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": null
+  },
+  {
+    "id": "dessert_lemon_tart",
+    "nameZh": "柠檬挞",
+    "nameEn": "Lemon Tart",
+    "description": "法式小清新甜点。脆底塔皮装入柠檬凝乳烤制，表面嫩黄光滑。入口先酸后甜，柠檬香清新扑鼻，配鲜奶油或蓝莓装饰堪称下午茶精品。",
+    "cuisine": "western",
+    "regionalCuisine": "french",
+    "cookingMethod": "bake",
+    "flavors": [
+      "sour",
+      "sweet"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "hard",
+    "minCookingLevel": "advanced",
+    "prepTime": 60,
+    "cookTime": 40,
+    "servings": 6,
+    "ingredients": [
+      {
+        "ingredientId": "cake_flour",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "butter",
+        "amount": 120,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "egg",
+        "amount": 4,
+        "unit": "个"
+      },
+      {
+        "ingredientId": "lemon",
+        "amount": 3,
+        "unit": "个"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 150,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "面粉、糖、黄油揉塔皮冷藏",
+      "塔皮压入模具盲烤 15 分钟",
+      "柠檬挤汁与皮屑",
+      "蛋、糖、柠檬汁、黄油隔水搅至浓稠",
+      "倒入塔皮烤 170℃ 20 分钟",
+      "冷藏后切块"
+    ],
+    "tags": [
+      "甜品",
+      "法式",
+      "柠檬",
+      "下午茶"
+    ],
+    "dishRole": "snack",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": null
+  },
+  {
+    "id": "dessert_macaron",
+    "nameZh": "法式马卡龙",
+    "nameEn": "French Macaron",
+    "description": "法国甜点界的艺术品。杏仁粉制的马卡龙壳两片夹奶油馅，表面光滑带裙边。一口咬破酥脆外壳、再咬到绵密馅心，制作极考功力是烘焙界的毕业作品。",
+    "cuisine": "western",
+    "regionalCuisine": "french",
+    "cookingMethod": "bake",
+    "flavors": [
+      "sweet"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "expert",
+    "minCookingLevel": "expert",
+    "prepTime": 60,
+    "cookTime": 20,
+    "servings": 12,
+    "ingredients": [
+      {
+        "ingredientId": "almond",
+        "amount": 120,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "egg",
+        "amount": 3,
+        "unit": "个"
+      },
+      {
+        "ingredientId": "butter",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "vanilla",
+        "amount": 5,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "杏仁粉与糖粉混合过筛",
+      "蛋白打发分 3 次加糖",
+      "拌入杏仁粉至缎带状",
+      "挤成圆形醒发 30 分钟至表面结皮",
+      "150℃烤 15 分钟出裙边",
+      "两片夹奶油馅"
+    ],
+    "tags": [
+      "甜品",
+      "法式",
+      "马卡龙",
+      "精致"
+    ],
+    "dishRole": "snack",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": null
+  },
+  {
+    "id": "dessert_creme_brulee",
+    "nameZh": "焦糖布丁",
+    "nameEn": "Crème Brûlée",
+    "description": "法式经典布蕾。香草蛋奶烤成丝滑布丁，表面撒糖再用喷枪烤脆。敲开一层焦糖硬壳，底下是丝滑香浓的蛋奶，温热与冷凝的温差上瘾。",
+    "cuisine": "western",
+    "regionalCuisine": "french",
+    "cookingMethod": "bake",
+    "flavors": [
+      "sweet"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "medium",
+    "minCookingLevel": "intermediate",
+    "prepTime": 15,
+    "cookTime": 60,
+    "servings": 4,
+    "ingredients": [
+      {
+        "ingredientId": "heavy_cream",
+        "amount": 300,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "egg",
+        "amount": 4,
+        "unit": "个"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 80,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "vanilla",
+        "amount": 5,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "淡奶油加香草煮至微沸",
+      "蛋黄加糖搅打",
+      "淡奶油缓慢冲入蛋黄液",
+      "过筛倒入烤盅",
+      "水浴法 150℃烤 40 分钟",
+      "冷藏后撒糖用喷枪焦化"
+    ],
+    "tags": [
+      "甜品",
+      "法式",
+      "焦糖",
+      "布蕾"
+    ],
+    "dishRole": "snack",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": null
+  },
+  {
+    "id": "dessert_panna_cotta",
+    "nameZh": "意式奶冻",
+    "nameEn": "Panna Cotta",
+    "description": "意大利简易甜品。奶油与糖煮沸加吉利丁冷藏成 Q 弹奶冻，倒扣脱模后淋焦糖或鲜莓果酱。口感细腻滑嫩，做法比蛋糕简单太多，新手也能惊艳客人。",
+    "cuisine": "western",
+    "regionalCuisine": "italian",
+    "cookingMethod": "cold_dish",
+    "flavors": [
+      "sweet"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "easy",
+    "minCookingLevel": "basic",
+    "prepTime": 10,
+    "cookTime": 10,
+    "servings": 4,
+    "ingredients": [
+      {
+        "ingredientId": "heavy_cream",
+        "amount": 300,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "milk",
+        "amount": 100,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 50,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "gelatin",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "vanilla",
+        "amount": 3,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "strawberry",
+        "amount": 100,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "吉利丁片冷水泡软",
+      "淡奶油加牛奶、糖、香草小火加热",
+      "微沸时离火加入吉利丁搅化",
+      "过筛倒入模具",
+      "冷藏 4 小时凝固",
+      "倒扣淋草莓酱"
+    ],
+    "tags": [
+      "甜品",
+      "意式",
+      "奶冻",
+      "简单"
+    ],
+    "dishRole": "cold",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": null
+  },
+  {
+    "id": "dessert_cream_puff",
+    "nameZh": "泡芙",
+    "nameEn": "Cream Puff",
+    "description": "空心酥皮夹卡仕达奶油的经典法点。烘烤后外壳酥脆、内部中空，挤入满满香草奶油馅。一口咬下酥皮簌簌、奶油爆满嘴。自家也能做，不难又超有成就感。",
+    "cuisine": "western",
+    "regionalCuisine": "french",
+    "cookingMethod": "bake",
+    "flavors": [
+      "sweet"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "medium",
+    "minCookingLevel": "intermediate",
+    "prepTime": 30,
+    "cookTime": 35,
+    "servings": 8,
+    "ingredients": [
+      {
+        "ingredientId": "flour",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "butter",
+        "amount": 60,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "egg",
+        "amount": 4,
+        "unit": "个"
+      },
+      {
+        "ingredientId": "milk",
+        "amount": 150,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 50,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "vanilla",
+        "amount": 3,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "custard_powder",
+        "amount": 20,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "水加黄油煮沸",
+      "加面粉快速搅至离锅",
+      "降温加蛋液打至倒三角",
+      "挤成圆球烤 200℃ 25 分钟",
+      "卡仕达酱：蛋奶糖煮浓稠",
+      "泡芙冷却后挤馅"
+    ],
+    "tags": [
+      "甜品",
+      "法式",
+      "泡芙",
+      "经典"
+    ],
+    "dishRole": "main_veg",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": null
+  },
+  {
+    "id": "dessert_chocolate_mousse",
+    "nameZh": "巧克力慕斯",
+    "nameEn": "Chocolate Mousse",
+    "description": "丝滑到令人陶醉的法式甜品。融化巧克力与打发淡奶油轻柔拌合，冷藏凝固。入口即化、巧克力香浓郁但比冰淇淋轻盈，婚礼与宴客场合的压轴甜品。",
+    "cuisine": "western",
+    "regionalCuisine": "french",
+    "cookingMethod": "cold_dish",
+    "flavors": [
+      "sweet",
+      "bitter"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "medium",
+    "minCookingLevel": "intermediate",
+    "prepTime": 20,
+    "cookTime": 0,
+    "servings": 6,
+    "ingredients": [
+      {
+        "ingredientId": "chocolate_dark",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "heavy_cream",
+        "amount": 300,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "egg",
+        "amount": 3,
+        "unit": "个"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 50,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "巧克力隔水融化",
+      "蛋黄加糖打发至乳白",
+      "融化巧克力加入蛋黄液",
+      "蛋白打发硬性折入巧克力糊",
+      "淡奶油打发与巧克力糊混合",
+      "倒入杯中冷藏 4 小时"
+    ],
+    "tags": [
+      "甜品",
+      "法式",
+      "巧克力",
+      "慕斯"
+    ],
+    "dishRole": "snack",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": null
+  },
+  {
+    "id": "dessert_chocolate_cookie",
+    "nameZh": "巧克力曲奇",
+    "nameEn": "Chocolate Chip Cookie",
+    "description": "美式家常烘焙入门款。黄油糖打发后加面粉与巧克力豆烤成金棕饼干。外层酥脆内里微软嫩，巧克力豆半融半固咬下爆浆。趁热吃最香，凉了也依然美味。",
+    "cuisine": "western",
+    "regionalCuisine": "american",
+    "cookingMethod": "bake",
+    "flavors": [
+      "sweet"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "easy",
+    "minCookingLevel": "beginner",
+    "prepTime": 15,
+    "cookTime": 15,
+    "servings": 12,
+    "ingredients": [
+      {
+        "ingredientId": "butter",
+        "amount": 120,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "brown_sugar",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "egg",
+        "amount": 1,
+        "unit": "个"
+      },
+      {
+        "ingredientId": "flour",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "chocolate_dark",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "baking_soda",
+        "amount": 3,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "黄油室温加红糖打发",
+      "加蛋液拌匀",
+      "筛入面粉与小苏打",
+      "加入巧克力豆",
+      "分块压扁排烤盘",
+      "180℃烤 12 分钟"
+    ],
+    "tags": [
+      "甜品",
+      "曲奇",
+      "巧克力",
+      "快手"
+    ],
+    "dishRole": "snack",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": null
+  },
+  {
+    "id": "dessert_scone",
+    "nameZh": "英式司康",
+    "nameEn": "English Scone",
+    "description": "英式下午茶灵魂配角。面粉加黄油搓成砂粒状加奶揉烤，层次分明易掰开。配上凝脂奶油与草莓酱才是正确吃法。刚出炉最香，一杯英式红茶绝配。",
+    "cuisine": "western",
+    "regionalCuisine": "french",
+    "cookingMethod": "bake",
+    "flavors": [
+      "sweet"
+    ],
+    "mealTypes": [
+      "breakfast",
+      "lunch"
+    ],
+    "difficulty": "easy",
+    "minCookingLevel": "basic",
+    "prepTime": 15,
+    "cookTime": 15,
+    "servings": 8,
+    "ingredients": [
+      {
+        "ingredientId": "flour",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "butter",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 50,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "milk",
+        "amount": 120,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "baking_powder",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "egg",
+        "amount": 1,
+        "unit": "个"
+      },
+      {
+        "ingredientId": "dried_cranberry",
+        "amount": 40,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "面粉加泡打粉过筛",
+      "黄油切小块搓入粉中如砂粒",
+      "加糖、蔓越莓、牛奶揉团",
+      "擀厚切三角",
+      "刷蛋液 200℃烤 15 分钟"
+    ],
+    "tags": [
+      "甜品",
+      "英式",
+      "司康",
+      "下午茶"
+    ],
+    "dishRole": "snack",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": null
+  },
+  {
+    "id": "dessert_banana_muffin",
+    "nameZh": "香蕉玛芬",
+    "nameEn": "Banana Muffin",
+    "description": "烤香蕉的最佳去处。熟透香蕉捣泥与面糊混合烤成小蛋糕，蓬松湿润带浓郁香蕉香。早餐咖啡配一个、或嘴馋时配杯茶，简单而温暖。",
+    "cuisine": "western",
+    "regionalCuisine": "american",
+    "cookingMethod": "bake",
+    "flavors": [
+      "sweet"
+    ],
+    "mealTypes": [
+      "breakfast",
+      "lunch"
+    ],
+    "difficulty": "easy",
+    "minCookingLevel": "basic",
+    "prepTime": 15,
+    "cookTime": 25,
+    "servings": 8,
+    "ingredients": [
+      {
+        "ingredientId": "banana",
+        "amount": 3,
+        "unit": "根"
+      },
+      {
+        "ingredientId": "cake_flour",
+        "amount": 250,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "egg",
+        "amount": 2,
+        "unit": "个"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 80,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "butter",
+        "amount": 80,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "baking_powder",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "milk",
+        "amount": 60,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "香蕉压泥",
+      "黄油融化加糖蛋搅匀",
+      "加香蕉泥与牛奶",
+      "筛入面粉与泡打粉",
+      "倒入玛芬模 8 分满",
+      "180℃烤 20 分钟"
+    ],
+    "tags": [
+      "甜品",
+      "玛芬",
+      "香蕉",
+      "快手"
+    ],
+    "dishRole": "main_veg",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": null
+  },
+  {
+    "id": "dessert_cinnamon_roll",
+    "nameZh": "肉桂卷",
+    "nameEn": "Cinnamon Roll",
+    "description": "北欧早餐灵魂面包。甜面团擀开刷肉桂糖卷起切段二次发酵烤制，烤后淋奶油糖霜。一口咬下肉桂辛甜充满鼻腔，面包蓬松湿润，冬天早餐一口暖全身。",
+    "cuisine": "western",
+    "regionalCuisine": "american",
+    "cookingMethod": "bake",
+    "flavors": [
+      "sweet"
+    ],
+    "mealTypes": [
+      "breakfast",
+      "lunch"
+    ],
+    "difficulty": "hard",
+    "minCookingLevel": "advanced",
+    "prepTime": 90,
+    "cookTime": 25,
+    "servings": 8,
+    "ingredients": [
+      {
+        "ingredientId": "bread_flour",
+        "amount": 300,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "yeast",
+        "amount": 4,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "milk",
+        "amount": 150,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "egg",
+        "amount": 1,
+        "unit": "个"
+      },
+      {
+        "ingredientId": "butter",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "brown_sugar",
+        "amount": 80,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cinnamon",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "cream_cheese",
+        "amount": 80,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "甜面团发酵至 2 倍",
+      "擀成长方形抹黄油",
+      "撒红糖与肉桂粉",
+      "卷起切 8 段排入烤盘",
+      "二次发酵 40 分钟",
+      "180℃烤 20 分钟",
+      "出炉淋奶油糖霜"
+    ],
+    "tags": [
+      "甜品",
+      "北欧",
+      "肉桂",
+      "早餐"
+    ],
+    "dishRole": "main_veg",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": null
+  },
+  {
+    "id": "dessert_waffle",
+    "nameZh": "比利时华夫饼",
+    "nameEn": "Belgian Waffle",
+    "description": "蓬松格子面饼。面糊注入华夫模烤制，格子分明吸满糖浆。单吃配枫糖或配水果、冰淇淋、奶油都好吃，是周末早午餐与下午茶的人气之选。",
+    "cuisine": "western",
+    "regionalCuisine": "french",
+    "cookingMethod": "bake",
+    "flavors": [
+      "sweet"
+    ],
+    "mealTypes": [
+      "breakfast",
+      "lunch"
+    ],
+    "difficulty": "easy",
+    "minCookingLevel": "basic",
+    "prepTime": 10,
+    "cookTime": 15,
+    "servings": 4,
+    "ingredients": [
+      {
+        "ingredientId": "flour",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "egg",
+        "amount": 2,
+        "unit": "个"
+      },
+      {
+        "ingredientId": "milk",
+        "amount": 200,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "butter",
+        "amount": 60,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 40,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "baking_powder",
+        "amount": 8,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "maple_syrup",
+        "amount": 30,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "面粉加泡打粉过筛",
+      "蛋黄加糖、牛奶、融化黄油搅匀",
+      "蛋白打发硬性",
+      "分 3 次拌入面糊",
+      "华夫机预热倒面糊烤 5 分钟",
+      "淋枫糖浆食用"
+    ],
+    "tags": [
+      "甜品",
+      "华夫",
+      "比利时",
+      "早午餐"
+    ],
+    "dishRole": "staple",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": "bread"
+  },
+  {
+    "id": "dessert_pancake_stack",
+    "nameZh": "美式松饼塔",
+    "nameEn": "American Pancake Stack",
+    "description": "美式经典早餐。面糊煎成一片片小圆饼堆叠，淋枫糖浆配蓝莓草莓。松饼厚实蓬软、外层微焦，糖浆渗透后甜蜜充盈。一早吃下幸福感爆棚。",
+    "cuisine": "western",
+    "regionalCuisine": "american",
+    "cookingMethod": "pan_fry",
+    "flavors": [
+      "sweet"
+    ],
+    "mealTypes": [
+      "breakfast"
+    ],
+    "difficulty": "easy",
+    "minCookingLevel": "beginner",
+    "prepTime": 10,
+    "cookTime": 15,
+    "servings": 2,
+    "ingredients": [
+      {
+        "ingredientId": "flour",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "egg",
+        "amount": 2,
+        "unit": "个"
+      },
+      {
+        "ingredientId": "milk",
+        "amount": 250,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "butter",
+        "amount": 30,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 30,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "baking_powder",
+        "amount": 6,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "maple_syrup",
+        "amount": 40,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "blueberry",
+        "amount": 80,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "面粉、泡打粉、糖混合",
+      "蛋液、牛奶、融化黄油拌入",
+      "搅至无颗粒面糊",
+      "平底锅小火舀面糊煎",
+      "表面起泡翻面",
+      "叠放淋枫糖浆铺蓝莓"
+    ],
+    "tags": [
+      "甜品",
+      "松饼",
+      "美式",
+      "早餐"
+    ],
+    "dishRole": "staple",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": "bread"
+  },
+  {
+    "id": "dessert_fruit_tart",
+    "nameZh": "水果挞",
+    "nameEn": "Fresh Fruit Tart",
+    "description": "法式精致下午茶。酥脆挞皮打底，抹一层卡仕达酱再摆放色彩缤纷的鲜果切片，刷一层亮泽果胶。酥脆、滑顺与果肉的清爽三重奏，颜值与风味兼备。",
+    "cuisine": "western",
+    "regionalCuisine": "french",
+    "cookingMethod": "bake",
+    "flavors": [
+      "sweet",
+      "sour"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "hard",
+    "minCookingLevel": "advanced",
+    "prepTime": 60,
+    "cookTime": 25,
+    "servings": 6,
+    "ingredients": [
+      {
+        "ingredientId": "cake_flour",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "butter",
+        "amount": 120,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "egg",
+        "amount": 2,
+        "unit": "个"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 60,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "milk",
+        "amount": 200,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "strawberry",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "blueberry",
+        "amount": 60,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "kiwi",
+        "amount": 1,
+        "unit": "个"
+      }
+    ],
+    "steps": [
+      "塔皮冷藏 1 小时",
+      "塔皮压入模盲烤 15 分钟",
+      "卡仕达酱煮浓冷却",
+      "酱抹在塔皮上",
+      "摆放切片水果",
+      "刷一层果胶增亮"
+    ],
+    "tags": [
+      "甜品",
+      "法式",
+      "水果",
+      "下午茶"
+    ],
+    "dishRole": "snack",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": null
+  },
+  {
+    "id": "dessert_vanilla_ice_cream",
+    "nameZh": "香草冰淇淋",
+    "nameEn": "Vanilla Ice Cream",
+    "description": "冰淇淋的入门与终极款。香草蛋奶浆冷冻搅拌成细腻冰晶。纯粹的奶香与香草荚的温暖甜香相伴，单独吃或配布朗尼、苹果派都是最佳搭档。",
+    "cuisine": "western",
+    "regionalCuisine": "american",
+    "cookingMethod": "cold_dish",
+    "flavors": [
+      "sweet"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "medium",
+    "minCookingLevel": "basic",
+    "prepTime": 20,
+    "cookTime": 0,
+    "servings": 6,
+    "ingredients": [
+      {
+        "ingredientId": "heavy_cream",
+        "amount": 400,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "milk",
+        "amount": 200,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "egg",
+        "amount": 4,
+        "unit": "个"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 120,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "vanilla",
+        "amount": 10,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "牛奶与香草煮至微沸",
+      "蛋黄加糖打发至乳白",
+      "牛奶缓慢冲入蛋黄",
+      "小火煮至浓稠离火",
+      "冷却后拌入打发淡奶油",
+      "冷冻每 1 小时搅一次，共 4 次"
+    ],
+    "tags": [
+      "甜品",
+      "冰淇淋",
+      "香草",
+      "经典"
+    ],
+    "dishRole": "snack",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": null
+  },
+  {
+    "id": "dessert_strawberry_shortcake",
+    "nameZh": "草莓奶油蛋糕",
+    "nameEn": "Strawberry Shortcake",
+    "description": "日式经典甜点。戚风蛋糕片夹打发奶油与鲜草莓，三层叠高。表面覆盖奶油打花，顶部整齐排列草莓。轻盈清爽不腻，生日派对的永恒女主角。",
+    "cuisine": "asian_other",
+    "regionalCuisine": "japanese",
+    "cookingMethod": "bake",
+    "flavors": [
+      "sweet",
+      "sour"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "hard",
+    "minCookingLevel": "advanced",
+    "prepTime": 60,
+    "cookTime": 40,
+    "servings": 8,
+    "ingredients": [
+      {
+        "ingredientId": "cake_flour",
+        "amount": 120,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "egg",
+        "amount": 6,
+        "unit": "个"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "milk",
+        "amount": 60,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "cooking_oil",
+        "amount": 60,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "heavy_cream",
+        "amount": 400,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "strawberry",
+        "amount": 300,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "戚风蛋糕：蛋黄糊与蛋白霜混合",
+      "倒入模具 150℃烤 40 分钟",
+      "蛋糕脱模切 3 片",
+      "淡奶油加糖打至 9 分发",
+      "蛋糕片间抹奶油夹草莓",
+      "表面抹奶油装饰草莓"
+    ],
+    "tags": [
+      "甜品",
+      "草莓",
+      "奶油蛋糕",
+      "生日"
+    ],
+    "dishRole": "snack",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": null
+  },
+  {
+    "id": "dessert_chocolate_lava_cake",
+    "nameZh": "熔岩巧克力蛋糕",
+    "nameEn": "Chocolate Lava Cake",
+    "description": "外熟内流心的巧克力魔法。小烤盅烘烤 8 分钟刚刚好，勺子一切中间立即爆出滚烫巧克力浆。配一球香草冰淇淋，冷热甜苦一口全中。",
+    "cuisine": "western",
+    "regionalCuisine": "french",
+    "cookingMethod": "bake",
+    "flavors": [
+      "sweet",
+      "bitter"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "medium",
+    "minCookingLevel": "intermediate",
+    "prepTime": 15,
+    "cookTime": 10,
+    "servings": 4,
+    "ingredients": [
+      {
+        "ingredientId": "chocolate_dark",
+        "amount": 150,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "butter",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "egg",
+        "amount": 3,
+        "unit": "个"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 60,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "flour",
+        "amount": 50,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "巧克力与黄油隔水融化",
+      "蛋加糖打发",
+      "加融化巧克力与面粉拌匀",
+      "倒入烤盅 8 分满",
+      "200℃烤 8-10 分钟",
+      "趁热脱模立刻食用"
+    ],
+    "tags": [
+      "甜品",
+      "巧克力",
+      "熔岩",
+      "法式"
+    ],
+    "dishRole": "snack",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": null
+  },
+  {
+    "id": "tang_red_bean_soup",
+    "nameZh": "红豆沙",
+    "nameEn": "Red Bean Sweet Soup",
+    "description": "粤式糖水入门。红豆煮至豆衣起皱开花，加陈皮与冰糖慢煮至绵密。红豆清香、糖水甘甜，冬热夏冰都合适。传统中医认为红豆补血利水养颜。",
+    "cuisine": "chinese",
+    "regionalCuisine": "cantonese",
+    "cookingMethod": "stew",
+    "flavors": [
+      "sweet"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "easy",
+    "minCookingLevel": "beginner",
+    "prepTime": 30,
+    "cookTime": 90,
+    "servings": 4,
+    "ingredients": [
+      {
+        "ingredientId": "red_bean",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "rock_sugar",
+        "amount": 80,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "dried_tangerine_peel",
+        "amount": 3,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "红豆泡 4 小时",
+      "锅中加 1.5L 水入红豆与陈皮",
+      "大火煮沸转小火 1 小时",
+      "豆衣开花加冰糖",
+      "继续煮 10 分钟至糖化"
+    ],
+    "tags": [
+      "糖水",
+      "红豆",
+      "粤式",
+      "养颜"
+    ],
+    "dishRole": "snack",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": null
+  },
+  {
+    "id": "tang_mung_bean_soup",
+    "nameZh": "绿豆沙",
+    "nameEn": "Mung Bean Sweet Soup",
+    "description": "夏日最受欢迎的消暑糖水。绿豆煮至开花破皮，加冰糖与少许百合熬成浓稠沙状。冰镇后饮用清凉入脾，解暑下火，运动后或酷热午后一碗暑气全消。",
+    "cuisine": "chinese",
+    "regionalCuisine": "cantonese",
+    "cookingMethod": "stew",
+    "flavors": [
+      "sweet",
+      "light"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "easy",
+    "minCookingLevel": "beginner",
+    "prepTime": 20,
+    "cookTime": 60,
+    "servings": 4,
+    "ingredients": [
+      {
+        "ingredientId": "mung_bean",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "rock_sugar",
+        "amount": 60,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "lily_bulb",
+        "amount": 20,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "绿豆泡 2 小时",
+      "加 1.2L 水大火煮沸",
+      "转小火煮 40 分钟至开花",
+      "加百合再煮 10 分钟",
+      "加冰糖煮化",
+      "冰镇后更好喝"
+    ],
+    "tags": [
+      "糖水",
+      "绿豆",
+      "消暑",
+      "夏季"
+    ],
+    "dishRole": "snack",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": null
+  },
+  {
+    "id": "tang_snow_fungus_lotus",
+    "nameZh": "银耳莲子羹",
+    "nameEn": "Snow Fungus Lotus Seed Soup",
+    "description": "滋阴润燥的养生甜汤。银耳泡发撕碎与莲子、红枣、冰糖慢炖至银耳出胶汤水黏稠。秋冬咽干咳嗽或皮肤干燥时一碗下肚，从里到外舒润起来。",
+    "cuisine": "chinese",
+    "regionalCuisine": "homestyle",
+    "cookingMethod": "stew",
+    "flavors": [
+      "sweet",
+      "light"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "easy",
+    "minCookingLevel": "beginner",
+    "prepTime": 30,
+    "cookTime": 90,
+    "servings": 4,
+    "ingredients": [
+      {
+        "ingredientId": "white_fungus",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "lotus_seed",
+        "amount": 30,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "red_date",
+        "amount": 8,
+        "unit": "枚"
+      },
+      {
+        "ingredientId": "rock_sugar",
+        "amount": 50,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "银耳冷水泡 2 小时撕小朵",
+      "莲子泡 30 分钟去芯",
+      "砂锅加 1.5L 水",
+      "入银耳、莲子、红枣",
+      "大火煮沸转小火炖 1 小时",
+      "加冰糖再炖 30 分钟至黏稠"
+    ],
+    "tags": [
+      "糖水",
+      "银耳",
+      "养生",
+      "润燥"
+    ],
+    "dishRole": "soup",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": null
+  },
+  {
+    "id": "tang_mango_sago",
+    "nameZh": "杨枝甘露",
+    "nameEn": "Mango Pomelo Sago",
+    "description": "港式明星糖水。芒果泥、西米与椰浆、柚子粒的组合，酸甜清爽热带风味。冰镇后更好喝，西米 Q 弹、芒果滑润、柚子爆浆。夏天人气糖水之王。",
+    "cuisine": "chinese",
+    "regionalCuisine": "cantonese",
+    "cookingMethod": "cold_dish",
+    "flavors": [
+      "sweet"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "medium",
+    "minCookingLevel": "basic",
+    "prepTime": 20,
+    "cookTime": 20,
+    "servings": 2,
+    "ingredients": [
+      {
+        "ingredientId": "mango",
+        "amount": 2,
+        "unit": "个"
+      },
+      {
+        "ingredientId": "sago",
+        "amount": 60,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "coconut_milk",
+        "amount": 150,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "yuzu",
+        "amount": 30,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 40,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "水煮沸下西米 15 分钟",
+      "西米半透明关火焖 10 分钟",
+      "捞出冷水冲凉",
+      "1 个芒果打泥 1 个切丁",
+      "椰浆加糖调匀",
+      "各材料冷藏后分层装杯"
+    ],
+    "tags": [
+      "糖水",
+      "芒果",
+      "港式",
+      "夏季"
+    ],
+    "dishRole": "snack",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": null
+  },
+  {
+    "id": "tang_coconut_sago",
+    "nameZh": "椰汁西米露",
+    "nameEn": "Coconut Sago",
+    "description": "东南亚经典甜品。透明 Q 弹西米浸泡在浓郁椰浆中，加糖后清甜顺滑。可单吃或拌入芒果、红豆、紫米等变出百款，热天冰天都适宜。",
+    "cuisine": "asian_other",
+    "regionalCuisine": "southeast_asian",
+    "cookingMethod": "boil",
+    "flavors": [
+      "sweet"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "easy",
+    "minCookingLevel": "beginner",
+    "prepTime": 10,
+    "cookTime": 20,
+    "servings": 2,
+    "ingredients": [
+      {
+        "ingredientId": "sago",
+        "amount": 60,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "coconut_milk",
+        "amount": 200,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "milk",
+        "amount": 100,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 30,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "水煮沸下西米煮 15 分钟",
+      "关火焖至透明",
+      "捞出过冷水",
+      "椰浆加牛奶与糖煮热",
+      "西米倒入椰汁",
+      "冰镇或温食皆宜"
+    ],
+    "tags": [
+      "糖水",
+      "椰浆",
+      "西米",
+      "东南亚"
+    ],
+    "dishRole": "snack",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": null
+  },
+  {
+    "id": "tang_pear_rock_sugar",
+    "nameZh": "冰糖雪梨",
+    "nameEn": "Snow Pear with Rock Sugar",
+    "description": "秋冬润肺神器。雪梨挖空去芯放冰糖与川贝母蒸至软透，梨汁与糖水交融清甜暖润。咳嗽咽干时一天一个缓解得很快，老人孩子都适合。",
+    "cuisine": "chinese",
+    "regionalCuisine": "homestyle",
+    "cookingMethod": "steam",
+    "flavors": [
+      "sweet"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "easy",
+    "minCookingLevel": "beginner",
+    "prepTime": 5,
+    "cookTime": 40,
+    "servings": 1,
+    "ingredients": [
+      {
+        "ingredientId": "snow_pear",
+        "amount": 1,
+        "unit": "个"
+      },
+      {
+        "ingredientId": "rock_sugar",
+        "amount": 20,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "goji_berry",
+        "amount": 5,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "梨洗净切开顶盖",
+      "挖去果核",
+      "放入冰糖与枸杞",
+      "盖回顶盖",
+      "上锅蒸 40 分钟"
+    ],
+    "tags": [
+      "糖水",
+      "雪梨",
+      "润肺",
+      "咳嗽"
+    ],
+    "dishRole": "snack",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": null
+  },
+  {
+    "id": "tang_red_date_silver",
+    "nameZh": "红枣银耳汤",
+    "nameEn": "Red Date Silver Ear Soup",
+    "description": "女性养颜经典糖水。银耳、红枣、枸杞、桂圆一锅慢炖，胶质满满汤水浓稠。美容养颜、补气养血，冬季暖身首选。可以一锅煮完冰镇成夏日糖水。",
+    "cuisine": "chinese",
+    "regionalCuisine": "homestyle",
+    "cookingMethod": "stew",
+    "flavors": [
+      "sweet"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "easy",
+    "minCookingLevel": "beginner",
+    "prepTime": 20,
+    "cookTime": 90,
+    "servings": 4,
+    "ingredients": [
+      {
+        "ingredientId": "white_fungus",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "red_date",
+        "amount": 10,
+        "unit": "枚"
+      },
+      {
+        "ingredientId": "longan",
+        "amount": 20,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "goji_berry",
+        "amount": 10,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "rock_sugar",
+        "amount": 50,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "银耳泡发撕小朵",
+      "红枣去核",
+      "锅入 1.5L 水加银耳、红枣、桂圆",
+      "大火煮沸转小火 1.5 小时",
+      "加冰糖与枸杞",
+      "再煮 10 分钟"
+    ],
+    "tags": [
+      "糖水",
+      "银耳",
+      "养颜",
+      "女性"
+    ],
+    "dishRole": "snack",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": null
+  },
+  {
+    "id": "tang_double_skin_milk",
+    "nameZh": "双皮奶",
+    "nameEn": "Double Skin Milk",
+    "description": "顺德招牌甜品。水牛奶蒸出第一层奶皮，翻入蛋白再蒸出第二层，成就两层奶皮包裹嫩滑蛋奶的独特结构。入口即化、香浓微甜，广东糖水店必点。",
+    "cuisine": "chinese",
+    "regionalCuisine": "cantonese",
+    "cookingMethod": "steam",
+    "flavors": [
+      "sweet"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "medium",
+    "minCookingLevel": "intermediate",
+    "prepTime": 15,
+    "cookTime": 25,
+    "servings": 2,
+    "ingredients": [
+      {
+        "ingredientId": "milk",
+        "amount": 400,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "egg",
+        "amount": 2,
+        "unit": "个"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 30,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "全脂牛奶加热至微沸",
+      "倒入碗中静置结第一层奶皮",
+      "牛奶从皮下抽出",
+      "蛋白打散加糖拌入牛奶",
+      "倒回碗中第一层奶皮下",
+      "中火蒸 10 分钟"
+    ],
+    "tags": [
+      "糖水",
+      "双皮奶",
+      "顺德",
+      "粤式"
+    ],
+    "dishRole": "snack",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": null
+  },
+  {
+    "id": "tang_ginger_milk_pudding",
+    "nameZh": "姜撞奶",
+    "nameEn": "Ginger Milk Pudding",
+    "description": "广东番禺百年甜品。生姜榨汁倒入热牛奶中神奇凝固成布丁状。入口嫩滑、姜香浓郁暖胃，无需任何添加剂仅靠姜汁蛋白酶凝固。冬天经期必喝。",
+    "cuisine": "chinese",
+    "regionalCuisine": "cantonese",
+    "cookingMethod": "cold_dish",
+    "flavors": [
+      "sweet",
+      "spicy"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "medium",
+    "minCookingLevel": "basic",
+    "prepTime": 10,
+    "cookTime": 5,
+    "servings": 2,
+    "ingredients": [
+      {
+        "ingredientId": "milk",
+        "amount": 300,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "ginger",
+        "amount": 40,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 30,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "姜洗净磨蓉挤 15ml 姜汁",
+      "姜汁分倒 2 个碗底",
+      "牛奶加糖煮至 70-80℃",
+      "迅速冲入姜汁碗中",
+      "静置 5 分钟凝固"
+    ],
+    "tags": [
+      "糖水",
+      "姜奶",
+      "顺德",
+      "暖胃"
+    ],
+    "dishRole": "snack",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": null
+  },
+  {
+    "id": "tang_almond_soup",
+    "nameZh": "杏仁茶",
+    "nameEn": "Almond Soup",
+    "description": "北方传统甜食。南北杏磨粉加糯米粉熬成浓稠乳白的糊状甜汤。杏仁香醇、口感细滑，润肺止咳功效显著，秋冬早餐或下午点心都适合。",
+    "cuisine": "chinese",
+    "regionalCuisine": "northern",
+    "cookingMethod": "boil",
+    "flavors": [
+      "sweet"
+    ],
+    "mealTypes": [
+      "breakfast",
+      "dinner"
+    ],
+    "difficulty": "medium",
+    "minCookingLevel": "basic",
+    "prepTime": 10,
+    "cookTime": 20,
+    "servings": 2,
+    "ingredients": [
+      {
+        "ingredientId": "almond",
+        "amount": 60,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "glutinous_rice_flour",
+        "amount": 30,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "sugar",
+        "amount": 40,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "milk",
+        "amount": 200,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "杏仁用料理机加少水打细",
+      "过筛得杏仁浆",
+      "糯米粉加水调糊",
+      "锅中加杏仁浆煮沸",
+      "加糖加牛奶",
+      "淋入粉糊煮至浓稠"
+    ],
+    "tags": [
+      "糖水",
+      "杏仁",
+      "润肺",
+      "北方"
+    ],
+    "dishRole": "drink",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": null
+  },
+  {
+    "id": "tang_grass_jelly",
+    "nameZh": "仙草冻",
+    "nameEn": "Grass Jelly",
+    "description": "闽台夏日必备消暑甜品。仙草熬煮过滤后凝固成深褐色凉粉状。切丁配红糖水、炼乳、芋圆或各种配料，凉爽黏糯，清热降火一口到位。",
+    "cuisine": "chinese",
+    "regionalCuisine": "fujian",
+    "cookingMethod": "cold_dish",
+    "flavors": [
+      "sweet"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "easy",
+    "minCookingLevel": "beginner",
+    "prepTime": 5,
+    "cookTime": 10,
+    "servings": 2,
+    "ingredients": [
+      {
+        "ingredientId": "grass_jelly",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "condensed_milk",
+        "amount": 30,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "brown_sugar",
+        "amount": 30,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "red_bean",
+        "amount": 50,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "仙草切小方块",
+      "红糖加 50ml 水熬成糖浆",
+      "红豆煮烂",
+      "碗中放仙草",
+      "加红豆淋糖浆",
+      "最后淋炼乳"
+    ],
+    "tags": [
+      "糖水",
+      "仙草",
+      "夏季",
+      "闽台"
+    ],
+    "dishRole": "cold",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": null
+  },
+  {
+    "id": "tang_purple_potato_silver",
+    "nameZh": "紫薯银耳羹",
+    "nameEn": "Purple Potato Silver Ear",
+    "description": "养生时令糖水。紫薯与银耳同煲，炖至银耳出胶紫薯化开，汤色梦幻紫红。花青素与胶原蛋白补出好气色，女性秋冬护肤圣品。",
+    "cuisine": "chinese",
+    "regionalCuisine": "homestyle",
+    "cookingMethod": "stew",
+    "flavors": [
+      "sweet"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "easy",
+    "minCookingLevel": "beginner",
+    "prepTime": 15,
+    "cookTime": 80,
+    "servings": 3,
+    "ingredients": [
+      {
+        "ingredientId": "purple_sweet_potato",
+        "amount": 150,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "white_fungus",
+        "amount": 15,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "red_date",
+        "amount": 6,
+        "unit": "枚"
+      },
+      {
+        "ingredientId": "rock_sugar",
+        "amount": 50,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "银耳泡发撕小朵",
+      "紫薯去皮切块",
+      "锅加 1.5L 水入银耳与红枣",
+      "小火炖 1 小时",
+      "加紫薯再炖 20 分钟",
+      "加冰糖调味"
+    ],
+    "tags": [
+      "糖水",
+      "紫薯",
+      "养颜",
+      "秋冬"
+    ],
+    "dishRole": "snack",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": null
+  },
+  {
+    "id": "tang_lotus_root_sugar",
+    "nameZh": "桂花糖藕",
+    "nameEn": "Osmanthus Sweet Lotus Root",
+    "description": "江南经典冷食糖水。莲藕孔内填入糯米蒸熟或煮透，淋上糖桂花蜜汁。切片摆盘粉白浸润着蜜色糖浆，咬下糯米夹藕香，清爽回甘有秋天的味道。",
+    "cuisine": "chinese",
+    "regionalCuisine": "jiangsu",
+    "cookingMethod": "stew",
+    "flavors": [
+      "sweet"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "medium",
+    "minCookingLevel": "intermediate",
+    "prepTime": 30,
+    "cookTime": 90,
+    "servings": 4,
+    "ingredients": [
+      {
+        "ingredientId": "lotus_root",
+        "amount": 400,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "glutinous_rice",
+        "amount": 80,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "osmanthus",
+        "amount": 5,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "rock_sugar",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "brown_sugar",
+        "amount": 50,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "糯米泡 4 小时",
+      "莲藕切开顶盖填入糯米",
+      "牙签固定藕盖",
+      "锅入藕加冰糖、红糖煮沸",
+      "小火煮 1.5 小时",
+      "切片淋汤汁撒桂花"
+    ],
+    "tags": [
+      "糖水",
+      "藕",
+      "桂花",
+      "江南"
+    ],
+    "dishRole": "main_veg",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": null
+  },
+  {
+    "id": "tang_papaya_milk",
+    "nameZh": "木瓜炖牛奶",
+    "nameEn": "Papaya Stewed with Milk",
+    "description": "港式女生必点糖水。熟木瓜挖空加奶隔水炖，瓜肉融化在奶中清甜香滑。木瓜丰胸传说不论真假，奶香果甜的滋味绝对让人开心。",
+    "cuisine": "chinese",
+    "regionalCuisine": "cantonese",
+    "cookingMethod": "steam",
+    "flavors": [
+      "sweet"
+    ],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "difficulty": "easy",
+    "minCookingLevel": "beginner",
+    "prepTime": 10,
+    "cookTime": 40,
+    "servings": 2,
+    "ingredients": [
+      {
+        "ingredientId": "papaya",
+        "amount": 1,
+        "unit": "个"
+      },
+      {
+        "ingredientId": "milk",
+        "amount": 300,
+        "unit": "ml"
+      },
+      {
+        "ingredientId": "rock_sugar",
+        "amount": 40,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "木瓜去皮籽切块",
+      "放入炖盅",
+      "加牛奶与冰糖",
+      "水浴隔水炖 40 分钟"
+    ],
+    "tags": [
+      "糖水",
+      "木瓜",
+      "粤式",
+      "女生"
+    ],
+    "dishRole": "drink",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": null
+  },
+  {
+    "id": "tang_eight_treasure_congee",
+    "nameZh": "八宝粥",
+    "nameEn": "Eight Treasure Congee",
+    "description": "冬至传统甜粥。糯米与红豆、绿豆、桂圆、红枣、莲子、百合、花生八种食材同煮，粘稠浓香、甜而不腻。喝完全身暖，一碗承载了阖家团圆的文化。",
+    "cuisine": "chinese",
+    "regionalCuisine": "homestyle",
+    "cookingMethod": "stew",
+    "flavors": [
+      "sweet"
+    ],
+    "mealTypes": [
+      "breakfast",
+      "dinner"
+    ],
+    "difficulty": "easy",
+    "minCookingLevel": "basic",
+    "prepTime": 30,
+    "cookTime": 90,
+    "servings": 4,
+    "ingredients": [
+      {
+        "ingredientId": "glutinous_rice",
+        "amount": 80,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "red_bean",
+        "amount": 40,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "mung_bean",
+        "amount": 40,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "lotus_seed",
+        "amount": 30,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "red_date",
+        "amount": 8,
+        "unit": "枚"
+      },
+      {
+        "ingredientId": "longan",
+        "amount": 20,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "peanut",
+        "amount": 30,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "lily_bulb",
+        "amount": 20,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "rock_sugar",
+        "amount": 60,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "所有豆类与莲子泡 4 小时",
+      "糯米淘洗",
+      "锅加 2L 水入所有食材",
+      "大火煮沸转小火 1.5 小时",
+      "豆类开花加冰糖",
+      "煮至粘稠"
+    ],
+    "tags": [
+      "糖水",
+      "八宝",
+      "冬至",
+      "养生"
+    ],
+    "dishRole": "staple",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": "congee"
+  }
+]

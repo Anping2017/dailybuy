@@ -141,11 +141,14 @@ export type StaplePreference =
   | 'any';      // 不限
 
 // 菜在一餐中的角色
-export type DishRole = 'main_meat' | 'main_veg' | 'soup' | 'staple' | 'side' | 'cold' | 'drink';
+// 注意: 'snack' 和 'drink' 不参与正餐规划,但保留在菜谱库可见
+export type DishRole = 'main_meat' | 'main_veg' | 'soup' | 'staple' | 'side' | 'cold' | 'drink' | 'snack';
 
 export interface MealRecipe {
   recipeId: string;
   role: DishRole;
+  completed?: boolean;  // 用户标记为已完成(菜做完了, 食材从采购清单划掉)
+  completedAt?: string; // ISO 时间
 }
 
 // 厨艺等级
@@ -166,6 +169,7 @@ export interface Recipe {
   id: string;
   nameZh: string;
   nameEn: string;
+  description?: string;             // 菜谱简介（50-150 字中文）
   cuisine: CuisineType;
   regionalCuisine: RegionalCuisine; // 地域菜系
   cookingMethod: CookingMethod;     // 做法
@@ -179,9 +183,23 @@ export interface Recipe {
   ingredients: RecipeIngredient[];
   steps: string[];
   tags: string[];                   // 标签: 快手菜, 下饭菜, etc.
+  // --- 显式分类字段（由 scripts/enrich-recipes.js 预计算，替代 runtime 推断）---
+  dishRole?: DishRole;              // 菜品角色（main_meat/main_veg/soup/staple/cold/drink）
+  isVegetarian?: boolean;           // 素菜（不含肉/海鲜类食材）
+  dishStyle?: 'meat' | 'veg' | 'egg'; // 荤/素/蛋 — 用于 soup/cold 子过滤
+  stapleCategory?: StaplePreference; // 主食子类 — 仅当 dishRole=staple 时有值
   totalNutrition?: NutritionPer100g;
   totalCalories?: number;
   estimatedCost?: number;
+  // 预计算字段(由 enrich-nutrition.js 写入,引擎硬过滤直接读取)
+  perServing?: {
+    calories: number; protein: number; fat: number; carbs: number;
+    fiber: number; sodium: number; sugar: number;
+  };
+  nutritionWarnings?: string[];        // high_sodium/high_sugar/high_fat/high_carb/high_calorie
+  nutritionHighlights?: string[];      // high_protein/low_fat/high_fiber/whole_grain/...
+  allergens?: Allergen[];              // 聚合菜谱所有食材的过敏原
+  dietaryFlags?: string[];             // processed/high_purine/contains_alcohol/high_cholesterol
   // 管理字段
   status?: RecipeStatus;
   source?: string;

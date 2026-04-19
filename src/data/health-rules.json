@@ -3,50 +3,60 @@
     "diabetes": {
       "nameZh": "糖尿病",
       "nameEn": "Diabetes",
-      "blockedTags": ["high_gi", "high_sugar"],
+      "blockedTags": ["high_gi"],
+      "blockedDietaryFlags": [],
       "preferredHighlights": ["high_fiber", "low_calorie", "whole_grain"],
+      "perMealLimits": { "sugar": 15, "carbs": 60 },
       "maxDailyCarbsPercent": 45,
       "maxDailySugarG": 25,
-      "description": "控制碳水化合物和糖分摄入，避免高升糖指数食材"
+      "description": "控制碳水化合物和糖分摄入。每餐糖≤15g、碳水≤60g,避免高升糖指数食材"
     },
     "hypertension": {
       "nameZh": "高血压",
       "nameEn": "Hypertension",
-      "blockedTags": ["high_sodium", "processed"],
+      "blockedTags": [],
+      "blockedDietaryFlags": ["processed"],
       "preferredHighlights": ["low_fat", "high_fiber"],
+      "perMealLimits": { "sodium": 700 },
       "maxDailySodiumMg": 2000,
-      "description": "限制钠盐摄入，避免高钠食材和加工肉类"
+      "description": "每餐钠≤700mg(日2000mg/3餐),规避加工肉"
     },
     "gout": {
       "nameZh": "痛风",
       "nameEn": "Gout",
       "blockedTags": ["high_purine"],
+      "blockedDietaryFlags": ["high_purine"],
       "preferredHighlights": ["high_fiber", "low_calorie"],
-      "description": "避免高嘌呤食物，如内脏、海鲜、浓汤"
+      "description": "避免高嘌呤食物,如内脏、海鲜、浓汤"
     },
     "hyperlipidemia": {
       "nameZh": "高血脂",
       "nameEn": "Hyperlipidemia",
-      "blockedTags": ["high_fat", "high_cholesterol", "processed"],
+      "blockedTags": [],
+      "blockedDietaryFlags": ["high_cholesterol", "processed"],
       "preferredHighlights": ["low_fat", "high_fiber", "whole_grain"],
+      "perMealLimits": { "fat": 25 },
       "maxDailyFatPercent": 25,
-      "description": "限制脂肪和胆固醇摄入，避免高脂食材和加工肉类"
+      "description": "每餐脂肪≤25g,规避高胆固醇和加工肉"
     },
     "kidney_disease": {
       "nameZh": "肾病",
       "nameEn": "Kidney Disease",
-      "blockedTags": ["high_sodium", "processed"],
+      "blockedTags": [],
+      "blockedDietaryFlags": ["processed"],
       "preferredHighlights": ["low_fat"],
+      "perMealLimits": { "sodium": 500, "protein": 25 },
       "maxDailyProteinG": 50,
       "maxDailySodiumMg": 1500,
-      "description": "限制蛋白质和钠的摄入，避免加工食品"
+      "description": "每餐钠≤500mg、蛋白≤25g,规避加工食品"
     },
     "pregnancy": {
       "nameZh": "孕期/哺乳期",
       "nameEn": "Pregnancy / Lactation",
-      "blockedTags": ["contains_alcohol", "processed"],
+      "blockedTags": [],
+      "blockedDietaryFlags": ["contains_alcohol", "processed"],
       "preferredHighlights": ["high_iron", "high_protein", "high_fiber"],
-      "description": "规避酒精和加工肉(李斯特菌/亚硝酸盐风险)，优选高铁高蛋白"
+      "description": "规避酒精和加工肉(李斯特菌/亚硝酸盐风险),优选高铁高蛋白"
     }
   },
   "restrictions": {

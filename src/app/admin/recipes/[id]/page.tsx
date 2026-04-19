@@ -7,6 +7,7 @@ import { ArrowLeft, CheckCircle, Clock, XCircle, AlertTriangle, Flame } from 'lu
 import type { Recipe, NutritionPer100g, RecipeStatus, CuisineType, RegionalCuisine, DifficultyLevel, CookingMethod, CookingLevel, FlavorPreference, MealType } from '@/types';
 import type { ValidationIssue } from '@/lib/data/validation';
 import { getIngredient } from '@/lib/data/recipe-repository';
+import { NutritionBadges, PerServingPanel } from '@/components/recipe/nutrition-badges';
 
 interface RecipeDetail {
   recipe: Recipe;
@@ -134,8 +135,19 @@ export default function RecipeDetailPage() {
 
         {/* 右栏: 营养+问题 */}
         <div className="space-y-4">
-          {/* 营养信息 */}
-          <Section title="营养信息（计算值）">
+          {/* 健康标签(警告/亮点/过敏原) */}
+          <Section title="健康分类">
+            <NutritionBadges recipe={recipe} />
+            {(!recipe.nutritionWarnings && !recipe.nutritionHighlights && !recipe.dietaryFlags && !recipe.allergens) && (
+              <p className="text-xs text-muted">未预计算 — 重跑 enrich-nutrition.js 生成</p>
+            )}
+          </Section>
+
+          {/* 每份营养面板(预计算优先) */}
+          {recipe.perServing && <PerServingPanel recipe={recipe} />}
+
+          {/* 营养信息(运行时计算,可与预计算对照) */}
+          <Section title={recipe.perServing ? "运行时全量营养(对照用)" : "营养信息(计算值)"}>
             <div className="grid grid-cols-2 gap-3">
               <NutrBox label="总热量" value={`${nutrition.totalCalories} kcal`} highlight />
               <NutrBox label="每份热量" value={`${perServing} kcal`} />

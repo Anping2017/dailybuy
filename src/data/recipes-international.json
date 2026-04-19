@@ -17,7 +17,7 @@
     "minCookingLevel": "intermediate",
     "prepTime": 10,
     "cookTime": 15,
-    "servings": 2,
+    "servings": 3,
     "ingredients": [
       {
         "ingredientId": "pasta",
@@ -36,8 +36,8 @@
       },
       {
         "ingredientId": "garlic",
-        "amount": 2,
-        "unit": "piece"
+        "amount": 10,
+        "unit": "g"
       },
       {
         "ingredientId": "cooking_oil",
@@ -57,7 +57,31 @@
       "快手餐",
       "高蛋白"
     ],
-    "description": "意式家常好味。精心烹饪，口感咸香、鲜美，适合午餐/晚餐享用。"
+    "description": "意式餐桌必备主食。以意面配鸡蛋为主料，大火爆炒，火候恰到好处，口味咸香、鲜美，简单一顿就满足。",
+    "dishRole": "staple",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": "noodles",
+    "cookingMethod": "staple",
+    "perServing": {
+      "calories": 419,
+      "protein": 19.5,
+      "fat": 14.5,
+      "carbs": 51.9,
+      "fiber": 2.2,
+      "sodium": 170,
+      "sugar": 2.5
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "high_protein"
+    ],
+    "allergens": [
+      "allergen_dairy",
+      "allergen_egg",
+      "allergen_gluten"
+    ],
+    "dietaryFlags": []
   },
   {
     "id": "italian_tomato_pasta",
@@ -78,7 +102,7 @@
     "minCookingLevel": "beginner",
     "prepTime": 10,
     "cookTime": 25,
-    "servings": 3,
+    "servings": 4,
     "ingredients": [
       {
         "ingredientId": "pasta",
@@ -102,8 +126,8 @@
       },
       {
         "ingredientId": "garlic",
-        "amount": 3,
-        "unit": "piece"
+        "amount": 15,
+        "unit": "g"
       },
       {
         "ingredientId": "cooking_oil",
@@ -128,7 +152,31 @@
       "家常",
       "番茄"
     ],
-    "description": "意式家常好味。精心烹饪，口感酸爽、鲜美、咸香，操作简便，零失败。"
+    "description": "一碗能吃饱的意式主食。以意面配牛肉末为主料，翻炒收汁，爽脆入味，口味酸爽、鲜美、咸香，工作日快手午餐首选。",
+    "dishRole": "staple",
+    "isVegetarian": false,
+    "dishStyle": "meat",
+    "stapleCategory": "noodles",
+    "cookingMethod": "staple",
+    "perServing": {
+      "calories": 479,
+      "protein": 20.4,
+      "fat": 13.4,
+      "carbs": 69.2,
+      "fiber": 5.1,
+      "sodium": 48,
+      "sugar": 9.3
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_gluten"
+    ],
+    "dietaryFlags": [
+      "high_purine"
+    ]
   },
   {
     "id": "italian_aglio_olio",
@@ -148,7 +196,7 @@
     "minCookingLevel": "beginner",
     "prepTime": 5,
     "cookTime": 15,
-    "servings": 2,
+    "servings": 4,
     "ingredients": [
       {
         "ingredientId": "pasta",
@@ -157,8 +205,8 @@
       },
       {
         "ingredientId": "garlic",
-        "amount": 6,
-        "unit": "piece"
+        "amount": 30,
+        "unit": "g"
       },
       {
         "ingredientId": "cooking_oil",
@@ -177,7 +225,30 @@
       "素食",
       "简单"
     ],
-    "description": "意式家常好味。精心烹饪，口感香辣、咸香，新手友好，快手完成。"
+    "description": "一碗能吃饱的意式主食。以意面配食用油为主料，大火爆炒，火候恰到好处，口味香辣、咸香，工作日快手午餐首选。",
+    "dishRole": "staple",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": "noodles",
+    "cookingMethod": "staple",
+    "perServing": {
+      "calories": 241,
+      "protein": 7,
+      "fat": 5.8,
+      "carbs": 40,
+      "fiber": 1.8,
+      "sodium": 4,
+      "sugar": 1.4
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "low_fat",
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_gluten"
+    ],
+    "dietaryFlags": []
   },
   {
     "id": "italian_mushroom_risotto",
@@ -221,8 +292,8 @@
       },
       {
         "ingredientId": "garlic",
-        "amount": 2,
-        "unit": "piece"
+        "amount": 10,
+        "unit": "g"
       },
       {
         "ingredientId": "cooking_oil",
@@ -242,7 +313,32 @@
       "蘑菇",
       "意式"
     ],
-    "description": "意式宴客名菜。精心烹饪，口感鲜美、咸香，工序讲究，宴请体面。"
+    "description": "意式特色主食。以大米配蘑菇为主料，旺火快炒，火候恰到好处，口味鲜美、咸香，吃了就停不下来。",
+    "dishRole": "staple",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": "rice",
+    "cookingMethod": "staple",
+    "perServing": {
+      "calories": 298,
+      "protein": 10.2,
+      "fat": 10.6,
+      "carbs": 41.6,
+      "fiber": 3,
+      "sodium": 103,
+      "sugar": 5.8
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "high_protein",
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_dairy"
+    ],
+    "dietaryFlags": [
+      "high_purine"
+    ]
   },
   {
     "id": "italian_pesto_pasta",
@@ -276,8 +372,8 @@
       },
       {
         "ingredientId": "garlic",
-        "amount": 2,
-        "unit": "piece"
+        "amount": 10,
+        "unit": "g"
       },
       {
         "ingredientId": "cooking_oil",
@@ -300,7 +396,35 @@
       "素食",
       "意面"
     ],
-    "description": "意式家常好味。精心烹饪，口感鲜美、清淡，新手友好，快手完成。"
+    "description": "意式特色主食。以意面配奶酪为主料，翻炒收汁，锅气十足，口味鲜美、清淡，吃了就停不下来。",
+    "dishRole": "staple",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": "noodles",
+    "cookingMethod": "staple",
+    "perServing": {
+      "calories": 517,
+      "protein": 18.5,
+      "fat": 14.2,
+      "carbs": 78.6,
+      "fiber": 4.4,
+      "sodium": 140,
+      "sugar": 3
+    },
+    "nutritionWarnings": [
+      "high_carb"
+    ],
+    "nutritionHighlights": [
+      "high_protein",
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_dairy",
+      "allergen_gluten"
+    ],
+    "dietaryFlags": [
+      "high_purine"
+    ]
   },
   {
     "id": "italian_minestrone",
@@ -349,8 +473,8 @@
       },
       {
         "ingredientId": "garlic",
-        "amount": 2,
-        "unit": "piece"
+        "amount": 10,
+        "unit": "g"
       },
       {
         "ingredientId": "pasta",
@@ -375,7 +499,31 @@
       "蔬菜",
       "健康"
     ],
-    "description": "意式家常好味。精心烹饪，口感鲜美、清淡，操作简便，零失败。"
+    "description": "一道滋润的意式汤品。以土豆配胡萝卜为主料，久熬出鲜，鲜美滋补，口味鲜美、清淡，一碗下肚，四季皆宜。",
+    "dishRole": "soup",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": null,
+    "cookingMethod": "soup",
+    "perServing": {
+      "calories": 255,
+      "protein": 6.8,
+      "fat": 4.7,
+      "carbs": 48.8,
+      "fiber": 9.1,
+      "sodium": 163,
+      "sugar": 11.9
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "high_fiber",
+      "low_fat",
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_gluten"
+    ],
+    "dietaryFlags": []
   },
   {
     "id": "italian_bruschetta",
@@ -409,8 +557,8 @@
       },
       {
         "ingredientId": "garlic",
-        "amount": 2,
-        "unit": "piece"
+        "amount": 10,
+        "unit": "g"
       },
       {
         "ingredientId": "cooking_oil",
@@ -428,7 +576,30 @@
       "开胃菜",
       "简单"
     ],
-    "description": "意式风味的经典早餐。精心烹饪，口感酸爽、清淡，新手友好，快手完成。"
+    "description": "意式特色主食。以面包配番茄为主料，大火爆炒，火候恰到好处，口味酸爽、清淡，吃了就停不下来。",
+    "dishRole": "staple",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": "bread",
+    "cookingMethod": "staple",
+    "perServing": {
+      "calories": 254,
+      "protein": 8.4,
+      "fat": 6.3,
+      "carbs": 42.7,
+      "fiber": 5.3,
+      "sodium": 310,
+      "sugar": 10.9
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "low_fat",
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_gluten"
+    ],
+    "dietaryFlags": []
   },
   {
     "id": "italian_baked_eggplant",
@@ -466,8 +637,8 @@
       },
       {
         "ingredientId": "garlic",
-        "amount": 2,
-        "unit": "piece"
+        "amount": 10,
+        "unit": "g"
       },
       {
         "ingredientId": "cooking_oil",
@@ -487,7 +658,31 @@
       "芝士",
       "蔬菜"
     ],
-    "description": "意式家常好味。精心烹饪，口感鲜美、咸香，适合晚餐享用。"
+    "description": "意式里的下饭好手。以茄子配番茄为主料，翻炒收汁，爽脆入味，口味鲜美、咸香，家常做法、人人可学。",
+    "dishRole": "main_veg",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": null,
+    "cookingMethod": "roast",
+    "perServing": {
+      "calories": 253,
+      "protein": 11.7,
+      "fat": 16.7,
+      "carbs": 17.3,
+      "fiber": 6.5,
+      "sodium": 220,
+      "sugar": 10.1
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "high_fiber",
+      "high_protein",
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_dairy"
+    ],
+    "dietaryFlags": []
   },
   {
     "id": "italian_tomato_soup",
@@ -521,8 +716,8 @@
       },
       {
         "ingredientId": "garlic",
-        "amount": 3,
-        "unit": "piece"
+        "amount": 15,
+        "unit": "g"
       },
       {
         "ingredientId": "cooking_oil",
@@ -546,7 +741,28 @@
       "番茄",
       "健康"
     ],
-    "description": "意式家常好味。精心烹饪，口感酸爽、鲜美，操作简便，零失败。"
+    "description": "家常喝汤首选。以番茄配食用油为主料，久熬出鲜，鲜美滋补，口味酸爽、鲜美，一碗下肚，四季皆宜。",
+    "dishRole": "soup",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": null,
+    "cookingMethod": "soup",
+    "perServing": {
+      "calories": 145,
+      "protein": 4.1,
+      "fat": 5.8,
+      "carbs": 22.5,
+      "fiber": 5.2,
+      "sodium": 20,
+      "sugar": 13.2
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "low_fat",
+      "low_calorie"
+    ],
+    "allergens": [],
+    "dietaryFlags": []
   },
   {
     "id": "italian_cheese_omelette",
@@ -599,7 +815,31 @@
       "鸡蛋",
       "快手餐"
     ],
-    "description": "意式风味的经典早餐。精心烹饪，口感咸香、鲜美，新手友好，快手完成。"
+    "description": "深受欢迎的意式代表作。以鸡蛋配奶酪为主料，翻炒收汁，爽脆入味，口味咸香、鲜美，无需厨艺基础。",
+    "dishRole": "main_veg",
+    "isVegetarian": true,
+    "dishStyle": "egg",
+    "stapleCategory": null,
+    "cookingMethod": "pan_fry",
+    "perServing": {
+      "calories": 298,
+      "protein": 18.9,
+      "fat": 22.8,
+      "carbs": 5.3,
+      "fiber": 1.2,
+      "sodium": 253,
+      "sugar": 3.8
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "high_protein",
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_dairy",
+      "allergen_egg"
+    ],
+    "dietaryFlags": []
   },
   {
     "id": "italian_pasta_primavera",
@@ -643,8 +883,8 @@
       },
       {
         "ingredientId": "garlic",
-        "amount": 2,
-        "unit": "piece"
+        "amount": 10,
+        "unit": "g"
       },
       {
         "ingredientId": "cooking_oil",
@@ -668,7 +908,35 @@
       "蔬菜",
       "健康"
     ],
-    "description": "意式家常好味。精心烹饪，口感清淡、鲜美，新手友好，快手完成。"
+    "description": "意式餐桌必备主食。以意面配西葫芦为主料，大火爆炒，锅气十足，口味清淡、鲜美，简单一顿就满足。",
+    "dishRole": "staple",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": "noodles",
+    "cookingMethod": "staple",
+    "perServing": {
+      "calories": 517,
+      "protein": 19.4,
+      "fat": 9.4,
+      "carbs": 89.4,
+      "fiber": 7.7,
+      "sodium": 97,
+      "sugar": 10.4
+    },
+    "nutritionWarnings": [
+      "high_carb"
+    ],
+    "nutritionHighlights": [
+      "high_fiber",
+      "low_fat",
+      "high_protein",
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_dairy",
+      "allergen_gluten"
+    ],
+    "dietaryFlags": []
   },
   {
     "id": "italian_chicken_pasta",
@@ -688,7 +956,7 @@
     "minCookingLevel": "basic",
     "prepTime": 10,
     "cookTime": 20,
-    "servings": 2,
+    "servings": 3,
     "ingredients": [
       {
         "ingredientId": "pasta",
@@ -707,8 +975,8 @@
       },
       {
         "ingredientId": "garlic",
-        "amount": 2,
-        "unit": "piece"
+        "amount": 10,
+        "unit": "g"
       },
       {
         "ingredientId": "milk",
@@ -738,7 +1006,34 @@
       "鸡肉",
       "奶油"
     ],
-    "description": "意式家常好味。精心烹饪，口感鲜美、咸香，适合午餐/晚餐享用。"
+    "description": "意式特色主食。以意面配鸡胸肉为主料，翻炒收汁，锅气十足，口味鲜美、咸香，吃了就停不下来。",
+    "dishRole": "staple",
+    "isVegetarian": false,
+    "dishStyle": "meat",
+    "stapleCategory": "noodles",
+    "cookingMethod": "staple",
+    "perServing": {
+      "calories": 446,
+      "protein": 34.2,
+      "fat": 9.7,
+      "carbs": 54,
+      "fiber": 2.5,
+      "sodium": 132,
+      "sugar": 4.2
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "high_protein",
+      "low_fat",
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_dairy",
+      "allergen_gluten"
+    ],
+    "dietaryFlags": [
+      "high_purine"
+    ]
   },
   {
     "id": "italian_seafood_pasta",
@@ -757,7 +1052,7 @@
     "minCookingLevel": "intermediate",
     "prepTime": 15,
     "cookTime": 15,
-    "servings": 2,
+    "servings": 3,
     "ingredients": [
       {
         "ingredientId": "pasta",
@@ -771,8 +1066,8 @@
       },
       {
         "ingredientId": "garlic",
-        "amount": 3,
-        "unit": "piece"
+        "amount": 15,
+        "unit": "g"
       },
       {
         "ingredientId": "tomato",
@@ -797,7 +1092,34 @@
       "意面",
       "宴客"
     ],
-    "description": "意式家常好味。精心烹饪，口感鲜美、咸香，适合晚餐享用。"
+    "description": "意式餐桌必备主食。以意面配虾为主料，大火爆炒，锅气十足，口味鲜美、咸香，简单一顿就满足。",
+    "dishRole": "staple",
+    "isVegetarian": false,
+    "dishStyle": "meat",
+    "stapleCategory": "noodles",
+    "cookingMethod": "staple",
+    "perServing": {
+      "calories": 351,
+      "protein": 20.2,
+      "fat": 4.9,
+      "carbs": 57,
+      "fiber": 3.8,
+      "sodium": 71,
+      "sugar": 5.3
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "low_fat",
+      "high_protein",
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_gluten",
+      "allergen_seafood"
+    ],
+    "dietaryFlags": [
+      "high_purine"
+    ]
   },
   {
     "id": "italian_baked_potato",
@@ -835,8 +1157,8 @@
       },
       {
         "ingredientId": "garlic",
-        "amount": 2,
-        "unit": "piece"
+        "amount": 10,
+        "unit": "g"
       }
     ],
     "steps": [
@@ -849,7 +1171,30 @@
       "土豆",
       "芝士"
     ],
-    "description": "意式家常好味。精心烹饪，口感咸香、鲜美，操作简便，零失败。"
+    "description": "意式里的下饭好手。以土豆配奶酪为主料，翻炒收汁，锅气十足，口味咸香、鲜美，家常操作、零失败。",
+    "dishRole": "main_veg",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": null,
+    "cookingMethod": "roast",
+    "perServing": {
+      "calories": 392,
+      "protein": 13.8,
+      "fat": 14,
+      "carbs": 53,
+      "fiber": 6.7,
+      "sodium": 205,
+      "sugar": 2.6
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "high_fiber",
+      "high_protein"
+    ],
+    "allergens": [
+      "allergen_dairy"
+    ],
+    "dietaryFlags": []
   },
   {
     "id": "american_classic_burger",
@@ -914,7 +1259,37 @@
       "牛肉",
       "美式"
     ],
-    "description": "美式家常好味。精心烹饪，口感咸香、鲜美，适合午餐/晚餐享用。"
+    "description": "一碗能吃饱的美式主食。以牛肉末配面包为主料，大火爆炒，火候恰到好处，口味咸香、鲜美，工作日快手午餐首选。",
+    "dishRole": "staple",
+    "isVegetarian": false,
+    "dishStyle": "meat",
+    "stapleCategory": "bread",
+    "perServing": {
+      "calories": 863,
+      "protein": 47.3,
+      "fat": 46.2,
+      "carbs": 62.9,
+      "fiber": 5.6,
+      "sodium": 816,
+      "sugar": 12.2
+    },
+    "nutritionWarnings": [
+      "high_calorie",
+      "high_sodium",
+      "high_fat"
+    ],
+    "nutritionHighlights": [
+      "high_protein",
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_dairy",
+      "allergen_egg",
+      "allergen_gluten"
+    ],
+    "dietaryFlags": [
+      "high_purine"
+    ]
   },
   {
     "id": "american_caesar_salad",
@@ -958,8 +1333,8 @@
       },
       {
         "ingredientId": "garlic",
-        "amount": 1,
-        "unit": "piece"
+        "amount": 5,
+        "unit": "g"
       },
       {
         "ingredientId": "cooking_oil",
@@ -978,7 +1353,31 @@
       "鸡肉",
       "经典"
     ],
-    "description": "美式家常好味。精心烹饪，口感咸香、鲜美、酸爽，新手友好，快手完成。"
+    "description": "一道冰镇解腻的美式凉菜。以鸡胸肉配面包为主料，冰镇拌制，爽口开胃，口味咸香、鲜美、酸爽，开胃又解腻。",
+    "dishRole": "cold",
+    "isVegetarian": false,
+    "dishStyle": "meat",
+    "stapleCategory": null,
+    "cookingMethod": "cold_dish",
+    "perServing": {
+      "calories": 436,
+      "protein": 40.9,
+      "fat": 22.3,
+      "carbs": 16,
+      "fiber": 0.9,
+      "sodium": 346,
+      "sugar": 1.9
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "high_protein"
+    ],
+    "allergens": [
+      "allergen_dairy",
+      "allergen_egg",
+      "allergen_gluten"
+    ],
+    "dietaryFlags": []
   },
   {
     "id": "american_bbq_chicken",
@@ -1022,8 +1421,8 @@
       },
       {
         "ingredientId": "garlic",
-        "amount": 3,
-        "unit": "piece"
+        "amount": 15,
+        "unit": "g"
       },
       {
         "ingredientId": "cooking_oil",
@@ -1042,7 +1441,30 @@
       "鸡肉",
       "烤箱菜"
     ],
-    "description": "美式家常好味。精心烹饪，口感甘甜、咸香、香辣，适合晚餐享用。"
+    "description": "美式里的下饭好手。以鸡腿肉配食用油为主料，大火爆炒，火候恰到好处，口味甘甜、咸香、香辣，家常做法、人人可学。",
+    "dishRole": "main_meat",
+    "isVegetarian": false,
+    "dishStyle": "meat",
+    "stapleCategory": null,
+    "cookingMethod": "roast",
+    "perServing": {
+      "calories": 393,
+      "protein": 44.1,
+      "fat": 19.9,
+      "carbs": 6.9,
+      "fiber": 0.1,
+      "sodium": 416,
+      "sugar": 5.1
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "high_protein"
+    ],
+    "allergens": [
+      "allergen_gluten",
+      "allergen_soy"
+    ],
+    "dietaryFlags": []
   },
   {
     "id": "american_scrambled_eggs",
@@ -1094,7 +1516,28 @@
       "鸡蛋",
       "快手餐"
     ],
-    "description": "美式风味的经典早餐。精心烹饪，口感咸香、清淡，新手友好，快手完成。"
+    "description": "一碗能吃饱的美式主食。以鸡蛋配牛奶为主料，大火爆炒，锅气十足，口味咸香、清淡，工作日快手午餐首选。",
+    "dishRole": "staple",
+    "isVegetarian": true,
+    "dishStyle": "egg",
+    "stapleCategory": "bread",
+    "perServing": {
+      "calories": 285,
+      "protein": 16.2,
+      "fat": 17.1,
+      "carbs": 16.6,
+      "fiber": 0.8,
+      "sodium": 278,
+      "sugar": 3.4
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [],
+    "allergens": [
+      "allergen_dairy",
+      "allergen_egg",
+      "allergen_gluten"
+    ],
+    "dietaryFlags": []
   },
   {
     "id": "american_pancakes",
@@ -1151,7 +1594,29 @@
       "甜点",
       "松饼"
     ],
-    "description": "美式风味的经典早餐。精心烹饪，口感甘甜，新手友好，快手完成。"
+    "description": "美式里的传统味道。以鸡蛋配牛奶为主料，翻炒收汁，爽脆入味，口味甘甜，快手就能端上桌。",
+    "dishRole": "staple",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": "bread",
+    "perServing": {
+      "calories": 259,
+      "protein": 9.9,
+      "fat": 11.5,
+      "carbs": 31.6,
+      "fiber": 2,
+      "sodium": 96,
+      "sugar": 23.3
+    },
+    "nutritionWarnings": [
+      "high_sugar"
+    ],
+    "nutritionHighlights": [],
+    "allergens": [
+      "allergen_dairy",
+      "allergen_egg"
+    ],
+    "dietaryFlags": []
   },
   {
     "id": "american_grilled_cheese",
@@ -1194,7 +1659,30 @@
       "三明治",
       "快手餐"
     ],
-    "description": "美式风味的经典早餐。精心烹饪，口感咸香、鲜美，新手友好，快手完成。"
+    "description": "美式特色主食。以面包配奶酪为主料，大火爆炒，锅气十足，口味咸香、鲜美，吃了就停不下来。",
+    "dishRole": "staple",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": "bread",
+    "cookingMethod": "roast",
+    "perServing": {
+      "calories": 320,
+      "protein": 15.4,
+      "fat": 15.1,
+      "carbs": 29.9,
+      "fiber": 1.6,
+      "sodium": 543,
+      "sugar": 3.2
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "high_protein"
+    ],
+    "allergens": [
+      "allergen_dairy",
+      "allergen_gluten"
+    ],
+    "dietaryFlags": []
   },
   {
     "id": "american_chicken_wrap",
@@ -1252,7 +1740,29 @@
       "鸡肉",
       "轻食"
     ],
-    "description": "美式家常好味。精心烹饪，口感咸香、清淡，新手友好，快手完成。"
+    "description": "美式里的下饭好手。以鸡胸肉配番茄为主料，旺火快炒，爽脆入味，口味咸香、清淡，做法简单、新手友好。",
+    "dishRole": "main_meat",
+    "isVegetarian": false,
+    "dishStyle": "meat",
+    "stapleCategory": null,
+    "perServing": {
+      "calories": 508,
+      "protein": 41.6,
+      "fat": 12.1,
+      "carbs": 56.5,
+      "fiber": 4.4,
+      "sodium": 572,
+      "sugar": 9.3
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "high_protein",
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_gluten"
+    ],
+    "dietaryFlags": []
   },
   {
     "id": "american_corn_chowder",
@@ -1311,7 +1821,31 @@
       "玉米",
       "奶油"
     ],
-    "description": "美式家常好味。精心烹饪，口感甘甜、咸香，新手友好，快手完成。"
+    "description": "美式餐桌上的暖心汤。以玉米配土豆为主料，文火慢煨，鲜美滋补，口味甘甜、咸香，与主食搭配相得益彰。",
+    "dishRole": "soup",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": null,
+    "cookingMethod": "soup",
+    "perServing": {
+      "calories": 250,
+      "protein": 8.6,
+      "fat": 5.7,
+      "carbs": 46.2,
+      "fiber": 6.2,
+      "sodium": 56,
+      "sugar": 10.9
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "high_fiber",
+      "low_fat",
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_dairy"
+    ],
+    "dietaryFlags": []
   },
   {
     "id": "american_steak",
@@ -1326,11 +1860,11 @@
     "mealTypes": [
       "dinner"
     ],
-    "difficulty": "hard",
+    "difficulty": "medium",
     "minCookingLevel": "advanced",
     "prepTime": 10,
     "cookTime": 15,
-    "servings": 2,
+    "servings": 3,
     "ingredients": [
       {
         "ingredientId": "beef_sirloin",
@@ -1349,8 +1883,8 @@
       },
       {
         "ingredientId": "garlic",
-        "amount": 2,
-        "unit": "piece"
+        "amount": 10,
+        "unit": "g"
       },
       {
         "ingredientId": "cooking_oil",
@@ -1369,7 +1903,30 @@
       "宴客",
       "西餐"
     ],
-    "description": "美式宴客名菜。精心烹饪，口感咸香、鲜美，工序讲究，宴请体面。"
+    "description": "深受欢迎的美式代表作。以牛里脊配西兰花为主料，大火爆炒，锅气十足，口味咸香、鲜美，一次成功的家常菜。",
+    "dishRole": "main_meat",
+    "isVegetarian": false,
+    "dishStyle": "meat",
+    "stapleCategory": null,
+    "cookingMethod": "pan_fry",
+    "perServing": {
+      "calories": 485,
+      "protein": 37.3,
+      "fat": 29.3,
+      "carbs": 17.9,
+      "fiber": 3.4,
+      "sodium": 126,
+      "sugar": 3.7
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "high_protein",
+      "low_calorie"
+    ],
+    "allergens": [],
+    "dietaryFlags": [
+      "high_purine"
+    ]
   },
   {
     "id": "american_blt_sandwich",
@@ -1423,7 +1980,29 @@
       "三明治",
       "培根"
     ],
-    "description": "美式风味的经典早餐。精心烹饪，口感咸香、清淡，新手友好，快手完成。"
+    "description": "美式里的饱腹主食。以面包配五花肉为主料，翻炒收汁，锅气十足，口味咸香、清淡，一碗顶饱。",
+    "dishRole": "staple",
+    "isVegetarian": false,
+    "dishStyle": "meat",
+    "stapleCategory": "bread",
+    "perServing": {
+      "calories": 514,
+      "protein": 17.5,
+      "fat": 34.1,
+      "carbs": 33.8,
+      "fiber": 2.8,
+      "sodium": 378,
+      "sugar": 6.1
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_egg",
+      "allergen_gluten"
+    ],
+    "dietaryFlags": []
   },
   {
     "id": "american_mac_cheese",
@@ -1471,7 +2050,31 @@
       "意面",
       "经典"
     ],
-    "description": "美式家常好味。精心烹饪，口感咸香、鲜美，新手友好，快手完成。"
+    "description": "美式经典家常做法。以意面配奶酪为主料，旺火快炒，爽脆入味，口味咸香、鲜美，家常操作、零失败。",
+    "dishRole": "main_veg",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": null,
+    "perServing": {
+      "calories": 593,
+      "protein": 27.2,
+      "fat": 18.5,
+      "carbs": 78.2,
+      "fiber": 3.2,
+      "sodium": 339,
+      "sugar": 5.5
+    },
+    "nutritionWarnings": [
+      "high_carb"
+    ],
+    "nutritionHighlights": [
+      "high_protein"
+    ],
+    "allergens": [
+      "allergen_dairy",
+      "allergen_gluten"
+    ],
+    "dietaryFlags": []
   },
   {
     "id": "american_egg_muffin",
@@ -1523,7 +2126,30 @@
       "三明治",
       "快手餐"
     ],
-    "description": "美式风味的经典早餐。精心烹饪，口感咸香、鲜美，新手友好，快手完成。"
+    "description": "美式经典家常做法。以鸡蛋配五花肉为主料，翻炒收汁，爽脆入味，口味咸香、鲜美，无需厨艺基础。",
+    "dishRole": "staple",
+    "isVegetarian": false,
+    "dishStyle": "meat",
+    "stapleCategory": "bread",
+    "perServing": {
+      "calories": 619,
+      "protein": 25.8,
+      "fat": 34.5,
+      "carbs": 49.9,
+      "fiber": 2.7,
+      "sodium": 749,
+      "sugar": 5.7
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "high_protein"
+    ],
+    "allergens": [
+      "allergen_dairy",
+      "allergen_egg",
+      "allergen_gluten"
+    ],
+    "dietaryFlags": []
   },
   {
     "id": "french_onion_soup",
@@ -1552,8 +2178,8 @@
       },
       {
         "ingredientId": "garlic",
-        "amount": 2,
-        "unit": "piece"
+        "amount": 10,
+        "unit": "g"
       },
       {
         "ingredientId": "bread",
@@ -1588,7 +2214,31 @@
       "洋葱",
       "法式"
     ],
-    "description": "法式家常好味。精心烹饪，口感甘甜、鲜美、咸香，适合晚餐享用。"
+    "description": "法式餐桌上的暖心汤。以面包配奶酪为主料，文火慢煨，暖胃润喉，口味甘甜、鲜美、咸香，暖胃又养生。",
+    "dishRole": "soup",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": null,
+    "cookingMethod": "soup",
+    "perServing": {
+      "calories": 364,
+      "protein": 12.5,
+      "fat": 16.7,
+      "carbs": 42.6,
+      "fiber": 5.4,
+      "sodium": 324,
+      "sugar": 14.5
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "high_protein",
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_dairy",
+      "allergen_gluten"
+    ],
+    "dietaryFlags": []
   },
   {
     "id": "french_crepe",
@@ -1645,7 +2295,29 @@
       "甜点",
       "法式"
     ],
-    "description": "法式风味的经典早餐。精心烹饪，口感甘甜。"
+    "description": "法式里的传统味道。以鸡蛋配牛奶为主料，大火爆炒，火候恰到好处，口味甘甜，家常做法、人人可学。",
+    "dishRole": "staple",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": "bread",
+    "perServing": {
+      "calories": 259,
+      "protein": 10.7,
+      "fat": 11.7,
+      "carbs": 30.3,
+      "fiber": 2,
+      "sodium": 107,
+      "sugar": 22.1
+    },
+    "nutritionWarnings": [
+      "high_sugar"
+    ],
+    "nutritionHighlights": [],
+    "allergens": [
+      "allergen_dairy",
+      "allergen_egg"
+    ],
+    "dietaryFlags": []
   },
   {
     "id": "french_ratatouille",
@@ -1693,8 +2365,8 @@
       },
       {
         "ingredientId": "garlic",
-        "amount": 3,
-        "unit": "piece"
+        "amount": 15,
+        "unit": "g"
       },
       {
         "ingredientId": "cooking_oil",
@@ -1714,7 +2386,28 @@
       "法式",
       "烤箱菜"
     ],
-    "description": "法式家常好味。精心烹饪，口感清淡、鲜美，适合晚餐享用。"
+    "description": "法式里的传统味道。以茄子配西葫芦为主料，大火爆炒，锅气十足，口味清淡、鲜美，一次成功的家常菜。",
+    "dishRole": "main_veg",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": null,
+    "cookingMethod": "stew",
+    "perServing": {
+      "calories": 133,
+      "protein": 3.7,
+      "fat": 5.8,
+      "carbs": 19.3,
+      "fiber": 5.8,
+      "sodium": 17,
+      "sugar": 11.1
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "low_fat",
+      "low_calorie"
+    ],
+    "allergens": [],
+    "dietaryFlags": []
   },
   {
     "id": "french_quiche",
@@ -1784,7 +2477,32 @@
       "蛋",
       "法式"
     ],
-    "description": "法式宴客名菜。精心烹饪，口感咸香、鲜美，工序讲究，宴请体面。"
+    "description": "法式家庭餐桌常客。以鸡蛋配牛奶为主料，翻炒收汁，爽脆入味，口味咸香、鲜美，细节到位，味道地道。",
+    "dishRole": "main_veg",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": null,
+    "perServing": {
+      "calories": 238,
+      "protein": 14.8,
+      "fat": 16.5,
+      "carbs": 9.1,
+      "fiber": 1.7,
+      "sodium": 226,
+      "sugar": 5.2
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "low_calorie",
+      "high_protein"
+    ],
+    "allergens": [
+      "allergen_dairy",
+      "allergen_egg"
+    ],
+    "dietaryFlags": [
+      "high_purine"
+    ]
   },
   {
     "id": "french_salmon_en_papillote",
@@ -1822,8 +2540,8 @@
       },
       {
         "ingredientId": "garlic",
-        "amount": 2,
-        "unit": "piece"
+        "amount": 10,
+        "unit": "g"
       },
       {
         "ingredientId": "cooking_oil",
@@ -1842,7 +2560,29 @@
       "烤箱菜",
       "健康"
     ],
-    "description": "法式宴客名菜。精心烹饪，口感清淡、鲜美，工序讲究，宴请体面。"
+    "description": "法式经典家常做法。以三文鱼配西葫芦为主料，大火爆炒，火候恰到好处，口味清淡、鲜美，适合周末慢做。",
+    "dishRole": "main_meat",
+    "isVegetarian": false,
+    "dishStyle": "meat",
+    "stapleCategory": null,
+    "perServing": {
+      "calories": 444,
+      "protein": 32.4,
+      "fat": 27.5,
+      "carbs": 14.8,
+      "fiber": 3.9,
+      "sodium": 166,
+      "sugar": 7.3
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "high_protein",
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_seafood"
+    ],
+    "dietaryFlags": []
   },
   {
     "id": "french_potato_gratin",
@@ -1880,8 +2620,8 @@
       },
       {
         "ingredientId": "garlic",
-        "amount": 2,
-        "unit": "piece"
+        "amount": 10,
+        "unit": "g"
       }
     ],
     "steps": [
@@ -1895,7 +2635,30 @@
       "土豆",
       "芝士"
     ],
-    "description": "法式家常好味。精心烹饪，口感咸香、鲜美，适合晚餐享用。"
+    "description": "法式经典家常做法。以土豆配牛奶为主料，大火爆炒，锅气十足，口味咸香、鲜美，一次成功的家常菜。",
+    "dishRole": "main_veg",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": null,
+    "cookingMethod": "roast",
+    "perServing": {
+      "calories": 298,
+      "protein": 11.9,
+      "fat": 7.4,
+      "carbs": 46.1,
+      "fiber": 5.6,
+      "sodium": 162,
+      "sugar": 4.6
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "low_fat",
+      "high_protein"
+    ],
+    "allergens": [
+      "allergen_dairy"
+    ],
+    "dietaryFlags": []
   },
   {
     "id": "french_pan_seared_salmon",
@@ -1933,8 +2696,8 @@
       },
       {
         "ingredientId": "garlic",
-        "amount": 2,
-        "unit": "piece"
+        "amount": 10,
+        "unit": "g"
       }
     ],
     "steps": [
@@ -1948,7 +2711,30 @@
       "健康",
       "高蛋白"
     ],
-    "description": "法式家常好味。精心烹饪，口感鲜美、清淡，适合晚餐享用。"
+    "description": "深受欢迎的法式代表作。以三文鱼配西兰花为主料，大火爆炒，火候恰到好处，口味鲜美、清淡，家常做法、人人可学。",
+    "dishRole": "main_meat",
+    "isVegetarian": false,
+    "dishStyle": "meat",
+    "stapleCategory": null,
+    "cookingMethod": "pan_fry",
+    "perServing": {
+      "calories": 411,
+      "protein": 32.4,
+      "fat": 27.3,
+      "carbs": 6.9,
+      "fiber": 2.1,
+      "sodium": 114,
+      "sugar": 1.3
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "high_protein",
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_seafood"
+    ],
+    "dietaryFlags": []
   },
   {
     "id": "french_chicken_fricassee",
@@ -1996,8 +2782,8 @@
       },
       {
         "ingredientId": "garlic",
-        "amount": 2,
-        "unit": "piece"
+        "amount": 10,
+        "unit": "g"
       },
       {
         "ingredientId": "cooking_oil",
@@ -2017,7 +2803,32 @@
       "鸡肉",
       "法式"
     ],
-    "description": "法式宴客名菜。精心烹饪，口感鲜美、咸香，工序讲究，宴请体面。"
+    "description": "法式家庭餐桌常客。以鸡腿肉配蘑菇为主料，翻炒收汁，锅气十足，口味鲜美、咸香，适合周末慢做。",
+    "dishRole": "main_meat",
+    "isVegetarian": false,
+    "dishStyle": "meat",
+    "stapleCategory": null,
+    "cookingMethod": "stew",
+    "perServing": {
+      "calories": 410,
+      "protein": 38.9,
+      "fat": 20.3,
+      "carbs": 17.6,
+      "fiber": 3.4,
+      "sodium": 185,
+      "sugar": 9.1
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "high_protein",
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_dairy"
+    ],
+    "dietaryFlags": [
+      "high_purine"
+    ]
   },
   {
     "id": "french_croque_monsieur",
@@ -2076,7 +2887,30 @@
       "三明治",
       "芝士"
     ],
-    "description": "法式风味的经典早餐。精心烹饪，口感咸香、鲜美，新手友好，快手完成。"
+    "description": "一碗能吃饱的法式主食。以面包配奶酪为主料，大火爆炒，火候恰到好处，口味咸香、鲜美，工作日快手午餐首选。",
+    "dishRole": "staple",
+    "isVegetarian": false,
+    "dishStyle": "meat",
+    "stapleCategory": "bread",
+    "perServing": {
+      "calories": 520,
+      "protein": 22,
+      "fat": 33.9,
+      "carbs": 30.9,
+      "fiber": 1.6,
+      "sodium": 590,
+      "sugar": 4.2
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "high_protein"
+    ],
+    "allergens": [
+      "allergen_dairy",
+      "allergen_egg",
+      "allergen_gluten"
+    ],
+    "dietaryFlags": []
   },
   {
     "id": "french_nicoise_salad",
@@ -2140,7 +2974,30 @@
       "法式",
       "健康"
     ],
-    "description": "法式家常好味。精心烹饪，口感酸爽、咸香、清淡，适合午餐享用。"
+    "description": "法式凉拌代表作。以鸡蛋配土豆为主料，冰镇拌制，爽口开胃，口味酸爽、咸香、清淡，开胃又解腻。",
+    "dishRole": "cold",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": null,
+    "cookingMethod": "cold_dish",
+    "perServing": {
+      "calories": 373,
+      "protein": 13.2,
+      "fat": 16.2,
+      "carbs": 45.9,
+      "fiber": 8.5,
+      "sodium": 87,
+      "sugar": 8.1
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "high_fiber",
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_egg"
+    ],
+    "dietaryFlags": []
   },
   {
     "id": "french_french_toast",
@@ -2197,7 +3054,28 @@
       "甜点",
       "面包"
     ],
-    "description": "法式风味的经典早餐。精心烹饪，口感甘甜，新手友好，快手完成。"
+    "description": "法式里的饱腹主食。以面包配鸡蛋为主料，大火爆炒，锅气十足，口味甘甜，一碗顶饱。",
+    "dishRole": "staple",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": "bread",
+    "perServing": {
+      "calories": 313,
+      "protein": 12.9,
+      "fat": 12.7,
+      "carbs": 36.5,
+      "fiber": 1.6,
+      "sodium": 370,
+      "sugar": 10.1
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [],
+    "allergens": [
+      "allergen_dairy",
+      "allergen_egg",
+      "allergen_gluten"
+    ],
+    "dietaryFlags": []
   },
   {
     "id": "french_lamb_stew",
@@ -2240,8 +3118,8 @@
       },
       {
         "ingredientId": "garlic",
-        "amount": 3,
-        "unit": "piece"
+        "amount": 15,
+        "unit": "g"
       },
       {
         "ingredientId": "tomato",
@@ -2266,7 +3144,31 @@
       "羊肉",
       "宴客"
     ],
-    "description": "法式宴客名菜。精心烹饪，口感鲜美、咸香，工序讲究，宴请体面。"
+    "description": "法式经典家常做法。以羊腿肉配土豆为主料，旺火快炒，爽脆入味，口味鲜美、咸香，工艺讲究，宴客撑场。",
+    "dishRole": "main_meat",
+    "isVegetarian": false,
+    "dishStyle": "meat",
+    "stapleCategory": null,
+    "cookingMethod": "stew",
+    "perServing": {
+      "calories": 556,
+      "protein": 36.8,
+      "fat": 25.6,
+      "carbs": 45.3,
+      "fiber": 8.2,
+      "sodium": 159,
+      "sugar": 10.6
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "high_protein",
+      "high_fiber",
+      "low_calorie"
+    ],
+    "allergens": [],
+    "dietaryFlags": [
+      "high_purine"
+    ]
   },
   {
     "id": "japanese_miso_soup",
@@ -2296,8 +3198,8 @@
       },
       {
         "ingredientId": "spring_onion",
-        "amount": 2,
-        "unit": "piece"
+        "amount": 30,
+        "unit": "g"
       },
       {
         "ingredientId": "soy_sauce",
@@ -2316,7 +3218,31 @@
       "日式",
       "简单"
     ],
-    "description": "日式风味的经典早餐。精心烹饪，口感鲜美、咸香，新手友好，快手完成。"
+    "description": "日料中的经典汤羹。以豆腐为主料，久熬出鲜，鲜美滋补，口味鲜美、咸香，一碗下肚，四季皆宜。",
+    "dishRole": "soup",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": null,
+    "cookingMethod": "soup",
+    "perServing": {
+      "calories": 63,
+      "protein": 6.4,
+      "fat": 3.6,
+      "carbs": 2.6,
+      "fiber": 0.6,
+      "sodium": 104,
+      "sugar": 0.8
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "low_fat",
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_gluten",
+      "allergen_soy"
+    ],
+    "dietaryFlags": []
   },
   {
     "id": "japanese_teriyaki_chicken",
@@ -2377,7 +3303,31 @@
       "鸡肉",
       "日式"
     ],
-    "description": "日式家常好味。精心烹饪，口感甘甜、咸香、鲜美，新手友好，快手完成。"
+    "description": "日料经典家常做法。以鸡腿肉配食用油为主料，大火爆炒，锅气十足，口味甘甜、咸香、鲜美，无需厨艺基础。",
+    "dishRole": "main_meat",
+    "isVegetarian": false,
+    "dishStyle": "meat",
+    "stapleCategory": null,
+    "perServing": {
+      "calories": 401,
+      "protein": 40.3,
+      "fat": 21.4,
+      "carbs": 8.6,
+      "fiber": 0.1,
+      "sodium": 953,
+      "sugar": 7.7
+    },
+    "nutritionWarnings": [
+      "high_sodium"
+    ],
+    "nutritionHighlights": [
+      "high_protein"
+    ],
+    "allergens": [
+      "allergen_gluten",
+      "allergen_soy"
+    ],
+    "dietaryFlags": []
   },
   {
     "id": "japanese_salmon_rice_bowl",
@@ -2421,8 +3371,8 @@
       },
       {
         "ingredientId": "spring_onion",
-        "amount": 2,
-        "unit": "piece"
+        "amount": 30,
+        "unit": "g"
       },
       {
         "ingredientId": "cucumber",
@@ -2441,7 +3391,33 @@
       "三文鱼",
       "日式"
     ],
-    "description": "日式家常好味。精心烹饪，口感鲜美、咸香，新手友好，快手完成。"
+    "description": "一碗能吃饱的日料主食。以三文鱼配大米为主料，层次铺陈，饱腹实在，口味鲜美、咸香，工作日快手午餐首选。",
+    "dishRole": "staple",
+    "isVegetarian": false,
+    "dishStyle": "meat",
+    "stapleCategory": "rice",
+    "cookingMethod": "staple",
+    "perServing": {
+      "calories": 439,
+      "protein": 25.6,
+      "fat": 14.8,
+      "carbs": 47.1,
+      "fiber": 1.6,
+      "sodium": 477,
+      "sugar": 2.1
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "high_protein",
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_gluten",
+      "allergen_seafood",
+      "allergen_sesame",
+      "allergen_soy"
+    ],
+    "dietaryFlags": []
   },
   {
     "id": "japanese_egg_rice",
@@ -2480,8 +3456,8 @@
       },
       {
         "ingredientId": "spring_onion",
-        "amount": 1,
-        "unit": "piece"
+        "amount": 15,
+        "unit": "g"
       },
       {
         "ingredientId": "sesame_oil",
@@ -2500,7 +3476,33 @@
       "盖饭",
       "简单"
     ],
-    "description": "日式风味的经典早餐。精心烹饪，口感鲜美、咸香，新手友好，快手完成。"
+    "description": "一碗能吃饱的日料主食。以大米配鸡蛋为主料，层次铺陈，主食丰足，口味鲜美、咸香，工作日快手午餐首选。",
+    "dishRole": "staple",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": "rice",
+    "cookingMethod": "staple",
+    "perServing": {
+      "calories": 289,
+      "protein": 11.1,
+      "fat": 7.2,
+      "carbs": 43.3,
+      "fiber": 0.8,
+      "sodium": 339,
+      "sugar": 0.7
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "low_fat",
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_egg",
+      "allergen_gluten",
+      "allergen_sesame",
+      "allergen_soy"
+    ],
+    "dietaryFlags": []
   },
   {
     "id": "japanese_curry_rice",
@@ -2566,7 +3568,29 @@
       "盖饭",
       "日式"
     ],
-    "description": "日式家常好味。精心烹饪，口感香辣、鲜美、甘甜，操作简便，零失败。"
+    "description": "日料里的饱腹主食。以鸡腿肉配土豆为主料，讲究配料，口感丰富，口味香辣、鲜美、甘甜，一碗顶饱。",
+    "dishRole": "staple",
+    "isVegetarian": false,
+    "dishStyle": "meat",
+    "stapleCategory": "rice",
+    "cookingMethod": "staple",
+    "perServing": {
+      "calories": 554,
+      "protein": 33.6,
+      "fat": 13.3,
+      "carbs": 72.9,
+      "fiber": 6.5,
+      "sodium": 142,
+      "sugar": 7
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "high_protein",
+      "high_fiber",
+      "low_calorie"
+    ],
+    "allergens": [],
+    "dietaryFlags": []
   },
   {
     "id": "japanese_tonkatsu",
@@ -2585,7 +3609,7 @@
     "minCookingLevel": "intermediate",
     "prepTime": 15,
     "cookTime": 10,
-    "servings": 2,
+    "servings": 5,
     "ingredients": [
       {
         "ingredientId": "pork_belly",
@@ -2630,7 +3654,32 @@
       "猪肉",
       "日式"
     ],
-    "description": "日式家常好味。精心烹饪，口感咸香、鲜美，适合晚餐享用。"
+    "description": "深受欢迎的日料代表作。以五花肉配鸡蛋为主料，翻炒收汁，锅气十足，口味咸香、鲜美，步骤清晰、易上手。",
+    "dishRole": "main_meat",
+    "isVegetarian": false,
+    "dishStyle": "meat",
+    "stapleCategory": null,
+    "cookingMethod": "deep_fry",
+    "perServing": {
+      "calories": 458,
+      "protein": 10.1,
+      "fat": 39.4,
+      "carbs": 15.1,
+      "fiber": 0.8,
+      "sodium": 135,
+      "sugar": 1.4
+    },
+    "nutritionWarnings": [
+      "high_fat"
+    ],
+    "nutritionHighlights": [
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_egg",
+      "allergen_gluten"
+    ],
+    "dietaryFlags": []
   },
   {
     "id": "japanese_gyudon",
@@ -2701,7 +3750,36 @@
       "牛肉",
       "日式"
     ],
-    "description": "日式家常好味。精心烹饪，口感甘甜、咸香、鲜美，新手友好，快手完成。"
+    "description": "日料餐桌必备主食。以牛里脊配大米为主料，旺火快炒，火候恰到好处，口味甘甜、咸香、鲜美，简单一顿就满足。",
+    "dishRole": "staple",
+    "isVegetarian": false,
+    "dishStyle": "meat",
+    "stapleCategory": "rice",
+    "cookingMethod": "staple",
+    "perServing": {
+      "calories": 685,
+      "protein": 45.4,
+      "fat": 28.6,
+      "carbs": 58,
+      "fiber": 2.4,
+      "sodium": 962,
+      "sugar": 10
+    },
+    "nutritionWarnings": [
+      "high_sodium"
+    ],
+    "nutritionHighlights": [
+      "high_protein",
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_egg",
+      "allergen_gluten",
+      "allergen_soy"
+    ],
+    "dietaryFlags": [
+      "high_purine"
+    ]
   },
   {
     "id": "japanese_udon_stir_fry",
@@ -2770,7 +3848,34 @@
       "快手餐",
       "日式"
     ],
-    "description": "日式家常好味。精心烹饪，口感咸香、鲜美，新手友好，快手完成。"
+    "description": "日料里的饱腹主食。以挂面配五花肉为主料，大火爆炒，锅气十足，口味咸香、鲜美，一碗顶饱。",
+    "dishRole": "staple",
+    "isVegetarian": false,
+    "dishStyle": "meat",
+    "stapleCategory": "noodles",
+    "cookingMethod": "staple",
+    "perServing": {
+      "calories": 722,
+      "protein": 19.4,
+      "fat": 32.3,
+      "carbs": 89,
+      "fiber": 8,
+      "sodium": 780,
+      "sugar": 11.1
+    },
+    "nutritionWarnings": [
+      "high_carb"
+    ],
+    "nutritionHighlights": [
+      "high_fiber",
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_gluten",
+      "allergen_seafood",
+      "allergen_soy"
+    ],
+    "dietaryFlags": []
   },
   {
     "id": "japanese_shrimp_tempura",
@@ -2789,7 +3894,7 @@
     "minCookingLevel": "advanced",
     "prepTime": 15,
     "cookTime": 10,
-    "servings": 2,
+    "servings": 5,
     "ingredients": [
       {
         "ingredientId": "shrimp",
@@ -2829,7 +3934,34 @@
       "虾",
       "日式"
     ],
-    "description": "日式宴客名菜。精心烹饪，口感清淡、咸香，工序讲究，宴请体面。"
+    "description": "日料里的下饭好手。以虾配鸡蛋为主料，大火爆炒，火候恰到好处，口味清淡、咸香，细节到位，味道地道。",
+    "dishRole": "main_meat",
+    "isVegetarian": false,
+    "dishStyle": "meat",
+    "stapleCategory": null,
+    "perServing": {
+      "calories": 652,
+      "protein": 10,
+      "fat": 61.4,
+      "carbs": 17.3,
+      "fiber": 1.3,
+      "sodium": 83,
+      "sugar": 1.8
+    },
+    "nutritionWarnings": [
+      "high_fat"
+    ],
+    "nutritionHighlights": [
+      "high_protein",
+      "low_fat"
+    ],
+    "allergens": [
+      "allergen_egg",
+      "allergen_seafood"
+    ],
+    "dietaryFlags": [
+      "high_purine"
+    ]
   },
   {
     "id": "japanese_omurice",
@@ -2899,7 +4031,30 @@
       "日式",
       "鸡蛋"
     ],
-    "description": "日式家常好味。精心烹饪，口感甘甜、咸香，适合午餐/晚餐享用。"
+    "description": "日料餐桌必备主食。以大米配鸡蛋为主料，翻炒收汁，爽脆入味，口味甘甜、咸香，简单一顿就满足。",
+    "dishRole": "staple",
+    "isVegetarian": false,
+    "dishStyle": "meat",
+    "stapleCategory": "rice",
+    "cookingMethod": "staple",
+    "perServing": {
+      "calories": 533,
+      "protein": 34.6,
+      "fat": 17.3,
+      "carbs": 58.8,
+      "fiber": 3.5,
+      "sodium": 172,
+      "sugar": 10.4
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "high_protein",
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_egg"
+    ],
+    "dietaryFlags": []
   },
   {
     "id": "japanese_tofu_steak",
@@ -2949,8 +4104,8 @@
       },
       {
         "ingredientId": "spring_onion",
-        "amount": 1,
-        "unit": "piece"
+        "amount": 15,
+        "unit": "g"
       }
     ],
     "steps": [
@@ -2964,7 +4119,29 @@
       "豆腐",
       "照烧"
     ],
-    "description": "日式家常好味。精心烹饪，口感甘甜、咸香、鲜美，新手友好，快手完成。"
+    "description": "日料里的下饭好手。以豆腐配食用油为主料，旺火快炒，火候恰到好处，口味甘甜、咸香、鲜美，做法简单、新手友好。",
+    "dishRole": "main_veg",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": null,
+    "perServing": {
+      "calories": 236,
+      "protein": 13,
+      "fat": 14.7,
+      "carbs": 15.7,
+      "fiber": 0.8,
+      "sodium": 562,
+      "sugar": 6.1
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_gluten",
+      "allergen_soy"
+    ],
+    "dietaryFlags": []
   },
   {
     "id": "japanese_salmon_onigiri",
@@ -3018,7 +4195,32 @@
       "三文鱼",
       "便当"
     ],
-    "description": "日式风味的经典早餐。精心烹饪，口感咸香、鲜美，新手友好，快手完成。"
+    "description": "日料里的传统味道。以大米配三文鱼为主料，大火爆炒，火候恰到好处，口味咸香、鲜美，无需厨艺基础。",
+    "dishRole": "main_meat",
+    "isVegetarian": false,
+    "dishStyle": "meat",
+    "stapleCategory": null,
+    "perServing": {
+      "calories": 322,
+      "protein": 14.3,
+      "fat": 9.5,
+      "carbs": 42.1,
+      "fiber": 0.6,
+      "sodium": 168,
+      "sugar": 0
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "low_fat",
+      "high_protein"
+    ],
+    "allergens": [
+      "allergen_gluten",
+      "allergen_seafood",
+      "allergen_sesame",
+      "allergen_soy"
+    ],
+    "dietaryFlags": []
   },
   {
     "id": "japanese_katsudon",
@@ -3039,7 +4241,7 @@
     "minCookingLevel": "intermediate",
     "prepTime": 15,
     "cookTime": 20,
-    "servings": 2,
+    "servings": 5,
     "ingredients": [
       {
         "ingredientId": "pork_belly",
@@ -3089,7 +4291,33 @@
       "猪排",
       "日式"
     ],
-    "description": "日式家常好味。精心烹饪，口感甘甜、咸香、鲜美，适合午餐/晚餐享用。"
+    "description": "一碗能吃饱的日料主食。以五花肉配鸡蛋为主料，翻炒收汁，爽脆入味，口味甘甜、咸香、鲜美，工作日快手午餐首选。",
+    "dishRole": "staple",
+    "isVegetarian": false,
+    "dishStyle": "meat",
+    "stapleCategory": "rice",
+    "cookingMethod": "staple",
+    "perServing": {
+      "calories": 542,
+      "protein": 11,
+      "fat": 45,
+      "carbs": 23.1,
+      "fiber": 1,
+      "sodium": 330,
+      "sugar": 4
+    },
+    "nutritionWarnings": [
+      "high_fat"
+    ],
+    "nutritionHighlights": [
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_egg",
+      "allergen_gluten",
+      "allergen_soy"
+    ],
+    "dietaryFlags": []
   },
   {
     "id": "korean_bibimbap",
@@ -3170,7 +4398,36 @@
       "韩式",
       "经典"
     ],
-    "description": "韩式宴客名菜。精心烹饪，口感香辣、鲜美、咸香，工序讲究，宴请体面。"
+    "description": "一碗能吃饱的韩料主食。以大米配牛肉末为主料，翻炒收汁，爽脆入味，口味香辣、鲜美、咸香，工作日快手午餐首选。",
+    "dishRole": "staple",
+    "isVegetarian": false,
+    "dishStyle": "meat",
+    "stapleCategory": "rice",
+    "cookingMethod": "staple",
+    "perServing": {
+      "calories": 500,
+      "protein": 23.5,
+      "fat": 19.3,
+      "carbs": 58.4,
+      "fiber": 5.6,
+      "sodium": 940,
+      "sugar": 8.1
+    },
+    "nutritionWarnings": [
+      "high_sodium"
+    ],
+    "nutritionHighlights": [
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_egg",
+      "allergen_gluten",
+      "allergen_sesame",
+      "allergen_soy"
+    ],
+    "dietaryFlags": [
+      "high_purine"
+    ]
   },
   {
     "id": "korean_fried_rice",
@@ -3210,8 +4467,8 @@
       },
       {
         "ingredientId": "spring_onion",
-        "amount": 2,
-        "unit": "piece"
+        "amount": 30,
+        "unit": "g"
       },
       {
         "ingredientId": "sesame_oil",
@@ -3235,7 +4492,30 @@
       "泡菜",
       "韩式"
     ],
-    "description": "韩式家常好味。精心烹饪，口感香辣、酸爽、咸香，新手友好，快手完成。"
+    "description": "韩料里的饱腹主食。以大米配猪肉末为主料，讲究配料，口感丰富，口味香辣、酸爽、咸香，一碗顶饱。",
+    "dishRole": "staple",
+    "isVegetarian": false,
+    "dishStyle": "meat",
+    "stapleCategory": "rice",
+    "cookingMethod": "staple",
+    "perServing": {
+      "calories": 518,
+      "protein": 20.7,
+      "fat": 21.6,
+      "carbs": 57.6,
+      "fiber": 1.2,
+      "sodium": 99,
+      "sugar": 0.9
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_egg",
+      "allergen_sesame"
+    ],
+    "dietaryFlags": []
   },
   {
     "id": "korean_japchae",
@@ -3310,7 +4590,34 @@
       "韩式",
       "宴客"
     ],
-    "description": "韩式家常好味。精心烹饪，口感甘甜、咸香、鲜美，适合午餐/晚餐享用。"
+    "description": "深受欢迎的韩料代表作。以牛里脊配菠菜为主料，翻炒收汁，爽脆入味，口味甘甜、咸香、鲜美，家常做法、人人可学。",
+    "dishRole": "main_meat",
+    "isVegetarian": false,
+    "dishStyle": "meat",
+    "stapleCategory": null,
+    "perServing": {
+      "calories": 358,
+      "protein": 13.4,
+      "fat": 10,
+      "carbs": 54,
+      "fiber": 3.7,
+      "sodium": 554,
+      "sugar": 7.2
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "low_fat",
+      "high_protein",
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_gluten",
+      "allergen_sesame",
+      "allergen_soy"
+    ],
+    "dietaryFlags": [
+      "high_purine"
+    ]
   },
   {
     "id": "korean_pancake",
@@ -3339,8 +4646,8 @@
       },
       {
         "ingredientId": "spring_onion",
-        "amount": 4,
-        "unit": "piece"
+        "amount": 60,
+        "unit": "g"
       },
       {
         "ingredientId": "egg",
@@ -3370,7 +4677,33 @@
       "海鲜",
       "韩式"
     ],
-    "description": "韩式家常好味。精心烹饪，口感咸香、鲜美，适合午餐/晚餐享用。"
+    "description": "韩料家庭餐桌常客。以虾配鸡蛋为主料，旺火快炒，爽脆入味，口味咸香、鲜美，一次成功的家常菜。",
+    "dishRole": "staple",
+    "isVegetarian": false,
+    "dishStyle": "meat",
+    "stapleCategory": "bread",
+    "perServing": {
+      "calories": 357,
+      "protein": 17.1,
+      "fat": 20.8,
+      "carbs": 25.6,
+      "fiber": 1,
+      "sodium": 129,
+      "sugar": 1.2
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "high_protein",
+      "low_calorie",
+      "low_fat"
+    ],
+    "allergens": [
+      "allergen_egg",
+      "allergen_seafood"
+    ],
+    "dietaryFlags": [
+      "high_purine"
+    ]
   },
   {
     "id": "korean_tteokbokki",
@@ -3414,8 +4747,8 @@
       },
       {
         "ingredientId": "spring_onion",
-        "amount": 2,
-        "unit": "piece"
+        "amount": 30,
+        "unit": "g"
       },
       {
         "ingredientId": "egg",
@@ -3434,7 +4767,33 @@
       "辣味",
       "韩式"
     ],
-    "description": "韩式家常好味。精心烹饪，口感香辣、甘甜，新手友好，快手完成。"
+    "description": "韩料里的传统味道。以大米配豆瓣酱为主料，大火爆炒，火候恰到好处，口味香辣、甘甜，家常操作、零失败。",
+    "dishRole": "staple",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": "noodles",
+    "perServing": {
+      "calories": 285,
+      "protein": 11.1,
+      "fat": 6.1,
+      "carbs": 45.6,
+      "fiber": 1.1,
+      "sodium": 970,
+      "sugar": 8.7
+    },
+    "nutritionWarnings": [
+      "high_sodium"
+    ],
+    "nutritionHighlights": [
+      "low_fat",
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_egg",
+      "allergen_gluten",
+      "allergen_soy"
+    ],
+    "dietaryFlags": []
   },
   {
     "id": "korean_bulgogi",
@@ -3488,8 +4847,8 @@
       },
       {
         "ingredientId": "garlic",
-        "amount": 3,
-        "unit": "piece"
+        "amount": 15,
+        "unit": "g"
       },
       {
         "ingredientId": "apple",
@@ -3508,7 +4867,34 @@
       "牛肉",
       "韩式"
     ],
-    "description": "韩式家常好味。精心烹饪，口感甘甜、咸香、鲜美，适合晚餐享用。"
+    "description": "韩料经典家常做法。以牛里脊配胡萝卜为主料，大火爆炒，锅气十足，口味甘甜、咸香、鲜美，一次成功的家常菜。",
+    "dishRole": "main_meat",
+    "isVegetarian": false,
+    "dishStyle": "meat",
+    "stapleCategory": null,
+    "cookingMethod": "roast",
+    "perServing": {
+      "calories": 488,
+      "protein": 37.3,
+      "fat": 26,
+      "carbs": 27,
+      "fiber": 4.4,
+      "sodium": 671,
+      "sugar": 16
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "high_protein",
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_gluten",
+      "allergen_sesame",
+      "allergen_soy"
+    ],
+    "dietaryFlags": [
+      "high_purine"
+    ]
   },
   {
     "id": "korean_egg_roll",
@@ -3537,8 +4923,8 @@
       },
       {
         "ingredientId": "spring_onion",
-        "amount": 2,
-        "unit": "piece"
+        "amount": 30,
+        "unit": "g"
       },
       {
         "ingredientId": "carrot",
@@ -3562,7 +4948,28 @@
       "鸡蛋",
       "便当"
     ],
-    "description": "韩式风味的经典早餐。精心烹饪，口感咸香、清淡，新手友好，快手完成。"
+    "description": "韩料里的下饭好手。以鸡蛋配胡萝卜为主料，大火爆炒，锅气十足，口味咸香、清淡，无需厨艺基础。",
+    "dishRole": "main_veg",
+    "isVegetarian": true,
+    "dishStyle": "egg",
+    "stapleCategory": null,
+    "perServing": {
+      "calories": 245,
+      "protein": 14.2,
+      "fat": 16.2,
+      "carbs": 12.2,
+      "fiber": 3.2,
+      "sodium": 195,
+      "sugar": 6.1
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_egg"
+    ],
+    "dietaryFlags": []
   },
   {
     "id": "korean_doenjang_stew",
@@ -3600,8 +5007,8 @@
       },
       {
         "ingredientId": "garlic",
-        "amount": 2,
-        "unit": "piece"
+        "amount": 10,
+        "unit": "g"
       },
       {
         "ingredientId": "mushroom",
@@ -3610,8 +5017,8 @@
       },
       {
         "ingredientId": "spring_onion",
-        "amount": 1,
-        "unit": "piece"
+        "amount": 15,
+        "unit": "g"
       },
       {
         "ingredientId": "doubanjiang",
@@ -3630,7 +5037,32 @@
       "豆腐",
       "韩式"
     ],
-    "description": "韩式家常好味。精心烹饪，口感鲜美、咸香，新手友好，快手完成。"
+    "description": "一道滋润的韩料汤品。以豆腐配西葫芦为主料，久熬出鲜，汤色清亮，口味鲜美、咸香，暖胃又养生。",
+    "dishRole": "soup",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": null,
+    "cookingMethod": "soup",
+    "perServing": {
+      "calories": 154,
+      "protein": 11.9,
+      "fat": 5.5,
+      "carbs": 18.1,
+      "fiber": 3.7,
+      "sodium": 442,
+      "sugar": 8.2
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "low_fat",
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_soy"
+    ],
+    "dietaryFlags": [
+      "high_purine"
+    ]
   },
   {
     "id": "korean_chicken_stir_fry",
@@ -3689,8 +5121,8 @@
       },
       {
         "ingredientId": "garlic",
-        "amount": 3,
-        "unit": "piece"
+        "amount": 15,
+        "unit": "g"
       },
       {
         "ingredientId": "cooking_oil",
@@ -3710,7 +5142,32 @@
       "鸡肉",
       "韩式"
     ],
-    "description": "韩式家常好味。精心烹饪，口感香辣、甘甜、咸香，适合晚餐享用。"
+    "description": "韩料经典家常做法。以鸡腿肉配红薯为主料，翻炒收汁，锅气十足，口味香辣、甘甜、咸香，步骤清晰、易上手。",
+    "dishRole": "main_meat",
+    "isVegetarian": false,
+    "dishStyle": "meat",
+    "stapleCategory": null,
+    "perServing": {
+      "calories": 457,
+      "protein": 38.3,
+      "fat": 20,
+      "carbs": 29.6,
+      "fiber": 4.8,
+      "sodium": 850,
+      "sugar": 12
+    },
+    "nutritionWarnings": [
+      "high_sodium"
+    ],
+    "nutritionHighlights": [
+      "high_protein",
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_gluten",
+      "allergen_soy"
+    ],
+    "dietaryFlags": []
   },
   {
     "id": "korean_army_stew",
@@ -3754,8 +5211,8 @@
       },
       {
         "ingredientId": "spring_onion",
-        "amount": 2,
-        "unit": "piece"
+        "amount": 30,
+        "unit": "g"
       },
       {
         "ingredientId": "doubanjiang",
@@ -3764,8 +5221,8 @@
       },
       {
         "ingredientId": "garlic",
-        "amount": 2,
-        "unit": "piece"
+        "amount": 10,
+        "unit": "g"
       }
     ],
     "steps": [
@@ -3780,7 +5237,34 @@
       "韩式",
       "冬季"
     ],
-    "description": "韩式家常好味。精心烹饪，口感香辣、鲜美、咸香，适合晚餐享用。"
+    "description": "韩料里的下饭好手。以豆腐配挂面为主料，旺火快炒，爽脆入味，口味香辣、鲜美、咸香，一次成功的家常菜。",
+    "dishRole": "main_veg",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": null,
+    "perServing": {
+      "calories": 227,
+      "protein": 12.9,
+      "fat": 7.5,
+      "carbs": 28.5,
+      "fiber": 1.8,
+      "sodium": 441,
+      "sugar": 2
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "low_fat",
+      "low_calorie",
+      "high_protein"
+    ],
+    "allergens": [
+      "allergen_dairy",
+      "allergen_gluten",
+      "allergen_soy"
+    ],
+    "dietaryFlags": [
+      "high_purine"
+    ]
   },
   {
     "id": "korean_chicken_soup",
@@ -3813,8 +5297,8 @@
       },
       {
         "ingredientId": "garlic",
-        "amount": 5,
-        "unit": "piece"
+        "amount": 25,
+        "unit": "g"
       },
       {
         "ingredientId": "ginger",
@@ -3823,8 +5307,8 @@
       },
       {
         "ingredientId": "spring_onion",
-        "amount": 2,
-        "unit": "piece"
+        "amount": 30,
+        "unit": "g"
       }
     ],
     "steps": [
@@ -3839,7 +5323,28 @@
       "鸡肉",
       "滋补"
     ],
-    "description": "韩式家常好味。精心烹饪，口感鲜美、清淡，适合晚餐享用。"
+    "description": "韩料餐桌上的暖心汤。以鸡腿肉配大米为主料，文火慢煨，鲜美滋补，口味鲜美、清淡，与主食搭配相得益彰。",
+    "dishRole": "soup",
+    "isVegetarian": false,
+    "dishStyle": "meat",
+    "stapleCategory": null,
+    "cookingMethod": "soup",
+    "perServing": {
+      "calories": 342,
+      "protein": 36.4,
+      "fat": 14.7,
+      "carbs": 13.7,
+      "fiber": 0.7,
+      "sodium": 116,
+      "sugar": 0.4
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "high_protein",
+      "low_calorie"
+    ],
+    "allergens": [],
+    "dietaryFlags": []
   },
   {
     "id": "korean_beef_soup",
@@ -3872,13 +5377,13 @@
       },
       {
         "ingredientId": "spring_onion",
-        "amount": 2,
-        "unit": "piece"
+        "amount": 30,
+        "unit": "g"
       },
       {
         "ingredientId": "garlic",
-        "amount": 3,
-        "unit": "piece"
+        "amount": 15,
+        "unit": "g"
       },
       {
         "ingredientId": "soy_sauce",
@@ -3902,7 +5407,34 @@
       "牛肉",
       "韩式"
     ],
-    "description": "韩式家常好味。精心烹饪，口感鲜美、咸香，操作简便，零失败。"
+    "description": "一道滋润的韩料汤品。以牛里脊配胡萝卜为主料，高汤吊味，暖胃润喉，口味鲜美、咸香，一碗下肚，四季皆宜。",
+    "dishRole": "soup",
+    "isVegetarian": false,
+    "dishStyle": "meat",
+    "stapleCategory": null,
+    "cookingMethod": "soup",
+    "perServing": {
+      "calories": 263,
+      "protein": 19.3,
+      "fat": 14,
+      "carbs": 15.9,
+      "fiber": 4.1,
+      "sodium": 323,
+      "sugar": 6.6
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "high_protein",
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_gluten",
+      "allergen_sesame",
+      "allergen_soy"
+    ],
+    "dietaryFlags": [
+      "high_purine"
+    ]
   },
   {
     "id": "thai_green_curry",
@@ -3941,8 +5473,8 @@
       },
       {
         "ingredientId": "garlic",
-        "amount": 3,
-        "unit": "piece"
+        "amount": 15,
+        "unit": "g"
       },
       {
         "ingredientId": "ginger",
@@ -3977,7 +5509,27 @@
       "泰式",
       "鸡肉"
     ],
-    "description": "东南亚风味家常好味。精心烹饪，口感香辣、鲜美、甘甜，适合晚餐享用。"
+    "description": "东南亚菜里的下饭好手。以鸡腿肉配茄子为主料，旺火快炒，火候恰到好处，口味香辣、鲜美、甘甜，步骤清晰、易上手。",
+    "dishRole": "main_meat",
+    "isVegetarian": false,
+    "dishStyle": "meat",
+    "stapleCategory": null,
+    "perServing": {
+      "calories": 437,
+      "protein": 30.4,
+      "fat": 16.6,
+      "carbs": 39.9,
+      "fiber": 4,
+      "sodium": 90,
+      "sugar": 6.9
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "high_protein",
+      "low_calorie"
+    ],
+    "allergens": [],
+    "dietaryFlags": []
   },
   {
     "id": "thai_pad_thai",
@@ -4017,8 +5569,8 @@
       },
       {
         "ingredientId": "spring_onion",
-        "amount": 2,
-        "unit": "piece"
+        "amount": 30,
+        "unit": "g"
       },
       {
         "ingredientId": "sugar",
@@ -4053,7 +5605,38 @@
       "泰式",
       "经典"
     ],
-    "description": "东南亚风味宴客名菜。精心烹饪，口感酸爽、甘甜、咸香，工序讲究，宴请体面。"
+    "description": "东南亚菜里的饱腹主食。以虾配鸡蛋为主料，翻炒收汁，锅气十足，口味酸爽、甘甜、咸香，一碗顶饱。",
+    "dishRole": "staple",
+    "isVegetarian": false,
+    "dishStyle": "meat",
+    "stapleCategory": "noodles",
+    "cookingMethod": "staple",
+    "perServing": {
+      "calories": 552,
+      "protein": 20.8,
+      "fat": 10.1,
+      "carbs": 92.7,
+      "fiber": 2.1,
+      "sodium": 546,
+      "sugar": 8.5
+    },
+    "nutritionWarnings": [
+      "high_carb"
+    ],
+    "nutritionHighlights": [
+      "high_protein",
+      "low_calorie",
+      "low_fat"
+    ],
+    "allergens": [
+      "allergen_egg",
+      "allergen_gluten",
+      "allergen_seafood",
+      "allergen_soy"
+    ],
+    "dietaryFlags": [
+      "high_purine"
+    ]
   },
   {
     "id": "thai_basil_chicken",
@@ -4074,7 +5657,7 @@
     "minCookingLevel": "beginner",
     "prepTime": 10,
     "cookTime": 10,
-    "servings": 2,
+    "servings": 4,
     "ingredients": [
       {
         "ingredientId": "chicken_breast",
@@ -4083,8 +5666,8 @@
       },
       {
         "ingredientId": "garlic",
-        "amount": 4,
-        "unit": "piece"
+        "amount": 20,
+        "unit": "g"
       },
       {
         "ingredientId": "onion",
@@ -4139,7 +5722,33 @@
       "鸡肉",
       "泰式"
     ],
-    "description": "东南亚风味家常好味。精心烹饪，口感香辣、咸香、鲜美，新手友好，快手完成。"
+    "description": "深受欢迎的东南亚菜代表作。以鸡胸肉配食用油为主料，旺火快炒，爽脆入味，口味香辣、咸香、鲜美，家常操作、零失败。",
+    "dishRole": "main_meat",
+    "isVegetarian": false,
+    "dishStyle": "meat",
+    "stapleCategory": null,
+    "perServing": {
+      "calories": 324,
+      "protein": 26.4,
+      "fat": 9.2,
+      "carbs": 32.3,
+      "fiber": 2.3,
+      "sodium": 357,
+      "sugar": 5.9
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "high_protein",
+      "low_fat",
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_egg",
+      "allergen_gluten",
+      "allergen_seafood",
+      "allergen_soy"
+    ],
+    "dietaryFlags": []
   },
   {
     "id": "thai_tom_yum_soup",
@@ -4183,8 +5792,8 @@
       },
       {
         "ingredientId": "garlic",
-        "amount": 3,
-        "unit": "piece"
+        "amount": 15,
+        "unit": "g"
       },
       {
         "ingredientId": "sugar",
@@ -4193,8 +5802,8 @@
       },
       {
         "ingredientId": "spring_onion",
-        "amount": 2,
-        "unit": "piece"
+        "amount": 30,
+        "unit": "g"
       }
     ],
     "steps": [
@@ -4209,7 +5818,33 @@
       "泰式",
       "虾"
     ],
-    "description": "东南亚风味家常好味。精心烹饪，口感酸爽、香辣、鲜美，适合晚餐享用。"
+    "description": "家常喝汤首选。以虾配蘑菇为主料，文火慢煨，鲜美滋补，口味酸爽、香辣、鲜美，与主食搭配相得益彰。",
+    "dishRole": "soup",
+    "isVegetarian": false,
+    "dishStyle": "meat",
+    "stapleCategory": null,
+    "cookingMethod": "soup",
+    "perServing": {
+      "calories": 110,
+      "protein": 16.2,
+      "fat": 0.8,
+      "carbs": 11.7,
+      "fiber": 2.4,
+      "sodium": 91,
+      "sugar": 6.2
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "low_fat",
+      "low_calorie",
+      "high_protein"
+    ],
+    "allergens": [
+      "allergen_seafood"
+    ],
+    "dietaryFlags": [
+      "high_purine"
+    ]
   },
   {
     "id": "thai_fried_rice",
@@ -4229,7 +5864,7 @@
     "minCookingLevel": "beginner",
     "prepTime": 10,
     "cookTime": 10,
-    "servings": 2,
+    "servings": 3,
     "ingredients": [
       {
         "ingredientId": "rice",
@@ -4253,8 +5888,8 @@
       },
       {
         "ingredientId": "garlic",
-        "amount": 3,
-        "unit": "piece"
+        "amount": 15,
+        "unit": "g"
       },
       {
         "ingredientId": "soy_sauce",
@@ -4279,7 +5914,36 @@
       "虾",
       "泰式"
     ],
-    "description": "东南亚风味家常好味。精心烹饪，口感咸香、鲜美，新手友好，快手完成。"
+    "description": "东南亚菜里的饱腹主食。以大米配虾为主料，精心烹制，主食丰足，口味咸香、鲜美，一碗顶饱。",
+    "dishRole": "staple",
+    "isVegetarian": false,
+    "dishStyle": "meat",
+    "stapleCategory": "rice",
+    "cookingMethod": "staple",
+    "perServing": {
+      "calories": 312,
+      "protein": 16.1,
+      "fat": 6.8,
+      "carbs": 45.9,
+      "fiber": 1.8,
+      "sodium": 361,
+      "sugar": 3.2
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "low_fat",
+      "high_protein",
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_egg",
+      "allergen_gluten",
+      "allergen_seafood",
+      "allergen_soy"
+    ],
+    "dietaryFlags": [
+      "high_purine"
+    ]
   },
   {
     "id": "thai_mango_salad",
@@ -4343,7 +6007,38 @@
       "泰式",
       "酸辣"
     ],
-    "description": "东南亚风味家常好味。精心烹饪，口感酸爽、香辣、甘甜，操作简便，零失败。"
+    "description": "东南亚菜凉拌代表作。以苹果配胡萝卜为主料，调味凉拌，清凉解腻，口味酸爽、香辣、甘甜，开胃又解腻。",
+    "dishRole": "cold",
+    "isVegetarian": false,
+    "dishStyle": "meat",
+    "stapleCategory": null,
+    "cookingMethod": "cold_dish",
+    "perServing": {
+      "calories": 176,
+      "protein": 9.8,
+      "fat": 0.7,
+      "carbs": 36.4,
+      "fiber": 6.4,
+      "sodium": 393,
+      "sugar": 24.8
+    },
+    "nutritionWarnings": [
+      "high_sugar"
+    ],
+    "nutritionHighlights": [
+      "high_fiber",
+      "low_fat",
+      "low_calorie",
+      "high_protein"
+    ],
+    "allergens": [
+      "allergen_gluten",
+      "allergen_seafood",
+      "allergen_soy"
+    ],
+    "dietaryFlags": [
+      "high_purine"
+    ]
   },
   {
     "id": "thai_peanut_noodle",
@@ -4412,7 +6107,35 @@
       "泰式",
       "快手餐"
     ],
-    "description": "东南亚风味家常好味。精心烹饪，口感咸香、甘甜、香辣，新手友好，快手完成。"
+    "description": "东南亚菜特色主食。以挂面配黄瓜为主料，旺火快炒，爽脆入味，口味咸香、甘甜、香辣，吃了就停不下来。",
+    "dishRole": "staple",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": "noodles",
+    "cookingMethod": "staple",
+    "perServing": {
+      "calories": 455,
+      "protein": 14.4,
+      "fat": 4.3,
+      "carbs": 91.1,
+      "fiber": 6.4,
+      "sodium": 625,
+      "sugar": 13.5
+    },
+    "nutritionWarnings": [
+      "high_carb"
+    ],
+    "nutritionHighlights": [
+      "high_fiber",
+      "low_fat",
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_gluten",
+      "allergen_sesame",
+      "allergen_soy"
+    ],
+    "dietaryFlags": []
   },
   {
     "id": "vietnamese_pho",
@@ -4456,8 +6179,8 @@
       },
       {
         "ingredientId": "spring_onion",
-        "amount": 3,
-        "unit": "piece"
+        "amount": 45,
+        "unit": "g"
       },
       {
         "ingredientId": "soy_sauce",
@@ -4478,7 +6201,33 @@
       "越南",
       "牛肉"
     ],
-    "description": "东南亚风味宴客名菜。精心烹饪，口感鲜美、清淡，工序讲究，宴请体面。"
+    "description": "东南亚菜里的饱腹主食。以牛里脊为主料，旺火快炒，火候恰到好处，口味鲜美、清淡，一碗顶饱。",
+    "dishRole": "staple",
+    "isVegetarian": false,
+    "dishStyle": "meat",
+    "stapleCategory": "noodles",
+    "cookingMethod": "staple",
+    "perServing": {
+      "calories": 552,
+      "protein": 29.7,
+      "fat": 18.6,
+      "carbs": 64.6,
+      "fiber": 2.8,
+      "sodium": 250,
+      "sugar": 3.3
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "high_protein",
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_gluten",
+      "allergen_soy"
+    ],
+    "dietaryFlags": [
+      "high_purine"
+    ]
   },
   {
     "id": "vietnamese_spring_rolls",
@@ -4547,7 +6296,34 @@
       "越南",
       "免煮"
     ],
-    "description": "东南亚风味家常好味。精心烹饪，口感清淡、酸爽，新手友好，快手完成。"
+    "description": "东南亚菜里的下饭好手。以虾配黄瓜为主料，旺火快炒，火候恰到好处，口味清淡、酸爽，家常操作、零失败。",
+    "dishRole": "main_meat",
+    "isVegetarian": false,
+    "dishStyle": "meat",
+    "stapleCategory": null,
+    "perServing": {
+      "calories": 203,
+      "protein": 12.9,
+      "fat": 0.7,
+      "carbs": 37.2,
+      "fiber": 3.7,
+      "sodium": 408,
+      "sugar": 8.9
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "low_fat",
+      "low_calorie",
+      "high_protein"
+    ],
+    "allergens": [
+      "allergen_gluten",
+      "allergen_seafood",
+      "allergen_soy"
+    ],
+    "dietaryFlags": [
+      "high_purine"
+    ]
   },
   {
     "id": "vietnamese_banh_mi",
@@ -4617,7 +6393,33 @@
       "越南",
       "猪肉"
     ],
-    "description": "东南亚风味家常好味。精心烹饪，口感酸爽、咸香、香辣，适合午餐享用。"
+    "description": "东南亚菜特色主食。以面包配五花肉为主料，大火爆炒，火候恰到好处，口味酸爽、咸香、香辣，吃了就停不下来。",
+    "dishRole": "staple",
+    "isVegetarian": false,
+    "dishStyle": "meat",
+    "stapleCategory": "bread",
+    "perServing": {
+      "calories": 734,
+      "protein": 18,
+      "fat": 43.3,
+      "carbs": 67.9,
+      "fiber": 6,
+      "sodium": 861,
+      "sugar": 16.5
+    },
+    "nutritionWarnings": [
+      "high_sodium",
+      "high_fat"
+    ],
+    "nutritionHighlights": [
+      "high_fiber",
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_gluten",
+      "allergen_soy"
+    ],
+    "dietaryFlags": []
   },
   {
     "id": "thai_coconut_soup",
@@ -4656,8 +6458,8 @@
       },
       {
         "ingredientId": "garlic",
-        "amount": 3,
-        "unit": "piece"
+        "amount": 15,
+        "unit": "g"
       },
       {
         "ingredientId": "milk",
@@ -4666,8 +6468,8 @@
       },
       {
         "ingredientId": "spring_onion",
-        "amount": 2,
-        "unit": "piece"
+        "amount": 30,
+        "unit": "g"
       },
       {
         "ingredientId": "sugar",
@@ -4687,7 +6489,33 @@
       "泰式",
       "椰香"
     ],
-    "description": "东南亚风味家常好味。精心烹饪，口感鲜美、香辣、甘甜，适合晚餐享用。"
+    "description": "东南亚菜中的经典汤羹。以鸡胸肉配蘑菇为主料，文火慢煨，暖胃润喉，口味鲜美、香辣、甘甜，暖胃又养生。",
+    "dishRole": "soup",
+    "isVegetarian": false,
+    "dishStyle": "meat",
+    "stapleCategory": null,
+    "cookingMethod": "soup",
+    "perServing": {
+      "calories": 194,
+      "protein": 29.7,
+      "fat": 3.9,
+      "carbs": 9.4,
+      "fiber": 0.8,
+      "sodium": 96,
+      "sugar": 6
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "high_protein",
+      "low_fat",
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_dairy"
+    ],
+    "dietaryFlags": [
+      "high_purine"
+    ]
   },
   {
     "id": "thai_stir_fry_pork",
@@ -4706,7 +6534,7 @@
     "minCookingLevel": "basic",
     "prepTime": 10,
     "cookTime": 8,
-    "servings": 2,
+    "servings": 4,
     "ingredients": [
       {
         "ingredientId": "pork_belly",
@@ -4715,8 +6543,8 @@
       },
       {
         "ingredientId": "garlic",
-        "amount": 5,
-        "unit": "piece"
+        "amount": 25,
+        "unit": "g"
       },
       {
         "ingredientId": "soy_sauce",
@@ -4756,7 +6584,28 @@
       "猪肉",
       "泰式"
     ],
-    "description": "东南亚风味家常好味。精心烹饪，口感咸香、鲜美，适合晚餐享用。"
+    "description": "东南亚菜经典家常做法。以五花肉配食用油为主料，大火爆炒，火候恰到好处，口味咸香、鲜美，家常做法、人人可学。",
+    "dishRole": "main_meat",
+    "isVegetarian": false,
+    "dishStyle": "meat",
+    "stapleCategory": null,
+    "perServing": {
+      "calories": 407,
+      "protein": 7.4,
+      "fat": 30.5,
+      "carbs": 24.8,
+      "fiber": 0.5,
+      "sodium": 292,
+      "sugar": 1.4
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [],
+    "allergens": [
+      "allergen_gluten",
+      "allergen_seafood",
+      "allergen_soy"
+    ],
+    "dietaryFlags": []
   },
   {
     "id": "thai_satay_chicken",
@@ -4795,8 +6644,8 @@
       },
       {
         "ingredientId": "garlic",
-        "amount": 3,
-        "unit": "piece"
+        "amount": 15,
+        "unit": "g"
       },
       {
         "ingredientId": "ginger",
@@ -4821,7 +6670,29 @@
       "鸡肉",
       "泰式"
     ],
-    "description": "东南亚风味家常好味。精心烹饪，口感甘甜、咸香、香辣，适合晚餐享用。"
+    "description": "深受欢迎的东南亚菜代表作。以鸡腿肉配食用油为主料，大火爆炒，火候恰到好处，口味甘甜、咸香、香辣，家常做法、人人可学。",
+    "dishRole": "main_meat",
+    "isVegetarian": false,
+    "dishStyle": "meat",
+    "stapleCategory": null,
+    "perServing": {
+      "calories": 334,
+      "protein": 35.4,
+      "fat": 17.9,
+      "carbs": 5.8,
+      "fiber": 0.2,
+      "sodium": 388,
+      "sugar": 3.5
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "high_protein"
+    ],
+    "allergens": [
+      "allergen_gluten",
+      "allergen_soy"
+    ],
+    "dietaryFlags": []
   },
   {
     "id": "southeast_asian_nasi_goreng",
@@ -4842,7 +6713,7 @@
     "minCookingLevel": "beginner",
     "prepTime": 10,
     "cookTime": 10,
-    "servings": 2,
+    "servings": 3,
     "ingredients": [
       {
         "ingredientId": "rice",
@@ -4861,8 +6732,8 @@
       },
       {
         "ingredientId": "garlic",
-        "amount": 3,
-        "unit": "piece"
+        "amount": 15,
+        "unit": "g"
       },
       {
         "ingredientId": "soy_sauce",
@@ -4881,8 +6752,8 @@
       },
       {
         "ingredientId": "spring_onion",
-        "amount": 2,
-        "unit": "piece"
+        "amount": 30,
+        "unit": "g"
       }
     ],
     "steps": [
@@ -4897,7 +6768,33 @@
       "印尼",
       "经典"
     ],
-    "description": "东南亚风味家常好味。精心烹饪，口感甘甜、咸香、鲜美，新手友好，快手完成。"
+    "description": "东南亚菜特色主食。以大米配鸡胸肉为主料，层次铺陈，饱腹实在，口味甘甜、咸香、鲜美，吃了就停不下来。",
+    "dishRole": "staple",
+    "isVegetarian": false,
+    "dishStyle": "meat",
+    "stapleCategory": "rice",
+    "cookingMethod": "staple",
+    "perServing": {
+      "calories": 350,
+      "protein": 24.5,
+      "fat": 8.4,
+      "carbs": 42.1,
+      "fiber": 1,
+      "sodium": 448,
+      "sugar": 2.3
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "low_fat",
+      "high_protein",
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_egg",
+      "allergen_gluten",
+      "allergen_soy"
+    ],
+    "dietaryFlags": []
   },
   {
     "id": "southeast_asian_laksa",
@@ -4937,8 +6834,8 @@
       },
       {
         "ingredientId": "garlic",
-        "amount": 3,
-        "unit": "piece"
+        "amount": 15,
+        "unit": "g"
       },
       {
         "ingredientId": "ginger",
@@ -4968,7 +6865,34 @@
       "叻沙",
       "东南亚"
     ],
-    "description": "东南亚风味宴客名菜。精心烹饪，口感香辣、鲜美、咸香，工序讲究，宴请体面。"
+    "description": "东南亚菜特色主食。以虾配豆腐为主料，翻炒收汁，爽脆入味，口味香辣、鲜美、咸香，吃了就停不下来。",
+    "dishRole": "staple",
+    "isVegetarian": false,
+    "dishStyle": "meat",
+    "stapleCategory": "noodles",
+    "cookingMethod": "staple",
+    "perServing": {
+      "calories": 369,
+      "protein": 17.6,
+      "fat": 5.5,
+      "carbs": 62,
+      "fiber": 1.4,
+      "sodium": 99,
+      "sugar": 3.7
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "low_fat",
+      "high_protein"
+    ],
+    "allergens": [
+      "allergen_dairy",
+      "allergen_seafood",
+      "allergen_soy"
+    ],
+    "dietaryFlags": [
+      "high_purine"
+    ]
   },
   {
     "id": "southeast_asian_mee_goreng",
@@ -4989,7 +6913,7 @@
     "minCookingLevel": "beginner",
     "prepTime": 10,
     "cookTime": 10,
-    "servings": 2,
+    "servings": 3,
     "ingredients": [
       {
         "ingredientId": "noodles_dried",
@@ -5013,8 +6937,8 @@
       },
       {
         "ingredientId": "garlic",
-        "amount": 3,
-        "unit": "piece"
+        "amount": 15,
+        "unit": "g"
       },
       {
         "ingredientId": "soy_sauce",
@@ -5044,7 +6968,36 @@
       "马来",
       "快手餐"
     ],
-    "description": "东南亚风味家常好味。精心烹饪，口感香辣、甘甜、咸香，新手友好，快手完成。"
+    "description": "东南亚菜餐桌必备主食。以挂面配虾为主料，旺火快炒，火候恰到好处，口味香辣、甘甜、咸香，简单一顿就满足。",
+    "dishRole": "staple",
+    "isVegetarian": false,
+    "dishStyle": "meat",
+    "stapleCategory": "noodles",
+    "cookingMethod": "staple",
+    "perServing": {
+      "calories": 352,
+      "protein": 19,
+      "fat": 7.4,
+      "carbs": 52.8,
+      "fiber": 2.5,
+      "sodium": 465,
+      "sugar": 3.8
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "low_fat",
+      "high_protein",
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_egg",
+      "allergen_gluten",
+      "allergen_seafood",
+      "allergen_soy"
+    ],
+    "dietaryFlags": [
+      "high_purine"
+    ]
   },
   {
     "id": "southeast_asian_gado_gado",
@@ -5112,7 +7065,33 @@
       "印尼",
       "蔬菜"
     ],
-    "description": "东南亚风味家常好味。精心烹饪，口感咸香、甘甜，新手友好，快手完成。"
+    "description": "东南亚菜里的清爽凉菜。以土豆配四季豆为主料，冰镇拌制，爽口开胃，口味咸香、甘甜，开胃又解腻。",
+    "dishRole": "cold",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": null,
+    "cookingMethod": "cold_dish",
+    "perServing": {
+      "calories": 324,
+      "protein": 16.7,
+      "fat": 8.3,
+      "carbs": 48,
+      "fiber": 6.8,
+      "sodium": 495,
+      "sugar": 9.9
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "high_fiber",
+      "low_fat",
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_egg",
+      "allergen_gluten",
+      "allergen_soy"
+    ],
+    "dietaryFlags": []
   },
   {
     "id": "southeast_asian_lemongrass_chicken",
@@ -5132,7 +7111,7 @@
     "minCookingLevel": "basic",
     "prepTime": 15,
     "cookTime": 15,
-    "servings": 2,
+    "servings": 3,
     "ingredients": [
       {
         "ingredientId": "chicken_thigh",
@@ -5146,8 +7125,8 @@
       },
       {
         "ingredientId": "garlic",
-        "amount": 3,
-        "unit": "piece"
+        "amount": 15,
+        "unit": "g"
       },
       {
         "ingredientId": "soy_sauce",
@@ -5166,8 +7145,8 @@
       },
       {
         "ingredientId": "spring_onion",
-        "amount": 2,
-        "unit": "piece"
+        "amount": 30,
+        "unit": "g"
       }
     ],
     "steps": [
@@ -5182,7 +7161,30 @@
       "东南亚",
       "香茅"
     ],
-    "description": "东南亚风味家常好味。精心烹饪，口感咸香、鲜美、清淡，适合晚餐享用。"
+    "description": "深受欢迎的东南亚菜代表作。以鸡腿肉配食用油为主料，旺火快炒，爽脆入味，口味咸香、鲜美、清淡，一次成功的家常菜。",
+    "dishRole": "main_meat",
+    "isVegetarian": false,
+    "dishStyle": "meat",
+    "stapleCategory": null,
+    "perServing": {
+      "calories": 283,
+      "protein": 27,
+      "fat": 16,
+      "carbs": 6.9,
+      "fiber": 0.5,
+      "sodium": 362,
+      "sugar": 3.7
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "high_protein",
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_gluten",
+      "allergen_soy"
+    ],
+    "dietaryFlags": []
   },
   {
     "id": "western_banana_smoothie_bowl",
@@ -5229,7 +7231,31 @@
       "奶昔",
       "健康"
     ],
-    "description": "美式风味的经典早餐。精心烹饪，口感甘甜、清淡，操作简便，零失败。"
+    "description": "美式家庭餐桌常客。以香蕉配牛奶为主料，大火爆炒，锅气十足，口味甘甜、清淡，无需厨艺基础。",
+    "dishRole": "main_veg",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": null,
+    "perServing": {
+      "calories": 204,
+      "protein": 4.4,
+      "fat": 1.4,
+      "carbs": 48.8,
+      "fiber": 5.7,
+      "sodium": 35,
+      "sugar": 29.3
+    },
+    "nutritionWarnings": [
+      "high_sugar"
+    ],
+    "nutritionHighlights": [
+      "low_fat",
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_dairy"
+    ],
+    "dietaryFlags": []
   },
   {
     "id": "western_avocado_toast_style",
@@ -5287,7 +7313,32 @@
       "开放三明治",
       "健康"
     ],
-    "description": "美式风味的经典早餐。精心烹饪，口感咸香、清淡，新手友好，快手完成。"
+    "description": "美式特色主食。以面包配鸡蛋为主料，大火爆炒，锅气十足，口味咸香、清淡，吃了就停不下来。",
+    "dishRole": "staple",
+    "isVegetarian": true,
+    "dishStyle": "egg",
+    "stapleCategory": "bread",
+    "perServing": {
+      "calories": 201,
+      "protein": 10.5,
+      "fat": 9.2,
+      "carbs": 19.7,
+      "fiber": 2.3,
+      "sodium": 226,
+      "sugar": 4.7
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "low_fat",
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_egg",
+      "allergen_gluten"
+    ],
+    "dietaryFlags": [
+      "high_purine"
+    ]
   },
   {
     "id": "french_cheese_souffle",
@@ -5342,7 +7393,29 @@
       "芝士",
       "法式"
     ],
-    "description": "法式宴客名菜。精心烹饪，口感咸香、鲜美，工序讲究，宴请体面。"
+    "description": "深受欢迎的法式代表作。以鸡蛋配奶酪为主料，旺火快炒，火候恰到好处，口味咸香、鲜美，工艺讲究，宴客撑场。",
+    "dishRole": "main_veg",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": null,
+    "perServing": {
+      "calories": 375,
+      "protein": 24.7,
+      "fat": 24.7,
+      "carbs": 13.2,
+      "fiber": 0.1,
+      "sodium": 395,
+      "sugar": 3.8
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "high_protein"
+    ],
+    "allergens": [
+      "allergen_dairy",
+      "allergen_egg"
+    ],
+    "dietaryFlags": []
   },
   {
     "id": "american_bbq_pork_ribs",
@@ -5362,7 +7435,7 @@
     "minCookingLevel": "advanced",
     "prepTime": 15,
     "cookTime": 60,
-    "servings": 4,
+    "servings": 6,
     "ingredients": [
       {
         "ingredientId": "pork_belly",
@@ -5386,8 +7459,8 @@
       },
       {
         "ingredientId": "garlic",
-        "amount": 4,
-        "unit": "piece"
+        "amount": 20,
+        "unit": "g"
       },
       {
         "ingredientId": "ginger",
@@ -5406,7 +7479,30 @@
       "猪肉",
       "烤箱菜"
     ],
-    "description": "美式宴客名菜。精心烹饪，口感甘甜、咸香、香辣，工序讲究，宴请体面。"
+    "description": "美式里的传统味道。以五花肉为主料，旺火快炒，爽脆入味，口味甘甜、咸香、香辣，细节到位，味道地道。",
+    "dishRole": "main_meat",
+    "isVegetarian": false,
+    "dishStyle": "meat",
+    "stapleCategory": null,
+    "cookingMethod": "roast",
+    "perServing": {
+      "calories": 540,
+      "protein": 9.9,
+      "fat": 53,
+      "carbs": 5,
+      "fiber": 0.1,
+      "sodium": 308,
+      "sugar": 3.4
+    },
+    "nutritionWarnings": [
+      "high_fat"
+    ],
+    "nutritionHighlights": [],
+    "allergens": [
+      "allergen_gluten",
+      "allergen_soy"
+    ],
+    "dietaryFlags": []
   },
   {
     "id": "italian_frittata",
@@ -5471,7 +7567,30 @@
       "鸡蛋",
       "烤箱菜"
     ],
-    "description": "意式风味的经典早餐。精心烹饪，口感咸香、鲜美，新手友好，快手完成。"
+    "description": "深受欢迎的意式代表作。以鸡蛋配土豆为主料，大火爆炒，锅气十足，口味咸香、鲜美，家常操作、零失败。",
+    "dishRole": "main_veg",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": null,
+    "perServing": {
+      "calories": 351,
+      "protein": 19.1,
+      "fat": 20.7,
+      "carbs": 22.8,
+      "fiber": 4,
+      "sodium": 216,
+      "sugar": 7.3
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "high_protein",
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_dairy",
+      "allergen_egg"
+    ],
+    "dietaryFlags": []
   },
   {
     "id": "american_beef_stir_fry",
@@ -5509,8 +7628,8 @@
       },
       {
         "ingredientId": "garlic",
-        "amount": 2,
-        "unit": "piece"
+        "amount": 10,
+        "unit": "g"
       },
       {
         "ingredientId": "soy_sauce",
@@ -5539,7 +7658,32 @@
       "快手餐",
       "黑椒"
     ],
-    "description": "美式家常好味。精心烹饪，口感香辣、咸香，适合晚餐享用。"
+    "description": "深受欢迎的美式代表作。以牛里脊配食用油为主料，翻炒收汁，锅气十足，口味香辣、咸香，步骤清晰、易上手。",
+    "dishRole": "main_meat",
+    "isVegetarian": false,
+    "dishStyle": "meat",
+    "stapleCategory": null,
+    "perServing": {
+      "calories": 507,
+      "protein": 35.5,
+      "fat": 30.4,
+      "carbs": 21.9,
+      "fiber": 4,
+      "sodium": 489,
+      "sugar": 8.5
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "high_protein",
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_gluten",
+      "allergen_soy"
+    ],
+    "dietaryFlags": [
+      "high_purine"
+    ]
   },
   {
     "id": "french_mushroom_soup",
@@ -5573,8 +7717,8 @@
       },
       {
         "ingredientId": "garlic",
-        "amount": 2,
-        "unit": "piece"
+        "amount": 10,
+        "unit": "g"
       },
       {
         "ingredientId": "milk",
@@ -5599,7 +7743,32 @@
       "蘑菇",
       "奶油"
     ],
-    "description": "法式家常好味。精心烹饪，口感鲜美、咸香，适合午餐/晚餐享用。"
+    "description": "家常喝汤首选。以蘑菇配牛奶为主料，高汤吊味，暖胃润喉，口味鲜美、咸香，一碗下肚，四季皆宜。",
+    "dishRole": "soup",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": null,
+    "cookingMethod": "soup",
+    "perServing": {
+      "calories": 115,
+      "protein": 5.2,
+      "fat": 5.8,
+      "carbs": 12.6,
+      "fiber": 2,
+      "sodium": 29,
+      "sugar": 7
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "low_fat",
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_dairy"
+    ],
+    "dietaryFlags": [
+      "high_purine"
+    ]
   },
   {
     "id": "japanese_yakitori",
@@ -5627,8 +7796,8 @@
       },
       {
         "ingredientId": "spring_onion",
-        "amount": 3,
-        "unit": "piece"
+        "amount": 45,
+        "unit": "g"
       },
       {
         "ingredientId": "soy_sauce",
@@ -5657,7 +7826,30 @@
       "鸡肉",
       "日式"
     ],
-    "description": "日式家常好味。精心烹饪，口感甘甜、咸香，新手友好，快手完成。"
+    "description": "日料经典家常做法。以鸡腿肉为主料，翻炒收汁，爽脆入味，口味甘甜、咸香，无需厨艺基础。",
+    "dishRole": "main_meat",
+    "isVegetarian": false,
+    "dishStyle": "meat",
+    "stapleCategory": null,
+    "perServing": {
+      "calories": 350,
+      "protein": 40.3,
+      "fat": 16.4,
+      "carbs": 7.4,
+      "fiber": 0.7,
+      "sodium": 681,
+      "sugar": 5.7
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "high_protein",
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_gluten",
+      "allergen_soy"
+    ],
+    "dietaryFlags": []
   },
   {
     "id": "thai_red_curry_shrimp",
@@ -5691,8 +7883,8 @@
       },
       {
         "ingredientId": "garlic",
-        "amount": 3,
-        "unit": "piece"
+        "amount": 15,
+        "unit": "g"
       },
       {
         "ingredientId": "ginger",
@@ -5732,7 +7924,33 @@
       "虾",
       "泰式"
     ],
-    "description": "东南亚风味宴客名菜。精心烹饪，口感香辣、鲜美、甘甜，工序讲究，宴请体面。"
+    "description": "东南亚菜里的下饭好手。以虾配牛奶为主料，旺火快炒，火候恰到好处，口味香辣、鲜美、甘甜，细节到位，味道地道。",
+    "dishRole": "main_meat",
+    "isVegetarian": false,
+    "dishStyle": "meat",
+    "stapleCategory": null,
+    "perServing": {
+      "calories": 433,
+      "protein": 33.2,
+      "fat": 7.2,
+      "carbs": 57.9,
+      "fiber": 3,
+      "sodium": 189,
+      "sugar": 10.6
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "high_protein",
+      "low_fat",
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_dairy",
+      "allergen_seafood"
+    ],
+    "dietaryFlags": [
+      "high_purine"
+    ]
   },
   {
     "id": "italian_zucchini_pasta",
@@ -5752,7 +7970,7 @@
     "minCookingLevel": "beginner",
     "prepTime": 10,
     "cookTime": 15,
-    "servings": 2,
+    "servings": 3,
     "ingredients": [
       {
         "ingredientId": "pasta",
@@ -5771,8 +7989,8 @@
       },
       {
         "ingredientId": "garlic",
-        "amount": 2,
-        "unit": "piece"
+        "amount": 10,
+        "unit": "g"
       },
       {
         "ingredientId": "cooking_oil",
@@ -5797,7 +8015,31 @@
       "西葫芦",
       "快手餐"
     ],
-    "description": "意式家常好味。精心烹饪，口感咸香、鲜美，新手友好，快手完成。"
+    "description": "意式餐桌必备主食。以意面配西葫芦为主料，大火爆炒，锅气十足，口味咸香、鲜美，简单一顿就满足。",
+    "dishRole": "staple",
+    "isVegetarian": false,
+    "dishStyle": "meat",
+    "stapleCategory": "noodles",
+    "cookingMethod": "staple",
+    "perServing": {
+      "calories": 443,
+      "protein": 13.8,
+      "fat": 19.2,
+      "carbs": 53.3,
+      "fiber": 2.9,
+      "sodium": 60,
+      "sugar": 3.5
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "high_protein",
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_dairy",
+      "allergen_gluten"
+    ],
+    "dietaryFlags": []
   },
   {
     "id": "french_beef_bourguignon",
@@ -5840,8 +8082,8 @@
       },
       {
         "ingredientId": "garlic",
-        "amount": 3,
-        "unit": "piece"
+        "amount": 15,
+        "unit": "g"
       },
       {
         "ingredientId": "tomato",
@@ -5867,7 +8109,31 @@
       "牛肉",
       "宴客"
     ],
-    "description": "法式宴客名菜。精心烹饪，口感鲜美、咸香，工序讲究，宴请体面。"
+    "description": "法式里的下饭好手。以牛里脊配胡萝卜为主料，翻炒收汁，爽脆入味，口味鲜美、咸香，耐心成就美味。",
+    "dishRole": "main_meat",
+    "isVegetarian": false,
+    "dishStyle": "meat",
+    "stapleCategory": null,
+    "cookingMethod": "stew",
+    "perServing": {
+      "calories": 485,
+      "protein": 36.8,
+      "fat": 26.9,
+      "carbs": 25.7,
+      "fiber": 6.2,
+      "sodium": 148,
+      "sugar": 12.3
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "high_protein",
+      "high_fiber",
+      "low_calorie"
+    ],
+    "allergens": [],
+    "dietaryFlags": [
+      "high_purine"
+    ]
   },
   {
     "id": "french_chicken_breast_cream",
@@ -5900,8 +8166,8 @@
       },
       {
         "ingredientId": "garlic",
-        "amount": 2,
-        "unit": "piece"
+        "amount": 10,
+        "unit": "g"
       },
       {
         "ingredientId": "milk",
@@ -5926,7 +8192,32 @@
       "奶油",
       "法式"
     ],
-    "description": "法式家常好味。精心烹饪，口感鲜美、咸香，适合晚餐享用。"
+    "description": "深受欢迎的法式代表作。以鸡胸肉配蘑菇为主料，大火爆炒，火候恰到好处，口味鲜美、咸香，家常做法、人人可学。",
+    "dishRole": "main_meat",
+    "isVegetarian": false,
+    "dishStyle": "meat",
+    "stapleCategory": null,
+    "cookingMethod": "pan_fry",
+    "perServing": {
+      "calories": 353,
+      "protein": 50.1,
+      "fat": 13.6,
+      "carbs": 5.8,
+      "fiber": 0.6,
+      "sodium": 136,
+      "sugar": 3.6
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "high_protein",
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_dairy"
+    ],
+    "dietaryFlags": [
+      "high_purine"
+    ]
   },
   {
     "id": "korean_kimchi_stew",
@@ -5965,13 +8256,13 @@
       },
       {
         "ingredientId": "spring_onion",
-        "amount": 2,
-        "unit": "piece"
+        "amount": 30,
+        "unit": "g"
       },
       {
         "ingredientId": "garlic",
-        "amount": 2,
-        "unit": "piece"
+        "amount": 10,
+        "unit": "g"
       },
       {
         "ingredientId": "sesame_oil",
@@ -5991,7 +8282,29 @@
       "泡菜",
       "韩式"
     ],
-    "description": "韩式家常好味。精心烹饪，口感香辣、酸爽、鲜美，新手友好，快手完成。"
+    "description": "韩料里的下饭好手。以豆腐配五花肉为主料，旺火快炒，火候恰到好处，口味香辣、酸爽、鲜美，无需厨艺基础。",
+    "dishRole": "main_meat",
+    "isVegetarian": false,
+    "dishStyle": "meat",
+    "stapleCategory": null,
+    "perServing": {
+      "calories": 409,
+      "protein": 14.3,
+      "fat": 34,
+      "carbs": 13.9,
+      "fiber": 2.5,
+      "sodium": 30,
+      "sugar": 5.2
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_sesame",
+      "allergen_soy"
+    ],
+    "dietaryFlags": []
   },
   {
     "id": "japanese_hamburg_steak",
@@ -6066,7 +8379,35 @@
       "日式",
       "家常"
     ],
-    "description": "日式家常好味。精心烹饪，口感甘甜、鲜美、咸香，适合晚餐享用。"
+    "description": "一碗能吃饱的日料主食。以牛肉末配猪肉末为主料，旺火快炒，火候恰到好处，口味甘甜、鲜美、咸香，工作日快手午餐首选。",
+    "dishRole": "staple",
+    "isVegetarian": false,
+    "dishStyle": "meat",
+    "stapleCategory": "bread",
+    "perServing": {
+      "calories": 573,
+      "protein": 32,
+      "fat": 38.8,
+      "carbs": 22.4,
+      "fiber": 2.2,
+      "sodium": 757,
+      "sugar": 10.3
+    },
+    "nutritionWarnings": [
+      "high_fat"
+    ],
+    "nutritionHighlights": [
+      "high_protein",
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_egg",
+      "allergen_gluten",
+      "allergen_soy"
+    ],
+    "dietaryFlags": [
+      "high_purine"
+    ]
   },
   {
     "id": "thai_stir_fry_tofu",
@@ -6100,8 +8441,8 @@
       },
       {
         "ingredientId": "garlic",
-        "amount": 3,
-        "unit": "piece"
+        "amount": 15,
+        "unit": "g"
       },
       {
         "ingredientId": "soy_sauce",
@@ -6141,7 +8482,29 @@
       "豆腐",
       "泰式"
     ],
-    "description": "东南亚风味家常好味。精心烹饪，口感甘甜、香辣，新手友好，快手完成。"
+    "description": "东南亚菜里的下饭好手。以豆腐配食用油为主料，旺火快炒，爽脆入味，口味甘甜、香辣，家常操作、零失败。",
+    "dishRole": "main_veg",
+    "isVegetarian": true,
+    "dishStyle": "veg",
+    "stapleCategory": null,
+    "perServing": {
+      "calories": 306,
+      "protein": 13.9,
+      "fat": 17.5,
+      "carbs": 25.9,
+      "fiber": 2.8,
+      "sodium": 291,
+      "sugar": 12.7
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_gluten",
+      "allergen_soy"
+    ],
+    "dietaryFlags": []
   },
   {
     "id": "american_loaded_potato_skins",
@@ -6179,8 +8542,8 @@
       },
       {
         "ingredientId": "spring_onion",
-        "amount": 2,
-        "unit": "piece"
+        "amount": 30,
+        "unit": "g"
       },
       {
         "ingredientId": "cooking_oil",
@@ -6200,7 +8563,31 @@
       "土豆",
       "芝士"
     ],
-    "description": "美式家常好味。精心烹饪，口感咸香、鲜美，适合晚餐享用。"
+    "description": "美式里的下饭好手。以土豆配奶酪为主料，翻炒收汁，锅气十足，口味咸香、鲜美，步骤清晰、易上手。",
+    "dishRole": "main_meat",
+    "isVegetarian": false,
+    "dishStyle": "meat",
+    "stapleCategory": null,
+    "cookingMethod": "roast",
+    "perServing": {
+      "calories": 434,
+      "protein": 14,
+      "fat": 21.4,
+      "carbs": 46.4,
+      "fiber": 6.1,
+      "sodium": 190,
+      "sugar": 2.5
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "high_fiber",
+      "high_protein",
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_dairy"
+    ],
+    "dietaryFlags": []
   },
   {
     "id": "italian_lemon_chicken",
@@ -6228,8 +8615,8 @@
       },
       {
         "ingredientId": "garlic",
-        "amount": 3,
-        "unit": "piece"
+        "amount": 15,
+        "unit": "g"
       },
       {
         "ingredientId": "vinegar",
@@ -6259,7 +8646,26 @@
       "柠檬",
       "意式"
     ],
-    "description": "意式家常好味。精心烹饪，口感酸爽、咸香，适合晚餐享用。"
+    "description": "意式经典家常做法。以鸡胸肉配食用油为主料，旺火快炒，爽脆入味，口味酸爽、咸香，一次成功的家常菜。",
+    "dishRole": "main_meat",
+    "isVegetarian": false,
+    "dishStyle": "meat",
+    "stapleCategory": null,
+    "perServing": {
+      "calories": 346,
+      "protein": 47,
+      "fat": 12.9,
+      "carbs": 7.1,
+      "fiber": 0.2,
+      "sodium": 113,
+      "sugar": 0.1
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "high_protein"
+    ],
+    "allergens": [],
+    "dietaryFlags": []
   },
   {
     "id": "korean_sundubu_jjigae",
@@ -6302,8 +8708,8 @@
       },
       {
         "ingredientId": "garlic",
-        "amount": 2,
-        "unit": "piece"
+        "amount": 10,
+        "unit": "g"
       },
       {
         "ingredientId": "doubanjiang",
@@ -6317,8 +8723,8 @@
       },
       {
         "ingredientId": "spring_onion",
-        "amount": 1,
-        "unit": "piece"
+        "amount": 15,
+        "unit": "g"
       }
     ],
     "steps": [
@@ -6333,7 +8739,35 @@
       "豆腐",
       "韩式"
     ],
-    "description": "韩式家常好味。精心烹饪，口感香辣、鲜美，新手友好，快手完成。"
+    "description": "韩料家庭餐桌常客。以豆腐配鸡蛋为主料，旺火快炒，爽脆入味，口味香辣、鲜美，无需厨艺基础。",
+    "dishRole": "main_meat",
+    "isVegetarian": false,
+    "dishStyle": "meat",
+    "stapleCategory": null,
+    "perServing": {
+      "calories": 220,
+      "protein": 22.8,
+      "fat": 12.8,
+      "carbs": 6.8,
+      "fiber": 1.1,
+      "sodium": 395,
+      "sugar": 2
+    },
+    "nutritionWarnings": [],
+    "nutritionHighlights": [
+      "low_calorie",
+      "high_protein",
+      "low_fat"
+    ],
+    "allergens": [
+      "allergen_egg",
+      "allergen_seafood",
+      "allergen_sesame",
+      "allergen_soy"
+    ],
+    "dietaryFlags": [
+      "high_purine"
+    ]
   },
   {
     "id": "french_pan_fried_pork",
@@ -6352,7 +8786,7 @@
     "minCookingLevel": "intermediate",
     "prepTime": 10,
     "cookTime": 15,
-    "servings": 2,
+    "servings": 4,
     "ingredients": [
       {
         "ingredientId": "pork_belly",
@@ -6361,8 +8795,8 @@
       },
       {
         "ingredientId": "garlic",
-        "amount": 3,
-        "unit": "piece"
+        "amount": 15,
+        "unit": "g"
       },
       {
         "ingredientId": "mushroom",
@@ -6392,6 +8826,32 @@
       "煎",
       "法式"
     ],
-    "description": "法式家常好味。精心烹饪，口感咸香、鲜美，适合晚餐享用。"
+    "description": "法式家庭餐桌常客。以五花肉配蘑菇为主料，大火爆炒，锅气十足，口味咸香、鲜美，一次成功的家常菜。",
+    "dishRole": "main_meat",
+    "isVegetarian": false,
+    "dishStyle": "meat",
+    "stapleCategory": null,
+    "cookingMethod": "pan_fry",
+    "perServing": {
+      "calories": 438,
+      "protein": 8.3,
+      "fat": 43.7,
+      "carbs": 2.6,
+      "fiber": 0.3,
+      "sodium": 32,
+      "sugar": 1.2
+    },
+    "nutritionWarnings": [
+      "high_fat"
+    ],
+    "nutritionHighlights": [
+      "low_calorie"
+    ],
+    "allergens": [
+      "allergen_dairy"
+    ],
+    "dietaryFlags": [
+      "high_purine"
+    ]
   }
 ]

@@ -94,17 +94,23 @@ export default function DashboardPage() {
           {/* 每位成员热量建议 - 以今日数据为基础(需求5) */}
           {profile.calorieEnabled !== false && weeklyPlan.memberAdvice && weeklyPlan.memberAdvice.length > 0 && (() => {
             // 重新计算"今日"菜品总热量(替换 adv.dishCalories 的周平均)
+            // 带饭模式晚餐: 按 slot.servings/familySize 倍率算(晚餐 ×2 留午餐)
+            const fs = Math.max(1, profile.familySize || 1);
             let todayDishTotal = 0;
             for (const slot of todaySlots) {
+              const mult = Math.max(1, (slot.servings || fs) / fs);
               for (const mr of (slot.recipes || [])) {
                 const r = getRecipe(mr.recipeId);
-                if (r) todayDishTotal += calcRecipeNutrition(r).totalCalories;
+                if (r) todayDishTotal += calcRecipeNutrition(r).totalCalories * mult;
               }
             }
             const totalDailyTarget = weeklyPlan.memberAdvice.reduce((s, a) => s + a.dailyTarget, 0) || 1;
             return (
             <div className="space-y-2">
-              <h2 className="text-sm font-semibold">今日热量建议（{['周日','周一','周二','周三','周四','周五','周六'][new Date().getDay()]}）</h2>
+              <h2 className="text-sm font-semibold">
+                今日热量建议（{['周日','周一','周二','周三','周四','周五','周六'][new Date().getDay()]}）
+                {profile.lunchboxMode && <span className="text-[11px] text-amber-600 ml-2 font-normal">· 带饭模式: 晚餐×2 留作明日午餐</span>}
+              </h2>
               {weeklyPlan.memberAdvice.map(adv => {
                 // 今日该成员的菜品热量 = 家庭今日菜品 × 该成员热量目标占比
                 const ratio = adv.dailyTarget / totalDailyTarget;
@@ -112,7 +118,11 @@ export default function DashboardPage() {
                 const advStaple = (profile.stapleMode || 'off') === 'off' ? adv.stapleCalories : 0;
                 const advFruit = !profile.includeFruit ? adv.fruitCalories : 0;
                 const advSoup = !profile.includeSoup ? 40 : 0;
-                const advSkipped = (adv.skippedMeals || []).reduce((s, m) => s + m.suggestedCalories, 0);
+                // 带饭模式: 午餐由前一晚剩菜补足, 不视为"未规划缺口"
+                const skippedList = profile.lunchboxMode
+                  ? (adv.skippedMeals || []).filter(m => m.mealType !== 'lunch')
+                  : (adv.skippedMeals || []);
+                const advSkipped = skippedList.reduce((s, m) => s + m.suggestedCalories, 0);
                 const totalWithAdvice = todayDishCal + advStaple + advFruit + advSoup + advSkipped;
                 const pctDish = Math.round(todayDishCal / adv.dailyTarget * 100);
                 const pctSkipped = Math.round(advSkipped / adv.dailyTarget * 100);
@@ -144,9 +154,12 @@ export default function DashboardPage() {
                     {finalGap > 0 && <span className="text-accent">缺口 {finalGap}</span>}
                   </div>
                   <div className="space-y-0.5 text-xs">
-                    {(adv.skippedMeals || []).map(sm => (
+                    {skippedList.map(sm => (
                       <p key={sm.mealType}>🍽️ 未规划{sm.label}，建议补充约 {sm.suggestedCalories}kcal</p>
                     ))}
+                    {profile.lunchboxMode && (
+                      <p className="text-amber-600">🍱 带饭模式: 午餐用前晚剩菜 (晚餐已 ×2 烹制)</p>
+                    )}
                     {advStaple > 0 && <p>🍚 主食: 每餐约{adv.staplePerMeal || Math.round(adv.stapleGrams/3)}g，全天{adv.stapleGrams}g（约{adv.stapleCalories}kcal/天）</p>}
                     {advFruit > 0 && <p>🍎 水果: 全天{adv.fruitGrams}g（约{adv.fruitCalories}kcal/天）</p>}
                     {advSoup > 0 && <p>🥣 清汤: 每餐一碗（约40kcal/天）</p>}
