@@ -145,15 +145,15 @@ export default function ProfilePage() {
             <p className="text-xs text-muted mt-0.5">从1200+内置菜谱中智能匹配（即时、免费）</p>
           </button>
           <button
-            onClick={() => setProfile({ recommendMode: 'ai_queue' })}
+            onClick={() => setProfile({ recommendMode: 'ai_assist' })}
             className={`w-full p-3 rounded-lg border-2 text-left transition ${
-              profile.recommendMode === 'ai_queue'
+              profile.recommendMode === 'ai_assist'
                 ? 'border-primary bg-primary/5'
                 : 'border-border hover:border-primary/50'
             }`}
           >
-            <p className="font-medium text-sm">🤖 AI 队列分析（免费）</p>
-            <p className="text-xs text-muted mt-0.5">先用基础库生成，方案放入队列异步分析优化，后续更新更贴合</p>
+            <p className="font-medium text-sm">🤖 AI 辅助分析（免费）</p>
+            <p className="text-xs text-muted mt-0.5">先用基础库生成方案，AI 异步从健康/营养/搭配角度给完整建议报告</p>
           </button>
           <button
             onClick={() => setProfile({ recommendMode: 'ai_online' })}

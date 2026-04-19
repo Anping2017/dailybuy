@@ -853,7 +853,7 @@ export function generateWeeklyPlan(
 
   let slots: MealSlot[];
 
-  if (profile.recommendMode === 'ai_queue' || profile.recommendMode === 'ai_online') {
+  if (profile.recommendMode === 'ai_assist' || profile.recommendMode === 'ai_online') {
     // AI智能模式: 周维度整体规划，蛋白质轮换+蔬菜不重复+做法多样
     slots = generateSmartPlan(profile, ownedIngredients, planDays, activeDays, getPreference, getFeedback);
   } else {

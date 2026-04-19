@@ -503,14 +503,18 @@ export const useAppStore = create<AppState>()(
     {
       name: 'dailybuy-store',
       migrate: (persisted: unknown) => {
-        // 兼容旧 recommendMode === 'ai'  → 'ai_online'
         const p = persisted as { profile?: { recommendMode?: string } } | null;
+        // 兼容旧 recommendMode === 'ai'  → 'ai_online'
         if (p?.profile && p.profile.recommendMode === 'ai') {
           p.profile.recommendMode = 'ai_online';
         }
+        // 'ai_queue' → 'ai_assist' (改名)
+        if (p?.profile && p.profile.recommendMode === 'ai_queue') {
+          p.profile.recommendMode = 'ai_assist';
+        }
         return persisted;
       },
-      version: 2,
+      version: 3,
     }
   )
 );

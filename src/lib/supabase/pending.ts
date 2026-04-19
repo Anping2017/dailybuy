@@ -147,9 +147,10 @@ const LS_ANALYSIS = 'dailybuy_pending_analysis';
 export async function savePendingAnalysis(
   profile: UserProfile,
   basicPlan: WeeklyPlan
-): Promise<boolean> {
+): Promise<string | null> {
+  const id = `ana_${Date.now()}_${Math.random().toString(36).slice(2, 8)}`;
   const record: PendingAnalysisPlan = {
-    id: `ana_${Date.now()}_${Math.random().toString(36).slice(2, 8)}`,
+    id,
     profile,
     basicPlan,
     deviceId: typeof window !== 'undefined' ? getDeviceId() : 'server',
@@ -165,7 +166,7 @@ export async function savePendingAnalysis(
       device_id: record.deviceId,
       status: 'pending',
     });
-    if (!error) return true;
+    if (!error) return id;
     console.warn('Supabase 待分析方案写入失败(表可能未创建):', error.message);
   }
 
@@ -173,9 +174,37 @@ export async function savePendingAnalysis(
     const all = listPendingAnalysisLocal();
     all.unshift(record);
     localStorage.setItem(LS_ANALYSIS, JSON.stringify(all.slice(0, 100)));
-    return true;
+    return id;
   }
-  return false;
+  return null;
+}
+
+/** 根据 ID 获取单个待分析方案 */
+export async function getPendingAnalysis(id: string): Promise<PendingAnalysisPlan | null> {
+  // 先 localStorage
+  const local = listPendingAnalysisLocal().find(p => p.id === id);
+  if (isSupabaseEnabled() && supabase) {
+    const { data, error } = await supabase
+      .from('pending_analysis_plans')
+      .select('*')
+      .eq('id', id)
+      .maybeSingle();
+    if (!error && data) {
+      const r = data as Record<string, unknown>;
+      return {
+        id: r.id as string,
+        profile: r.profile as UserProfile,
+        basicPlan: r.basic_plan as WeeklyPlan,
+        deviceId: r.device_id as string,
+        createdAt: r.created_at as string,
+        status: (r.status as PendingAnalysisPlan['status']) || 'pending',
+        aiReport: r.ai_report as string | undefined,
+        optimizedPlan: r.optimized_plan as WeeklyPlan | undefined,
+        analyzedAt: r.analyzed_at as string | undefined,
+      };
+    }
+  }
+  return local || null;
 }
 
 export function listPendingAnalysisLocal(): PendingAnalysisPlan[] {

@@ -58,7 +58,7 @@ export default function PendingAnalysisPage() {
       <div className="bg-primary/5 border border-primary/20 rounded-lg p-3 text-sm">
         <p className="font-medium text-primary">工作流</p>
         <ol className="text-xs text-muted mt-1 space-y-0.5 list-decimal list-inside">
-          <li>用户选「AI 队列分析」模式生成周计划 → 本页出现 pending 记录</li>
+          <li>用户选「AI 辅助分析」模式生成周计划 → 本页出现 pending 记录</li>
           <li>导出 pending JSON，用 Claude Code 本地分析（prompt 在 <code>scripts/analyze-plan.md</code>）</li>
           <li>分析结果回填 ai_report + optimized_plan → 状态变 analyzed</li>
           <li>此页确认「应用」或「跳过」</li>

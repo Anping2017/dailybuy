@@ -271,7 +271,7 @@ export interface UserProfile {
   includeColdDish: boolean;                // 是否推荐凉菜
   cookingLevel: CookingLevel;             // 厨艺等级
   acceptedDifficulty: DifficultyLevel[];  // 可接受的难度(多选)
-  recommendMode: 'basic' | 'ai_queue' | 'ai_online';  // 基础库 | AI队列分析(免费,异步) | AI在线(付费,即时)
+  recommendMode: 'basic' | 'ai_assist' | 'ai_online';  // 基础库 | AI辅助分析(异步给报告) | AI在线(付费,即时)
   autoAddToShoppingList: boolean;          // 生成菜谱时自动加入清单
   planDays: number;                        // 规划几天 (1-7)
   mealsPerDay: MealType[];                // 每天规划哪几餐
@@ -349,6 +349,7 @@ export interface WeeklyPlan {
   memberAdvice?: MemberCalorieAdvice[];
   fruitPlan?: WeeklyFruitPlan;     // 本周水果推荐
   createdAt: string;
+  aiAnalysisId?: string;            // 关联 pending_analysis_plans.id（AI辅助模式）
 }
 
 // --- 采购清单 ---

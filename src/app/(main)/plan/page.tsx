@@ -87,18 +87,21 @@ export default function PlanPage() {
       }
     }
     const plan = generateWeeklyPlan(profile, ownedIngredients || [], getPreferenceScore, getFeedbackAdjustment);
+
+    // AI 辅助分析模式: 把本次方案写入队列, 把分析 id 关联到 plan
+    if (profile.recommendMode === 'ai_assist') {
+      import('@/lib/supabase/pending').then(({ savePendingAnalysis }) => {
+        savePendingAnalysis(profile, plan).then(id => {
+          if (id) setWeeklyPlan({ ...plan, aiAnalysisId: id });
+        }).catch(() => { /* 静默失败 */ });
+      });
+    }
+
     setWeeklyPlan(plan);
     if (profile.autoAddToShoppingList) {
       setShoppingList(generateShoppingList(plan, ownedIngredients || []));
     } else {
       setShoppingList({ id: `list_${Date.now()}`, weeklyPlanId: plan.id, items: [], totalEstimatedCost: 0, createdAt: new Date().toISOString(), updatedAt: new Date().toISOString() });
-    }
-
-    // 需求2: AI 队列分析模式 → 把本次方案写入待分析队列
-    if (profile.recommendMode === 'ai_queue') {
-      import('@/lib/supabase/pending').then(({ savePendingAnalysis }) => {
-        savePendingAnalysis(profile, plan).catch(() => { /* 静默失败 */ });
-      });
     }
   };
 
@@ -126,13 +129,30 @@ export default function PlanPage() {
   }
   const daySlots = weeklyPlan.slots.filter(s => s.day === selectedDay);
 
+  // 今日合计 (家庭总 + 人均) - 跨所有餐次
+  const familySize = Math.max(1, profile.familySize);
+  let dayTotalCal = 0;
+  let dayTotalCost = 0;
+  for (const slot of daySlots) {
+    for (const mr of (slot.recipes || [])) {
+      const r = getRecipe(mr.recipeId);
+      if (r) {
+        const n = calcRecipeNutrition(r);
+        dayTotalCal += Math.round(n.totalCalories * (slot.servings / r.servings));
+        dayTotalCost += calcRecipeCost(r) * (slot.servings / r.servings);
+      }
+    }
+  }
+  const dayPerPerson = Math.round(dayTotalCal / familySize);
+  // 家庭目标
+  const householdTarget = profile.members.reduce((s, m) => s + m.dailyCalorieTarget, 0)
+    + (Math.max(0, familySize - profile.members.length))
+      * (profile.members.reduce((s, m) => s + m.dailyCalorieTarget, 0) / Math.max(1, profile.members.length));
+
   return (
     <div className="space-y-4">
-      {profile.recommendMode === 'ai_queue' && (
-        <div className="bg-primary/5 border border-primary/20 rounded-lg p-3 text-xs">
-          <span className="font-medium text-primary">🤖 AI 队列分析模式</span>
-          <span className="text-muted ml-2">本次方案已提交分析队列，Claude 分析完后你会在后台看到优化建议</span>
-        </div>
+      {profile.recommendMode === 'ai_assist' && weeklyPlan.aiAnalysisId && (
+        <AiReportBanner analysisId={weeklyPlan.aiAnalysisId} />
       )}
       <div>
         <div className="flex items-center justify-between gap-2">
@@ -249,6 +269,44 @@ export default function PlanPage() {
 
       {/* 当日菜谱 */}
       <div className="space-y-4">
+        {/* 今日合计卡 - 显示在所有餐次最上方 */}
+        {daySlots.length > 0 && (
+          <div className="bg-accent/5 border border-accent/30 rounded-lg p-3">
+            <div className="flex items-center justify-between flex-wrap gap-2">
+              <div className="flex items-center gap-2">
+                <Flame className="w-4 h-4 text-accent" />
+                <span className="text-sm font-semibold">今日合计</span>
+              </div>
+              <div className="text-xs">
+                <span className="font-medium text-accent">{dayTotalCal}</span>
+                <span className="text-muted"> kcal · 人均 </span>
+                <span className="font-medium text-accent">{dayPerPerson}</span>
+                <span className="text-muted"> kcal</span>
+                {profile.budgetEnabled !== false && (
+                  <>
+                    <span className="text-muted"> · </span>
+                    <span className="font-medium text-primary">${dayTotalCost.toFixed(2)}</span>
+                  </>
+                )}
+              </div>
+            </div>
+            {householdTarget > 0 && (
+              <div className="mt-2">
+                <div className="h-1.5 bg-background rounded-full overflow-hidden">
+                  <div className={`h-full rounded-full transition-all ${
+                    dayTotalCal > householdTarget * 1.2 ? 'bg-red-400'
+                    : dayTotalCal > householdTarget ? 'bg-amber-400'
+                    : 'bg-accent'
+                  }`} style={{ width: `${Math.min(100, (dayTotalCal / householdTarget) * 100)}%` }} />
+                </div>
+                <p className="text-[10px] text-muted mt-1">
+                  全家目标 {Math.round(householdTarget)} kcal · 已规划 {Math.round((dayTotalCal / householdTarget) * 100)}%
+                </p>
+              </div>
+            )}
+          </div>
+        )}
+
         {MEAL_ORDER.filter(m => profile.mealsPerDay.includes(m)).map(mealType => {
           const slot = daySlots.find(s => s.mealType === mealType);
           if (!slot || (slot.recipes || []).length === 0) {
@@ -259,7 +317,7 @@ export default function PlanPage() {
             );
           }
 
-          // 计算这一餐的总热量
+          // 计算这一餐的总热量 (家庭总和)
           let mealCalories = 0;
           let mealCost = 0;
           for (const mr of (slot.recipes || [])) {
@@ -270,15 +328,18 @@ export default function PlanPage() {
               mealCost += calcRecipeCost(r) * (slot.servings / r.servings);
             }
           }
+          const perPersonCal = Math.round(mealCalories / familySize);
 
           return (
             <div key={mealType} className="bg-card border border-border rounded-lg p-4">
-              {/* 餐次标题 */}
-              <div className="flex items-center justify-between mb-3">
+              {/* 餐次标题 - 明确总/人均 */}
+              <div className="flex items-center justify-between mb-3 flex-wrap gap-1">
                 <div className="flex items-center gap-2">
                   <span className="text-sm font-semibold text-primary">{MEAL_LABELS[mealType]}</span>
                   <span className="text-xs text-muted flex items-center gap-1">
-                    <Flame className="w-3 h-3 text-accent" />{mealCalories} kcal{profile.budgetEnabled !== false && ` · $${mealCost.toFixed(2)}`}
+                    <Flame className="w-3 h-3 text-accent" />
+                    {familySize}人共 {mealCalories} kcal · 人均 {perPersonCal}
+                    {profile.budgetEnabled !== false && ` · $${mealCost.toFixed(2)}`}
                   </span>
                 </div>
               </div>
@@ -289,7 +350,9 @@ export default function PlanPage() {
                   const recipe = getRecipe(mr.recipeId);
                   if (!recipe) return null;
                   const nutr = calcRecipeNutrition(recipe);
-                  const perServing = Math.round(nutr.totalCalories / recipe.servings);
+                  // 按 slot 实际份数缩放, 再除以家庭人数 → 真正的人均
+                  const dishTotalForFamily = Math.round(nutr.totalCalories * (slot.servings / recipe.servings));
+                  const perPerson = Math.round(dishTotalForFamily / familySize);
                   const isInList = shoppingList?.items.some(i => i.fromRecipes.includes(recipe.nameZh));
 
                   return (
@@ -314,7 +377,7 @@ export default function PlanPage() {
                           <p className="text-xs text-muted mt-0.5">{recipe.nameEn}</p>
                         </div>
                         <div className="flex items-center gap-2 flex-shrink-0">
-                          <span className="text-xs text-accent font-medium">{perServing} kcal</span>
+                          <span className="text-xs text-accent font-medium" title={`${familySize}人共 ${dishTotalForFamily} kcal`}>{perPerson} kcal/人</span>
                           <button
                             onClick={() => setSwapTarget({ recipeId: mr.recipeId, mealType, role: mr.role, day: selectedDay })}
                             className="text-muted hover:text-primary transition" title="换一道">
@@ -472,6 +535,53 @@ export default function PlanPage() {
 }
 
 /** 换菜原因选择弹窗 */
+/** AI 分析报告横幅 (需求1: AI 辅助分析) */
+function AiReportBanner({ analysisId }: { analysisId: string }) {
+  const [status, setStatus] = useState<'pending' | 'analyzing' | 'analyzed' | 'applied' | 'skipped' | null>(null);
+  useEffect(() => {
+    let cancelled = false;
+    const load = async () => {
+      const { getPendingAnalysis } = await import('@/lib/supabase/pending');
+      const a = await getPendingAnalysis(analysisId);
+      if (!cancelled && a) setStatus(a.status);
+    };
+    load();
+    // 每 30 秒刷一次状态(轻量轮询)
+    const tid = setInterval(load, 30000);
+    return () => { cancelled = true; clearInterval(tid); };
+  }, [analysisId]);
+
+  if (!status) return null;
+
+  const ready = status === 'analyzed' || status === 'applied';
+
+  return (
+    <Link
+      href={`/plan/report/${analysisId}`}
+      className={`block rounded-lg p-3 text-xs transition ${
+        ready
+          ? 'bg-purple-50 border border-purple-200 hover:bg-purple-100'
+          : 'bg-primary/5 border border-primary/20'
+      }`}
+    >
+      <div className="flex items-center justify-between gap-2">
+        <div className="flex items-center gap-2 min-w-0">
+          <span className={`text-base ${ready ? '' : 'animate-pulse'}`}>{ready ? '📊' : '🤖'}</span>
+          <div className="min-w-0">
+            <p className={`font-medium ${ready ? 'text-purple-700' : 'text-primary'}`}>
+              {ready ? 'AI 分析报告已就绪' : 'AI 分析中...'}
+            </p>
+            <p className="text-muted truncate">
+              {ready ? '点击查看健康/营养/搭配的完整建议' : '已提交分析，稍后回来查看完整报告'}
+            </p>
+          </div>
+        </div>
+        {ready && <ChevronRight className="w-4 h-4 text-purple-700 flex-shrink-0" />}
+      </div>
+    </Link>
+  );
+}
+
 function SwapReasonDialog({ recipeName, onClose, onPick }: {
   recipeName: string;
   onClose: () => void;
