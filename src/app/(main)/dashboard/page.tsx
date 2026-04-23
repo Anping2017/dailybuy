@@ -60,6 +60,18 @@ export default function DashboardPage() {
       {/* 有菜谱时显示今日菜谱 + 热量建议 */}
       {weeklyPlan && (
         <>
+          {/* 空态: 周计划存在但今日无安排 */}
+          {sortedSlots.length === 0 && (
+            <div className="bg-card border border-dashed border-border rounded-lg p-6 text-center">
+              <p className="text-sm text-muted">今日没有规划餐次</p>
+              <button
+                onClick={() => router.push('/plan')}
+                className="mt-2 text-xs text-primary hover:underline"
+              >
+                去规划页添加 →
+              </button>
+            </div>
+          )}
           {/* 今日菜谱预览 */}
           {sortedSlots.length > 0 && (
             <div>

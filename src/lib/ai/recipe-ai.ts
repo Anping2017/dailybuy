@@ -13,13 +13,20 @@ import { getFilteredRecipes, generateWeeklyPlan as generateBasicPlan } from '@/l
 
 const DAYS: DayOfWeek[] = ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday'];
 
-/** 构建发送给 Claude 的 prompt */
+/** 构建发送给 Claude 的 prompt
+ *  PII 安全: 不发送真实姓名, 改用 "成员 1", "成员 2" 匿名化
+ *  (健康状况和忌口仍要发送, 用于饮食规划; 这些数据匿名化后对规划无损)
+ */
 export function buildPrompt(profile: UserProfile): string {
-  const members = profile.members.map(m => {
-    const health = m.healthConditions.filter(h => h !== 'none').join('、') || '无';
-    const diet = m.dietaryRestrictions.join('、') || '无';
-    return `  - ${m.name}: ${m.gender === 'male' ? '男' : '女'}, ${m.ageGroup}, 健康: ${health}, 忌口: ${diet}, 目标${m.dailyCalorieTarget}kcal/天`;
-  }).join('\n');
+  const members = profile.members
+    .filter(m => m.enabled !== false)
+    .map((m, idx) => {
+      const health = m.healthConditions.filter(h => h !== 'none').join('、') || '无';
+      const diet = m.dietaryRestrictions.join('、') || '无';
+      // 匿名化: 不暴露用户姓名
+      const label = `成员${idx + 1}`;
+      return `  - ${label}: ${m.gender === 'male' ? '男' : '女'}, ${m.ageGroup}, 健康: ${health}, 忌口: ${diet}, 目标${m.dailyCalorieTarget}kcal/天`;
+    }).join('\n');
 
   const flavors = profile.flavorPreference.join('、') || '不限';
   const difficulty = profile.acceptedDifficulty.join('/') || '不限';

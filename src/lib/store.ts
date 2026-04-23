@@ -194,16 +194,18 @@ export const useAppStore = create<AppState>()(
           if (!s.weeklyPlan) return s;
           const slots = [...s.weeklyPlan.slots];
           const idx = slots.findIndex(slot => slot.day === day && slot.mealType === mealType);
+          // role 从 string 来, 强类型转到 DishRole (调用方保证正确)
+          const typedRole = role as DishRole;
+          const typedDay = day as DayOfWeek;
           if (idx >= 0) {
             const slot = slots[idx];
-            // 已存在则不重复添加
             if ((slot.recipes || []).some(m => m.recipeId === recipeId)) return s;
-            slots[idx] = { ...slot, recipes: [...(slot.recipes || []), { recipeId, role: role as never }] };
+            slots[idx] = { ...slot, recipes: [...(slot.recipes || []), { recipeId, role: typedRole }] };
           } else {
             slots.push({
-              day: day as never,
+              day: typedDay,
               mealType,
-              recipes: [{ recipeId, role: role as never }],
+              recipes: [{ recipeId, role: typedRole }],
               servings: s.profile.familySize,
             });
           }
@@ -316,24 +318,24 @@ export const useAppStore = create<AppState>()(
             const amount = ri.amount;
             const existing = items.find(i => i.ingredientId === ri.ingredientId);
 
+            // 价格安全计算: priceNZD 缺失或 0 时视为 0, 不会静默产生 NaN
+            const safePrice = ingredient.priceNZD && ingredient.priceNZD > 0 ? ingredient.priceNZD : 0;
+            const unitG = Math.max(1, getUnitGrams(ingredient.unit));  // 防除零
             if (existing) {
               existing.totalAmount += amount;
               existing.totalAmount = Math.round(existing.totalAmount);
               if (!existing.fromRecipes.includes(recipe.nameZh)) {
                 existing.fromRecipes.push(recipe.nameZh);
               }
-              // 重新计算价格
-              const unitG = getUnitGrams(ingredient.unit);
-              existing.estimatedPrice = Math.round((existing.totalAmount / unitG) * ingredient.priceNZD * 100) / 100;
+              existing.estimatedPrice = Math.round((existing.totalAmount / unitG) * safePrice * 100) / 100;
             } else {
-              const unitG = getUnitGrams(ingredient.unit);
               items.push({
                 ingredientId: ri.ingredientId,
                 ingredientName: ingredient.nameZh,
                 ingredientNameEn: ingredient.nameEn,
                 totalAmount: Math.round(amount),
                 unit: ri.unit,
-                estimatedPrice: Math.round((amount / unitG) * ingredient.priceNZD * 100) / 100,
+                estimatedPrice: Math.round((amount / unitG) * safePrice * 100) / 100,
                 category: ingredient.category,
                 isOwned: false,
                 isPurchased: false,
@@ -509,6 +511,12 @@ export const useAppStore = create<AppState>()(
       recordSwapReason: (recipeId, reason, recipe) =>
         set((s) => {
           const now = Date.now();
+          // 冷却: 同一菜谱同一原因 10 分钟内不重复计分 (避免用户反复 swap 导致反馈放大)
+          const TEN_MIN = 10 * 60 * 1000;
+          const sameRecent = s.recentActions.filter(a =>
+            a.recipeId === recipeId && a.reason === reason && (now - a.timestamp) < TEN_MIN
+          );
+          if (sameRecent.length > 0) return s;  // 冷却期内直接跳过, 不改 userFeedback
           const fb = { ...s.userFeedback };
           const bump = (map: Record<string, { count: number; lastTime: number }>, key: string) => {
             map[key] = { count: (map[key]?.count || 0) + 1, lastTime: now };
@@ -760,6 +768,7 @@ export function getFeedbackAdjustment(recipe: Recipe): number {
 }
 
 // Supabase 自动同步: store 变更后自动推送到云端
+// 页面卸载时清除挂起 timeout, 避免内存泄漏和"卸载后还尝试写云"
 if (typeof window !== 'undefined') {
   // 首次加载把 customRecipes 同步到 repository 缓存
   import('./data/recipe-repository').then(({ registerCustomRecipes }) => {
@@ -768,13 +777,10 @@ if (typeof window !== 'undefined') {
 
   let syncTimeout: ReturnType<typeof setTimeout> | null = null;
 
-  useAppStore.subscribe((state) => {
-    // 保持 repository customCache 与 store 同步
+  const unsubscribe = useAppStore.subscribe((state) => {
     import('./data/recipe-repository').then(({ registerCustomRecipes }) => {
       registerCustomRecipes(state.profile.customRecipes || []);
     });
-
-    // 防抖: 500ms 内的多次变更合并为一次推送
     if (syncTimeout) clearTimeout(syncTimeout);
     syncTimeout = setTimeout(async () => {
       try {
@@ -787,9 +793,18 @@ if (typeof window !== 'undefined') {
           recipePreferences: state.recipePreferences,
         });
       } catch {
-        // 静默失败，localStorage 仍然工作
+        // 静默失败, localStorage 仍然工作
       }
     }, 500);
+  });
+
+  // 页面卸载时清理: 防止未决 timeout 导致卸载后仍尝试写云 (内存泄漏/数据污染)
+  window.addEventListener('beforeunload', () => {
+    if (syncTimeout) {
+      clearTimeout(syncTimeout);
+      syncTimeout = null;
+    }
+    unsubscribe();
   });
 }
 

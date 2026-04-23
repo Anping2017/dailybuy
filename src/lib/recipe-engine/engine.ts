@@ -17,6 +17,27 @@ import healthRulesData from '@/data/health-rules.json';
 const DAYS: DayOfWeek[] = ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday'];
 
 // ============================================================
+// 算法常量 (之前散落各处的 magic numbers 集中到此)
+// ============================================================
+/** 热量预算容忍度: 选菜时接受 ±15% 的偏差 */
+const BUDGET_TOLERANCE = { low: 0.85, high: 1.15 } as const;
+/** 补菜安全阀: 小家庭最多补 1 道, 大家庭最多 2 道 */
+const MAX_FILL_DISHES = { small: 1, large: 2 } as const;
+/** 三餐热量占比 (早/午/晚) */
+const MEAL_RATIO = { breakfast: 0.25, lunch: 0.40, dinner: 0.35 } as const;
+/** 未开启品类每日占日目标的比例 (按健康目标调整) */
+const CATEGORY_RATIOS = {
+  cutting:  { staple: 0.18, fruit: 0.08, soup: 0.03 },
+  bulking:  { staple: 0.32, fruit: 0.06, soup: 0.03 },
+  wellness: { staple: 0.25, fruit: 0.08, soup: 0.06 },
+  maintain: { staple: 0.25, fruit: 0.07, soup: 0.04 },
+} as const;
+/** 偏好分数半衰期(天) */
+const PREFERENCE_HALF_LIFE_DAYS = 60;
+/** 近期烹饪衰减半衰期(天) */
+const RECENT_COOK_HALF_LIFE_DAYS = 7;
+
+// ============================================================
 // 健康过滤 (保留原有逻辑)
 // ============================================================
 
@@ -936,10 +957,10 @@ function composeMeal(
   //   2. 优先选"卡路里最接近缺口"的菜, 避免补太多(如两个人推荐 6 道的情况)
   //   3. 最多补 1-2 次(视家庭规模), 不死循环补小菜
   if (profile.calorieEnabled !== false && mealBudget > 0) {
-    const TARGET_LO = mealBudget * 0.85;
-    const TARGET_HI = mealBudget * 1.15;
+    const TARGET_LO = mealBudget * BUDGET_TOLERANCE.low;
+    const TARGET_HI = mealBudget * BUDGET_TOLERANCE.high;
     // 家庭小的最多补 1 道, 大家庭最多 2 道
-    const MAX_FILLS = profile.familySize <= 2 ? 1 : 2;
+    const MAX_FILLS = profile.familySize <= 2 ? MAX_FILL_DISHES.small : MAX_FILL_DISHES.large;
     let fillIters = 0;
     while (accumulatedCal < TARGET_LO && fillIters < MAX_FILLS) {
       fillIters++;
@@ -1269,9 +1290,9 @@ function generateSmartPlan(
       //  2. 选"卡路里最接近缺口"的菜, 避免补太多
       //  3. 最多补 1-2 次 (按家庭规模)
       if (profile.calorieEnabled !== false && mealBudget > 0) {
-        const TARGET_LO = mealBudget * 0.85;
-        const TARGET_HI = mealBudget * 1.15;
-        const MAX_FILLS = profile.familySize <= 2 ? 1 : 2;
+        const TARGET_LO = mealBudget * BUDGET_TOLERANCE.low;
+        const TARGET_HI = mealBudget * BUDGET_TOLERANCE.high;
+        const MAX_FILLS = profile.familySize <= 2 ? MAX_FILL_DISHES.small : MAX_FILL_DISHES.large;
         let fillIters = 0;
         while (accumulatedCal < TARGET_LO && fillIters < MAX_FILLS) {
           fillIters++;
@@ -1371,13 +1392,19 @@ export function generateWeeklyPlan(
 
   let totalCalories = 0;
   let totalCost = 0;
+  // 性能: 缓存 recipes 映射避免重复 getAllRecipes().find() — O(n) × slots → O(1) × slots
+  const allRecipes = getAllRecipes();
+  const recipeById = new Map(allRecipes.map(r => [r.id, r]));
   for (const slot of slots) {
     for (const mr of (slot.recipes || [])) {
-      const recipe = getAllRecipes().find(r => r.id === mr.recipeId);
+      const recipe = recipeById.get(mr.recipeId);
       if (!recipe) continue;
       const nutr = calcRecipeNutrition(recipe);
-      totalCalories += Math.round(nutr.totalCalories * (slot.servings / recipe.servings));
-      totalCost += calcRecipeCost(recipe) * (slot.servings / recipe.servings);
+      // 修复: 除零保护; recipe.servings 可能为 0/undefined → 默认 1
+      const rs = Math.max(1, recipe.servings || 1);
+      const ratio = slot.servings / rs;
+      totalCalories += Math.round(nutr.totalCalories * ratio);
+      totalCost += calcRecipeCost(recipe) * ratio;
     }
   }
 

@@ -2,7 +2,7 @@
 
 import { useAppStore, getPreferenceScore, getFeedbackAdjustment, getRecentCookPenalty } from '@/lib/store';
 import { useRouter } from 'next/navigation';
-import { useEffect, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { RefreshCw, X, Flame, ShoppingCart, Check, Sparkles, Share2, Copy, CheckCheck, CalendarDays, List, ChevronRight, Package, ChevronDown, Save, Archive, Trash2 } from 'lucide-react';
 import { getRecipe, calcRecipeNutrition, calcRecipeCost } from '@/lib/nutrition/calculator';
 import { getFilteredRecipes, generateWeeklyPlan, generateShoppingList, getMealCalorieBudget } from '@/lib/recipe-engine/engine';
@@ -982,8 +982,8 @@ export default function PlanPage() {
                       {/* 文字版预览 */}
                       {previewSavedId === s.id && (
                         <div className="mt-2 bg-background rounded p-2 text-[11px] space-y-1 max-h-60 overflow-y-auto">
-                          {s.weeklyPlan.slots.map((slot, idx) => (
-                            <div key={idx}>
+                          {s.weeklyPlan.slots.map((slot) => (
+                            <div key={`${slot.day}_${slot.mealType}`}>
                               <span className="font-medium text-primary">{DAY_LABELS[slot.day] || slot.day} · {MEAL_LABELS[slot.mealType]}</span>
                               <span className="text-muted">({slot.servings}人份)</span>:
                               <span className="ml-1">
@@ -1075,7 +1075,13 @@ function SwapReasonDialog({ recipe, role, onClose, onPick, onPickSpecific, onAdd
   const [selectedFlavors, setSelectedFlavors] = useState<string[]>([]);
   const [inconvenientPersist, setInconvenientPersist] = useState<'short' | 'long'>('short');  // 不方便: 短期(30天)/长期(永久排除)
   const [librarySearch, setLibrarySearch] = useState('');
+  const [debouncedSearch, setDebouncedSearch] = useState('');
   const [sameRoleOnly, setSameRoleOnly] = useState(true);
+  // 搜索输入 debounce 250ms, 避免每次按键全库扫描
+  useEffect(() => {
+    const t = setTimeout(() => setDebouncedSearch(librarySearch), 250);
+    return () => clearTimeout(t);
+  }, [librarySearch]);
 
   const options: Array<{ reason: import('@/types').SwapReason; icon: string; label: string; desc: string; next?: 'ingredients' | 'flavors' | 'inconvenient' }> = [
     { reason: 'just_want_different', icon: '🔄', label: '只是想换一个', desc: '本次推荐换一道，不影响后续' },
@@ -1090,13 +1096,12 @@ function SwapReasonDialog({ recipe, role, onClose, onPick, onPickSpecific, onAdd
     return { id: ri.ingredientId, name: ing?.nameZh || ri.ingredientId };
   });
 
-  // 菜谱库搜索结果 (限 50 条)
-  const libraryResults = (() => {
+  // 菜谱库搜索结果 (限 50 条, 使用 useMemo 避免每次渲染重新过滤)
+  const libraryResults = useMemo(() => {
     if (step !== 'library') return [];
-    const all = [...getAllRecipes()].filter(r => r.id !== recipe.id);
+    const all = getAllRecipes().filter(r => r.id !== recipe.id);
     let filtered = all;
     if (sameRoleOnly) {
-      // 按相同 role 过滤 (粗糙判断: meat/seafood 含即 meat, soup cookingMethod = soup, staple 名字判断)
       filtered = filtered.filter(r => {
         if (role === 'soup') return r.cookingMethod === 'soup' || /汤|羹/.test(r.nameZh);
         if (role === 'staple') return r.cookingMethod === 'staple';
@@ -1110,12 +1115,12 @@ function SwapReasonDialog({ recipe, role, onClose, onPick, onPickSpecific, onAdd
         return true;
       });
     }
-    if (librarySearch.trim()) {
-      const q = librarySearch.toLowerCase();
+    const q = debouncedSearch.trim().toLowerCase();
+    if (q) {
       filtered = filtered.filter(r => r.nameZh.toLowerCase().includes(q) || r.nameEn.toLowerCase().includes(q));
     }
     return filtered.slice(0, 50);
-  })();
+  }, [step, recipe.id, role, sameRoleOnly, debouncedSearch]);
 
   const handlePickMain = (opt: typeof options[number]) => {
     // 无二级选择的直接执行

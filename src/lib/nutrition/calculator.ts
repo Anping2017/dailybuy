@@ -87,6 +87,14 @@ export function calcRecipeNutrition(recipe: Recipe): NutritionPer100g & { totalC
   for (const ri of recipe.ingredients) {
     const grams = toGrams(ri);
     const ing = getIngredient(ri.ingredientId);
+    // 警告: 食材找不到时跳过, 这会导致总热量低估
+    //   (如数据库清理后 recipe 引用的 id 不存在)
+    if (!ing) {
+      if (typeof console !== 'undefined' && console.warn) {
+        console.warn(`[calcRecipeNutrition] 菜谱 "${recipe.nameZh}" (${recipe.id}) 缺失食材: ${ri.ingredientId}`);
+      }
+      continue;
+    }
     const ratio = consumedRatio(recipe, ing);
     const effectiveGrams = grams * ratio;
     const nutr = calcIngredientNutrition(ri.ingredientId, effectiveGrams);
