@@ -748,7 +748,7 @@
     "difficulty": "easy",
     "minCookingLevel": "beginner",
     "prepTime": 5,
-    "cookTime": 720,
+    "cookTime": 10,
     "servings": 4,
     "ingredients": [
       {
@@ -2741,7 +2741,7 @@
     "description": "北京老字号消夏饮品。乌梅、山楂、陈皮等熬煮，加冰糖与桂花调味。汤色深褐晶亮，酸甜开胃解油腻，搭配烤肉烤鸭绝配，一口回到老北京。",
     "cuisine": "chinese",
     "regionalCuisine": "northern",
-    "cookingMethod": "boil",
+    "cookingMethod": "soup",
     "flavors": [
       "sour",
       "sweet"
@@ -4007,9 +4007,9 @@
     ],
     "difficulty": "medium",
     "minCookingLevel": "basic",
-    "prepTime": 30,
-    "cookTime": 30,
-    "servings": 12,
+    "prepTime": 10,
+    "cookTime": 10,
+    "servings": 2,
     "ingredients": [
       {
         "ingredientId": "mung_bean",
@@ -4085,7 +4085,7 @@
     "minCookingLevel": "basic",
     "prepTime": 20,
     "cookTime": 20,
-    "servings": 12,
+    "servings": 2,
     "ingredients": [
       {
         "ingredientId": "flour",
@@ -4739,7 +4739,7 @@
     "description": "元宵节必食甜品。糯米粉团包入黑芝麻糖馅，水煮浮起即熟。咬破糯皮瞬间流出滚烫的芝麻糖浆，烫嘴又上瘾。象征团圆的温暖甜品。",
     "cuisine": "chinese",
     "regionalCuisine": "homestyle",
-    "cookingMethod": "boil",
+    "cookingMethod": "staple",
     "flavors": [
       "sweet"
     ],
@@ -5157,8 +5157,8 @@
     ],
     "difficulty": "medium",
     "minCookingLevel": "intermediate",
-    "prepTime": 30,
-    "cookTime": 0,
+    "prepTime": 10,
+    "cookTime": 5,
     "servings": 6,
     "ingredients": [
       {
@@ -5628,7 +5628,7 @@
     "minCookingLevel": "expert",
     "prepTime": 60,
     "cookTime": 20,
-    "servings": 12,
+    "servings": 2,
     "ingredients": [
       {
         "ingredientId": "almond",
@@ -6067,7 +6067,7 @@
     "minCookingLevel": "beginner",
     "prepTime": 15,
     "cookTime": 15,
-    "servings": 12,
+    "servings": 2,
     "ingredients": [
       {
         "ingredientId": "butter",
@@ -7170,7 +7170,7 @@
     "description": "滋阴润燥的养生甜汤。银耳泡发撕碎与莲子、红枣、冰糖慢炖至银耳出胶汤水黏稠。秋冬咽干咳嗽或皮肤干燥时一碗下肚，从里到外舒润起来。",
     "cuisine": "chinese",
     "regionalCuisine": "homestyle",
-    "cookingMethod": "stew",
+    "cookingMethod": "soup",
     "flavors": [
       "sweet",
       "light"
@@ -7261,8 +7261,8 @@
     ],
     "difficulty": "medium",
     "minCookingLevel": "basic",
-    "prepTime": 20,
-    "cookTime": 20,
+    "prepTime": 10,
+    "cookTime": 10,
     "servings": 2,
     "ingredients": [
       {
@@ -7490,7 +7490,7 @@
     "description": "女性养颜经典糖水。银耳、红枣、枸杞、桂圆一锅慢炖，胶质满满汤水浓稠。美容养颜、补气养血，冬季暖身首选。可以一锅煮完冰镇成夏日糖水。",
     "cuisine": "chinese",
     "regionalCuisine": "homestyle",
-    "cookingMethod": "stew",
+    "cookingMethod": "soup",
     "flavors": [
       "sweet"
     ],
@@ -7901,7 +7901,7 @@
     "description": "养生时令糖水。紫薯与银耳同煲，炖至银耳出胶紫薯化开，汤色梦幻紫红。花青素与胶原蛋白补出好气色，女性秋冬护肤圣品。",
     "cuisine": "chinese",
     "regionalCuisine": "homestyle",
-    "cookingMethod": "stew",
+    "cookingMethod": "soup",
     "flavors": [
       "sweet"
     ],
@@ -8068,7 +8068,7 @@
     "description": "港式女生必点糖水。熟木瓜挖空加奶隔水炖，瓜肉融化在奶中清甜香滑。木瓜丰胸传说不论真假，奶香果甜的滋味绝对让人开心。",
     "cuisine": "chinese",
     "regionalCuisine": "cantonese",
-    "cookingMethod": "steam",
+    "cookingMethod": "braise",
     "flavors": [
       "sweet"
     ],
@@ -8144,7 +8144,7 @@
     "description": "冬至传统甜粥。糯米与红豆、绿豆、桂圆、红枣、莲子、百合、花生八种食材同煮，粘稠浓香、甜而不腻。喝完全身暖，一碗承载了阖家团圆的文化。",
     "cuisine": "chinese",
     "regionalCuisine": "homestyle",
-    "cookingMethod": "stew",
+    "cookingMethod": "staple",
     "flavors": [
       "sweet"
     ],
@@ -8507,7 +8507,7 @@
     "description": "华北街头早餐之王。绿豆面糊摊成薄饼，打蛋液撒葱花，裹脆薄脆或油条，刷甜面酱和腐乳，三分钟一份带走。",
     "cuisine": "chinese",
     "regionalCuisine": "northern",
-    "cookingMethod": "pan_fry",
+    "cookingMethod": "staple",
     "flavors": [
       "crispy",
       "savory",
@@ -9159,7 +9159,7 @@
     "description": "最平实的中式早餐。白粥绵滑、油条酥脆，泡软的油条蘸粥吃最是滋味，搭咸菜和酱瓜能连喝两碗。",
     "cuisine": "chinese",
     "regionalCuisine": "homestyle",
-    "cookingMethod": "simmer",
+    "cookingMethod": "staple",
     "flavors": [
       "plain",
       "smooth",
@@ -14274,7 +14274,7 @@
     "description": "意式开放蛋饼，从早餐到晚餐都适合。西葫芦与帕玛森奶酪香气浓郁，也可冷食切片，野餐便当利器。",
     "cuisine": "western",
     "regionalCuisine": "italian",
-    "cookingMethod": "bake",
+    "cookingMethod": "staple",
     "flavors": [
       "cheesy",
       "light",
@@ -17911,7 +17911,7 @@
     ],
     "difficulty": "medium",
     "minCookingLevel": "intermediate",
-    "prepTime": 20,
+    "prepTime": 10,
     "cookTime": 10,
     "servings": 2,
     "ingredients": [
@@ -19748,7 +19748,7 @@
     "nameEn": "Clay Pot Tofu Stew",
     "cuisine": "chinese",
     "regionalCuisine": "cantonese",
-    "cookingMethod": "stew",
+    "cookingMethod": "soup",
     "flavors": [
       "umami",
       "salty"
@@ -20093,7 +20093,7 @@
     "nameEn": "Yu Xiang Eggplant Casserole",
     "cuisine": "chinese",
     "regionalCuisine": "sichuan",
-    "cookingMethod": "braise",
+    "cookingMethod": "soup",
     "flavors": [
       "sweet",
       "sour",
@@ -20880,7 +20880,7 @@
     "difficulty": "easy",
     "minCookingLevel": "basic",
     "prepTime": 10,
-    "cookTime": 10,
+    "cookTime": 25,
     "servings": 3,
     "ingredients": [
       {
@@ -22397,7 +22397,7 @@
     "nameEn": "Bitter Melon and Pork Rib Pot",
     "cuisine": "chinese",
     "regionalCuisine": "cantonese",
-    "cookingMethod": "stew",
+    "cookingMethod": "soup",
     "flavors": [
       "light",
       "umami"
@@ -22625,7 +22625,7 @@
     "difficulty": "easy",
     "minCookingLevel": "beginner",
     "prepTime": 10,
-    "cookTime": 15,
+    "cookTime": 25,
     "servings": 1,
     "ingredients": [
       {
@@ -23137,7 +23137,7 @@
     "nameEn": "Minced Pork and Vermicelli Clay Pot",
     "cuisine": "chinese",
     "regionalCuisine": "homestyle",
-    "cookingMethod": "stew",
+    "cookingMethod": "soup",
     "flavors": [
       "spicy",
       "salty"
@@ -26067,7 +26067,7 @@
     "nameEn": "Anhui Dried Bamboo Chicken Stew",
     "cuisine": "chinese",
     "regionalCuisine": "anhui",
-    "cookingMethod": "stew",
+    "cookingMethod": "soup",
     "flavors": [
       "salty",
       "umami"
@@ -27174,7 +27174,7 @@
     "difficulty": "medium",
     "minCookingLevel": "intermediate",
     "prepTime": 10,
-    "cookTime": 12,
+    "cookTime": 25,
     "servings": 3,
     "ingredients": [
       {
@@ -29527,7 +29527,7 @@
     "nameEn": "Egg Tofu Claypot",
     "cuisine": "chinese",
     "regionalCuisine": "homestyle",
-    "cookingMethod": "stew",
+    "cookingMethod": "soup",
     "flavors": [
       "salty",
       "umami"
@@ -31500,7 +31500,7 @@
     ],
     "difficulty": "easy",
     "minCookingLevel": "beginner",
-    "prepTime": 30,
+    "prepTime": 10,
     "cookTime": 3,
     "servings": 2,
     "ingredients": [
@@ -31605,7 +31605,7 @@
     ],
     "difficulty": "easy",
     "minCookingLevel": "beginner",
-    "prepTime": 120,
+    "prepTime": 10,
     "cookTime": 3,
     "servings": 2,
     "ingredients": [
@@ -32290,7 +32290,7 @@
     "nameEn": "Eggplant and Tofu Claypot",
     "cuisine": "chinese",
     "regionalCuisine": "homestyle",
-    "cookingMethod": "stew",
+    "cookingMethod": "soup",
     "flavors": [
       "salty",
       "umami"
@@ -32822,7 +32822,7 @@
     "difficulty": "easy",
     "minCookingLevel": "basic",
     "prepTime": 10,
-    "cookTime": 12,
+    "cookTime": 25,
     "servings": 2,
     "ingredients": [
       {
@@ -34024,7 +34024,7 @@
     "difficulty": "medium",
     "minCookingLevel": "intermediate",
     "prepTime": 10,
-    "cookTime": 10,
+    "cookTime": 25,
     "servings": 3,
     "ingredients": [
       {
@@ -37031,7 +37031,7 @@
     "nameEn": "Fish and Tofu Claypot",
     "cuisine": "chinese",
     "regionalCuisine": "fujian",
-    "cookingMethod": "stew",
+    "cookingMethod": "soup",
     "flavors": [
       "salty",
       "umami"
@@ -38771,7 +38771,7 @@
     "difficulty": "easy",
     "minCookingLevel": "basic",
     "prepTime": 10,
-    "cookTime": 20,
+    "cookTime": 10,
     "servings": 3,
     "ingredients": [
       {
@@ -40796,8 +40796,8 @@
     ],
     "difficulty": "easy",
     "minCookingLevel": "beginner",
-    "prepTime": 5,
-    "cookTime": 3,
+    "prepTime": 10,
+    "cookTime": 25,
     "servings": 2,
     "ingredients": [
       {
@@ -41673,7 +41673,7 @@
     "difficulty": "easy",
     "minCookingLevel": "basic",
     "prepTime": 10,
-    "cookTime": 15,
+    "cookTime": 25,
     "servings": 2,
     "ingredients": [
       {
@@ -42072,7 +42072,7 @@
     "difficulty": "easy",
     "minCookingLevel": "basic",
     "prepTime": 10,
-    "cookTime": 12,
+    "cookTime": 25,
     "servings": 2,
     "ingredients": [
       {
@@ -42481,7 +42481,7 @@
     "isVegetarian": true,
     "dishStyle": "egg",
     "stapleCategory": "bread",
-    "cookingMethod": "pan_fry",
+    "cookingMethod": "staple",
     "perServing": {
       "calories": 174,
       "protein": 6.4,
@@ -42576,7 +42576,7 @@
       "allergen_egg"
     ],
     "dietaryFlags": [],
-    "cookingMethod": "deep_fry",
+    "cookingMethod": "staple",
     "status": "reviewed",
     "source": "chinese-2"
   },
@@ -42683,8 +42683,8 @@
     ],
     "difficulty": "medium",
     "minCookingLevel": "intermediate",
-    "prepTime": 30,
-    "cookTime": 15,
+    "prepTime": 10,
+    "cookTime": 10,
     "servings": 3,
     "ingredients": [
       {
@@ -45237,7 +45237,7 @@
     "difficulty": "easy",
     "minCookingLevel": "basic",
     "prepTime": 10,
-    "cookTime": 12,
+    "cookTime": 25,
     "servings": 3,
     "ingredients": [
       {
@@ -46566,7 +46566,7 @@
     "difficulty": "medium",
     "minCookingLevel": "intermediate",
     "prepTime": 10,
-    "cookTime": 10,
+    "cookTime": 25,
     "servings": 3,
     "ingredients": [
       {
@@ -46768,8 +46768,8 @@
     ],
     "difficulty": "medium",
     "minCookingLevel": "intermediate",
-    "prepTime": 20,
-    "cookTime": 15,
+    "prepTime": 10,
+    "cookTime": 10,
     "servings": 3,
     "ingredients": [
       {
@@ -47040,8 +47040,8 @@
     ],
     "difficulty": "easy",
     "minCookingLevel": "beginner",
-    "prepTime": 5,
-    "cookTime": 5,
+    "prepTime": 10,
+    "cookTime": 25,
     "servings": 3,
     "ingredients": [
       {
@@ -47638,7 +47638,7 @@
       "allergen_soy"
     ],
     "dietaryFlags": [],
-    "cookingMethod": "braise",
+    "cookingMethod": "staple",
     "status": "reviewed",
     "source": "chinese-2"
   },
@@ -48157,8 +48157,8 @@
     ],
     "difficulty": "medium",
     "minCookingLevel": "intermediate",
-    "prepTime": 20,
-    "cookTime": 12,
+    "prepTime": 10,
+    "cookTime": 10,
     "servings": 3,
     "ingredients": [
       {
@@ -49987,8 +49987,8 @@
     ],
     "difficulty": "easy",
     "minCookingLevel": "beginner",
-    "prepTime": 15,
-    "cookTime": 15,
+    "prepTime": 10,
+    "cookTime": 10,
     "servings": 3,
     "ingredients": [
       {
@@ -50291,7 +50291,7 @@
     "nameEn": "Cold Soba Noodles",
     "cuisine": "asian_other",
     "regionalCuisine": "japanese",
-    "cookingMethod": "staple",
+    "cookingMethod": "cold_dish",
     "flavors": [
       "light",
       "refreshing"
@@ -53866,7 +53866,7 @@
     "nameEn": "Korean Seafood Pancake",
     "cuisine": "asian_other",
     "regionalCuisine": "korean",
-    "cookingMethod": "pan_fry",
+    "cookingMethod": "staple",
     "flavors": [
       "savory",
       "crispy"
@@ -53995,8 +53995,8 @@
     ],
     "difficulty": "easy",
     "minCookingLevel": "beginner",
-    "prepTime": 5,
-    "cookTime": 15,
+    "prepTime": 10,
+    "cookTime": 25,
     "servings": 2,
     "ingredients": [
       {
@@ -55468,7 +55468,7 @@
     "nameEn": "Kimchi Pancake Kimchijeon",
     "cuisine": "asian_other",
     "regionalCuisine": "korean",
-    "cookingMethod": "pan_fry",
+    "cookingMethod": "staple",
     "flavors": [
       "savory",
       "spicy"
@@ -56193,7 +56193,7 @@
     "nameEn": "Korean Zucchini Pancake Hobak Jeon",
     "cuisine": "asian_other",
     "regionalCuisine": "korean",
-    "cookingMethod": "pan_fry",
+    "cookingMethod": "staple",
     "flavors": [
       "savory",
       "light"
@@ -57069,7 +57069,7 @@
     ],
     "difficulty": "easy",
     "minCookingLevel": "basic",
-    "prepTime": 20,
+    "prepTime": 10,
     "cookTime": 5,
     "servings": 2,
     "ingredients": [
@@ -58712,7 +58712,7 @@
     "nameEn": "Thai Glass Noodle Stir Fry",
     "cuisine": "asian_other",
     "regionalCuisine": "southeast_asian",
-    "cookingMethod": "stir_fry",
+    "cookingMethod": "soup",
     "flavors": [
       "savory",
       "umami"
@@ -61169,7 +61169,7 @@
     "nameEn": "Italian Frittata",
     "cuisine": "western",
     "regionalCuisine": "italian",
-    "cookingMethod": "bake",
+    "cookingMethod": "staple",
     "flavors": [
       "savory",
       "mild"
@@ -62233,7 +62233,7 @@
     ],
     "difficulty": "easy",
     "minCookingLevel": "beginner",
-    "prepTime": 15,
+    "prepTime": 10,
     "cookTime": 10,
     "servings": 2,
     "ingredients": [
@@ -62872,7 +62872,7 @@
     ],
     "difficulty": "easy",
     "minCookingLevel": "beginner",
-    "prepTime": 15,
+    "prepTime": 10,
     "cookTime": 10,
     "servings": 2,
     "ingredients": [
@@ -65359,7 +65359,7 @@
     ],
     "difficulty": "easy",
     "minCookingLevel": "basic",
-    "prepTime": 15,
+    "prepTime": 10,
     "cookTime": 10,
     "servings": 2,
     "ingredients": [
@@ -66155,7 +66155,7 @@
     "nameEn": "Plain Congee with Pickles",
     "cuisine": "chinese",
     "regionalCuisine": "cantonese",
-    "cookingMethod": "boil",
+    "cookingMethod": "staple",
     "flavors": [
       "plain",
       "comforting"
@@ -66246,7 +66246,7 @@
     "nameEn": "Chinese Egg Pancake",
     "cuisine": "chinese",
     "regionalCuisine": "homestyle",
-    "cookingMethod": "pan_fry",
+    "cookingMethod": "staple",
     "flavors": [
       "savory",
       "mild"
@@ -67193,7 +67193,7 @@
     "nameEn": "Sweet Rice Balls",
     "cuisine": "chinese",
     "regionalCuisine": "southern",
-    "cookingMethod": "boil",
+    "cookingMethod": "staple",
     "flavors": [
       "sweet",
       "chewy"
@@ -67383,7 +67383,7 @@
     "nameEn": "Sesame Flatbread",
     "cuisine": "chinese",
     "regionalCuisine": "northern",
-    "cookingMethod": "bake",
+    "cookingMethod": "staple",
     "flavors": [
       "savory",
       "fragrant"
@@ -67777,7 +67777,7 @@
     "nameEn": "Steamed Pork Buns",
     "cuisine": "chinese",
     "regionalCuisine": "northern",
-    "cookingMethod": "steam",
+    "cookingMethod": "staple",
     "flavors": [
       "savory",
       "juicy"
@@ -67877,7 +67877,7 @@
     "nameEn": "Vegetable Steamed Buns",
     "cuisine": "chinese",
     "regionalCuisine": "northern",
-    "cookingMethod": "steam",
+    "cookingMethod": "staple",
     "flavors": [
       "light",
       "savory"
@@ -68369,7 +68369,7 @@
     "nameEn": "Chive and Egg Pancake",
     "cuisine": "chinese",
     "regionalCuisine": "northern",
-    "cookingMethod": "pan_fry",
+    "cookingMethod": "staple",
     "flavors": [
       "savory",
       "fragrant"
@@ -68726,7 +68726,7 @@
     "nameEn": "Zucchini Egg Pancake",
     "cuisine": "chinese",
     "regionalCuisine": "homestyle",
-    "cookingMethod": "pan_fry",
+    "cookingMethod": "staple",
     "flavors": [
       "savory",
       "light"
@@ -70645,7 +70645,7 @@
     "nameEn": "Egg in a Hole",
     "cuisine": "western",
     "regionalCuisine": "american",
-    "cookingMethod": "pan_fry",
+    "cookingMethod": "staple",
     "flavors": [
       "savory",
       "crispy"
@@ -71708,7 +71708,7 @@
     "nameEn": "Shrimp Wonton Soup",
     "cuisine": "chinese",
     "regionalCuisine": "cantonese",
-    "cookingMethod": "soup",
+    "cookingMethod": "staple",
     "flavors": [
       "fresh",
       "savory"
@@ -74831,7 +74831,7 @@
     "nameEn": "Chicken Noodle Soup",
     "cuisine": "western",
     "regionalCuisine": "american",
-    "cookingMethod": "soup",
+    "cookingMethod": "staple",
     "flavors": [
       "savory",
       "comforting"
@@ -79974,7 +79974,7 @@
     "nameEn": "Mushroom Egg Pancake",
     "cuisine": "chinese",
     "regionalCuisine": "homestyle",
-    "cookingMethod": "pan_fry",
+    "cookingMethod": "staple",
     "flavors": [
       "savory",
       "umami"
@@ -81101,7 +81101,7 @@
     "nameEn": "Veggie Omelette",
     "cuisine": "western",
     "regionalCuisine": "american",
-    "cookingMethod": "pan_fry",
+    "cookingMethod": "staple",
     "flavors": [
       "savory",
       "fresh"
@@ -82084,7 +82084,7 @@
     "nameEn": "Small Wonton Soup",
     "cuisine": "chinese",
     "regionalCuisine": "jiangzhe",
-    "cookingMethod": "soup",
+    "cookingMethod": "staple",
     "flavors": [
       "fresh",
       "light"
@@ -85884,7 +85884,7 @@
     "difficulty": "easy",
     "minCookingLevel": "basic",
     "prepTime": 10,
-    "cookTime": 12,
+    "cookTime": 25,
     "servings": 2,
     "ingredients": [
       {
@@ -90368,7 +90368,7 @@
     "difficulty": "easy",
     "minCookingLevel": "basic",
     "prepTime": 10,
-    "cookTime": 12,
+    "cookTime": 25,
     "servings": 2,
     "ingredients": [
       {
@@ -91994,7 +91994,7 @@
     "nameEn": "Onion Egg Pancake",
     "cuisine": "chinese",
     "regionalCuisine": "homestyle",
-    "cookingMethod": "pan_fry",
+    "cookingMethod": "staple",
     "flavors": [
       "sweet",
       "savory"
@@ -95935,6 +95935,16 @@
         "ingredientId": "cooking_oil",
         "amount": 15,
         "unit": "ml"
+      },
+      {
+        "ingredientId": "bacon",
+        "amount": 80,
+        "unit": "g"
+      },
+      {
+        "ingredientId": "bacon",
+        "amount": 80,
+        "unit": "g"
       }
     ],
     "steps": [
@@ -96522,8 +96532,8 @@
     ],
     "difficulty": "medium",
     "minCookingLevel": "basic",
-    "prepTime": 15,
-    "cookTime": 15,
+    "prepTime": 10,
+    "cookTime": 10,
     "servings": 2,
     "ingredients": [
       {
@@ -97548,7 +97558,7 @@
     ],
     "difficulty": "hard",
     "minCookingLevel": "advanced",
-    "prepTime": 15,
+    "prepTime": 10,
     "cookTime": 10,
     "servings": 5,
     "ingredients": [
@@ -98013,8 +98023,8 @@
     ],
     "difficulty": "medium",
     "minCookingLevel": "basic",
-    "prepTime": 15,
-    "cookTime": 15,
+    "prepTime": 10,
+    "cookTime": 10,
     "servings": 3,
     "ingredients": [
       {
@@ -99380,7 +99390,7 @@
     ],
     "difficulty": "easy",
     "minCookingLevel": "beginner",
-    "prepTime": 15,
+    "prepTime": 10,
     "cookTime": 10,
     "servings": 2,
     "ingredients": [
@@ -99733,8 +99743,8 @@
     ],
     "difficulty": "hard",
     "minCookingLevel": "expert",
-    "prepTime": 20,
-    "cookTime": 25,
+    "prepTime": 10,
+    "cookTime": 10,
     "servings": 2,
     "ingredients": [
       {
@@ -101141,7 +101151,7 @@
     "isVegetarian": true,
     "dishStyle": "egg",
     "stapleCategory": null,
-    "cookingMethod": "steam",
+    "cookingMethod": "soup",
     "perServing": {
       "calories": 123,
       "protein": 9.7,
@@ -102974,7 +102984,7 @@
       "allergen_egg"
     ],
     "dietaryFlags": [],
-    "cookingMethod": "cold_dish",
+    "cookingMethod": "staple",
     "status": "reviewed",
     "source": "chinese-1"
   },
@@ -103440,7 +103450,7 @@
     "isVegetarian": false,
     "dishStyle": "meat",
     "stapleCategory": null,
-    "cookingMethod": "stew",
+    "cookingMethod": "soup",
     "perServing": {
       "calories": 378,
       "protein": 25.6,
@@ -104541,8 +104551,8 @@
     ],
     "difficulty": "easy",
     "minCookingLevel": "beginner",
-    "prepTime": 5,
-    "cookTime": 15,
+    "prepTime": 10,
+    "cookTime": 25,
     "servings": 2,
     "ingredients": [
       {
@@ -105248,8 +105258,8 @@
     ],
     "difficulty": "hard",
     "minCookingLevel": "advanced",
-    "prepTime": 25,
-    "cookTime": 40,
+    "prepTime": 10,
+    "cookTime": 10,
     "servings": 4,
     "ingredients": [
       {
@@ -105409,7 +105419,7 @@
       "allergen_egg"
     ],
     "dietaryFlags": [],
-    "cookingMethod": "deep_fry",
+    "cookingMethod": "staple",
     "status": "reviewed",
     "source": "chinese-1"
   },
@@ -105430,7 +105440,7 @@
     "difficulty": "easy",
     "minCookingLevel": "beginner",
     "prepTime": 10,
-    "cookTime": 15,
+    "cookTime": 25,
     "servings": 3,
     "ingredients": [
       {
@@ -105698,7 +105708,7 @@
     "dietaryFlags": [
       "high_purine"
     ],
-    "cookingMethod": "cold_dish",
+    "cookingMethod": "staple",
     "status": "reviewed",
     "source": "chinese-1"
   },
@@ -105893,7 +105903,7 @@
     "difficulty": "medium",
     "minCookingLevel": "intermediate",
     "prepTime": 10,
-    "cookTime": 12,
+    "cookTime": 25,
     "servings": 2,
     "ingredients": [
       {
@@ -106265,7 +106275,7 @@
     "difficulty": "easy",
     "minCookingLevel": "basic",
     "prepTime": 10,
-    "cookTime": 10,
+    "cookTime": 25,
     "servings": 2,
     "ingredients": [
       {
@@ -106698,7 +106708,7 @@
     "isVegetarian": false,
     "dishStyle": "meat",
     "stapleCategory": null,
-    "cookingMethod": "braise",
+    "cookingMethod": "soup",
     "perServing": {
       "calories": 307,
       "protein": 19.3,
@@ -107456,7 +107466,7 @@
     "difficulty": "easy",
     "minCookingLevel": "basic",
     "prepTime": 10,
-    "cookTime": 12,
+    "cookTime": 25,
     "servings": 2,
     "ingredients": [
       {
@@ -108197,7 +108207,7 @@
     "nameEn": "Cantonese Braised Pork Ribs",
     "cuisine": "chinese",
     "regionalCuisine": "cantonese",
-    "cookingMethod": "staple",
+    "cookingMethod": "braise",
     "flavors": [
       "sweet",
       "salty",
@@ -108679,7 +108689,7 @@
     "difficulty": "easy",
     "minCookingLevel": "basic",
     "prepTime": 10,
-    "cookTime": 12,
+    "cookTime": 25,
     "servings": 2,
     "ingredients": [
       {
@@ -109169,7 +109179,7 @@
     "difficulty": "easy",
     "minCookingLevel": "basic",
     "prepTime": 10,
-    "cookTime": 12,
+    "cookTime": 25,
     "servings": 2,
     "ingredients": [
       {
@@ -109619,7 +109629,7 @@
     "nameEn": "Chinese Cabbage and Tofu Stew",
     "cuisine": "chinese",
     "regionalCuisine": "homestyle",
-    "cookingMethod": "stew",
+    "cookingMethod": "soup",
     "flavors": [
       "light",
       "umami"
@@ -109818,7 +109828,7 @@
     "difficulty": "easy",
     "minCookingLevel": "basic",
     "prepTime": 10,
-    "cookTime": 10,
+    "cookTime": 25,
     "servings": 2,
     "ingredients": [
       {
@@ -111583,7 +111593,7 @@
     "difficulty": "easy",
     "minCookingLevel": "basic",
     "prepTime": 10,
-    "cookTime": 10,
+    "cookTime": 25,
     "servings": 2,
     "ingredients": [
       {
@@ -111783,7 +111793,7 @@
     "difficulty": "easy",
     "minCookingLevel": "basic",
     "prepTime": 10,
-    "cookTime": 12,
+    "cookTime": 25,
     "servings": 2,
     "ingredients": [
       {
@@ -112443,7 +112453,7 @@
     "nameEn": "Jiangsu Mushroom Tofu Casserole",
     "cuisine": "chinese",
     "regionalCuisine": "jiangsu",
-    "cookingMethod": "stew",
+    "cookingMethod": "soup",
     "flavors": [
       "light",
       "umami"
@@ -112555,7 +112565,7 @@
     "difficulty": "easy",
     "minCookingLevel": "basic",
     "prepTime": 10,
-    "cookTime": 10,
+    "cookTime": 25,
     "servings": 2,
     "ingredients": [
       {
@@ -113556,7 +113566,7 @@
     "nameEn": "Pork Ribs and Corn Stew",
     "cuisine": "chinese",
     "regionalCuisine": "homestyle",
-    "cookingMethod": "stew",
+    "cookingMethod": "soup",
     "flavors": [
       "sweet",
       "light",
@@ -113745,7 +113755,7 @@
     "nameEn": "Shrimp and Tofu Clay Pot",
     "cuisine": "chinese",
     "regionalCuisine": "cantonese",
-    "cookingMethod": "stew",
+    "cookingMethod": "soup",
     "flavors": [
       "umami",
       "light"
@@ -114262,7 +114272,7 @@
     "difficulty": "easy",
     "minCookingLevel": "basic",
     "prepTime": 10,
-    "cookTime": 12,
+    "cookTime": 10,
     "servings": 2,
     "ingredients": [
       {
@@ -114544,8 +114554,8 @@
     ],
     "difficulty": "easy",
     "minCookingLevel": "beginner",
-    "prepTime": 5,
-    "cookTime": 10,
+    "prepTime": 10,
+    "cookTime": 25,
     "servings": 2,
     "ingredients": [
       {
@@ -115512,8 +115522,8 @@
     ],
     "difficulty": "easy",
     "minCookingLevel": "beginner",
-    "prepTime": 5,
-    "cookTime": 15,
+    "prepTime": 10,
+    "cookTime": 25,
     "servings": 2,
     "ingredients": [
       {
@@ -117003,7 +117013,7 @@
     "nameEn": "Sweet Potato Egg Pancake",
     "cuisine": "chinese",
     "regionalCuisine": "homestyle",
-    "cookingMethod": "deep_fry",
+    "cookingMethod": "staple",
     "flavors": [
       "sweet",
       "light"
@@ -119233,7 +119243,7 @@
     "difficulty": "medium",
     "minCookingLevel": "basic",
     "prepTime": 10,
-    "cookTime": 15,
+    "cookTime": 25,
     "servings": 2,
     "ingredients": [
       {
@@ -119329,8 +119339,8 @@
     ],
     "difficulty": "easy",
     "minCookingLevel": "basic",
-    "prepTime": 5,
-    "cookTime": 18,
+    "prepTime": 10,
+    "cookTime": 25,
     "servings": 3,
     "ingredients": [
       {
@@ -120983,7 +120993,7 @@
     "nameEn": "Chicken and Corn Stew",
     "cuisine": "chinese",
     "regionalCuisine": "homestyle",
-    "cookingMethod": "stew",
+    "cookingMethod": "soup",
     "flavors": [
       "sweet",
       "umami"
@@ -122908,7 +122918,7 @@
     "difficulty": "easy",
     "minCookingLevel": "basic",
     "prepTime": 10,
-    "cookTime": 15,
+    "cookTime": 25,
     "servings": 2,
     "ingredients": [
       {
@@ -123833,7 +123843,7 @@
     "difficulty": "easy",
     "minCookingLevel": "beginner",
     "prepTime": 10,
-    "cookTime": 15,
+    "cookTime": 25,
     "servings": 2,
     "ingredients": [
       {
@@ -131456,7 +131466,7 @@
     "id": "fujian_oyster_vermicelli",
     "nameZh": "海蛎煎线面",
     "nameEn": "Fujian Oyster Vermicelli",
-    "cookingMethod": "stew",
+    "cookingMethod": "staple",
     "flavors": [
       "umami",
       "salty"
@@ -133971,8 +133981,8 @@
     ],
     "difficulty": "easy",
     "minCookingLevel": "basic",
-    "prepTime": 8,
-    "cookTime": 12,
+    "prepTime": 10,
+    "cookTime": 25,
     "servings": 2,
     "description": "家常菜里的下饭好手。以豆腐配猪肉末为主料，红烧收汁，酱香浓郁，口味香辣、咸香、鲜美，快手就能端上桌。",
     "ingredients": [
@@ -136644,7 +136654,7 @@
     "id": "home_braised_potato_dark",
     "nameZh": "红烧土豆(浓汤)",
     "nameEn": "Dark Braised Potatoes",
-    "cookingMethod": "braise",
+    "cookingMethod": "soup",
     "flavors": [
       "salty",
       "umami"
@@ -136655,8 +136665,8 @@
     ],
     "difficulty": "easy",
     "minCookingLevel": "basic",
-    "prepTime": 8,
-    "cookTime": 20,
+    "prepTime": 10,
+    "cookTime": 25,
     "servings": 3,
     "description": "家常喝汤首选。以土豆配老抽为主料，文火收汁上色，色泽红亮，口味咸香、鲜美，暖胃又养生。",
     "ingredients": [
@@ -136942,7 +136952,7 @@
     "id": "bf_scallion_pancake",
     "nameZh": "葱油煎饼",
     "nameEn": "Scallion Pancake",
-    "cookingMethod": "deep_fry",
+    "cookingMethod": "staple",
     "flavors": [
       "salty",
       "umami"
@@ -137026,7 +137036,7 @@
     "id": "bf_corn_pancake",
     "nameZh": "玉米煎饼",
     "nameEn": "Corn Pancake",
-    "cookingMethod": "deep_fry",
+    "cookingMethod": "staple",
     "flavors": [
       "sweet",
       "salty"
@@ -137119,7 +137129,7 @@
     "id": "bf_potato_pancake",
     "nameZh": "土豆丝煎饼",
     "nameEn": "Potato Shred Pancake",
-    "cookingMethod": "deep_fry",
+    "cookingMethod": "staple",
     "flavors": [
       "salty"
     ],
@@ -137930,7 +137940,7 @@
     "id": "bf_rice_roll",
     "nameZh": "鸡蛋肠粉",
     "nameEn": "Rice Roll with Egg",
-    "cookingMethod": "steam",
+    "cookingMethod": "staple",
     "flavors": [
       "salty",
       "umami"
@@ -138216,7 +138226,7 @@
     "id": "bf_soup_dumpling_xlb",
     "nameZh": "小笼汤包",
     "nameEn": "Soup Dumpling",
-    "cookingMethod": "steam",
+    "cookingMethod": "staple",
     "flavors": [
       "umami",
       "salty"
@@ -140375,7 +140385,7 @@
     "cuisine": "chinese",
     "regionalCuisine": "homestyle",
     "status": "reviewed",
-    "cookingMethod": "staple",
+    "cookingMethod": "braise",
     "id": "noodle_2p_beef_noodle",
     "nameZh": "红烧牛肉面(2人份)",
     "nameEn": "Braised Beef Noodles 2p",
@@ -142629,8 +142639,8 @@
     ],
     "difficulty": "easy",
     "minCookingLevel": "basic",
-    "prepTime": 15,
-    "cookTime": 15,
+    "prepTime": 10,
+    "cookTime": 10,
     "servings": 3,
     "description": "一道冰镇解腻的家常菜凉菜。以鸡腿肉配花生为主料，冰镇拌制，层次分明，口味香辣、咸香、鲜美，搭配白酒/啤酒绝配。",
     "ingredients": [
@@ -142742,8 +142752,8 @@
     ],
     "difficulty": "medium",
     "minCookingLevel": "intermediate",
-    "prepTime": 30,
-    "cookTime": 15,
+    "prepTime": 10,
+    "cookTime": 10,
     "servings": 3,
     "description": "家常菜凉拌代表作。以猪肝配香菜为主料，调味凉拌，层次分明，口味咸香、香辣，夏日餐桌常客。",
     "ingredients": [
@@ -142919,7 +142929,7 @@
     "difficulty": "easy",
     "minCookingLevel": "basic",
     "prepTime": 5,
-    "cookTime": 90,
+    "cookTime": 10,
     "servings": 4,
     "description": "一道冰镇解腻的家常菜凉菜。以牛腱配八角为主料，冰镇拌制，爽口开胃，口味咸香、鲜美，开胃又解腻。",
     "ingredients": [
@@ -143910,7 +143920,7 @@
     "status": "reviewed",
     "id": "bulk450_em_000",
     "nameZh": "炒猪里脊炒彩椒",
-    "nameEn": "炒 猪里脊 with 彩椒",
+    "nameEn": "Stir-fried Pork Loin with Bell Pepper",
     "cookingMethod": "stir_fry",
     "flavors": [
       "umami"
@@ -144004,7 +144014,7 @@
     "status": "reviewed",
     "id": "bulk450_em_001",
     "nameZh": "炒猪里脊炒芹菜",
-    "nameEn": "炒 猪里脊 with 芹菜",
+    "nameEn": "Stir-fried Pork Loin with Celery",
     "cookingMethod": "stir_fry",
     "flavors": [
       "umami",
@@ -144101,7 +144111,7 @@
     "status": "reviewed",
     "id": "bulk450_em_002",
     "nameZh": "炒猪里脊炒黄瓜",
-    "nameEn": "炒 猪里脊 with 黄瓜",
+    "nameEn": "Stir-fried Pork Loin with Cucumber",
     "cookingMethod": "stir_fry",
     "flavors": [
       "light",
@@ -144196,7 +144206,7 @@
     "status": "reviewed",
     "id": "bulk450_em_003",
     "nameZh": "炒猪里脊炒洋葱",
-    "nameEn": "炒 猪里脊 with 洋葱",
+    "nameEn": "Stir-fried Pork Loin with Onion",
     "cookingMethod": "stir_fry",
     "flavors": [
       "umami",
@@ -144291,7 +144301,7 @@
     "status": "reviewed",
     "id": "bulk450_em_004",
     "nameZh": "炒猪里脊炒芦笋",
-    "nameEn": "炒 猪里脊 with 芦笋",
+    "nameEn": "Stir-fried Pork Loin with Asparagus",
     "cookingMethod": "stir_fry",
     "flavors": [
       "light"
@@ -144385,7 +144395,7 @@
     "status": "reviewed",
     "id": "bulk450_em_005",
     "nameZh": "炒猪里脊炒莲藕",
-    "nameEn": "炒 猪里脊 with 莲藕",
+    "nameEn": "Stir-fried Pork Loin with Lotus Root",
     "cookingMethod": "stir_fry",
     "flavors": [
       "umami",
@@ -144479,7 +144489,7 @@
     "status": "reviewed",
     "id": "bulk450_em_006",
     "nameZh": "炒猪里脊炒荷兰豆",
-    "nameEn": "炒 猪里脊 with 荷兰豆",
+    "nameEn": "Stir-fried Pork Loin with Snow Peas",
     "cookingMethod": "stir_fry",
     "flavors": [
       "light",
@@ -144573,7 +144583,7 @@
     "status": "reviewed",
     "id": "bulk450_em_007",
     "nameZh": "炒猪里脊炒竹笋",
-    "nameEn": "炒 猪里脊 with 竹笋",
+    "nameEn": "Stir-fried Pork Loin with Bamboo Shoot",
     "cookingMethod": "stir_fry",
     "flavors": [
       "umami"
@@ -144667,7 +144677,7 @@
     "status": "reviewed",
     "id": "bulk450_em_008",
     "nameZh": "炒五花肉炒包菜",
-    "nameEn": "炒 五花肉 with 包菜",
+    "nameEn": "Stir-fried Pork Belly with Cabbage",
     "cookingMethod": "stir_fry",
     "flavors": [
       "umami",
@@ -144762,7 +144772,7 @@
     "status": "reviewed",
     "id": "bulk450_em_009",
     "nameZh": "炒五花肉炒四季豆",
-    "nameEn": "炒 五花肉 with 四季豆",
+    "nameEn": "Stir-fried Pork Belly with Green Beans",
     "cookingMethod": "stir_fry",
     "flavors": [
       "umami"
@@ -144856,7 +144866,7 @@
     "status": "reviewed",
     "id": "bulk450_em_010",
     "nameZh": "炒五花肉炒韭菜",
-    "nameEn": "炒 五花肉 with 韭菜",
+    "nameEn": "Stir-fried Pork Belly with Leek / Chives",
     "cookingMethod": "stir_fry",
     "flavors": [
       "umami"
@@ -144950,7 +144960,7 @@
     "status": "reviewed",
     "id": "bulk450_em_011",
     "nameZh": "炒五花肉炒土豆",
-    "nameEn": "炒 五花肉 with 土豆",
+    "nameEn": "Stir-fried Pork Belly with Potato",
     "cookingMethod": "stir_fry",
     "flavors": [
       "umami"
@@ -145043,7 +145053,7 @@
     "status": "reviewed",
     "id": "bulk450_em_012",
     "nameZh": "炒五花肉炒蒜薹",
-    "nameEn": "炒 五花肉 with 蒜薹",
+    "nameEn": "Stir-fried Pork Belly with Garlic Shoots",
     "cookingMethod": "stir_fry",
     "flavors": [
       "umami"
@@ -145137,7 +145147,7 @@
     "status": "reviewed",
     "id": "bulk450_em_013",
     "nameZh": "炒五花肉炒雪菜",
-    "nameEn": "炒 五花肉 with 雪菜",
+    "nameEn": "Stir-fried Pork Belly with Snow Vegetable",
     "cookingMethod": "stir_fry",
     "flavors": [
       "umami",
@@ -145231,7 +145241,7 @@
     "status": "reviewed",
     "id": "bulk450_em_014",
     "nameZh": "炒猪肉末炒茄子",
-    "nameEn": "炒 猪肉末 with 茄子",
+    "nameEn": "Stir-fried Ground Pork with Eggplant",
     "cookingMethod": "stir_fry",
     "flavors": [
       "umami"
@@ -145324,7 +145334,7 @@
     "status": "reviewed",
     "id": "bulk450_em_015",
     "nameZh": "干煸猪肉末炒四季豆",
-    "nameEn": "干煸 猪肉末 with 四季豆",
+    "nameEn": "Dry-fried Ground Pork with Green Beans",
     "cookingMethod": "stir_fry",
     "flavors": [
       "umami"
@@ -145417,7 +145427,7 @@
     "status": "reviewed",
     "id": "bulk450_em_016",
     "nameZh": "炒猪肉末炒芹菜",
-    "nameEn": "炒 猪肉末 with 芹菜",
+    "nameEn": "Stir-fried Ground Pork with Celery",
     "cookingMethod": "stir_fry",
     "flavors": [
       "umami",
@@ -145512,7 +145522,7 @@
     "status": "reviewed",
     "id": "bulk450_em_017",
     "nameZh": "炒猪肉末炒包菜",
-    "nameEn": "炒 猪肉末 with 包菜",
+    "nameEn": "Stir-fried Ground Pork with Cabbage",
     "cookingMethod": "stir_fry",
     "flavors": [
       "umami"
@@ -145604,7 +145614,7 @@
     "status": "reviewed",
     "id": "bulk450_em_018",
     "nameZh": "炒猪肉末炒南瓜",
-    "nameEn": "炒 猪肉末 with 南瓜",
+    "nameEn": "Stir-fried Ground Pork with Pumpkin",
     "cookingMethod": "stir_fry",
     "flavors": [
       "sweet",
@@ -145697,7 +145707,7 @@
     "status": "reviewed",
     "id": "bulk450_em_019",
     "nameZh": "炒猪肉末炒西葫芦",
-    "nameEn": "炒 猪肉末 with 西葫芦",
+    "nameEn": "Stir-fried Ground Pork with Zucchini",
     "cookingMethod": "stir_fry",
     "flavors": [
       "light",
@@ -145790,7 +145800,7 @@
     "status": "reviewed",
     "id": "bulk450_em_020",
     "nameZh": "焖排骨炒玉米",
-    "nameEn": "焖 排骨 with 玉米",
+    "nameEn": "Braised Pork Ribs with Corn",
     "cookingMethod": "braise",
     "flavors": [
       "umami",
@@ -145890,7 +145900,7 @@
     "status": "reviewed",
     "id": "bulk450_em_021",
     "nameZh": "炖排骨炒莲藕",
-    "nameEn": "炖 排骨 with 莲藕",
+    "nameEn": "Stewed Pork Ribs with Lotus Root",
     "cookingMethod": "braise",
     "flavors": [
       "light",
@@ -145991,7 +146001,7 @@
     "status": "reviewed",
     "id": "bulk450_em_022",
     "nameZh": "焖排骨炒土豆",
-    "nameEn": "焖 排骨 with 土豆",
+    "nameEn": "Braised Pork Ribs with Potato",
     "cookingMethod": "braise",
     "flavors": [
       "umami"
@@ -146091,7 +146101,7 @@
     "status": "reviewed",
     "id": "bulk450_em_023",
     "nameZh": "炒牛里脊炒彩椒",
-    "nameEn": "炒 牛里脊 with 彩椒",
+    "nameEn": "Stir-fried Beef Sirloin with Bell Pepper",
     "cookingMethod": "stir_fry",
     "flavors": [
       "umami"
@@ -146187,7 +146197,7 @@
     "status": "reviewed",
     "id": "bulk450_em_024",
     "nameZh": "炒牛里脊炒西兰花",
-    "nameEn": "炒 牛里脊 with 西兰花",
+    "nameEn": "Stir-fried Beef Sirloin with Broccoli",
     "cookingMethod": "stir_fry",
     "flavors": [
       "umami",
@@ -146284,7 +146294,7 @@
     "status": "reviewed",
     "id": "bulk450_em_025",
     "nameZh": "炒牛里脊炒芦笋",
-    "nameEn": "炒 牛里脊 with 芦笋",
+    "nameEn": "Stir-fried Beef Sirloin with Asparagus",
     "cookingMethod": "stir_fry",
     "flavors": [
       "light"
@@ -146380,7 +146390,7 @@
     "status": "reviewed",
     "id": "bulk450_em_026",
     "nameZh": "黑椒牛里脊炒洋葱",
-    "nameEn": "黑椒 牛里脊 with 洋葱",
+    "nameEn": "Black Pepper Beef Sirloin with Onion",
     "cookingMethod": "stir_fry",
     "flavors": [
       "umami"
@@ -146476,7 +146486,7 @@
     "status": "reviewed",
     "id": "bulk450_em_027",
     "nameZh": "炒牛里脊炒平菇",
-    "nameEn": "炒 牛里脊 with 平菇",
+    "nameEn": "Stir-fried Beef Sirloin with Oyster Mushroom",
     "cookingMethod": "stir_fry",
     "flavors": [
       "umami"
@@ -146572,7 +146582,7 @@
     "status": "reviewed",
     "id": "bulk450_em_028",
     "nameZh": "炒牛肉末炒土豆",
-    "nameEn": "炒 牛肉末 with 土豆",
+    "nameEn": "Stir-fried Ground Beef with Potato",
     "cookingMethod": "stir_fry",
     "flavors": [
       "umami"
@@ -146665,7 +146675,7 @@
     "status": "reviewed",
     "id": "bulk450_em_029",
     "nameZh": "炒牛肉末炒包菜",
-    "nameEn": "炒 牛肉末 with 包菜",
+    "nameEn": "Stir-fried Ground Beef with Cabbage",
     "cookingMethod": "stir_fry",
     "flavors": [
       "umami"
@@ -146759,7 +146769,7 @@
     "status": "reviewed",
     "id": "bulk450_em_030",
     "nameZh": "炒鸡胸肉炒西兰花",
-    "nameEn": "炒 鸡胸肉 with 西兰花",
+    "nameEn": "Stir-fried Chicken Breast with Broccoli",
     "cookingMethod": "stir_fry",
     "flavors": [
       "umami",
@@ -146855,7 +146865,7 @@
     "status": "reviewed",
     "id": "bulk450_em_031",
     "nameZh": "炒鸡胸肉炒彩椒",
-    "nameEn": "炒 鸡胸肉 with 彩椒",
+    "nameEn": "Stir-fried Chicken Breast with Bell Pepper",
     "cookingMethod": "stir_fry",
     "flavors": [
       "umami"
@@ -146949,7 +146959,7 @@
     "status": "reviewed",
     "id": "bulk450_em_032",
     "nameZh": "炒鸡胸肉炒黄瓜",
-    "nameEn": "炒 鸡胸肉 with 黄瓜",
+    "nameEn": "Stir-fried Chicken Breast with Cucumber",
     "cookingMethod": "stir_fry",
     "flavors": [
       "light",
@@ -147045,7 +147055,7 @@
     "status": "reviewed",
     "id": "bulk450_em_033",
     "nameZh": "炒鸡胸肉炒西葫芦",
-    "nameEn": "炒 鸡胸肉 with 西葫芦",
+    "nameEn": "Stir-fried Chicken Breast with Zucchini",
     "cookingMethod": "stir_fry",
     "flavors": [
       "light"
@@ -147140,7 +147150,7 @@
     "status": "reviewed",
     "id": "bulk450_em_034",
     "nameZh": "炒鸡胸肉炒蘑菇",
-    "nameEn": "炒 鸡胸肉 with 蘑菇",
+    "nameEn": "Stir-fried Chicken Breast with Mushroom",
     "cookingMethod": "stir_fry",
     "flavors": [
       "umami"
@@ -147237,7 +147247,7 @@
     "status": "reviewed",
     "id": "bulk450_em_035",
     "nameZh": "焖鸡腿肉炒土豆",
-    "nameEn": "焖 鸡腿肉 with 土豆",
+    "nameEn": "Braised Chicken Thigh with Potato",
     "cookingMethod": "braise",
     "flavors": [
       "umami"
@@ -147334,7 +147344,7 @@
     "status": "reviewed",
     "id": "bulk450_em_036",
     "nameZh": "焖鸡腿肉炒蘑菇",
-    "nameEn": "焖 鸡腿肉 with 蘑菇",
+    "nameEn": "Braised Chicken Thigh with Mushroom",
     "cookingMethod": "braise",
     "flavors": [
       "umami"
@@ -147434,7 +147444,7 @@
     "status": "reviewed",
     "id": "bulk450_em_037",
     "nameZh": "炒鸡腿肉炒洋葱",
-    "nameEn": "炒 鸡腿肉 with 洋葱",
+    "nameEn": "Stir-fried Chicken Thigh with Onion",
     "cookingMethod": "stir_fry",
     "flavors": [
       "umami",
@@ -147529,7 +147539,7 @@
     "status": "reviewed",
     "id": "bulk450_em_038",
     "nameZh": "炒鸡腿肉炒腰果",
-    "nameEn": "炒 鸡腿肉 with 腰果",
+    "nameEn": "Stir-fried Chicken Thigh with Cashew",
     "cookingMethod": "stir_fry",
     "flavors": [
       "umami",
@@ -147626,7 +147636,7 @@
     "status": "reviewed",
     "id": "bulk450_em_039",
     "nameZh": "焖鸡腿肉炒四季豆",
-    "nameEn": "焖 鸡腿肉 with 四季豆",
+    "nameEn": "Braised Chicken Thigh with Green Beans",
     "cookingMethod": "braise",
     "flavors": [
       "umami"
@@ -147725,7 +147735,7 @@
     "status": "reviewed",
     "id": "bulk450_em_040",
     "nameZh": "焖鸡翅炒土豆",
-    "nameEn": "焖 鸡翅 with 土豆",
+    "nameEn": "Braised Chicken Wing with Potato",
     "cookingMethod": "braise",
     "flavors": [
       "umami",
@@ -147823,7 +147833,7 @@
     "status": "reviewed",
     "id": "bulk450_em_042",
     "nameZh": "爆炒羊腿肉炒洋葱",
-    "nameEn": "爆炒 羊腿肉 with 洋葱",
+    "nameEn": "Blast-fried Lamb Leg with Onion",
     "cookingMethod": "stir_fry",
     "flavors": [
       "umami",
@@ -147919,7 +147929,7 @@
     "status": "reviewed",
     "id": "bulk450_em_043",
     "nameZh": "炒羊腿肉炒芹菜",
-    "nameEn": "炒 羊腿肉 with 芹菜",
+    "nameEn": "Stir-fried Lamb Leg with Celery",
     "cookingMethod": "stir_fry",
     "flavors": [
       "umami"
@@ -148017,7 +148027,7 @@
     "status": "reviewed",
     "id": "bulk450_em_044",
     "nameZh": "炒羊腿肉炒韭菜",
-    "nameEn": "炒 羊腿肉 with 韭菜",
+    "nameEn": "Stir-fried Lamb Leg with Leek / Chives",
     "cookingMethod": "stir_fry",
     "flavors": [
       "umami"
@@ -148112,7 +148122,7 @@
     "status": "reviewed",
     "id": "bulk450_em_045",
     "nameZh": "焖鸭肉炒芋头",
-    "nameEn": "焖 鸭肉 with 芋头",
+    "nameEn": "Braised Duck with Taro",
     "cookingMethod": "braise",
     "flavors": [
       "umami",
@@ -148211,7 +148221,7 @@
     "status": "reviewed",
     "id": "bulk450_em_046",
     "nameZh": "炒鸭肉炒榨菜",
-    "nameEn": "炒 鸭肉 with 榨菜",
+    "nameEn": "Stir-fried Duck with Pickled Mustard",
     "cookingMethod": "stir_fry",
     "flavors": [
       "umami",
@@ -148308,7 +148318,7 @@
     "status": "reviewed",
     "id": "bulk450_em_047",
     "nameZh": "炒香肠炒包菜",
-    "nameEn": "炒 香肠 with 包菜",
+    "nameEn": "Stir-fried Sausage with Cabbage",
     "cookingMethod": "stir_fry",
     "flavors": [
       "umami"
@@ -148406,7 +148416,7 @@
     "status": "reviewed",
     "id": "bulk450_em_048",
     "nameZh": "炒香肠炒青椒",
-    "nameEn": "炒 香肠 with 青椒",
+    "nameEn": "Stir-fried Sausage with Green Pepper",
     "cookingMethod": "stir_fry",
     "flavors": [
       "umami"
@@ -148508,7 +148518,7 @@
     "status": "reviewed",
     "id": "bulk450_em_049",
     "nameZh": "炒培根炒包菜",
-    "nameEn": "炒 培根 with 包菜",
+    "nameEn": "Stir-fried Bacon with Cabbage",
     "cookingMethod": "stir_fry",
     "flavors": [
       "umami"
@@ -148606,7 +148616,7 @@
     "status": "reviewed",
     "id": "bulk450_em_050",
     "nameZh": "炒培根炒芦笋",
-    "nameEn": "炒 培根 with 芦笋",
+    "nameEn": "Stir-fried Bacon with Asparagus",
     "cookingMethod": "stir_fry",
     "flavors": [
       "umami"
@@ -148704,7 +148714,7 @@
     "status": "reviewed",
     "id": "bulk450_em_051",
     "nameZh": "炒火腿炒四季豆",
-    "nameEn": "炒 火腿 with 四季豆",
+    "nameEn": "Stir-fried Ham with Green Beans",
     "cookingMethod": "stir_fry",
     "flavors": [
       "umami"
@@ -148802,7 +148812,7 @@
     "status": "reviewed",
     "id": "bulk450_em_052",
     "nameZh": "炒腊肠炒包菜",
-    "nameEn": "炒 腊肠 with 包菜",
+    "nameEn": "Stir-fried Chinese Sausage with Cabbage",
     "cookingMethod": "stir_fry",
     "flavors": [
       "umami",
@@ -148901,7 +148911,7 @@
     "status": "reviewed",
     "id": "bulk450_ev_054",
     "nameZh": "清炒西兰花",
-    "nameEn": "清炒 西兰花",
+    "nameEn": "Plain Stir-fried Broccoli",
     "cookingMethod": "stir_fry",
     "flavors": [
       "light"
@@ -148975,7 +148985,7 @@
     "status": "reviewed",
     "id": "bulk450_ev_055",
     "nameZh": "干煸花菜",
-    "nameEn": "干煸 花菜",
+    "nameEn": "Dry-fried Cauliflower",
     "cookingMethod": "stir_fry",
     "flavors": [
       "umami"
@@ -149049,7 +149059,7 @@
     "status": "reviewed",
     "id": "bulk450_ev_056",
     "nameZh": "清炒花菜",
-    "nameEn": "清炒 花菜",
+    "nameEn": "Plain Stir-fried Cauliflower",
     "cookingMethod": "stir_fry",
     "flavors": [
       "light"
@@ -149123,7 +149133,7 @@
     "status": "reviewed",
     "id": "bulk450_ev_057",
     "nameZh": "酸甜土豆",
-    "nameEn": "酸甜 土豆",
+    "nameEn": "Potato",
     "cookingMethod": "stir_fry",
     "flavors": [
       "sour",
@@ -149198,7 +149208,7 @@
     "status": "reviewed",
     "id": "bulk450_ev_058",
     "nameZh": "醋溜土豆",
-    "nameEn": "醋溜 土豆",
+    "nameEn": "Vinegar Potato",
     "cookingMethod": "stir_fry",
     "flavors": [
       "sour"
@@ -149277,7 +149287,7 @@
     "status": "reviewed",
     "id": "bulk450_ev_059",
     "nameZh": "清炒土豆",
-    "nameEn": "清炒 土豆",
+    "nameEn": "Plain Stir-fried Potato",
     "cookingMethod": "stir_fry",
     "flavors": [
       "light"
@@ -149351,7 +149361,7 @@
     "status": "reviewed",
     "id": "bulk450_ev_060",
     "nameZh": "清炒菠菜",
-    "nameEn": "清炒 菠菜",
+    "nameEn": "Plain Stir-fried Spinach",
     "cookingMethod": "stir_fry",
     "flavors": [
       "light"
@@ -149427,7 +149437,7 @@
     "status": "reviewed",
     "id": "bulk450_ev_064",
     "nameZh": "醋溜大白菜",
-    "nameEn": "醋溜 大白菜",
+    "nameEn": "Vinegar Chinese Cabbage",
     "cookingMethod": "stir_fry",
     "flavors": [
       "sour"
@@ -149506,7 +149516,7 @@
     "status": "reviewed",
     "id": "bulk450_ev_065",
     "nameZh": "清炒大白菜",
-    "nameEn": "清炒 大白菜",
+    "nameEn": "Plain Stir-fried Chinese Cabbage",
     "cookingMethod": "stir_fry",
     "flavors": [
       "light"
@@ -149580,7 +149590,7 @@
     "status": "reviewed",
     "id": "bulk450_ev_067",
     "nameZh": "醋溜包菜",
-    "nameEn": "醋溜 包菜",
+    "nameEn": "Vinegar Cabbage",
     "cookingMethod": "stir_fry",
     "flavors": [
       "sour"
@@ -149659,7 +149669,7 @@
     "status": "reviewed",
     "id": "bulk450_ev_068",
     "nameZh": "糖渍番茄",
-    "nameEn": "糖渍 番茄",
+    "nameEn": "Sugared Tomato",
     "cookingMethod": "cold_dish",
     "flavors": [
       "sweet"
@@ -149738,7 +149748,7 @@
     "status": "reviewed",
     "id": "bulk450_ev_070",
     "nameZh": "蒸茄子",
-    "nameEn": "蒸 茄子",
+    "nameEn": "Steamed Eggplant",
     "cookingMethod": "steam",
     "flavors": [
       "light"
@@ -149812,7 +149822,7 @@
     "status": "reviewed",
     "id": "bulk450_ev_071",
     "nameZh": "清炒茄子",
-    "nameEn": "清炒 茄子",
+    "nameEn": "Plain Stir-fried Eggplant",
     "cookingMethod": "stir_fry",
     "flavors": [
       "umami"
@@ -149886,7 +149896,7 @@
     "status": "reviewed",
     "id": "bulk450_ev_072",
     "nameZh": "清炒芹菜",
-    "nameEn": "清炒 芹菜",
+    "nameEn": "Plain Stir-fried Celery",
     "cookingMethod": "stir_fry",
     "flavors": [
       "light"
@@ -149960,7 +149970,7 @@
     "status": "reviewed",
     "id": "bulk450_ev_073",
     "nameZh": "腰果芹菜",
-    "nameEn": "腰果 芹菜",
+    "nameEn": "Cashew Celery",
     "cookingMethod": "stir_fry",
     "flavors": [
       "light"
@@ -150034,7 +150044,7 @@
     "status": "reviewed",
     "id": "bulk450_ev_074",
     "nameZh": "清炒芦笋",
-    "nameEn": "清炒 芦笋",
+    "nameEn": "Plain Stir-fried Asparagus",
     "cookingMethod": "stir_fry",
     "flavors": [
       "light"
@@ -150108,7 +150118,7 @@
     "status": "reviewed",
     "id": "bulk450_ev_075",
     "nameZh": "蒜蓉芦笋",
-    "nameEn": "蒜蓉 芦笋",
+    "nameEn": "Garlic Asparagus",
     "cookingMethod": "stir_fry",
     "flavors": [
       "light"
@@ -150182,7 +150192,7 @@
     "status": "reviewed",
     "id": "bulk450_ev_076",
     "nameZh": "清炒荷兰豆",
-    "nameEn": "清炒 荷兰豆",
+    "nameEn": "Plain Stir-fried Snow Peas",
     "cookingMethod": "stir_fry",
     "flavors": [
       "light",
@@ -150257,7 +150267,7 @@
     "status": "reviewed",
     "id": "bulk450_ev_077",
     "nameZh": "蒜蓉荷兰豆",
-    "nameEn": "蒜蓉 荷兰豆",
+    "nameEn": "Garlic Snow Peas",
     "cookingMethod": "stir_fry",
     "flavors": [
       "light"
@@ -150331,7 +150341,7 @@
     "status": "reviewed",
     "id": "bulk450_ev_079",
     "nameZh": "清炒莲藕",
-    "nameEn": "清炒 莲藕",
+    "nameEn": "Plain Stir-fried Lotus Root",
     "cookingMethod": "stir_fry",
     "flavors": [
       "light"
@@ -150406,7 +150416,7 @@
     "status": "reviewed",
     "id": "bulk450_ev_080",
     "nameZh": "糖醋莲藕",
-    "nameEn": "糖醋 莲藕",
+    "nameEn": "Sweet & Sour Lotus Root",
     "cookingMethod": "stir_fry",
     "flavors": [
       "sour",
@@ -150492,7 +150502,7 @@
     "status": "reviewed",
     "id": "bulk450_ev_081",
     "nameZh": "清炒蘑菇",
-    "nameEn": "清炒 蘑菇",
+    "nameEn": "Plain Stir-fried Mushroom",
     "cookingMethod": "stir_fry",
     "flavors": [
       "umami"
@@ -150568,7 +150578,7 @@
     "status": "reviewed",
     "id": "bulk450_ev_082",
     "nameZh": "清炒金针菇",
-    "nameEn": "清炒 金针菇",
+    "nameEn": "Plain Stir-fried Enoki",
     "cookingMethod": "stir_fry",
     "flavors": [
       "umami"
@@ -150642,7 +150652,7 @@
     "status": "reviewed",
     "id": "bulk450_ev_083",
     "nameZh": "蚝油杏鲍菇",
-    "nameEn": "蚝油 杏鲍菇",
+    "nameEn": "Oyster Sauce King Oyster",
     "cookingMethod": "stir_fry",
     "flavors": [
       "umami"
@@ -150723,7 +150733,7 @@
     "status": "reviewed",
     "id": "bulk450_ev_084",
     "nameZh": "清炒平菇",
-    "nameEn": "清炒 平菇",
+    "nameEn": "Plain Stir-fried Oyster Mushroom",
     "cookingMethod": "stir_fry",
     "flavors": [
       "umami"
@@ -150797,7 +150807,7 @@
     "status": "reviewed",
     "id": "bulk450_ev_086",
     "nameZh": "蒜蓉空心菜",
-    "nameEn": "蒜蓉 空心菜",
+    "nameEn": "Garlic Water Spinach",
     "cookingMethod": "stir_fry",
     "flavors": [
       "umami"
@@ -150871,7 +150881,7 @@
     "status": "reviewed",
     "id": "bulk450_ev_087",
     "nameZh": "清炒空心菜",
-    "nameEn": "清炒 空心菜",
+    "nameEn": "Plain Stir-fried Water Spinach",
     "cookingMethod": "stir_fry",
     "flavors": [
       "light"
@@ -150945,7 +150955,7 @@
     "status": "reviewed",
     "id": "bulk450_ev_088",
     "nameZh": "蒜蓉苋菜",
-    "nameEn": "蒜蓉 苋菜",
+    "nameEn": "Garlic Amaranth",
     "cookingMethod": "stir_fry",
     "flavors": [
       "light"
@@ -151019,7 +151029,7 @@
     "status": "reviewed",
     "id": "bulk450_ev_089",
     "nameZh": "蒜蓉芥蓝",
-    "nameEn": "蒜蓉 芥蓝",
+    "nameEn": "Garlic Chinese Broccoli",
     "cookingMethod": "stir_fry",
     "flavors": [
       "light"
@@ -151093,7 +151103,7 @@
     "status": "reviewed",
     "id": "bulk450_ev_090",
     "nameZh": "蚝油芥蓝",
-    "nameEn": "蚝油 芥蓝",
+    "nameEn": "Oyster Sauce Chinese Broccoli",
     "cookingMethod": "stir_fry",
     "flavors": [
       "umami"
@@ -151174,7 +151184,7 @@
     "status": "reviewed",
     "id": "bulk450_ev_091",
     "nameZh": "清炒茼蒿",
-    "nameEn": "清炒 茼蒿",
+    "nameEn": "Plain Stir-fried Chrysanthemum Greens",
     "cookingMethod": "stir_fry",
     "flavors": [
       "light"
@@ -151248,7 +151258,7 @@
     "status": "reviewed",
     "id": "bulk450_ev_092",
     "nameZh": "清炒豆苗",
-    "nameEn": "清炒 豆苗",
+    "nameEn": "Plain Stir-fried Pea Shoots",
     "cookingMethod": "stir_fry",
     "flavors": [
       "light"
@@ -151322,7 +151332,7 @@
     "status": "reviewed",
     "id": "bulk450_ev_093",
     "nameZh": "蒜蓉豆苗",
-    "nameEn": "蒜蓉 豆苗",
+    "nameEn": "Garlic Pea Shoots",
     "cookingMethod": "stir_fry",
     "flavors": [
       "light"
@@ -151396,7 +151406,7 @@
     "status": "reviewed",
     "id": "bulk450_ev_094",
     "nameZh": "蒜蓉油麦菜",
-    "nameEn": "蒜蓉 油麦菜",
+    "nameEn": "Garlic Indian Lettuce",
     "cookingMethod": "stir_fry",
     "flavors": [
       "light"
@@ -151470,7 +151480,7 @@
     "status": "reviewed",
     "id": "bulk450_ev_095",
     "nameZh": "清炒油麦菜",
-    "nameEn": "清炒 油麦菜",
+    "nameEn": "Plain Stir-fried Indian Lettuce",
     "cookingMethod": "stir_fry",
     "flavors": [
       "light"
@@ -151544,7 +151554,7 @@
     "status": "reviewed",
     "id": "bulk450_ev_096",
     "nameZh": "蒜蓉生菜",
-    "nameEn": "蒜蓉 生菜",
+    "nameEn": "Garlic Lettuce",
     "cookingMethod": "stir_fry",
     "flavors": [
       "light"
@@ -151618,7 +151628,7 @@
     "status": "reviewed",
     "id": "bulk450_ev_098",
     "nameZh": "清炒莴笋",
-    "nameEn": "清炒 莴笋",
+    "nameEn": "Plain Stir-fried Celtuce",
     "cookingMethod": "stir_fry",
     "flavors": [
       "light"
@@ -151692,7 +151702,7 @@
     "status": "reviewed",
     "id": "bulk450_ev_099",
     "nameZh": "凉拌莴笋",
-    "nameEn": "凉拌 莴笋",
+    "nameEn": "Cold Celtuce",
     "cookingMethod": "cold_dish",
     "flavors": [
       "light"
@@ -151778,7 +151788,7 @@
     "status": "reviewed",
     "id": "bulk450_ev_100",
     "nameZh": "清炒茴香",
-    "nameEn": "清炒 茴香",
+    "nameEn": "Plain Stir-fried Fennel",
     "cookingMethod": "stir_fry",
     "flavors": [
       "umami"
@@ -151852,7 +151862,7 @@
     "status": "reviewed",
     "id": "bulk450_ev_101",
     "nameZh": "蒜蓉羽衣甘蓝",
-    "nameEn": "蒜蓉 羽衣甘蓝",
+    "nameEn": "Garlic Kale",
     "cookingMethod": "stir_fry",
     "flavors": [
       "light"
@@ -151929,7 +151939,7 @@
     "status": "reviewed",
     "id": "bulk450_ev_102",
     "nameZh": "蒜蓉秋葵",
-    "nameEn": "蒜蓉 秋葵",
+    "nameEn": "Garlic Okra",
     "cookingMethod": "stir_fry",
     "flavors": [
       "light"
@@ -152003,7 +152013,7 @@
     "status": "reviewed",
     "id": "bulk450_ev_106",
     "nameZh": "蒸芋头",
-    "nameEn": "蒸 芋头",
+    "nameEn": "Steamed Taro",
     "cookingMethod": "steam",
     "flavors": [
       "sweet"
@@ -152077,7 +152087,7 @@
     "status": "reviewed",
     "id": "bulk450_ev_107",
     "nameZh": "煮玉米",
-    "nameEn": "煮 玉米",
+    "nameEn": "Boiled Corn",
     "cookingMethod": "boil",
     "flavors": [
       "sweet"
@@ -152151,7 +152161,7 @@
     "status": "reviewed",
     "id": "bulk450_ev_108",
     "nameZh": "凉拌甜菜根",
-    "nameEn": "凉拌 甜菜根",
+    "nameEn": "Cold Beetroot",
     "cookingMethod": "cold_dish",
     "flavors": [
       "sweet",
@@ -152238,7 +152248,7 @@
     "status": "reviewed",
     "id": "bulk450_ev_109",
     "nameZh": "凉拌紫甘蓝",
-    "nameEn": "凉拌 紫甘蓝",
+    "nameEn": "Cold Purple Cabbage",
     "cookingMethod": "cold_dish",
     "flavors": [
       "sweet",
@@ -152325,7 +152335,7 @@
     "status": "reviewed",
     "id": "bulk450_ev_110",
     "nameZh": "凉拌黄瓜",
-    "nameEn": "凉拌 黄瓜",
+    "nameEn": "Cold Cucumber",
     "cookingMethod": "cold_dish",
     "flavors": [
       "light"
@@ -152411,7 +152421,7 @@
     "status": "reviewed",
     "id": "bulk450_ev_111",
     "nameZh": "凉拌番茄",
-    "nameEn": "凉拌 番茄",
+    "nameEn": "Cold Tomato",
     "cookingMethod": "cold_dish",
     "flavors": [
       "sweet",
@@ -152498,7 +152508,7 @@
     "status": "reviewed",
     "id": "bulk450_ev_113",
     "nameZh": "清炒木耳",
-    "nameEn": "清炒 木耳",
+    "nameEn": "Plain Stir-fried Wood Ear",
     "cookingMethod": "stir_fry",
     "flavors": [
       "umami"
@@ -152574,7 +152584,7 @@
     "status": "reviewed",
     "id": "bulk450_ev_114",
     "nameZh": "凉拌黑木耳",
-    "nameEn": "凉拌 黑木耳",
+    "nameEn": "Cold Black Fungus",
     "cookingMethod": "cold_dish",
     "flavors": [
       "light"
@@ -152662,8 +152672,8 @@
     "status": "reviewed",
     "id": "bulk450_ev_115",
     "nameZh": "油焖春笋",
-    "nameEn": "油焖 春笋",
-    "cookingMethod": "stir_fry",
+    "nameEn": "Oil-braised Spring Bamboo",
+    "cookingMethod": "braise",
     "flavors": [
       "umami",
       "sweet"
@@ -152674,8 +152684,8 @@
     ],
     "difficulty": "easy",
     "minCookingLevel": "beginner",
-    "prepTime": 5,
-    "cookTime": 8,
+    "prepTime": 10,
+    "cookTime": 25,
     "servings": 2,
     "description": "深受欢迎的家常菜代表作。以春笋配食用油为主料，旺火快炒，爽脆入味，口味鲜美、甘甜，快手就能端上桌。",
     "ingredients": [
@@ -152737,7 +152747,7 @@
     "status": "reviewed",
     "id": "bulk450_ev_116",
     "nameZh": "清炒春笋",
-    "nameEn": "清炒 春笋",
+    "nameEn": "Plain Stir-fried Spring Bamboo",
     "cookingMethod": "stir_fry",
     "flavors": [
       "light"
@@ -152811,7 +152821,7 @@
     "status": "reviewed",
     "id": "bulk450_ev_117",
     "nameZh": "清炒竹笋",
-    "nameEn": "清炒 竹笋",
+    "nameEn": "Plain Stir-fried Bamboo Shoot",
     "cookingMethod": "stir_fry",
     "flavors": [
       "light"
@@ -152885,7 +152895,7 @@
     "status": "reviewed",
     "id": "bulk450_ev_118",
     "nameZh": "清炒茭白",
-    "nameEn": "清炒 茭白",
+    "nameEn": "Plain Stir-fried Water Bamboo",
     "cookingMethod": "stir_fry",
     "flavors": [
       "light"
@@ -152959,7 +152969,7 @@
     "status": "reviewed",
     "id": "bulk450_ev_119",
     "nameZh": "清炒荸荠",
-    "nameEn": "清炒 荸荠",
+    "nameEn": "Plain Stir-fried Water Chestnut",
     "cookingMethod": "stir_fry",
     "flavors": [
       "sweet"
@@ -153035,7 +153045,7 @@
     "status": "reviewed",
     "id": "bulk450_ev_121",
     "nameZh": "蓝莓山药",
-    "nameEn": "蓝莓 山药",
+    "nameEn": "Chinese Yam",
     "cookingMethod": "stir_fry",
     "flavors": [
       "sweet"
@@ -153115,8 +153125,8 @@
     "status": "reviewed",
     "id": "bulk450_ev_123",
     "nameZh": "焖四季豆",
-    "nameEn": "焖 四季豆",
-    "cookingMethod": "stir_fry",
+    "nameEn": "Braised Green Beans",
+    "cookingMethod": "braise",
     "flavors": [
       "umami"
     ],
@@ -153126,8 +153136,8 @@
     ],
     "difficulty": "easy",
     "minCookingLevel": "beginner",
-    "prepTime": 5,
-    "cookTime": 8,
+    "prepTime": 10,
+    "cookTime": 25,
     "servings": 2,
     "description": "家常菜经典家常做法。以四季豆配食用油为主料，翻炒收汁，锅气十足，口味鲜美，家常操作、零失败。",
     "ingredients": [
@@ -153189,7 +153199,7 @@
     "status": "reviewed",
     "id": "bulk450_ev_124",
     "nameZh": "炒雪菜",
-    "nameEn": "炒 雪菜",
+    "nameEn": "Stir-fried Snow Vegetable",
     "cookingMethod": "stir_fry",
     "flavors": [
       "umami",
@@ -153271,7 +153281,7 @@
     "status": "reviewed",
     "id": "bulk450_ev_125",
     "nameZh": "清炒豌豆",
-    "nameEn": "清炒 豌豆",
+    "nameEn": "Plain Stir-fried Peas",
     "cookingMethod": "stir_fry",
     "flavors": [
       "sweet"
@@ -153346,7 +153356,7 @@
     "status": "reviewed",
     "id": "bulk450_ev_126",
     "nameZh": "凉拌芝麻菜",
-    "nameEn": "凉拌 芝麻菜",
+    "nameEn": "Cold Arugula",
     "cookingMethod": "cold_dish",
     "flavors": [
       "light"
@@ -153432,7 +153442,7 @@
     "status": "reviewed",
     "id": "bulk450_ev_127",
     "nameZh": "蒜蓉西洋菜",
-    "nameEn": "蒜蓉 西洋菜",
+    "nameEn": "Garlic Watercress",
     "cookingMethod": "stir_fry",
     "flavors": [
       "light"
@@ -153507,7 +153517,7 @@
     "status": "reviewed",
     "id": "bulk450_ev_128",
     "nameZh": "烤抱子甘蓝",
-    "nameEn": "烤 抱子甘蓝",
+    "nameEn": "Roasted Brussels Sprouts",
     "cookingMethod": "roast",
     "flavors": [
       "umami"
@@ -153581,7 +153591,7 @@
     "status": "reviewed",
     "id": "bulk450_ev_129",
     "nameZh": "清炒玉米笋",
-    "nameEn": "清炒 玉米笋",
+    "nameEn": "Plain Stir-fried Baby Corn",
     "cookingMethod": "stir_fry",
     "flavors": [
       "sweet"
@@ -153655,7 +153665,7 @@
     "status": "reviewed",
     "id": "bulk450_ev_130",
     "nameZh": "清炒佛手瓜",
-    "nameEn": "清炒 佛手瓜",
+    "nameEn": "Plain Stir-fried Chayote",
     "cookingMethod": "stir_fry",
     "flavors": [
       "light"
@@ -153729,7 +153739,7 @@
     "status": "reviewed",
     "id": "bulk450_ev_131",
     "nameZh": "清炒丝瓜",
-    "nameEn": "清炒 丝瓜",
+    "nameEn": "Plain Stir-fried Luffa",
     "cookingMethod": "stir_fry",
     "flavors": [
       "light"
@@ -153803,7 +153813,7 @@
     "status": "reviewed",
     "id": "bulk450_ev_132",
     "nameZh": "清炒苦瓜",
-    "nameEn": "清炒 苦瓜",
+    "nameEn": "Plain Stir-fried Bitter Melon",
     "cookingMethod": "stir_fry",
     "flavors": [
       "bitter"
@@ -153877,7 +153887,7 @@
     "status": "reviewed",
     "id": "bulk450_ev_133",
     "nameZh": "清炒冬瓜",
-    "nameEn": "清炒 冬瓜",
+    "nameEn": "Plain Stir-fried Winter Melon",
     "cookingMethod": "stir_fry",
     "flavors": [
       "light"
@@ -153951,7 +153961,7 @@
     "status": "reviewed",
     "id": "bulk450_ev_134",
     "nameZh": "清炒白萝卜",
-    "nameEn": "清炒 白萝卜",
+    "nameEn": "Plain Stir-fried White Radish",
     "cookingMethod": "stir_fry",
     "flavors": [
       "light"
@@ -154025,7 +154035,7 @@
     "status": "reviewed",
     "id": "bulk450_ev_135",
     "nameZh": "清炒胡萝卜",
-    "nameEn": "清炒 胡萝卜",
+    "nameEn": "Plain Stir-fried Carrot",
     "cookingMethod": "stir_fry",
     "flavors": [
       "sweet"
@@ -154099,7 +154109,7 @@
     "status": "reviewed",
     "id": "bulk450_ev_136",
     "nameZh": "清炒豆薯",
-    "nameEn": "清炒 豆薯",
+    "nameEn": "Plain Stir-fried Jicama",
     "cookingMethod": "stir_fry",
     "flavors": [
       "sweet"
@@ -154174,8 +154184,8 @@
     "status": "reviewed",
     "id": "bulk450_ev_137",
     "nameZh": "红烧土豆",
-    "nameEn": "红烧 土豆",
-    "cookingMethod": "stir_fry",
+    "nameEn": "Red-braised Potato",
+    "cookingMethod": "braise",
     "flavors": [
       "umami",
       "sweet"
@@ -154186,8 +154196,8 @@
     ],
     "difficulty": "easy",
     "minCookingLevel": "beginner",
-    "prepTime": 5,
-    "cookTime": 8,
+    "prepTime": 10,
+    "cookTime": 25,
     "servings": 2,
     "description": "家常菜经典家常做法。以土豆配食用油为主料，大火爆炒，火候恰到好处，口味鲜美、甘甜，快手就能端上桌。",
     "ingredients": [
@@ -154249,8 +154259,8 @@
     "status": "reviewed",
     "id": "bulk450_ev_138",
     "nameZh": "红烧茄子",
-    "nameEn": "红烧 茄子",
-    "cookingMethod": "stir_fry",
+    "nameEn": "Red-braised Eggplant",
+    "cookingMethod": "braise",
     "flavors": [
       "umami"
     ],
@@ -154260,8 +154270,8 @@
     ],
     "difficulty": "easy",
     "minCookingLevel": "beginner",
-    "prepTime": 5,
-    "cookTime": 8,
+    "prepTime": 10,
+    "cookTime": 25,
     "servings": 2,
     "description": "深受欢迎的家常菜代表作。以茄子配食用油为主料，翻炒收汁，锅气十足，口味鲜美，家常操作、零失败。",
     "ingredients": [
@@ -154323,7 +154333,7 @@
     "status": "reviewed",
     "id": "bulk450_ev_139",
     "nameZh": "蒜蓉四季豆",
-    "nameEn": "蒜蓉 四季豆",
+    "nameEn": "Garlic Green Beans",
     "cookingMethod": "stir_fry",
     "flavors": [
       "umami"
@@ -154397,7 +154407,7 @@
     "status": "reviewed",
     "id": "bulk450_ev_140",
     "nameZh": "烤芦笋",
-    "nameEn": "烤 芦笋",
+    "nameEn": "Roasted Asparagus",
     "cookingMethod": "roast",
     "flavors": [
       "light"
@@ -154471,7 +154481,7 @@
     "status": "reviewed",
     "id": "bulk450_ev_141",
     "nameZh": "清炒南瓜",
-    "nameEn": "清炒 南瓜",
+    "nameEn": "Plain Stir-fried Pumpkin",
     "cookingMethod": "stir_fry",
     "flavors": [
       "sweet"
@@ -154545,7 +154555,7 @@
     "status": "reviewed",
     "id": "bulk450_ev_142",
     "nameZh": "烤蘑菇",
-    "nameEn": "烤 蘑菇",
+    "nameEn": "Roasted Mushroom",
     "cookingMethod": "roast",
     "flavors": [
       "umami"
@@ -154621,7 +154631,7 @@
     "status": "reviewed",
     "id": "bulk450_ev_143",
     "nameZh": "烤杏鲍菇",
-    "nameEn": "烤 杏鲍菇",
+    "nameEn": "Roasted King Oyster",
     "cookingMethod": "roast",
     "flavors": [
       "umami"
@@ -154695,7 +154705,7 @@
     "status": "reviewed",
     "id": "bulk450_ev_144",
     "nameZh": "烤玉米",
-    "nameEn": "烤 玉米",
+    "nameEn": "Roasted Corn",
     "cookingMethod": "roast",
     "flavors": [
       "sweet"
@@ -154769,8 +154779,8 @@
     "status": "reviewed",
     "id": "bulk450_es_145",
     "nameZh": "蒸米饭(1人)",
-    "nameEn": "蒸米饭(1人)",
-    "cookingMethod": "steam",
+    "nameEn": "SteamedRice(1 serving)",
+    "cookingMethod": "staple",
     "flavors": [
       "light"
     ],
@@ -154828,8 +154838,8 @@
     "status": "reviewed",
     "id": "bulk450_es_146",
     "nameZh": "蒸米饭(2人)",
-    "nameEn": "蒸米饭(2人)",
-    "cookingMethod": "steam",
+    "nameEn": "SteamedRice(2 servings)",
+    "cookingMethod": "staple",
     "flavors": [
       "light"
     ],
@@ -154887,8 +154897,8 @@
     "status": "reviewed",
     "id": "bulk450_es_147",
     "nameZh": "蒸米饭(3人)",
-    "nameEn": "蒸米饭(3人)",
-    "cookingMethod": "steam",
+    "nameEn": "SteamedRice(3 servings)",
+    "cookingMethod": "staple",
     "flavors": [
       "light"
     ],
@@ -154946,8 +154956,8 @@
     "status": "reviewed",
     "id": "bulk450_es_148",
     "nameZh": "蒸米饭(4人)",
-    "nameEn": "蒸米饭(4人)",
-    "cookingMethod": "steam",
+    "nameEn": "SteamedRice(4 servings)",
+    "cookingMethod": "staple",
     "flavors": [
       "light"
     ],
@@ -155005,7 +155015,7 @@
     "status": "reviewed",
     "id": "bulk450_es_151",
     "nameZh": "南瓜饭",
-    "nameEn": "南瓜饭",
+    "nameEn": "PumpkinRice",
     "cookingMethod": "staple",
     "flavors": [
       "light"
@@ -155065,7 +155075,7 @@
     "status": "reviewed",
     "id": "bulk450_es_152",
     "nameZh": "玉米饭",
-    "nameEn": "玉米饭",
+    "nameEn": "CornRice",
     "cookingMethod": "staple",
     "flavors": [
       "light"
@@ -155124,7 +155134,7 @@
     "status": "reviewed",
     "id": "bulk450_es_153",
     "nameZh": "山药饭",
-    "nameEn": "山药饭",
+    "nameEn": "Chinese YamRice",
     "cookingMethod": "staple",
     "flavors": [
       "light"
@@ -155184,7 +155194,7 @@
     "status": "reviewed",
     "id": "bulk450_es_154",
     "nameZh": "紫薯饭",
-    "nameEn": "紫薯饭",
+    "nameEn": "Purple Sweet PotatoRice",
     "cookingMethod": "staple",
     "flavors": [
       "light"
@@ -155245,7 +155255,7 @@
     "status": "reviewed",
     "id": "bulk450_es_155",
     "nameZh": "红薯饭",
-    "nameEn": "红薯饭",
+    "nameEn": "Sweet PotatoRice",
     "cookingMethod": "staple",
     "flavors": [
       "light"
@@ -155305,7 +155315,7 @@
     "status": "reviewed",
     "id": "bulk450_es_156",
     "nameZh": "藜麦饭",
-    "nameEn": "藜麦饭",
+    "nameEn": "QuinoaRice",
     "cookingMethod": "staple",
     "flavors": [
       "light"
@@ -155365,7 +155375,7 @@
     "status": "reviewed",
     "id": "bulk450_es_161",
     "nameZh": "红枣粥",
-    "nameEn": "红枣粥",
+    "nameEn": "JujubePorridge",
     "cookingMethod": "staple",
     "flavors": [
       "light"
@@ -155436,8 +155446,8 @@
     "status": "reviewed",
     "id": "bulk450_es_162",
     "nameZh": "蒸馒头(2人)",
-    "nameEn": "蒸馒头(2人)",
-    "cookingMethod": "steam",
+    "nameEn": "SteamedMantou(2 servings)",
+    "cookingMethod": "staple",
     "flavors": [
       "light"
     ],
@@ -155502,8 +155512,8 @@
     "status": "reviewed",
     "id": "bulk450_es_163",
     "nameZh": "蒸馒头(4人)",
-    "nameEn": "蒸馒头(4人)",
-    "cookingMethod": "steam",
+    "nameEn": "SteamedMantou(4 servings)",
+    "cookingMethod": "staple",
     "flavors": [
       "light"
     ],
@@ -155568,8 +155578,8 @@
     "status": "reviewed",
     "id": "bulk450_es_164",
     "nameZh": "蒸花卷(2人)",
-    "nameEn": "蒸花卷(2人)",
-    "cookingMethod": "steam",
+    "nameEn": "SteamedHuajuan(2 servings)",
+    "cookingMethod": "staple",
     "flavors": [
       "light"
     ],
@@ -155634,7 +155644,7 @@
     "status": "reviewed",
     "id": "bulk450_es_165",
     "nameZh": "南瓜馒头",
-    "nameEn": "南瓜馒头",
+    "nameEn": "PumpkinMantou",
     "cookingMethod": "staple",
     "flavors": [
       "light"
@@ -155699,7 +155709,7 @@
     "status": "reviewed",
     "id": "bulk450_es_166",
     "nameZh": "紫薯馒头",
-    "nameEn": "紫薯馒头",
+    "nameEn": "Purple Sweet PotatoMantou",
     "cookingMethod": "staple",
     "flavors": [
       "light"
@@ -155765,7 +155775,7 @@
     "status": "reviewed",
     "id": "bulk450_es_168",
     "nameZh": "烤紫薯",
-    "nameEn": "烤紫薯",
+    "nameEn": "RoastedPurple Sweet Potato",
     "cookingMethod": "staple",
     "flavors": [
       "light"
@@ -155826,7 +155836,7 @@
     "status": "reviewed",
     "id": "bulk450_es_171",
     "nameZh": "蒸土豆",
-    "nameEn": "蒸土豆",
+    "nameEn": "SteamedPotato",
     "cookingMethod": "steam",
     "flavors": [
       "light"
@@ -155886,7 +155896,7 @@
     "status": "reviewed",
     "id": "bulk450_es_172",
     "nameZh": "简易凉面",
-    "nameEn": "简易凉面",
+    "nameEn": "Noodle",
     "cookingMethod": "staple",
     "flavors": [
       "light"
@@ -155947,7 +155957,7 @@
     "status": "reviewed",
     "id": "bulk450_es_174",
     "nameZh": "素炒饭",
-    "nameEn": "素炒饭",
+    "nameEn": "Stir-friedRice",
     "cookingMethod": "staple",
     "flavors": [
       "light"
@@ -156006,7 +156016,7 @@
     "status": "reviewed",
     "id": "bulk450_eu_175",
     "nameZh": "番茄猪肉汤",
-    "nameEn": "番茄猪肉汤",
+    "nameEn": "TomatoPorkSoup",
     "cookingMethod": "soup",
     "flavors": [
       "umami"
@@ -156082,7 +156092,7 @@
     "status": "reviewed",
     "id": "bulk450_eu_179",
     "nameZh": "胡萝卜排骨汤",
-    "nameEn": "胡萝卜排骨汤",
+    "nameEn": "CarrotPork RibsSoup",
     "cookingMethod": "soup",
     "flavors": [
       "umami"
@@ -156156,7 +156166,7 @@
     "status": "reviewed",
     "id": "bulk450_eu_181",
     "nameZh": "菌菇鸡汤",
-    "nameEn": "菌菇鸡汤",
+    "nameEn": "Soup",
     "cookingMethod": "soup",
     "flavors": [
       "umami"
@@ -156234,8 +156244,8 @@
     "status": "reviewed",
     "id": "bulk450_eu_182",
     "nameZh": "香菇炖鸡",
-    "nameEn": "香菇炖鸡",
-    "cookingMethod": "soup",
+    "nameEn": "ShiitakeStewed",
+    "cookingMethod": "braise",
     "flavors": [
       "umami"
     ],
@@ -156308,8 +156318,8 @@
     "status": "reviewed",
     "id": "bulk450_eu_183",
     "nameZh": "红枣炖鸡",
-    "nameEn": "红枣炖鸡",
-    "cookingMethod": "soup",
+    "nameEn": "JujubeStewed",
+    "cookingMethod": "braise",
     "flavors": [
       "umami"
     ],
@@ -156382,7 +156392,7 @@
     "status": "reviewed",
     "id": "bulk450_eu_184",
     "nameZh": "山药排骨汤",
-    "nameEn": "山药排骨汤",
+    "nameEn": "Chinese YamPork RibsSoup",
     "cookingMethod": "soup",
     "flavors": [
       "umami"
@@ -156454,7 +156464,7 @@
     "status": "reviewed",
     "id": "bulk450_eu_185",
     "nameZh": "包菜肉片汤",
-    "nameEn": "包菜肉片汤",
+    "nameEn": "CabbageSoup",
     "cookingMethod": "soup",
     "flavors": [
       "umami"
@@ -156530,7 +156540,7 @@
     "status": "reviewed",
     "id": "bulk450_eu_186",
     "nameZh": "番茄素汤",
-    "nameEn": "番茄素汤",
+    "nameEn": "TomatoSoup",
     "cookingMethod": "soup",
     "flavors": [
       "light"
@@ -156600,7 +156610,7 @@
     "status": "reviewed",
     "id": "bulk450_eu_187",
     "nameZh": "菌菇素汤",
-    "nameEn": "菌菇素汤",
+    "nameEn": "Soup",
     "cookingMethod": "soup",
     "flavors": [
       "light"
@@ -156672,7 +156682,7 @@
     "status": "reviewed",
     "id": "bulk450_eu_190",
     "nameZh": "菠菜清汤",
-    "nameEn": "菠菜清汤",
+    "nameEn": "SpinachSoup",
     "cookingMethod": "soup",
     "flavors": [
       "light"
@@ -156744,7 +156754,7 @@
     "status": "reviewed",
     "id": "bulk450_eu_191",
     "nameZh": "土豆牛腩汤",
-    "nameEn": "土豆牛腩汤",
+    "nameEn": "PotatoBeef BrisketSoup",
     "cookingMethod": "soup",
     "flavors": [
       "umami"
@@ -156818,7 +156828,7 @@
     "status": "reviewed",
     "id": "bulk450_eu_192",
     "nameZh": "胡萝卜牛腩汤",
-    "nameEn": "胡萝卜牛腩汤",
+    "nameEn": "CarrotBeef BrisketSoup",
     "cookingMethod": "soup",
     "flavors": [
       "umami"
@@ -156892,7 +156902,7 @@
     "status": "reviewed",
     "id": "bulk450_eu_193",
     "nameZh": "芹菜素汤",
-    "nameEn": "芹菜素汤",
+    "nameEn": "CelerySoup",
     "cookingMethod": "soup",
     "flavors": [
       "light"
@@ -156962,7 +156972,7 @@
     "status": "reviewed",
     "id": "bulk450_eu_194",
     "nameZh": "玉米素汤",
-    "nameEn": "玉米素汤",
+    "nameEn": "CornSoup",
     "cookingMethod": "soup",
     "flavors": [
       "light"
@@ -157032,7 +157042,7 @@
     "status": "reviewed",
     "id": "bulk450_m_195",
     "nameZh": "红烧五花肉",
-    "nameEn": "红烧五花肉",
+    "nameEn": "Red-braisedPork Belly",
     "cookingMethod": "braise",
     "flavors": [
       "umami",
@@ -157150,7 +157160,7 @@
     "status": "reviewed",
     "id": "bulk450_m_196",
     "nameZh": "糖醋小排",
-    "nameEn": "糖醋小排",
+    "nameEn": "Sweet & Sour",
     "cookingMethod": "braise",
     "flavors": [
       "sour",
@@ -157260,7 +157270,7 @@
     "status": "reviewed",
     "id": "bulk450_m_197",
     "nameZh": "红烧排骨",
-    "nameEn": "红烧排骨",
+    "nameEn": "Red-braisedPork Ribs",
     "cookingMethod": "braise",
     "flavors": [
       "umami",
@@ -157377,8 +157387,8 @@
     "status": "reviewed",
     "id": "bulk450_m_198",
     "nameZh": "梅菜蒸排骨",
-    "nameEn": "梅菜蒸排骨",
-    "cookingMethod": "braise",
+    "nameEn": "Preserved MustardSteamedPork Ribs",
+    "cookingMethod": "steam",
     "flavors": [
       "umami"
     ],
@@ -157487,7 +157497,7 @@
     "status": "reviewed",
     "id": "bulk450_m_201",
     "nameZh": "酱卤牛腱",
-    "nameEn": "酱卤牛腱",
+    "nameEn": "Soy-stewedBeef Shank",
     "cookingMethod": "braise",
     "flavors": [
       "umami"
@@ -157608,7 +157618,7 @@
     "status": "reviewed",
     "id": "bulk450_m_202",
     "nameZh": "烤羊排",
-    "nameEn": "烤羊排",
+    "nameEn": "RoastedLamb Chop",
     "cookingMethod": "roast",
     "flavors": [
       "umami"
@@ -157713,7 +157723,7 @@
     "status": "reviewed",
     "id": "bulk450_m_203",
     "nameZh": "萝卜烧羊肉",
-    "nameEn": "萝卜烧羊肉",
+    "nameEn": "BraisedLamb",
     "cookingMethod": "braise",
     "flavors": [
       "umami",
@@ -157837,7 +157847,7 @@
     "status": "reviewed",
     "id": "bulk450_m_204",
     "nameZh": "茭白烧鸭",
-    "nameEn": "茭白烧鸭",
+    "nameEn": "Water BambooBraised",
     "cookingMethod": "braise",
     "flavors": [
       "umami",
@@ -157960,7 +157970,7 @@
     "status": "reviewed",
     "id": "bulk450_m_205",
     "nameZh": "香煎鸭腿",
-    "nameEn": "香煎鸭腿",
+    "nameEn": "Pan-searedDuck Leg",
     "cookingMethod": "roast",
     "flavors": [
       "umami"
@@ -158065,7 +158075,7 @@
     "status": "reviewed",
     "id": "bulk450_m_206",
     "nameZh": "盐焗鸡",
-    "nameEn": "盐焗鸡",
+    "nameEn": "Salt-baked",
     "cookingMethod": "braise",
     "flavors": [
       "umami"
@@ -158170,7 +158180,7 @@
     "status": "reviewed",
     "id": "bulk450_m_208",
     "nameZh": "黄焖鸡腿肉",
-    "nameEn": "黄焖鸡腿肉",
+    "nameEn": "Yellow-stewedChicken Thigh",
     "cookingMethod": "braise",
     "flavors": [
       "umami"
@@ -158286,7 +158296,7 @@
     "status": "reviewed",
     "id": "bulk450_m_209",
     "nameZh": "可乐鸡腿",
-    "nameEn": "可乐鸡腿",
+    "nameEn": "ColaChicken Leg",
     "cookingMethod": "braise",
     "flavors": [
       "umami"
@@ -158397,7 +158407,7 @@
     "status": "reviewed",
     "id": "bulk450_m_210",
     "nameZh": "香煎迷迭香鸡腿",
-    "nameEn": "香煎迷迭香鸡腿",
+    "nameEn": "Pan-searedRosemaryChicken Leg",
     "cookingMethod": "roast",
     "flavors": [
       "umami"
@@ -158508,7 +158518,7 @@
     "status": "reviewed",
     "id": "bulk450_m_211",
     "nameZh": "梅菜扣肉(简化版)",
-    "nameEn": "梅菜扣肉(简化版)",
+    "nameEn": "Preserved Mustard()",
     "cookingMethod": "braise",
     "flavors": [
       "umami"
@@ -158619,7 +158629,7 @@
     "status": "reviewed",
     "id": "bulk450_m_212",
     "nameZh": "简易回锅肉(不放辣)",
-    "nameEn": "简易回锅肉(不放辣)",
+    "nameEn": "Twice-cooked()",
     "cookingMethod": "braise",
     "flavors": [
       "umami"
@@ -158730,7 +158740,7 @@
     "status": "reviewed",
     "id": "bulk450_m_213",
     "nameZh": "蒜香排骨",
-    "nameEn": "蒜香排骨",
+    "nameEn": "GarlicPork Ribs",
     "cookingMethod": "braise",
     "flavors": [
       "umami"
@@ -158834,7 +158844,7 @@
     "status": "reviewed",
     "id": "bulk450_m_214",
     "nameZh": "盐烤排骨",
-    "nameEn": "盐烤排骨",
+    "nameEn": "RoastedPork Ribs",
     "cookingMethod": "roast",
     "flavors": [
       "umami"
@@ -158939,7 +158949,7 @@
     "status": "reviewed",
     "id": "bulk450_m_215",
     "nameZh": "黑椒牛柳土豆",
-    "nameEn": "黑椒牛柳土豆",
+    "nameEn": "Black PepperPotato",
     "cookingMethod": "braise",
     "flavors": [
       "umami"
@@ -159051,7 +159061,7 @@
     "status": "reviewed",
     "id": "bulk450_m_216",
     "nameZh": "番茄牛肉",
-    "nameEn": "番茄牛肉",
+    "nameEn": "TomatoBeef",
     "cookingMethod": "braise",
     "flavors": [
       "umami"
@@ -159163,7 +159173,7 @@
     "status": "reviewed",
     "id": "bulk450_m_217",
     "nameZh": "牛肉土豆泥",
-    "nameEn": "牛肉土豆泥",
+    "nameEn": "BeefPotato",
     "cookingMethod": "braise",
     "flavors": [
       "umami"
@@ -159274,7 +159284,7 @@
     "status": "reviewed",
     "id": "bulk450_m_219",
     "nameZh": "简易京酱肉丝(无甜面酱用酱油代)",
-    "nameEn": "简易京酱肉丝(无甜面酱用酱油代)",
+    "nameEn": "Peking Sauce(Noodle)",
     "cookingMethod": "braise",
     "flavors": [
       "umami"
@@ -159384,7 +159394,7 @@
     "status": "reviewed",
     "id": "bulk450_m_221",
     "nameZh": "啤酒鸭",
-    "nameEn": "啤酒鸭",
+    "nameEn": "Beer",
     "cookingMethod": "braise",
     "flavors": [
       "umami"
@@ -159490,7 +159500,7 @@
     "status": "reviewed",
     "id": "bulk450_m_222",
     "nameZh": "红烧鸭腿",
-    "nameEn": "红烧鸭腿",
+    "nameEn": "Red-braisedDuck Leg",
     "cookingMethod": "braise",
     "flavors": [
       "umami",
@@ -159612,7 +159622,7 @@
     "status": "reviewed",
     "id": "bulk450_m_223",
     "nameZh": "清炖羊肉萝卜",
-    "nameEn": "清炖羊肉萝卜",
+    "nameEn": "Clear StewLamb",
     "cookingMethod": "braise",
     "flavors": [
       "umami"
@@ -159729,7 +159739,7 @@
     "status": "reviewed",
     "id": "bulk450_m_225",
     "nameZh": "红烧猪蹄",
-    "nameEn": "红烧猪蹄",
+    "nameEn": "Red-braisedPork Trotter",
     "cookingMethod": "braise",
     "flavors": [
       "umami",
@@ -159846,7 +159856,7 @@
     "status": "reviewed",
     "id": "bulk450_m_226",
     "nameZh": "黄豆煮猪蹄",
-    "nameEn": "黄豆煮猪蹄",
+    "nameEn": "BoiledPork Trotter",
     "cookingMethod": "braise",
     "flavors": [
       "umami"
@@ -159959,7 +159969,7 @@
     "status": "reviewed",
     "id": "bulk450_m_227",
     "nameZh": "可乐鸡翅(经典)",
-    "nameEn": "可乐鸡翅(经典)",
+    "nameEn": "ColaChicken Wing(classic)",
     "cookingMethod": "braise",
     "flavors": [
       "umami"
@@ -160069,7 +160079,7 @@
     "status": "reviewed",
     "id": "bulk450_m_228",
     "nameZh": "蒜香鸡翅",
-    "nameEn": "蒜香鸡翅",
+    "nameEn": "GarlicChicken Wing",
     "cookingMethod": "braise",
     "flavors": [
       "umami"
@@ -160174,7 +160184,7 @@
     "status": "reviewed",
     "id": "bulk450_m_229",
     "nameZh": "蜂蜜烤鸡翅",
-    "nameEn": "蜂蜜烤鸡翅",
+    "nameEn": "HoneyRoastedChicken Wing",
     "cookingMethod": "braise",
     "flavors": [
       "umami"
@@ -160286,7 +160296,7 @@
     "status": "reviewed",
     "id": "bulk450_m_231",
     "nameZh": "可乐姜葱翅",
-    "nameEn": "可乐姜葱翅",
+    "nameEn": "Cola",
     "cookingMethod": "braise",
     "flavors": [
       "umami"
@@ -160396,7 +160406,7 @@
     "status": "reviewed",
     "id": "bulk450_m_232",
     "nameZh": "土豆烧五花",
-    "nameEn": "土豆烧五花",
+    "nameEn": "PotatoBraised",
     "cookingMethod": "braise",
     "flavors": [
       "umami"
@@ -160507,7 +160517,7 @@
     "status": "reviewed",
     "id": "bulk450_m_233",
     "nameZh": "白菜烧五花",
-    "nameEn": "白菜烧五花",
+    "nameEn": "Braised",
     "cookingMethod": "braise",
     "flavors": [
       "umami"
@@ -160618,7 +160628,7 @@
     "status": "reviewed",
     "id": "bulk450_m_234",
     "nameZh": "酸菜白肉",
-    "nameEn": "酸菜白肉",
+    "nameEn": "Chinese Dish",
     "cookingMethod": "braise",
     "flavors": [
       "umami"
@@ -160730,7 +160740,7 @@
     "status": "reviewed",
     "id": "bulk450_m_235",
     "nameZh": "日式咖喱牛腩",
-    "nameEn": "日式咖喱牛腩",
+    "nameEn": "CurryBeef Brisket",
     "cookingMethod": "braise",
     "flavors": [
       "umami"
@@ -160853,7 +160863,7 @@
     "status": "reviewed",
     "id": "bulk450_m_237",
     "nameZh": "蘑菇酱猪柳",
-    "nameEn": "蘑菇酱猪柳",
+    "nameEn": "Mushroom",
     "cookingMethod": "braise",
     "flavors": [
       "umami"
@@ -160965,7 +160975,7 @@
     "status": "reviewed",
     "id": "bulk450_m_238",
     "nameZh": "红酒煎牛排(简易)",
-    "nameEn": "红酒煎牛排(简易)",
+    "nameEn": "Red WinePan-fried()",
     "cookingMethod": "braise",
     "flavors": [
       "umami"
@@ -161077,7 +161087,7 @@
     "status": "reviewed",
     "id": "bulk450_m_239",
     "nameZh": "苹果焖里脊",
-    "nameEn": "苹果焖里脊",
+    "nameEn": "AppleBraised",
     "cookingMethod": "braise",
     "flavors": [
       "umami"
@@ -161187,7 +161197,7 @@
     "status": "reviewed",
     "id": "bulk450_m_240",
     "nameZh": "五花土豆胡萝卜烧",
-    "nameEn": "五花土豆胡萝卜烧",
+    "nameEn": "PotatoCarrotBraised",
     "cookingMethod": "braise",
     "flavors": [
       "umami"
@@ -161304,7 +161314,7 @@
     "status": "reviewed",
     "id": "bulk450_m_242",
     "nameZh": "玉米焖排骨",
-    "nameEn": "玉米焖排骨",
+    "nameEn": "CornBraisedPork Ribs",
     "cookingMethod": "braise",
     "flavors": [
       "umami"
@@ -161416,7 +161426,7 @@
     "status": "reviewed",
     "id": "bulk450_m_243",
     "nameZh": "香煎羊小排",
-    "nameEn": "香煎羊小排",
+    "nameEn": "Pan-seared",
     "cookingMethod": "roast",
     "flavors": [
       "umami"
@@ -161521,7 +161531,7 @@
     "status": "reviewed",
     "id": "bulk450_m_244",
     "nameZh": "腐乳排骨(腐乳调味, 不算豆腐主菜)",
-    "nameEn": "腐乳排骨(腐乳调味, 不算豆腐主菜)",
+    "nameEn": "Fermented BeanPork Ribs(Fermented Bean, )",
     "cookingMethod": "braise",
     "flavors": [
       "umami"
@@ -161634,7 +161644,7 @@
     "status": "reviewed",
     "id": "bulk450_mv_245",
     "nameZh": "红烧茄子(无肉)",
-    "nameEn": "红烧茄子(无肉)",
+    "nameEn": "Red-braisedEggplant(no meat)",
     "cookingMethod": "braise",
     "flavors": [
       "umami"
@@ -161722,7 +161732,7 @@
     "status": "reviewed",
     "id": "bulk450_mv_246",
     "nameZh": "鱼香茄子(无辣无肉版)",
-    "nameEn": "鱼香茄子(无辣无肉版)",
+    "nameEn": "Eggplant()",
     "cookingMethod": "braise",
     "flavors": [
       "umami"
@@ -161810,7 +161820,7 @@
     "status": "reviewed",
     "id": "bulk450_mv_247",
     "nameZh": "奶香土豆泥(用植物奶替代)",
-    "nameEn": "奶香土豆泥(用植物奶替代)",
+    "nameEn": "Potato(plant milk)",
     "cookingMethod": "braise",
     "flavors": [
       "umami"
@@ -161903,7 +161913,7 @@
     "status": "reviewed",
     "id": "bulk450_mv_248",
     "nameZh": "小米南瓜焖",
-    "nameEn": "小米南瓜焖",
+    "nameEn": "MilletPumpkinBraised",
     "cookingMethod": "braise",
     "flavors": [
       "umami"
@@ -161997,7 +162007,7 @@
     "status": "reviewed",
     "id": "bulk450_mv_249",
     "nameZh": "红烧三菇",
-    "nameEn": "红烧三菇",
+    "nameEn": "Red-braised",
     "cookingMethod": "braise",
     "flavors": [
       "umami"
@@ -162097,7 +162107,7 @@
     "status": "reviewed",
     "id": "bulk450_mv_252",
     "nameZh": "油焖茭白",
-    "nameEn": "油焖茭白",
+    "nameEn": "Oil-braisedWater Bamboo",
     "cookingMethod": "braise",
     "flavors": [
       "umami"
@@ -162185,7 +162195,7 @@
     "status": "reviewed",
     "id": "bulk450_mv_254",
     "nameZh": "红烧芋头",
-    "nameEn": "红烧芋头",
+    "nameEn": "Red-braisedTaro",
     "cookingMethod": "braise",
     "flavors": [
       "umami"
@@ -162274,8 +162284,8 @@
     "status": "reviewed",
     "id": "bulk450_mv_255",
     "nameZh": "奶油南瓜浓汤(植物奶版)",
-    "nameEn": "奶油南瓜浓汤(植物奶版)",
-    "cookingMethod": "braise",
+    "nameEn": "PumpkinSoup(plant milk version)",
+    "cookingMethod": "soup",
     "flavors": [
       "umami"
     ],
@@ -162367,7 +162377,7 @@
     "status": "reviewed",
     "id": "bulk450_ms_257",
     "nameZh": "番茄牛肉面(无辣)",
-    "nameEn": "番茄牛肉面(无辣)",
+    "nameEn": "TomatoBeefNoodle(no spice)",
     "cookingMethod": "staple",
     "flavors": [
       "umami",
@@ -162450,7 +162460,7 @@
     "status": "reviewed",
     "id": "bulk450_ms_258",
     "nameZh": "排骨汤面",
-    "nameEn": "排骨汤面",
+    "nameEn": "Pork RibsSoupNoodle",
     "cookingMethod": "staple",
     "flavors": [
       "umami"
@@ -162525,7 +162535,7 @@
     "status": "reviewed",
     "id": "bulk450_ms_259",
     "nameZh": "炒河粉(无辣)",
-    "nameEn": "炒河粉(无辣)",
+    "nameEn": "Stir-fried(no spice)",
     "cookingMethod": "staple",
     "flavors": [
       "umami"
@@ -162607,7 +162617,7 @@
     "status": "reviewed",
     "id": "bulk450_ms_261",
     "nameZh": "韭菜盒子(无蛋)",
-    "nameEn": "韭菜盒子(无蛋)",
+    "nameEn": "Leek / Chives(no egg)",
     "cookingMethod": "staple",
     "flavors": [
       "umami"
@@ -162685,7 +162695,7 @@
     "status": "reviewed",
     "id": "bulk450_ms_262",
     "nameZh": "猪肉馄饨",
-    "nameEn": "猪肉馄饨",
+    "nameEn": "PorkWonton",
     "cookingMethod": "staple",
     "flavors": [
       "umami"
@@ -162760,7 +162770,7 @@
     "status": "reviewed",
     "id": "bulk450_ms_264",
     "nameZh": "南瓜饼",
-    "nameEn": "南瓜饼",
+    "nameEn": "PumpkinCake/Pancake",
     "cookingMethod": "staple",
     "flavors": [
       "sweet"
@@ -162836,7 +162846,7 @@
     "status": "reviewed",
     "id": "bulk450_ms_265",
     "nameZh": "红薯饼",
-    "nameEn": "红薯饼",
+    "nameEn": "Sweet PotatoCake/Pancake",
     "cookingMethod": "staple",
     "flavors": [
       "sweet"
@@ -162911,7 +162921,7 @@
     "status": "reviewed",
     "id": "bulk450_ms_266",
     "nameZh": "土豆饼",
-    "nameEn": "土豆饼",
+    "nameEn": "PotatoCake/Pancake",
     "cookingMethod": "staple",
     "flavors": [
       "umami"
@@ -162988,7 +162998,7 @@
     "status": "reviewed",
     "id": "bulk450_ms_267",
     "nameZh": "猪肉白菜包子",
-    "nameEn": "猪肉白菜包子",
+    "nameEn": "PorkBun",
     "cookingMethod": "staple",
     "flavors": [
       "umami"
@@ -163070,7 +163080,7 @@
     "status": "reviewed",
     "id": "bulk450_ms_268",
     "nameZh": "芋头西米露(椰浆替代奶)",
-    "nameEn": "芋头西米露(椰浆替代奶)",
+    "nameEn": "Taro(coconut milk substitute)",
     "cookingMethod": "staple",
     "flavors": [
       "sweet"
@@ -163145,7 +163155,7 @@
     "status": "reviewed",
     "id": "bulk450_ms_269",
     "nameZh": "红枣银耳羹",
-    "nameEn": "红枣银耳羹",
+    "nameEn": "JujubeSilver EarThick Soup",
     "cookingMethod": "soup",
     "flavors": [
       "sweet"
@@ -163229,7 +163239,7 @@
     "status": "reviewed",
     "id": "bulk450_h_272",
     "nameZh": "正宗梅菜扣肉",
-    "nameEn": "正宗梅菜扣肉",
+    "nameEn": "Preserved Mustard",
     "cookingMethod": "braise",
     "flavors": [
       "umami",
@@ -163358,7 +163368,7 @@
     "status": "reviewed",
     "id": "bulk450_h_273",
     "nameZh": "本帮红烧肉",
-    "nameEn": "本帮红烧肉",
+    "nameEn": "Red-braised",
     "cookingMethod": "braise",
     "flavors": [
       "umami",
@@ -163482,7 +163492,7 @@
     "status": "reviewed",
     "id": "bulk450_h_274",
     "nameZh": "红烧蹄髈",
-    "nameEn": "红烧蹄髈",
+    "nameEn": "Red-braised",
     "cookingMethod": "braise",
     "flavors": [
       "umami",
@@ -163605,7 +163615,7 @@
     "status": "reviewed",
     "id": "bulk450_h_275",
     "nameZh": "黄豆煨蹄花",
-    "nameEn": "黄豆煨蹄花",
+    "nameEn": "Chinese Dish",
     "cookingMethod": "braise",
     "flavors": [
       "umami",
@@ -163733,8 +163743,8 @@
     "status": "reviewed",
     "id": "bulk450_h_276",
     "nameZh": "咖喱牛腩煲",
-    "nameEn": "咖喱牛腩煲",
-    "cookingMethod": "braise",
+    "nameEn": "CurryBeef BrisketClay Pot",
+    "cookingMethod": "soup",
     "flavors": [
       "umami",
       "sweet"
@@ -163876,8 +163886,8 @@
     "status": "reviewed",
     "id": "bulk450_h_277",
     "nameZh": "番茄牛腩煲",
-    "nameEn": "番茄牛腩煲",
-    "cookingMethod": "braise",
+    "nameEn": "TomatoBeef BrisketClay Pot",
+    "cookingMethod": "soup",
     "flavors": [
       "umami",
       "sweet"
@@ -164008,7 +164018,7 @@
     "status": "reviewed",
     "id": "bulk450_h_278",
     "nameZh": "萝卜炖牛腩",
-    "nameEn": "萝卜炖牛腩",
+    "nameEn": "StewedBeef Brisket",
     "cookingMethod": "braise",
     "flavors": [
       "umami",
@@ -164135,7 +164145,7 @@
     "status": "reviewed",
     "id": "bulk450_h_279",
     "nameZh": "酱牛肉",
-    "nameEn": "酱牛肉",
+    "nameEn": "Beef",
     "cookingMethod": "braise",
     "flavors": [
       "umami",
@@ -164258,7 +164268,7 @@
     "status": "reviewed",
     "id": "bulk450_h_280",
     "nameZh": "清炖牛腱",
-    "nameEn": "清炖牛腱",
+    "nameEn": "Clear StewBeef Shank",
     "cookingMethod": "braise",
     "flavors": [
       "umami",
@@ -164381,7 +164391,7 @@
     "status": "reviewed",
     "id": "bulk450_h_281",
     "nameZh": "葱烧羊肉",
-    "nameEn": "葱烧羊肉",
+    "nameEn": "BraisedLamb",
     "cookingMethod": "braise",
     "flavors": [
       "umami",
@@ -164506,7 +164516,7 @@
     "status": "reviewed",
     "id": "bulk450_h_282",
     "nameZh": "法式烤羊排配土豆",
-    "nameEn": "法式烤羊排配土豆",
+    "nameEn": "FrenchRoastedLamb Chop with Potato",
     "cookingMethod": "braise",
     "flavors": [
       "umami",
@@ -164641,7 +164651,7 @@
     "status": "reviewed",
     "id": "bulk450_h_283",
     "nameZh": "红烧羊小排",
-    "nameEn": "红烧羊小排",
+    "nameEn": "Red-braised",
     "cookingMethod": "braise",
     "flavors": [
       "umami",
@@ -164764,7 +164774,7 @@
     "status": "reviewed",
     "id": "bulk450_h_285",
     "nameZh": "酸萝卜老鸭汤",
-    "nameEn": "酸萝卜老鸭汤",
+    "nameEn": "Soup",
     "cookingMethod": "soup",
     "flavors": [
       "umami",
@@ -164893,7 +164903,7 @@
     "status": "reviewed",
     "id": "bulk450_h_286",
     "nameZh": "香酥鸭",
-    "nameEn": "香酥鸭",
+    "nameEn": "Crispy",
     "cookingMethod": "braise",
     "flavors": [
       "umami",
@@ -165017,7 +165027,7 @@
     "status": "reviewed",
     "id": "bulk450_h_287",
     "nameZh": "叫花鸡",
-    "nameEn": "叫花鸡",
+    "nameEn": "Beggar",
     "cookingMethod": "braise",
     "flavors": [
       "umami",
@@ -165139,7 +165149,7 @@
     "status": "reviewed",
     "id": "bulk450_h_288",
     "nameZh": "正宗盐焗鸡",
-    "nameEn": "正宗盐焗鸡",
+    "nameEn": "Salt-baked",
     "cookingMethod": "braise",
     "flavors": [
       "umami",
@@ -165261,7 +165271,7 @@
     "status": "reviewed",
     "id": "bulk450_h_289",
     "nameZh": "广式白斩鸡",
-    "nameEn": "广式白斩鸡",
+    "nameEn": "White-sliced",
     "cookingMethod": "braise",
     "flavors": [
       "umami",
@@ -165383,7 +165393,7 @@
     "status": "reviewed",
     "id": "bulk450_h_290",
     "nameZh": "正宗黄焖鸡",
-    "nameEn": "正宗黄焖鸡",
+    "nameEn": "Yellow-stewed",
     "cookingMethod": "braise",
     "flavors": [
       "umami",
@@ -165522,7 +165532,7 @@
     "status": "reviewed",
     "id": "bulk450_h_291",
     "nameZh": "糖醋小排. ",
-    "nameEn": "糖醋小排. ",
+    "nameEn": "Sweet & Sour.",
     "cookingMethod": "braise",
     "flavors": [
       "sour",
@@ -165644,8 +165654,8 @@
     "status": "reviewed",
     "id": "bulk450_h_293",
     "nameZh": "柠檬蒸排骨",
-    "nameEn": "柠檬蒸排骨",
-    "cookingMethod": "braise",
+    "nameEn": "LemonSteamedPork Ribs",
+    "cookingMethod": "steam",
     "flavors": [
       "umami",
       "sweet"
@@ -165771,7 +165781,7 @@
     "status": "reviewed",
     "id": "bulk450_h_294",
     "nameZh": "正宗东北锅包肉",
-    "nameEn": "正宗东北锅包肉",
+    "nameEn": "Nabao",
     "cookingMethod": "braise",
     "flavors": [
       "umami",
@@ -165894,7 +165904,7 @@
     "status": "reviewed",
     "id": "bulk450_h_295",
     "nameZh": "京酱肉丝",
-    "nameEn": "京酱肉丝",
+    "nameEn": "Peking Sauce",
     "cookingMethod": "braise",
     "flavors": [
       "umami",
@@ -166022,7 +166032,7 @@
     "status": "reviewed",
     "id": "bulk450_h_296",
     "nameZh": "菠萝咕咾肉",
-    "nameEn": "菠萝咕咾肉",
+    "nameEn": "Pineapple",
     "cookingMethod": "braise",
     "flavors": [
       "umami",
@@ -166155,7 +166165,7 @@
     "status": "reviewed",
     "id": "bulk450_h_297",
     "nameZh": "腰果鸡丁",
-    "nameEn": "腰果鸡丁",
+    "nameEn": "Cashew",
     "cookingMethod": "braise",
     "flavors": [
       "umami",
@@ -166289,7 +166299,7 @@
     "status": "reviewed",
     "id": "bulk450_h_298",
     "nameZh": "正宗黑椒牛柳",
-    "nameEn": "正宗黑椒牛柳",
+    "nameEn": "Black Pepper",
     "cookingMethod": "braise",
     "flavors": [
       "umami",
@@ -166424,7 +166434,7 @@
     "status": "reviewed",
     "id": "bulk450_h_300",
     "nameZh": "清炖狮子头",
-    "nameEn": "清炖狮子头",
+    "nameEn": "Clear Stew",
     "cookingMethod": "braise",
     "flavors": [
       "umami",
@@ -166551,7 +166561,7 @@
     "status": "reviewed",
     "id": "bulk450_h_302",
     "nameZh": "无锡排骨",
-    "nameEn": "无锡排骨",
+    "nameEn": "Wuxi-stylePork Ribs",
     "cookingMethod": "braise",
     "flavors": [
       "umami",
@@ -166673,7 +166683,7 @@
     "status": "reviewed",
     "id": "bulk450_h_303",
     "nameZh": "萝卜炖鸭腿",
-    "nameEn": "萝卜炖鸭腿",
+    "nameEn": "StewedDuck Leg",
     "cookingMethod": "braise",
     "flavors": [
       "umami",
@@ -166800,7 +166810,7 @@
     "status": "reviewed",
     "id": "bulk450_h_304",
     "nameZh": "红酒炖牛肉",
-    "nameEn": "红酒炖牛肉",
+    "nameEn": "Red WineStewedBeef",
     "cookingMethod": "braise",
     "flavors": [
       "umami",
@@ -166932,7 +166942,7 @@
     "status": "reviewed",
     "id": "bulk450_h_305",
     "nameZh": "上海糖醋小排",
-    "nameEn": "上海糖醋小排",
+    "nameEn": "Sweet & Sour",
     "cookingMethod": "braise",
     "flavors": [
       "umami",
@@ -167056,7 +167066,7 @@
     "status": "reviewed",
     "id": "bulk450_h_307",
     "nameZh": "正宗罗宋汤",
-    "nameEn": "正宗罗宋汤",
+    "nameEn": "BorschtSoup",
     "cookingMethod": "soup",
     "flavors": [
       "umami",
@@ -167204,7 +167214,7 @@
     "status": "reviewed",
     "id": "bulk450_h_308",
     "nameZh": "可乐酱烧翅",
-    "nameEn": "可乐酱烧翅",
+    "nameEn": "ColaBraised",
     "cookingMethod": "braise",
     "flavors": [
       "umami",
@@ -167331,7 +167341,7 @@
     "status": "reviewed",
     "id": "bulk450_h_309",
     "nameZh": "蜂蜜烤排骨",
-    "nameEn": "蜂蜜烤排骨",
+    "nameEn": "HoneyRoastedPork Ribs",
     "cookingMethod": "roast",
     "flavors": [
       "umami",
@@ -167460,7 +167470,7 @@
     "status": "reviewed",
     "id": "bulk450_h_310",
     "nameZh": "咸肉烧笋干",
-    "nameEn": "咸肉烧笋干",
+    "nameEn": "BraisedDried Bamboo",
     "cookingMethod": "braise",
     "flavors": [
       "umami",
@@ -167590,7 +167600,7 @@
     "status": "reviewed",
     "id": "bulk450_h_312",
     "nameZh": "南乳排骨",
-    "nameEn": "南乳排骨",
+    "nameEn": "Red Fermented BeanPork Ribs",
     "cookingMethod": "braise",
     "flavors": [
       "umami",
@@ -167721,7 +167731,7 @@
     "status": "reviewed",
     "id": "bulk450_h_313",
     "nameZh": "香茅烤鸡腿",
-    "nameEn": "香茅烤鸡腿",
+    "nameEn": "LemongrassRoastedChicken Leg",
     "cookingMethod": "braise",
     "flavors": [
       "umami",
@@ -167850,8 +167860,8 @@
     "status": "reviewed",
     "id": "bulk450_h_314",
     "nameZh": "新疆羊肉抓饭",
-    "nameEn": "新疆羊肉抓饭",
-    "cookingMethod": "braise",
+    "nameEn": "LambPilaf",
+    "cookingMethod": "staple",
     "flavors": [
       "umami",
       "sweet"
@@ -167990,8 +168000,8 @@
     "status": "reviewed",
     "id": "bulk450_h_315",
     "nameZh": "海南鸡饭",
-    "nameEn": "海南鸡饭",
-    "cookingMethod": "braise",
+    "nameEn": "Hainan Chicken Rice",
+    "cookingMethod": "staple",
     "flavors": [
       "umami",
       "sweet"
@@ -168124,7 +168134,7 @@
     "status": "reviewed",
     "id": "bulk450_h_316",
     "nameZh": "苹果煎里脊配迷迭香",
-    "nameEn": "苹果煎里脊配迷迭香",
+    "nameEn": "ApplePan-fried with Rosemary",
     "cookingMethod": "braise",
     "flavors": [
       "umami",
@@ -168257,7 +168267,7 @@
     "status": "reviewed",
     "id": "bulk450_h_317",
     "nameZh": "简化惠灵顿牛排",
-    "nameEn": "简化惠灵顿牛排",
+    "nameEn": "Wellington",
     "cookingMethod": "braise",
     "flavors": [
       "umami",
@@ -168387,7 +168397,7 @@
     "status": "reviewed",
     "id": "bulk450_h_318",
     "nameZh": "南瓜扣肉",
-    "nameEn": "南瓜扣肉",
+    "nameEn": "Pumpkin",
     "cookingMethod": "braise",
     "flavors": [
       "umami",
@@ -168516,7 +168526,7 @@
     "status": "reviewed",
     "id": "bulk450_h_319",
     "nameZh": "冬瓜陈皮排骨汤",
-    "nameEn": "冬瓜陈皮排骨汤",
+    "nameEn": "Winter MelonPork RibsSoup",
     "cookingMethod": "soup",
     "flavors": [
       "umami",
@@ -168643,7 +168653,7 @@
     "status": "reviewed",
     "id": "bulk450_h_320",
     "nameZh": "玉米莲藕排骨汤",
-    "nameEn": "玉米莲藕排骨汤",
+    "nameEn": "CornLotus RootPork RibsSoup",
     "cookingMethod": "soup",
     "flavors": [
       "umami",
@@ -168776,7 +168786,7 @@
     "status": "reviewed",
     "id": "extra130_cold_000",
     "nameZh": "蒜蓉拍黄瓜",
-    "nameEn": "蒜蓉拍黄瓜",
+    "nameEn": "GarlicSmashedCucumber",
     "cookingMethod": "cold_dish",
     "flavors": [
       "light"
@@ -168864,7 +168874,7 @@
     "status": "reviewed",
     "id": "extra130_cold_001",
     "nameZh": "糖醋黄瓜",
-    "nameEn": "糖醋黄瓜",
+    "nameEn": "Sweet & SourCucumber",
     "cookingMethod": "stir_fry",
     "flavors": [
       "sour",
@@ -168958,7 +168968,7 @@
     "status": "reviewed",
     "id": "extra130_cold_002",
     "nameZh": "香醋黄瓜片",
-    "nameEn": "香醋黄瓜片",
+    "nameEn": "Cucumber",
     "cookingMethod": "cold_dish",
     "flavors": [
       "sour"
@@ -169046,7 +169056,7 @@
     "status": "reviewed",
     "id": "extra130_cold_003",
     "nameZh": "糖拌番茄",
-    "nameEn": "糖拌番茄",
+    "nameEn": "SugarTomato",
     "cookingMethod": "cold_dish",
     "flavors": [
       "sweet"
@@ -169139,7 +169149,7 @@
     "status": "reviewed",
     "id": "extra130_cold_004",
     "nameZh": "番茄洋葱沙拉",
-    "nameEn": "番茄洋葱沙拉",
+    "nameEn": "TomatoOnion",
     "cookingMethod": "cold_dish",
     "flavors": [
       "sour"
@@ -169232,7 +169242,7 @@
     "status": "reviewed",
     "id": "extra130_cold_005",
     "nameZh": "凉拌包菜丝",
-    "nameEn": "凉拌包菜丝",
+    "nameEn": "ColdCabbage",
     "cookingMethod": "cold_dish",
     "flavors": [
       "light"
@@ -169320,7 +169330,7 @@
     "status": "reviewed",
     "id": "extra130_cold_007",
     "nameZh": "凉拌紫甘蓝丝",
-    "nameEn": "凉拌紫甘蓝丝",
+    "nameEn": "ColdPurple Cabbage",
     "cookingMethod": "cold_dish",
     "flavors": [
       "sour"
@@ -169408,7 +169418,7 @@
     "status": "reviewed",
     "id": "extra130_cold_008",
     "nameZh": "凉拌胡萝卜丝",
-    "nameEn": "凉拌胡萝卜丝",
+    "nameEn": "ColdCarrot",
     "cookingMethod": "cold_dish",
     "flavors": [
       "light"
@@ -169496,7 +169506,7 @@
     "status": "reviewed",
     "id": "extra130_cold_009",
     "nameZh": "凉拌白萝卜丝",
-    "nameEn": "凉拌白萝卜丝",
+    "nameEn": "ColdWhite Radish",
     "cookingMethod": "cold_dish",
     "flavors": [
       "light"
@@ -169584,7 +169594,7 @@
     "status": "reviewed",
     "id": "extra130_cold_010",
     "nameZh": "凉拌芹菜",
-    "nameEn": "凉拌芹菜",
+    "nameEn": "ColdCelery",
     "cookingMethod": "cold_dish",
     "flavors": [
       "light"
@@ -169672,7 +169682,7 @@
     "status": "reviewed",
     "id": "extra130_cold_011",
     "nameZh": "芹菜花生",
-    "nameEn": "芹菜花生",
+    "nameEn": "CeleryPeanut",
     "cookingMethod": "cold_dish",
     "flavors": [
       "light"
@@ -169767,7 +169777,7 @@
     "status": "reviewed",
     "id": "extra130_cold_014",
     "nameZh": "糖醋藕片凉菜",
-    "nameEn": "糖醋藕片凉菜",
+    "nameEn": "Sweet & Sour",
     "cookingMethod": "cold_dish",
     "flavors": [
       "sour",
@@ -169861,7 +169871,7 @@
     "status": "reviewed",
     "id": "extra130_cold_015",
     "nameZh": "凉拌莴笋丝",
-    "nameEn": "凉拌莴笋丝",
+    "nameEn": "ColdCeltuce",
     "cookingMethod": "cold_dish",
     "flavors": [
       "light"
@@ -169949,7 +169959,7 @@
     "status": "reviewed",
     "id": "extra130_cold_017",
     "nameZh": "秋葵拌花生",
-    "nameEn": "秋葵拌花生",
+    "nameEn": "OkraPeanut",
     "cookingMethod": "cold_dish",
     "flavors": [
       "light"
@@ -170044,7 +170054,7 @@
     "status": "reviewed",
     "id": "extra130_cold_018",
     "nameZh": "凉拌芦笋",
-    "nameEn": "凉拌芦笋",
+    "nameEn": "ColdAsparagus",
     "cookingMethod": "cold_dish",
     "flavors": [
       "light"
@@ -170132,7 +170142,7 @@
     "status": "reviewed",
     "id": "extra130_cold_019",
     "nameZh": "凉拌菠菜",
-    "nameEn": "凉拌菠菜",
+    "nameEn": "ColdSpinach",
     "cookingMethod": "cold_dish",
     "flavors": [
       "light"
@@ -170222,7 +170232,7 @@
     "status": "reviewed",
     "id": "extra130_cold_020",
     "nameZh": "菠菜拌花生",
-    "nameEn": "菠菜拌花生",
+    "nameEn": "SpinachPeanut",
     "cookingMethod": "cold_dish",
     "flavors": [
       "light"
@@ -170319,7 +170329,7 @@
     "status": "reviewed",
     "id": "extra130_cold_022",
     "nameZh": "凉拌豆薯丝",
-    "nameEn": "凉拌豆薯丝",
+    "nameEn": "ColdJicama",
     "cookingMethod": "cold_dish",
     "flavors": [
       "sweet"
@@ -170412,7 +170422,7 @@
     "status": "reviewed",
     "id": "extra130_cold_023",
     "nameZh": "凉拌马蹄",
-    "nameEn": "凉拌马蹄",
+    "nameEn": "ColdWater Chestnut",
     "cookingMethod": "cold_dish",
     "flavors": [
       "sweet"
@@ -170506,7 +170516,7 @@
     "status": "reviewed",
     "id": "extra130_cold_024",
     "nameZh": "糖醋甜菜根",
-    "nameEn": "糖醋甜菜根",
+    "nameEn": "Sweet & SourBeetroot",
     "cookingMethod": "stir_fry",
     "flavors": [
       "sour",
@@ -170600,7 +170610,7 @@
     "status": "reviewed",
     "id": "extra130_cold_025",
     "nameZh": "生菜沙拉",
-    "nameEn": "生菜沙拉",
+    "nameEn": "Lettuce",
     "cookingMethod": "cold_dish",
     "flavors": [
       "light"
@@ -170693,7 +170703,7 @@
     "status": "reviewed",
     "id": "extra130_cold_026",
     "nameZh": "芝麻菜沙拉",
-    "nameEn": "芝麻菜沙拉",
+    "nameEn": "Arugula",
     "cookingMethod": "cold_dish",
     "flavors": [
       "light"
@@ -170786,7 +170796,7 @@
     "status": "reviewed",
     "id": "extra130_cold_027",
     "nameZh": "羽衣甘蓝沙拉",
-    "nameEn": "羽衣甘蓝沙拉",
+    "nameEn": "Kale",
     "cookingMethod": "cold_dish",
     "flavors": [
       "light"
@@ -170882,7 +170892,7 @@
     "status": "reviewed",
     "id": "extra130_cold_028",
     "nameZh": "凉拌西洋菜",
-    "nameEn": "凉拌西洋菜",
+    "nameEn": "ColdWatercress",
     "cookingMethod": "cold_dish",
     "flavors": [
       "light"
@@ -170971,7 +170981,7 @@
     "status": "reviewed",
     "id": "extra130_cold_029",
     "nameZh": "凉拌茴香",
-    "nameEn": "凉拌茴香",
+    "nameEn": "ColdFennel",
     "cookingMethod": "cold_dish",
     "flavors": [
       "light"
@@ -171059,7 +171069,7 @@
     "status": "reviewed",
     "id": "extra130_cold_030",
     "nameZh": "凉拌豆苗",
-    "nameEn": "凉拌豆苗",
+    "nameEn": "ColdPea Shoots",
     "cookingMethod": "cold_dish",
     "flavors": [
       "light"
@@ -171147,7 +171157,7 @@
     "status": "reviewed",
     "id": "extra130_cold_032",
     "nameZh": "冷玉米沙拉",
-    "nameEn": "冷玉米沙拉",
+    "nameEn": "ColdCorn",
     "cookingMethod": "cold_dish",
     "flavors": [
       "sweet"
@@ -171250,7 +171260,7 @@
     "status": "reviewed",
     "id": "extra130_cold_033",
     "nameZh": "冷南瓜泥",
-    "nameEn": "冷南瓜泥",
+    "nameEn": "ColdPumpkin",
     "cookingMethod": "cold_dish",
     "flavors": [
       "sweet"
@@ -171343,7 +171353,7 @@
     "status": "reviewed",
     "id": "extra130_cold_034",
     "nameZh": "冷红薯沙拉",
-    "nameEn": "冷红薯沙拉",
+    "nameEn": "ColdSweet Potato",
     "cookingMethod": "cold_dish",
     "flavors": [
       "sweet"
@@ -171436,7 +171446,7 @@
     "status": "reviewed",
     "id": "extra130_cold_035",
     "nameZh": "凉拌西葫芦丝",
-    "nameEn": "凉拌西葫芦丝",
+    "nameEn": "ColdZucchini",
     "cookingMethod": "cold_dish",
     "flavors": [
       "light"
@@ -171524,7 +171534,7 @@
     "status": "reviewed",
     "id": "extra130_cold_036",
     "nameZh": "凉拌蘑菇",
-    "nameEn": "凉拌蘑菇",
+    "nameEn": "ColdMushroom",
     "cookingMethod": "cold_dish",
     "flavors": [
       "umami"
@@ -171614,7 +171624,7 @@
     "status": "reviewed",
     "id": "extra130_cold_037",
     "nameZh": "蒜泥金针菇",
-    "nameEn": "蒜泥金针菇",
+    "nameEn": "Garlic PasteEnoki",
     "cookingMethod": "cold_dish",
     "flavors": [
       "umami"
@@ -171702,7 +171712,7 @@
     "status": "reviewed",
     "id": "extra130_cold_038",
     "nameZh": "凉拌杏鲍菇",
-    "nameEn": "凉拌杏鲍菇",
+    "nameEn": "ColdKing Oyster",
     "cookingMethod": "cold_dish",
     "flavors": [
       "umami"
@@ -171790,7 +171800,7 @@
     "status": "reviewed",
     "id": "extra130_cold_039",
     "nameZh": "凉拌苋菜",
-    "nameEn": "凉拌苋菜",
+    "nameEn": "ColdAmaranth",
     "cookingMethod": "cold_dish",
     "flavors": [
       "light"
@@ -171878,7 +171888,7 @@
     "status": "reviewed",
     "id": "extra130_cold_040",
     "nameZh": "凉拌芥蓝",
-    "nameEn": "凉拌芥蓝",
+    "nameEn": "ColdChinese Broccoli",
     "cookingMethod": "cold_dish",
     "flavors": [
       "light"
@@ -171966,7 +171976,7 @@
     "status": "reviewed",
     "id": "extra130_cold_041",
     "nameZh": "凉拌西兰花",
-    "nameEn": "凉拌西兰花",
+    "nameEn": "ColdBroccoli",
     "cookingMethod": "cold_dish",
     "flavors": [
       "light"
@@ -172054,7 +172064,7 @@
     "status": "reviewed",
     "id": "extra130_cold_042",
     "nameZh": "凉拌花菜",
-    "nameEn": "凉拌花菜",
+    "nameEn": "ColdCauliflower",
     "cookingMethod": "cold_dish",
     "flavors": [
       "light"
@@ -172142,7 +172152,7 @@
     "status": "reviewed",
     "id": "extra130_cold_043",
     "nameZh": "凉拌四季豆",
-    "nameEn": "凉拌四季豆",
+    "nameEn": "ColdGreen Beans",
     "cookingMethod": "cold_dish",
     "flavors": [
       "light"
@@ -172230,7 +172240,7 @@
     "status": "reviewed",
     "id": "extra130_cold_044",
     "nameZh": "凉拌荷兰豆",
-    "nameEn": "凉拌荷兰豆",
+    "nameEn": "ColdSnow Peas",
     "cookingMethod": "cold_dish",
     "flavors": [
       "light"
@@ -172318,7 +172328,7 @@
     "status": "reviewed",
     "id": "extra130_cold_045",
     "nameZh": "凉拌竹笋",
-    "nameEn": "凉拌竹笋",
+    "nameEn": "ColdBamboo Shoot",
     "cookingMethod": "cold_dish",
     "flavors": [
       "light"
@@ -172406,7 +172416,7 @@
     "status": "reviewed",
     "id": "extra130_cold_046",
     "nameZh": "凉拌茭白丝",
-    "nameEn": "凉拌茭白丝",
+    "nameEn": "ColdWater Bamboo",
     "cookingMethod": "cold_dish",
     "flavors": [
       "light"
@@ -172494,7 +172504,7 @@
     "status": "reviewed",
     "id": "extra130_cold_047",
     "nameZh": "凉拌春笋",
-    "nameEn": "凉拌春笋",
+    "nameEn": "ColdSpring Bamboo",
     "cookingMethod": "cold_dish",
     "flavors": [
       "light"
@@ -172582,7 +172592,7 @@
     "status": "reviewed",
     "id": "extra130_cold_048",
     "nameZh": "手撕包菜凉拌",
-    "nameEn": "手撕包菜凉拌",
+    "nameEn": "Hand-tornCabbageCold",
     "cookingMethod": "cold_dish",
     "flavors": [
       "light"
@@ -172670,7 +172680,7 @@
     "status": "reviewed",
     "id": "extra130_cold_049",
     "nameZh": "凉拌空心菜梗",
-    "nameEn": "凉拌空心菜梗",
+    "nameEn": "ColdWater Spinach",
     "cookingMethod": "cold_dish",
     "flavors": [
       "light"
@@ -172758,7 +172768,7 @@
     "status": "reviewed",
     "id": "extra130_cold_050",
     "nameZh": "冷芋头球",
-    "nameEn": "冷芋头球",
+    "nameEn": "ColdTaro",
     "cookingMethod": "cold_dish",
     "flavors": [
       "sweet"
@@ -172851,7 +172861,7 @@
     "status": "reviewed",
     "id": "extra130_cold_051",
     "nameZh": "冷山药段",
-    "nameEn": "冷山药段",
+    "nameEn": "ColdChinese Yam",
     "cookingMethod": "cold_dish",
     "flavors": [
       "light"
@@ -172939,7 +172949,7 @@
     "status": "reviewed",
     "id": "extra130_cold_052",
     "nameZh": "蜂蜜柠檬黄瓜",
-    "nameEn": "蜂蜜柠檬黄瓜",
+    "nameEn": "Honey LemonCucumber",
     "cookingMethod": "cold_dish",
     "flavors": [
       "sour",
@@ -173045,7 +173055,7 @@
     "status": "reviewed",
     "id": "extra130_cold_053",
     "nameZh": "番茄罗勒",
-    "nameEn": "番茄罗勒",
+    "nameEn": "TomatoBasil",
     "cookingMethod": "cold_dish",
     "flavors": [
       "light"
@@ -173138,7 +173148,7 @@
     "status": "reviewed",
     "id": "extra130_cold_054",
     "nameZh": "雪菜笋丝凉拌",
-    "nameEn": "雪菜笋丝凉拌",
+    "nameEn": "Snow VegetableCold",
     "cookingMethod": "cold_dish",
     "flavors": [
       "umami",
@@ -173234,7 +173244,7 @@
     "status": "reviewed",
     "id": "extra130_cold_055",
     "nameZh": "榨菜丝凉拌",
-    "nameEn": "榨菜丝凉拌",
+    "nameEn": "Pickled MustardCold",
     "cookingMethod": "cold_dish",
     "flavors": [
       "umami",
@@ -173325,7 +173335,7 @@
     "status": "reviewed",
     "id": "extra130_cold_056",
     "nameZh": "味噌黄瓜",
-    "nameEn": "味噌黄瓜",
+    "nameEn": "MisoCucumber",
     "cookingMethod": "cold_dish",
     "flavors": [
       "umami"
@@ -173422,7 +173432,7 @@
     "status": "reviewed",
     "id": "extra130_cold_057",
     "nameZh": "醋溜手撕包菜",
-    "nameEn": "醋溜手撕包菜",
+    "nameEn": "VinegarHand-tornCabbage",
     "cookingMethod": "cold_dish",
     "flavors": [
       "sour"
@@ -173509,8 +173519,8 @@
     "regionalCuisine": "homestyle",
     "status": "reviewed",
     "id": "extra130_cold_058",
-    "nameZh": "西兰花虾仁(无虾版)",
-    "nameEn": "西兰花虾仁(无虾版)",
+    "nameZh": "西兰花蘑菇凉拌",
+    "nameEn": "Cold Broccoli Mushroom",
     "cookingMethod": "cold_dish",
     "flavors": [
       "light"
@@ -173605,7 +173615,7 @@
     "status": "reviewed",
     "id": "extra130_cold_059",
     "nameZh": "蚝油生菜凉拌",
-    "nameEn": "蚝油生菜凉拌",
+    "nameEn": "Oyster SauceLettuceCold",
     "cookingMethod": "cold_dish",
     "flavors": [
       "umami"
@@ -173693,7 +173703,7 @@
     "status": "reviewed",
     "id": "extra130_cold_060",
     "nameZh": "凉拌黄瓜火腿丁",
-    "nameEn": "凉拌黄瓜火腿丁",
+    "nameEn": "ColdCucumberHam",
     "cookingMethod": "cold_dish",
     "flavors": [
       "umami"
@@ -173791,7 +173801,7 @@
     "status": "reviewed",
     "id": "extra130_bf_062",
     "nameZh": "糙米粥",
-    "nameEn": "糙米粥",
+    "nameEn": "Brown RicePorridge",
     "cookingMethod": "staple",
     "flavors": [
       "light"
@@ -173856,7 +173866,7 @@
     "status": "reviewed",
     "id": "extra130_bf_063",
     "nameZh": "燕麦糊",
-    "nameEn": "燕麦糊",
+    "nameEn": "Oats",
     "cookingMethod": "staple",
     "flavors": [
       "light"
@@ -173922,7 +173932,7 @@
     "status": "reviewed",
     "id": "extra130_bf_064",
     "nameZh": "红枣燕麦粥",
-    "nameEn": "红枣燕麦粥",
+    "nameEn": "JujubeOatsPorridge",
     "cookingMethod": "staple",
     "flavors": [
       "sweet"
@@ -174001,7 +174011,7 @@
     "status": "reviewed",
     "id": "extra130_bf_065",
     "nameZh": "桂圆红枣粥",
-    "nameEn": "桂圆红枣粥",
+    "nameEn": "LonganJujubePorridge",
     "cookingMethod": "staple",
     "flavors": [
       "sweet"
@@ -174083,7 +174093,7 @@
     "status": "reviewed",
     "id": "extra130_bf_066",
     "nameZh": "核桃米粥",
-    "nameEn": "核桃米粥",
+    "nameEn": "WalnutPorridge",
     "cookingMethod": "staple",
     "flavors": [
       "light"
@@ -174153,7 +174163,7 @@
     "status": "reviewed",
     "id": "extra130_bf_068",
     "nameZh": "山药小米粥",
-    "nameEn": "山药小米粥",
+    "nameEn": "Chinese YamMilletPorridge",
     "cookingMethod": "staple",
     "flavors": [
       "sweet"
@@ -174227,7 +174237,7 @@
     "status": "reviewed",
     "id": "extra130_bf_069",
     "nameZh": "红薯小米粥",
-    "nameEn": "红薯小米粥",
+    "nameEn": "Sweet PotatoMilletPorridge",
     "cookingMethod": "staple",
     "flavors": [
       "sweet"
@@ -174301,7 +174311,7 @@
     "status": "reviewed",
     "id": "extra130_bf_070",
     "nameZh": "紫薯燕麦粥",
-    "nameEn": "紫薯燕麦粥",
+    "nameEn": "Purple Sweet PotatoOatsPorridge",
     "cookingMethod": "staple",
     "flavors": [
       "sweet"
@@ -174377,7 +174387,7 @@
     "status": "reviewed",
     "id": "extra130_bf_071",
     "nameZh": "南瓜燕麦粥",
-    "nameEn": "南瓜燕麦粥",
+    "nameEn": "PumpkinOatsPorridge",
     "cookingMethod": "staple",
     "flavors": [
       "sweet"
@@ -174454,7 +174464,7 @@
     "status": "reviewed",
     "id": "extra130_bf_072",
     "nameZh": "藜麦粥",
-    "nameEn": "藜麦粥",
+    "nameEn": "QuinoaPorridge",
     "cookingMethod": "staple",
     "flavors": [
       "light"
@@ -174518,7 +174528,7 @@
     "status": "reviewed",
     "id": "extra130_bf_073",
     "nameZh": "玉米藜麦粥",
-    "nameEn": "玉米藜麦粥",
+    "nameEn": "CornQuinoaPorridge",
     "cookingMethod": "staple",
     "flavors": [
       "sweet"
@@ -174592,7 +174602,7 @@
     "status": "reviewed",
     "id": "extra130_bf_074",
     "nameZh": "糙米饭团",
-    "nameEn": "糙米饭团",
+    "nameEn": "Rice",
     "cookingMethod": "staple",
     "flavors": [
       "light"
@@ -174657,7 +174667,7 @@
     "status": "reviewed",
     "id": "extra130_bf_075",
     "nameZh": "米饭团(原味)",
-    "nameEn": "米饭团(原味)",
+    "nameEn": "Rice()",
     "cookingMethod": "staple",
     "flavors": [
       "light"
@@ -174720,7 +174730,7 @@
     "status": "reviewed",
     "id": "extra130_bf_076",
     "nameZh": "南瓜糯米饼",
-    "nameEn": "南瓜糯米饼",
+    "nameEn": "PumpkinGlutinous RiceCake/Pancake",
     "cookingMethod": "staple",
     "flavors": [
       "sweet"
@@ -174794,7 +174804,7 @@
     "status": "reviewed",
     "id": "extra130_bf_077",
     "nameZh": "红薯糯米饼",
-    "nameEn": "红薯糯米饼",
+    "nameEn": "Sweet PotatoGlutinous RiceCake/Pancake",
     "cookingMethod": "staple",
     "flavors": [
       "sweet"
@@ -174867,7 +174877,7 @@
     "status": "reviewed",
     "id": "extra130_bf_078",
     "nameZh": "紫薯糯米饼",
-    "nameEn": "紫薯糯米饼",
+    "nameEn": "Purple Sweet PotatoGlutinous RiceCake/Pancake",
     "cookingMethod": "staple",
     "flavors": [
       "sweet"
@@ -174941,7 +174951,7 @@
     "status": "reviewed",
     "id": "extra130_bf_079",
     "nameZh": "山药糯米球",
-    "nameEn": "山药糯米球",
+    "nameEn": "Chinese YamGlutinous Rice",
     "cookingMethod": "staple",
     "flavors": [
       "sweet"
@@ -175016,7 +175026,7 @@
     "status": "reviewed",
     "id": "extra130_bf_080",
     "nameZh": "葱花卷",
-    "nameEn": "葱花卷",
+    "nameEn": "Huajuan",
     "cookingMethod": "staple",
     "flavors": [
       "umami"
@@ -175087,7 +175097,7 @@
     "status": "reviewed",
     "id": "extra130_bf_081",
     "nameZh": "白吐司(无奶版)",
-    "nameEn": "白吐司(无奶版)",
+    "nameEn": "White Toast (No Dairy)",
     "cookingMethod": "staple",
     "flavors": [
       "light"
@@ -175152,7 +175162,7 @@
     "status": "reviewed",
     "id": "extra130_bf_082",
     "nameZh": "素菜包",
-    "nameEn": "素菜包",
+    "nameEn": "Chinese Dish",
     "cookingMethod": "staple",
     "flavors": [
       "umami"
@@ -175223,7 +175233,7 @@
     "status": "reviewed",
     "id": "extra130_bf_083",
     "nameZh": "香菇菜包",
-    "nameEn": "香菇菜包",
+    "nameEn": "Shiitake",
     "cookingMethod": "staple",
     "flavors": [
       "umami"
@@ -175299,7 +175309,7 @@
     "status": "reviewed",
     "id": "extra130_bf_084",
     "nameZh": "南瓜包子",
-    "nameEn": "南瓜包子",
+    "nameEn": "PumpkinBun",
     "cookingMethod": "staple",
     "flavors": [
       "sweet"
@@ -175375,7 +175385,7 @@
     "status": "reviewed",
     "id": "extra130_bf_085",
     "nameZh": "红薯包子",
-    "nameEn": "红薯包子",
+    "nameEn": "Sweet PotatoBun",
     "cookingMethod": "staple",
     "flavors": [
       "sweet"
@@ -175450,8 +175460,8 @@
     "status": "reviewed",
     "id": "extra130_bf_086",
     "nameZh": "蒸糙米饭",
-    "nameEn": "蒸糙米饭",
-    "cookingMethod": "steam",
+    "nameEn": "SteamedRice",
+    "cookingMethod": "staple",
     "flavors": [
       "light"
     ],
@@ -175515,7 +175525,7 @@
     "status": "reviewed",
     "id": "extra130_bf_087",
     "nameZh": "蒸藜麦",
-    "nameEn": "蒸藜麦",
+    "nameEn": "SteamedQuinoa",
     "cookingMethod": "steam",
     "flavors": [
       "light"
@@ -175579,7 +175589,7 @@
     "status": "reviewed",
     "id": "extra130_bf_088",
     "nameZh": "烤紫薯片",
-    "nameEn": "烤紫薯片",
+    "nameEn": "RoastedPurple Sweet Potato",
     "cookingMethod": "staple",
     "flavors": [
       "sweet"
@@ -175649,7 +175659,7 @@
     "status": "reviewed",
     "id": "extra130_bf_089",
     "nameZh": "烤南瓜片",
-    "nameEn": "烤南瓜片",
+    "nameEn": "RoastedPumpkin",
     "cookingMethod": "staple",
     "flavors": [
       "sweet"
@@ -175718,7 +175728,7 @@
     "status": "reviewed",
     "id": "extra130_bf_090",
     "nameZh": "烤芋头条",
-    "nameEn": "烤芋头条",
+    "nameEn": "RoastedTaro",
     "cookingMethod": "staple",
     "flavors": [
       "sweet"
@@ -175787,7 +175797,7 @@
     "status": "reviewed",
     "id": "extra130_em_091",
     "nameZh": "木耳炒肉片",
-    "nameEn": "木耳炒肉片",
+    "nameEn": "Wood EarStir-fried",
     "cookingMethod": "stir_fry",
     "flavors": [
       "umami"
@@ -175881,7 +175891,7 @@
     "status": "reviewed",
     "id": "extra130_em_092",
     "nameZh": "黑木耳炒肉片",
-    "nameEn": "黑木耳炒肉片",
+    "nameEn": "Black FungusStir-fried",
     "cookingMethod": "stir_fry",
     "flavors": [
       "umami"
@@ -175975,7 +175985,7 @@
     "status": "reviewed",
     "id": "extra130_em_093",
     "nameZh": "芦笋鸡腿肉",
-    "nameEn": "芦笋鸡腿肉",
+    "nameEn": "AsparagusChicken Thigh",
     "cookingMethod": "stir_fry",
     "flavors": [
       "light",
@@ -176071,7 +176081,7 @@
     "status": "reviewed",
     "id": "extra130_em_094",
     "nameZh": "莴笋鸡腿丁",
-    "nameEn": "莴笋鸡腿丁",
+    "nameEn": "CeltuceChicken Leg",
     "cookingMethod": "stir_fry",
     "flavors": [
       "light",
@@ -176167,7 +176177,7 @@
     "status": "reviewed",
     "id": "extra130_em_095",
     "nameZh": "莴笋牛肉丝",
-    "nameEn": "莴笋牛肉丝",
+    "nameEn": "CeltuceBeef",
     "cookingMethod": "stir_fry",
     "flavors": [
       "umami"
@@ -176263,7 +176273,7 @@
     "status": "reviewed",
     "id": "extra130_em_096",
     "nameZh": "茭白炒牛肉",
-    "nameEn": "茭白炒牛肉",
+    "nameEn": "Water BambooStir-friedBeef",
     "cookingMethod": "stir_fry",
     "flavors": [
       "umami"
@@ -176359,7 +176369,7 @@
     "status": "reviewed",
     "id": "extra130_em_097",
     "nameZh": "茭白五花",
-    "nameEn": "茭白五花",
+    "nameEn": "Water Bamboo",
     "cookingMethod": "stir_fry",
     "flavors": [
       "umami"
@@ -176454,7 +176464,7 @@
     "status": "reviewed",
     "id": "extra130_em_098",
     "nameZh": "茴香炒肉丝",
-    "nameEn": "茴香炒肉丝",
+    "nameEn": "FennelStir-fried",
     "cookingMethod": "stir_fry",
     "flavors": [
       "umami"
@@ -176548,7 +176558,7 @@
     "status": "reviewed",
     "id": "extra130_em_099",
     "nameZh": "秋葵炒肉片",
-    "nameEn": "秋葵炒肉片",
+    "nameEn": "OkraStir-fried",
     "cookingMethod": "stir_fry",
     "flavors": [
       "umami",
@@ -176643,7 +176653,7 @@
     "status": "reviewed",
     "id": "extra130_em_100",
     "nameZh": "秋葵鸡丁",
-    "nameEn": "秋葵鸡丁",
+    "nameEn": "Okra",
     "cookingMethod": "stir_fry",
     "flavors": [
       "umami",
@@ -176739,7 +176749,7 @@
     "status": "reviewed",
     "id": "extra130_em_101",
     "nameZh": "马蹄炒肉丁",
-    "nameEn": "马蹄炒肉丁",
+    "nameEn": "Water ChestnutStir-fried",
     "cookingMethod": "stir_fry",
     "flavors": [
       "umami",
@@ -176834,7 +176844,7 @@
     "status": "reviewed",
     "id": "extra130_em_102",
     "nameZh": "芋头烧五花",
-    "nameEn": "芋头烧五花",
+    "nameEn": "TaroBraised",
     "cookingMethod": "stir_fry",
     "flavors": [
       "umami",
@@ -176929,8 +176939,8 @@
     "status": "reviewed",
     "id": "extra130_em_103",
     "nameZh": "芋头炖鸡",
-    "nameEn": "芋头炖鸡",
-    "cookingMethod": "stir_fry",
+    "nameEn": "TaroStewed",
+    "cookingMethod": "braise",
     "flavors": [
       "umami",
       "sweet"
@@ -176941,8 +176951,8 @@
     ],
     "difficulty": "easy",
     "minCookingLevel": "beginner",
-    "prepTime": 8,
-    "cookTime": 10,
+    "prepTime": 10,
+    "cookTime": 25,
     "servings": 2,
     "description": "家常菜里的下饭好手。以鸡腿肉配芋头为主料，大火爆炒，锅气十足，口味鲜美、甘甜，无需厨艺基础。",
     "ingredients": [
@@ -177024,7 +177034,7 @@
     "status": "reviewed",
     "id": "extra130_em_104",
     "nameZh": "毛豆鸭丁",
-    "nameEn": "毛豆鸭丁",
+    "nameEn": "Edamame",
     "cookingMethod": "stir_fry",
     "flavors": [
       "umami"
@@ -177119,7 +177129,7 @@
     "status": "reviewed",
     "id": "extra130_em_105",
     "nameZh": "毛豆鸡丁",
-    "nameEn": "毛豆鸡丁",
+    "nameEn": "Edamame",
     "cookingMethod": "stir_fry",
     "flavors": [
       "umami"
@@ -177212,7 +177222,7 @@
     "status": "reviewed",
     "id": "extra130_m_106",
     "nameZh": "山药烧五花",
-    "nameEn": "山药烧五花",
+    "nameEn": "Chinese YamBraised",
     "cookingMethod": "braise",
     "flavors": [
       "umami",
@@ -177317,7 +177327,7 @@
     "status": "reviewed",
     "id": "extra130_m_107",
     "nameZh": "冬瓜烧五花",
-    "nameEn": "冬瓜烧五花",
+    "nameEn": "Winter MelonBraised",
     "cookingMethod": "braise",
     "flavors": [
       "umami",
@@ -177423,7 +177433,7 @@
     "status": "reviewed",
     "id": "extra130_m_108",
     "nameZh": "红枣焖鸡腿",
-    "nameEn": "红枣焖鸡腿",
+    "nameEn": "JujubeBraisedChicken Leg",
     "cookingMethod": "braise",
     "flavors": [
       "umami",
@@ -177529,7 +177539,7 @@
     "status": "reviewed",
     "id": "extra130_m_109",
     "nameZh": "板栗烧整鸡",
-    "nameEn": "板栗烧整鸡",
+    "nameEn": "ChestnutBraisedWhole Chicken",
     "cookingMethod": "braise",
     "flavors": [
       "umami",
@@ -177635,7 +177645,7 @@
     "status": "reviewed",
     "id": "extra130_m_110",
     "nameZh": "啤酒咖喱鸭",
-    "nameEn": "啤酒咖喱鸭",
+    "nameEn": "BeerCurry",
     "cookingMethod": "braise",
     "flavors": [
       "umami",
@@ -177741,7 +177751,7 @@
     "status": "reviewed",
     "id": "extra130_m_111",
     "nameZh": "土豆胡萝卜炖牛腩",
-    "nameEn": "土豆胡萝卜炖牛腩",
+    "nameEn": "PotatoCarrotStewedBeef Brisket",
     "cookingMethod": "braise",
     "flavors": [
       "umami",
@@ -177850,7 +177860,7 @@
     "status": "reviewed",
     "id": "extra130_m_112",
     "nameZh": "山药炖羊肉",
-    "nameEn": "山药炖羊肉",
+    "nameEn": "Chinese YamStewedLamb",
     "cookingMethod": "braise",
     "flavors": [
       "umami",
@@ -177956,7 +177966,7 @@
     "status": "reviewed",
     "id": "extra130_m_113",
     "nameZh": "冬瓜炖排骨",
-    "nameEn": "冬瓜炖排骨",
+    "nameEn": "Winter MelonStewedPork Ribs",
     "cookingMethod": "braise",
     "flavors": [
       "umami",
@@ -178061,7 +178071,7 @@
     "status": "reviewed",
     "id": "extra130_m_114",
     "nameZh": "萝卜炖排骨",
-    "nameEn": "萝卜炖排骨",
+    "nameEn": "StewedPork Ribs",
     "cookingMethod": "braise",
     "flavors": [
       "umami",
@@ -178166,7 +178176,7 @@
     "status": "reviewed",
     "id": "extra130_m_115",
     "nameZh": "葡萄酒洋葱炖排骨",
-    "nameEn": "葡萄酒洋葱炖排骨",
+    "nameEn": "OnionStewedPork Ribs",
     "cookingMethod": "braise",
     "flavors": [
       "umami",
@@ -178271,7 +178281,7 @@
     "status": "reviewed",
     "id": "extra130_m_116",
     "nameZh": "笋干焖鸭腿",
-    "nameEn": "笋干焖鸭腿",
+    "nameEn": "Dried BambooBraisedDuck Leg",
     "cookingMethod": "braise",
     "flavors": [
       "umami",
@@ -178376,7 +178386,7 @@
     "status": "reviewed",
     "id": "extra130_m_117",
     "nameZh": "笋干烧五花",
-    "nameEn": "笋干烧五花",
+    "nameEn": "Dried BambooBraised",
     "cookingMethod": "braise",
     "flavors": [
       "umami",
@@ -178483,7 +178493,7 @@
     "status": "reviewed",
     "id": "extra130_m_118",
     "nameZh": "雪菜焖鸡",
-    "nameEn": "雪菜焖鸡",
+    "nameEn": "Snow VegetableBraised",
     "cookingMethod": "braise",
     "flavors": [
       "umami",
@@ -178589,7 +178599,7 @@
     "status": "reviewed",
     "id": "extra130_m_119",
     "nameZh": "马蹄煎肉饼",
-    "nameEn": "马蹄煎肉饼",
+    "nameEn": "Water ChestnutPan-friedCake/Pancake",
     "cookingMethod": "braise",
     "flavors": [
       "umami",
@@ -178692,7 +178702,7 @@
     "status": "reviewed",
     "id": "extra130_m_120",
     "nameZh": "酿茄子",
-    "nameEn": "酿茄子",
+    "nameEn": "StuffedEggplant",
     "cookingMethod": "braise",
     "flavors": [
       "umami",
@@ -178796,7 +178806,7 @@
     "status": "reviewed",
     "id": "extra130_m_121",
     "nameZh": "酿青椒",
-    "nameEn": "酿青椒",
+    "nameEn": "StuffedGreen Pepper",
     "cookingMethod": "braise",
     "flavors": [
       "umami",
@@ -178900,7 +178910,7 @@
     "status": "reviewed",
     "id": "extra130_m_122",
     "nameZh": "酿冬瓜",
-    "nameEn": "酿冬瓜",
+    "nameEn": "StuffedWinter Melon",
     "cookingMethod": "braise",
     "flavors": [
       "umami",
@@ -179004,7 +179014,7 @@
     "status": "reviewed",
     "id": "extra130_m_123",
     "nameZh": "菠萝牛肉",
-    "nameEn": "菠萝牛肉",
+    "nameEn": "PineappleBeef",
     "cookingMethod": "braise",
     "flavors": [
       "umami",
@@ -179116,7 +179126,7 @@
     "status": "reviewed",
     "id": "extra130_m_124",
     "nameZh": "菠萝咕咾里脊(简化)",
-    "nameEn": "菠萝咕咾里脊(简化)",
+    "nameEn": "Pineapple(simplified)",
     "cookingMethod": "braise",
     "flavors": [
       "umami",
@@ -179220,7 +179230,7 @@
     "status": "reviewed",
     "id": "extra130_m_125",
     "nameZh": "香茅烤鸡",
-    "nameEn": "香茅烤鸡",
+    "nameEn": "LemongrassRoasted",
     "cookingMethod": "roast",
     "flavors": [
       "umami",
@@ -179325,7 +179335,7 @@
     "status": "reviewed",
     "id": "extra130_m_128",
     "nameZh": "罗勒煎牛肉",
-    "nameEn": "罗勒煎牛肉",
+    "nameEn": "BasilPan-friedBeef",
     "cookingMethod": "braise",
     "flavors": [
       "umami",
@@ -179432,7 +179442,7 @@
     "status": "reviewed",
     "id": "extra130_m_129",
     "nameZh": "柠檬鸡腿",
-    "nameEn": "柠檬鸡腿",
+    "nameEn": "LemonChicken Leg",
     "cookingMethod": "braise",
     "flavors": [
       "umami",
@@ -179538,7 +179548,7 @@
     "status": "reviewed",
     "id": "extra130_m_130",
     "nameZh": "红枣烧五花",
-    "nameEn": "红枣烧五花",
+    "nameEn": "JujubeBraised",
     "cookingMethod": "braise",
     "flavors": [
       "umami",
