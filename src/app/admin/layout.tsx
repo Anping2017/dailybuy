@@ -3,14 +3,16 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useState, useEffect } from 'react';
-import { LayoutDashboard, UtensilsCrossed, AlertTriangle, Apple, Sparkles, Inbox, Brain, Menu, X, Edit3, Lock, LogOut } from 'lucide-react';
+import { LayoutDashboard, UtensilsCrossed, AlertTriangle, Apple, Sparkles, Inbox, Brain, Menu, X, Edit3, Lock, LogOut, ShieldCheck } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { getAdminToken, setAdminToken, clearAdminToken, verifyAdminToken } from '@/lib/admin-auth';
 
 const NAV = [
   { href: '/admin', label: '概览', icon: LayoutDashboard, exact: true },
   { href: '/admin/recipes', label: '菜谱管理', icon: UtensilsCrossed },
+  { href: '/admin/recipes/audit', label: '菜谱审计', icon: ShieldCheck },
   { href: '/admin/ingredients', label: '食材管理', icon: Apple },
+  { href: '/admin/ingredients/audit', label: '食材审计', icon: ShieldCheck },
   { href: '/admin/ingredients/pending', label: '待新增食材', icon: Sparkles },
   { href: '/admin/pending-requests', label: '待新增菜谱', icon: Inbox },
   { href: '/admin/pending-recipe-edits', label: '菜谱修改建议', icon: Edit3 },
