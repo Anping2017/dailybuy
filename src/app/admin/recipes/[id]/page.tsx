@@ -1,4 +1,5 @@
 'use client';
+import { adminFetch } from '@/lib/admin-auth';
 
 import { useEffect, useState } from 'react';
 import { useParams, useRouter } from 'next/navigation';
@@ -46,12 +47,12 @@ export default function RecipeDetailPage() {
 
   useEffect(() => {
     if (params.id) {
-      fetch(`/api/admin/recipes/${params.id}`).then(r => r.json()).then(setData);
+      adminFetch(`/api/admin/recipes/${params.id}`).then(r => r.json()).then(setData);
     }
   }, [params.id]);
 
   const handleStatus = async (status: RecipeStatus) => {
-    await fetch(`/api/admin/recipes/${params.id}`, {
+    await adminFetch(`/api/admin/recipes/${params.id}`, {
       method: 'PATCH',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ status }),

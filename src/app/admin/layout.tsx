@@ -3,8 +3,9 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useState, useEffect } from 'react';
-import { LayoutDashboard, UtensilsCrossed, AlertTriangle, Apple, Sparkles, Inbox, Brain, Menu, X, Edit3 } from 'lucide-react';
+import { LayoutDashboard, UtensilsCrossed, AlertTriangle, Apple, Sparkles, Inbox, Brain, Menu, X, Edit3, Lock, LogOut } from 'lucide-react';
 import { cn } from '@/lib/utils';
+import { getAdminToken, setAdminToken, clearAdminToken, verifyAdminToken } from '@/lib/admin-auth';
 
 const NAV = [
   { href: '/admin', label: '概览', icon: LayoutDashboard, exact: true },
@@ -20,9 +21,46 @@ const NAV = [
 export default function AdminLayout({ children }: { children: React.ReactNode }) {
   const pathname = usePathname();
   const [drawerOpen, setDrawerOpen] = useState(false);
+  const [authChecking, setAuthChecking] = useState(true);
+  const [authed, setAuthed] = useState(false);
 
   // 路由切换时自动关闭抽屉
   useEffect(() => { setDrawerOpen(false); }, [pathname]);
+
+  // 启动时验证 sessionStorage 中的 token
+  useEffect(() => {
+    let cancelled = false;
+    (async () => {
+      const token = getAdminToken();
+      if (!token) {
+        if (!cancelled) { setAuthed(false); setAuthChecking(false); }
+        return;
+      }
+      const ok = await verifyAdminToken(token);
+      if (cancelled) return;
+      if (!ok) clearAdminToken();
+      setAuthed(ok);
+      setAuthChecking(false);
+    })();
+    return () => { cancelled = true; };
+  }, []);
+
+  if (authChecking) {
+    return (
+      <div className="min-h-screen flex items-center justify-center bg-background">
+        <p className="text-sm text-muted">验证中...</p>
+      </div>
+    );
+  }
+
+  if (!authed) {
+    return <AdminLoginGate onSuccess={() => setAuthed(true)} />;
+  }
+
+  const handleLogout = () => {
+    clearAdminToken();
+    setAuthed(false);
+  };
 
   const currentLabel = NAV.find(n => n.exact ? pathname === n.href : pathname.startsWith(n.href))?.label || '后台';
 
@@ -36,9 +74,18 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
               <h1 className="font-bold text-lg">DailyBuy Admin</h1>
               <p className="text-xs text-muted">菜谱后台管理</p>
             </div>
-            <Link href="/dashboard" className="text-xs text-muted hover:text-primary border border-border rounded px-2 py-1 transition">
-              返回前台
-            </Link>
+            <div className="flex flex-col items-end gap-1">
+              <Link href="/dashboard" className="text-xs text-muted hover:text-primary border border-border rounded px-2 py-1 transition">
+                返回前台
+              </Link>
+              <button
+                onClick={handleLogout}
+                title="退出登录"
+                className="text-xs text-muted hover:text-red-500 border border-border rounded px-2 py-1 flex items-center gap-1 transition"
+              >
+                <LogOut className="w-3 h-3" /> 登出
+              </button>
+            </div>
           </div>
         </div>
         <nav className="flex-1 p-2 space-y-1">
@@ -113,6 +160,69 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
       <main className="flex-1 p-3 md:p-6 overflow-auto pt-17 md:pt-6 mt-14 md:mt-0 min-w-0">
         {children}
       </main>
+    </div>
+  );
+}
+
+/** 后台登录页 — 输入 ADMIN_TOKEN 验证后存 sessionStorage */
+function AdminLoginGate({ onSuccess }: { onSuccess: () => void }) {
+  const [token, setToken] = useState('');
+  const [submitting, setSubmitting] = useState(false);
+  const [error, setError] = useState<string | null>(null);
+
+  const handleLogin = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!token.trim()) {
+      setError('请输入 token');
+      return;
+    }
+    setSubmitting(true);
+    setError(null);
+    const ok = await verifyAdminToken(token.trim());
+    setSubmitting(false);
+    if (ok) {
+      setAdminToken(token.trim());
+      onSuccess();
+    } else {
+      setError('Token 无效或服务端未配置 ADMIN_TOKEN');
+    }
+  };
+
+  return (
+    <div className="min-h-screen flex items-center justify-center bg-background p-4">
+      <div className="bg-card border border-border rounded-2xl p-6 w-full max-w-sm shadow">
+        <div className="flex items-center gap-2 mb-1">
+          <Lock className="w-5 h-5 text-primary" />
+          <h1 className="font-bold text-lg">后台管理登录</h1>
+        </div>
+        <p className="text-xs text-muted mb-4">请输入 Admin Token (在服务端 ADMIN_TOKEN 环境变量中配置)</p>
+        <form onSubmit={handleLogin} className="space-y-3">
+          <input
+            type="password"
+            value={token}
+            onChange={e => setToken(e.target.value)}
+            placeholder="粘贴 token..."
+            autoFocus
+            className="w-full border border-border rounded-lg px-3 py-2 text-sm bg-background font-mono"
+          />
+          {error && (
+            <p className="text-xs text-red-500 bg-red-50 border border-red-100 rounded px-2 py-1.5">
+              {error}
+            </p>
+          )}
+          <button
+            type="submit"
+            disabled={submitting}
+            className="w-full bg-primary text-white py-2.5 rounded-lg text-sm font-medium hover:bg-primary/90 disabled:opacity-50 transition"
+          >
+            {submitting ? '验证中...' : '登录'}
+          </button>
+        </form>
+        <div className="mt-4 pt-4 border-t border-border text-[11px] text-muted space-y-1">
+          <p>💡 Token 验证通过后存 sessionStorage, 关闭浏览器自动失效</p>
+          <p>🔒 服务端通过 X-Admin-Token header 校验, 不正确返回 401</p>
+        </div>
+      </div>
     </div>
   );
 }

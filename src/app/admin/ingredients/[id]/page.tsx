@@ -1,4 +1,5 @@
 'use client';
+import { adminFetch } from '@/lib/admin-auth';
 
 import { useEffect, useState } from 'react';
 import { useParams } from 'next/navigation';
@@ -38,7 +39,7 @@ export default function IngredientDetailAdminPage() {
   const [data, setData] = useState<Data | null>(null);
 
   useEffect(() => {
-    if (params.id) fetch(`/api/admin/ingredients/${params.id}`).then(r => r.json()).then(setData);
+    if (params.id) adminFetch(`/api/admin/ingredients/${params.id}`).then(r => r.json()).then(setData);
   }, [params.id]);
 
   if (!data) return <p className="text-muted">加载中...</p>;

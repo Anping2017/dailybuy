@@ -1,4 +1,5 @@
 'use client';
+import { adminFetch } from '@/lib/admin-auth';
 
 import { useEffect, useState } from 'react';
 import { AlertTriangle, Sparkles, RefreshCw } from 'lucide-react';
@@ -14,13 +15,13 @@ export default function PendingIngredientsPage() {
   const [aiStatus, setAiStatus] = useState<string>('');
 
   useEffect(() => {
-    fetch('/api/admin/ingredients/pending').then(r => r.json()).then(setData);
+    adminFetch('/api/admin/ingredients/pending').then(r => r.json()).then(setData);
   }, []);
 
   const handleAIGenerate = async () => {
     if (!data || data.missing.length === 0) return;
     setAiStatus('请求中...');
-    const res = await fetch('/api/admin/ingredients/pending', {
+    const res = await adminFetch('/api/admin/ingredients/pending', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ ingredientIds: data.missing.map(m => m.id) }),
@@ -39,7 +40,7 @@ export default function PendingIngredientsPage() {
           <p className="text-sm text-muted">菜谱中引用但食材库中不存在的食材</p>
         </div>
         <div className="flex gap-2">
-          <button onClick={() => fetch('/api/admin/ingredients/pending').then(r => r.json()).then(setData)}
+          <button onClick={() => adminFetch('/api/admin/ingredients/pending').then(r => r.json()).then(setData)}
             className="flex items-center gap-1 px-3 py-2 border border-border rounded-lg text-sm hover:border-primary/50 transition">
             <RefreshCw className="w-4 h-4" /> 重新扫描
           </button>

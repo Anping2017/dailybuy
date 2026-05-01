@@ -1,4 +1,5 @@
 'use client';
+import { adminFetch } from '@/lib/admin-auth';
 
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
@@ -22,7 +23,7 @@ export default function ValidationPage() {
   const [typeFilter, setTypeFilter] = useState('');
 
   useEffect(() => {
-    fetch('/api/admin/recipes/validation').then(r => r.json()).then(setData);
+    adminFetch('/api/admin/recipes/validation').then(r => r.json()).then(setData);
   }, []);
 
   if (!data) return <p className="text-muted">校验中...</p>;

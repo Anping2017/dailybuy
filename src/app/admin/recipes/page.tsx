@@ -1,4 +1,5 @@
 'use client';
+import { adminFetch } from '@/lib/admin-auth';
 
 import { useEffect, useState, useCallback } from 'react';
 import Link from 'next/link';
@@ -38,7 +39,7 @@ export default function RecipeListPage() {
     const params = new URLSearchParams({ page: String(page), pageSize: '20' });
     if (search) params.set('search', search);
     if (statusFilter) params.set('status', statusFilter);
-    fetch(`/api/admin/recipes?${params}`).then(r => r.json()).then(d => {
+    adminFetch(`/api/admin/recipes?${params}`).then(r => r.json()).then(d => {
       setData(d);
       setSelected(new Set());
     });
@@ -48,7 +49,7 @@ export default function RecipeListPage() {
 
   const handleBatchStatus = async (status: RecipeStatus) => {
     if (selected.size === 0) return;
-    await fetch('/api/admin/recipes', {
+    await adminFetch('/api/admin/recipes', {
       method: 'PATCH',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ ids: [...selected], status }),

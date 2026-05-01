@@ -1,4 +1,5 @@
 'use client';
+import { adminFetch } from '@/lib/admin-auth';
 
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
@@ -23,7 +24,7 @@ export default function AdminDashboard() {
   const [stats, setStats] = useState<Stats | null>(null);
 
   useEffect(() => {
-    fetch('/api/admin/recipes/stats').then(r => r.json()).then(setStats);
+    adminFetch('/api/admin/recipes/stats').then(r => r.json()).then(setStats);
   }, []);
 
   if (!stats) return <p className="text-muted">加载中...</p>;

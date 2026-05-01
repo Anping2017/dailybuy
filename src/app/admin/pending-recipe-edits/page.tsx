@@ -1,4 +1,5 @@
 'use client';
+import { adminFetch } from '@/lib/admin-auth';
 
 import { useEffect, useState, useCallback } from 'react';
 import { Inbox, Check, X, RefreshCw, Download, ArrowRight } from 'lucide-react';
@@ -30,7 +31,7 @@ export default function PendingRecipeEditsPage() {
       if (!original) throw new Error('菜谱不存在');
       const merged = { ...original, ...it.edited };
       // 调用 admin recipe API
-      const res = await fetch(`/api/admin/recipes/${encodeURIComponent(it.recipeId)}`, {
+      const res = await adminFetch(`/api/admin/recipes/${encodeURIComponent(it.recipeId)}`, {
         method: 'PUT',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(merged),
