@@ -9680,7 +9680,10 @@
     "allergens": [],
     "warnings": [],
     "highlights": [],
-    "supermarkets": [],
+    "supermarkets": [
+      "countdown",
+      "asian"
+    ],
     "season": []
   },
   {
@@ -9927,6 +9930,10 @@
     "highlights": [],
     "season": [
       "all"
+    ],
+    "supermarkets": [
+      "asian",
+      "countdown"
     ]
   },
   {
@@ -9950,6 +9957,10 @@
     "highlights": [],
     "season": [
       "all"
+    ],
+    "supermarkets": [
+      "countdown",
+      "asian"
     ]
   },
   {
@@ -9973,6 +9984,10 @@
     "highlights": [],
     "season": [
       "all"
+    ],
+    "supermarkets": [
+      "asian",
+      "countdown"
     ]
   },
   {
@@ -9998,6 +10013,10 @@
     ],
     "season": [
       "all"
+    ],
+    "supermarkets": [
+      "asian",
+      "countdown"
     ]
   },
   {
@@ -10021,6 +10040,10 @@
     "highlights": [],
     "season": [
       "all"
+    ],
+    "supermarkets": [
+      "asian",
+      "countdown"
     ]
   },
   {
@@ -10044,6 +10067,10 @@
     "highlights": [],
     "season": [
       "all"
+    ],
+    "supermarkets": [
+      "asian",
+      "countdown"
     ]
   },
   {
@@ -10067,6 +10094,10 @@
     "highlights": [],
     "season": [
       "all"
+    ],
+    "supermarkets": [
+      "asian",
+      "countdown"
     ]
   },
   {
@@ -10090,6 +10121,10 @@
     "highlights": [],
     "season": [
       "all"
+    ],
+    "supermarkets": [
+      "asian",
+      "countdown"
     ]
   },
   {
@@ -10113,6 +10148,10 @@
     "highlights": [],
     "season": [
       "all"
+    ],
+    "supermarkets": [
+      "asian",
+      "countdown"
     ]
   },
   {
@@ -10136,6 +10175,10 @@
     "highlights": [],
     "season": [
       "all"
+    ],
+    "supermarkets": [
+      "asian",
+      "countdown"
     ]
   },
   {
@@ -10159,6 +10202,10 @@
     "highlights": [],
     "season": [
       "all"
+    ],
+    "supermarkets": [
+      "asian",
+      "countdown"
     ]
   },
   {
@@ -10182,6 +10229,10 @@
     "highlights": [],
     "season": [
       "all"
+    ],
+    "supermarkets": [
+      "asian",
+      "countdown"
     ]
   },
   {
@@ -10205,29 +10256,10 @@
     "highlights": [],
     "season": [
       "all"
-    ]
-  },
-  {
-    "id": "chrysanthemum",
-    "nameZh": "菊花",
-    "nameEn": "Chrysanthemum Flower",
-    "category": "dried",
-    "nutrition": {
-      "calories": 1,
-      "protein": 0,
-      "fat": 0,
-      "carbs": 0.2,
-      "fiber": 0,
-      "sodium": 1,
-      "sugar": 0
-    },
-    "priceNZD": 8,
-    "unit": "包",
-    "allergens": [],
-    "warnings": [],
-    "highlights": [],
-    "season": [
-      "all"
+    ],
+    "supermarkets": [
+      "asian",
+      "countdown"
     ]
   },
   {
@@ -10254,6 +10286,10 @@
       "4",
       "9",
       "10"
+    ],
+    "supermarkets": [
+      "asian",
+      "countdown"
     ]
   },
   {
@@ -10280,6 +10316,10 @@
     "highlights": [],
     "season": [
       "all"
+    ],
+    "supermarkets": [
+      "asian",
+      "countdown"
     ]
   },
   {
@@ -10308,6 +10348,10 @@
     "highlights": [],
     "season": [
       "all"
+    ],
+    "supermarkets": [
+      "asian",
+      "countdown"
     ]
   },
   {
@@ -10333,6 +10377,10 @@
     ],
     "season": [
       "all"
+    ],
+    "supermarkets": [
+      "countdown",
+      "asian"
     ]
   },
   {
@@ -10358,6 +10406,10 @@
     "highlights": [],
     "season": [
       "all"
+    ],
+    "supermarkets": [
+      "countdown",
+      "asian"
     ]
   },
   {
@@ -10383,6 +10435,10 @@
     "highlights": [],
     "season": [
       "all"
+    ],
+    "supermarkets": [
+      "countdown",
+      "asian"
     ]
   },
   {
@@ -10408,6 +10464,10 @@
     ],
     "season": [
       "all"
+    ],
+    "supermarkets": [
+      "countdown",
+      "asian"
     ]
   },
   {
@@ -10433,6 +10493,10 @@
     ],
     "season": [
       "all"
+    ],
+    "supermarkets": [
+      "asian",
+      "countdown"
     ]
   },
   {
@@ -10460,6 +10524,10 @@
     "highlights": [],
     "season": [
       "all"
+    ],
+    "supermarkets": [
+      "countdown",
+      "paknsave"
     ]
   },
   {
@@ -10485,6 +10553,10 @@
     "highlights": [],
     "season": [
       "all"
+    ],
+    "supermarkets": [
+      "countdown",
+      "paknsave"
     ]
   },
   {
@@ -10510,6 +10582,10 @@
     "highlights": [],
     "season": [
       "all"
+    ],
+    "supermarkets": [
+      "countdown",
+      "paknsave"
     ]
   },
   {
@@ -10535,6 +10611,10 @@
     "highlights": [],
     "season": [
       "all"
+    ],
+    "supermarkets": [
+      "countdown",
+      "asian"
     ]
   },
   {
@@ -10558,6 +10638,10 @@
     "highlights": [],
     "season": [
       "all"
+    ],
+    "supermarkets": [
+      "countdown",
+      "paknsave"
     ]
   },
   {
@@ -10581,6 +10665,10 @@
     "highlights": [],
     "season": [
       "all"
+    ],
+    "supermarkets": [
+      "countdown",
+      "paknsave"
     ]
   },
   {
@@ -10604,6 +10692,10 @@
     "highlights": [],
     "season": [
       "all"
+    ],
+    "supermarkets": [
+      "asian",
+      "countdown"
     ]
   },
   {
@@ -10632,6 +10724,10 @@
       "10",
       "11",
       "12"
+    ],
+    "supermarkets": [
+      "countdown",
+      "paknsave"
     ]
   },
   {
@@ -10659,58 +10755,10 @@
     ],
     "season": [
       "all"
-    ]
-  },
-  {
-    "id": "purple_sweet_potato",
-    "nameZh": "紫薯",
-    "nameEn": "Purple Sweet Potato",
-    "category": "vegetable",
-    "nutrition": {
-      "calories": 86,
-      "protein": 1.6,
-      "fat": 0.1,
-      "carbs": 20,
-      "fiber": 3,
-      "sodium": 55,
-      "sugar": 4.2
-    },
-    "priceNZD": 5,
-    "unit": "kg",
-    "allergens": [],
-    "warnings": [],
-    "highlights": [
-      "high_fiber"
     ],
-    "season": [
-      "all"
-    ]
-  },
-  {
-    "id": "passion_fruit",
-    "nameZh": "百香果",
-    "nameEn": "Passion Fruit",
-    "category": "fruit",
-    "nutrition": {
-      "calories": 97,
-      "protein": 2.2,
-      "fat": 0.7,
-      "carbs": 23.4,
-      "fiber": 10.4,
-      "sodium": 28,
-      "sugar": 11.2
-    },
-    "priceNZD": 15,
-    "unit": "kg",
-    "allergens": [],
-    "warnings": [],
-    "highlights": [
-      "high_fiber"
-    ],
-    "season": [
-      "3",
-      "4",
-      "5"
+    "supermarkets": [
+      "asian",
+      "countdown"
     ]
   },
   {
@@ -10736,6 +10784,10 @@
       "10",
       "11",
       "12"
+    ],
+    "supermarkets": [
+      "countdown",
+      "paknsave"
     ]
   },
   {
@@ -10759,6 +10811,10 @@
     "highlights": [],
     "season": [
       "all"
+    ],
+    "supermarkets": [
+      "countdown",
+      "asian"
     ]
   },
   {
@@ -10782,6 +10838,10 @@
     "highlights": [],
     "season": [
       "all"
+    ],
+    "supermarkets": [
+      "countdown",
+      "paknsave"
     ]
   },
   {
@@ -10807,6 +10867,10 @@
     ],
     "season": [
       "all"
+    ],
+    "supermarkets": [
+      "countdown",
+      "paknsave"
     ]
   },
   {
@@ -10832,6 +10896,10 @@
     "highlights": [],
     "season": [
       "all"
+    ],
+    "supermarkets": [
+      "countdown",
+      "asian"
     ]
   },
   {
@@ -10855,6 +10923,10 @@
     "highlights": [],
     "season": [
       "all"
+    ],
+    "supermarkets": [
+      "asian",
+      "countdown"
     ]
   },
   {
@@ -10878,6 +10950,10 @@
     "highlights": [],
     "season": [
       "all"
+    ],
+    "supermarkets": [
+      "asian",
+      "countdown"
     ]
   }
 ]

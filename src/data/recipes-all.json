@@ -2110,7 +2110,7 @@
     "servings": 1,
     "ingredients": [
       {
-        "ingredientId": "chrysanthemum",
+        "ingredientId": "dried_chrysanthemum",
         "amount": 5,
         "unit": "g"
       },
@@ -3252,7 +3252,7 @@
     "servings": 1,
     "ingredients": [
       {
-        "ingredientId": "passion_fruit",
+        "ingredientId": "passionfruit",
         "amount": 2,
         "unit": "个"
       },
@@ -7916,7 +7916,7 @@
     "servings": 3,
     "ingredients": [
       {
-        "ingredientId": "purple_sweet_potato",
+        "ingredientId": "purple_potato",
         "amount": 150,
         "unit": "g"
       },

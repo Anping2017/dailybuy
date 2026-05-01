@@ -1,0 +1,425 @@
+{
+  "brokenRefs": [],
+  "orphaned": [
+    {
+      "id": "pear",
+      "name": "梨",
+      "category": "fruit"
+    },
+    {
+      "id": "grape",
+      "name": "葡萄",
+      "category": "fruit"
+    },
+    {
+      "id": "plum",
+      "name": "李子",
+      "category": "fruit"
+    },
+    {
+      "id": "cherry",
+      "name": "樱桃",
+      "category": "fruit"
+    },
+    {
+      "id": "mandarin",
+      "name": "桔子/蜜柑",
+      "category": "fruit"
+    },
+    {
+      "id": "dragon_fruit",
+      "name": "火龙果",
+      "category": "fruit"
+    },
+    {
+      "id": "cantaloupe",
+      "name": "哈密瓜",
+      "category": "fruit"
+    },
+    {
+      "id": "scallop",
+      "name": "扇贝",
+      "category": "seafood"
+    },
+    {
+      "id": "kidney_bean",
+      "name": "红腰豆",
+      "category": "bean"
+    },
+    {
+      "id": "lentil",
+      "name": "小扁豆",
+      "category": "bean"
+    },
+    {
+      "id": "cornmeal",
+      "name": "玉米粉",
+      "category": "grain"
+    },
+    {
+      "id": "rice_cake_korean",
+      "name": "韩式年糕",
+      "category": "grain"
+    },
+    {
+      "id": "peanut_butter",
+      "name": "花生酱",
+      "category": "seasoning"
+    },
+    {
+      "id": "peanut_oil",
+      "name": "花生油",
+      "category": "oil"
+    },
+    {
+      "id": "pomegranate",
+      "name": "石榴",
+      "category": "fruit"
+    },
+    {
+      "id": "lamb_mince",
+      "name": "羊肉末",
+      "category": "meat"
+    },
+    {
+      "id": "pork_chop",
+      "name": "猪排",
+      "category": "meat"
+    },
+    {
+      "id": "beef_tongue",
+      "name": "牛舌",
+      "category": "meat"
+    },
+    {
+      "id": "lobster",
+      "name": "龙虾",
+      "category": "seafood"
+    },
+    {
+      "id": "sardine",
+      "name": "沙丁鱼",
+      "category": "seafood"
+    },
+    {
+      "id": "mackerel",
+      "name": "鲭鱼",
+      "category": "seafood"
+    },
+    {
+      "id": "cuttlefish",
+      "name": "墨鱼",
+      "category": "seafood"
+    },
+    {
+      "id": "cheddar",
+      "name": "切达奶酪",
+      "category": "egg_dairy"
+    },
+    {
+      "id": "black_bean",
+      "name": "黑豆",
+      "category": "bean"
+    },
+    {
+      "id": "buckwheat",
+      "name": "荞麦",
+      "category": "grain"
+    },
+    {
+      "id": "barley",
+      "name": "大麦",
+      "category": "grain"
+    },
+    {
+      "id": "couscous",
+      "name": "北非小米",
+      "category": "grain"
+    },
+    {
+      "id": "yellow_chives",
+      "name": "韭黄",
+      "category": "vegetable"
+    },
+    {
+      "id": "morel_mushroom",
+      "name": "羊肚菌",
+      "category": "vegetable"
+    },
+    {
+      "id": "apple_cider_vinegar",
+      "name": "苹果醋",
+      "category": "seasoning"
+    },
+    {
+      "id": "sriracha",
+      "name": "是拉差辣酱",
+      "category": "seasoning"
+    },
+    {
+      "id": "worcestershire",
+      "name": "伍斯特沙司",
+      "category": "seasoning"
+    },
+    {
+      "id": "garlic_powder",
+      "name": "蒜粉",
+      "category": "seasoning"
+    },
+    {
+      "id": "onion_powder",
+      "name": "洋葱粉",
+      "category": "seasoning"
+    },
+    {
+      "id": "chinese_mustard",
+      "name": "黄芥末",
+      "category": "seasoning"
+    },
+    {
+      "id": "sunflower_oil",
+      "name": "葵花籽油",
+      "category": "oil"
+    },
+    {
+      "id": "avocado_oil",
+      "name": "牛油果油",
+      "category": "oil"
+    },
+    {
+      "id": "canola_oil",
+      "name": "菜籽油",
+      "category": "oil"
+    },
+    {
+      "id": "lychee",
+      "name": "荔枝",
+      "category": "fruit"
+    },
+    {
+      "id": "persimmon",
+      "name": "柿子",
+      "category": "fruit"
+    },
+    {
+      "id": "apricot",
+      "name": "杏",
+      "category": "fruit"
+    },
+    {
+      "id": "blackberry",
+      "name": "黑莓",
+      "category": "fruit"
+    },
+    {
+      "id": "grapefruit",
+      "name": "西柚",
+      "category": "fruit"
+    },
+    {
+      "id": "pistachio",
+      "name": "开心果",
+      "category": "dried"
+    },
+    {
+      "id": "hazelnut",
+      "name": "榛子",
+      "category": "dried"
+    },
+    {
+      "id": "macadamia",
+      "name": "夏威夷果",
+      "category": "dried"
+    },
+    {
+      "id": "sunflower_seed",
+      "name": "葵花籽",
+      "category": "dried"
+    },
+    {
+      "id": "pumpkin_seed",
+      "name": "南瓜籽",
+      "category": "dried"
+    },
+    {
+      "id": "flax_seed",
+      "name": "亚麻籽",
+      "category": "dried"
+    },
+    {
+      "id": "hawthorn_dried",
+      "name": "山楂",
+      "category": "dried"
+    },
+    {
+      "id": "dried_squid",
+      "name": "鱿鱼干",
+      "category": "dried"
+    },
+    {
+      "id": "blood_sausage",
+      "name": "血肠",
+      "category": "meat"
+    },
+    {
+      "id": "rice_paper",
+      "name": "越南米纸",
+      "category": "grain"
+    },
+    {
+      "id": "pita",
+      "name": "口袋面包",
+      "category": "grain"
+    },
+    {
+      "id": "naan",
+      "name": "印度烤饼",
+      "category": "grain"
+    },
+    {
+      "id": "palm_sugar",
+      "name": "棕榈糖",
+      "category": "seasoning"
+    },
+    {
+      "id": "tamarind",
+      "name": "罗望子",
+      "category": "seasoning"
+    },
+    {
+      "id": "pandanus",
+      "name": "班兰叶",
+      "category": "seasoning"
+    },
+    {
+      "id": "kimchi",
+      "name": "韩式泡菜",
+      "category": "vegetable"
+    },
+    {
+      "id": "beef_stock",
+      "name": "牛肉高汤",
+      "category": "seasoning"
+    },
+    {
+      "id": "wheat_starch",
+      "name": "澄粉",
+      "category": "grain"
+    },
+    {
+      "id": "dried_lily",
+      "name": "干黄花菜",
+      "category": "dried"
+    },
+    {
+      "id": "toona",
+      "name": "香椿芽",
+      "category": "vegetable"
+    },
+    {
+      "id": "beef_slice",
+      "name": "肥牛片",
+      "category": "meat"
+    },
+    {
+      "id": "cured_pork",
+      "name": "腊肉",
+      "category": "meat"
+    },
+    {
+      "id": "crucian_carp",
+      "name": "鲫鱼",
+      "category": "seafood"
+    },
+    {
+      "id": "carp",
+      "name": "鲤鱼",
+      "category": "seafood"
+    },
+    {
+      "id": "grass_carp",
+      "name": "草鱼",
+      "category": "seafood"
+    },
+    {
+      "id": "lime",
+      "name": "青柠",
+      "category": "fruit"
+    },
+    {
+      "id": "frozen_tofu",
+      "name": "冻豆腐",
+      "category": "bean"
+    },
+    {
+      "id": "instant_coffee",
+      "name": "速溶咖啡粉",
+      "category": "dried"
+    },
+    {
+      "id": "chocolate_white",
+      "name": "白巧克力",
+      "category": "dried"
+    }
+  ],
+  "dataIssues": {
+    "noNutrition": [],
+    "noPrice": [],
+    "noUnit": [],
+    "noCategory": [],
+    "noNameZh": [],
+    "noNameEn": [],
+    "noSupermarkets": []
+  },
+  "nutritionIssues": {
+    "calZero": [],
+    "calHigh": [],
+    "proteinNeg": [],
+    "noFiber": []
+  },
+  "catDist": {
+    "meat": 35,
+    "seafood": 31,
+    "egg_dairy": 19,
+    "bean": 19,
+    "grain": 33,
+    "vegetable": 82,
+    "seasoning": 84,
+    "oil": 9,
+    "fruit": 34,
+    "dried": 57
+  },
+  "priceIssues": {
+    "zero": [],
+    "veryHigh": [
+      {
+        "id": "dried_scallop",
+        "name": "干贝/瑶柱",
+        "price": 199.99
+      },
+      {
+        "id": "morel_mushroom",
+        "name": "羊肚菌",
+        "price": 400
+      }
+    ]
+  },
+  "dupName": [],
+  "missingKeywords": [
+    {
+      "kw": "鹅",
+      "count": 0,
+      "ids": []
+    },
+    {
+      "kw": "面条",
+      "count": 0,
+      "ids": []
+    },
+    {
+      "kw": "馒头",
+      "count": 0,
+      "ids": []
+    }
+  ]
+}
